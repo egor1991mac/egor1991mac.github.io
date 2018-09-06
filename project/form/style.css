@@ -6535,8 +6535,7 @@ body {
 
 .edit, .edit1 {
   padding: 0.9375rem 1.875rem;
-  background: #192e5b;
-  margin: 0; }
+  background: #192e5b; }
   .edit ul, .edit li, .edit1 ul, .edit1 li {
     margin: 0;
     padding: 0; }
@@ -6956,7 +6955,6 @@ body {
   background: #fffefee6;
   padding-top: 0;
   padding-bottom: 0;
-  margin: 0;
   height: 4.625rem;
   display: flex;
   align-items: center; }
