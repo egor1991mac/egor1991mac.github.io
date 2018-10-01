@@ -1,0 +1,212 @@
+.Inputter{
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
+    padding: 15px 3%;
+    background: #192e5b;
+}
+.topContainer{
+    width:100%;
+    .item{
+
+        width:15%;
+        background: none;
+        padding: 0;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        input{
+            background: transparent;
+            color:white;
+            border: none;
+            height: 22px;
+            font-size: 16px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 700;
+            color:white;
+            outline: none;
+            width: 100%;
+            overflow: hidden;
+        }
+        label{
+            display: none;
+        }
+        .placeCode{
+            display: none;
+        }
+        &:before{
+            content:'из';
+            color:white;
+            margin-right: 10px;
+            margin-bottom: 2px;
+           
+        }
+        &:after{
+            content: '\E95E';
+            font-family: 'TVIcons';
+            color: white;
+           
+            font-size: 16px;
+            line-height: 1.25rem;
+                       
+        }
+    }
+}
+
+
+.bottomContainer{
+    width:100%;
+    display: flex;
+    flex-wrap:wrap;
+    box-sizing: padding-box;
+    .submit{
+        background: #c02222 !important;
+        border-radius: 0;
+        position: relative;
+        right: 1px;
+        //width: 185px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        color:white;
+        width: 25%;
+    }
+    .item{
+        
+        height: 56px;
+        background: white;
+        position: relative;
+        width: 20%;
+        border-right: 1px solid #dddddd;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 22px 8px;
+       
+            &.disabled{
+                background: #f6f6f3;
+            }
+            &.error{
+                label{
+                    color:#f44336;
+                    &:before{
+                        color:#f44336;
+                    }
+                }
+                input,.placeCode{
+                    color:#f44336;
+                }
+                
+            }
+            label{
+                display: block;
+                position: absolute;
+                top: 10px;
+                left: 22px;
+                z-index: 100;
+                color: #777777;
+                font-size: 10px;
+                margin-bottom: 0;
+                text-transform: uppercase;
+                font-weight: 300;
+                &::before{
+                    content: '\E954';
+                    font-family: "TVicons";
+                    color: #777777;
+                    margin-right: 5px;
+                
+                }
+            }
+            input{
+                    
+                    border: none;
+                    height: 22px;
+                    font-size: 16px;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: 700;
+                    color: #333333;
+                    background: transparent;
+                    outline: none;
+                    max-width: 100%;
+            }
+            .placeCode{
+                font-size: 0.625rem;
+                text-transform: uppercase;
+                color: #777777;
+                font-weight: normal;
+                top: 10px;
+                right: 22px;
+                position: absolute;
+            }
+           
+      
+        &:nth-child(3){
+            label{
+                &::before{
+                    content: '\E942';
+                }
+            }
+        }
+        &:nth-child(4){
+                label{
+                    &::before{
+                        content: '\E93B';
+                    }
+                }
+            
+        }
+       
+        
+    }
+}
+
+
+.range-picker{
+    max-width:250px;
+    max-height: 250px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    td{
+        height:48px;
+        width: 30px;
+        
+    }
+    .active{
+        background: #f44336;
+        border-radius: 50px;
+        color:white;
+    }
+    .range{
+        background: #ebebeb;
+        border-radius: 50px;
+    }
+    
+    .w-100{
+        width: 100%;
+    }
+    .mt-1{
+        margin-top:1rem;
+    }
+}
+div[x-placement*="bottom-start"]{
+    //transform: translate3d(170px, 110px, 0px) !important; 
+    position: absolute;
+    top: 31px !important;
+    left: -23px !important;
+   &>*{
+       background: red;
+       font-size:16px;
+   }
+}
+@media (max-width:1026px){
+
+}
+@media (max-width:769px){
+
+}
+@media (max-width:570px){
+
+}
+@media (max-width:420px){
+
+}

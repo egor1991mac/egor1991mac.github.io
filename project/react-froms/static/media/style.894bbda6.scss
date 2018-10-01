@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'TVicons';
+    src: url("//static.tourvisor.ru/fonts/TVicons.eot?155pn4");
+    src: url("//static.tourvisor.ru/fonts/TVicons.eot?155pn4#iefix") format("embedded-opentype"), url("//static.tourvisor.ru/fonts/TVicons.ttf?155pn4") format("truetype"), url("//static.tourvisor.ru/fonts/TVicons.woff?155pn4") format("woff"), url("//static.tourvisor.ru/fonts/TVicons.svg?155pn4#TVicons") format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+    @import url('https://fonts.googleapis.com/css?family=Poppins');
+    @import url('https://fonts.googleapis.com/css?family=Nunito');
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek-ext,latin-ext');
+    @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i,800,800i&subset=latin-ext');
+.border-none{
+    border-radius: 0;
+}
+.color-submit{
+ background: #c02222;
+}
+.item-charter-list{
+    display: flex;
+    flex-wrap: wrap;
+    //justify-content: space-between;
+    max-width: calc(100vw - 30px);
+    border:1px solid #dcdcdd;
+    margin:2rem 0; 
+    .col-50{
+        width:25%;
+        border-right:1px solid #dcdcdd;
+        box-sizing: border-box;
+        
+        .header-charter-list{
+            background: #f9f9f9;
+            color:black;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            svg{
+                width:18px;
+                height: 18px;
+            }
+            .h3{
+                margin-left: 10px;
+            }
+        }
+        .body-filter-charter-list{
+            ul{
+                list-style: none;
+                padding: 0 15px;
+                li{ 
+                    display: flex;
+                    align-items: center;
+                    margin: 3px 0;
+                    span:last-child{
+                        margin-left:10px;
+                    }
+                }
+            }
+            .submit-charter-list{
+                float: right;
+                margin: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                button{
+                    background: #c02222 !important;
+                    border-radius: 0;
+                    position: relative;
+                    right: 1px;
+                    //width: 185px;
+                    padding: 10px 20px;
+                    font-size: 1rem;
+                }
+                span.price{
+                    display: block;
+                    text-align: center;
+                    /* margin-bottom: 10px; */
+                    font-size: 2rem;
+                    padding: 6px 20px;
+                    background: #f9f9f9;
+                    border: 1 px solid;
+                    border: 1px solid #dcdcdd;
+                }
+                button{
+                    span{color:white;}
+                    
+                }
+            }
+        }
+        &:last-child{
+            width:50%;
+            border:none;
+            .body-filter-charter-list{
+                ul{
+                    margin-top:10px;
+                }
+            }
+        }
+        
+    }
+    
+}
