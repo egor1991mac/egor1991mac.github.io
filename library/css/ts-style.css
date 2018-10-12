@@ -28,99 +28,99 @@
 .ts_flex_justify--around {
   justify-content: space-around; }
 
-.mx-0 {
+.ts-mx-0 {
   margin-right: 0 !important;
   margin-left: 0  !important; }
 
-.mx-1 {
+.ts-mx-1 {
   margin-right: 1rem !important;
   margin-left: 1rem  !important; }
 
-.mx-2 {
+.ts-mx-2 {
   margin-right: 2rem !important;
   margin-left: 2rem !important; }
 
-.mx-3 {
+.ts-mx-3 {
   margin-right: 3rem !important;
   margin-left: 3rem  !important; }
 
-.mx-4 {
+.ts-mx-4 {
   margin-right: 4rem !important;
   margin-left: 4rem  !important; }
 
-.mx-auto {
+.ts-mx-auto {
   margin-right: auto !important;
   margin-left: auto  !important; }
 
-.my-0 {
+.ts-my-0 {
   margin-top: 0 !important;
   margin-bottom: 0 !important; }
 
-.my-1 {
+.ts-my-1 {
   margin-top: 1rem !important;
   margin-bottom: 1rem !important; }
 
-.my-2 {
+.ts-my-2 {
   margin-top: 2rem !important;
   margin-bottom: 2rem !important; }
 
-.my-3 {
+.ts-my-3 {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important; }
 
-.my-4 {
+.ts-my-4 {
   margin-top: 4rem !important;
   margin-bottom: 4rem !important; }
 
-.my-5 {
+.ts-my-5 {
   margin-top: 5rem !important;
   margin-bottom: 5rem !important; }
 
-.px-0 {
+.ts-px-0 {
   padding-right: 0 !important;
   padding-left: 0  !important; }
 
-.px-1 {
+.ts-px-1 {
   padding-right: 1rem !important;
   padding-left: 1rem  !important; }
 
-.px-2 {
+.ts-px-2 {
   padding-right: 2rem !important;
   padding-left: 2rem !important; }
 
-.px-3 {
+.ts-px-3 {
   padding-right: 3rem !important;
   padding-left: 3rem  !important; }
 
-.px-4 {
+.ts-px-4 {
   padding-right: 4rem !important;
   padding-left: 4rem  !important; }
 
-.px-auto {
+.ts-px-auto {
   padding-right: auto !important;
   padding-left: auto  !important; }
 
-.py-0 {
+.ts-py-0 {
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
 
-.py-1 {
+.ts-py-1 {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important; }
 
-.py-2 {
+.ts-py-2 {
   padding-top: 2rem !important;
   padding-bottom: 2rem !important; }
 
-.py-3 {
+.ts-py-3 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important; }
 
-.py-4 {
+.ts-py-4 {
   padding-top: 4rem !important;
   padding-bottom: 4rem !important; }
 
-.py-5 {
+.ts-py-5 {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important; }
 
