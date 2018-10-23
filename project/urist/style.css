@@ -462,7 +462,16 @@ footer {
     letter-spacing: 0;
     font-size: 11px;
   }
+  .container-main-page header .top-nav .row-custom:nth-child(1) .pd-r-45 {
+    padding-right: 7.9%; 
+  
+  } 
   .container-main-page header .top-nav .row-custom:nth-child(2) .pd-r-45 {
     padding-right: 7.9%; 
   
-  } }
+  } 
+  .container-main-page header .top-nav .row-custom:nth-child(3) .pd-r-45 {
+    padding-right: 7.9%; 
+  
+  } 
+}
