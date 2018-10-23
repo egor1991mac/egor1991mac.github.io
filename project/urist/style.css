@@ -458,45 +458,5 @@ footer {
   margin-top: 40px; }
 
 @media (max-width: 570px) {
-  form.ts-vetical-form {
-    height: auto; }
-    form.ts-vetical-form .ts-header-vetical-form {
-      height: auto; }
-    form.ts-vetical-form .ts-content-vetical-form {
-      height: auto; }
-      form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form {
-        height: auto; }
-        form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form label.ts-label-vetical-form {
-          height: auto; }
-        form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form .button {
-          height: auto; }
-        form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form .ts-item-vetical-form {
-          height: auto; }
-          form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form .ts-item-vetical-form .ts-icon {
-            height: auto; }
-          form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form .ts-item-vetical-form .ts-input-vetical-form input {
-            height: auto; }
-  .ts-width-100 {
-    height: auto; } }
-
-@media (max-width: 420px) {
-  form.ts-vetical-form {
-    height: auto; }
-    form.ts-vetical-form .ts-header-vetical-form {
-      height: auto; }
-    form.ts-vetical-form .ts-content-vetical-form {
-      height: auto; }
-      form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form {
-        height: auto; }
-        form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form label.ts-label-vetical-form {
-          height: auto; }
-        form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form .button {
-          height: auto; }
-        form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form .ts-item-vetical-form {
-          height: auto; }
-          form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form .ts-item-vetical-form .ts-icon {
-            height: auto; }
-          form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form .ts-item-vetical-form .ts-input-vetical-form input {
-            height: auto; }
-  .ts-width-100 {
-    height: auto; } }
+  .container-main-page header .top-nav .row-custom:nth-child(2) .pd-r-45 {
+    width: 7.92%; } }
