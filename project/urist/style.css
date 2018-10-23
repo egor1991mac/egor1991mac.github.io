@@ -57,7 +57,7 @@ body {
         height: 63px;
         margin-right: 31px; }
       .container-main-page header .top-content .title {
-        /* Style for "ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾" */
+        /* Style for "Конструкто" */
         width: 94px;
         height: 43px;
         color: #a6a500;
@@ -67,7 +67,7 @@ body {
         line-height: 16px;
         margin-top: 1px;
         text-transform: uppercase;
-        /* Text style for "Ðš, Ð¾Ð½ÑÑ‚Ñ€ÑƒÐº" */
+        /* Text style for "К, онструк" */
         letter-spacing: 0.12px; }
       .container-main-page header .top-content .nav-top-content {
         display: flex;
@@ -84,7 +84,7 @@ body {
             .container-main-page header .top-content .nav-top-content a .icon img {
               /* Style for "ico about" */ }
           .container-main-page header .top-content .nav-top-content a span {
-            /* Style for "Ðž Ð¿Ñ€Ð¾ÐµÐºÑ‚Ðµ" */
+            /* Style for "О проекте" */
             line-height: 12px;
             display: block;
             text-decoration: none;
@@ -108,7 +108,7 @@ body {
           line-height: 33px;
           height: 33px;
           display: block;
-          /* Style for "ÐšÑƒÐ¿Ð»Ñ-Ð¿Ñ€Ð¾Ð´" */
+          /* Style for "Купля-прод" */
           color: #ffffff;
           font-family: Tahoma;
           text-transform: uppercase;
@@ -122,7 +122,7 @@ body {
           height: 33px;
           padding: 0 10px;
           box-sizing: border-box;
-          /* Text style for "Ðš, ÑƒÐ¿Ð»Ñ-Ð¿Ñ€" */
+          /* Text style for "К, упля-пр" */
           letter-spacing: 0.12px; }
           .container-main-page header .top-nav .row-custom a:last-child {
             border-right: none; }
@@ -140,7 +140,7 @@ body {
         .container-main-page header .top-nav .row-custom:nth-child(1) .pd-r-45 {
           padding-right: 16.73%; }
         .container-main-page header .top-nav .row-custom:nth-child(2) .pd-r-45 {
-          padding-right: 7.95%; }
+          padding-right: 7.93%; }
     .container-main-page header .top-slider {
       margin-top: 3px;
       position: relative; }
@@ -152,18 +152,17 @@ body {
       .container-main-page header .top-slider .content {
         position: absolute;
         color: white;
-        top: 98px;
+        top: 77px;
         left: 78px;
-        /* Style for "ÐÐ°Ð¹Ð´Ð¸Ñ‚Ðµ Ð½Ñƒ" */
-        /* Text style for "ÐÐ°Ð¹Ð´Ð¸Ñ‚Ðµ Ð½Ñƒ" 
+        /* Style for "Найдите ну" */
+        /* Text style for "Найдите ну" 
                     font-size: 36px;
                     letter-spacing: 0.14px;
                     line-height: 41.5px;
-                    /* Text style for "â€¢" */
-        /* Text style for "Ð²Ñ‹Ð±Ñ€Ð°Ð² Ð¸Ð·" */
-        /* Text style for "â€¢" */
-        /* Text style for "Ð¿Ð¾Ð´Ð¾Ð±Ñ€Ð°Ð² Ð¿" */
-        }
+                    /* Text style for "•" */
+        /* Text style for "выбрав из" */
+        /* Text style for "•" */
+        /* Text style for "подобрав п" */ }
         .container-main-page header .top-slider .content h1 {
           color: #ffffff;
           font-family: "Open Sans";
@@ -175,9 +174,7 @@ body {
           color: #a6a500;
           font-size: 24px;
           font-weight: 300;
-          padding: 0 0 0 27px;
-          margin-top: 0;
-          }
+          padding: 0 0 0 27px; }
           .container-main-page header .top-slider .content ul span {
             color: white; }
       .container-main-page header .top-slider .blockqoute {
@@ -212,14 +209,14 @@ body {
         padding: 0 11px;
         border-right: 1px solid #cbd0d5;
         text-decoration: none;
-        /* Style for "Ð’ÐµÑÑ‚Ð¸ ÑÐ²Ð¾Ð¹" */
+        /* Style for "Вести свой" */
         color: #00add8;
         font-family: Tahoma;
         font-size: 12px;
         font-weight: 400;
         line-height: 30px;
         text-transform: uppercase;
-        /* Text style for "Ð’, ÐµÑÑ‚Ð¸ ÑÐ²" */
+        /* Text style for "В, ести св" */
         letter-spacing: 0.12px;
         transition: 0.3s background, 0.3s color, 0.3s border; }
         .container-main-page header .bottom-nav a:hover, .container-main-page header .bottom-nav a.active {
@@ -291,7 +288,7 @@ body {
       width: 60px;
       height: 57px; }
     .container-main-page section.how_it_works .item p {
-      /* Style for "Ð’Ñ‹Ð±Ð¸Ñ€Ð°ÐµÑ‚Ðµ" */
+      /* Style for "Выбираете" */
       color: #000000;
       font-family: Tahoma;
       font-size: 12px;
@@ -342,7 +339,7 @@ body {
         font-weight: 400;
         line-height: 16px;
         margin-left: 21px;
-        /* Text style for "Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ð·Ð¸" */ }
+        /* Text style for "автоматизи" */ }
         .container-main-page section.content .item .text-content span {
           color: #ffffff;
           background: #a6a500;
