@@ -458,5 +458,11 @@ footer {
   margin-top: 40px; }
 
 @media (max-width: 570px) {
+  .container-main-page header .top-nav .row-custom a{
+    letter-spacing: 0;
+    font-size: 11px;
+  }
   .container-main-page header .top-nav .row-custom:nth-child(2) .pd-r-45 {
-    padding-right: 7.9%; } }
+    padding-right: 7.9%; 
+  
+  } }
