@@ -462,6 +462,8 @@ footer {
 @media (max-width: 768px) {
   .container-main-page section.content .item .text-content {
     font-size: 11px; }
+  .pd-r-45 {
+    padding-right: 10px; }
   .container-main-page section.content .item {
     margin-bottom: 20px; }
     .container-main-page section.content .item:nth-child(1) {
