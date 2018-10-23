@@ -455,3 +455,7 @@ footer {
 
 .margin-top-40 {
   margin-top: 40px; }
+
+@media (max-width: 500px) {
+  .container-main-page header .top-nav .row-custom a.pd-r-45 {
+    padding-right: 10px !important; } }
