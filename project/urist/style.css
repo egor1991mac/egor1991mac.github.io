@@ -135,8 +135,9 @@ body {
           .container-main-page header .top-nav .row-custom a.pd-l-45 {
             padding-left: 45px; }
           .container-main-page header .top-nav .row-custom a.pd-r-45 {
-            padding-right: 22.33%;
-            border-right: none; }
+            /* padding-right: 22.33%; */
+            border-right: none;
+            }
         .container-main-page header .top-nav .row-custom:nth-child(1) .pd-r-45 {
           padding-right: 16.73%; }
         .container-main-page header .top-nav .row-custom:nth-child(2) .pd-r-45 {
@@ -463,12 +464,12 @@ footer {
     font-size: 11px;
   }
   .container-main-page header .top-nav .row-custom:nth-child(1) .pd-r-45 {
-    padding-right: 22.5%;
+    padding-right: 226px;
   } 
   .container-main-page header .top-nav .row-custom:nth-child(2) .pd-r-45 {
-    padding-right: 15.9%;
+    padding-right: 159px;
   } 
   .container-main-page header .top-nav .row-custom:nth-child(3) .pd-r-45 {
-    padding-right: 28.7%;
+    padding-right: 287px;
   } 
 }
