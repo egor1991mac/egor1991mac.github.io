@@ -464,4 +464,43 @@ footer {
     .container-main-page header .top-nav .row-custom .pd-r-45 {
       padding: 0 10px !important; }
     .container-main-page header .top-nav .row-custom .pd-l-45 {
-      padding: 0 10px !important; } }
+      padding: 0 10px !important; }
+  section.content {
+    /* Style for "certificat" */
+    max-width: 758px;
+    min-height: 387px;
+    margin-right: auto;
+    margin-left: auto;
+    background: url(img/certificat.png);
+    background-repeat: no-repeat; }
+    section.content .h3 {
+      min-width: 100%;
+      color: #00add8;
+      font-family: "Open Sans";
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      padding: 47px 0 40px; }
+    section.content .item {
+      width: 75%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 20px; }
+      section.content .item .img {
+        /* Style for "ico" */
+        width: 47px;
+        height: 46px; }
+      section.content .item .text-content {
+        margin: 0;
+        padding: 0;
+        color: #000000;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 12px;
+        margin-left: 21px;
+        /* Text style for "автоматизи" */ }
+        section.content .item .text-content span {
+          color: #ffffff;
+          background: #a6a500;
+          padding: 3px; } }
