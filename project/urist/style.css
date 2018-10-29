@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i);@import url(https://fonts.googleapis.com/css?family=Roboto);@charset "UTF-8";
 body {
   background: #e5e5df;
   font-family: 'Open Sans', sans-serif;
@@ -57,7 +57,7 @@ body {
         height: 63px;
         margin-right: 31px; }
       .container-main-page header .top-content .title {
-        /* Style for "ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾" */
+        /* Style for "Конструкто" */
         width: 94px;
         height: 43px;
         color: #a6a500;
@@ -67,7 +67,7 @@ body {
         line-height: 16px;
         margin-top: 1px;
         text-transform: uppercase;
-        /* Text style for "Ðš, Ð¾Ð½ÑÑ‚Ñ€ÑƒÐº" */
+        /* Text style for "К, онструк" */
         letter-spacing: 0.12px; }
       .container-main-page header .top-content .nav-top-content {
         display: flex;
@@ -84,13 +84,14 @@ body {
             .container-main-page header .top-content .nav-top-content a .icon img {
               /* Style for "ico about" */ }
           .container-main-page header .top-content .nav-top-content a span {
-            /* Style for "Ðž Ð¿Ñ€Ð¾ÐµÐºÑ‚Ðµ" */
+            /* Style for "О проекте" */
+            width: 100%;
             line-height: 12px;
             display: block;
             text-decoration: none;
             margin-left: 6px;
             color: #536473;
-            font-family: Tahoma;
+            font-family: 'Roboto', sans-serif;
             font-size: 12px;
             font-weight: 400; }
           .container-main-page header .top-content .nav-top-content a:nth-child(2) .icon {
@@ -107,10 +108,10 @@ body {
         .container-main-page header .top-nav .row-custom a {
           line-height: 33px;
           height: 33px;
-          display: block;
-          /* Style for "ÐšÑƒÐ¿Ð»Ñ-Ð¿Ñ€Ð¾Ð´" */
+          display: inline-block;
+          /* Style for "Купля-прод" */
           color: #ffffff;
-          font-family: Tahoma;
+          font-family: 'Roboto', sans-serif;
           text-transform: uppercase;
           text-decoration: none;
           background: transparent;
@@ -122,7 +123,7 @@ body {
           height: 33px;
           padding: 0 10px;
           box-sizing: border-box;
-          /* Text style for "Ðš, ÑƒÐ¿Ð»Ñ-Ð¿Ñ€" */
+          /* Text style for "К, упля-пр" */
           letter-spacing: 0.12px; }
           .container-main-page header .top-nav .row-custom a:last-child {
             border-right: none; }
@@ -135,12 +136,12 @@ body {
           .container-main-page header .top-nav .row-custom a.pd-l-45 {
             padding-left: 45px; }
           .container-main-page header .top-nav .row-custom a.pd-r-45 {
-            padding-right: 22.33%;
+            padding-right: 20.3%;
             border-right: none; }
         .container-main-page header .top-nav .row-custom:nth-child(1) .pd-r-45 {
-          padding-right: 16.73%; }
+          padding-right: 13.19%; }
         .container-main-page header .top-nav .row-custom:nth-child(2) .pd-r-45 {
-          padding-right: 7.95%; }
+          padding-right: 5.19%; }
     .container-main-page header .top-slider {
       margin-top: 3px;
       position: relative; }
@@ -152,18 +153,17 @@ body {
       .container-main-page header .top-slider .content {
         position: absolute;
         color: white;
-        top: 98px;
+        top: 77px;
         left: 78px;
-        /* Style for "ÐÐ°Ð¹Ð´Ð¸Ñ‚Ðµ Ð½Ñƒ" */
-        /* Text style for "ÐÐ°Ð¹Ð´Ð¸Ñ‚Ðµ Ð½Ñƒ" 
+        /* Style for "Найдите ну" */
+        /* Text style for "Найдите ну" 
                     font-size: 36px;
                     letter-spacing: 0.14px;
                     line-height: 41.5px;
-                    /* Text style for "â€¢" */
-        /* Text style for "Ð²Ñ‹Ð±Ñ€Ð°Ð² Ð¸Ð·" */
-        /* Text style for "â€¢" */
-        /* Text style for "Ð¿Ð¾Ð´Ð¾Ð±Ñ€Ð°Ð² Ð¿" */
-        }
+                    /* Text style for "•" */
+        /* Text style for "выбрав из" */
+        /* Text style for "•" */
+        /* Text style for "подобрав п" */ }
         .container-main-page header .top-slider .content h1 {
           color: #ffffff;
           font-family: "Open Sans";
@@ -175,9 +175,7 @@ body {
           color: #a6a500;
           font-size: 24px;
           font-weight: 300;
-          padding: 0 0 0 27px;
-          margin-top: 0;
-          }
+          padding: 0 0 0 27px; }
           .container-main-page header .top-slider .content ul span {
             color: white; }
       .container-main-page header .top-slider .blockqoute {
@@ -212,14 +210,14 @@ body {
         padding: 0 11px;
         border-right: 1px solid #cbd0d5;
         text-decoration: none;
-        /* Style for "Ð’ÐµÑÑ‚Ð¸ ÑÐ²Ð¾Ð¹" */
+        /* Style for "Вести свой" */
         color: #00add8;
-        font-family: Tahoma;
+        font-family: 'Roboto', sans-serif;
         font-size: 12px;
         font-weight: 400;
         line-height: 30px;
         text-transform: uppercase;
-        /* Text style for "Ð’, ÐµÑÑ‚Ð¸ ÑÐ²" */
+        /* Text style for "В, ести св" */
         letter-spacing: 0.12px;
         transition: 0.3s background, 0.3s color, 0.3s border; }
         .container-main-page header .bottom-nav a:hover, .container-main-page header .bottom-nav a.active {
@@ -291,9 +289,9 @@ body {
       width: 60px;
       height: 57px; }
     .container-main-page section.how_it_works .item p {
-      /* Style for "Ð’Ñ‹Ð±Ð¸Ñ€Ð°ÐµÑ‚Ðµ" */
+      /* Style for "Выбираете" */
       color: #000000;
-      font-family: Tahoma;
+      font-family: 'Roboto', sans-serif;
       font-size: 12px;
       font-weight: 400;
       line-height: 16px;
@@ -310,12 +308,13 @@ body {
       height: 43px; }
   .container-main-page section.content {
     /* Style for "certificat" */
-    max-width: 758px;
-    min-height: 387px;
+    width: 758px;
+    height: 387px;
     margin-right: auto;
     margin-left: auto;
     background: url(img/certificat.png);
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: contain; }
     .container-main-page section.content .h3 {
       min-width: 100%;
       color: #00add8;
@@ -337,12 +336,12 @@ body {
         margin: 0;
         padding: 0;
         color: #000000;
-        font-family: Tahoma;
+        font-family: 'Roboto', sans-serif;
         font-size: 12px;
         font-weight: 400;
         line-height: 16px;
         margin-left: 21px;
-        /* Text style for "Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ð·Ð¸" */ }
+        /* Text style for "автоматизи" */ }
         .container-main-page section.content .item .text-content span {
           color: #ffffff;
           background: #a6a500;
@@ -429,7 +428,7 @@ footer {
   align-items: center;
   justify-content: center;
   /* Style for "1" */
-  font-family: Tahoma;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 400; }
 
@@ -460,46 +459,30 @@ footer {
 .margin-top-40 {
   margin-top: 40px; }
 
-@media (max-width: 570px) {
-  form.ts-vetical-form {
-    height: auto; }
-    form.ts-vetical-form .ts-header-vetical-form {
-      height: auto; }
-    form.ts-vetical-form .ts-content-vetical-form {
-      height: auto; }
-      form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form {
+@media (max-width: 768px) {
+  .container-main-page section.content .item .text-content {
+    font-size: 11px; }
+  .pd-r-45 {
+    padding-right: 10px; }
+  .container-main-page section.content .item {
+    margin-bottom: 20px; }
+    .container-main-page section.content .item:nth-child(1) {
+      background: red; }
+      .container-main-page section.content .item:nth-child(1) .img {
+        width: 90px;
+        height: 30px; }
+        .container-main-page section.content .item:nth-child(1) .img img {
+          width: 100%;
+          height: auto; }
+    .container-main-page section.content .item:nth-child(2) .img {
+      width: 90px;
+      height: 30px; }
+      .container-main-page section.content .item:nth-child(2) .img img {
+        width: 100%;
         height: auto; }
-        form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form label.ts-label-vetical-form {
-          height: auto; }
-        form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form .button {
-          height: auto; }
-        form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form .ts-item-vetical-form {
-          height: auto; }
-          form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form .ts-item-vetical-form .ts-icon {
-            height: auto; }
-          form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form .ts-item-vetical-form .ts-input-vetical-form input {
-            height: auto; }
-  .ts-width-100 {
-    height: auto; } }
-
-@media (max-width: 420px) {
-  form.ts-vetical-form {
-    height: auto; }
-    form.ts-vetical-form .ts-header-vetical-form {
-      height: auto; }
-    form.ts-vetical-form .ts-content-vetical-form {
-      height: auto; }
-      form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form {
-        height: auto; }
-        form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form label.ts-label-vetical-form {
-          height: auto; }
-        form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form .button {
-          height: auto; }
-        form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form .ts-item-vetical-form {
-          height: auto; }
-          form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form .ts-item-vetical-form .ts-icon {
-            height: auto; }
-          form.ts-vetical-form .ts-content-vetical-form .ts-items-vertical-form .ts-item-vetical-form .ts-input-vetical-form input {
-            height: auto; }
-  .ts-width-100 {
-    height: auto; } }
+    .container-main-page section.content .item:nth-child(2) .img {
+      width: 90px;
+      height: 30px; }
+      .container-main-page section.content .item:nth-child(2) .img img {
+        width: 100%;
+        height: auto; } }
