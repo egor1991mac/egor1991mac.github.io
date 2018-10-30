@@ -134,7 +134,8 @@ body {
             transition: 0.3s background;
             background: #a6a500; }
           .container-main-page header .top-nav .row-custom a.pd-l-45 {
-            padding-left: 45px; }
+            /* padding-left: 45px; */
+            }
           .container-main-page header .top-nav .row-custom a.pd-r-45 {
             padding-right: 20.3%;
             border-right: none; }
@@ -507,7 +508,7 @@ footer {
           width: 71px;
         }
         .container-main-page header .top-nav .row-custom:nth-child(1) a:nth-child(7){
-          width: 126px;  
+          width: 127px;
         }
         .container-main-page header .top-nav .row-custom:nth-child(1) a:nth-child(8){
           width: 53px; 
@@ -516,6 +517,35 @@ footer {
           width: 92px;  
         }
         .container-main-page header .top-nav .row-custom:nth-child(1) a:nth-child(10){
-          width: 210px;  
+          width: 213px;
         }
 
+        .container-main-page header .top-nav .row-custom:nth-child(2) a:nth-child(1){
+            width: 302px; 
+          }
+          .container-main-page header .top-nav .row-custom:nth-child(2) a:nth-child(2){
+            width: 226px;  
+          }
+          .container-main-page header .top-nav .row-custom:nth-child(2) a:nth-child(3){
+            width: 287px;  
+          }
+          .container-main-page header .top-nav .row-custom:nth-child(2) a:nth-child(4){
+            width: 185px;  
+          }
+        
+          .container-main-page header .top-nav .row-custom:nth-child(3) a:nth-child(1){
+            width: 154px;
+          }
+          .container-main-page header .top-nav .row-custom:nth-child(3) a:nth-child(2){
+            width: 132px;
+          }
+          .container-main-page header .top-nav .row-custom:nth-child(3) a:nth-child(3){
+            width: 190px;  
+          }
+          .container-main-page header .top-nav .row-custom:nth-child(3) a:nth-child(4){
+            width: 174px;  
+          }
+          .container-main-page header .top-nav .row-custom:nth-child(3) a:nth-child(5){
+            width: 310px;  
+          }
+          
