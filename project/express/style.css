@@ -25,7 +25,8 @@ p {
   color: rgba(0, 0, 0, 0.88); }
 
 .img {
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
   .img img {
     width: 100%; }
 
@@ -513,7 +514,7 @@ a:hover {
         letter-spacing: normal;
         color: rgba(0, 0, 0, 0.88); }
       #Schedule_Bg .table-Departure .table .tr .td {
-        padding-right: 4.9%; }
+        width: 8%; }
         #Schedule_Bg .table-Departure .table .tr .td:first-child {
           padding-right: 0; }
         #Schedule_Bg .table-Departure .table .tr .td:last-child {
@@ -590,10 +591,13 @@ a:hover {
         background-color: #7d9d49;
         font-size: 16px; }
 
+a {
+  text-decoration: none; }
+
 #articles {
   padding: 72px 0 80px; }
   #articles .articles {
-    padding-bottom: 94px; }
+    padding-bottom: 10%; }
     #articles .articles:last-child {
       padding-bottom: 0; }
     #articles .articles:nth-child(2) .img {
@@ -603,7 +607,8 @@ a:hover {
       padding-right: 2.53%; }
     #articles .articles .img {
       width: 48.7%;
-      max-height: 360px; }
+      max-height: 360px;
+      overflow: hidden; }
       #articles .articles .img img {
         width: 100%;
         height: auto; }
@@ -1020,7 +1025,7 @@ footer {
       .container-page #Schedule_Bg .table-Departure.first .table .tr .td:first-child {
         width: 20%; }
   #articles .articles .img {
-    height: 264px; }
+    max-height: 264px; }
   #aboute .column h3 {
     font-size: 30px;
     font-weight: 600;
