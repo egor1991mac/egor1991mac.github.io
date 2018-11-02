@@ -295,6 +295,9 @@ img {
     .wrapper {
       max-width: 100%; } }
 
+a:hover {
+  text-decoration: none; }
+
 .row {
   height: 100%; }
 
