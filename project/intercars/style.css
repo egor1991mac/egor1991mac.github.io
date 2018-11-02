@@ -556,6 +556,8 @@ h3 {
   height: 40px;
   background: #00468e;
   width: 100%; }
+  #top-nav a:hover {
+    text-decoration: none; }
   #top-nav .nav-hidden {
     margin-right: 1.875rem;
     display: flex;
@@ -890,6 +892,8 @@ footer {
     position: relative; }
     footer a img.not-hover:hover {
       opacity: 0.8; }
+    footer a:hover {
+      text-decoration: none; }
   footer ul {
     list-style: none;
     padding-bottom: 0;
@@ -913,7 +917,8 @@ footer {
       footer ul a:hover {
         color: white;
         font-weight: 400;
-        transition: 0.2s font-weight; }
+        transition: 0.2s font-weight;
+        text-decoration: none; }
   footer .social {
     width: 260px;
     display: flex;
