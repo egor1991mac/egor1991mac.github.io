@@ -86,17 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/jquery-datepicker/i18n/jquery.ui.datepicker-ja.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/jquery-datepicker/i18n/jquery.ui.datepicker-ja.js ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {\n\tif (true) {\n\t\t!(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, exports], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),\n\t\t\t\t__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?\n\t\t\t\t(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),\n\t\t\t\t__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));\n\t} else { var mod; }\n})(this, function (module, exports) {\n\t'use strict';\n\n\tObject.defineProperty(exports, \"__esModule\", {\n\t\tvalue: true\n\t});\n\n\texports.default = function (jQuery) {\n\t\t/* Japanese initialisation for the jQuery UI date picker plugin. */\n\t\t/* Written by Kentaro SATO (kentaro@ranvis.com). */\n\t\tjQuery(function ($) {\n\t\t\t$.datepicker.regional['ja'] = {\n\t\t\t\tcloseText: '閉じる',\n\t\t\t\tprevText: '&#x3C;前',\n\t\t\t\tnextText: '次&#x3E;',\n\t\t\t\tcurrentText: '今日',\n\t\t\t\tmonthNames: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],\n\t\t\t\tmonthNamesShort: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],\n\t\t\t\tdayNames: ['日曜日', '月曜日', '火曜日', '水曜日', '木曜日', '金曜日', '土曜日'],\n\t\t\t\tdayNamesShort: ['日', '月', '火', '水', '木', '金', '土'],\n\t\t\t\tdayNamesMin: ['日', '月', '火', '水', '木', '金', '土'],\n\t\t\t\tweekHeader: '週',\n\t\t\t\tdateFormat: 'yy/mm/dd',\n\t\t\t\tfirstDay: 0,\n\t\t\t\tisRTL: false,\n\t\t\t\tshowMonthAfterYear: true,\n\t\t\t\tyearSuffix: '年' };\n\t\t\t$.datepicker.setDefaults($.datepicker.regional['ja']);\n\t\t});\n\t};\n\n\t;\n\tmodule.exports = exports['default'];\n});\n\n//# sourceURL=webpack:///./node_modules/jquery-datepicker/i18n/jquery.ui.datepicker-ja.js?");
-
-/***/ }),
-
 /***/ "./node_modules/jquery-datepicker/jquery-datepicker.js":
 /*!*************************************************************!*\
   !*** ./node_modules/jquery-datepicker/jquery-datepicker.js ***!
@@ -310,7 +299,7 @@ eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./sr
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./style.scss */ \"./src/components/form-2/style.scss\");\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nvar _jqueryDatepicker = __webpack_require__(/*! jquery-datepicker */ \"./node_modules/jquery-datepicker/jquery-datepicker.js\");\n\nvar _jqueryDatepicker2 = _interopRequireDefault(_jqueryDatepicker);\n\nvar _jqueryUi = __webpack_require__(/*! jquery-datepicker/i18n/jquery.ui.datepicker-ja */ \"./node_modules/jquery-datepicker/i18n/jquery.ui.datepicker-ja.js\");\n\nvar _jqueryUi2 = _interopRequireDefault(_jqueryUi);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/components/form-2/index.js?");
+eval("\n\n__webpack_require__(/*! ./style.scss */ \"./src/components/form-2/style.scss\");\n\n//# sourceURL=webpack:///./src/components/form-2/index.js?");
 
 /***/ }),
 
