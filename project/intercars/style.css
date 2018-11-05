@@ -727,9 +727,10 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     position: relative;
-    margin-right: 5rem;
+    margin-right: 4.9rem;
     font-weight: 300;
-    font-size: 1.125rem; }
+    font-size: 1.125rem;
+    }
     #top-nav .nav-item:first-child {
       margin-right: 1.875rem; }
     #top-nav .nav-item:nth-child(7) {
