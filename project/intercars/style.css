@@ -2086,7 +2086,6 @@ footer {
 
 @media (max-width: 500px) {
   #gallery .cards-td .card-td {
-<<<<<<< HEAD
     width: 100%; } }
 #stocks #bread_crumbs {
   color: #b3b3b3; }
@@ -2172,12 +2171,3 @@ footer {
       width: 80%;
       margin: 0 auto;
       padding: 20px; } }
-=======
-    width: 100%; } 
-#user-nav{
-  img{
-  display:none;
-}
-}
-}
->>>>>>> 907c7bcb4b23480c13b7bb905e819cdd03ace3df
