@@ -2026,4 +2026,10 @@ footer {
 
 @media (max-width: 500px) {
   #gallery .cards-td .card-td {
-    width: 100%; } }
+    width: 100%; } 
+#user-nav{
+  img{
+  display:none;
+}
+}
+}
