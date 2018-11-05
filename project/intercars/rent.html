@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Материалы для шиноматажа rema-tip-top">
+    <link href="img/logo.svg" rel="shortcut icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!--link(rel='stylesheet', href='/node_modules/owl.carousel/dist/assets/owl.carousel.min.css')-->
+    <!--link(rel='stylesheet', href='/bower_components/owl.carousel/dist/assets/owl.carousel.min.css')-->
+    <title>whistler express</title>
+  <link href="style.css" rel="stylesheet"></head>
+  <body>
+<div class="wrapper">
+  <header class="row align-items-center">
+    <div id="logo" class="col-4"><img src="img/Logo.png" alt="InterCars" class="logo"></div>
+    <div class="col-8">
+      <div class="row">
+        <div class="col col-sm-12 col-md-12 col-lg-8 d-none d-md-block">
+          <div id="contact-info">
+            <div class="col px-0 d-inline-flex justify-content-xs-end justify-content-sm-end justify-content-md-end justify-content-lg-center align-items-center"><span>+7(44) <strong>555-555-55 </strong></span><img src="img/header-contact-img.png" alt="phone" class="small px-2"><span>+7(44) <strong>555-555-55 </strong></span></div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col d-inline-flex justify-content-xs-end justify-content-sm-end justify-content-md-end justify-content-lg-center">Время работы: <strong class="px-1">ПН-ВС,   </strong>c  <strong class="px-1">9:00 </strong>до <strong class="px-1">22:00</strong></div>
+          </div>
+        </div>
+        <div id="user-nav" class="col col-sm-12 col-md-12 col-lg-4 d-inline-flex justify-content-end align-items-center">
+          <div class="item pr-3 d-flex align-items-center"><a href="#">Русский</a><img src="img/header-arrow-down.png" alt="arrow-drop" class="small pl-2"></div>
+          <div class="item align-items-center"><img src="img/header-key.png" alt="key" class="small pr-2"><a href="#">Вход</a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+<div class="container-fluid px-0">
+  <div id="top-nav">
+    <div class="wrapper p-relative">
+      <div class="burger-menu">
+<div id="nav-icon2"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      </div>
+      <nav class="d-flex px-standart">
+        <div class="nav-item"> <a href="#">  Главная</a></div>
+        <div class="nav-item drop-down-menu"> <a href="#">Акции и новости</a>
+          <div class="drop-down-items"><a href="#" class="drop-down-item">Программа лояльности Intercars</a><a href="#" class="drop-down-item">Акции</a><a href="#" class="drop-down-item">Новости</a></div>
+        </div>
+        <div class="nav-item"><a href="#">Сотрудничество</a></div>
+        <div class="nav-item"><a href="#">Контакты</a></div>
+        <div class="nav-item"> <a href="#">Аренда</a></div>
+        <div class="nav-item"> <a href="#">Правила </a></div>
+        <div class="nav-item"> <a href="#">Оплата</a></div>
+        <div class="nav-item nav-hidden"><span>Еще...</span>
+          <div class="nav-items-hidden"><a href="">Главная</a><a href="">Акции и новости</a><a href="">Сотрудничество</a><a href="">Контакты</a><a href="">Аренда</a><a href="#">Правила </a><a href="">Оплата</a></div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<div id="rent">
+  <div class="bg-img">
+    <div class="wrapper">
+<div id="bread_crumbs">Главная   |   <span>Поиск билетов</span></div>
+      <div class="heading-1">
+        <h2>маршрут минск - москва</h2>
+      </div>
+      <div class="py-75"> 
+<div id="form-bus-2">
+  <form class="form-2">
+    <div class="form-2-item">
+      <label>Откуда</label>
+      <input type="text" placeholder="Город отправления">
+      <div class="default-values"><span>Например:</span><a href="#" class="px-1">Москва</a><a href="#">Санкт-Петербург</a></div>
+    </div>
+    <div class="form-2-item">
+      <div class="button-reverse"></div>
+    </div>
+    <div class="form-2-item">
+      <label>куда</label>
+      <input type="text" placeholder="Город прибытия">
+      <div class="default-values"><span>Например:</span><a href="#" class="px-1">Москва</a><a href="#">Санкт-Петербург</a></div>
+    </div>
+    <div class="form-2-item">
+      <label>Дата выезда</label>
+      <div class="datepicker">
+        <input type="text" id="from" value="21.03.2019" class="from">
+      </div>
+    </div>
+    <div class="form-2-item">
+      <label>Дата приезда</label>
+      <div class="datepicker">
+        <input type="text" id="to" value="21.03.2019" class="to">
+      </div>
+    </div>
+    <div class="form-2-item">
+      <label for="checkbox" class="checkbox"> </label>
+      <input type="checkbox" id="checkbox" hidden>
+    </div>
+    <div class="form-2-item">
+      <input type="submit" value="Найти">
+    </div>
+  </form>
+</div>
+      </div>
+<div id="result-ticket">
+  <div class="header-result-ticket d-none d-md-flex flex-wrap w-100 justify-content-between pb-1">
+    <div class="col-ticket d-flex justify-content-center"> 
+      <div class="text">Время <br>отправления</div>
+    </div>
+    <div class="col-ticket d-flex justify-content-center"> 
+      <div class="text">Время <br>прибытия</div>
+    </div>
+    <div class="col-ticket d-flex justify-content-center"> 
+      <div class="text">Время в пути/<br>Перевозчик</div>
+    </div>
+    <div class="col-ticket"></div>
+    <div class="col-ticket d-flex justify-content-center align-items-center">
+      <div class="text">Цены</div>
+    </div>
+    <div class="col-ticket"></div>
+    <div class="col-ticket"></div>
+  </div>
+  <div class="ticket active">
+<div class="content-result d-flex justify-content-between align-items-center flex-wrap">
+  <div class="col-ticket date-from">
+    <div class="text normal text-center">01.01.2018<span class="bold text-center">19:00</span></div>
+  </div>
+  <div class="col-ticket date-to">
+    <div class="text normal text-center">01.01.2018<span class="bold text-center">19:00</span></div>
+  </div>
+  <div class="col-ticket info d-flex justify-content-center">
+    <div class="text bold text-center">11h 30m<span class="normal text-center">Филиал «Автобусный парк №2» ГП «Минсктранс»</span></div>
+  </div>
+  <div class="col-ticket px-0 options d-flex justify-content-center">
+    <div class="icons"><img src="img/wifi-icon.png" alt="wifi"><img src="img/wc-icon.png" alt="wv"><img src="img/chear-icon.png" alt="chear"><img src="img/electric-icon.png" alt="electric"><img src="img/cond-icon.png" alt="cond" class="condition-img"></div>
+  </div>
+  <div class="col-ticket px-0 price">
+    <div class="text bold"> 35,00 BYN</div>
+  </div>
+  <div class="col-ticket px-0 best">
+    <div class="img"><img src="img/best.png" alt="">
+      <div class="tooltip-best">Самое выгодное предложение</div>
+    </div>
+  </div>
+  <div class="col-ticket px-0 submit d-flex justify-content-center flex-wrap"><a href="#" class="light">Купить</a>
+    <div class="after-text">Акционных мест 30</div>
+  </div>
+</div>
+<div class="collapse-result">
+  <div class="heading-collapse-result d-flex align-items-center justify-content-center"><img src="img/bus.png" alt="bus">
+    <h2 class="pl-2">Москва - минск</h2>
+  </div>
+  <div class="main-content-collapse-result d-flex">
+    <div class="col-ticket">
+      <div class="arrow-red"></div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center date-font-size">01.01.2018<br><strong>19:30</strong></p>
+      </div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center">пересадка<br>ожидание<br><strong class="date-font-size">1:30</strong></p>
+      </div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center date-font-size">02.01.2018<br><strong>06:30</strong></p>
+      </div>
+    </div>
+    <div class="col-ticket">
+      <div class="row-ticket">
+        <h4 class="pb-2">Москва</h4>
+        <p>Логистическая компания "Белинтранс" ул. Кроснодарская д.2</p>
+      </div>
+      <div class="row-ticket d-flex align-items-center">
+        <h4>Смоленск</h4>
+      </div>
+      <div class="row-ticket">
+        <h4 class="pb-2">Минск</h4>
+        <p>Оставновка метро Беларусская, Улица бутыркская</p>
+      </div>
+    </div>
+    <div class="col-ticket"><strong class="d-block pb-2 font-size-16">Дополнительно</strong>
+      <ul class="px-4">
+        <li> Duis labore sunt excepteur do veniam ea amet nostrud id irure ipsum anim. </li>
+        <li> Pariatur qui culpa in labore ullamco exercitation tempor.</li>
+        <li> Adipisicing est reprehenderit voluptate labore sint ipsum ad in fugiat velit id.</li>
+        <li> Qui dolor qui ullamco id in voluptate quis non magna.</li>
+        <li> Adipisicing magna anim qui commodo non officia sit adipisicing nisi duis aliquip amet.</li>
+        <li> Irure anim qui reprehenderit ad nostrud qui magna nisi consectetur incididunt occaecat deserunt quis consectetur.</li>
+        <li> Irure dolore aliquip fugiat id adipisicing cupidatat quis minim deserunt excepteur minim enim Lorem.</li>
+        <li> Exercitation commodo pariatur laborum elit aute dolor amet dolore eu fugiat commodo.</li>
+        <li> In non velit eiusmod deserunt cillum ullamco.</li>
+        <li> Esse occaecat aliqua enim mollit ex ipsum cillum adipisicing exercitation labore fugiat cupidatat eu ut.</li>
+      </ul>
+    </div>
+    <div class="col-ticket"><strong class="d-block pb-2 font-size-16">Перевозчик</strong>
+      <p>ООО "ТРАНС СЕРВИС" Неоплан 112</p>
+    </div>
+  </div>
+  <div class="footer-collapse-result d-flex align-items-center">
+    <h5>Прямой</h5>
+    <ul>
+      <li>Пересадка <strong>в смоленске</strong></li>
+      <li>Ожидание 
+        <string>1h 30m</string>
+      </li>
+    </ul>
+  </div>
+</div>
+  </div>
+  <div class="ticket mt-20 best-price"> 
+<div class="content-result d-flex justify-content-between align-items-center flex-wrap">
+  <div class="col-ticket date-from">
+    <div class="text normal text-center">01.01.2018<span class="bold text-center">19:00</span></div>
+  </div>
+  <div class="col-ticket date-to">
+    <div class="text normal text-center">01.01.2018<span class="bold text-center">19:00</span></div>
+  </div>
+  <div class="col-ticket info d-flex justify-content-center">
+    <div class="text bold text-center">11h 30m<span class="normal text-center">Филиал «Автобусный парк №2» ГП «Минсктранс»</span></div>
+  </div>
+  <div class="col-ticket px-0 options d-flex justify-content-center">
+    <div class="icons"><img src="img/wifi-icon.png" alt="wifi"><img src="img/wc-icon.png" alt="wv"><img src="img/chear-icon.png" alt="chear"><img src="img/electric-icon.png" alt="electric"><img src="img/cond-icon.png" alt="cond" class="condition-img"></div>
+  </div>
+  <div class="col-ticket px-0 price">
+    <div class="text bold"> 35,00 BYN</div>
+  </div>
+  <div class="col-ticket px-0 best">
+    <div class="img"><img src="img/best.png" alt="">
+      <div class="tooltip-best">Самое выгодное предложение</div>
+    </div>
+  </div>
+  <div class="col-ticket px-0 submit d-flex justify-content-center flex-wrap"><a href="#" class="light">Купить</a>
+    <div class="after-text">Акционных мест 30</div>
+  </div>
+</div>
+<div class="collapse-result">
+  <div class="heading-collapse-result d-flex align-items-center justify-content-center"><img src="img/bus.png" alt="bus">
+    <h2 class="pl-2">Москва - минск</h2>
+  </div>
+  <div class="main-content-collapse-result d-flex">
+    <div class="col-ticket">
+      <div class="arrow-red"></div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center date-font-size">01.01.2018<br><strong>19:30</strong></p>
+      </div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center">пересадка<br>ожидание<br><strong class="date-font-size">1:30</strong></p>
+      </div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center date-font-size">02.01.2018<br><strong>06:30</strong></p>
+      </div>
+    </div>
+    <div class="col-ticket">
+      <div class="row-ticket">
+        <h4 class="pb-2">Москва</h4>
+        <p>Логистическая компания "Белинтранс" ул. Кроснодарская д.2</p>
+      </div>
+      <div class="row-ticket d-flex align-items-center">
+        <h4>Смоленск</h4>
+      </div>
+      <div class="row-ticket">
+        <h4 class="pb-2">Минск</h4>
+        <p>Оставновка метро Беларусская, Улица бутыркская</p>
+      </div>
+    </div>
+    <div class="col-ticket"><strong class="d-block pb-2 font-size-16">Дополнительно</strong>
+      <ul class="px-4">
+        <li> Duis labore sunt excepteur do veniam ea amet nostrud id irure ipsum anim. </li>
+        <li> Pariatur qui culpa in labore ullamco exercitation tempor.</li>
+        <li> Adipisicing est reprehenderit voluptate labore sint ipsum ad in fugiat velit id.</li>
+        <li> Qui dolor qui ullamco id in voluptate quis non magna.</li>
+        <li> Adipisicing magna anim qui commodo non officia sit adipisicing nisi duis aliquip amet.</li>
+        <li> Irure anim qui reprehenderit ad nostrud qui magna nisi consectetur incididunt occaecat deserunt quis consectetur.</li>
+        <li> Irure dolore aliquip fugiat id adipisicing cupidatat quis minim deserunt excepteur minim enim Lorem.</li>
+        <li> Exercitation commodo pariatur laborum elit aute dolor amet dolore eu fugiat commodo.</li>
+        <li> In non velit eiusmod deserunt cillum ullamco.</li>
+        <li> Esse occaecat aliqua enim mollit ex ipsum cillum adipisicing exercitation labore fugiat cupidatat eu ut.</li>
+      </ul>
+    </div>
+    <div class="col-ticket"><strong class="d-block pb-2 font-size-16">Перевозчик</strong>
+      <p>ООО "ТРАНС СЕРВИС" Неоплан 112</p>
+    </div>
+  </div>
+  <div class="footer-collapse-result d-flex align-items-center">
+    <h5>Прямой</h5>
+    <ul>
+      <li>Пересадка <strong>в смоленске</strong></li>
+      <li>Ожидание 
+        <string>1h 30m</string>
+      </li>
+    </ul>
+  </div>
+</div>
+  </div>
+  <div class="ticket mt-20">
+<div class="content-result d-flex justify-content-between align-items-center flex-wrap">
+  <div class="col-ticket date-from">
+    <div class="text normal text-center">01.01.2018<span class="bold text-center">19:00</span></div>
+  </div>
+  <div class="col-ticket date-to">
+    <div class="text normal text-center">01.01.2018<span class="bold text-center">19:00</span></div>
+  </div>
+  <div class="col-ticket info d-flex justify-content-center">
+    <div class="text bold text-center">11h 30m<span class="normal text-center">Филиал «Автобусный парк №2» ГП «Минсктранс»</span></div>
+  </div>
+  <div class="col-ticket px-0 options d-flex justify-content-center">
+    <div class="icons"><img src="img/wifi-icon.png" alt="wifi"><img src="img/wc-icon.png" alt="wv"><img src="img/chear-icon.png" alt="chear"><img src="img/electric-icon.png" alt="electric"><img src="img/cond-icon.png" alt="cond" class="condition-img"></div>
+  </div>
+  <div class="col-ticket px-0 price">
+    <div class="text bold"> 35,00 BYN</div>
+  </div>
+  <div class="col-ticket px-0 best">
+    <div class="img"><img src="img/best.png" alt="">
+      <div class="tooltip-best">Самое выгодное предложение</div>
+    </div>
+  </div>
+  <div class="col-ticket px-0 submit d-flex justify-content-center flex-wrap"><a href="#" class="light">Купить</a>
+    <div class="after-text">Акционных мест 30</div>
+  </div>
+</div>
+<div class="collapse-result">
+  <div class="heading-collapse-result d-flex align-items-center justify-content-center"><img src="img/bus.png" alt="bus">
+    <h2 class="pl-2">Москва - минск</h2>
+  </div>
+  <div class="main-content-collapse-result d-flex">
+    <div class="col-ticket">
+      <div class="arrow-red"></div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center date-font-size">01.01.2018<br><strong>19:30</strong></p>
+      </div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center">пересадка<br>ожидание<br><strong class="date-font-size">1:30</strong></p>
+      </div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center date-font-size">02.01.2018<br><strong>06:30</strong></p>
+      </div>
+    </div>
+    <div class="col-ticket">
+      <div class="row-ticket">
+        <h4 class="pb-2">Москва</h4>
+        <p>Логистическая компания "Белинтранс" ул. Кроснодарская д.2</p>
+      </div>
+      <div class="row-ticket d-flex align-items-center">
+        <h4>Смоленск</h4>
+      </div>
+      <div class="row-ticket">
+        <h4 class="pb-2">Минск</h4>
+        <p>Оставновка метро Беларусская, Улица бутыркская</p>
+      </div>
+    </div>
+    <div class="col-ticket"><strong class="d-block pb-2 font-size-16">Дополнительно</strong>
+      <ul class="px-4">
+        <li> Duis labore sunt excepteur do veniam ea amet nostrud id irure ipsum anim. </li>
+        <li> Pariatur qui culpa in labore ullamco exercitation tempor.</li>
+        <li> Adipisicing est reprehenderit voluptate labore sint ipsum ad in fugiat velit id.</li>
+        <li> Qui dolor qui ullamco id in voluptate quis non magna.</li>
+        <li> Adipisicing magna anim qui commodo non officia sit adipisicing nisi duis aliquip amet.</li>
+        <li> Irure anim qui reprehenderit ad nostrud qui magna nisi consectetur incididunt occaecat deserunt quis consectetur.</li>
+        <li> Irure dolore aliquip fugiat id adipisicing cupidatat quis minim deserunt excepteur minim enim Lorem.</li>
+        <li> Exercitation commodo pariatur laborum elit aute dolor amet dolore eu fugiat commodo.</li>
+        <li> In non velit eiusmod deserunt cillum ullamco.</li>
+        <li> Esse occaecat aliqua enim mollit ex ipsum cillum adipisicing exercitation labore fugiat cupidatat eu ut.</li>
+      </ul>
+    </div>
+    <div class="col-ticket"><strong class="d-block pb-2 font-size-16">Перевозчик</strong>
+      <p>ООО "ТРАНС СЕРВИС" Неоплан 112</p>
+    </div>
+  </div>
+  <div class="footer-collapse-result d-flex align-items-center">
+    <h5>Прямой</h5>
+    <ul>
+      <li>Пересадка <strong>в смоленске</strong></li>
+      <li>Ожидание 
+        <string>1h 30m</string>
+      </li>
+    </ul>
+  </div>
+</div>
+  </div>
+  <div class="ticket mt-20">
+<div class="content-result d-flex justify-content-between align-items-center flex-wrap">
+  <div class="col-ticket date-from">
+    <div class="text normal text-center">01.01.2018<span class="bold text-center">19:00</span></div>
+  </div>
+  <div class="col-ticket date-to">
+    <div class="text normal text-center">01.01.2018<span class="bold text-center">19:00</span></div>
+  </div>
+  <div class="col-ticket info d-flex justify-content-center">
+    <div class="text bold text-center">11h 30m<span class="normal text-center">Филиал «Автобусный парк №2» ГП «Минсктранс»</span></div>
+  </div>
+  <div class="col-ticket px-0 options d-flex justify-content-center">
+    <div class="icons"><img src="img/wifi-icon.png" alt="wifi"><img src="img/wc-icon.png" alt="wv"><img src="img/chear-icon.png" alt="chear"><img src="img/electric-icon.png" alt="electric"><img src="img/cond-icon.png" alt="cond" class="condition-img"></div>
+  </div>
+  <div class="col-ticket px-0 price">
+    <div class="text bold"> 35,00 BYN</div>
+  </div>
+  <div class="col-ticket px-0 best">
+    <div class="img"><img src="img/best.png" alt="">
+      <div class="tooltip-best">Самое выгодное предложение</div>
+    </div>
+  </div>
+  <div class="col-ticket px-0 submit d-flex justify-content-center flex-wrap"><a href="#" class="light">Купить</a>
+    <div class="after-text">Акционных мест 30</div>
+  </div>
+</div>
+<div class="collapse-result">
+  <div class="heading-collapse-result d-flex align-items-center justify-content-center"><img src="img/bus.png" alt="bus">
+    <h2 class="pl-2">Москва - минск</h2>
+  </div>
+  <div class="main-content-collapse-result d-flex">
+    <div class="col-ticket">
+      <div class="arrow-red"></div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center date-font-size">01.01.2018<br><strong>19:30</strong></p>
+      </div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center">пересадка<br>ожидание<br><strong class="date-font-size">1:30</strong></p>
+      </div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center date-font-size">02.01.2018<br><strong>06:30</strong></p>
+      </div>
+    </div>
+    <div class="col-ticket">
+      <div class="row-ticket">
+        <h4 class="pb-2">Москва</h4>
+        <p>Логистическая компания "Белинтранс" ул. Кроснодарская д.2</p>
+      </div>
+      <div class="row-ticket d-flex align-items-center">
+        <h4>Смоленск</h4>
+      </div>
+      <div class="row-ticket">
+        <h4 class="pb-2">Минск</h4>
+        <p>Оставновка метро Беларусская, Улица бутыркская</p>
+      </div>
+    </div>
+    <div class="col-ticket"><strong class="d-block pb-2 font-size-16">Дополнительно</strong>
+      <ul class="px-4">
+        <li> Duis labore sunt excepteur do veniam ea amet nostrud id irure ipsum anim. </li>
+        <li> Pariatur qui culpa in labore ullamco exercitation tempor.</li>
+        <li> Adipisicing est reprehenderit voluptate labore sint ipsum ad in fugiat velit id.</li>
+        <li> Qui dolor qui ullamco id in voluptate quis non magna.</li>
+        <li> Adipisicing magna anim qui commodo non officia sit adipisicing nisi duis aliquip amet.</li>
+        <li> Irure anim qui reprehenderit ad nostrud qui magna nisi consectetur incididunt occaecat deserunt quis consectetur.</li>
+        <li> Irure dolore aliquip fugiat id adipisicing cupidatat quis minim deserunt excepteur minim enim Lorem.</li>
+        <li> Exercitation commodo pariatur laborum elit aute dolor amet dolore eu fugiat commodo.</li>
+        <li> In non velit eiusmod deserunt cillum ullamco.</li>
+        <li> Esse occaecat aliqua enim mollit ex ipsum cillum adipisicing exercitation labore fugiat cupidatat eu ut.</li>
+      </ul>
+    </div>
+    <div class="col-ticket"><strong class="d-block pb-2 font-size-16">Перевозчик</strong>
+      <p>ООО "ТРАНС СЕРВИС" Неоплан 112</p>
+    </div>
+  </div>
+  <div class="footer-collapse-result d-flex align-items-center">
+    <h5>Прямой</h5>
+    <ul>
+      <li>Пересадка <strong>в смоленске</strong></li>
+      <li>Ожидание 
+        <string>1h 30m</string>
+      </li>
+    </ul>
+  </div>
+</div>
+  </div>
+  <div class="ticket mt-20">
+<div class="content-result d-flex justify-content-between align-items-center flex-wrap">
+  <div class="col-ticket date-from">
+    <div class="text normal text-center">01.01.2018<span class="bold text-center">19:00</span></div>
+  </div>
+  <div class="col-ticket date-to">
+    <div class="text normal text-center">01.01.2018<span class="bold text-center">19:00</span></div>
+  </div>
+  <div class="col-ticket info d-flex justify-content-center">
+    <div class="text bold text-center">11h 30m<span class="normal text-center">Филиал «Автобусный парк №2» ГП «Минсктранс»</span></div>
+  </div>
+  <div class="col-ticket px-0 options d-flex justify-content-center">
+    <div class="icons"><img src="img/wifi-icon.png" alt="wifi"><img src="img/wc-icon.png" alt="wv"><img src="img/chear-icon.png" alt="chear"><img src="img/electric-icon.png" alt="electric"><img src="img/cond-icon.png" alt="cond" class="condition-img"></div>
+  </div>
+  <div class="col-ticket px-0 price">
+    <div class="text bold"> 35,00 BYN</div>
+  </div>
+  <div class="col-ticket px-0 best">
+    <div class="img"><img src="img/best.png" alt="">
+      <div class="tooltip-best">Самое выгодное предложение</div>
+    </div>
+  </div>
+  <div class="col-ticket px-0 submit d-flex justify-content-center flex-wrap"><a href="#" class="light">Купить</a>
+    <div class="after-text">Акционных мест 30</div>
+  </div>
+</div>
+<div class="collapse-result">
+  <div class="heading-collapse-result d-flex align-items-center justify-content-center"><img src="img/bus.png" alt="bus">
+    <h2 class="pl-2">Москва - минск</h2>
+  </div>
+  <div class="main-content-collapse-result d-flex">
+    <div class="col-ticket">
+      <div class="arrow-red"></div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center date-font-size">01.01.2018<br><strong>19:30</strong></p>
+      </div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center">пересадка<br>ожидание<br><strong class="date-font-size">1:30</strong></p>
+      </div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center date-font-size">02.01.2018<br><strong>06:30</strong></p>
+      </div>
+    </div>
+    <div class="col-ticket">
+      <div class="row-ticket">
+        <h4 class="pb-2">Москва</h4>
+        <p>Логистическая компания "Белинтранс" ул. Кроснодарская д.2</p>
+      </div>
+      <div class="row-ticket d-flex align-items-center">
+        <h4>Смоленск</h4>
+      </div>
+      <div class="row-ticket">
+        <h4 class="pb-2">Минск</h4>
+        <p>Оставновка метро Беларусская, Улица бутыркская</p>
+      </div>
+    </div>
+    <div class="col-ticket"><strong class="d-block pb-2 font-size-16">Дополнительно</strong>
+      <ul class="px-4">
+        <li> Duis labore sunt excepteur do veniam ea amet nostrud id irure ipsum anim. </li>
+        <li> Pariatur qui culpa in labore ullamco exercitation tempor.</li>
+        <li> Adipisicing est reprehenderit voluptate labore sint ipsum ad in fugiat velit id.</li>
+        <li> Qui dolor qui ullamco id in voluptate quis non magna.</li>
+        <li> Adipisicing magna anim qui commodo non officia sit adipisicing nisi duis aliquip amet.</li>
+        <li> Irure anim qui reprehenderit ad nostrud qui magna nisi consectetur incididunt occaecat deserunt quis consectetur.</li>
+        <li> Irure dolore aliquip fugiat id adipisicing cupidatat quis minim deserunt excepteur minim enim Lorem.</li>
+        <li> Exercitation commodo pariatur laborum elit aute dolor amet dolore eu fugiat commodo.</li>
+        <li> In non velit eiusmod deserunt cillum ullamco.</li>
+        <li> Esse occaecat aliqua enim mollit ex ipsum cillum adipisicing exercitation labore fugiat cupidatat eu ut.</li>
+      </ul>
+    </div>
+    <div class="col-ticket"><strong class="d-block pb-2 font-size-16">Перевозчик</strong>
+      <p>ООО "ТРАНС СЕРВИС" Неоплан 112</p>
+    </div>
+  </div>
+  <div class="footer-collapse-result d-flex align-items-center">
+    <h5>Прямой</h5>
+    <ul>
+      <li>Пересадка <strong>в смоленске</strong></li>
+      <li>Ожидание 
+        <string>1h 30m</string>
+      </li>
+    </ul>
+  </div>
+</div>
+  </div>
+  <div class="ticket mt-20">
+<div class="content-result d-flex justify-content-between align-items-center flex-wrap">
+  <div class="col-ticket date-from">
+    <div class="text normal text-center">01.01.2018<span class="bold text-center">19:00</span></div>
+  </div>
+  <div class="col-ticket date-to">
+    <div class="text normal text-center">01.01.2018<span class="bold text-center">19:00</span></div>
+  </div>
+  <div class="col-ticket info d-flex justify-content-center">
+    <div class="text bold text-center">11h 30m<span class="normal text-center">Филиал «Автобусный парк №2» ГП «Минсктранс»</span></div>
+  </div>
+  <div class="col-ticket px-0 options d-flex justify-content-center">
+    <div class="icons"><img src="img/wifi-icon.png" alt="wifi"><img src="img/wc-icon.png" alt="wv"><img src="img/chear-icon.png" alt="chear"><img src="img/electric-icon.png" alt="electric"><img src="img/cond-icon.png" alt="cond" class="condition-img"></div>
+  </div>
+  <div class="col-ticket px-0 price">
+    <div class="text bold"> 35,00 BYN</div>
+  </div>
+  <div class="col-ticket px-0 best">
+    <div class="img"><img src="img/best.png" alt="">
+      <div class="tooltip-best">Самое выгодное предложение</div>
+    </div>
+  </div>
+  <div class="col-ticket px-0 submit d-flex justify-content-center flex-wrap"><a href="#" class="light">Купить</a>
+    <div class="after-text">Акционных мест 30</div>
+  </div>
+</div>
+<div class="collapse-result">
+  <div class="heading-collapse-result d-flex align-items-center justify-content-center"><img src="img/bus.png" alt="bus">
+    <h2 class="pl-2">Москва - минск</h2>
+  </div>
+  <div class="main-content-collapse-result d-flex">
+    <div class="col-ticket">
+      <div class="arrow-red"></div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center date-font-size">01.01.2018<br><strong>19:30</strong></p>
+      </div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center">пересадка<br>ожидание<br><strong class="date-font-size">1:30</strong></p>
+      </div>
+      <div class="row-ticket">
+        <p class="mb-0 text-center date-font-size">02.01.2018<br><strong>06:30</strong></p>
+      </div>
+    </div>
+    <div class="col-ticket">
+      <div class="row-ticket">
+        <h4 class="pb-2">Москва</h4>
+        <p>Логистическая компания "Белинтранс" ул. Кроснодарская д.2</p>
+      </div>
+      <div class="row-ticket d-flex align-items-center">
+        <h4>Смоленск</h4>
+      </div>
+      <div class="row-ticket">
+        <h4 class="pb-2">Минск</h4>
+        <p>Оставновка метро Беларусская, Улица бутыркская</p>
+      </div>
+    </div>
+    <div class="col-ticket"><strong class="d-block pb-2 font-size-16">Дополнительно</strong>
+      <ul class="px-4">
+        <li> Duis labore sunt excepteur do veniam ea amet nostrud id irure ipsum anim. </li>
+        <li> Pariatur qui culpa in labore ullamco exercitation tempor.</li>
+        <li> Adipisicing est reprehenderit voluptate labore sint ipsum ad in fugiat velit id.</li>
+        <li> Qui dolor qui ullamco id in voluptate quis non magna.</li>
+        <li> Adipisicing magna anim qui commodo non officia sit adipisicing nisi duis aliquip amet.</li>
+        <li> Irure anim qui reprehenderit ad nostrud qui magna nisi consectetur incididunt occaecat deserunt quis consectetur.</li>
+        <li> Irure dolore aliquip fugiat id adipisicing cupidatat quis minim deserunt excepteur minim enim Lorem.</li>
+        <li> Exercitation commodo pariatur laborum elit aute dolor amet dolore eu fugiat commodo.</li>
+        <li> In non velit eiusmod deserunt cillum ullamco.</li>
+        <li> Esse occaecat aliqua enim mollit ex ipsum cillum adipisicing exercitation labore fugiat cupidatat eu ut.</li>
+      </ul>
+    </div>
+    <div class="col-ticket"><strong class="d-block pb-2 font-size-16">Перевозчик</strong>
+      <p>ООО "ТРАНС СЕРВИС" Неоплан 112</p>
+    </div>
+  </div>
+  <div class="footer-collapse-result d-flex align-items-center">
+    <h5>Прямой</h5>
+    <ul>
+      <li>Пересадка <strong>в смоленске</strong></li>
+      <li>Ожидание 
+        <string>1h 30m</string>
+      </li>
+    </ul>
+  </div>
+</div>
+  </div>
+</div>
+      <div class="py-75">
+<div id="more-info" class="d-flex flex-wrap">
+  <div class="navigation">
+    <ul>
+      <li><a href="#">О маршруте</a></li>
+      <li class="active"> <a href="#">Это интересно</a></li>
+    </ul>
+  </div>
+  <div class="content-tab p-50">
+    <div class="d-flex justify-content-center justify-content-lg-between">
+      <div class="margin-right">
+<div class="card-rent">
+  <div class="col-rent">рейс</div>
+  <div class="col-rent">москва - минск</div>
+  <div class="col-rent border-bottom-gray mx-3 py-4">
+    <h4>Выезд из минска</h4>
+    <h3>19:30</h3>
+    <p><strong>автозвакзал центальный</strong><br>ст. м. Площадь Ленина,<br>ул. Бобруйская, 6</p>
+  </div>
+  <div class="col-rent mx-3 py-4">
+    <h4>Прибытие в москву</h4>
+    <h3>19:30</h3>
+    <p><strong>автозвакзал центальный</strong><br>ст. м. Площадь Ленина,<br>ул. Бобруйская, 6</p>
+  </div>
+  <div class="col-rent">ежедневно</div>
+  <div class="col-rent d-flex justify-content-between align-items-center py-0 px-2">
+    <div class="price">40.00 BYN</div>
+    <div class="submit">КУПИТЬ</div>
+  </div>
+</div>
+      </div>
+<div class="card-rent">
+  <div class="col-rent">рейс</div>
+  <div class="col-rent">москва - минск</div>
+  <div class="col-rent border-bottom-gray mx-3 py-4">
+    <h4>Выезд из минска</h4>
+    <h3>19:30</h3>
+    <p><strong>автозвакзал центальный</strong><br>ст. м. Площадь Ленина,<br>ул. Бобруйская, 6</p>
+  </div>
+  <div class="col-rent mx-3 py-4">
+    <h4>Прибытие в москву</h4>
+    <h3>19:30</h3>
+    <p><strong>автозвакзал центальный</strong><br>ст. м. Площадь Ленина,<br>ул. Бобруйская, 6</p>
+  </div>
+  <div class="col-rent">ежедневно</div>
+  <div class="col-rent d-flex justify-content-between align-items-center py-0 px-2">
+    <div class="price">40.00 BYN</div>
+    <div class="submit">КУПИТЬ</div>
+  </div>
+</div>
+    </div>
+<div class="card-rent-2 d-flex flex-wrap py-3">
+  <div class="col-rent-2 d-flex justify-content-center align-items-center">
+    <div class="content d-flex border-right w-100 h-100 align-items-center py-3 justify-content-center">
+      <div class="img"><img src="img/big-wifi.png" alt="wifi">
+        <p>Wi-fi</p>
+      </div>
+      <div class="img"><img src="img/dog.png" alt="dog">
+        <p>Домашние Животные</p>
+      </div>
+      <div class="img"><img src="img/pled.png" alt="pled">
+        <p>Плед и подушка</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-rent-2 d-flex align-items-center flex-column justify-content-center">
+    <h4>Скидки</h4>
+    <h5>Специальная цена:</h5>
+    <ul>
+      <li>Детям <strong>до 12 лет </strong>— <span> -50%</span></li>
+      <li>Молодежи <strong>до 26 лет </strong>— <span>-10%</span></li>
+      <li>Лица старше <strong>60 лет </strong>— <span> -10% </span></li>
+    </ul>
+  </div>
+</div>
+  </div>
+  <div class="content-tab active p-50"><img src="img/moskow-img.jpg" alt="img">
+    <p class="py-4"><strong>Москва является крупнейшим центром российской экономики: </strong>здесь расположены штаб-квартиры большинства крупных компаний — как российских, так и транснациональных; более половины центральных офисов российских банков. В Москве и Подмосковье значительно развита промышленность, в частности — приборостроение, машиностроение, металлургическая промышленность, лёгкая, химическая, пищевая промышленность. В последнее десятилетие наблюдается тенденция вывода промышленных предприятий за пределы города.</p>
+    <p>Москва имеет огромное значение в масштабах всей России в качестве транспортного узла. В черте города и в Московской области расположен ряд крупных аэропортов: Внуково, Домодедово, Остафьево, Чкаловский, Быково, Шереметьево. Кроме того, в Москве имеется девять ж/д вокзалов (Белорусский, Казанский, Курский, Киевский, Павелецкий, Рижский, Савёловский, Ярославский, Ленинградский) и три речных порта. Московский метрополитен был пущен в эксплуатацию в 1935 году, в настоящее время он является мировым лидером по величине пассажиропотока (более восьми миллионов пассажиров в сутки), разветвлённости и суммарной протяжённости. Внутренняя транспортная инфраструктура Москвы представлена развитой системой, состоящей из трёх транспортных колец: МКАД, Садового и Третьего транспортного.</p>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid px-0 header-block-blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-3 order-sm py-2">
+        <ul class="text-left">
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Faq</a></li>
+          <li><a href="#">Заказ билетов</a></li>
+          <li><a href="#">Перевозчикам</a></li>
+          <li><a href="#">Сотрудничество</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-6 d-xs-flex justify-content-center px-0 py-2">
+        <div class="contacts">
+          <div class="social"><a href="#"><img src="img/footer-insta.png" alt="insta" class="not-hover"><img src="img/insta-hover.png" alt="insta" class="position-absoulute"></a><a href="#"><img src="img/footer-fb.png" alt="" class="not-hover"><img src="img/fb-hover.png" alt="insta" class="position-absoulute"></a><a href="#"><img src="img/footer-vk.png" alt="" class="not-hover"><img src="img/vk-hover.png" alt="insta" class="position-absoulute"></a><a href="#"><img src="img/footer-tw.png" alt="" class="not-hover"><img src="img/tw-hover.png" alt="insta" class="position-absoulute"></a></div>
+          <div class="contact mt-4">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="col-5 px-0 text-right"><span>+375 55 <b>555-71-21</b></span></div>
+              <div class="col-2 px-0"><img src="img/footer-phone.png" alt="phone"></div>
+              <div class="col-5 px-0 text-left"><span>+375 55 <b>555-71-21</b></span></div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="col-5 px-0 my-4 text-right"><b>22006, г.Минск</b></div>
+              <div class="col-2 px-0"><img src="img/footer-home.png" alt="office"></div>
+              <div class="col-5 px-0 text-left"><span>ул. Бобройская 21, п.24</span></div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="offset-5 col-2 px-0"><img src="img/footer-mail.png" alt="mail"></div>
+              <div class="col-5 px-0 text-left"><span>ntercars@intercars.ru</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3 py-2">
+        <ul class="text-left text-md-right">
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Программа лояльности</a></li>
+          <li><a href="#">Правила</a></li>
+          <li><a href="#">Оплата</a></li>
+          <li><a href="#">Аренда</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="container time-work">
+  <h4>Время работы сайты 24/7    </h4>
+</div>
+<div class="container-fluid copyright">
+  <div class="text">© 2018, COOO "Интеркарс Европа", <span> Республика Беларусь, г.Минск, ул. Бобройская, 21 п.24, УНП 190515685  </span></div>
+</div>
+  <script type="text/javascript" src="main.js"></script></body>
+  <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js")          
+  -->
+</html>
