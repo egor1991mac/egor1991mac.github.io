@@ -103,7 +103,7 @@ body {
       .container-main-page header .top-nav .row-custom {
         border-bottom: 1px solid white;
         width: 100%;
-        /* position: relative; */
+        position: relative;
         display: flex;
         box-sizing: border-box;
         }
