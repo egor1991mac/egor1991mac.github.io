@@ -105,8 +105,6 @@
     font-weight: bold; }
   .ticket.active .content-result {
     background: #c0eafa; }
-    .ticket.active .content-result .small-after-text {
-      display: none; }
   .ticket.active .collapse-result {
     display: block; }
   .ticket .small-after-text {
@@ -339,7 +337,8 @@
       background-repeat: no-repeat;
       width: 20px;
       background-position-y: center;
-      height: 20px; }
+      height: 20px;
+      cursor: pointer; }
       .form-2 .form-2-item .button-reverse:active {
         transform: rotate(180deg);
         transition: 0.3s transform; }
@@ -977,7 +976,8 @@
         background-repeat: no-repeat;
         width: 20px;
         background-position-y: center;
-        height: 20px; }
+        height: 20px;
+        cursor: pointer; }
         #form-bus .form .form-item .button-reverse:active {
           transform: rotate(180deg);
           transition: 0.3s transform; }
@@ -1877,6 +1877,23 @@ footer {
     display: flex; }
     .navigation ul li {
       width: 50%; } }
+
+@media (max-width: 420px) {
+  .navigation, .content-tab {
+    width: 100%; }
+  .navigation ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; }
+    .navigation ul li.active {
+      width: 100%;
+      padding: 0;
+      justify-content: center;
+      height: 50px;
+      padding-top: 20px; }
+      .navigation ul li.active a {
+        font-size: 30px; } }
 .card-rent {
   border: 2px solid #00468e;
   box-sizing: border-box;
