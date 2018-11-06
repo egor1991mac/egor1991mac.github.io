@@ -4,7 +4,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
 .pr-53{
-    padding-right:53px;
+    padding-right:53px !important; 
 }
 .container-main-page {
   /* Style for "white bg" */
