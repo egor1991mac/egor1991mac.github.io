@@ -3,7 +3,9 @@ body {
   background: #e5e5df;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
-
+.pr-53{
+    padding-right:53px;
+}
 .container-main-page {
   /* Style for "white bg" */
   width: 1004px;
@@ -104,9 +106,7 @@ body {
         border-bottom: 1px solid white;
         width: 100%;
         position: relative;
-        display: flex;
-        box-sizing: border-box;
-        }
+        display: flex; }
         .container-main-page header .top-nav .row-custom a {
           line-height: 33px;
           height: 33px;
@@ -142,8 +142,7 @@ body {
             border-right: none; }
         .container-main-page header .top-nav .row-custom:nth-child(1) .pd-r-45 {
           padding-right: 13.19%; }
-        .container-main-page header .top-nav .row-custom:nth-child(2) .pd-r-45 {
-          padding-right: 5.18%; }
+      
     .container-main-page header .top-slider {
       margin-top: 3px;
       position: relative; }
