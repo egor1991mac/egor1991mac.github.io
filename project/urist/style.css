@@ -4,7 +4,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
 .pr-53{
-    padding-right:53px !important; 
+    padding-right: 53.5px !important;
 }
 .container-main-page {
   /* Style for "white bg" */
@@ -138,10 +138,13 @@ body {
           .container-main-page header .top-nav .row-custom a.pd-l-45 {
             padding-left: 45px; }
           .container-main-page header .top-nav .row-custom a.pd-r-45 {
-            padding-right: 20.3%;
-            border-right: none; }
+            padding-right: 204.5px;
+            border-right: none;
+            }
         .container-main-page header .top-nav .row-custom:nth-child(1) .pd-r-45 {
-          padding-right: 13.19%; }
+          padding-right: 134px;
+          overflow: hidden;
+          }
       
     .container-main-page header .top-slider {
       margin-top: 3px;
