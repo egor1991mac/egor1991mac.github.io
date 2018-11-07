@@ -1478,6 +1478,12 @@ h3 {
   flex-wrap: wrap;
   margin-top: 30px;
   min-height: 100px; }
+  .content h5 {
+    font-size: 20px;
+    font-family: "Roboto";
+    color: #333333;
+    line-height: 1.5;
+    text-align: center; }
   .content .color-blue {
     color: #00468e; }
   .content .find-all:hover {
@@ -1501,6 +1507,20 @@ h3 {
       padding-bottom: 2rem; }
     .content .col-main img {
       display: block; }
+    .content .col-main .links-file a {
+      display: flex;
+      align-items: center;
+      padding-bottom: 14px; }
+      .content .col-main .links-file a:last-child {
+        padding-bottom: 0; }
+      .content .col-main .links-file a:before {
+        content: '';
+        display: block;
+        background: url(img/doc.png);
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+        margin-right: 20px; }
     .content .col-main .blockqoute {
       background: #f2f2f2;
       text-align: center;
@@ -1512,6 +1532,14 @@ h3 {
       font-size: 20px;
       line-height: 1.5;
       font-weight: 500; }
+      .content .col-main .blockqoute .td-block {
+        width: 50%; }
+        @media (max-width: 950px) {
+          .content .col-main .blockqoute .td-block ul li {
+            font-size: 16px; } }
+        @media (max-width: 568px) {
+          .content .col-main .blockqoute .td-block {
+            width: 100%; } }
       .content .col-main .blockqoute ul {
         list-style: none;
         display: flex;
@@ -1573,6 +1601,9 @@ h3 {
       .content .col-sidebar img {
         flex-wrap: wrap;
         height: 100%; } }
+
+.text-cap {
+  text-transform: capitalize; }
 
 .pt-75 {
   padding: 75px 0 80px; }
