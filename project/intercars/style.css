@@ -1473,6 +1473,41 @@ h3 {
 .ui-datepicker-calendar td {
   padding: 5px; }
 
+.d1 {
+  text-align: center;
+  font-size: 150px;
+  line-height: 150px;
+  font-family: "Roboto";
+  color: #333333;
+  font-weight: bold;
+  background: #f2f2f2;
+  width: 100%;
+  padding: 25px 0; }
+  @media (max-width: 420px) {
+    .d1 {
+      font-size: 100px; } }
+
+.d2 {
+  font-size: 32px;
+  font-family: "Roboto";
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+  width: 100%; }
+  @media (max-width: 420px) {
+    .d2 {
+      font-size: 18px; } }
+
+.d3 {
+  font-size: 18px;
+  font-family: "Roboto";
+  color: #333333;
+  line-height: 18px;
+  text-align: center; }
+  @media (max-width: 420px) {
+    .d3 {
+      font-size: 14px; } }
+
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -1502,7 +1537,7 @@ h3 {
       font-family: "Roboto";
       color: #333333;
       font-weight: bold;
-      line-height: 0.786;
+      line-height: 28px;
       text-align: left;
       padding-bottom: 2rem; }
     .content .col-main img {
@@ -1601,6 +1636,10 @@ h3 {
       .content .col-sidebar img {
         flex-wrap: wrap;
         height: 100%; } }
+
+hr {
+  background: #dfe1e2;
+  width: 60%; }
 
 .text-cap {
   text-transform: capitalize; }
