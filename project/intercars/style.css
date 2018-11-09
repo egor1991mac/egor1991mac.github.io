@@ -2704,7 +2704,8 @@ footer {
       width: 20px;
       height: 5px;
       background: #00468e;
-      margin-right: 20px; }
+      margin-right: 20px;
+      cursor: pointer; }
       #buyTicket .form-pessenger .header-form .remove-button:active {
         transform: scale(0.5);
         transition: 0.3s transform; }
