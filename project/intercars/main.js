@@ -337,6 +337,29 @@ eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./sr
 
 /***/ }),
 
+/***/ "./src/components/formbuyticket/index.js":
+/*!***********************************************!*\
+  !*** ./src/components/formbuyticket/index.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("/* WEBPACK VAR INJECTION */(function($) {\n\n__webpack_require__(/*! ./style.scss */ \"./src/components/formbuyticket/style.scss\");\n\n$(document).ready(function () {\n    var button = document.querySelector('#addPassenger');\n    var form = document.querySelectorAll('.form-pessenger');\n    var number = document.querySelector('#buyTicket .number');\n    var remove = document.querySelectorAll('.remove-button');\n    if (form) {\n        button.onclick = function (e) {\n            e.preventDefault();\n            if (parseInt(number.innerText) < 3) {\n                var count = parseInt(number.innerText) + 1;\n                number.innerText = count;\n                form[count - 1].parentNode.classList.remove('d-none');\n            }\n        };\n        [].slice.call(remove).forEach(function (item) {\n            item.onclick = function (e) {\n                if (parseInt(number.innerText) > 1) {\n                    var count = parseInt(number.innerText) - 1;\n                    number.innerText = count;\n                    form[count].parentNode.classList.add('d-none');\n                }\n            };\n        });\n    }\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/components/formbuyticket/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/formbuyticket/style.scss":
+/*!*************************************************!*\
+  !*** ./src/components/formbuyticket/style.scss ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/components/formbuyticket/style.scss?");
+
+/***/ }),
+
 /***/ "./src/components/galery/index.js":
 /*!****************************************!*\
   !*** ./src/components/galery/index.js ***!
@@ -494,7 +517,7 @@ eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./sr
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function($) {\n\n__webpack_require__(/*! ./template.scss */ \"./src/template.scss\");\n\n__webpack_require__(/*! ./components/header/style.scss */ \"./src/components/header/style.scss\");\n\n__webpack_require__(/*! ./components/top-nav/style.scss */ \"./src/components/top-nav/style.scss\");\n\n__webpack_require__(/*! ./components/form-2 */ \"./src/components/form-2/index.js\");\n\n__webpack_require__(/*! ./components/form */ \"./src/components/form/index.js\");\n\n__webpack_require__(/*! ./components/TopDestinationsMainPage */ \"./src/components/TopDestinationsMainPage/index.js\");\n\n__webpack_require__(/*! ./components/paymantMain */ \"./src/components/paymantMain/index.js\");\n\n__webpack_require__(/*! ./components/abouteMainPage */ \"./src/components/abouteMainPage/index.js\");\n\n__webpack_require__(/*! ./components/Bread_crumbs */ \"./src/components/Bread_crumbs/index.js\");\n\n__webpack_require__(/*! ./components/result-tiket */ \"./src/components/result-tiket/index.js\");\n\n__webpack_require__(/*! ./pages/search_ticket/style.scss */ \"./src/pages/search_ticket/style.scss\");\n\n__webpack_require__(/*! select2/dist/js/select2 */ \"./node_modules/select2/dist/js/select2.js\");\n\n__webpack_require__(/*! ./components/top-nav */ \"./src/components/top-nav/index.js\");\n\n__webpack_require__(/*! ./components/footer */ \"./src/components/footer/index.js\");\n\n__webpack_require__(/*! ./components/OurAdvantages */ \"./src/components/OurAdvantages/index.js\");\n\n__webpack_require__(/*! ./components/more-info */ \"./src/components/more-info/index.js\");\n\n__webpack_require__(/*! ./components/card-rent */ \"./src/components/card-rent/index.js\");\n\n__webpack_require__(/*! ./components/card-rent-2 */ \"./src/components/card-rent-2/index.js\");\n\n__webpack_require__(/*! ./pages/all-diraction */ \"./src/pages/all-diraction/index.js\");\n\n__webpack_require__(/*! ./components/galery */ \"./src/components/galery/index.js\");\n\n__webpack_require__(/*! ./pages/stock */ \"./src/pages/stock/index.js\");\n\n__webpack_require__(/*! ./components/stock-item */ \"./src/components/stock-item/index.js\");\n\n__webpack_require__(/*! ./pages/contact */ \"./src/pages/contact/index.js\");\n\n__webpack_require__(/*! select2 */ \"./node_modules/select2/dist/js/select2.js\");\n\nfunction removeAllClass(node) {\n    for (var i = 0; i < node.length; i++) {\n        node[i].classList.remove('active');\n    }\n}\n\n$(document).ready(function () {\n    $('#lang').select2();\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("/* WEBPACK VAR INJECTION */(function($) {\n\n__webpack_require__(/*! ./template.scss */ \"./src/template.scss\");\n\n__webpack_require__(/*! ./components/header/style.scss */ \"./src/components/header/style.scss\");\n\n__webpack_require__(/*! ./components/top-nav/style.scss */ \"./src/components/top-nav/style.scss\");\n\n__webpack_require__(/*! ./components/form-2 */ \"./src/components/form-2/index.js\");\n\n__webpack_require__(/*! ./components/form */ \"./src/components/form/index.js\");\n\n__webpack_require__(/*! ./components/TopDestinationsMainPage */ \"./src/components/TopDestinationsMainPage/index.js\");\n\n__webpack_require__(/*! ./components/paymantMain */ \"./src/components/paymantMain/index.js\");\n\n__webpack_require__(/*! ./components/abouteMainPage */ \"./src/components/abouteMainPage/index.js\");\n\n__webpack_require__(/*! ./components/Bread_crumbs */ \"./src/components/Bread_crumbs/index.js\");\n\n__webpack_require__(/*! ./components/result-tiket */ \"./src/components/result-tiket/index.js\");\n\n__webpack_require__(/*! ./pages/search_ticket/style.scss */ \"./src/pages/search_ticket/style.scss\");\n\n__webpack_require__(/*! select2/dist/js/select2 */ \"./node_modules/select2/dist/js/select2.js\");\n\n__webpack_require__(/*! ./components/top-nav */ \"./src/components/top-nav/index.js\");\n\n__webpack_require__(/*! ./components/footer */ \"./src/components/footer/index.js\");\n\n__webpack_require__(/*! ./components/OurAdvantages */ \"./src/components/OurAdvantages/index.js\");\n\n__webpack_require__(/*! ./components/more-info */ \"./src/components/more-info/index.js\");\n\n__webpack_require__(/*! ./components/card-rent */ \"./src/components/card-rent/index.js\");\n\n__webpack_require__(/*! ./components/card-rent-2 */ \"./src/components/card-rent-2/index.js\");\n\n__webpack_require__(/*! ./pages/all-diraction */ \"./src/pages/all-diraction/index.js\");\n\n__webpack_require__(/*! ./components/galery */ \"./src/components/galery/index.js\");\n\n__webpack_require__(/*! ./pages/stock */ \"./src/pages/stock/index.js\");\n\n__webpack_require__(/*! ./components/stock-item */ \"./src/components/stock-item/index.js\");\n\n__webpack_require__(/*! ./pages/contact */ \"./src/pages/contact/index.js\");\n\n__webpack_require__(/*! select2 */ \"./node_modules/select2/dist/js/select2.js\");\n\n__webpack_require__(/*! ./components/formbuyticket */ \"./src/components/formbuyticket/index.js\");\n\n__webpack_require__(/*! ./pages/buyTicket */ \"./src/pages/buyTicket/index.js\");\n\nfunction removeAllClass(node) {\n    for (var i = 0; i < node.length; i++) {\n        node[i].classList.remove('active');\n    }\n}\n\n$(document).ready(function () {\n    $('#lang').select2();\n    $('select').select2({\n        placeholder: \"Select a state\"\n    });\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -518,6 +541,18 @@ eval("\n\n__webpack_require__(/*! ./style.scss */ \"./src/pages/all-diraction/st
 /***/ (function(module, exports) {
 
 eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/pages/all-diraction/style.scss?");
+
+/***/ }),
+
+/***/ "./src/pages/buyTicket/index.js":
+/*!**************************************!*\
+  !*** ./src/pages/buyTicket/index.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("/* WEBPACK VAR INJECTION */(function($) {\n\n$(document).ready(function () {});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/pages/buyTicket/index.js?");
 
 /***/ }),
 
