@@ -108,6 +108,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media (max-width: 568px) {
+    main {
+      min-height: 100vh; } }
   main h2 {
     font-size: 90px;
     max-width: 60%;
