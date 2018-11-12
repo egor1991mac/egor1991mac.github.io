@@ -327,9 +327,17 @@ main {
       min-height: 60vh;
       padding-bottom: 20px; } }
   main h2 {
-    font-size: 90px;
+    font-size: 85px;
     max-width: 60%;
     padding-bottom: 30px; }
+    @media (min-height: 900px) {
+      main h2 {
+        font-size: 85px;
+        max-width: 55%; } }
+    @media (max-height: 900px) {
+      main h2 {
+        font-size: 85px;
+        max-width: 80%; } }
     @media (max-width: 1024px) {
       main h2 {
         font-size: 72px;
@@ -337,10 +345,6 @@ main {
     @media (max-width: 768px) {
       main h2 {
         font-size: 58px;
-        max-width: 100%; } }
-    @media (max-height: 900px) {
-      main h2 {
-        font-size: 52px;
         max-width: 100%; } }
     @media (max-width: 420px) {
       main h2 {
