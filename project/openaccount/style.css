@@ -324,8 +324,9 @@ main {
       min-height: 80vh; } }
   @media (max-height: 568px) {
     main {
-      min-height: 60vh;
-      padding-bottom: 20px; } }
+      min-height: 80vh;
+      padding-bottom: 20px;
+      } }
   main h2 {
     font-size: 85px;
     max-width: 60%;
