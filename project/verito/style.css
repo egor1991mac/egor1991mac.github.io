@@ -6727,6 +6727,9 @@ header {
     height: 39px;
     padding: 15px;
     outline: none; }
+    @media (max-width: 991.98px) {
+      #contact_form input, #contact_form textarea {
+        max-width: 100%; } }
   #contact_form textarea {
     height: 100px; }
   #contact_form .button {
