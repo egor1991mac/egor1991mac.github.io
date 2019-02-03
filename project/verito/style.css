@@ -6661,7 +6661,7 @@ header {
       margin: 0; }
       @media screen and (max-width: 440px) {
         #price .banner_text p {
-          max-width: 270px; } }
+          max-width: 260px; } }
       #price .banner_text p span {
         position: relative;
         padding: 0 15px; }
