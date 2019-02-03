@@ -6768,7 +6768,10 @@ header {
       width: 50px;
       height: 50px; }
     #contact .contact-list__item p {
-      width: calc(100% - 50px); }
+      width: calc(100% - 50px);
+      padding: 0;
+      display: flex;
+      align-items: center; }
   #contact .map img {
     max-width: 100%; }
   #contact .map p {
