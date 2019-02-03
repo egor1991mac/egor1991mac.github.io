@@ -6471,6 +6471,9 @@ header {
   #works .header {
     height: 7.5rem;
     margin-right: 6.25rem; }
+    @media (max-width: 767.98px) {
+      #works .header {
+        height: 12.5rem; } }
     #works .header h2 {
       font-size: 3rem;
       color: #262626;
@@ -6490,6 +6493,9 @@ header {
     height: 15rem;
     display: flex;
     align-items: center; }
+    @media (max-width: 767.98px) {
+      #works .works__item {
+        height: 9.375rem; } }
     #works .works__item img {
       width: 6.25rem;
       display: block; }
