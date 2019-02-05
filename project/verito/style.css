@@ -6436,7 +6436,9 @@ header {
       @media (min-width: 992px) {
         #header__content .icons .img:after {
           left: calc(100% + 20px);
-          width: 7.8125rem; } }
+          width: 7.8125rem;
+          max-width: 125px;
+          } }
     #header__content .icons p {
       font-size: 16px;
       color: #fafafa;
@@ -6780,7 +6782,9 @@ header {
       width: calc(100% - 50px);
       padding: 0;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      font-size: 0.875rem;
+      }
   #contact .map img {
     max-width: 100%; }
   #contact .map p {
