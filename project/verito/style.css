@@ -6810,3 +6810,9 @@ footer {
   @media (max-width: 991.98px) {
     .display-md {
       display: block; } }
+.ul_contact{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: calc(100% - 50px);
+}
