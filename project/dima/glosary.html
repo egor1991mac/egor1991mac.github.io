@@ -301,7 +301,7 @@
       </div>
       <div class="_animation_before"></div>
 
-      <div class="container mt-5">
+      <div class="container mt-5 pb-4">
         <nav aria-label class="label breadcrumb">
           <ol class="breadcrumb px-0">
             <li class="breadcrumb-item">
@@ -313,459 +313,388 @@
             </li>
           </ol>
         </nav>
-        <h1 class="h1 my-2 mb-3">
-          Что такое инфляция и как она влияет на нашу жизнь?
+        <h1 class=" h1 my-2 mb-3">
+          Глоссарий
         </h1>
       </div>
-      <ul class="nav nav-tabs nav-tabs-button mt-5" id="myTab1" role="tablist">
-        <li class="nav-item mx-3">
-          <a
-            id="dep-calculator-tab"
-            class="nav-link "
-            data-toggle="tab"
-            href="#dep-calculator"
-            role="tab"
-            aria-controls="dep-calculator"
-            aria-selected="false"
-          >
-            <img src="/img/category/coins.svg" alt="coins" class="tab-img" />
-            <span class="h5 mb-0">Депозитный калькулятор</span>
-          </a>
-        </li>
-        <li class="nav-item mx-3">
-          <a
-            id="cred-calculator-tab"
-            class="nav-link active "
-            data-toggle="tab"
-            href="#cred-calculator"
-            role="tab"
-            aria-controls="cred-calculator"
-            aria-selected="true"
-          >
-            <img src="/img/category/calc.svg" alt="coins" class="tab-img" />
-            <span class="h5 mb-0">Кредитный калькулятор</span>
-          </a>
-        </li>
-      </ul>
     </header>
-    <main>
-      <div class="tab-content wow fadeInUp">
-        <div class="container pb-5 tab-pane" id="dep-calculator" role="tabpanel" aria-labelledby="dep-calculator">
-          <div class="row">
-            <form class="box-shadow">
-              <div class="box-container form-group">
-                <div class="box-item">
-                  <label class="label" for="sum-vklad"
-                    >Сумма вклада
-                    <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
-                    <div class="tooltip bs-tooltip-top" role="tooltip">
-                      <div class="arrow"></div>
-                      <div class="tooltip-inner">
-                        Some tooltip text!
-                      </div>
-                    </div>
-                  </label>
-                  <input type="text" pattern="\d*" class="form-control" id="sum-vklad" placeholder="Сумма вклада" />
-                </div>
-                <div class="box-item--small">
-                  <select name="" id="" class="select2-hook w-100">
-                    <option value="1">value</option>
-                    <option value="2">value1</option>
-                    <option value="3">value2</option>
-                    <option value="4">value3</option>
-                  </select>
-                </div>
-                <div class="box-item">
-                  <label class="label" for=""
-                    >Возможность капитализации
-                    <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
-                    <div class="tooltip bs-tooltip-top" role="tooltip">
-                      <div class="arrow"></div>
-                      <div class="tooltip-inner">
-                        Some tooltip text!
-                      </div>
-                    </div>
-                  </label>
-                  <select name="" id="" class="select2-hook w-100">
-                    <option value="1">value</option>
-                    <option value="2">value1</option>
-                    <option value="3">value2</option>
-                    <option value="4">value3</option>
-                  </select>
-                </div>
-                <div class="box-item--small"></div>
-              </div>
-              <div class="box-container form-group">
-                <div class="box-item">
-                  <label class="label" for=""
-                    >Процентная ставка
-                    <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
-                    <div class="tooltip bs-tooltip-top" role="tooltip">
-                      <div class="arrow"></div>
-                      <div class="tooltip-inner">
-                        Some tooltip text!
-                      </div>
-                    </div>
-                  </label>
-                  <input
-                    type="number"
-                    pattern="\d*"
-                    class="form-control"
-                    id="sum-vklad"
-                    placeholder="Процентная ставка"
-                  />
-                </div>
-                <div class="box-item--small">
-                  <select name="" id="" class="select2-hook w-100">
-                    <option value="1">1</option>
-                    <option value="2">value1</option>
-                    <option value="3">value2</option>
-                    <option value="4">value3</option>
-                  </select>
-                </div>
-                <div class="box-item">
-                  <label class="label" for=""
-                    >Срок размещения вклада
-                    <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
-                    <div class="tooltip bs-tooltip-top" role="tooltip">
-                      <div class="arrow"></div>
-                      <div class="tooltip-inner">
-                        Some tooltip text!
-                      </div>
-                    </div>
-                  </label>
-                  <select name="" id="" class="select2-hook w-100">
-                    <option value="1">value</option>
-                    <option value="2">value1</option>
-                    <option value="3">value2</option>
-                    <option value="4">value3</option>
-                  </select>
-                </div>
-                <div class="box-item--small">
-                  <select name="" id="" class="select2-hook w-100">
-                    <option value="1">value</option>
-                    <option value="2">value1</option>
-                    <option value="3">value2</option>
-                    <option value="4">value3</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <button class="btn btn-primary mx-auto btn-lg">
-                  РАСЧИТАТЬ
-                </button>
-              </div>
-            </form>
+    <main id="glosary">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-9 mx-auto pre wow fadeInUp">
+            <p>
+              Этот словарик, в котором собраны толкования основных финансовых терминов, создан нами прежде всего для
+              пользователей, которые только начинают своё знакомство с финансами. Хотя и бывалым «профи» он тоже может
+              пригодиться.
+            </p>
+            <p>
+              С одной стороны, мы постарались охватить все важные понятия и определения, с другой – задачей было создать
+              небольшой и компактный справочник. Этот словарь пригодится вам для того, чтобы на совещании или
+              конференции, услышав слово, в значении которого вы сомневаетесь, подглядеть в словарик и увериться, что
+              точно понимаете всё, о чем идет речь.
+            </p>
           </div>
+          <div class="col-9 mx-auto d-flex flex-column mt-5 wow fadeInUp">
+            <ul class="nav nav-tabs nav-tabs-button-primary mx-auto" id="myTab1" role="tablist">
+              <li class="nav-item">
+                <a
+                  id="rus-tab"
+                  class="btn  btn-outline-primary active"
+                  data-toggle="tab"
+                  href="#rus"
+                  role="tab"
+                  aria-controls="rus"
+                  aria-selected="false"
+                >
+                  Кирилица
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  id="eng-tab"
+                  class="btn btn-outline-primary"
+                  data-toggle="tab"
+                  href="#eng"
+                  role="tab"
+                  aria-controls="eng"
+                  aria-selected="true"
+                >
+                  Латиница
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="container tab-pane active" id="rus" role="tabpanel" aria-labelledby="rus">
+                <div class="d-flex flex-wrap justify-content-center alphabet mt-4">
+                  <button class="btn btn-outline-primary" disabled>0-9</button>
+                  <button class="btn btn-outline-primary active">а</button>
+                  <button class="btn btn-outline-primary">б</button>
+                  <button class="btn btn-outline-primary" disabled>в</button>
+                  <button class="btn btn-outline-primary">г</button>
+                  <button class="btn btn-outline-primary">д</button>
+                  <button class="btn btn-outline-primary">е</button>
+                  <button class="btn btn-outline-primary" disabled>ё</button>
+                  <button class="btn btn-outline-primary">ж</button>
+                  <button class="btn btn-outline-primary">з</button>
+                  <button class="btn btn-outline-primary">й</button>
+                  <button class="btn btn-outline-primary">и</button>
+                  <button class="btn btn-outline-primary">к</button>
+                  <button class="btn btn-outline-primary">л</button>
+                  <button class="btn btn-outline-primary">м</button>
+                  <button class="btn btn-outline-primary">м</button>
+                  <button class="btn btn-outline-primary">н</button>
+                  <button class="btn btn-outline-primary">о</button>
+                  <button class="btn btn-outline-primary">п</button>
+                  <button class="btn btn-outline-primary">р</button>
+                  <button class="btn btn-outline-primary">с</button>
+                  <button class="btn btn-outline-primary">т</button>
+                  <button class="btn btn-outline-primary">у</button>
+                  <button class="btn btn-outline-primary">ф</button>
+                  <button class="btn btn-outline-primary">x</button>
+                  <button class="btn btn-outline-primary">ц</button>
+                  <button class="btn btn-outline-primary">ч</button>
+                  <button class="btn btn-outline-primary">ш</button>
+                  <button class="btn btn-outline-primary">щ</button>
+                  <button class="btn btn-outline-primary">ъ</button>
+                  <button class="btn btn-outline-primary">ы</button>
+                  <button class="btn btn-outline-primary">ь</button>
+                  <button class="btn btn-outline-primary">э</button>
+                  <button class="btn btn-outline-primary">ю</button>
+                  <button class="btn btn-outline-primary">я</button>
+                  <button class="btn btn-outline-primary">...</button>
+                </div>
+                <div class="row mt-5">
+                  <div class="col-3 mb-4">
+                    <span class="h1">A</span>
+                    <hr />
+                    <ul>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                    </ul>
+                  </div>
 
-          <div class="row">
-            <div class="col-8 mx-auto">
-              <div class="pre">
-                <p>
-                  С помощью депозитного калькулятора вы сможете рассчитать ваш доход от размещения в банке вклада
-                  (депозита) на различные сроки и условия выплаты процентов. Рекомендуем задавать в калькуляторе
-                  условия, приближенные к рыночным на текущий момент.
-                </p>
-                <p>
-                  Обращаясь в банк, проверьте, есть ли у него лицензия Центрального банка РУз, позволяющая привлекать
-                  вклады физических лиц, а также входит ли он в систему страхования вкладов. Помните, что застрахованная
-                  государством сумма вклада (а точнее – всех вкладов и счетов в одном банке) с учетом начисленных
-                  процентов не превышает 100 млн сум.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="container pb-5 tab-pane active"
-          id="cred-calculator"
-          role="tabpanel"
-          aria-labelledby="cred-calculator"
-        >
-          <div class="row">
-            <form class="box-shadow">
-              <div class="box-container form-group">
-                <div class="box-item">
-                  <label class="label" for="sum-vklad"
-                    >Сумма кредита
-                    <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
-                    <div class="tooltip bs-tooltip-top" role="tooltip">
-                      <div class="arrow"></div>
-                      <div class="tooltip-inner">
-                        Some tooltip text!
-                      </div>
-                    </div>
-                  </label>
-                  <input type="text" pattern="\d*" class="form-control" id="sum-vklad" placeholder="Сумма кредита" />
-                </div>
-                <div class="box-item--small">
-                  <select name="" id="" class="select2-hook w-100">
-                    <option value="1">value</option>
-                    <option value="2">value1</option>
-                    <option value="3">value2</option>
-                    <option value="4">value3</option>
-                  </select>
-                </div>
-                <div class="box-item">
-                  <label class="label" for="sum-vklad"
-                    >Первоначальный взнос
-                    <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
-                    <div class="tooltip bs-tooltip-top" role="tooltip">
-                      <div class="arrow"></div>
-                      <div class="tooltip-inner">
-                        Some tooltip text!
-                      </div>
-                    </div>
-                  </label>
-                  <input
-                    type="text"
-                    pattern="\d*"
-                    class="form-control"
-                    id="sum-vklad"
-                    placeholder="Первоначальный взнос"
-                  />
-                </div>
-                <div class="box-item--small">
-                  <div class="form-control without-border d-flex align-items-center" style="white-space: nowrap">
-                    = 7 200 000
-                    <span class="ml-1 small">
-                      сум
-                    </span>
+                  <div class="col-3 mb-4">
+                    <span class="h1">A</span>
+                    <hr />
+                    <ul>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 mb-4">
+                    <span class="h1">Б</span>
+                    <hr />
+                    <ul>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 mb-4">
+                    <span class="h1">В</span>
+                    <hr />
+                    <ul>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 mb-4">
+                    <span class="h1">Г</span>
+                    <hr />
+                    <ul>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 mb-4">
+                    <span class="h1">Д</span>
+                    <hr />
+                    <ul>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 mb-4">
+                    <span class="h1">Е</span>
+                    <hr />
+                    <ul>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 mb-4">
+                    <span class="h1">Ж</span>
+                    <hr />
+                    <ul>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div class="box-container form-group">
-                <div class="box-item">
-                  <label class="label" for="sum-vklad"
-                    >Процентная ставка
-                    <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
-                    <div class="tooltip bs-tooltip-top" role="tooltip">
-                      <div class="arrow"></div>
-                      <div class="tooltip-inner">
-                        Some tooltip text!
-                      </div>
-                    </div>
-                  </label>
-                  <input
-                    type="text"
-                    pattern="\d*"
-                    class="form-control"
-                    id="sum-vklad"
-                    placeholder="Процентная ставка"
-                  />
+              <div class="container  tab-pane" id="eng" role="tabpanel" aria-labelledby="eng">
+                <div class="d-flex flex-wrap justify-content-center alphabet mt-4">
+                  <button class="btn btn-outline-primary" disabled>0-9</button>
+                  <button class="btn btn-outline-primary active">a</button>
+                  <button class="btn btn-outline-primary">b</button>
+                  <button class="btn btn-outline-primary" disabled>d</button>
+                  <button class="btn btn-outline-primary">e</button>
+                  <button class="btn btn-outline-primary">f</button>
+                  <button class="btn btn-outline-primary">g</button>
+                  <button class="btn btn-outline-primary" disabled>h</button>
+                  <button class="btn btn-outline-primary">i</button>
+                  <button class="btn btn-outline-primary">j</button>
+                  <button class="btn btn-outline-primary">k</button>
+                  <button class="btn btn-outline-primary">l</button>
+                  <button class="btn btn-outline-primary">m</button>
+                  <button class="btn btn-outline-primary">n</button>
+                  <button class="btn btn-outline-primary">o</button>
+                  <button class="btn btn-outline-primary">p</button>
+                  <button class="btn btn-outline-primary">q</button>
+                  <button class="btn btn-outline-primary">r</button>
+                  <button class="btn btn-outline-primary">s</button>
+                  <button class="btn btn-outline-primary">t</button>
+                  <button class="btn btn-outline-primary">u</button>
+                  <button class="btn btn-outline-primary">v</button>
+                  <button class="btn btn-outline-primary">w</button>
+                  <button class="btn btn-outline-primary">x</button>
+                  <button class="btn btn-outline-primary">y</button>
+                  <button class="btn btn-outline-primary">z</button>
+                  <button class="btn btn-outline-primary">...</button>
                 </div>
-                <div class="box-item--small">
-                  <select name="" id="" class="select2-hook w-100">
-                    <option value="1">value</option>
-                    <option value="2">value1</option>
-                    <option value="3">value2</option>
-                    <option value="4">value3</option>
-                  </select>
+                <div class="row mt-5">
+                  <div class="col-3 mb-4">
+                    <span class="h1">A</span>
+                    <hr />
+                    <ul>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 mb-4">
+                    <span class="h1">B</span>
+                    <hr />
+                    <ul>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 mb-4">
+                    <span class="h1">C</span>
+                    <hr />
+                    <ul>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 mb-4">
+                    <span class="h1">D</span>
+                    <hr />
+                    <ul>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 mb-4">
+                    <span class="h1">E</span>
+                    <hr />
+                    <ul>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 mb-4">
+                    <span class="h1">F</span>
+                    <hr />
+                    <ul>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 mb-4">
+                    <span class="h1">G</span>
+                    <hr />
+                    <ul>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 mb-4">
+                    <span class="h1">H</span>
+                    <hr />
+                    <ul>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="box-item">
-                  <label class="label" for="sum-vklad"
-                    >Порядок погашения
-                    <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
-                    <div class="tooltip bs-tooltip-top" role="tooltip">
-                      <div class="arrow"></div>
-                      <div class="tooltip-inner">
-                        Some tooltip text!
-                      </div>
-                    </div>
-                  </label>
-                  <select name="" id="" class="select2-hook w-100">
-                    <option value="1">value</option>
-                    <option value="2">value1</option>
-                    <option value="3">value2</option>
-                    <option value="4">value3</option>
-                  </select>
-                </div>
-                <div class="box-item--small"></div>
-              </div>
-              <div class="box-container form-group">
-                <div class="box-item">
-                  <label class="label" for="sum-vklad"
-                    >Период кредитования
-                    <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
-                    <div class="tooltip bs-tooltip-top" role="tooltip">
-                      <div class="arrow"></div>
-                      <div class="tooltip-inner">
-                        Some tooltip text!
-                      </div>
-                    </div>
-                  </label>
-                  <input type="text" pattern="\d*" class="form-control" id="sum-vklad" placeholder="Сумма вклада" />
-                </div>
-                <div class="box-item--small">
-                  <select name="" id="" class="select2-hook w-100">
-                    <option value="1">value</option>
-                    <option value="2">value1</option>
-                    <option value="3">value2</option>
-                    <option value="4">value3</option>
-                  </select>
-                </div>
-                <div class="box-item">
-                  <label class="label" for="sum-vklad"
-                    >Периодичность погашения
-                    <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
-                    <div class="tooltip bs-tooltip-top" role="tooltip">
-                      <div class="arrow"></div>
-                      <div class="tooltip-inner">
-                        Some tooltip text!
-                      </div>
-                    </div>
-                  </label>
-                  <select name="" id="" class="select2-hook w-100">
-                    <option value="1">value</option>
-                    <option value="2">value1</option>
-                    <option value="3">value2</option>
-                    <option value="4">value3</option>
-                  </select>
-                </div>
-                <div class="box-item--small"></div>
-              </div>
-              <div class="w-100 d-flex">
-                <button class="btn btn-primary mx-auto btn-lg">
-                  РАСЧИТАТЬ
-                </button>
-              </div>
-            </form>
-          </div>
-
-          <div class="row" id="result-form">
-            <div
-              class="mx-auto box-shadow mt-0
-                       "
-            >
-              <div class="row justify-content-between">
-                <div class="col-5">
-                  <span class="h4">
-                    Параметры вклада
-                  </span>
-
-                  <ul class="result-list pt-2">
-                    <li class="result-list--item d-flex justify-content-between">
-                      <span class="w-custom-50 text-right"> Сумма вклада</span>
-                      <strong class="w-custom-50 text-left"> 10 000 000.00 сум</strong>
-                    </li>
-                    <li class="result-list--item d-flex justify-content-between">
-                      <span class="w-custom-50 text-right">Срок вклада</span>
-                      <strong class="w-custom-50 text-left"> 1 год</strong>
-                    </li>
-                    <li class="result-list--item d-flex justify-content-between">
-                      <span class="w-custom-50 text-right">Процентная ставка</span>
-                      <strong class="w-custom-50 text-left"> 21.00% годовых</strong>
-                    </li>
-                    <li class="result-list--item d-flex justify-content-between">
-                      <span class="w-custom-50 text-right">Капитализация</span>
-                      <strong class="w-custom-50 text-left"> Без капитализации</strong>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="col-5">
-                  <span class="h4">
-                    Параметры вклада
-                  </span>
-
-                  <ul class="result-list pt-2">
-                    <li class="result-list--item d-flex justify-content-between">
-                      <span class="w-custom-50 text-right"> Всего выплат</span>
-                      <strong class="w-custom-50 text-left"> 37 653 752.05 сум</strong>
-                    </li>
-                    <li class="result-list--item d-flex justify-content-between">
-                      <span class="w-custom-50 text-right">Переплата</span>
-                      <strong class="w-custom-50 text-left"> 13 653 752.05 сум</strong>
-                    </li>
-                    <li class="result-list--item d-flex justify-content-between">
-                      <div class="btn btn-outline-primary">
-                        <a href="#">
-                          <span class="icon-share-2"></span>
-                          <span class="btn-text">Поделиться</span>
-                        </a>
-                      </div>
-                      <div class="btn btn-outline-primary">
-                        <a href="#">
-                          <span class="icon-printer"></span>
-                          <span class="btn-text">На печать</span>
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <table class="table table-striped mb-0">
-                <thead class="table-thead">
-                  <tr class="table-thead_tr">
-                    <th class="table-thead_th">Количество</th>
-                    <th class="table-thead_th">Наименование</th>
-                    <th class="table-thead_th">Состав</th>
-                    <th class="table-thead_th">Примечание</th>
-                  </tr>
-                </thead>
-
-                <tbody class="table-tbody">
-                  <tr class="table-tbody_tr">
-                    <td class="table-tbody_td">Количество</td>
-                    <td class="table-tbody_td">Наименование</td>
-                    <td class="table-tbody_td">Состав</td>
-                    <td class="table-tbody_td">Примечание</td>
-                  </tr>
-                  <tr class="table-tbody_tr">
-                    <td class="table-tbody_td">Количество</td>
-                    <td class="table-tbody_td">Наименование</td>
-                    <td class="table-tbody_td">Состав</td>
-                    <td class="table-tbody_td">Примечание</td>
-                  </tr>
-                  <tr class="table-tbody_tr">
-                    <td class="table-tbody_td">Количество</td>
-                    <td class="table-tbody_td">Наименование</td>
-                    <td class="table-tbody_td">Состав</td>
-                    <td class="table-tbody_td">Примечание</td>
-                  </tr>
-                  <tr class="table-tbody_tr">
-                    <td class="table-tbody_td">Количество</td>
-                    <td class="table-tbody_td">Наименование</td>
-                    <td class="table-tbody_td">Состав</td>
-                    <td class="table-tbody_td">Примечание</td>
-                  </tr>
-                  <tr class="table-tbody_tr">
-                    <td class="table-tbody_td">Количество</td>
-                    <td class="table-tbody_td">Наименование</td>
-                    <td class="table-tbody_td">Состав</td>
-                    <td class="table-tbody_td">Примечание</td>
-                  </tr>
-                  <tr class="table-tbody_tr">
-                    <td class="table-tbody_td">Количество</td>
-                    <td class="table-tbody_td">Наименование</td>
-                    <td class="table-tbody_td">Состав</td>
-                    <td class="table-tbody_td">Примечание</td>
-                  </tr>
-                </tbody>
-                <tfoot class="table-tfooter">
-                  <tr class="table-tfooter_tr">
-                    <td class="table-tfooter_td">Количество</td>
-                    <td class="table-tfooter_td">Наименование</td>
-                    <td class="table-tfooter_td">Состав</td>
-                    <td class="table-tfooter_td">Примечание</td>
-                  </tr>
-                </tfoot>
-              </table>
-              <div class="result-info">
-                <span class="icon-alert-triangle"></span>
-                Расчет является предварительным. Точные условия по кредиту вам будут предоставлены в отделении банка.
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-8 mx-auto">
-              <div class="pre">
-                <p>
-                  Кредитный калькулятор позволяет легко и быстро рассчитать график платежей по планируемому кредиту или
-                  займу, чтобы оценить свои возможности выполнить обязательства и погасить долг. Зная несколько
-                  параметров кредита/займа, вы можете подобрать удобные для вас условия и сравнить их с предложениями
-                  кредиторов (банков, микрофинансовых организаций, потребительских кооперативов, ломбардов).
-                </p>
               </div>
             </div>
           </div>
