@@ -1,0 +1,40 @@
+@import "reset.css";
+@import "header";
+@import "animate";
+@import "header_bar_slider";
+@import "~bootstrap/scss/bootstrap";
+
+@import "/template_style.scss";
+@import "~select2/dist/css/select2.min.css";
+@import "~select2-bootstrap-theme/dist/select2-bootstrap.min.css";
+@import "switcher";
+@import "icon";
+@import "top-nav-collapse";
+
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
+
+html {
+  font-size: 18px;
+  @media (max-width: 1440px) {
+    font-size: 16px;
+  }
+  @media (max-width: 1280px) {
+    font-size: 14px;
+  }
+  @media (max-width: 996px) {
+    font-size: 18px;
+  }
+  @media (max-width: 996px) {
+  }
+}
+body {
+  font-family: $font-main;
+  & > * {
+    color: rgba(0, 0, 0, 0.87);
+  }
+}
+
+hr {
+  width: 100%;
+}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+  _.template(require('./../includes/header.html').default)(data) %>
+  <body>
+    <header class="header with-background">
+      <%=
+      _.template(require('./../includes/navigation_page.html').default)(data) %>
+      <%= _.template(require('./../includes/header_bar.html').default)(data) %>
+      <%=
+      _.template(require('./../includes/header_bar_scroll.html').default)(data)
+      %> <%=
+      _.template(require('./../includes/top-nav-collapse.html').default)(data)
+      %>
+      <div class="container mt-5 pb-4">
+        <nav aria-label class="label breadcrumb">
+          <ol class="breadcrumb px-0">
+            <li class="breadcrumb-item">
+              <a href="#"><span class="icon-home"></span></a>
+            </li>
+            <li class="breadcrumb-item"><a href="#">text</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              text
+            </li>
+          </ol>
+        </nav>
+        <h1 class="h1 my-2 mb-3">
+          Что такое инфляция и как она влияет на нашу жизнь?
+        </h1>
+      </div>
+    </header>
+    <main>
+      <div class="container mt-4">
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <div class="row">
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row justify-content-center collapse multi-collapse"
+          id="best-post-collapse"
+        >
+          <div class="col-8">
+            <div class="row">
+              <div class="col-4 px-0 wow fadeInUp ">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 px-0 wow fadeInUp">
+                <div class="book book-post">
+                  <div class="book-img">
+                    <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img" />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-section text-center wow fadeInUp">
+          <button
+            class="btn btn-outline-primary mx-auto"
+            data-toggle="collapse"
+            href="#best-post-collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="best-post-collapse"
+          >
+            <span class="icon-refresh-cw"></span>
+            <span class="btn-text">Показать еще</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <%= _.template(require('./../includes/footer.html').default)(data) %>
+  </body>
+</html>

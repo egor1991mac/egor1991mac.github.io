@@ -1,0 +1,1401 @@
+<% var data = {
+title: "Заголовок | Проект",
+author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<header class="header with-background">
+        <%=
+        _.template(require('./../includes/navigation_page.html').default)(data) %>
+        <%= _.template(require('./../includes/header_bar_scroll.html').default)(data)
+        %>
+    <%= _.template(require('./../includes/header_bar.html').default)(data) %>
+    <%= _.template(require('./../includes/header_bar_slider.html').default)(data) %>
+</header>
+<hr>
+
+
+      
+<main class="container"> 
+    <div class="row">
+        <div class="col-12">
+            <section class="headers">
+                <h1 class="h1"> h1 Заголовок</h1>
+                <p class="mt-2">
+                    Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и
+                    близость
+                    потребителей, возможность
+                    перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                    будущего
+                    предприятия по выпуску минеральных удобрений.
+                </p>
+                <h2 class="h2"> h2 Заголовок</h2>
+                <p class="mt-2">
+                    Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и
+                    близость
+                    потребителей, возможность
+                    перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                    будущего
+                    предприятия по выпуску минеральных удобрений.
+                </p>
+                <h3 class="h3"> h3 заголовок</h3>
+                <p class="mt-2">
+                    Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и
+                    близость
+                    потребителей, возможность
+                    перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                    будущего
+                    предприятия по выпуску минеральных удобрений.
+                </p>
+                <h4 class="h4"> h4 Закголовок</h4>
+                <p class="mt-2">
+                    Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и
+                    близость
+                    потребителей, возможность
+                    перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                    будущего
+                    предприятия по выпуску минеральных удобрений.
+                </p>
+                <h5 class="h5"> h5 Заголовок</h5>
+                <p class="mt-2">
+                    Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и
+                    близость
+                    потребителей, возможность
+                    перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                    будущего
+                    предприятия по выпуску минеральных удобрений.
+                </p>
+                <h6 class="h6"> h6 Заголовок</h6>
+                <p class="mt-2">
+                    Выгоды географического положения города Алмалык - пересечение сырьевых потоков и близость
+                    потребителей,
+                    возможность
+                    перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                    будущего
+                    предприятия по выпуску минеральных удобрений.
+                </p>
+            </section>
+
+            <section class="content">
+                <hr>
+                <article class="my-4">
+                    <h5> Code: < pre > </h5>
+                    <pre>
+                    if ( typeof module === "object" && typeof module.exports === "object" ) {
+                    factory( global );
+                    }
+                    </pre>
+
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5> < blockquote > </h5>
+                    <blockquote class="blockquote">
+
+                        <div class="blockquote_content">
+                            Выгоды географического положения города Алмалыка - пересечение сырьевых потоков и близость
+                            потребителей, возможность перевозки грузов как автомобильным, так и железнодорожным
+                            транспортом - обусловили выбор места для будущего предприятия по выпуску минеральных
+                            удобрений.
+                        </div>
+                        <div class="blockquote_title">
+                            - Абу Али ибн Сина
+                        </div>
+                    </blockquote>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <blockquote class="blockquote-lg">
+                        <div class="blockquote-lg_header"></div>
+                        <div class="blockquote-lg_content">
+                            Выгоды географического положения города Алмалыка - пересечение сырьевых потоков и близость
+                            потребителей, возможность перевозки грузов как автомобильным, так и железнодорожным
+                            транспортом - обусловили выбор места для будущего предприятия по выпуску минеральных
+                            удобрений.
+                        </div>
+                        <div class="blockquote-lg_title">
+                            - Абу Али ибн Сина
+                        </div>
+                    </blockquote>
+                </article>
+                <hr>
+                <article class="my-4 row">
+
+                    <div class="col-4">
+                        <h5> Lists: UL</h5>
+                        <ul class="list">
+                            <li class="list_item">Lorem ipsum dolor sit amet</li>
+                            <li class="list_item">Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list_item">Lorem ipsum dolor sit amet
+                            </li>
+                            <li>
+                                <ul class="list-nested">
+                                    <li class="list-nested_item">Lorem ipsum dolor sit amet
+                                    </li>
+                                    <li class="list-nested_item">Lorem ipsum dolor sit amet
+                                    </li>
+                                    <li class="list-nested_item">Lorem ipsum dolor sit amet
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <h5>Lists: UL with .styled</h5>
+                        <ul class="list-styled">
+                            <li class="list-styled_item">Lorem ipsum dolor sit amet</li>
+                            <li class="list-styled_item">Lorem ipsum dolor sit amet</li>
+                            <li class="list-styled_item">Lorem ipsum dolor sit amet</li>
+                            <li class="list-styled_item">Lorem ipsum dolor sit amet</li>
+                            <li class="list-styled_item">Lorem ipsum dolor sit amet</li>
+                            <li class="list-styled_item">Lorem ipsum dolor sit amet</li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <h5>
+                            Lists: OL
+                        </h5>
+                        <ol class="list-ol">
+                            <li class="list-ol_item">Lorem ipsum dolor sit amet</li>
+                            <li class="list-ol_item">Lorem ipsum dolor sit amet</li>
+                            <li class="list-ol_item">Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-ol_item">Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-ol_item">Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-ol_item">Lorem ipsum dolor sit amet
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5>Таблица: .table</h5>
+                    <table class="table">
+                        <thead class="table-thead">
+                        <tr class="table-thead_tr">
+                            <th class="table-thead_th">Количество</th>
+                            <th class="table-thead_th">Наименование</th>
+                            <th class="table-thead_th">Состав</th>
+                            <th class="table-thead_th">Примечание</th>
+                        </tr>
+                        </thead>
+                        <tbody class="table-tbody">
+                        <tr class="table-tbody_tr">
+                            <td class="table-tbody_td">Количество</td>
+                            <td class="table-tbody_td">Наименование</td>
+                            <td class="table-tbody_td">Состав</td>
+                            <td class="table-tbody_td">Примечание</td>
+                        </tr>
+                        <tr class="table-tbody_tr">
+                            <td class="table-tbody_td">Количество</td>
+                            <td class="table-tbody_td">Наименование</td>
+                            <td class="table-tbody_td">Состав</td>
+                            <td class="table-tbody_td">Примечание</td>
+                        </tr>
+                        <tr class="table-tbody_tr">
+                            <td class="table-tbody_td">Количество</td>
+                            <td class="table-tbody_td">Наименование</td>
+                            <td class="table-tbody_td">Состав</td>
+                            <td class="table-tbody_td">Примечание</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5>Таблица: .table.table-striped</h5>
+                    <table class="table table-striped">
+                        <thead class="table-thead">
+                        <tr class="table-thead_tr">
+                            <th class="table-thead_th">Количество</th>
+                            <th class="table-thead_th">Наименование</th>
+                            <th class="table-thead_th">Состав</th>
+                            <th class="table-thead_th">Примечание</th>
+                        </tr>
+                        </thead>
+
+                        <tbody class="table-tbody">
+                        <tr class="table-tbody_tr">
+                            <td class="table-tbody_td">Количество</td>
+                            <td class="table-tbody_td">Наименование</td>
+                            <td class="table-tbody_td">Состав</td>
+                            <td class="table-tbody_td">Примечание</td>
+                        </tr>
+                        <tr class="table-tbody_tr">
+                            <td class="table-tbody_td">Количество</td>
+                            <td class="table-tbody_td">Наименование</td>
+                            <td class="table-tbody_td">Состав</td>
+                            <td class="table-tbody_td">Примечание</td>
+                        </tr>
+                        <tr class="table-tbody_tr">
+                            <td class="table-tbody_td">Количество</td>
+                            <td class="table-tbody_td">Наименование</td>
+                            <td class="table-tbody_td">Состав</td>
+                            <td class="table-tbody_td">Примечание</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5>Таблица: .table.table-bordered</h5>
+                    <table class="table table-bordered">
+                        <thead class="table-thead">
+                        <tr class="table-thead_tr">
+                            <th class="table-thead_th">Количество</th>
+                            <th class="table-thead_th">Наименование</th>
+                            <th class="table-thead_th">Состав</th>
+                            <th class="table-thead_th">Примечание</th>
+                        </tr>
+                        </thead>
+
+                        <tbody class="table-tbody">
+                        <tr class="table-tbody_tr">
+                            <td class="table-tbody_td">Количество</td>
+                            <td class="table-tbody_td">Наименование</td>
+                            <td class="table-tbody_td">Состав</td>
+                            <td class="table-tbody_td">Примечание</td>
+                        </tr>
+                        <tr class="table-tbody_tr">
+                            <td class="table-tbody_td">Количество</td>
+                            <td class="table-tbody_td">Наименование</td>
+                            <td class="table-tbody_td">Состав</td>
+                            <td class="table-tbody_td">Примечание</td>
+                        </tr>
+                        <tr class="table-tbody_tr">
+                            <td class="table-tbody_td">Количество</td>
+                            <td class="table-tbody_td">Наименование</td>
+                            <td class="table-tbody_td">Состав</td>
+                            <td class="table-tbody_td">Примечание</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <hr>
+                <article class="my-4">
+                    <h5>Buttons: .btn.btn-primary</h5>
+                    <div>
+                        <div class="btn btn-primary">
+                            <a href="#">
+                                <span class="icon-send"></span>
+                                <span class="btn-text"> Задать вопрос</span>
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <h5>Buttons: .btn.btn-outline-primary</h5>
+                    <div class="btn btn-outline-primary">
+                        <a href="#">
+                            <span class="icon-send"></span>
+                            <span class="btn-text"> Задать вопрос</span>
+                        </a>
+                    </div>
+                    <div class="btn btn-outline-primary">
+                            <a href="#">
+                                <span class="icon-thumbs-up"></span>
+                                <span class="btn-text">Да</span>
+                            </a>
+                        </div>
+                        <div class="btn btn-outline-primary">
+                                <a href="#">
+                                    <span class="icon-thumbs-down"></span>
+                                    <span class="btn-text">Нет</span>
+                                </a>
+                            </div>
+                            <div class="btn btn-outline-primary">
+                                    <a href="#">
+                                        <span class="icon-share-2"></span>
+                                        <span class="btn-text">Поделиться</span>
+                                    </a>
+                                </div>
+                                <div class="btn btn-outline-primary">
+                                        <a href="#">
+                                            <span class="icon-printer"></span>
+                                            <span class="btn-text">На печать</span>
+                                        </a>
+                                    </div>
+                    <hr>
+                    <h5>
+                        Buttons: .btn.btn-secondary
+                    </h5>
+                    <div class="btn btn-secondary">
+                        <a href="#">
+                            <span class="icon-send"></span>
+                            <span class="btn-text"> Задать вопрос</span>
+                        </a>
+                    </div>
+                    <hr>
+                    <h5>
+                        Buttons: .btn.btn-secondary
+                    </h5>
+                    <div class="btn btn-outline-secondary">
+                        <a href="#">
+                            <span class="icon-send"></span>
+                            <span class="btn-text"> Задать вопрос</span>
+                        </a>
+                    </div>
+                    
+                    <hr>
+                    <div class="row">
+                        <div class="col-4">
+                            <h5>.btn-lg</h5>
+                            <div>
+                                <div class="btn btn-primary btn-lg">
+                                    <a href="#">
+                                        <span class="btn-text"> Задать вопрос</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <h5>.btn-md</h5>
+                            <div>
+                                <div class="btn btn-primary btn-md">
+                                    <a href="#">
+
+                                        <span class="btn-text"> Задать вопрос</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <h5>.btn-sm</h5>
+                            <div>
+                                <div class="btn btn-primary btn-sm">
+                                    <a href="#">
+                                        <span class="btn-text"> Задать вопрос</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5>tabs-lined</h5>
+                    <ul class="nav nav-tabs nav-tabs-lined" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                               aria-controls="home" aria-selected="true">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                               aria-controls="profile" aria-selected="false">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab"
+                               aria-controls="messages" aria-selected="false">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab"
+                               aria-controls="settings" aria-selected="false">Settings</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">123</div>
+                        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">1234</div>
+                        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">12345</div>
+                        <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">12346</div>
+                    </div>
+
+                </article>
+
+                <article class="my-5">
+                    <h5>tabs</h5>
+                    <ul class="nav nav-tabs" id="myTab1" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab1" data-toggle="tab" href="#home1" role="tab"
+                               aria-controls="home" aria-selected="true">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab1" data-toggle="tab" href="#profile1" role="tab"
+                               aria-controls="profile" aria-selected="false">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="messages-tab1" data-toggle="tab" href="#messages1" role="tab"
+                               aria-controls="messages" aria-selected="false">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="settings-tab1" data-toggle="tab" href="#settings1" role="tab"
+                               aria-controls="settings" aria-selected="false">Settings</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home1" role="tabpanel" aria-labelledby="home-tab">123</div>
+                        <div class="tab-pane" id="profile1" role="tabpanel" aria-labelledby="profile-tab">1234</div>
+                        <div class="tab-pane" id="messages1" role="tabpanel" aria-labelledby="messages-tab">12345</div>
+                        <div class="tab-pane" id="settings1" role="tabpanel" aria-labelledby="settings-tab">12346</div>
+                    </div>
+                </article>
+                <article class="my-5">
+                        <h5>tabs-button</h5>
+                        <ul class="nav nav-tabs nav-tabs-button" id="myTab1" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#home2" role="tab"
+                                   aria-controls="home" aria-selected="true">
+                                   <img loading="lazy" src="/img/category/coins.svg" alt="coins" class="tab-img">
+                                   <span class="h5">Депозитный калькулятор</span>
+
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab"
+                                   aria-controls="profile" aria-selected="false">
+                                        <img loading="lazy" src="/img/category/calc.svg" alt="coins" class="tab-img">
+                                        <span class="h5">Кредитный калькулятор</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="home2" role="tabpanel" aria-labelledby="home-tab">123</div>
+                            <div class="tab-pane" id="profile2" role="tabpanel" aria-labelledby="profile-tab">1234</div>
+                        </div>
+                    </article>
+                <hr>
+                <article class="my-4">
+                    <h5>form-control:</h5>
+                    <div class="row">
+                        <div class="col-6">
+                                <form>
+                                <div class="form-group with-icon custom-search">
+                                        <button class="icon-search" for="search1"></button>
+                                        <input type="text" class="form-control" id="search1" placeholder="Поиск по сайту">
+                                       
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputPassword1"
+                                       placeholder="Поиск по сайту">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <!--                                <label for="exampleInputPassword1">Password</label>-->
+                                <select class="js-example-basic-single">
+                                    <option value="AL">Alabama</option>
+                                    <option value="WY">Wyoming</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="WY">Wyoming</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="WY">Wyoming</option>
+                                    <option value="WY" disabled>text</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5>textarea: .form-control</h5>
+                    <div class="form-group text-area">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                  placeholder="text"></textarea>
+                    </div>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5>textarea: .form-control</h5>
+
+                    <div class="custom-file my-3">
+                        <div class="custom-file-open">
+                            Выбирите фаил
+                        </div>
+                        <label class="custom-file-label" for="customFile2"> </label>
+                        <input type="file" class="custom-file-input" id="customFile2">
+                        <button class="reset">
+                            <span class="icon-Close"></span>
+                        </button>
+                    </div>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>checkbox</h5>
+                        </div>
+                        <div class="col-1">
+                            <span>normal</span>
+                            <div class="custom-checkbox">
+
+                                <label class="custom-checkbox-container">
+                                    <input type="checkbox" class="custom-checkbox-input">
+                                    <span class="custom-checkbox-mark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <span>disable</span>
+                            <div class="custom-checkbox">
+
+                                <label class="custom-checkbox-container">
+                                    <input type="checkbox" class="custom-checkbox-input" disabled>
+                                    <span class="custom-checkbox-mark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5>RadioButton</h5>
+                    <div class="row my-3">
+                        <div class="col-1">
+                            <span>normal</span>
+                            <div class="custom-radio">
+
+                                <label class="custom-radio-container">
+                                    <input type="radio" class="custom-radio-input">
+                                    <span class="custom-radio-mark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <span>disable</span>
+                            <div class="custom-radio">
+                                <label class="custom-radio-container">
+                                    <input type="radio" class="custom-radio-input" disabled>
+                                    <span class="custom-radio-mark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5>switcher</h5>
+                    <div class="row my-3">
+                        <div class="col-2">
+                            <span>Primary</span>
+                            <div class="custom-switcher primary">
+                                <input type="checkbox" id="id-name--1" name="set-name" class="switch-input">
+                                <label for="id-name--1" class="switch-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <span>Secondary</span>
+                            <div class="custom-switcher secondary">
+                                <input type="checkbox" id="id-name--2" name="set-name" class="switch-input">
+                                <label for="id-name--2" class="switch-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <span>Disabled</span>
+                            <div class="custom-switcher disabled">
+                                <input type="checkbox" id="id-name--3" name="set-name" class="switch-input" disabled>
+                                <label for="id-name--3" class="switch-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <span>Disabled checked</span>
+                            <div class="custom-switcher disabled">
+                                <input type="checkbox" id="id-name--4" name="set-name" class="switch-input" disabled
+                                       checked>
+                                <label for="id-name--4" class="switch-label"></label>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5>Tags</h5>
+                    <div class="row my-3">
+                        <div class="col-1">
+                            <div class="tags">
+                                <span class="icon-eye"></span>
+                                <span>473</span>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="tags">
+                                <span class="icon-thumbs-up"></span>
+                                <span>473</span>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="tags">
+                                <span class="icon-thumbs-down"></span>
+                                <span>473</span>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="tags video-new">
+                                Новое
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="tags video-timer">
+                                30:59
+                            </div>
+                        </div>
+                        <div class="col-2">
+                                <div class="tags post-tag">
+                                        <span class="icon-tag"></span>
+                                        <a href="" class="post-tag-link"> Деньги</a>
+                                </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="tags tag-text">
+                                    <span class="icon-refresh-cw mr-2"></span>
+                                    Последнее обновление: 14:15, 30 мая 2019 г.
+                            </div>
+                    </div>
+                    </div>
+
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5 class="mb-3">.social-button</h5>
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="social-button facebook">
+                                <i class="social-icon">
+                                    <svg width="11" height="22" viewBox="0 0 11 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.875 7.5625V4.8125C6.875 4.0535 7.491 3.4375 8.25 3.4375H9.625V0H6.875C4.59662 0 2.75 1.84663 2.75 4.125V7.5625H0V11H2.75V22H6.875V11H9.625L11 7.5625H6.875Z"
+                                              fill="white"/>
+                                    </svg>
+                                </i>
+                                <span> Нравиться </span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="social-button telegram">
+                                <i class="social-icon">
+                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.83843 11.2128L0.434202 8.84815C-0.174837 8.58187 -0.13363 7.70428 0.497839 7.49653L21.048 0.721942C21.5857 0.544868 22.1096 1.02483 21.9801 1.5762L17.8735 19.0366C17.7509 19.5582 17.124 19.771 16.7095 19.4315L11.8841 15.4832L5.83843 11.2128Z"
+                                              fill="#EBF0FA"/>
+                                        <path d="M17.0356 4.49297L5.83838 11.2134L7.20844 17.5684C7.33133 18.1386 8.00336 18.3898 8.47017 18.0403L11.8841 15.4837L9.07513 13.185L17.3894 4.94814C17.6331 4.70661 17.3299 4.31633 17.0356 4.49297Z"
+                                              fill="#BEC3D2"/>
+                                        <path d="M7.66028 18.128C7.91199 18.2418 8.22046 18.2269 8.47024 18.0398L11.8842 15.4833L10.4797 14.3339L9.0752 13.1846L7.66028 18.128Z"
+                                              fill="#AFB4C8"/>
+                                    </svg>
+                                </i>
+                                <span>Telegram</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="social-button odnoclassniki">
+                                <i class="social-icon">
+                                    <svg width="15" height="22" viewBox="0 0 15 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.3756 11.9055C10.6632 11.9055 13.3284 9.24039 13.3284 5.95274C13.3284 2.6651 10.6632 0 7.3756 0C4.08795 0 1.42285 2.66514 1.42285 5.95279C1.42689 9.23872 4.08967 11.9015 7.3756 11.9055ZM7.3756 2.74743C9.14584 2.74743 10.5809 4.18249 10.5809 5.95279C10.5809 7.72308 9.14589 9.15814 7.3756 9.15814C5.6053 9.15814 4.17024 7.72308 4.17024 5.95279C4.17024 4.18249 5.60535 2.74743 7.3756 2.74743Z"
+                                              fill="white"/>
+                                        <path d="M13.2065 14.7261C13.8534 14.2999 14.2432 13.5775 14.2441 12.8029C14.2531 12.16 13.8904 11.5696 13.3127 11.2872C12.7193 10.9907 12.0089 11.0575 11.4811 11.4594C9.03491 13.2427 5.71709 13.2427 3.27088 11.4594C2.74226 11.0596 2.03312 10.9929 1.43925 11.2872C0.861901 11.5696 0.498939 12.1593 0.506966 12.8019C0.50834 13.5764 0.898004 14.2987 1.54459 14.7251C2.37415 15.2768 3.27754 15.7084 4.22793 16.0073C4.38913 16.0573 4.55548 16.1037 4.72707 16.1465L1.9595 18.8527C1.23349 19.5571 1.21593 20.7167 1.92035 21.4427C2.62476 22.1687 3.78431 22.1863 4.51036 21.4819C4.52547 21.4672 4.54033 21.4523 4.55492 21.4371L7.37563 18.5175L10.2018 21.4426C10.9057 22.1692 12.0652 22.1876 12.7918 21.4838C13.5184 20.78 13.5368 19.6204 12.833 18.8938C12.8183 18.8786 12.8033 18.8637 12.7881 18.849L10.0251 16.1455C10.1966 16.1016 10.3636 16.0549 10.526 16.0054C11.4754 15.7078 12.3779 15.277 13.2065 14.7261Z"
+                                              fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>Одноклассники</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="social-button twitter">
+                                <i class="social-icon">
+                                    <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.6501 2.14692C21.1613 2.36367 20.6539 2.53467 20.1332 2.65846C20.7069 2.11328 21.1383 1.43138 21.3816 0.670254C21.4511 0.452966 21.2151 0.265071 21.0189 0.381412C20.2946 0.811055 19.5143 1.13337 18.6998 1.3395C18.6526 1.35146 18.6038 1.35752 18.5549 1.35752C18.4065 1.35752 18.2623 1.30243 18.1489 1.20245C17.2823 0.438698 16.1677 0.0180664 15.0106 0.0180664C14.5099 0.0180664 14.0043 0.0961101 13.508 0.250052C11.9701 0.727057 10.7834 1.99566 10.4111 3.56082C10.2714 4.14789 10.2336 4.7355 10.2986 5.30728C10.3061 5.37299 10.275 5.41885 10.2559 5.44036C10.2223 5.47807 10.1746 5.49968 10.1251 5.49968C10.1195 5.49968 10.1139 5.49941 10.1082 5.49888C6.74178 5.18611 3.70606 3.56425 1.56026 0.932116C1.45084 0.79786 1.24101 0.814326 1.15379 0.963924C0.733592 1.68482 0.511529 2.50935 0.511529 3.34836C0.511529 4.63418 1.02812 5.84592 1.92543 6.72929C1.54809 6.63982 1.18287 6.49891 0.843604 6.31048C0.679471 6.21929 0.477523 6.33649 0.475216 6.52423C0.451723 8.43439 1.57008 10.1341 3.24542 10.8994C3.21168 10.9003 3.17794 10.9006 3.14415 10.9006C2.87859 10.9006 2.6097 10.875 2.34505 10.8244C2.16021 10.7891 2.00493 10.9645 2.06232 11.1437C2.6061 12.8414 4.06785 14.0927 5.81711 14.3769C4.36533 15.3514 2.67471 15.8655 0.915104 15.8655L0.366545 15.8652C0.197531 15.8652 0.054585 15.9753 0.0115135 16.139C-0.0309144 16.3003 0.0472365 16.4704 0.191363 16.5542C2.17415 17.7081 4.43581 18.318 6.73282 18.318C8.74345 18.318 10.6242 17.919 12.3229 17.1321C13.8802 16.4107 15.2564 15.3795 16.4131 14.0672C17.4907 12.8446 18.3334 11.4334 18.9176 9.8726C19.4745 8.38483 19.7689 6.79735 19.7689 5.28175V5.20955C19.7689 4.9662 19.8789 4.73722 20.0709 4.58134C20.7996 3.98971 21.4342 3.29327 21.9569 2.51139C22.0949 2.30493 21.8772 2.04618 21.6501 2.14692Z"
+                                              fill="white"/>
+                                    </svg>
+
+                                </i>
+                                <span>Twitter</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="social-button vk">
+                                <i class="social-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.9341 14.1253C20.6639 14.8378 21.4341 15.5081 22.0886 16.2924C22.3777 16.641 22.6515 17.0006 22.8609 17.4051C23.1576 17.9802 22.8889 18.6129 22.3733 18.6472L19.1682 18.6458C18.3416 18.7144 17.6822 18.3816 17.1277 17.8164C16.684 17.3644 16.273 16.8834 15.8463 16.4161C15.6714 16.2252 15.4883 16.0455 15.2696 15.9034C14.8321 15.6195 14.4523 15.7064 14.2023 16.1627C13.9476 16.6269 13.8899 17.1408 13.8648 17.658C13.8305 18.4127 13.6024 18.6112 12.8443 18.6457C11.2242 18.7221 9.68657 18.477 8.25817 17.6597C6.99884 16.9392 6.02234 15.922 5.17233 14.7705C3.51748 12.5283 2.25012 10.0643 1.11111 7.53143C0.854715 6.96076 1.04223 6.65444 1.67189 6.64357C2.71745 6.62324 3.76288 6.62471 4.80968 6.64211C5.23464 6.64834 5.51595 6.89206 5.68005 7.29351C6.24573 8.68445 6.93791 10.0078 7.80674 11.2344C8.03813 11.561 8.27407 11.8876 8.61 12.1174C8.98167 12.3719 9.26467 12.2876 9.43951 11.8735C9.55045 11.611 9.59905 11.3282 9.62405 11.0471C9.7069 10.0797 9.71781 9.11401 9.57254 8.15005C9.48333 7.54845 9.14448 7.15898 8.54417 7.04515C8.23784 6.9871 8.28343 6.87311 8.43176 6.69827C8.68936 6.39671 8.93166 6.20898 9.41467 6.20898H13.0368C13.6071 6.32152 13.7337 6.5777 13.8118 7.15146L13.8149 11.1749C13.8086 11.397 13.9258 12.0562 14.3259 12.2032C14.6461 12.3079 14.8572 12.0517 15.0493 11.8487C15.9166 10.9282 16.5355 9.84044 17.0885 8.71406C17.3339 8.21876 17.5449 7.70442 17.7494 7.19047C17.9009 6.80913 18.1386 6.62148 18.5682 6.62978L22.0543 6.63287C22.1577 6.63287 22.2623 6.63437 22.3624 6.65152C22.9498 6.75164 23.1108 7.00433 22.9294 7.57797C22.6435 8.47794 22.0873 9.22796 21.5434 9.98142C20.9621 10.7858 20.3403 11.5627 19.7638 12.3719C19.234 13.111 19.2761 13.4834 19.9341 14.1253Z"
+                                              fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>Нравиться</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="my-3">.social-button.small</h5>
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="social-button small facebook">
+                                <i class="social-icon">
+                                    <svg width="11" height="22" viewBox="0 0 11 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.875 7.5625V4.8125C6.875 4.0535 7.491 3.4375 8.25 3.4375H9.625V0H6.875C4.59662 0 2.75 1.84663 2.75 4.125V7.5625H0V11H2.75V22H6.875V11H9.625L11 7.5625H6.875Z"
+                                              fill="white"/>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="social-button  small telegram">
+                                <i class="social-icon">
+                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.83843 11.2128L0.434202 8.84815C-0.174837 8.58187 -0.13363 7.70428 0.497839 7.49653L21.048 0.721942C21.5857 0.544868 22.1096 1.02483 21.9801 1.5762L17.8735 19.0366C17.7509 19.5582 17.124 19.771 16.7095 19.4315L11.8841 15.4832L5.83843 11.2128Z"
+                                              fill="#EBF0FA"/>
+                                        <path d="M17.0356 4.49297L5.83838 11.2134L7.20844 17.5684C7.33133 18.1386 8.00336 18.3898 8.47017 18.0403L11.8841 15.4837L9.07513 13.185L17.3894 4.94814C17.6331 4.70661 17.3299 4.31633 17.0356 4.49297Z"
+                                              fill="#BEC3D2"/>
+                                        <path d="M7.66028 18.128C7.91199 18.2418 8.22046 18.2269 8.47024 18.0398L11.8842 15.4833L10.4797 14.3339L9.0752 13.1846L7.66028 18.128Z"
+                                              fill="#AFB4C8"/>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="social-button small odnoclassniki">
+                                <i class="social-icon">
+                                    <svg width="15" height="22" viewBox="0 0 15 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.3756 11.9055C10.6632 11.9055 13.3284 9.24039 13.3284 5.95274C13.3284 2.6651 10.6632 0 7.3756 0C4.08795 0 1.42285 2.66514 1.42285 5.95279C1.42689 9.23872 4.08967 11.9015 7.3756 11.9055ZM7.3756 2.74743C9.14584 2.74743 10.5809 4.18249 10.5809 5.95279C10.5809 7.72308 9.14589 9.15814 7.3756 9.15814C5.6053 9.15814 4.17024 7.72308 4.17024 5.95279C4.17024 4.18249 5.60535 2.74743 7.3756 2.74743Z"
+                                              fill="white"/>
+                                        <path d="M13.2065 14.7261C13.8534 14.2999 14.2432 13.5775 14.2441 12.8029C14.2531 12.16 13.8904 11.5696 13.3127 11.2872C12.7193 10.9907 12.0089 11.0575 11.4811 11.4594C9.03491 13.2427 5.71709 13.2427 3.27088 11.4594C2.74226 11.0596 2.03312 10.9929 1.43925 11.2872C0.861901 11.5696 0.498939 12.1593 0.506966 12.8019C0.50834 13.5764 0.898004 14.2987 1.54459 14.7251C2.37415 15.2768 3.27754 15.7084 4.22793 16.0073C4.38913 16.0573 4.55548 16.1037 4.72707 16.1465L1.9595 18.8527C1.23349 19.5571 1.21593 20.7167 1.92035 21.4427C2.62476 22.1687 3.78431 22.1863 4.51036 21.4819C4.52547 21.4672 4.54033 21.4523 4.55492 21.4371L7.37563 18.5175L10.2018 21.4426C10.9057 22.1692 12.0652 22.1876 12.7918 21.4838C13.5184 20.78 13.5368 19.6204 12.833 18.8938C12.8183 18.8786 12.8033 18.8637 12.7881 18.849L10.0251 16.1455C10.1966 16.1016 10.3636 16.0549 10.526 16.0054C11.4754 15.7078 12.3779 15.277 13.2065 14.7261Z"
+                                              fill="white"/>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="social-button small twitter">
+                                <i class="social-icon">
+                                    <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.6501 2.14692C21.1613 2.36367 20.6539 2.53467 20.1332 2.65846C20.7069 2.11328 21.1383 1.43138 21.3816 0.670254C21.4511 0.452966 21.2151 0.265071 21.0189 0.381412C20.2946 0.811055 19.5143 1.13337 18.6998 1.3395C18.6526 1.35146 18.6038 1.35752 18.5549 1.35752C18.4065 1.35752 18.2623 1.30243 18.1489 1.20245C17.2823 0.438698 16.1677 0.0180664 15.0106 0.0180664C14.5099 0.0180664 14.0043 0.0961101 13.508 0.250052C11.9701 0.727057 10.7834 1.99566 10.4111 3.56082C10.2714 4.14789 10.2336 4.7355 10.2986 5.30728C10.3061 5.37299 10.275 5.41885 10.2559 5.44036C10.2223 5.47807 10.1746 5.49968 10.1251 5.49968C10.1195 5.49968 10.1139 5.49941 10.1082 5.49888C6.74178 5.18611 3.70606 3.56425 1.56026 0.932116C1.45084 0.79786 1.24101 0.814326 1.15379 0.963924C0.733592 1.68482 0.511529 2.50935 0.511529 3.34836C0.511529 4.63418 1.02812 5.84592 1.92543 6.72929C1.54809 6.63982 1.18287 6.49891 0.843604 6.31048C0.679471 6.21929 0.477523 6.33649 0.475216 6.52423C0.451723 8.43439 1.57008 10.1341 3.24542 10.8994C3.21168 10.9003 3.17794 10.9006 3.14415 10.9006C2.87859 10.9006 2.6097 10.875 2.34505 10.8244C2.16021 10.7891 2.00493 10.9645 2.06232 11.1437C2.6061 12.8414 4.06785 14.0927 5.81711 14.3769C4.36533 15.3514 2.67471 15.8655 0.915104 15.8655L0.366545 15.8652C0.197531 15.8652 0.054585 15.9753 0.0115135 16.139C-0.0309144 16.3003 0.0472365 16.4704 0.191363 16.5542C2.17415 17.7081 4.43581 18.318 6.73282 18.318C8.74345 18.318 10.6242 17.919 12.3229 17.1321C13.8802 16.4107 15.2564 15.3795 16.4131 14.0672C17.4907 12.8446 18.3334 11.4334 18.9176 9.8726C19.4745 8.38483 19.7689 6.79735 19.7689 5.28175V5.20955C19.7689 4.9662 19.8789 4.73722 20.0709 4.58134C20.7996 3.98971 21.4342 3.29327 21.9569 2.51139C22.0949 2.30493 21.8772 2.04618 21.6501 2.14692Z"
+                                              fill="white"/>
+                                    </svg>
+
+                                </i>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="social-button small vk">
+                                <i class="social-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.9341 14.1253C20.6639 14.8378 21.4341 15.5081 22.0886 16.2924C22.3777 16.641 22.6515 17.0006 22.8609 17.4051C23.1576 17.9802 22.8889 18.6129 22.3733 18.6472L19.1682 18.6458C18.3416 18.7144 17.6822 18.3816 17.1277 17.8164C16.684 17.3644 16.273 16.8834 15.8463 16.4161C15.6714 16.2252 15.4883 16.0455 15.2696 15.9034C14.8321 15.6195 14.4523 15.7064 14.2023 16.1627C13.9476 16.6269 13.8899 17.1408 13.8648 17.658C13.8305 18.4127 13.6024 18.6112 12.8443 18.6457C11.2242 18.7221 9.68657 18.477 8.25817 17.6597C6.99884 16.9392 6.02234 15.922 5.17233 14.7705C3.51748 12.5283 2.25012 10.0643 1.11111 7.53143C0.854715 6.96076 1.04223 6.65444 1.67189 6.64357C2.71745 6.62324 3.76288 6.62471 4.80968 6.64211C5.23464 6.64834 5.51595 6.89206 5.68005 7.29351C6.24573 8.68445 6.93791 10.0078 7.80674 11.2344C8.03813 11.561 8.27407 11.8876 8.61 12.1174C8.98167 12.3719 9.26467 12.2876 9.43951 11.8735C9.55045 11.611 9.59905 11.3282 9.62405 11.0471C9.7069 10.0797 9.71781 9.11401 9.57254 8.15005C9.48333 7.54845 9.14448 7.15898 8.54417 7.04515C8.23784 6.9871 8.28343 6.87311 8.43176 6.69827C8.68936 6.39671 8.93166 6.20898 9.41467 6.20898H13.0368C13.6071 6.32152 13.7337 6.5777 13.8118 7.15146L13.8149 11.1749C13.8086 11.397 13.9258 12.0562 14.3259 12.2032C14.6461 12.3079 14.8572 12.0517 15.0493 11.8487C15.9166 10.9282 16.5355 9.84044 17.0885 8.71406C17.3339 8.21876 17.5449 7.70442 17.7494 7.19047C17.9009 6.80913 18.1386 6.62148 18.5682 6.62978L22.0543 6.63287C22.1577 6.63287 22.2623 6.63437 22.3624 6.65152C22.9498 6.75164 23.1108 7.00433 22.9294 7.57797C22.6435 8.47794 22.0873 9.22796 21.5434 9.98142C20.9621 10.7858 20.3403 11.5627 19.7638 12.3719C19.234 13.111 19.2761 13.4834 19.9341 14.1253Z"
+                                              fill="white"/>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="my-3">.social-button.medium</h5>
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="social-button medium facebook">
+                                <i class="social-icon">
+                                    <svg width="11" height="22" viewBox="0 0 11 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.875 7.5625V4.8125C6.875 4.0535 7.491 3.4375 8.25 3.4375H9.625V0H6.875C4.59662 0 2.75 1.84663 2.75 4.125V7.5625H0V11H2.75V22H6.875V11H9.625L11 7.5625H6.875Z"
+                                              fill="white"/>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="social-button  medium telegram">
+                                <i class="social-icon">
+                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.83843 11.2128L0.434202 8.84815C-0.174837 8.58187 -0.13363 7.70428 0.497839 7.49653L21.048 0.721942C21.5857 0.544868 22.1096 1.02483 21.9801 1.5762L17.8735 19.0366C17.7509 19.5582 17.124 19.771 16.7095 19.4315L11.8841 15.4832L5.83843 11.2128Z"
+                                              fill="#EBF0FA"/>
+                                        <path d="M17.0356 4.49297L5.83838 11.2134L7.20844 17.5684C7.33133 18.1386 8.00336 18.3898 8.47017 18.0403L11.8841 15.4837L9.07513 13.185L17.3894 4.94814C17.6331 4.70661 17.3299 4.31633 17.0356 4.49297Z"
+                                              fill="#BEC3D2"/>
+                                        <path d="M7.66028 18.128C7.91199 18.2418 8.22046 18.2269 8.47024 18.0398L11.8842 15.4833L10.4797 14.3339L9.0752 13.1846L7.66028 18.128Z"
+                                              fill="#AFB4C8"/>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="social-button medium odnoclassniki">
+                                <i class="social-icon">
+                                    <svg width="15" height="22" viewBox="0 0 15 22" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.3756 11.9055C10.6632 11.9055 13.3284 9.24039 13.3284 5.95274C13.3284 2.6651 10.6632 0 7.3756 0C4.08795 0 1.42285 2.66514 1.42285 5.95279C1.42689 9.23872 4.08967 11.9015 7.3756 11.9055ZM7.3756 2.74743C9.14584 2.74743 10.5809 4.18249 10.5809 5.95279C10.5809 7.72308 9.14589 9.15814 7.3756 9.15814C5.6053 9.15814 4.17024 7.72308 4.17024 5.95279C4.17024 4.18249 5.60535 2.74743 7.3756 2.74743Z"
+                                              fill="white"/>
+                                        <path d="M13.2065 14.7261C13.8534 14.2999 14.2432 13.5775 14.2441 12.8029C14.2531 12.16 13.8904 11.5696 13.3127 11.2872C12.7193 10.9907 12.0089 11.0575 11.4811 11.4594C9.03491 13.2427 5.71709 13.2427 3.27088 11.4594C2.74226 11.0596 2.03312 10.9929 1.43925 11.2872C0.861901 11.5696 0.498939 12.1593 0.506966 12.8019C0.50834 13.5764 0.898004 14.2987 1.54459 14.7251C2.37415 15.2768 3.27754 15.7084 4.22793 16.0073C4.38913 16.0573 4.55548 16.1037 4.72707 16.1465L1.9595 18.8527C1.23349 19.5571 1.21593 20.7167 1.92035 21.4427C2.62476 22.1687 3.78431 22.1863 4.51036 21.4819C4.52547 21.4672 4.54033 21.4523 4.55492 21.4371L7.37563 18.5175L10.2018 21.4426C10.9057 22.1692 12.0652 22.1876 12.7918 21.4838C13.5184 20.78 13.5368 19.6204 12.833 18.8938C12.8183 18.8786 12.8033 18.8637 12.7881 18.849L10.0251 16.1455C10.1966 16.1016 10.3636 16.0549 10.526 16.0054C11.4754 15.7078 12.3779 15.277 13.2065 14.7261Z"
+                                              fill="white"/>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="social-button medium twitter">
+                                <i class="social-icon">
+                                    <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.6501 2.14692C21.1613 2.36367 20.6539 2.53467 20.1332 2.65846C20.7069 2.11328 21.1383 1.43138 21.3816 0.670254C21.4511 0.452966 21.2151 0.265071 21.0189 0.381412C20.2946 0.811055 19.5143 1.13337 18.6998 1.3395C18.6526 1.35146 18.6038 1.35752 18.5549 1.35752C18.4065 1.35752 18.2623 1.30243 18.1489 1.20245C17.2823 0.438698 16.1677 0.0180664 15.0106 0.0180664C14.5099 0.0180664 14.0043 0.0961101 13.508 0.250052C11.9701 0.727057 10.7834 1.99566 10.4111 3.56082C10.2714 4.14789 10.2336 4.7355 10.2986 5.30728C10.3061 5.37299 10.275 5.41885 10.2559 5.44036C10.2223 5.47807 10.1746 5.49968 10.1251 5.49968C10.1195 5.49968 10.1139 5.49941 10.1082 5.49888C6.74178 5.18611 3.70606 3.56425 1.56026 0.932116C1.45084 0.79786 1.24101 0.814326 1.15379 0.963924C0.733592 1.68482 0.511529 2.50935 0.511529 3.34836C0.511529 4.63418 1.02812 5.84592 1.92543 6.72929C1.54809 6.63982 1.18287 6.49891 0.843604 6.31048C0.679471 6.21929 0.477523 6.33649 0.475216 6.52423C0.451723 8.43439 1.57008 10.1341 3.24542 10.8994C3.21168 10.9003 3.17794 10.9006 3.14415 10.9006C2.87859 10.9006 2.6097 10.875 2.34505 10.8244C2.16021 10.7891 2.00493 10.9645 2.06232 11.1437C2.6061 12.8414 4.06785 14.0927 5.81711 14.3769C4.36533 15.3514 2.67471 15.8655 0.915104 15.8655L0.366545 15.8652C0.197531 15.8652 0.054585 15.9753 0.0115135 16.139C-0.0309144 16.3003 0.0472365 16.4704 0.191363 16.5542C2.17415 17.7081 4.43581 18.318 6.73282 18.318C8.74345 18.318 10.6242 17.919 12.3229 17.1321C13.8802 16.4107 15.2564 15.3795 16.4131 14.0672C17.4907 12.8446 18.3334 11.4334 18.9176 9.8726C19.4745 8.38483 19.7689 6.79735 19.7689 5.28175V5.20955C19.7689 4.9662 19.8789 4.73722 20.0709 4.58134C20.7996 3.98971 21.4342 3.29327 21.9569 2.51139C22.0949 2.30493 21.8772 2.04618 21.6501 2.14692Z"
+                                              fill="white"/>
+                                    </svg>
+
+                                </i>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="social-button medium vk">
+                                <i class="social-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.9341 14.1253C20.6639 14.8378 21.4341 15.5081 22.0886 16.2924C22.3777 16.641 22.6515 17.0006 22.8609 17.4051C23.1576 17.9802 22.8889 18.6129 22.3733 18.6472L19.1682 18.6458C18.3416 18.7144 17.6822 18.3816 17.1277 17.8164C16.684 17.3644 16.273 16.8834 15.8463 16.4161C15.6714 16.2252 15.4883 16.0455 15.2696 15.9034C14.8321 15.6195 14.4523 15.7064 14.2023 16.1627C13.9476 16.6269 13.8899 17.1408 13.8648 17.658C13.8305 18.4127 13.6024 18.6112 12.8443 18.6457C11.2242 18.7221 9.68657 18.477 8.25817 17.6597C6.99884 16.9392 6.02234 15.922 5.17233 14.7705C3.51748 12.5283 2.25012 10.0643 1.11111 7.53143C0.854715 6.96076 1.04223 6.65444 1.67189 6.64357C2.71745 6.62324 3.76288 6.62471 4.80968 6.64211C5.23464 6.64834 5.51595 6.89206 5.68005 7.29351C6.24573 8.68445 6.93791 10.0078 7.80674 11.2344C8.03813 11.561 8.27407 11.8876 8.61 12.1174C8.98167 12.3719 9.26467 12.2876 9.43951 11.8735C9.55045 11.611 9.59905 11.3282 9.62405 11.0471C9.7069 10.0797 9.71781 9.11401 9.57254 8.15005C9.48333 7.54845 9.14448 7.15898 8.54417 7.04515C8.23784 6.9871 8.28343 6.87311 8.43176 6.69827C8.68936 6.39671 8.93166 6.20898 9.41467 6.20898H13.0368C13.6071 6.32152 13.7337 6.5777 13.8118 7.15146L13.8149 11.1749C13.8086 11.397 13.9258 12.0562 14.3259 12.2032C14.6461 12.3079 14.8572 12.0517 15.0493 11.8487C15.9166 10.9282 16.5355 9.84044 17.0885 8.71406C17.3339 8.21876 17.5449 7.70442 17.7494 7.19047C17.9009 6.80913 18.1386 6.62148 18.5682 6.62978L22.0543 6.63287C22.1577 6.63287 22.2623 6.63437 22.3624 6.65152C22.9498 6.75164 23.1108 7.00433 22.9294 7.57797C22.6435 8.47794 22.0873 9.22796 21.5434 9.98142C20.9621 10.7858 20.3403 11.5627 19.7638 12.3719C19.234 13.111 19.2761 13.4834 19.9341 14.1253Z"
+                                              fill="white"/>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5>card-category> .card-body</h5>
+                    <div class="card-category row">
+                        <div class="col-4">
+                            <div class="card-body my-3">
+                                <h3 class="h3">Депозит (вклады)</h3>
+                                <svg class="card-img">
+                                          <use xlink:href="./img/sprite.svg#clipboard"></use>
+                                </svg>
+                               
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card-body my-3">
+                                <h3 class="h3">Платежи и переводы</h3>
+                                <svg class="card-img">
+                                      <use xlink:href="./img/sprite.svg#social-campaign"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card-body my-3 ">
+                                <span class="h4">Участники финансовой системы Узбекистана</span>
+                                <svg class="card-img">
+                                      <use xlink:href="./img/sprite.svg#bank"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card-body my-3">
+                                <h3 class="h3">Кредиты</h3>
+                                <svg class="card-img">
+                                      <use xlink:href="./img/sprite.svg#calculator"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card-body my-3 ">
+                                <h3 class="h3">Финансовый рынок</h3>
+                                <svg class="card-img">
+                                      <use xlink:href="./img/sprite.svg#chart"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card-body my-3">
+                                <h3 class="h3">Деньги</h3>
+                                <svg class="card-img">
+                                      <use xlink:href="./img/sprite.svg#License"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="my-4">
+                    <h5>card-category > .card-body.img-left</h5>
+                    <div class="card-category row">
+                        <div class="col-6">
+                            <div class="card-body img-left my-3">
+                                <img loading="lazy" src="./img/category/analytic.svg" alt="coins" class="card-img">
+                                <p>Единая сравнительная таблица всех банковских услуг </p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card-body img-left my-3">
+                                <img loading="lazy" src="/img/category/calc2.svg" alt="coins" class="card-img">
+                                <p>Депозитный и кредитный калькулятор</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card-body img-left my-3 ">
+                                <img loading="lazy" src="/img/category/inerview.svg" alt="coins" class="card-img">
+                                <h3 class="h3">Анкетирование</h3>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card-body img-left my-3">
+                                <img loading="lazy" src="/img/category/inerview.svg" alt="coins" class="card-img">
+                                <h3 class="h3">Опросы</h3>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="my-4">
+                        <h5>card-category > .card-body.img-left.small</h5>
+                        <div class="card-category row">
+                            <div class="col-6">
+                                <div class="card-body img-left small my-3">
+                                    <img loading="lazy" src="./img/category/analytic.svg" alt="coins" class="card-img">
+                                    <span class="h6">Участники финансовой системы Узбекистана </span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-body img-left small my-3">
+                                    <img loading="lazy" src="/img/category/calc2.svg" alt="coins" class="card-img">
+                                    <span class="h6">Депозитный и кредитный калькулятор</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-body img-left small my-3 ">
+                                    <img loading="lazy" src="/img/category/inerview.svg" alt="coins" class="card-img">
+                                    <span class="h6">Анкетирование</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-body img-left small my-3">
+                                    <img loading="lazy" src="/img/category/inerview.svg" alt="coins" class="card-img">
+                                    <span class="h6">Опросы</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="my-4">
+                            <h5>card-category > .card-body.img-left.small.without-shadow</h5>
+                            <div class="card-category row">
+                                <div class="col-6">
+                                    <div class="card-body img-left small without-shadow my-3">
+                                        <img loading="lazy" src="./img/category/analytic.svg" alt="coins" class="card-img">
+                                        <span class="h6">Участники финансовой системы Узбекистана </span>
+                                        <span class="icon-chevron-right"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="my-4">
+                                <h5>card-category > .card-body.img-left.small.without-shadow.active</h5>
+                                <div class="card-category row">
+                                    <div class="col-6">
+                                            <div class="card-body img-left small without-shadow active my-3">
+                                                <img loading="lazy" src="./img/category/analytic.svg" alt="coins" class="card-img">
+                                                <span class="h6">Участники финансовой системы Узбекистана </span>
+                                                <span class="icon-chevron-right"></span>
+                                            </div>
+                                        </div>
+                                </div>
+                            </article>
+                            <article class="my-4">
+                                    <h5>card-category > .card-body.img-left.small.with-shadow</h5>
+                                    <div class="card-category row">
+                                        <div class="col-6">
+                                            <div class="card-body img-left small with-shadow my-3">
+                                                <img loading="lazy" src="./img/category/analytic.svg" alt="coins" class="card-img">
+                                                <span class="h6">Участники финансовой системы Узбекистана </span>
+                                                <span class="icon-chevron-right"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="my-4">
+                                        <h5>card-category > .card-body.img-left.small.with-shadow.active</h5>
+                                        <div class="card-category row">
+                                            <div class="col-6">
+                                                    <div class="card-body img-left small with-shadow active my-3">
+                                                        <img loading="lazy" src="./img/category/analytic.svg" alt="coins" class="card-img">
+                                                        <span class="h6">Участники финансовой системы Узбекистана </span>
+                                                        <span class="icon-chevron-right"></span>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </article>
+                            <article class="my-4">
+                                    <h5>card-category > .card-body.vertical</h5>
+                                    <div class="card-category row">
+                                        <div class="col-3">
+                                                <div class="card-body vertical">
+                                                    <img loading="lazy" src="./img/category/analytic.svg" alt="coins" class="card-img">
+                                                    <span class="h6">Участники финансовой системы Узбекистана </span>
+
+                                                </div>
+                                            </div>
+                                    </div>
+                                </article>
+                                <article class="my-4">
+                                        <h5>card-category > .card-body.vertical.with-control</h5>
+                                        <div class="card-category row">
+                                            <div class="col-3">
+                                                    <div class="card-body vertical with-control">
+                                                        <div class="control">
+                                                            <span class="icon-circle-arrow-left"></span>
+                                                            <span> Назад к списку</span>
+                                                        </div>
+                                                        <img loading="lazy" src="./img/category/analytic.svg" alt="coins" class="card-img">
+                                                        <span class="h6">Участники финансовой системы Узбекистана </span>
+
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </article>
+                        <hr>
+                        <article class="my-4">
+                                <h5>.left-nav > .card-category > .card-body.img-left.small.without-shadow</h5>
+                                <div class="row my-3">
+                                    <div class="col-3">
+                                        <div class="left-nav">
+                                        <ul class=" card-category">
+                                            <li>
+                                                        <div class="card-body img-left small without-shadow ">
+                                                            <img loading="lazy" src="./img/category/analytic.svg" alt="coins" class="card-img">
+                                                            <span class="h6">Участники финансовой системы Узбекистана </span>
+                                                            <span class="icon-chevron-right"></span>
+                                                        </div>
+                                            </li>
+                                            <li>
+                                                    <div class="card-body img-left small without-shadow ">
+                                                            <img loading="lazy" src="./img/category/analytic.svg" alt="coins" class="card-img">
+                                                            <span class="h6">Участники финансовой системы Узбекистана </span>
+                                                            <span class="icon-chevron-right"></span>
+                                                        </div>
+                                            </li>
+                                            <li>
+                                                    <div class="card-body img-left small without-shadow ">
+                                                            <img loading="lazy" src="./img/category/analytic.svg" alt="coins" class="card-img">
+                                                            <span class="h6">Участники финансовой системы Узбекистана </span>
+                                                            <span class="icon-chevron-right"></span>
+                                                        </div>
+                                            </li>
+                                            <li>
+                                                    <div class="card-body img-left small without-shadow ">
+                                                            <img loading="lazy" src="./img/category/analytic.svg" alt="coins" class="card-img">
+                                                            <span class="h6">Участники финансовой системы Узбекистана </span>
+                                                            <span class="icon-chevron-right"></span>
+                                                        </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                        </article>
+                <hr>
+                <article class="my-4">
+                    <h5>Карточки вопросов</h5>
+                    <div class="row">
+                        <div class="col-6 my-3">
+                            <div class="card-question">
+                                <img loading="lazy" src="/img/category/faq.svg" alt="coins" class="card-question-img">
+                                <p class="p">
+                                    Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках
+                                    близким родственникам (родители, кровные и сводные братья и сестры, супруги, дети,
+                                    дедушки, бабушки и др.)?
+                                </p>
+                                <div class="tags tags-position">
+                                    <span class="icon-eye"></span>
+                                    <span>473</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="my-4">
+                   
+                    <h5>Разворачиваемые панели</h5>
+                    <div class="row">
+                        <div class="offset-3 col-9 my-3">
+                            <div id="accordion" class="card-question with-collapse">
+                                <div class="card-body" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <img loading="lazy" src="/img/category/faq.svg" alt="coins" class="card-question-img">
+                                     <p class='p my-auto'>
+                                        Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках
+                                        близким родственникам (родители, кровные и сводные братья и сестры, супруги, дети,
+                                        дедушки, бабушки и др.)?
+                                      </p>
+                                      <div class="tags tags-position">
+                                        <span>1</span>
+                                    </div>
+                                  </div>
+
+                                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                      <div class="d-flex justify-content-between">
+                                            <div class="tags tag-text">
+                                                    <span class="icon-refresh-cw mr-2"></span>
+                                                    Последнее обновление: 14:15, 30 мая 2019 г.
+                                            </div>
+                                            <div class="tags tag-text">
+                                                    <span class="icon-eye mr-2"></span>
+                                                   <span> 434</span>
+                                            </div>
+                                      </div>
+                                    <div class="collapse-text" >
+                                        <p class="p">
+                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </p>
+                                    <p class="p">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                          </p>
+                                    </div>
+                                    
+                                    <hr>
+                                    <div class="collapse-control">
+                                            <p class="p">
+                                            <small> 97% считают ответ полезным</small>  
+                                            Для Вас ответ оказался полезным?
+                                            </p>
+                                            <div class="btn btn-outline-primary">
+                                                    <a href="#">
+                                                        <span class="icon-thumbs-up"></span>
+                                                        <span class="btn-text">Да</span>
+                                                    </a>
+                                                </div>
+                                                <div class="btn btn-outline-primary">
+                                                        <a href="#">
+                                                            <span class="icon-thumbs-down"></span>
+                                                            <span class="btn-text">Нет</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="btn btn-outline-primary">
+                                                            <a href="#">
+                                                                <span class="icon-share-2"></span>
+                                                                <span class="btn-text">Поделиться</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="btn btn-outline-primary">
+                                                                <a href="#">
+                                                                    <span class="icon-printer"></span>
+                                                                    <span class="btn-text">На печать</span>
+                                                                </a>
+                                                            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                        </div>
+                    </div>
+                </article>
+                <article class="my-4">
+                   
+                        <h5>Разворачиваемые панели без картинки</h5>
+                        <div class="row">
+                            <div class="offset-3 col-9 my-3">
+                                <div id="accordion2" class="card-question with-collapse withoute-img">
+                                    <div class="card-body" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+                                         <p class='p my-auto'>
+                                            Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках
+                                            близким родственникам (родители, кровные и сводные братья и сестры, супруги, дети,
+                                            дедушки, бабушки и др.)?
+                                          </p>
+                                         
+                                      </div>
+    
+                                      <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
+                                          <div class="d-flex justify-content-between">
+                                                <div class="tags tag-text">
+                                                        <span class="icon-refresh-cw mr-2"></span>
+                                                        Последнее обновление: 14:15, 30 мая 2019 г.
+                                                </div>
+                                                <div class="tags tag-text">
+                                                        <span class="icon-eye mr-2"></span>
+                                                       <span> 434</span>
+                                                </div>
+                                          </div>
+                                        <div class="collapse-text" >
+                                            <p class="p">
+                                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </p>
+                                        <p class="p">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                              </p>
+                                        </div>
+                                        
+                                        <hr>
+                                        <div class="collapse-control">
+                                                <p class="p">
+                                                <small> 97% считают ответ полезным</small>  
+                                                Для Вас ответ оказался полезным?
+                                                </p>
+                                                <div class="btn btn-outline-primary">
+                                                        <a href="#">
+                                                            <span class="icon-thumbs-up"></span>
+                                                            <span class="btn-text">Да</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="btn btn-outline-primary">
+                                                            <a href="#">
+                                                                <span class="icon-thumbs-down"></span>
+                                                                <span class="btn-text">Нет</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="btn btn-outline-primary">
+                                                                <a href="#">
+                                                                    <span class="icon-share-2"></span>
+                                                                    <span class="btn-text">Поделиться</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="btn btn-outline-primary">
+                                                                    <a href="#">
+                                                                        <span class="icon-printer"></span>
+                                                                        <span class="btn-text">На печать</span>
+                                                                    </a>
+                                                                </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                            </div>
+                        </div>
+                    </article>
+
+
+                <article class="my-4">
+                    <h5>Карточки видио</h5>
+                    <div class="row">
+                        <div class="col-12 my-3">
+                            <div class="card-video small">
+                                <img loading="lazy" src="/img/demo/video1.jpg" alt="video" class="card-video-img">
+                                <div class="tags video-timer tags-position">
+                                    15:30
+                                </div>
+                                <div class="card-video-play">
+                                    <span class="icon-google-play_logo"></span>
+                                </div>
+                                <div class="card-video-title">
+                                    Как работает экономика
+                                </div>
+                                <div class="tags video-new tags-position">
+                                    Новое
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 my-3">
+                            <div class="card-video medium">
+                                <div style="background: url(/img/demo/video1.jpg)" alt="video" class="card-video-img">
+                                </div>
+                                    <div class="card-video-play">
+                                        <span class="icon-google-play_logo"></span>
+                                    </div>
+                                    <div class="card-video-title">
+                                        <small>Видео</small>
+                                        <span class="h1">
+                                            Зачем нужны кредиты?
+                                        </span>
+                                    </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 my-3">
+                            <div class="card-video big">
+                                <div style="background: url(/img/demo/video1.jpg)" alt="video" class="card-video-img">
+                                </div>
+                                <div class="card-video-play">
+                                        <span class="icon-google-play_logo"></span>
+                                    </div>
+                                <div class="card-video-title">
+                                    <small>Видео</small>
+                                    <span class="h1">
+                                            Зачем нужны кредиты?
+                                        </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5>Пост:</h5>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="post">
+                                <div class="post-img">
+                                    <img loading="lazy" src="/img/demo/video1.jpg" alt="post-img">
+                                    <div class="tags tag-position">
+                                        <span class="icon-thumbs-up"></span>
+                                        <span>473</span>
+                                    </div>
+                                </div>
+
+                                <div class="tags post-tag post-tag-position">
+                                    <span class="icon-tag"></span>
+                                    <a href="" class="post-tag-text"> Деньги</a>
+                                </div>
+                                <p class="p">Как защитить деньги на карте от посягательств мошенников</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <article class="my-4">
+                        <h5>book.book-post:</h5>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="book book-post">
+                                    <div class="book-img">
+                                        <img loading="lazy" src="./img/demo/Book-Capital.jpg" alt="book-img">
+                                        <div class="tags tag-position">
+                                            <span class="icon-thumbs-up"></span>
+                                            <span>473</span>
+                                        </div>
+                                    </div>
+
+                                    <p class="p">Капитал. Полная <br>
+                                        квинтэссенция 3-х томов
+                                        <small>Карл Маркс</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                    <hr>
+                    <article class="my-4">
+                            <h5>baner</h5>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="baner">
+                                            <div class="logo-body">
+                                            <div class="logo"></div>
+                                            <div class="logo-text">
+                                                <span class="small">
+                                                    Портал
+                                                </span>
+                                                <span class="h5">
+                                                    Финансовая грамотность
+                                                </span>
+                                            </div>
+                                            <ul class="baner-list">
+                                                <li class="baner-list-item">Откуда появились деньги? </li>
+                                                <li class="baner-list-item"> Что такое депозит и вклад?  </li>
+                                                <li class="baner-list-item"> Как составить семейный бюджет?</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </article>
+                        
+                        <hr/>
+
+                        <article>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                  <li class="breadcrumb-item"><a href="#"><span class="icon-home"></span></a></li>
+                                  <li class="breadcrumb-item" >text</li>
+                                  <li class="breadcrumb-item active" aria-current="page">text</li>
+                                </ol>
+                              </nav>
+                        </article>
+            </section>
+        
+
+        </div>
+    </div>
+</main>
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
