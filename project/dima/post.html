@@ -11,20 +11,6 @@
 
   <body>
     <header class="header">
-      <div class="container-fluide " style="background: black">
-        <div class="container d-flex justify-content-between flex-wrap">
-          <a href="defaultStylePage.html">дефолтные стили</a>
-          <a href="post.html">post</a>
-          <a href="post-detail.html">post-detail</a>
-          <a href="question.html">question</a>
-          <a href="question-detail.html">question detail</a>
-          <a href="calculator-page.html">calculator page</a>
-          <a href="books.html">books</a>
-          <a href="glosary.html">glosary</a>
-          <a href="sprite-big-icon.html">sprite big icon</a>
-        </div>
-      </div>
-
       <div class="d-none d-lg-block">
         <div class="header-desctop">
           <div class="container">
@@ -58,20 +44,28 @@
                   >
                 </div>
               </div>
-              <div class="col-auto flex-grow-1">
+              <div class="col-auto flex-grow-05 ">
                 <nav class="top-nav_list">
                   <a href="#" class="top-nav_list-link">О проекте</a>
                   <a href="#" class="top-nav_list-link">Контакты</a>
                   <a href="#" class="top-nav_list-link"> <span class="icon-announcement-speaker"></span></a>
                   <a href="/" class="top-nav_list-link"> <span class="icon-smartphone"></span></a>
-                  <a href="/" class="top-nav_list-link pl-0">
-                    <span class="icon-eye"></span><span class="icon-eye-off d-none active"></span
+                  <a href="#" class="top-nav_list-link pl-0">
+                    <span class="icon-eye d-none"></span><span class="icon-eye-off active"></span
                     ><span class="pl-1">Версия для слабовидящих</span>
                   </a>
-                  <div class="top-nav-list_select">
+                  <div class="top-nav-list_select" style="max-width: 155px">
+                    <div class="lang-img">
+                      <svg class="lang-rus" style="width: 24px; height:24px">
+                        <use xlink:href="./img/sprite.svg#lang"></use>
+                      </svg>
+                      <svg class="lang-eng d-none" style="width: 24px; height:24px">
+                        <use xlink:href="./img/sprite.svg#test"></use>
+                      </svg>
+                    </div>
                     <select name="lang" id="selectLang">
                       <option value="1">Руссукий</option>
-                      <option value="2">Английски</option>
+                      <option value="2">Английский</option>
                     </select>
                   </div>
                 </nav>
@@ -80,7 +74,7 @@
             <div class="row align-items-center mt-4">
               <a
                 href="/"
-                class="col-12 col-sm-5 col-lg-3 logo-link justify-content-center justify-content-sm-start mx-sm-0"
+                class="col-12 col-sm-5 col-lg-auto col-xl-3 logo-link justify-content-center justify-content-sm-start mx-sm-0"
               >
                 <span class="logo"></span>
                 <span class="logo-text"
@@ -88,10 +82,11 @@
                   Грамотность</span
                 >
               </a>
-              <div class="col-12 col-sm-7 col-lg-9 mt-3 mt-sm-0">
+              <div class="col-12 col-sm-7 col-md mt-3 mt-sm-0">
                 <div class="search-and-nav">
-                  <div class="form-group with-icon">
+                  <div class="form-group h-54 with-icon with-border ">
                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Поиск по сайту" />
+
                     <span class="icon-search"></span>
                   </div>
                   <div class="toggle-menu-button">
@@ -114,7 +109,7 @@
             </a>
             <div class="col-auto  order-0 order-sm-1">
               <form class="search-and-nav">
-                <div class="form-group with-icon custom-search">
+                <div class="form-group with-icon custom-search with-border">
                   <button class="icon-search" for="search1"></button>
                   <input type="text" class="form-control" id="search1" placeholder="Поиск по сайту" />
                 </div>
@@ -383,10 +378,98 @@
       <div class="_animation_before"></div>
     </header>
 
-    <main class="container mt-3 mt-lg-5">
+    <main class="container mt-5">
       <div class="row">
-        <div class="col-12 d-lg-none px-0"></div>
-        <div class="side-bar-left col-3 d-none d-lg-block ">
+        <div class="col-12 d-lg-none px-0">
+          <h2 class="h2 my-2 mb-3 text-center w-100">
+            Заголовок
+          </h2>
+
+          <div class="card-category owl-nav owl-carousel">
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#clipboard"></use>
+              </svg>
+              <span class="h6">Депозит (вклады) </span>
+              <span class="icon-chevron-right"></span>
+            </a>
+
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#calculator"></use>
+              </svg>
+              <span class="h6">Кредиты</span>
+              <span class="icon-chevron-right"></span>
+            </a>
+
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#social-campaign"></use>
+              </svg>
+              <span class="h6">Платежи и переводы</span>
+              <span class="icon-chevron-right"></span>
+            </a>
+
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#bank"></use>
+              </svg>
+              <span class="h6">Участники финансовой системы Узбекистана</span>
+              <span class="icon-chevron-right"></span>
+            </a>
+
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#License"></use>
+              </svg>
+              <span class="h6">Деньги</span>
+              <span class="icon-chevron-right"></span>
+            </a>
+
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#abacus"></use>
+              </svg>
+              <span class="h6">Денежно-кредитная политика и ее элементы</span>
+              <span class="icon-chevron-right"></span>
+            </a>
+
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#chart"></use>
+              </svg>
+              <span class="h6">Финансовый рынок </span>
+              <span class="icon-chevron-right"></span>
+            </a>
+
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#safebox"></use>
+              </svg>
+
+              <span class="h6">Бюджет</span>
+              <span class="icon-chevron-right"></span>
+            </a>
+
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#coins"></use>
+              </svg>
+
+              <span class="h6">Дистанционный банкинг</span>
+              <span class="icon-chevron-right"></span>
+            </a>
+
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#interview-1"></use>
+              </svg>
+              <span class="h6">Валютное регулирование</span>
+              <span class="icon-chevron-right"></span>
+            </a>
+          </div>
+        </div>
+        <div class="side-bar-left col-lg-4 col-xl-3 d-none d-lg-block ">
           <div class="left-nav">
             <ul class="card-category d-none d-lg-block">
               <a href="#" class="card-body img-left small without-shadow ">
@@ -492,110 +575,33 @@
             </div>
           </div>
         </div>
-        <div class="content col-12 col-lg-9">
+        <div class="content col-12 col-lg-8 col-xl-9">
           <nav aria-label="breadcrumb" class="d-none d-lg-block">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
                 <a href="#"><span class="icon-home"></span></a>
               </li>
-              <li class="breadcrumb-item"><a href="#"> text</a></li>
-              <li class="breadcrumb-item active" aria-current="page">text</li>
+
+              <li class="breadcrumb-item">
+                <a href="#"> Статьи </a>
+              </li>
+
+              <li class="breadcrumb-item active" aria-current="page">
+                <a href="javascript:void(0)">Депозит (вклады)</a>
+              </li>
             </ol>
           </nav>
-          <h1 class="h1 my-2  mb-lg-3 text-center text-lg-left">
-            Заголовок
-          </h1>
-          <div class="row d-flex d-lg-none">
-            <div class="card-category owl-nav owl-carousel">
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#clipboard"></use>
-                </svg>
-                <span class="h6">Депозит (вклады) </span>
-                <span class="icon-chevron-right"></span>
-              </a>
 
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#calculator"></use>
-                </svg>
-                <span class="h6">Кредиты</span>
-                <span class="icon-chevron-right"></span>
-              </a>
-
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#social-campaign"></use>
-                </svg>
-                <span class="h6">Платежи и переводы</span>
-                <span class="icon-chevron-right"></span>
-              </a>
-
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#bank"></use>
-                </svg>
-                <span class="h6">Участники финансовой системы Узбекистана</span>
-                <span class="icon-chevron-right"></span>
-              </a>
-
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#License"></use>
-                </svg>
-                <span class="h6">Деньги</span>
-                <span class="icon-chevron-right"></span>
-              </a>
-
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#abacus"></use>
-                </svg>
-                <span class="h6">Денежно-кредитная политика и ее элементы</span>
-                <span class="icon-chevron-right"></span>
-              </a>
-
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#chart"></use>
-                </svg>
-                <span class="h6">Финансовый рынок </span>
-                <span class="icon-chevron-right"></span>
-              </a>
-
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#safebox"></use>
-                </svg>
-
-                <span class="h6">Бюджет</span>
-                <span class="icon-chevron-right"></span>
-              </a>
-
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#coins"></use>
-                </svg>
-
-                <span class="h6">Дистанционный банкинг</span>
-                <span class="icon-chevron-right"></span>
-              </a>
-
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#interview-1"></use>
-                </svg>
-                <span class="h6">Валютное регулирование</span>
-                <span class="icon-chevron-right"></span>
-              </a>
-            </div>
-          </div>
-
+          <h1 class="d-none d-lg-block">Депозит (вклады)</h1>
           <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 px-0  mb-3 wow fadeInUp">
-              <div class="post">
+            <div class="col-sm-6 col-xl-4  px-0  mb-3 wow fadeInUp">
+              <div class="post mx-auto">
                 <div class="post-img">
-                  <img loading="lazy" src="./img/demo/video1.jpg" alt="post-img" />
+                  <img
+                    src="./img/depositphotos_43233203-stock-photo-hacker-stealing-credit-card-numbers.jpg"
+                    alt="post-img"
+                    class="img-fluid"
+                  />
                   <div class="tags tag-position">
                     <span class="icon-thumbs-up"></span>
                     <span>473</span>
@@ -611,10 +617,10 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 px-0  mb-3 wow fadeInUp">
-              <div class="post">
+            <div class="col-sm-6 col-xl-4  px-0  mb-3 wow fadeInUp">
+              <div class="post mx-auto">
                 <div class="post-img">
-                  <img loading="lazy" src="./img/demo/video1.jpg" alt="post-img" />
+                  <img loading="lazy" src="./img/depositphotos_8607757-stock-photo-debt-problems.jpg" alt="post-img" />
                   <div class="tags tag-position">
                     <span class="icon-thumbs-up"></span>
                     <span>473</span>
@@ -623,17 +629,20 @@
 
                 <div class="tags post-tag post-tag-position">
                   <span class="icon-tag"></span>
-                  <a href="" class="post-tag-text"> Деньги</a>
+                  <a href="" class="post-tag-text">Денежно-кредитная политика и ее элементы</a>
                 </div>
                 <p class="p">
-                  Как защитить деньги на карте от посягательств мошенников
+                  Что такое инфляция и как она влияет на нашу жизнь?
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 px-0  mb-3 wow fadeInUp">
-              <div class="post">
+            <div class="col-sm-6 col-xl-4  px-0  mb-3 wow fadeInUp">
+              <div class="post mx-auto">
                 <div class="post-img">
-                  <img loading="lazy" src="./img/demo/video1.jpg" alt="post-img" />
+                  <img
+                    src="./img/depositphotos_195589974-stock-photo-woman-visiting-jeweler-for-jewelery.jpg"
+                    alt="post-img"
+                  />
                   <div class="tags tag-position">
                     <span class="icon-thumbs-up"></span>
                     <span>473</span>
@@ -642,17 +651,21 @@
 
                 <div class="tags post-tag post-tag-position">
                   <span class="icon-tag"></span>
-                  <a href="" class="post-tag-text"> Деньги</a>
+                  <a href="" class="post-tag-text"> Участники финансовой системы Узбекистана</a>
                 </div>
                 <p class="p">
-                  Как защитить деньги на карте от посягательств мошенников
+                  Ломбард – что это такое и в каких случаях удобно обратится в ломбард?
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 px-0  mb-3 wow fadeInUp">
-              <div class="post">
+            <div class="col-sm-6 col-xl-4  px-0  mb-3 wow fadeInUp">
+              <div class="post mx-auto">
                 <div class="post-img">
-                  <img loading="lazy" src="./img/demo/video1.jpg" alt="post-img" />
+                  <img
+                    loading="lazy"
+                    src="./img/depositphotos_54510541-stock-photo-crying-man-with-no-money.jpg"
+                    alt="post-img"
+                  />
                   <div class="tags tag-position">
                     <span class="icon-thumbs-up"></span>
                     <span>473</span>
@@ -661,17 +674,21 @@
 
                 <div class="tags post-tag post-tag-position">
                   <span class="icon-tag"></span>
-                  <a href="" class="post-tag-text"> Деньги</a>
+                  <a href="" class="post-tag-text">Участники финансовой системы Узбекистана</a>
                 </div>
                 <p class="p">
-                  Как защитить деньги на карте от посягательств мошенников
+                  Что такое семейный бюджет и как правильно им управлять?
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 px-0  mb-3 wow fadeInUp">
-              <div class="post">
+            <div class="col-sm-6 col-xl-4  px-0  mb-3 wow fadeInUp">
+              <div class="post mx-auto">
                 <div class="post-img">
-                  <img loading="lazy" src="./img/demo/video1.jpg" alt="post-img" />
+                  <img
+                    loading="lazy"
+                    src="./img/depositphotos_6409175-stock-photo-new-house-buyers-concept-for.jpg"
+                    alt="post-img"
+                  />
                   <div class="tags tag-position">
                     <span class="icon-thumbs-up"></span>
                     <span>473</span>
@@ -680,17 +697,21 @@
 
                 <div class="tags post-tag post-tag-position">
                   <span class="icon-tag"></span>
-                  <a href="" class="post-tag-text"> Деньги</a>
+                  <a href="" class="post-tag-text"> Кредит</a>
                 </div>
                 <p class="p">
-                  Как защитить деньги на карте от посягательств мошенников
+                  Кредитная история
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 px-0  mb-3 wow fadeInUp">
-              <div class="post">
+            <div class="col-sm-6 col-xl-4  px-0  mb-3 wow fadeInUp">
+              <div class="post mx-auto">
                 <div class="post-img">
-                  <img loading="lazy" src="./img/demo/video1.jpg" alt="post-img" />
+                  <img
+                    loading="lazy"
+                    src="./img/depositphotos_66779745-stock-photo-charts-of-financial-instruments-on.jpg"
+                    alt="post-img"
+                  />
                   <div class="tags tag-position">
                     <span class="icon-thumbs-up"></span>
                     <span>473</span>
@@ -699,17 +720,21 @@
 
                 <div class="tags post-tag post-tag-position">
                   <span class="icon-tag"></span>
-                  <a href="" class="post-tag-text"> Деньги</a>
+                  <a href="" class="post-tag-text">Финансовый рынок</a>
                 </div>
                 <p class="p">
-                  Как защитить деньги на карте от посягательств мошенников
+                  Ценные бумаги: что это такое и как на них заработать?
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 px-0  mb-3 wow fadeInUp">
-              <div class="post">
+            <div class="col-sm-6 col-xl-4  px-0  mb-3 wow fadeInUp">
+              <div class="post mx-auto">
                 <div class="post-img">
-                  <img loading="lazy" src="./img/demo/video1.jpg" alt="post-img" />
+                  <img
+                    loading="lazy"
+                    src="./img/depositphotos_9537992-stock-photo-magnifying-glass-focused-on-cart.jpg"
+                    alt="post-img"
+                  />
                   <div class="tags tag-position">
                     <span class="icon-thumbs-up"></span>
                     <span>473</span>
@@ -718,17 +743,17 @@
 
                 <div class="tags post-tag post-tag-position">
                   <span class="icon-tag"></span>
-                  <a href="" class="post-tag-text"> Деньги</a>
+                  <a href="" class="post-tag-text">Платежи и переводы</a>
                 </div>
                 <p class="p">
-                  Как защитить деньги на карте от посягательств мошенников
+                  Что такое онлайн платежи или как совершить покупки в интернете?
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 px-0  mb-3 wow fadeInUp">
-              <div class="post">
+            <div class="col-sm-6 col-xl-4  px-0  mb-3 wow fadeInUp">
+              <div class="post mx-auto">
                 <div class="post-img">
-                  <img loading="lazy" src="./img/demo/video1.jpg" alt="post-img" />
+                  <img loading="lazy" src="./img/depositphotos_48531229-stock-photo-time-is-money.jpg" alt="post-img" />
                   <div class="tags tag-position">
                     <span class="icon-thumbs-up"></span>
                     <span>473</span>
@@ -737,19 +762,19 @@
 
                 <div class="tags post-tag post-tag-position">
                   <span class="icon-tag"></span>
-                  <a href="" class="post-tag-text"> Деньги</a>
+                  <a href="" class="post-tag-text">Денежно-кредитная политика и ее элементы</a>
                 </div>
                 <p class="p">
-                  Как защитить деньги на карте от посягательств мошенников
+                  Что такое инфляционное таргетирование?
                 </p>
               </div>
             </div>
           </div>
           <div class="row collapse multi-collapse" id="best-post-collapse">
-            <div class="col-12 col-sm-6 col-md-4 px-0  mb-3 ">
+            <div class="col-12 col-sm-6 col-xl-4 px-0  mb-3 ">
               <div class="post">
                 <div class="post-img">
-                  <img loading="lazy" src="./img/demo/video1.jpg" alt="post-img" />
+                  <img loading="lazy" src="./img/video1.jpg" alt="post-img" />
                   <div class="tags tag-position">
                     <span class="icon-thumbs-up"></span>
                     <span>473</span>
@@ -765,10 +790,10 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 px-0  mb-3 ">
+            <div class="col-12 col-sm-6 col-xl-4 px-0  mb-3 ">
               <div class="post">
                 <div class="post-img">
-                  <img loading="lazy" src="./img/demo/video1.jpg" alt="post-img" />
+                  <img loading="lazy" src="./img/video1.jpg" alt="post-img" />
                   <div class="tags tag-position">
                     <span class="icon-thumbs-up"></span>
                     <span>473</span>
@@ -784,10 +809,10 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 px-0  mb-3 ">
+            <div class="col-12 col-sm-6 col-xl-4 px-0  mb-3 ">
               <div class="post">
                 <div class="post-img">
-                  <img loading="lazy" src="./img/demo/video1.jpg" alt="post-img" />
+                  <img loading="lazy" src="./img/video1.jpg" alt="post-img" />
                   <div class="tags tag-position">
                     <span class="icon-thumbs-up"></span>
                     <span>473</span>
@@ -803,10 +828,10 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 px-0  mb-3 ">
+            <div class="col-12 col-sm-6 col-xl-4 px-0  mb-3 ">
               <div class="post">
                 <div class="post-img">
-                  <img loading="lazy" src="./img/demo/video1.jpg" alt="post-img" />
+                  <img loading="lazy" src="./img/video1.jpg" alt="post-img" />
                   <div class="tags tag-position">
                     <span class="icon-thumbs-up"></span>
                     <span>473</span>
@@ -822,10 +847,10 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 px-0  mb-3 ">
+            <div class="col-12 col-sm-6 col-xl-4 px-0  mb-3 ">
               <div class="post">
                 <div class="post-img">
-                  <img loading="lazy" src="./img/demo/video1.jpg" alt="post-img" />
+                  <img loading="lazy" src="./img/video1.jpg" alt="post-img" />
                   <div class="tags tag-position">
                     <span class="icon-thumbs-up"></span>
                     <span>473</span>
@@ -841,10 +866,10 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 px-0  mb-3 ">
+            <div class="col-12 col-sm-6 col-xl-4 px-0  mb-3 ">
               <div class="post">
                 <div class="post-img">
-                  <img loading="lazy" src="./img/demo/video1.jpg" alt="post-img" />
+                  <img loading="lazy" src="./img/video1.jpg" alt="post-img" />
                   <div class="tags tag-position">
                     <span class="icon-thumbs-up"></span>
                     <span>473</span>
@@ -860,10 +885,10 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 px-0  mb-3">
+            <div class="col-12 col-sm-6 col-xl-4 px-0  mb-3">
               <div class="post">
                 <div class="post-img">
-                  <img loading="lazy" src="./img/demo/video1.jpg" alt="post-img" />
+                  <img loading="lazy" src="./img/video1.jpg" alt="post-img" />
                   <div class="tags tag-position">
                     <span class="icon-thumbs-up"></span>
                     <span>473</span>
@@ -879,10 +904,10 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 px-0  mb-3 ">
+            <div class="col-12 col-sm-6 col-xl-4 px-0  mb-3 ">
               <div class="post">
                 <div class="post-img">
-                  <img loading="lazy" src="./img/demo/video1.jpg" alt="post-img" />
+                  <img loading="lazy" src="./img/video1.jpg" alt="post-img" />
                   <div class="tags tag-position">
                     <span class="icon-thumbs-up"></span>
                     <span>473</span>
@@ -959,14 +984,14 @@
                 <a href="#" class="footer-nav-link">Обратная связь</a>
               </nav>
             </div>
-            <div class="col">
+            <div class="col col-lg-auto">
               <a href="" class="link-market">
-                <img loading="lazy" src="./img/demo/apple-market.svg" alt="applemarket" />
+                <img loading="lazy" src="./img/apple-market.svg" alt="applemarket" />
               </a>
             </div>
-            <div class="col">
+            <div class="col col-lg-auto">
               <a href="" class="link-market">
-                <img loading="lazy" src="./img/demo/google-play.svg" alt="google-play" />
+                <img loading="lazy" src="./img/google-play.svg" alt="google-play" />
               </a>
             </div>
             <div class="col-2 d-flex">
@@ -977,7 +1002,7 @@
               </span>
             </div>
             <div class="col-auto">
-              <img loading="lazy" src="./img/demo/pechatb.svg" alt="pechatb" />
+              <img loading="lazy" src="./img/pechatb.svg" alt="pechatb" />
             </div>
           </div>
         </div>
@@ -1023,9 +1048,9 @@
             </div>
             <div class="col-12 col-lg-4 tech-info">
               <div class="d-flex justify-content-center">
-                <img loading="lazy" src="./img/demo/footer1.png" alt="footer" />
-                <img loading="lazy" src="./img/demo/footer2.png" alt="footer" class="mx-3" />
-                <img loading="lazy" src="./img/demo/footer3.png" alt="footer" />
+                <img loading="lazy" src="./img/footer1.png" alt="footer" />
+                <img loading="lazy" src="./img/footer2.png" alt="footer" class="mx-3" />
+                <img loading="lazy" src="./img/footer3.png" alt="footer" />
               </div>
             </div>
             <div class="col-12 col-lg-4">
@@ -1035,7 +1060,7 @@
                 >
 
                 <span class="aboute-site-company">Сайт работает на 1C-Битрикс</span>
-                <img loading="lazy" src="./img/demo/logo-studio.svg" alt="Pixelcraft®" class="logo-razrab my-2" />
+                <img loading="lazy" src="./img/logo-studio.svg" alt="Pixelcraft®" class="logo-razrab my-2" />
               </div>
             </div>
           </div>
@@ -1044,5 +1069,20 @@
     </footer>
 
     <script src="js/bundle.js"></script>
+    <div class="container-fluide " style="background: black">
+      <div class="container d-flex justify-content-between flex-wrap">
+        <a href="index.html">index</a>
+        <a href="defaultStylePage.html">дефолтные стили</a>
+        <a href="post.html">post</a>
+        <a href="post-detail.html">post-detail</a>
+        <a href="question.html">question</a>
+        <a href="question-detail.html">question detail</a>
+        <a href="calculator-page.html">calculator page</a>
+        <a href="calculator-page-result.html">calculator page result</a>
+        <a href="books.html">books</a>
+        <a href="glosary.html">glosary</a>
+        <a href="sprite-big-icon.html">sprite big icon</a>
+      </div>
+    </div>
   </body>
 </html>

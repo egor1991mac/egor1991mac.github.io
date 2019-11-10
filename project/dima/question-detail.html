@@ -11,20 +11,6 @@
 
   <body>
     <header class="header">
-      <div class="container-fluide " style="background: black">
-        <div class="container d-flex justify-content-between flex-wrap">
-          <a href="defaultStylePage.html">дефолтные стили</a>
-          <a href="post.html">post</a>
-          <a href="post-detail.html">post-detail</a>
-          <a href="question.html">question</a>
-          <a href="question-detail.html">question detail</a>
-          <a href="calculator-page.html">calculator page</a>
-          <a href="books.html">books</a>
-          <a href="glosary.html">glosary</a>
-          <a href="sprite-big-icon.html">sprite big icon</a>
-        </div>
-      </div>
-
       <div class="d-none d-lg-block">
         <div class="header-desctop">
           <div class="container">
@@ -58,20 +44,28 @@
                   >
                 </div>
               </div>
-              <div class="col-auto flex-grow-1">
+              <div class="col-auto flex-grow-05 ">
                 <nav class="top-nav_list">
                   <a href="#" class="top-nav_list-link">О проекте</a>
                   <a href="#" class="top-nav_list-link">Контакты</a>
                   <a href="#" class="top-nav_list-link"> <span class="icon-announcement-speaker"></span></a>
                   <a href="/" class="top-nav_list-link"> <span class="icon-smartphone"></span></a>
-                  <a href="/" class="top-nav_list-link pl-0">
-                    <span class="icon-eye"></span><span class="icon-eye-off d-none active"></span
+                  <a href="#" class="top-nav_list-link pl-0">
+                    <span class="icon-eye d-none"></span><span class="icon-eye-off active"></span
                     ><span class="pl-1">Версия для слабовидящих</span>
                   </a>
-                  <div class="top-nav-list_select">
+                  <div class="top-nav-list_select" style="max-width: 155px">
+                    <div class="lang-img">
+                      <svg class="lang-rus" style="width: 24px; height:24px">
+                        <use xlink:href="./img/sprite.svg#lang"></use>
+                      </svg>
+                      <svg class="lang-eng d-none" style="width: 24px; height:24px">
+                        <use xlink:href="./img/sprite.svg#test"></use>
+                      </svg>
+                    </div>
                     <select name="lang" id="selectLang">
                       <option value="1">Руссукий</option>
-                      <option value="2">Английски</option>
+                      <option value="2">Английский</option>
                     </select>
                   </div>
                 </nav>
@@ -80,7 +74,7 @@
             <div class="row align-items-center mt-4">
               <a
                 href="/"
-                class="col-12 col-sm-5 col-lg-3 logo-link justify-content-center justify-content-sm-start mx-sm-0"
+                class="col-12 col-sm-5 col-lg-auto col-xl-3 logo-link justify-content-center justify-content-sm-start mx-sm-0"
               >
                 <span class="logo"></span>
                 <span class="logo-text"
@@ -88,10 +82,11 @@
                   Грамотность</span
                 >
               </a>
-              <div class="col-12 col-sm-7 col-lg-9 mt-3 mt-sm-0">
+              <div class="col-12 col-sm-7 col-md mt-3 mt-sm-0">
                 <div class="search-and-nav">
-                  <div class="form-group with-icon">
+                  <div class="form-group h-54 with-icon with-border ">
                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Поиск по сайту" />
+
                     <span class="icon-search"></span>
                   </div>
                   <div class="toggle-menu-button">
@@ -114,7 +109,7 @@
             </a>
             <div class="col-auto  order-0 order-sm-1">
               <form class="search-and-nav">
-                <div class="form-group with-icon custom-search">
+                <div class="form-group with-icon custom-search with-border">
                   <button class="icon-search" for="search1"></button>
                   <input type="text" class="form-control" id="search1" placeholder="Поиск по сайту" />
                 </div>
@@ -383,12 +378,13 @@
       <div class="_animation_before"></div>
     </header>
 
-    <main class="container mt-3 mt-lg-5">
+    <main class="container mt-5">
       <div class="row">
-        <h2 class="h2 my-2 mb-3 d-block text-center w-100 d-lg-none ">
-          Топ 10 вопросов
-        </h2>
         <div class="col-12 d-lg-none px-0">
+          <h2 class="h2 my-2 mb-3 text-center w-100">
+            Заголовок
+          </h2>
+
           <div class="card-category owl-nav owl-carousel">
             <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
               <svg class="card-img">
@@ -480,7 +476,10 @@
                 <span class="icon-circle-arrow-left"></span>
                 <span> Назад к списку</span>
               </div>
-              <img loading="lazy" src="/img/category/analytic.svg" alt="coins" class="card-img" />
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#movie"></use>
+              </svg>
+
               <span class="h6">Участники финансовой системы Узбекистана </span>
             </div>
           </div>
@@ -491,20 +490,30 @@
               <li class="breadcrumb-item">
                 <a href="#"><span class="icon-home"></span></a>
               </li>
-              <li class="breadcrumb-item"><a href="#">text</a></li>
-              <li class="breadcrumb-item"><a href="#">text</a></li>
-              <li class="breadcrumb-item active" aria-current="page">text</li>
+
+              <li class="breadcrumb-item">
+                <a href="#"> Интерактивные услуги </a>
+              </li>
+
+              <li class="breadcrumb-item">
+                <a href="#"> Часто задаваемые вопросы </a>
+              </li>
+
+              <li class="breadcrumb-item active" aria-current="page">
+                <a href="javascript:void(0)">ТОП 10</a>
+              </li>
             </ol>
           </nav>
+
           <h1 class="h1 my-2 mb-3 d-none d-lg-block">Топ 10 вопросов</h1>
 
           <div id="accordion2" class="card-question with-collapse withoute-img mb-4 wow fadeInUp">
             <div
               class="card-body collapsed"
               data-toggle="collapse"
-              data-target="#collapseTwo"
+              data-target="#collapse0"
               aria-expanded="false"
-              aria-controls="collapseOne"
+              aria-controls="collapse0"
             >
               <p class="p my-auto">
                 Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким
@@ -512,7 +521,7 @@
               </p>
             </div>
 
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
+            <div id="collapse0" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
               <div class="d-flex justify-content-between">
                 <div class="tags tag-text">
                   <span class="icon-refresh-cw mr-2"></span>
@@ -544,39 +553,41 @@
 
               <hr />
               <div class="collapse-control flex-column flex-lg-row">
-                <p class="p">
+                <p class="p col-auto col-lg mr-lg-3">
                   <small> 97% считают ответ полезным</small>
                   Для Вас ответ оказался полезным?
                 </p>
+
                 <div class="d-flex jusify-content-between btn-thumbs-container">
-                  <button class="btn btn-outline-primary mx-4 mx-lg-2 mt-3 mt-lg-0">
+                  <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
                     <span class="icon-thumbs-up"></span>
                     <span class="btn-text">Да</span>
                   </button>
-                  <button class="btn btn-outline-primary mx-4 mx-lg-2 mt-3 mt-lg-0">
+                  <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
                     <span class="icon-thumbs-down"></span>
                     <span class="btn-text">Нет</span>
                   </button>
                 </div>
                 <hr class="d-lg-none" />
-                <button class="btn btn-outline-primary  mx-auto mx-lg-0 mb-3 mb-lg-0">
+                <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
                   <span class="icon-share-2"></span>
                   <span class="btn-text">Поделиться</span>
                 </button>
-                <button class="btn btn-outline-primary d-none d-lg-flex">
+                <button class="btn btn-outline-primary d-none  d-lg-flex">
                   <span class="icon-printer"></span>
                   <span class="btn-text">На печать</span>
                 </button>
               </div>
             </div>
           </div>
+
           <div id="accordion2" class="card-question with-collapse withoute-img mb-4 wow fadeInUp">
             <div
               class="card-body collapsed"
               data-toggle="collapse"
-              data-target="#collapseTwo"
+              data-target="#collapse1"
               aria-expanded="false"
-              aria-controls="collapseOne"
+              aria-controls="collapse1"
             >
               <p class="p my-auto">
                 Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким
@@ -584,7 +595,7 @@
               </p>
             </div>
 
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
+            <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
               <div class="d-flex justify-content-between">
                 <div class="tags tag-text">
                   <span class="icon-refresh-cw mr-2"></span>
@@ -616,39 +627,41 @@
 
               <hr />
               <div class="collapse-control flex-column flex-lg-row">
-                <p class="p">
+                <p class="p col-auto col-lg mr-lg-3">
                   <small> 97% считают ответ полезным</small>
                   Для Вас ответ оказался полезным?
                 </p>
+
                 <div class="d-flex jusify-content-between btn-thumbs-container">
-                  <button class="btn btn-outline-primary mx-4 mx-lg-2 mt-3 mt-lg-0">
+                  <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
                     <span class="icon-thumbs-up"></span>
                     <span class="btn-text">Да</span>
                   </button>
-                  <button class="btn btn-outline-primary mx-4 mx-lg-2 mt-3 mt-lg-0">
+                  <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
                     <span class="icon-thumbs-down"></span>
                     <span class="btn-text">Нет</span>
                   </button>
                 </div>
                 <hr class="d-lg-none" />
-                <button class="btn btn-outline-primary  mx-auto mx-lg-0 mb-3 mb-lg-0">
+                <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
                   <span class="icon-share-2"></span>
                   <span class="btn-text">Поделиться</span>
                 </button>
-                <button class="btn btn-outline-primary d-none d-lg-flex">
+                <button class="btn btn-outline-primary d-none  d-lg-flex">
                   <span class="icon-printer"></span>
                   <span class="btn-text">На печать</span>
                 </button>
               </div>
             </div>
           </div>
+
           <div id="accordion2" class="card-question with-collapse withoute-img mb-4 wow fadeInUp">
             <div
               class="card-body collapsed"
               data-toggle="collapse"
-              data-target="#collapseTwo"
+              data-target="#collapse2"
               aria-expanded="false"
-              aria-controls="collapseOne"
+              aria-controls="collapse2"
             >
               <p class="p my-auto">
                 Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким
@@ -656,7 +669,7 @@
               </p>
             </div>
 
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
+            <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
               <div class="d-flex justify-content-between">
                 <div class="tags tag-text">
                   <span class="icon-refresh-cw mr-2"></span>
@@ -688,39 +701,41 @@
 
               <hr />
               <div class="collapse-control flex-column flex-lg-row">
-                <p class="p">
+                <p class="p col-auto col-lg mr-lg-3">
                   <small> 97% считают ответ полезным</small>
                   Для Вас ответ оказался полезным?
                 </p>
+
                 <div class="d-flex jusify-content-between btn-thumbs-container">
-                  <button class="btn btn-outline-primary mx-4 mx-lg-2 mt-3 mt-lg-0">
+                  <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
                     <span class="icon-thumbs-up"></span>
                     <span class="btn-text">Да</span>
                   </button>
-                  <button class="btn btn-outline-primary mx-4 mx-lg-2 mt-3 mt-lg-0">
+                  <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
                     <span class="icon-thumbs-down"></span>
                     <span class="btn-text">Нет</span>
                   </button>
                 </div>
                 <hr class="d-lg-none" />
-                <button class="btn btn-outline-primary  mx-auto mx-lg-0 mb-3 mb-lg-0">
+                <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
                   <span class="icon-share-2"></span>
                   <span class="btn-text">Поделиться</span>
                 </button>
-                <button class="btn btn-outline-primary d-none d-lg-flex">
+                <button class="btn btn-outline-primary d-none  d-lg-flex">
                   <span class="icon-printer"></span>
                   <span class="btn-text">На печать</span>
                 </button>
               </div>
             </div>
           </div>
+
           <div id="accordion2" class="card-question with-collapse withoute-img mb-4 wow fadeInUp">
             <div
               class="card-body collapsed"
               data-toggle="collapse"
-              data-target="#collapseTwo"
+              data-target="#collapse3"
               aria-expanded="false"
-              aria-controls="collapseOne"
+              aria-controls="collapse3"
             >
               <p class="p my-auto">
                 Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким
@@ -728,7 +743,7 @@
               </p>
             </div>
 
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
+            <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
               <div class="d-flex justify-content-between">
                 <div class="tags tag-text">
                   <span class="icon-refresh-cw mr-2"></span>
@@ -760,39 +775,41 @@
 
               <hr />
               <div class="collapse-control flex-column flex-lg-row">
-                <p class="p">
+                <p class="p col-auto col-lg mr-lg-3">
                   <small> 97% считают ответ полезным</small>
                   Для Вас ответ оказался полезным?
                 </p>
+
                 <div class="d-flex jusify-content-between btn-thumbs-container">
-                  <button class="btn btn-outline-primary mx-4 mx-lg-2 mt-3 mt-lg-0">
+                  <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
                     <span class="icon-thumbs-up"></span>
                     <span class="btn-text">Да</span>
                   </button>
-                  <button class="btn btn-outline-primary mx-4 mx-lg-2 mt-3 mt-lg-0">
+                  <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
                     <span class="icon-thumbs-down"></span>
                     <span class="btn-text">Нет</span>
                   </button>
                 </div>
                 <hr class="d-lg-none" />
-                <button class="btn btn-outline-primary  mx-auto mx-lg-0 mb-3 mb-lg-0">
+                <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
                   <span class="icon-share-2"></span>
                   <span class="btn-text">Поделиться</span>
                 </button>
-                <button class="btn btn-outline-primary d-none d-lg-flex">
+                <button class="btn btn-outline-primary d-none  d-lg-flex">
                   <span class="icon-printer"></span>
                   <span class="btn-text">На печать</span>
                 </button>
               </div>
             </div>
           </div>
+
           <div id="accordion2" class="card-question with-collapse withoute-img mb-4 wow fadeInUp">
             <div
               class="card-body collapsed"
               data-toggle="collapse"
-              data-target="#collapseTwo"
+              data-target="#collapse4"
               aria-expanded="false"
-              aria-controls="collapseOne"
+              aria-controls="collapse4"
             >
               <p class="p my-auto">
                 Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким
@@ -800,7 +817,7 @@
               </p>
             </div>
 
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
+            <div id="collapse4" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
               <div class="d-flex justify-content-between">
                 <div class="tags tag-text">
                   <span class="icon-refresh-cw mr-2"></span>
@@ -832,39 +849,41 @@
 
               <hr />
               <div class="collapse-control flex-column flex-lg-row">
-                <p class="p">
+                <p class="p col-auto col-lg mr-lg-3">
                   <small> 97% считают ответ полезным</small>
                   Для Вас ответ оказался полезным?
                 </p>
+
                 <div class="d-flex jusify-content-between btn-thumbs-container">
-                  <button class="btn btn-outline-primary mx-4 mx-lg-2 mt-3 mt-lg-0">
+                  <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
                     <span class="icon-thumbs-up"></span>
                     <span class="btn-text">Да</span>
                   </button>
-                  <button class="btn btn-outline-primary mx-4 mx-lg-2 mt-3 mt-lg-0">
+                  <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
                     <span class="icon-thumbs-down"></span>
                     <span class="btn-text">Нет</span>
                   </button>
                 </div>
                 <hr class="d-lg-none" />
-                <button class="btn btn-outline-primary  mx-auto mx-lg-0 mb-3 mb-lg-0">
+                <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
                   <span class="icon-share-2"></span>
                   <span class="btn-text">Поделиться</span>
                 </button>
-                <button class="btn btn-outline-primary d-none d-lg-flex">
+                <button class="btn btn-outline-primary d-none  d-lg-flex">
                   <span class="icon-printer"></span>
                   <span class="btn-text">На печать</span>
                 </button>
               </div>
             </div>
           </div>
+
           <div id="accordion2" class="card-question with-collapse withoute-img mb-4 wow fadeInUp">
             <div
               class="card-body collapsed"
               data-toggle="collapse"
-              data-target="#collapseTwo"
+              data-target="#collapse5"
               aria-expanded="false"
-              aria-controls="collapseOne"
+              aria-controls="collapse5"
             >
               <p class="p my-auto">
                 Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким
@@ -872,7 +891,7 @@
               </p>
             </div>
 
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
+            <div id="collapse5" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
               <div class="d-flex justify-content-between">
                 <div class="tags tag-text">
                   <span class="icon-refresh-cw mr-2"></span>
@@ -904,39 +923,41 @@
 
               <hr />
               <div class="collapse-control flex-column flex-lg-row">
-                <p class="p">
+                <p class="p col-auto col-lg mr-lg-3">
                   <small> 97% считают ответ полезным</small>
                   Для Вас ответ оказался полезным?
                 </p>
+
                 <div class="d-flex jusify-content-between btn-thumbs-container">
-                  <button class="btn btn-outline-primary mx-4 mx-lg-2 mt-3 mt-lg-0">
+                  <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
                     <span class="icon-thumbs-up"></span>
                     <span class="btn-text">Да</span>
                   </button>
-                  <button class="btn btn-outline-primary mx-4 mx-lg-2 mt-3 mt-lg-0">
+                  <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
                     <span class="icon-thumbs-down"></span>
                     <span class="btn-text">Нет</span>
                   </button>
                 </div>
                 <hr class="d-lg-none" />
-                <button class="btn btn-outline-primary  mx-auto mx-lg-0 mb-3 mb-lg-0">
+                <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
                   <span class="icon-share-2"></span>
                   <span class="btn-text">Поделиться</span>
                 </button>
-                <button class="btn btn-outline-primary d-none d-lg-flex">
+                <button class="btn btn-outline-primary d-none  d-lg-flex">
                   <span class="icon-printer"></span>
                   <span class="btn-text">На печать</span>
                 </button>
               </div>
             </div>
           </div>
+
           <div id="accordion2" class="card-question with-collapse withoute-img mb-4 wow fadeInUp">
             <div
               class="card-body collapsed"
               data-toggle="collapse"
-              data-target="#collapseTwo"
+              data-target="#collapse6"
               aria-expanded="false"
-              aria-controls="collapseOne"
+              aria-controls="collapse6"
             >
               <p class="p my-auto">
                 Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким
@@ -944,7 +965,7 @@
               </p>
             </div>
 
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
+            <div id="collapse6" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
               <div class="d-flex justify-content-between">
                 <div class="tags tag-text">
                   <span class="icon-refresh-cw mr-2"></span>
@@ -976,26 +997,249 @@
 
               <hr />
               <div class="collapse-control flex-column flex-lg-row">
-                <p class="p">
+                <p class="p col-auto col-lg mr-lg-3">
                   <small> 97% считают ответ полезным</small>
                   Для Вас ответ оказался полезным?
                 </p>
+
                 <div class="d-flex jusify-content-between btn-thumbs-container">
-                  <button class="btn btn-outline-primary mx-4 mx-lg-2 mt-3 mt-lg-0">
+                  <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
                     <span class="icon-thumbs-up"></span>
                     <span class="btn-text">Да</span>
                   </button>
-                  <button class="btn btn-outline-primary mx-4 mx-lg-2 mt-3 mt-lg-0">
+                  <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
                     <span class="icon-thumbs-down"></span>
                     <span class="btn-text">Нет</span>
                   </button>
                 </div>
                 <hr class="d-lg-none" />
-                <button class="btn btn-outline-primary  mx-auto mx-lg-0 mb-3 mb-lg-0">
+                <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
                   <span class="icon-share-2"></span>
                   <span class="btn-text">Поделиться</span>
                 </button>
-                <button class="btn btn-outline-primary d-none d-lg-flex">
+                <button class="btn btn-outline-primary d-none  d-lg-flex">
+                  <span class="icon-printer"></span>
+                  <span class="btn-text">На печать</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion2" class="card-question with-collapse withoute-img mb-4 wow fadeInUp">
+            <div
+              class="card-body collapsed"
+              data-toggle="collapse"
+              data-target="#collapse7"
+              aria-expanded="false"
+              aria-controls="collapse7"
+            >
+              <p class="p my-auto">
+                Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким
+                родственникам (родители, кровные и сводные братья и сестры, супруги, дети, дедушки, бабушки и др.)?
+              </p>
+            </div>
+
+            <div id="collapse7" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
+              <div class="d-flex justify-content-between">
+                <div class="tags tag-text">
+                  <span class="icon-refresh-cw mr-2"></span>
+                  Последнее обновление: 14:15, 30 мая 2019 г.
+                </div>
+                <div class="tags tag-text">
+                  <span class="icon-eye mr-2"></span>
+                  <span> 434</span>
+                </div>
+              </div>
+              <div class="collapse-text">
+                <p class="p">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </p>
+                <p class="p">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </p>
+              </div>
+
+              <hr />
+              <div class="collapse-control flex-column flex-lg-row">
+                <p class="p col-auto col-lg mr-lg-3">
+                  <small> 97% считают ответ полезным</small>
+                  Для Вас ответ оказался полезным?
+                </p>
+
+                <div class="d-flex jusify-content-between btn-thumbs-container">
+                  <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
+                    <span class="icon-thumbs-up"></span>
+                    <span class="btn-text">Да</span>
+                  </button>
+                  <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
+                    <span class="icon-thumbs-down"></span>
+                    <span class="btn-text">Нет</span>
+                  </button>
+                </div>
+                <hr class="d-lg-none" />
+                <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
+                  <span class="icon-share-2"></span>
+                  <span class="btn-text">Поделиться</span>
+                </button>
+                <button class="btn btn-outline-primary d-none  d-lg-flex">
+                  <span class="icon-printer"></span>
+                  <span class="btn-text">На печать</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion2" class="card-question with-collapse withoute-img mb-4 wow fadeInUp">
+            <div
+              class="card-body collapsed"
+              data-toggle="collapse"
+              data-target="#collapse8"
+              aria-expanded="false"
+              aria-controls="collapse8"
+            >
+              <p class="p my-auto">
+                Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким
+                родственникам (родители, кровные и сводные братья и сестры, супруги, дети, дедушки, бабушки и др.)?
+              </p>
+            </div>
+
+            <div id="collapse8" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
+              <div class="d-flex justify-content-between">
+                <div class="tags tag-text">
+                  <span class="icon-refresh-cw mr-2"></span>
+                  Последнее обновление: 14:15, 30 мая 2019 г.
+                </div>
+                <div class="tags tag-text">
+                  <span class="icon-eye mr-2"></span>
+                  <span> 434</span>
+                </div>
+              </div>
+              <div class="collapse-text">
+                <p class="p">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </p>
+                <p class="p">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </p>
+              </div>
+
+              <hr />
+              <div class="collapse-control flex-column flex-lg-row">
+                <p class="p col-auto col-lg mr-lg-3">
+                  <small> 97% считают ответ полезным</small>
+                  Для Вас ответ оказался полезным?
+                </p>
+
+                <div class="d-flex jusify-content-between btn-thumbs-container">
+                  <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
+                    <span class="icon-thumbs-up"></span>
+                    <span class="btn-text">Да</span>
+                  </button>
+                  <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
+                    <span class="icon-thumbs-down"></span>
+                    <span class="btn-text">Нет</span>
+                  </button>
+                </div>
+                <hr class="d-lg-none" />
+                <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
+                  <span class="icon-share-2"></span>
+                  <span class="btn-text">Поделиться</span>
+                </button>
+                <button class="btn btn-outline-primary d-none  d-lg-flex">
+                  <span class="icon-printer"></span>
+                  <span class="btn-text">На печать</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion2" class="card-question with-collapse withoute-img mb-4 wow fadeInUp">
+            <div
+              class="card-body collapsed"
+              data-toggle="collapse"
+              data-target="#collapse9"
+              aria-expanded="false"
+              aria-controls="collapse9"
+            >
+              <p class="p my-auto">
+                Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким
+                родственникам (родители, кровные и сводные братья и сестры, супруги, дети, дедушки, бабушки и др.)?
+              </p>
+            </div>
+
+            <div id="collapse9" class="collapse" aria-labelledby="headingOne" data-parent="#accordion2">
+              <div class="d-flex justify-content-between">
+                <div class="tags tag-text">
+                  <span class="icon-refresh-cw mr-2"></span>
+                  Последнее обновление: 14:15, 30 мая 2019 г.
+                </div>
+                <div class="tags tag-text">
+                  <span class="icon-eye mr-2"></span>
+                  <span> 434</span>
+                </div>
+              </div>
+              <div class="collapse-text">
+                <p class="p">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </p>
+                <p class="p">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </p>
+              </div>
+
+              <hr />
+              <div class="collapse-control flex-column flex-lg-row">
+                <p class="p col-auto col-lg mr-lg-3">
+                  <small> 97% считают ответ полезным</small>
+                  Для Вас ответ оказался полезным?
+                </p>
+
+                <div class="d-flex jusify-content-between btn-thumbs-container">
+                  <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
+                    <span class="icon-thumbs-up"></span>
+                    <span class="btn-text">Да</span>
+                  </button>
+                  <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
+                    <span class="icon-thumbs-down"></span>
+                    <span class="btn-text">Нет</span>
+                  </button>
+                </div>
+                <hr class="d-lg-none" />
+                <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
+                  <span class="icon-share-2"></span>
+                  <span class="btn-text">Поделиться</span>
+                </button>
+                <button class="btn btn-outline-primary d-none  d-lg-flex">
                   <span class="icon-printer"></span>
                   <span class="btn-text">На печать</span>
                 </button>
@@ -1116,14 +1360,14 @@
                 <a href="#" class="footer-nav-link">Обратная связь</a>
               </nav>
             </div>
-            <div class="col">
+            <div class="col col-lg-auto">
               <a href="" class="link-market">
-                <img loading="lazy" src="./img/demo/apple-market.svg" alt="applemarket" />
+                <img loading="lazy" src="./img/apple-market.svg" alt="applemarket" />
               </a>
             </div>
-            <div class="col">
+            <div class="col col-lg-auto">
               <a href="" class="link-market">
-                <img loading="lazy" src="./img/demo/google-play.svg" alt="google-play" />
+                <img loading="lazy" src="./img/google-play.svg" alt="google-play" />
               </a>
             </div>
             <div class="col-2 d-flex">
@@ -1134,7 +1378,7 @@
               </span>
             </div>
             <div class="col-auto">
-              <img loading="lazy" src="./img/demo/pechatb.svg" alt="pechatb" />
+              <img loading="lazy" src="./img/pechatb.svg" alt="pechatb" />
             </div>
           </div>
         </div>
@@ -1180,9 +1424,9 @@
             </div>
             <div class="col-12 col-lg-4 tech-info">
               <div class="d-flex justify-content-center">
-                <img loading="lazy" src="./img/demo/footer1.png" alt="footer" />
-                <img loading="lazy" src="./img/demo/footer2.png" alt="footer" class="mx-3" />
-                <img loading="lazy" src="./img/demo/footer3.png" alt="footer" />
+                <img loading="lazy" src="./img/footer1.png" alt="footer" />
+                <img loading="lazy" src="./img/footer2.png" alt="footer" class="mx-3" />
+                <img loading="lazy" src="./img/footer3.png" alt="footer" />
               </div>
             </div>
             <div class="col-12 col-lg-4">
@@ -1192,7 +1436,7 @@
                 >
 
                 <span class="aboute-site-company">Сайт работает на 1C-Битрикс</span>
-                <img loading="lazy" src="./img/demo/logo-studio.svg" alt="Pixelcraft®" class="logo-razrab my-2" />
+                <img loading="lazy" src="./img/logo-studio.svg" alt="Pixelcraft®" class="logo-razrab my-2" />
               </div>
             </div>
           </div>
@@ -1201,5 +1445,20 @@
     </footer>
 
     <script src="js/bundle.js"></script>
+    <div class="container-fluide " style="background: black">
+      <div class="container d-flex justify-content-between flex-wrap">
+        <a href="index.html">index</a>
+        <a href="defaultStylePage.html">дефолтные стили</a>
+        <a href="post.html">post</a>
+        <a href="post-detail.html">post-detail</a>
+        <a href="question.html">question</a>
+        <a href="question-detail.html">question detail</a>
+        <a href="calculator-page.html">calculator page</a>
+        <a href="calculator-page-result.html">calculator page result</a>
+        <a href="books.html">books</a>
+        <a href="glosary.html">glosary</a>
+        <a href="sprite-big-icon.html">sprite big icon</a>
+      </div>
+    </div>
   </body>
 </html>

@@ -11,20 +11,6 @@
 
   <body>
     <header class="header with-background">
-      <div class="container-fluide " style="background: black">
-        <div class="container d-flex justify-content-between flex-wrap">
-          <a href="defaultStylePage.html">дефолтные стили</a>
-          <a href="post.html">post</a>
-          <a href="post-detail.html">post-detail</a>
-          <a href="question.html">question</a>
-          <a href="question-detail.html">question detail</a>
-          <a href="calculator-page.html">calculator page</a>
-          <a href="books.html">books</a>
-          <a href="glosary.html">glosary</a>
-          <a href="sprite-big-icon.html">sprite big icon</a>
-        </div>
-      </div>
-
       <div class="d-none d-lg-block">
         <div class="header-desctop">
           <div class="container">
@@ -58,20 +44,28 @@
                   >
                 </div>
               </div>
-              <div class="col-auto flex-grow-1">
+              <div class="col-auto flex-grow-05 ">
                 <nav class="top-nav_list">
                   <a href="#" class="top-nav_list-link">О проекте</a>
                   <a href="#" class="top-nav_list-link">Контакты</a>
                   <a href="#" class="top-nav_list-link"> <span class="icon-announcement-speaker"></span></a>
                   <a href="/" class="top-nav_list-link"> <span class="icon-smartphone"></span></a>
-                  <a href="/" class="top-nav_list-link pl-0">
-                    <span class="icon-eye"></span><span class="icon-eye-off d-none active"></span
+                  <a href="#" class="top-nav_list-link pl-0">
+                    <span class="icon-eye d-none"></span><span class="icon-eye-off active"></span
                     ><span class="pl-1">Версия для слабовидящих</span>
                   </a>
-                  <div class="top-nav-list_select">
+                  <div class="top-nav-list_select" style="max-width: 155px">
+                    <div class="lang-img">
+                      <svg class="lang-rus" style="width: 24px; height:24px">
+                        <use xlink:href="./img/sprite.svg#lang"></use>
+                      </svg>
+                      <svg class="lang-eng d-none" style="width: 24px; height:24px">
+                        <use xlink:href="./img/sprite.svg#test"></use>
+                      </svg>
+                    </div>
                     <select name="lang" id="selectLang">
                       <option value="1">Руссукий</option>
-                      <option value="2">Английски</option>
+                      <option value="2">Английский</option>
                     </select>
                   </div>
                 </nav>
@@ -80,7 +74,7 @@
             <div class="row align-items-center mt-4">
               <a
                 href="/"
-                class="col-12 col-sm-5 col-lg-3 logo-link justify-content-center justify-content-sm-start mx-sm-0"
+                class="col-12 col-sm-5 col-lg-auto col-xl-3 logo-link justify-content-center justify-content-sm-start mx-sm-0"
               >
                 <span class="logo"></span>
                 <span class="logo-text"
@@ -88,10 +82,11 @@
                   Грамотность</span
                 >
               </a>
-              <div class="col-12 col-sm-7 col-lg-9 mt-3 mt-sm-0">
+              <div class="col-12 col-sm-7 col-md mt-3 mt-sm-0">
                 <div class="search-and-nav">
-                  <div class="form-group with-icon">
+                  <div class="form-group h-54 with-icon with-border ">
                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Поиск по сайту" />
+
                     <span class="icon-search"></span>
                   </div>
                   <div class="toggle-menu-button">
@@ -114,7 +109,7 @@
             </a>
             <div class="col-auto  order-0 order-sm-1">
               <form class="search-and-nav">
-                <div class="form-group with-icon custom-search">
+                <div class="form-group with-icon custom-search with-border">
                   <button class="icon-search" for="search1"></button>
                   <input type="text" class="form-control" id="search1" placeholder="Поиск по сайту" />
                 </div>
@@ -383,494 +378,485 @@
       <div class="_animation_before"></div>
 
       <div class="container mt-5 pb-4 d-none d-lg-block">
-        <nav aria-label class="label breadcrumb">
-          <ol class="breadcrumb px-0">
+        <nav aria-label="breadcrumb" class="d-none d-lg-block">
+          <ol class="breadcrumb">
             <li class="breadcrumb-item">
               <a href="#"><span class="icon-home"></span></a>
             </li>
-            <li class="breadcrumb-item"><a href="#">text</a></li>
+
+            <li class="breadcrumb-item">
+              <a href="#"> Учебные материалы </a>
+            </li>
+
             <li class="breadcrumb-item active" aria-current="page">
-              text
+              <a href="javascript:void(0)">Глоссарий</a>
             </li>
           </ol>
         </nav>
+
         <h1 class=" h1 my-2 mb-3">
           Глоссарий
         </h1>
       </div>
     </header>
-    <main id="glosary">
-      <div class="container mt-3 mt-lg-4">
-        <div class="row">
-          <h2 class="h2 my-2 mb-3 d-block text-center w-100 d-lg-none ">
+    <main id="glosary" class="container mt-5">
+      <div class="row">
+        <div class="col-12 d-lg-none px-0">
+          <h2 class="h2 my-2 mb-3 text-center w-100">
             Учебные материалы
           </h2>
-          <div class="col-12 d-lg-none px-0">
-            <div class="card-category owl-nav owl-carousel">
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#clipboard"></use>
-                </svg>
-                <span class="h6">Депозит (вклады) </span>
-                <span class="icon-chevron-right"></span>
-              </a>
 
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#calculator"></use>
-                </svg>
-                <span class="h6">Кредиты</span>
-                <span class="icon-chevron-right"></span>
-              </a>
+          <div class="card-category owl-nav owl-carousel">
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#clipboard"></use>
+              </svg>
+              <span class="h6">Депозит (вклады) </span>
+              <span class="icon-chevron-right"></span>
+            </a>
 
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#social-campaign"></use>
-                </svg>
-                <span class="h6">Платежи и переводы</span>
-                <span class="icon-chevron-right"></span>
-              </a>
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#calculator"></use>
+              </svg>
+              <span class="h6">Кредиты</span>
+              <span class="icon-chevron-right"></span>
+            </a>
 
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#bank"></use>
-                </svg>
-                <span class="h6">Участники финансовой системы Узбекистана</span>
-                <span class="icon-chevron-right"></span>
-              </a>
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#social-campaign"></use>
+              </svg>
+              <span class="h6">Платежи и переводы</span>
+              <span class="icon-chevron-right"></span>
+            </a>
 
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#License"></use>
-                </svg>
-                <span class="h6">Деньги</span>
-                <span class="icon-chevron-right"></span>
-              </a>
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#bank"></use>
+              </svg>
+              <span class="h6">Участники финансовой системы Узбекистана</span>
+              <span class="icon-chevron-right"></span>
+            </a>
 
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#abacus"></use>
-                </svg>
-                <span class="h6">Денежно-кредитная политика и ее элементы</span>
-                <span class="icon-chevron-right"></span>
-              </a>
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#License"></use>
+              </svg>
+              <span class="h6">Деньги</span>
+              <span class="icon-chevron-right"></span>
+            </a>
 
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#chart"></use>
-                </svg>
-                <span class="h6">Финансовый рынок </span>
-                <span class="icon-chevron-right"></span>
-              </a>
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#abacus"></use>
+              </svg>
+              <span class="h6">Денежно-кредитная политика и ее элементы</span>
+              <span class="icon-chevron-right"></span>
+            </a>
 
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#safebox"></use>
-                </svg>
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#chart"></use>
+              </svg>
+              <span class="h6">Финансовый рынок </span>
+              <span class="icon-chevron-right"></span>
+            </a>
 
-                <span class="h6">Бюджет</span>
-                <span class="icon-chevron-right"></span>
-              </a>
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#safebox"></use>
+              </svg>
 
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#coins"></use>
-                </svg>
+              <span class="h6">Бюджет</span>
+              <span class="icon-chevron-right"></span>
+            </a>
 
-                <span class="h6">Дистанционный банкинг</span>
-                <span class="icon-chevron-right"></span>
-              </a>
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#coins"></use>
+              </svg>
 
-              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
-                <svg class="card-img">
-                  <use xlink:href="./img/sprite.svg#interview-1"></use>
-                </svg>
-                <span class="h6">Валютное регулирование</span>
-                <span class="icon-chevron-right"></span>
-              </a>
-            </div>
+              <span class="h6">Дистанционный банкинг</span>
+              <span class="icon-chevron-right"></span>
+            </a>
+
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#interview-1"></use>
+              </svg>
+              <span class="h6">Валютное регулирование</span>
+              <span class="icon-chevron-right"></span>
+            </a>
           </div>
-          <div class="col-12  col-lg-9 mx-auto  wow fadeInUp order-2 order-lg-0">
-            <div class="pre">
-              <p>
-                Этот словарик, в котором собраны толкования основных финансовых терминов, создан нами прежде всего для
-                пользователей, которые только начинают своё знакомство с финансами. Хотя и бывалым «профи» он тоже может
-                пригодиться.
-              </p>
-              <p>
-                С одной стороны, мы постарались охватить все важные понятия и определения, с другой – задачей было
-                создать небольшой и компактный справочник. Этот словарь пригодится вам для того, чтобы на совещании или
-                конференции, услышав слово, в значении которого вы сомневаетесь, подглядеть в словарик и увериться, что
-                точно понимаете всё, о чем идет речь.
-              </p>
-            </div>
+        </div>
+        <div class="col-12  col-lg-9 mx-auto  wow fadeInUp order-2 order-lg-0">
+          <div class="pre">
+            <p>
+              Этот словарик, в котором собраны толкования основных финансовых терминов, создан нами прежде всего для
+              пользователей, которые только начинают своё знакомство с финансами. Хотя и бывалым «профи» он тоже может
+              пригодиться.
+            </p>
+            <p>
+              С одной стороны, мы постарались охватить все важные понятия и определения, с другой – задачей было создать
+              небольшой и компактный справочник. Этот словарь пригодится вам для того, чтобы на совещании или
+              конференции, услышав слово, в значении которого вы сомневаетесь, подглядеть в словарик и увериться, что
+              точно понимаете всё, о чем идет речь.
+            </p>
           </div>
-          <div class="col-12 col-md-10 col-lg-9 mx-auto d-flex flex-column mt-5 wow fadeInUp order-0 order-lg-2">
-            <ul class="nav nav-tabs nav-tabs-button-primary mx-auto" id="myTab1" role="tablist">
-              <li class="nav-item">
-                <a
-                  id="rus-tab"
-                  class="btn  btn-outline-primary active"
-                  data-toggle="tab"
-                  href="#rus"
-                  role="tab"
-                  aria-controls="rus"
-                  aria-selected="false"
-                >
-                  Кирилица
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  id="eng-tab"
-                  class="btn btn-outline-primary"
-                  data-toggle="tab"
-                  href="#eng"
-                  role="tab"
-                  aria-controls="eng"
-                  aria-selected="true"
-                >
-                  Латиница
-                </a>
-              </li>
-            </ul>
-            <div class="tab-content">
-              <div class="tab-pane active" id="rus" role="tabpanel" aria-labelledby="rus">
-                <div class="d-flex flex-wrap justify-content-center alphabet mt-4">
-                  <button class="btn btn-outline-primary" disabled>0-9</button>
-                  <button class="btn btn-outline-primary active">а</button>
-                  <button class="btn btn-outline-primary">б</button>
-                  <button class="btn btn-outline-primary" disabled>в</button>
-                  <button class="btn btn-outline-primary">г</button>
-                  <button class="btn btn-outline-primary">д</button>
-                  <button class="btn btn-outline-primary">е</button>
-                  <button class="btn btn-outline-primary" disabled>ё</button>
-                  <button class="btn btn-outline-primary">ж</button>
-                  <button class="btn btn-outline-primary">з</button>
-                  <button class="btn btn-outline-primary">й</button>
-                  <button class="btn btn-outline-primary">и</button>
-                  <button class="btn btn-outline-primary">к</button>
-                  <button class="btn btn-outline-primary">л</button>
-                  <button class="btn btn-outline-primary">м</button>
-                  <button class="btn btn-outline-primary">м</button>
-                  <button class="btn btn-outline-primary">н</button>
-                  <button class="btn btn-outline-primary">о</button>
-                  <button class="btn btn-outline-primary">п</button>
-                  <button class="btn btn-outline-primary">р</button>
-                  <button class="btn btn-outline-primary">с</button>
-                  <button class="btn btn-outline-primary">т</button>
-                  <button class="btn btn-outline-primary">у</button>
-                  <button class="btn btn-outline-primary">ф</button>
-                  <button class="btn btn-outline-primary">x</button>
-                  <button class="btn btn-outline-primary">ц</button>
-                  <button class="btn btn-outline-primary">ч</button>
-                  <button class="btn btn-outline-primary">ш</button>
-                  <button class="btn btn-outline-primary">щ</button>
-                  <button class="btn btn-outline-primary">ъ</button>
-                  <button class="btn btn-outline-primary">ы</button>
-                  <button class="btn btn-outline-primary">ь</button>
-                  <button class="btn btn-outline-primary">э</button>
-                  <button class="btn btn-outline-primary">ю</button>
-                  <button class="btn btn-outline-primary">я</button>
-                  <button class="btn btn-outline-primary">...</button>
+        </div>
+        <div class="col-12 col-md-10 col-lg-9 mx-auto d-flex flex-column mt-5 wow fadeInUp order-0 order-lg-2">
+          <ul class="nav nav-tabs nav-tabs-button-primary mx-auto" id="myTab1" role="tablist">
+            <li class="nav-item">
+              <a
+                id="rus-tab"
+                class="btn  btn-outline-primary active"
+                data-toggle="tab"
+                href="#rus"
+                role="tab"
+                aria-controls="rus"
+                aria-selected="false"
+              >
+                Кирилица
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                id="eng-tab"
+                class="btn btn-outline-primary"
+                data-toggle="tab"
+                href="#eng"
+                role="tab"
+                aria-controls="eng"
+                aria-selected="true"
+              >
+                Латиница
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="rus" role="tabpanel" aria-labelledby="rus">
+              <div class="d-flex flex-wrap justify-content-center alphabet mt-4">
+                <button class="btn btn-outline-primary" disabled>0-9</button>
+                <button class="btn btn-outline-primary active">а</button>
+                <button class="btn btn-outline-primary">б</button>
+                <button class="btn btn-outline-primary" disabled>в</button>
+                <button class="btn btn-outline-primary">г</button>
+                <button class="btn btn-outline-primary">д</button>
+                <button class="btn btn-outline-primary">е</button>
+                <button class="btn btn-outline-primary" disabled>ё</button>
+                <button class="btn btn-outline-primary">ж</button>
+                <button class="btn btn-outline-primary">з</button>
+                <button class="btn btn-outline-primary">й</button>
+                <button class="btn btn-outline-primary">и</button>
+                <button class="btn btn-outline-primary">к</button>
+                <button class="btn btn-outline-primary">л</button>
+                <button class="btn btn-outline-primary">м</button>
+                <button class="btn btn-outline-primary">м</button>
+                <button class="btn btn-outline-primary">н</button>
+                <button class="btn btn-outline-primary">о</button>
+                <button class="btn btn-outline-primary">п</button>
+                <button class="btn btn-outline-primary">р</button>
+                <button class="btn btn-outline-primary">с</button>
+                <button class="btn btn-outline-primary">т</button>
+                <button class="btn btn-outline-primary">у</button>
+                <button class="btn btn-outline-primary">ф</button>
+                <button class="btn btn-outline-primary">x</button>
+                <button class="btn btn-outline-primary">ц</button>
+                <button class="btn btn-outline-primary">ч</button>
+                <button class="btn btn-outline-primary">ш</button>
+                <button class="btn btn-outline-primary">щ</button>
+                <button class="btn btn-outline-primary">ъ</button>
+                <button class="btn btn-outline-primary">ы</button>
+                <button class="btn btn-outline-primary">ь</button>
+                <button class="btn btn-outline-primary">э</button>
+                <button class="btn btn-outline-primary">ю</button>
+                <button class="btn btn-outline-primary">я</button>
+                <button class="btn btn-outline-primary">...</button>
+              </div>
+              <div class="row mt-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <span class="h1">A</span>
+                  <hr />
+                  <ul>
+                    <li class="pb-3"><a href="#">А/В тестирование</a></li>
+                    <li class="pb-3"><a href="#"> Автоброкер</a></li>
+                    <li class="pb-3"><a href="#"> Автоматическая загрузка классов</a></li>
+                    <li class="pb-3"><a href="#"> Автопостинг</a></li>
+                    <li class="pb-3"><a href="#"> Агент влияния</a></li>
+                    <li class="pb-3"><a href="#"> Агрегатор</a></li>
+                    <li class="pb-3"><a href="#"> АГС</a></li>
+                    <li class="pb-3"><a href="#"> Адаптивные объявления</a></li>
+                    <li class="pb-3"><a href="#"> Адаптивный дизайн (адаптив)</a></li>
+                    <li class="pb-3"><a href="#"> Адвокат бренда</a></li>
+                  </ul>
                 </div>
-                <div class="row mt-5">
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <span class="h1">A</span>
-                    <hr />
-                    <ul>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                    </ul>
-                  </div>
 
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <span class="h1">A</span>
-                    <hr />
-                    <ul>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <span class="h1">Б</span>
-                    <hr />
-                    <ul>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <span class="h1">В</span>
-                    <hr />
-                    <ul>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <span class="h1">Г</span>
-                    <hr />
-                    <ul>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <span class="h1">Д</span>
-                    <hr />
-                    <ul>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <span class="h1">Е</span>
-                    <hr />
-                    <ul>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <span class="h1">Ж</span>
-                    <hr />
-                    <ul>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                    </ul>
-                  </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <span class="h1">Б</span>
+                  <hr />
+                  <ul>
+                    <li class="pb-3"><a href="#">Баден-Баден</a></li>
+                    <li class="pb-3"><a href="#">База ретаргетинга</a></li>
+                    <li class="pb-3"><a href="#">Базовая частотность</a></li>
+                    <li class="pb-3"><a href="#">Бан</a></li>
+                    <li class="pb-3"><a href="#">Баннер</a></li>
+                    <li class="pb-3"><a href="#">Баннерная реклама</a></li>
+                    <li class="pb-3"><a href="#">Баннерная слепота</a></li>
+                    <li class="pb-3"><a href="#">Баннерообменная сеть</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <span class="h1">В</span>
+                  <hr />
+                  <ul>
+                    <li class="pb-3"><a href="#">Вайрфрейм</a></li>
+                    <li class="pb-3"><a href="#">Веб-аналитика</a></li>
+                    <li class="pb-3"><a href="#">Веб-дизайн</a></li>
+                    <li class="pb-3"><a href="#">Веб-интерфейс</a></li>
+                    <li class="pb-3"><a href="#">Веб-сайт</a></li>
+                    <li class="pb-3"><a href="#">Вебвизор</a></li>
+                    <li class="pb-3"><a href="#">Векторные изображения</a></li>
+                    <li class="pb-3"><a href="#">Вендорный префикс</a></li>
+                    <li class="pb-3"><a href="#">Вёрстка веб-страниц</a></li>
+                    <li class="pb-3"><a href="#">Вес страницы сайта</a></li>
+                    <li class="pb-3"><a href="#">Ветвление кода</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <span class="h1">Г</span>
+                  <hr />
+                  <ul>
+                    <li class="pb-3"><a href="#">Гайд</a></li>
+                    <li class="pb-3"><a href="#">Гайдлайн</a></li>
+                    <li class="pb-3"><a href="#">Гарантированные показы</a></li>
+                    <li class="pb-3"><a href="#">Гарантированные показы (контекстная реклама)</a></li>
+                    <li class="pb-3"><a href="#">Геймификация</a></li>
+                    <li class="pb-3"><a href="#">Геозависимый запрос</a></li>
+                    <li class="pb-3"><a href="#">Геолокационная реклама</a></li>
+                    <li class="pb-3"><a href="#">Геометрическая память</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <span class="h1">Д</span>
+                  <hr />
+                  <ul>
+                    <li class="pb-3"><a href="#">Декларация</a></li>
+                    <li class="pb-3"><a href="#">Декомпозиция</a></li>
+                    <li class="pb-3"><a href="#">Декремент</a></li>
+                    <li class="pb-3"><a href="#">Деловые социальные сети</a></li>
+                    <li class="pb-3"><a href="#">Демон (daemon)</a></li>
+                    <li class="pb-3"><a href="#">Денвер</a></li>
+                    <li class="pb-3"><a href="#">Дескриптор</a></li>
+                    <li class="pb-3"><a href="#">Диаграмма Ганта</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <span class="h1">З</span>
+                  <hr />
+                  <ul>
+                    <li class="pb-3"><a href="#">Заглушка</a></li>
+                    <li class="pb-3"><a href="#">Заголовки H1-H6</a></li>
+                    <li class="pb-3"><a href="#">Замыкание (closure)</a></li>
+                    <li class="pb-3"><a href="#">Заспамленность (текстовый спам, переоптимизация, переспам)</a></li>
+                    <li class="pb-3"><a href="#">Зафолловить / расфолловить</a></li>
+                    <li class="pb-3"><a href="#">Зафрендить / отфрендить</a></li>
+                    <li class="pb-3"><a href="#">Зеркало сайта</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <span class="h1">И</span>
+                  <hr />
+                  <ul>
+                    <li class="pb-3"><a href="#">Ивент</a></li>
+                    <li class="pb-3"><a href="#">Идентификатор отслеживания</a></li>
+                    <li class="pb-3"><a href="#">Изолирование (в PHP)</a></li>
+                    <li class="pb-3"><a href="#">Изящная деградация (graceful degradation)</a></li>
+                    <li class="pb-3"><a href="#">Иконка</a></li>
+                    <li class="pb-3"><a href="#">Иконочный шрифт</a></li>
+                    <li class="pb-3"><a href="#">Имиджевая реклама</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <span class="h1">К</span>
+                  <hr />
+                  <ul>
+                    <li class="pb-3"><a href="#">Кампания</a></li>
+                    <li class="pb-3"><a href="#">Канвас</a></li>
+                    <li class="pb-3"><a href="#">Карта кликов</a></li>
+                    <li class="pb-3"><a href="#">Карта сайта (sitemap.xml)</a></li>
+                    <li class="pb-3"><a href="#">Карусель</a></li>
+                    <li class="pb-3"><a href="#">Каскад</a></li>
+                  </ul>
                 </div>
               </div>
-              <div class="tab-pane" id="eng" role="tabpanel" aria-labelledby="eng">
-                <div class="d-flex flex-wrap justify-content-center alphabet mt-4">
-                  <button class="btn btn-outline-primary" disabled>0-9</button>
-                  <button class="btn btn-outline-primary active">a</button>
-                  <button class="btn btn-outline-primary">b</button>
-                  <button class="btn btn-outline-primary" disabled>d</button>
-                  <button class="btn btn-outline-primary">e</button>
-                  <button class="btn btn-outline-primary">f</button>
-                  <button class="btn btn-outline-primary">g</button>
-                  <button class="btn btn-outline-primary" disabled>h</button>
-                  <button class="btn btn-outline-primary">i</button>
-                  <button class="btn btn-outline-primary">j</button>
-                  <button class="btn btn-outline-primary">k</button>
-                  <button class="btn btn-outline-primary">l</button>
-                  <button class="btn btn-outline-primary">m</button>
-                  <button class="btn btn-outline-primary">n</button>
-                  <button class="btn btn-outline-primary">o</button>
-                  <button class="btn btn-outline-primary">p</button>
-                  <button class="btn btn-outline-primary">q</button>
-                  <button class="btn btn-outline-primary">r</button>
-                  <button class="btn btn-outline-primary">s</button>
-                  <button class="btn btn-outline-primary">t</button>
-                  <button class="btn btn-outline-primary">u</button>
-                  <button class="btn btn-outline-primary">v</button>
-                  <button class="btn btn-outline-primary">w</button>
-                  <button class="btn btn-outline-primary">x</button>
-                  <button class="btn btn-outline-primary">y</button>
-                  <button class="btn btn-outline-primary">z</button>
-                  <button class="btn btn-outline-primary">...</button>
+            </div>
+            <div class="tab-pane" id="eng" role="tabpanel" aria-labelledby="eng">
+              <div class="d-flex flex-wrap justify-content-center alphabet mt-4">
+                <button class="btn btn-outline-primary" disabled>0-9</button>
+                <button class="btn btn-outline-primary active">a</button>
+                <button class="btn btn-outline-primary">b</button>
+                <button class="btn btn-outline-primary" disabled>d</button>
+                <button class="btn btn-outline-primary">e</button>
+                <button class="btn btn-outline-primary">f</button>
+                <button class="btn btn-outline-primary">g</button>
+                <button class="btn btn-outline-primary" disabled>h</button>
+                <button class="btn btn-outline-primary">i</button>
+                <button class="btn btn-outline-primary">j</button>
+                <button class="btn btn-outline-primary">k</button>
+                <button class="btn btn-outline-primary">l</button>
+                <button class="btn btn-outline-primary">m</button>
+                <button class="btn btn-outline-primary">n</button>
+                <button class="btn btn-outline-primary">o</button>
+                <button class="btn btn-outline-primary">p</button>
+                <button class="btn btn-outline-primary">q</button>
+                <button class="btn btn-outline-primary">r</button>
+                <button class="btn btn-outline-primary">s</button>
+                <button class="btn btn-outline-primary">t</button>
+                <button class="btn btn-outline-primary">u</button>
+                <button class="btn btn-outline-primary">v</button>
+                <button class="btn btn-outline-primary">w</button>
+                <button class="btn btn-outline-primary">x</button>
+                <button class="btn btn-outline-primary">y</button>
+                <button class="btn btn-outline-primary">z</button>
+                <button class="btn btn-outline-primary">...</button>
+              </div>
+              <div class="row mt-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <span class="h1">A</span>
+                  <hr />
+                  <ul>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                  </ul>
                 </div>
-                <div class="row mt-5">
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <span class="h1">A</span>
-                    <hr />
-                    <ul>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <span class="h1">B</span>
-                    <hr />
-                    <ul>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <span class="h1">C</span>
-                    <hr />
-                    <ul>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <span class="h1">D</span>
-                    <hr />
-                    <ul>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <span class="h1">E</span>
-                    <hr />
-                    <ul>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <span class="h1">F</span>
-                    <hr />
-                    <ul>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <span class="h1">G</span>
-                    <hr />
-                    <ul>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <span class="h1">H</span>
-                    <hr />
-                    <ul>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                      <li><a href="#">text kfaskdkg aksdkasd</a></li>
-                    </ul>
-                  </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <span class="h1">B</span>
+                  <hr />
+                  <ul>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <span class="h1">C</span>
+                  <hr />
+                  <ul>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <span class="h1">D</span>
+                  <hr />
+                  <ul>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <span class="h1">E</span>
+                  <hr />
+                  <ul>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <span class="h1">F</span>
+                  <hr />
+                  <ul>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <span class="h1">G</span>
+                  <hr />
+                  <ul>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <span class="h1">H</span>
+                  <hr />
+                  <ul>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                    <li class="pb-3"><a href="#">text kfaskdkg aksdkasd</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </main>
+    <section>
       <hr />
       <div class="container">
         <section class="d-flex align-items-center jusify-content-between wow fadeInUp">
@@ -957,7 +943,7 @@
         </section>
       </div>
       <hr />
-    </main>
+    </section>
 
     <footer class="footer container-fluid px-0 pt-5">
       <section class="company">
@@ -982,14 +968,14 @@
                 <a href="#" class="footer-nav-link">Обратная связь</a>
               </nav>
             </div>
-            <div class="col">
+            <div class="col col-lg-auto">
               <a href="" class="link-market">
-                <img loading="lazy" src="./img/demo/apple-market.svg" alt="applemarket" />
+                <img loading="lazy" src="./img/apple-market.svg" alt="applemarket" />
               </a>
             </div>
-            <div class="col">
+            <div class="col col-lg-auto">
               <a href="" class="link-market">
-                <img loading="lazy" src="./img/demo/google-play.svg" alt="google-play" />
+                <img loading="lazy" src="./img/google-play.svg" alt="google-play" />
               </a>
             </div>
             <div class="col-2 d-flex">
@@ -1000,7 +986,7 @@
               </span>
             </div>
             <div class="col-auto">
-              <img loading="lazy" src="./img/demo/pechatb.svg" alt="pechatb" />
+              <img loading="lazy" src="./img/pechatb.svg" alt="pechatb" />
             </div>
           </div>
         </div>
@@ -1046,9 +1032,9 @@
             </div>
             <div class="col-12 col-lg-4 tech-info">
               <div class="d-flex justify-content-center">
-                <img loading="lazy" src="./img/demo/footer1.png" alt="footer" />
-                <img loading="lazy" src="./img/demo/footer2.png" alt="footer" class="mx-3" />
-                <img loading="lazy" src="./img/demo/footer3.png" alt="footer" />
+                <img loading="lazy" src="./img/footer1.png" alt="footer" />
+                <img loading="lazy" src="./img/footer2.png" alt="footer" class="mx-3" />
+                <img loading="lazy" src="./img/footer3.png" alt="footer" />
               </div>
             </div>
             <div class="col-12 col-lg-4">
@@ -1058,7 +1044,7 @@
                 >
 
                 <span class="aboute-site-company">Сайт работает на 1C-Битрикс</span>
-                <img loading="lazy" src="./img/demo/logo-studio.svg" alt="Pixelcraft®" class="logo-razrab my-2" />
+                <img loading="lazy" src="./img/logo-studio.svg" alt="Pixelcraft®" class="logo-razrab my-2" />
               </div>
             </div>
           </div>
