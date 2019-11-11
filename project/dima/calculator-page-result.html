@@ -553,7 +553,7 @@
                     </div>
                   </div>
                 </label>
-                <input type="text" pattern="\d*" class="form-control" data-type="number" placeholder="Сумма вклада" />
+                <input type="text" class="form-control" data-type="number" placeholder="Сумма вклада" />
               </div>
               <div class="box-item--small">
                 <select name="" id="" class="select2-hook w-100">
@@ -562,10 +562,10 @@
                   <option value="3">€</option>
                 </select>
               </div>
-              <div class="box-item max-width-md-100">
+              <div class="box-item">
                 <label class="label" for=""
                   >Возможность капитализации
-                  <sup class="icon-info p-static" data-toggle="tooltip" title="Some tooltip text!"></sup>
+                  <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
                   <div class="tooltip bs-tooltip-top" role="tooltip">
                     <div class="arrow"></div>
                     <div class="tooltip-inner">
@@ -603,7 +603,7 @@
                 </select>
               </div>
               <div class="box-item">
-                <label class="label no-wrap" for=""
+                <label class="label" for=""
                   >Срок размещения вклада
                   <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
                   <div class="tooltip bs-tooltip-top" role="tooltip">
@@ -865,7 +865,7 @@
                   <option value="3">€</option>
                 </select>
               </div>
-              <div class="box-item ">
+              <div class="box-item">
                 <label class="label" for="sum-vklad"
                   >Первоначальный взнос
                   <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
@@ -880,12 +880,12 @@
                   type="text"
                   pattern="\d*"
                   class="form-control"
-                  data-type="number"
+                  data-type="percent"
                   id="sum-vklad"
                   placeholder="Первоначальный взнос"
                 />
               </div>
-              <div class="box-item--small">
+              <div class="box-item--small px-0">
                 <div class="form-control without-border d-flex align-items-center" style="white-space: nowrap">
                   = 7 200 000
                   <span class="ml-1 small">
@@ -943,7 +943,7 @@
             </div>
             <div class="box-container form-group">
               <div class="box-item">
-                <label class="label" for="sum-vklad"
+                <label class="label " for="sum-vklad"
                   >Период кредитования
                   <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
                   <div class="tooltip bs-tooltip-top" role="tooltip">
@@ -970,7 +970,7 @@
                 </select>
               </div>
               <div class="box-item">
-                <label class="label" for="sum-vklad"
+                <label class="label white-space-normal" for="sum-vklad"
                   >Периодичность погашения
                   <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
                   <div class="tooltip bs-tooltip-top" role="tooltip">
