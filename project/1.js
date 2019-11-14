@@ -9,7 +9,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 var ImageminPlugin = require("imagemin-webpack-plugin").default;
 var OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const PreloadWebpackPlugin = require('preload-webpack-plugin');
 
 const PATHS = {
   src: path.join(__dirname, "src")
@@ -23,18 +22,17 @@ function generateHtmlPlugins(templateDir) {
     return new HtmlWebpackPlugin({
       filename: `${name}.html`,
       template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
+      inject: false
     });
   });
 }
-
 
 const htmlPlugins = generateHtmlPlugins("./src/html/views");
 
 const config = {
   entry: ["./src/js/index.js", "./src/scss/style.scss"],
   output: {
-    filename: "./js/bundle.js",
-    chunkFilename: '[name].bundle.js',
+    filename: "./js/bundle.js"
   },
   devtool: "source-map",
   mode: "production",
@@ -124,45 +122,27 @@ const config = {
       new TerserPlugin({
         sourceMap: true,
         extractComments: true
-      }),
-     
+      })
     ],
-    splitChunks: {
-      cacheGroups: {
-        styles: {
-          name: 'styles',
-          test: /\.css$/,
-          chunks: 'all',
-          enforce: true,
-          maxSize: 120,
-        },
-      },
-    },
-     
-    
-    
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "./css/style.bundle.css"
+      filename: "./css/style.bundle.css",
+      chunkFilename: "./css/[id].chunk.css"
     }),
-    
-    new OptimizeCssAssetsPlugin({
-      assetNameRegExp: /\.optimize\.css$/g,
-      cssProcessor: require("cssnano"),
-      cssProcessorPluginOptions: {
-        preset: ["default", { discardComments: { removeAll: true } }]
-      },
-      canPrint: true
-    }),
-    new webpack.AutomaticPrefetchPlugin(),
-    
+    // new OptimizeCssAssetsPlugin({
+    //   assetNameRegExp: /\.optimize\.css$/g,
+    //   cssProcessor: require("cssnano"),
+    //   cssProcessorPluginOptions: {
+    //     preset: ["default", { discardComments: { removeAll: true } }]
+    //   },
+    //   canPrint: true
+    // }),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
       "window.jQuery": "jquery"
     }),
-    
 
     new CopyWebpackPlugin([
       {
@@ -181,10 +161,8 @@ const config = {
         from: "./src/uploads",
         to: "./uploads"
       }
-    ]),
-  ].concat(htmlPlugins),
-  
- 
+    ])
+  ].concat(htmlPlugins)
 };
 
 module.exports = (env, argv) => {
