@@ -12,6 +12,30 @@
 
   <body>
     <header class="header with-background">
+      <div class="container py-4" id="bad-see" style="border-bottom: 2px solid black">
+        <div class="row justify-content-center">
+          <div class="col-auto d-flex flex-wrap align-items-center  ">
+            <h5 class="h5 mr-1">Размер шрифта</h5>
+            <button class="btn btn-primary" id="font-big" style="font-size:24px">
+              A
+            </button>
+          </div>
+          <div a="#" class="col-auto d-flex flex-wrap align-items-center ">
+            <h5 class="h5 mr-1">Фон</h5>
+            <a href="white/index.html" class="btn btn-primary mr-1" id="color-white-site">
+              Белый
+            </a>
+            <a href="black/index.html" class="btn btn-primary" id="color-black-site">
+              Черный
+            </a>
+          </div>
+          <div class="col-auto d-flex flex-wrap align-items-center ">
+            <a href="/" class="btn btn-primary" id="color-black-site">
+              Полная версия сайта
+            </a>
+          </div>
+        </div>
+      </div>
       <div class="header-desctop">
         <div class="container">
           <div class="row top-nav  d-none d-md-flex">
@@ -74,7 +98,7 @@
           <div class="row align-items-center pt-4">
             <a
               href="/"
-              class="col-12 col-sm-5 col-lg-auto col-xl-3 logo-link justify-content-center justify-content-sm-start mx-sm-0"
+              class="col-12 col-sm-5 col-lg-auto logo-link justify-content-center justify-content-sm-start mx-sm-0"
             >
               <span class="logo"></span>
               <span class="logo-text"
@@ -326,7 +350,7 @@
           <div class="row align-items-center mt-4 d-none d-sm-flex">
             <a
               href="/"
-              class="col-12 col-sm-5 col-lg-3 logo-link justify-content-center justify-content-sm-start mx-sm-0"
+              class="col-12 col-sm-5 col-lg-auto logo-link justify-content-center justify-content-sm-start mx-sm-0"
             >
               <span class="logo"></span>
               <span class="logo-text"
@@ -334,7 +358,7 @@
                 Грамотность</span
               >
             </a>
-            <div class="col-12 col-sm-7 col-lg-9 mt-3 mt-sm-0">
+            <div class="col-12 col-sm-7 col-lg mt-3 mt-sm-0 flex-grow-1">
               <div class="search-and-nav">
                 <div class="form-group with-icon">
                   <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Поиск по сайту" />
@@ -554,13 +578,13 @@
 
     <section id="best-post" class="container py-5 ">
       <div class="row">
-        <div class="col-12 heading-section wow fadeInUp">
+        <div class="col-12 heading-section wow fadeInUp ">
           <span class="h1">Лучшие статьи</span>
           <span class="p color-secondary ml-lg-3">по мнению пользователей</span>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 wow fadeInUp">
+        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 wow fadeInUp post-container">
           <div class="post mx-auto">
             <div class="post-img">
               <img
@@ -583,7 +607,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 wow fadeInUp">
+        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 wow fadeInUp post-container">
           <div class="post mx-auto">
             <div class="post-img">
               <img loading="lazy" src="./img/depositphotos_8607757-stock-photo-debt-problems.jpg" alt="post-img" />
@@ -602,7 +626,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 wow fadeInUp">
+        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 wow fadeInUp post-container">
           <div class="post mx-auto">
             <div class="post-img">
               <img
@@ -624,7 +648,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 wow fadeInUp">
+        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 wow fadeInUp post-container">
           <div class="post mx-auto">
             <div class="post-img">
               <img
@@ -647,7 +671,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 wow fadeInUp">
+        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 wow fadeInUp post-container">
           <div class="post mx-auto">
             <div class="post-img">
               <img
@@ -670,7 +694,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 wow fadeInUp">
+        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 wow fadeInUp post-container">
           <div class="post mx-auto">
             <div class="post-img">
               <img
@@ -693,7 +717,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 wow fadeInUp">
+        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 wow fadeInUp post-container">
           <div class="post mx-auto">
             <div class="post-img">
               <img
@@ -716,7 +740,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 wow fadeInUp">
+        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 wow fadeInUp post-container">
           <div class="post mx-auto">
             <div class="post-img">
               <img loading="lazy" src="./img/depositphotos_48531229-stock-photo-time-is-money.jpg" alt="post-img" />
@@ -736,8 +760,8 @@
           </div>
         </div>
       </div>
-      <div class="row collapse multi-collapse" id="best-post-collapse">
-        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 ">
+      <div class="row collapse multi-collapse" id="best-post-collapse ">
+        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 post-container">
           <div class="post mx-auto">
             <div class="post-img">
               <img loading="lazy" src="./img/video1.jpg" alt="post-img" />
@@ -756,7 +780,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 ">
+        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 post-container">
           <div class="post mx-auto">
             <div class="post-img">
               <img loading="lazy" src="./img/video1.jpg" alt="post-img" />
@@ -775,7 +799,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 ">
+        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 post-container">
           <div class="post mx-auto">
             <div class="post-img">
               <img loading="lazy" src="./img/video1.jpg" alt="post-img" />
@@ -794,7 +818,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 ">
+        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 post-container">
           <div class="post mx-auto">
             <div class="post-img">
               <img loading="lazy" src="./img/video1.jpg" alt="post-img" />
@@ -813,7 +837,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 ">
+        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 post-container">
           <div class="post mx-auto">
             <div class="post-img">
               <img loading="lazy" src="./img/video1.jpg" alt="post-img" />
@@ -832,7 +856,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 ">
+        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 post-container">
           <div class="post mx-auto">
             <div class="post-img">
               <img loading="lazy" src="./img/video1.jpg" alt="post-img" />
@@ -851,7 +875,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3">
+        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 post-container">
           <div class="post mx-auto">
             <div class="post-img">
               <img loading="lazy" src="./img/video1.jpg" alt="post-img" />
@@ -870,7 +894,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3 ">
+        <div class="col-sm-6 col-md-4 col-lg-3 px-0  mb-3  post-container">
           <div class="post mx-auto">
             <div class="post-img">
               <img loading="lazy" src="./img/video1.jpg" alt="post-img" />
@@ -1266,7 +1290,7 @@
     <section id="info">
       <div class="container ">
         <div class="row">
-          <div class="col-md-12 col-lg-8">
+          <div class="col-md-12 col-lg-8 mx-auto">
             <div class="h1 mb-5 text-center text-lg-left">
               Интерактивные услуги
             </div>
@@ -1412,7 +1436,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 wow fadeInUp d-none d-lg-block">
+          <div class="col-auto flex-grow-1 wow fadeInUp d-none d-lg-block">
             <div class="slider">
               <div class="h1 text-center py-4">Новые книги</div>
               <div class="d-flex justify-content-center align-items-center">
@@ -1570,7 +1594,7 @@
       </section>
     </footer>
 
-    <div class="container-fluide " style="background: black">
+    <div class="container-fluide " style="background: red">
       <div class="container d-flex justify-content-between flex-wrap">
         <a href="index.html">index</a>
         <a href="static.html">static</a>
