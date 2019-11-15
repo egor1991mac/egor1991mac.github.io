@@ -131,21 +131,7 @@ const config = {
         extractComments: true
       }),
      
-    ],
-    splitChunks: {
-      cacheGroups: {
-        styles: {
-          name: 'styles',
-          test: /\.css$/,
-          chunks: 'all',
-          enforce: true,
-          maxSize: 120,
-        },
-      },
-    },
-     
-    
-    
+    ],  
   },
   plugins: [
     new MiniCssExtractPlugin({
