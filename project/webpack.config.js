@@ -9,7 +9,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 var ImageminPlugin = require("imagemin-webpack-plugin").default;
 var OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const PreloadWebpackPlugin = require('preload-webpack-plugin');
 
 const PATHS = {
   src: path.join(__dirname, "src")
@@ -30,10 +29,7 @@ function generateHtmlPlugins(templateDir) {
 
 const htmlPlugins = generateHtmlPlugins("./src/html/views");
 
-const preloadPlugins = new PreloadWebpackPlugin({
-  rel: 'preload',
-  as: 'script'
-});
+
 
 const config = {
   entry: ["./src/js/index.js", "./src/scss/style.scss"],
@@ -138,15 +134,15 @@ const config = {
       filename: "./css/style.bundle.css"
     }),
     
-    new OptimizeCssAssetsPlugin({
-      assetNameRegExp: /\.optimize\.css$/g,
-      cssProcessor: require("cssnano"),
-      cssProcessorPluginOptions: {
-        preset: ["default", { discardComments: { removeAll: true } }]
-      },
-      canPrint: true
-    }),
-    new webpack.AutomaticPrefetchPlugin(),
+    // new OptimizeCssAssetsPlugin({
+    //   assetNameRegExp: /\.optimize\.css$/g,
+    //   cssProcessor: require("cssnano"),
+    //   cssProcessorPluginOptions: {
+    //     preset: ["default", { discardComments: { removeAll: true } }]
+    //   },
+    //   canPrint: true
+    // }),
+    // new webpack.AutomaticPrefetchPlugin(),
     
     new webpack.ProvidePlugin({
       $: "jquery",
