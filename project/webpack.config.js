@@ -30,6 +30,11 @@ function generateHtmlPlugins(templateDir) {
 
 const htmlPlugins = generateHtmlPlugins("./src/html/views");
 
+const preloadPlugins = new PreloadWebpackPlugin({
+  rel: 'preload',
+  as: 'script'
+});
+
 const config = {
   entry: ["./src/js/index.js", "./src/scss/style.scss"],
   output: {
