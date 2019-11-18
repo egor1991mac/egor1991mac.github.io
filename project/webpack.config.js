@@ -144,15 +144,15 @@ const config = {
       filename: "./css/style.bundle.css"
     }),
     
-    // new OptimizeCssAssetsPlugin({
-    //   assetNameRegExp: /\.optimize\.css$/g,
-    //   cssProcessor: require("cssnano"),
-    //   cssProcessorPluginOptions: {
-    //     preset: ["default", { discardComments: { removeAll: true } }]
-    //   },
-    //   canPrint: true
-    // }),
-    // new webpack.AutomaticPrefetchPlugin(),
+    new OptimizeCssAssetsPlugin({
+      assetNameRegExp: /\.optimize\.css$/,
+      cssProcessor: require("cssnano"),
+      cssProcessorPluginOptions: {
+        preset: ["default", { discardComments: { removeAll: true } }]
+      },
+      canPrint: true
+    }),
+   
     
     new webpack.ProvidePlugin({
       $: "jquery",
