@@ -12,7 +12,7 @@
 
   <body>
     <header class="header">
-      <div class="container py-4 d-none" id="bad-see" style="border-bottom: 2px solid black">
+      <div class="container py-4" id="bad-see" style="border-bottom: 2px solid black; display: none;">
         <div class="row justify-content-center">
           <div class="col-auto d-flex flex-wrap align-items-center  ">
             <h5 class="h5 mr-1">Размер шрифта</h5>
@@ -22,27 +22,15 @@
           </div>
           <div class="col-auto d-flex flex-wrap align-items-center ">
             <h5 class="h5 mr-1">Фон</h5>
-            <a
-              href="https://egor1991mac.github.io/project/dima/white/index.html"
-              class="btn btn-primary mr-1"
-              id="color-white-site"
-            >
+            <a href="https://egor1991mac.github.io/project/dima/white/index.html" class="btn btn-primary mr-1">
               Белый
             </a>
-            <a
-              href="https://egor1991mac.github.io/project/dima/black/index.html"
-              class="btn btn-primary"
-              id="color-black-site"
-            >
+            <a href="https://egor1991mac.github.io/project/dima/black/index.html" class="btn btn-primary">
               Черный
             </a>
           </div>
           <div class="col-auto d-flex flex-wrap align-items-center ">
-            <a
-              href="https://egor1991mac.github.io/project/dima/index.html"
-              class="btn btn-primary"
-              id="color-black-site"
-            >
+            <a href="https://egor1991mac.github.io/project/dima/index.html" class="btn btn-primary">
               Полная версия сайта
             </a>
           </div>
@@ -122,7 +110,7 @@
               <div class="col-12 col-sm-7 col-md mt-3 mt-sm-0">
                 <div class="search-and-nav">
                   <div class="form-group h-54 with-icon with-border ">
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Поиск по сайту" />
+                    <input type="text" class="form-control" id="search-form-1" placeholder="Поиск по сайту" />
 
                     <span class="icon-search"></span>
                   </div>
@@ -149,7 +137,7 @@
               <form class="search-and-nav">
                 <div class="form-group with-icon custom-search with-border">
                   <button class="icon-search" onclick="event.preventDefault()"></button>
-                  <input type="text" class="form-control" id="search1" placeholder="Поиск по сайту" />
+                  <input type="text" class="form-control" placeholder="Поиск по сайту" />
                 </div>
               </form>
             </div>
@@ -177,8 +165,8 @@
             <div class="col-auto  order-0 order-sm-1">
               <form class="search-and-nav">
                 <div class="form-group with-icon custom-search">
-                  <button class="icon-search" for="search1"></button>
-                  <input type="text" class="form-control" id="search1" placeholder="Поиск по сайту" />
+                  <button class="icon-search"></button>
+                  <input type="text" class="form-control" placeholder="Поиск по сайту" />
                 </div>
               </form>
             </div>
