@@ -6387,7 +6387,7 @@ purgecss-webpack-plugin@^1.6.0:
     purgecss "^1.4.0"
     webpack-sources "^1.4.3"
 
-purgecss@^1.4.0:
+purgecss@^1.4.0, purgecss@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/purgecss/-/purgecss-1.4.1.tgz#d362e63eb1ed9dd1fa1554b9fd7accb8d54e56dc"
   integrity sha512-5jONV/D/3nfa+lC425+LA+OWe5/LDn4a79cac+TnzJq3VczwnWlpIDdW275hHsGhkzIlqATQsYFLW7or0cSwNQ==
