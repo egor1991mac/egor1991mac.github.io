@@ -10,7 +10,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 var ImageminPlugin = require("imagemin-webpack-plugin").default;
 var OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 var ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
-
+const PreloadWebpackPlugin = require('preload-webpack-plugin');
 const PATHS = {
   src: path.join(__dirname, "src")
 };
@@ -28,7 +28,7 @@ function generateHtmlPlugins(templateDir) {
     arrPlugin.push(new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'async'
     }));
-
+    
   });
   return arrPlugin;
 }
