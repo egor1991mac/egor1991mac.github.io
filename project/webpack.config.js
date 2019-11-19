@@ -9,26 +9,33 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 var ImageminPlugin = require("imagemin-webpack-plugin").default;
 var OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+var ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
 const PATHS = {
   src: path.join(__dirname, "src")
 };
 function generateHtmlPlugins(templateDir) {
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
-  return templateFiles.map(item => {
+  let arrPlugin = [];
+    templateFiles.forEach(item => {
     const parts = item.split(".");
     const name = parts[0];
     const extension = parts[1];
-    return new HtmlWebpackPlugin({
+    arrPlugin.push(new HtmlWebpackPlugin({
       filename: `${name}.html`,
       template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
-    });
+    }));
+    arrPlugin.push(new ScriptExtHtmlWebpackPlugin({
+      defaultAttribute: 'async'
+    }));
+
   });
+  return arrPlugin;
 }
 
 
-const htmlPlugins = generateHtmlPlugins("./src/html/views");
 
+let htmlPlugins = generateHtmlPlugins("./src/html/views");
 
 
 const config = {
@@ -131,6 +138,9 @@ const config = {
       }),
      
     ],  
+
+  
+
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -176,6 +186,7 @@ const config = {
         to: "./uploads"
       }
     ]),
+   
   ].concat(htmlPlugins),
   
  
