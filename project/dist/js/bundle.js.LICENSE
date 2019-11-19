@@ -54,6 +54,12 @@
  * Licensed under MIT (https://github.com/Johann-S/bs-custom-file-input/blob/master/LICENSE)
  */
 
+/*
+ * Loading attribute polyfill - https://github.com/mfranzke/loading-attribute-polyfill
+ * @license Copyright(c) 2019 by Maximilian Franzke
+ * Credits for the initial kickstarter / script to @Sora2455, and supported by @cbirdsong, @eklingen, @DaPo, @nextgenthemes, @diogoterremoto, @dracos and @Flimm - many thanks for that !
+ */
+
 /*!
   * Bootstrap v4.3.1 (https://getbootstrap.com/)
   * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
@@ -156,10 +162,4 @@
  * @license   Licensed under MIT license
  *            See https://github.com/Keyamoon/svgxuse
  * @version   1.2.6
- */
-
-/*
- * Loading attribute polyfill - https://github.com/mfranzke/loading-attribute-polyfill
- * @license Copyright(c) 2019 by Maximilian Franzke
- * Credits for the initial kickstarter / script to @Sora2455, and supported by @cbirdsong, @eklingen, @DaPo, @nextgenthemes, @diogoterremoto, @dracos and @Flimm - many thanks for that !
  */
