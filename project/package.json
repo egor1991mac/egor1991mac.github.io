@@ -34,6 +34,7 @@
     "select2": "^4.0.11",
     "select2-bootstrap-theme": "^0.1.0-beta.10",
     "static-server": "^2.2.1",
+    "svg4everybody": "^2.1.9",
     "svgxuse": "^1.2.6",
     "wow.js": "^1.2.2"
   },
