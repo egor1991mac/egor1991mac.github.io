@@ -568,8 +568,9 @@
             </a>
           </div>
         </div>
-        <div class="side-bar-left sticky-top col-3 d-lg-block d-none">
-          <div class="card-category sticky-top top-90">
+
+        <div class="side-bar-left  col-3 d-lg-block d-none">
+          <div id="some-stickybit-nav" class="card-category sticky-top top-90">
             <div class="card-body vertical with-control">
               <div class="control">
                 <span class="icon-circle-arrow-left"></span>
@@ -912,15 +913,19 @@
 
               <hr />
             </div>
-            <div class="side-bar-right col d-none d-xl-block">
-              <div class="position-sticky top-90 d-flex align-items-lg-center flex-column">
-                <div class="d-flex flex-xl-column align-items-center mb-3 mb-lg-0">
+            <div id="some-stickybit-parent" class="side-bar-right col d-none d-xl-block">
+              <div id="some-stickybit-nav" class="top-90 d-flex align-items-lg-center flex-column">
+                <div>
                   <button class="btn btn-outline-primary only-icon">
                     <span class="icon-thumbs-up"></span>
                   </button>
-                  <small class="text-small text-center m-2 mx-lg-0">86% посетителей считают эту статью полезной</small>
+                  <div class="text-center">
+                    <small class="text-small text-center m-2 mx-lg-0"
+                      >86% посетителей считают эту статью полезной</small
+                    >
+                  </div>
                 </div>
-                <div class="d-flex flex-column">
+                <div>
                   <button
                     class="btn btn-outline-primary only-icon"
                     data-toggle="collapse"
