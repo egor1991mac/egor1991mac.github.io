@@ -1,1649 +1,1608 @@
+
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-
-  <link
-    rel="stylesheet"
-    href="./assets/bootstrap.min.css"
-    rel="preload"
-    as="style"
-    onload="this.onload=null;this.rel='stylesheet';"
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
-  <link
-    rel="stylesheet"
-    href="./assets/animate.min.css"
-    rel="preload"
-    as="style"
-    onload="this.onload=null;this.rel='stylesheet';"
-  />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <noscript>
-    <link rel="stylesheet" href="./assets/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/animate.min.css" />
-  </noscript>
+<link rel="stylesheet" href="./assets/bootstrap.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';"/>
+<link rel="stylesheet" href="./assets/animate.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';" />
+
+<noscript>
+ <link rel="stylesheet" href="./assets/bootstrap.min.css" />
+ <link rel="stylesheet" href="./assets/animate.min.css" />
+</noscript>
   <title>Заголовок | Проект</title>
-  <script type="text/javascript" async>
-    !(function(t) {
-      "use strict";
-      t.loadCSS || (t.loadCSS = function() {});
-      var e = (loadCSS.relpreload = {});
-      if (
-        ((e.support = (function() {
-          var e;
-          try {
-            e = t.document.createElement("link").relList.supports("preload");
-          } catch (t) {
-            e = !1;
-          }
-          return function() {
-            return e;
-          };
-        })()),
-        (e.bindMediaToggle = function(t) {
-          function e() {
-            t.media = a;
-          }
-          var a = t.media || "all";
-          t.addEventListener ? t.addEventListener("load", e) : t.attachEvent && t.attachEvent("onload", e),
-            setTimeout(function() {
-              (t.rel = "stylesheet"), (t.media = "only x");
-            }),
-            setTimeout(e, 3e3);
-        }),
-        (e.poly = function() {
-          if (!e.support())
-            for (var a = t.document.getElementsByTagName("link"), n = 0; n < a.length; n++) {
-              var o = a[n];
-              "preload" !== o.rel ||
-                "style" !== o.getAttribute("as") ||
-                o.getAttribute("data-loadcss") ||
-                (o.setAttribute("data-loadcss", !0), e.bindMediaToggle(o));
-            }
-        }),
-        !e.support())
-      ) {
-        e.poly();
-        var a = t.setInterval(e.poly, 500);
-        t.addEventListener
-          ? t.addEventListener("load", function() {
-              e.poly(), t.clearInterval(a);
-            })
-          : t.attachEvent &&
-            t.attachEvent("onload", function() {
-              e.poly(), t.clearInterval(a);
-            });
-      }
-      "undefined" != typeof exports ? (exports.loadCSS = loadCSS) : (t.loadCSS = loadCSS);
-    })("undefined" != typeof global ? global : this);
-  </script>
-  <link href="./css/style.bundle.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';" />
-  <noscript><link href="./css/style.bundle.css" rel="stylesheet"/></noscript>
-</head>
+<script type="text/javascript" async>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){function e(){t.media=a}var a=t.media||"all";t.addEventListener?t.addEventListener("load",e):t.attachEvent&&t.attachEvent("onload",e),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(e,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script><link href="./css/style.bundle.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';"><noscript><link href="./css/style.bundle.css" rel="stylesheet"></noscript></head>
+
 
 <header class="header with-background">
-  <div class="container-fluide " style="background: red">
-    <div class="container d-flex justify-content-between flex-wrap">
-      <a href="index.html">index</a>
-      <a href="static.html">static</a>
-      <a href="defaultStylePage.html">дефолтные стили</a>
-      <a href="post.html">post</a>
-      <a href="post-detail.html">post-detail</a>
-      <a href="question.html">question</a>
-      <a href="question-detail.html">question detail</a>
-      <a href="calculator-page.html">calculator page</a>
-      <a href="calculator-page-result.html">calculator page result</a>
-      <a href="books.html">books</a>
-      <a href="glosary.html">glosary</a>
-      <a href="sprite-big-icon.html">sprite big icon</a>
-    </div>
+    <div class="container-fluide " style="background: red">
+  <div class="container d-flex justify-content-between flex-wrap">
+    <a href="index.html">index</a>
+    <a href="static.html">static</a>
+    <a href="defaultStylePage.html">дефолтные стили</a>
+    <a href="post.html">post</a>
+    <a href="post-detail.html">post-detail</a>
+    <a href="question.html">question</a>
+    <a href="question-detail.html">question detail</a>
+    <a href="calculator-page.html">calculator page</a>
+    <a href="calculator-page-result.html">calculator page result</a>
+    <a href="books.html">books</a>
+    <a href="glosary.html">glosary</a>
+    <a href="sprite-big-icon.html">sprite big icon</a>
   </div>
+</div>
 
-  <div class="header-desctop">
-    <div class="container">
-      <div class="row top-nav  d-none d-md-flex">
-        <div class="col-auto flex-grow-05 ml-auto">
-          <div class="minLogo d-flex align-items-center">
-            <svg width="42" height="18" viewBox="0 0 42 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M28.2439 2.24996V6.74987H32.2211H36.1086H36.1189C37.3616 6.74987 38.3689 5.7426 38.3689 4.49991C38.3689 3.25723 37.3616 2.24996 36.1189 2.24996H32.2211H28.2439ZM28.2439 8.99983V15.75H36.1086V15.7497L36.1189 15.75C37.9829 15.75 39.4937 14.239 39.4937 12.3749C39.4937 10.5116 37.9836 9.00086 36.1206 8.99983H36.1189H36.1168L36.1086 9.00017V8.99983H31.6186H28.2439ZM36.1189 0C38.6039 0 40.6188 2.01455 40.6188 4.49991C40.6188 5.75909 40.1016 6.89696 39.2682 7.71384C40.7621 8.7249 41.7436 10.4353 41.7436 12.3749C41.7436 15.4816 39.2253 18 36.1189 18L36.1086 17.9997V18H28.2439H25.9939V15.75V5.71201L16.7852 15.5871L14.5352 18V14.7008V5.71201L3.07646 18H0L16.7852 0V3.29916V12.288L26.1458 2.24996H23.0694L25.1674 0H28.2439H36.1189V0Z"
-                fill="url(#paint0_radial)"
-              />
-              <defs>
-                <radialGradient
-                  id="paint0_radial"
-                  cx="0"
-                  cy="0"
-                  r="1"
-                  gradientUnits="userSpaceOnUse"
-                  gradientTransform="translate(35.8926 0.184541) rotate(148.516) scale(39.8841 37.1441)"
-                >
-                  <stop stop-color="#E4A216" />
-                  <stop offset="0.501961" stop-color="#F1B82F" />
-                  <stop offset="1" stop-color="#EBC965" />
-                </radialGradient>
-              </defs>
-            </svg>
-            <span class="text-secondary"
-              >Образовательный веб-сайт по финансовой грамотности Центрального Банка РУз</span
-            >
-          </div>
-        </div>
-        <div class="col-auto flex-grow-05 ">
-          <nav class="top-nav_list">
-            <a href="#" class="top-nav_list-link">О проекте</a>
-            <a href="#" class="top-nav_list-link">Контакты</a>
-            <a href="#" class="top-nav_list-link"> <span class="icon-announcement-speaker"></span></a>
-            <a href="/" class="top-nav_list-link"> <span class="icon-smartphone"></span></a>
-            <a href="/white/index.html" class="top-nav_list-link pl-0">
-              <span class="icon-eye d-none"></span><span class="icon-eye-off active"></span
-              ><span class="pl-1">Версия для слабовидящих</span>
-            </a>
-            <div class="top-nav-list_select" style="max-width: 155px">
-              <div class="lang-img">
-                <svg class="lang-rus" style="width: 24px; height:24px">
-                  <use xlink:href="./img/sprite.svg#lang"></use>
-                </svg>
-                <svg class="lang-eng d-none" style="width: 24px; height:24px">
-                  <use xlink:href="./img/sprite.svg#test"></use>
-                </svg>
-              </div>
-              <select name="lang" id="selectLang">
-                <option value="1">Русский</option>
-                <option value="2">Английский</option>
-              </select>
-            </div>
-          </nav>
-        </div>
-      </div>
-      <div class="row align-items-center pt-4">
-        <a
-          href="/"
-          class="col-12 col-sm-5 col-lg-auto logo-link justify-content-center justify-content-sm-start mx-sm-0"
-        >
-          <span class="logo"></span>
-          <span class="logo-text"
-            >Финансовая <br />
-            Грамотность</span
+
+    <div class="header-desctop">
+  <div class="container">
+    <div class="row top-nav  d-none d-md-flex">
+      <div class="col-auto flex-grow-05 ml-auto">
+        <div class="minLogo d-flex align-items-center">
+          <svg
+            width="42"
+            height="18"
+            viewBox="0 0 42 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-        </a>
-        <div class="col-12 col-sm-7 col-md mt-3 mt-sm-0">
-          <div class="search-and-nav">
-            <div class="form-group h-54 with-icon with-border ">
-              <input type="text" class="form-control" id="search-form-1" placeholder="Поиск по сайту" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M28.2439 2.24996V6.74987H32.2211H36.1086H36.1189C37.3616 6.74987 38.3689 5.7426 38.3689 4.49991C38.3689 3.25723 37.3616 2.24996 36.1189 2.24996H32.2211H28.2439ZM28.2439 8.99983V15.75H36.1086V15.7497L36.1189 15.75C37.9829 15.75 39.4937 14.239 39.4937 12.3749C39.4937 10.5116 37.9836 9.00086 36.1206 8.99983H36.1189H36.1168L36.1086 9.00017V8.99983H31.6186H28.2439ZM36.1189 0C38.6039 0 40.6188 2.01455 40.6188 4.49991C40.6188 5.75909 40.1016 6.89696 39.2682 7.71384C40.7621 8.7249 41.7436 10.4353 41.7436 12.3749C41.7436 15.4816 39.2253 18 36.1189 18L36.1086 17.9997V18H28.2439H25.9939V15.75V5.71201L16.7852 15.5871L14.5352 18V14.7008V5.71201L3.07646 18H0L16.7852 0V3.29916V12.288L26.1458 2.24996H23.0694L25.1674 0H28.2439H36.1189V0Z"
+              fill="url(#paint0_radial)"
+            />
+            <defs>
+              <radialGradient
+                id="paint0_radial"
+                cx="0"
+                cy="0"
+                r="1"
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(35.8926 0.184541) rotate(148.516) scale(39.8841 37.1441)"
+              >
+                <stop stop-color="#E4A216" />
+                <stop offset="0.501961" stop-color="#F1B82F" />
+                <stop offset="1" stop-color="#EBC965" />
+              </radialGradient>
+            </defs>
+          </svg>
+          <span class="text-secondary"
+            >Образовательный веб-сайт по финансовой грамотности Центрального
+            Банка РУз</span
+          >
+        </div>
+      </div>
+      <div class="col-auto flex-grow-05 ">
+        <nav class="top-nav_list">
+          <a href="#" class="top-nav_list-link">О проекте</a>
+          <a href="#" class="top-nav_list-link">Контакты</a>
+          <a href="#" class="top-nav_list-link">
+            <span class="icon-announcement-speaker"></span
+          ></a>
+          <a href="/" class="top-nav_list-link">
+            <span class="icon-smartphone"></span
+          ></a>
+          <a href="/white/index.html" class="top-nav_list-link pl-0">
+            <span class="icon-eye d-none"></span
+            ><span class="icon-eye-off active"></span
+            ><span class="pl-1">Версия для слабовидящих</span>
+          </a>
+          <div class="top-nav-list_select" style="max-width: 155px">
+            <div class="lang-img">
+              <svg class="lang-rus" style="width: 24px; height:24px">
+                <use xlink:href="./img/sprite.svg#lang"></use>
+              </svg>
+              <svg class="lang-eng d-none" style="width: 24px; height:24px">
+                <use xlink:href="./img/sprite.svg#test"></use>
+              </svg>
+            </div>
+            <select name="lang" id="selectLang">
+              <option value="1">Русский</option>
+              <option value="2">Английский</option>
+            </select>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="row align-items-center pt-4">
+      <a
+        href="/"
+        class="col-12 col-sm-5 col-lg-auto logo-link justify-content-center justify-content-sm-start mx-sm-0"
+      >
+        <span class="logo"></span>
+        <span class="logo-text"
+          >Финансовая <br />
+          Грамотность</span
+        >
+      </a>
+      <div class="col-12 col-sm-7 col-md mt-3 mt-sm-0">
+        <div class="search-and-nav">
+          <div class="form-group h-54 with-icon with-border ">
+            <input
+              type="text"
+              class="form-control"
+              id="search-form-1"
+              placeholder="Поиск по сайту"
+            />
 
-              <span class="icon-search"></span>
-            </div>
-            <div class="toggle-menu-button">
-              <span class="icon-menu"></span>
-            </div>
+            <span class="icon-search"></span>
+          </div>
+          <div class="toggle-menu-button">
+            <span class="icon-menu"></span>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="container py-5 pr-0 d-none d-lg-block position-relative">
-    <div class="owl-carousel card-category row">
-      <div class="item px-2">
-        <a href="#" class="card-body my-3">
-          <span class="h3">Депозит (вклады)</span>
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#clipboard"></use>
-          </svg>
-        </a>
-        <div class="card-body my-3">
-          <span class="h3">Платежи и переводы</span>
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#social-campaign"></use>
-          </svg>
-        </div>
+    <div class="container py-5 pr-0 d-none d-lg-block position-relative">
+  <div class="owl-carousel card-category row">
+    <div class="item px-2">
+      <a href="#" class="card-body my-3">
+        <span class="h3">Депозит (вклады)</span>
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#clipboard"></use>
+        </svg>
+      </a>
+      <div class="card-body my-3">
+        <span class="h3">Платежи и переводы</span>
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#social-campaign"></use>
+        </svg>
       </div>
-      <div class="item  px-2">
-        <a href="#" class="card-body my-3 ">
-          <span class="h4">Участники финансовой системы Узбекистана</span>
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#bank"></use>
-          </svg>
-        </a>
-        <a href="#" class="card-body my-3">
-          <span class="h3">Кредиты</span>
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#calculator"></use>
-          </svg>
-        </a>
+    </div>
+    <div class="item  px-2">
+      <a href="#" class="card-body my-3 ">
+        <span class="h4">Участники финансовой системы Узбекистана</span>
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#bank"></use>
+        </svg>
+      </a>
+      <a href="#" class="card-body my-3">
+        <span class="h3">Кредиты</span>
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#calculator"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="item px-2">
+      <a href="#" class="card-body my-3 ">
+        <span class="h3">Финансовый рынок</span>
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#chart"></use>
+        </svg>
+      </a>
+      <a href="#" class="card-body my-3">
+        <span class="h3">Деньги</span>
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#License"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="item px-2">
+      <a href="#" class="card-body my-3">
+        <span class="h4">Денежно-кредитная политика и ее элементы</span>
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#abacus"></use>
+        </svg>
+      </a>
+      <a href="#" class="card-body my-3">
+        <span class="h3">Бюджет</span>
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#safebox"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="item px-2">
+      <a href="#" class="card-body my-3 ">
+        <span class="h4">Дистанционный банкинг</span>
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#coins"></use>
+        </svg>
+      </a>
+      <a href="#" class="card-body my-3">
+        <span class="h3">Валютное регулирование</span>
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#interview-1"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="item px-2">
+      <a href="#" class="card-body my-3 ">
+        <span class="h3">Права потребителей банковских услуг</span>
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#movie"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <button class="owl-next">
+    <span class="icon-arrow-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button>
+</div>
+<div class="pl-2 py-4 d-lg-none">
+  <div class="owl-carousel card-category">
+    <div class="item px-2">
+      <div class="card-body img-left small with-shadow my-3">
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#clipboard"></use>
+        </svg>
+        <span class="h6">Депозит (вклады) </span>
+        <span class="icon-chevron-right"></span>
       </div>
-      <div class="item px-2">
-        <a href="#" class="card-body my-3 ">
-          <span class="h3">Финансовый рынок</span>
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#chart"></use>
-          </svg>
-        </a>
-        <a href="#" class="card-body my-3">
-          <span class="h3">Деньги</span>
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#License"></use>
-          </svg>
-        </a>
+      <div class="card-body img-left small with-shadow my-3">
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#calculator"></use>
+        </svg>
+        <span class="h6">Кредиты</span>
+        <span class="icon-chevron-right"></span>
       </div>
-      <div class="item px-2">
-        <a href="#" class="card-body my-3">
-          <span class="h4">Денежно-кредитная политика и ее элементы</span>
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#abacus"></use>
-          </svg>
-        </a>
-        <a href="#" class="card-body my-3">
-          <span class="h3">Бюджет</span>
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#safebox"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="item px-2">
-        <a href="#" class="card-body my-3 ">
-          <span class="h4">Дистанционный банкинг</span>
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#coins"></use>
-          </svg>
-        </a>
-        <a href="#" class="card-body my-3">
-          <span class="h3">Валютное регулирование</span>
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#interview-1"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="item px-2">
-        <a href="#" class="card-body my-3 ">
-          <span class="h3">Права потребителей банковских услуг</span>
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#movie"></use>
-          </svg>
-        </a>
+      <div class="card-body img-left small with-shadow my-3">
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#social-campaign"></use>
+        </svg>
+        <span class="h6">Платежи и переводы</span>
+        <span class="icon-chevron-right"></span>
       </div>
     </div>
 
-    <button class="owl-next">
-      <span class="icon-arrow-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </button>
-  </div>
-  <div class="pl-2 py-4 d-lg-none">
-    <div class="owl-carousel card-category">
-      <div class="item px-2">
-        <div class="card-body img-left small with-shadow my-3">
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#clipboard"></use>
-          </svg>
-          <span class="h6">Депозит (вклады) </span>
-          <span class="icon-chevron-right"></span>
-        </div>
-        <div class="card-body img-left small with-shadow my-3">
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#calculator"></use>
-          </svg>
-          <span class="h6">Кредиты</span>
-          <span class="icon-chevron-right"></span>
-        </div>
-        <div class="card-body img-left small with-shadow my-3">
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#social-campaign"></use>
-          </svg>
-          <span class="h6">Платежи и переводы</span>
-          <span class="icon-chevron-right"></span>
-        </div>
+    <div class="item px-2">
+      <div class="card-body img-left small with-shadow my-3">
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#bank"></use>
+        </svg>
+        <span class="h6">Участники финансовой системы Узбекистана</span>
+        <span class="icon-chevron-right"></span>
       </div>
-
-      <div class="item px-2">
-        <div class="card-body img-left small with-shadow my-3">
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#bank"></use>
-          </svg>
-          <span class="h6">Участники финансовой системы Узбекистана</span>
-          <span class="icon-chevron-right"></span>
-        </div>
-        <div class="card-body img-left small with-shadow my-3">
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#License"></use>
-          </svg>
-          <span class="h6">Деньги</span>
-          <span class="icon-chevron-right"></span>
-        </div>
-        <div class="card-body img-left small with-shadow my-3">
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#chart"></use>
-          </svg>
-          <span class="h6">Финансовый рынок </span>
-          <span class="icon-chevron-right"></span>
-        </div>
+      <div class="card-body img-left small with-shadow my-3">
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#License"></use>
+        </svg>
+        <span class="h6">Деньги</span>
+        <span class="icon-chevron-right"></span>
       </div>
-
-      <div class="item px-2">
-        <div class="card-body img-left small with-shadow my-3">
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#safebox"></use>
-          </svg>
-
-          <span class="h6">Бюджет</span>
-          <span class="icon-chevron-right"></span>
-        </div>
-        <div class="card-body img-left small with-shadow my-3">
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#coins"></use>
-          </svg>
-
-          <span class="h6">Дистанционный банкинг</span>
-          <span class="icon-chevron-right"></span>
-        </div>
-        <div class="card-body img-left small with-shadow my-3">
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#interview-1"></use>
-          </svg>
-          <span class="h6">Валютное регулирование</span>
-          <span class="icon-chevron-right"></span>
-        </div>
+      <div class="card-body img-left small with-shadow my-3">
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#chart"></use>
+        </svg>
+        <span class="h6">Финансовый рынок </span>
+        <span class="icon-chevron-right"></span>
       </div>
-      <div class="item px-2">
-        <div class="card-body img-left small with-shadow my-3">
-          <svg class="card-img">
-            <use xlink:href="./img/sprite.svg#movie"></use>
-          </svg>
-          <span class="h6">Права потребителей банковских услуг</span>
-          <span class="icon-chevron-right"></span>
-        </div>
+    </div>
+
+    <div class="item px-2">
+      <div class="card-body img-left small with-shadow my-3">
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#safebox"></use>
+        </svg>
+
+        <span class="h6">Бюджет</span>
+        <span class="icon-chevron-right"></span>
+      </div>
+      <div class="card-body img-left small with-shadow my-3">
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#coins"></use>
+        </svg>
+
+        <span class="h6">Дистанционный банкинг</span>
+        <span class="icon-chevron-right"></span>
+      </div>
+      <div class="card-body img-left small with-shadow my-3">
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#interview-1"></use>
+        </svg>
+        <span class="h6">Валютное регулирование</span>
+        <span class="icon-chevron-right"></span>
+      </div>
+    </div>
+    <div class="item px-2">
+      <div class="card-body img-left small with-shadow my-3">
+        <svg class="card-img">
+          <use xlink:href="./img/sprite.svg#movie"></use>
+        </svg>
+        <span class="h6">Права потребителей банковских услуг</span>
+        <span class="icon-chevron-right"></span>
       </div>
     </div>
   </div>
+</div>
+
 </header>
-<hr />
+<hr>
 
-<main class="container">
-  <div class="col-12">
-    <section class="headers">
-      <h1 class="h1">h1 Заголовок</h1>
-      <p class="mt-2">
-        Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и близость
-        потребителей, возможность перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили
-        выбор места для будущего предприятия по выпуску минеральных удобрений.
-      </p>
-      <h2 class="h2">h2 Заголовок</h2>
-      <p class="mt-2">
-        Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и близость
-        потребителей, возможность перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили
-        выбор места для будущего предприятия по выпуску минеральных удобрений.
-      </p>
-      <h3 class="h3">h3 заголовок</h3>
-      <p class="mt-2">
-        Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и близость
-        потребителей, возможность перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили
-        выбор места для будущего предприятия по выпуску минеральных удобрений.
-      </p>
-      <h4 class="h4">h4 Закголовок</h4>
-      <p class="mt-2">
-        Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и близость
-        потребителей, возможность перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили
-        выбор места для будущего предприятия по выпуску минеральных удобрений.
-      </p>
-      <h5 class="h5">h5 Заголовок</h5>
-      <p class="mt-2">
-        Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и близость
-        потребителей, возможность перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили
-        выбор места для будущего предприятия по выпуску минеральных удобрений.
-      </p>
-      <h6 class="h6">h6 Заголовок</h6>
-      <p class="mt-2">
-        Выгоды географического положения города Алмалык - пересечение сырьевых потоков и близость потребителей,
-        возможность перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
-        будущего предприятия по выпуску минеральных удобрений.
-      </p>
-    </section>
 
-    <section class="content">
-      <hr />
-      <article class="my-4">
-        <h5>Code: < pre></h5>
-        <pre>
+
+<main class="container">        
+        <div class="col-12">
+            <section class="headers">
+                <h1 class="h1"> h1 Заголовок</h1>
+                <p class="mt-2">
+                    Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и
+                    близость
+                    потребителей, возможность
+                    перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                    будущего
+                    предприятия по выпуску минеральных удобрений.
+                </p>
+                <h2 class="h2"> h2 Заголовок</h2>
+                <p class="mt-2">
+                    Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и
+                    близость
+                    потребителей, возможность
+                    перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                    будущего
+                    предприятия по выпуску минеральных удобрений.
+                </p>
+                <h3 class="h3"> h3 заголовок</h3>
+                <p class="mt-2">
+                    Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и
+                    близость
+                    потребителей, возможность
+                    перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                    будущего
+                    предприятия по выпуску минеральных удобрений.
+                </p>
+                <h4 class="h4"> h4 Закголовок</h4>
+                <p class="mt-2">
+                    Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и
+                    близость
+                    потребителей, возможность
+                    перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                    будущего
+                    предприятия по выпуску минеральных удобрений.
+                </p>
+                <h5 class="h5"> h5 Заголовок</h5>
+                <p class="mt-2">
+                    Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и
+                    близость
+                    потребителей, возможность
+                    перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                    будущего
+                    предприятия по выпуску минеральных удобрений.
+                </p>
+                <h6 class="h6"> h6 Заголовок</h6>
+                <p class="mt-2">
+                    Выгоды географического положения города Алмалык - пересечение сырьевых потоков и близость
+                    потребителей,
+                    возможность
+                    перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                    будущего
+                    предприятия по выпуску минеральных удобрений.
+                </p>
+            </section>
+
+            <section class="content">
+                <hr>
+                <article class="my-4">
+                    <h5> Code: < pre>
+                    </h5>
+                    <pre>
                     if ( typeof module === "object" && typeof module.exports === "object" ) {
                     factory( global );
                     }
-                    </pre
-        >
-      </article>
-      <hr />
-      <article class="my-4">
-        <h5></h5>
-        <blockquote class="blockquote">
-          <div class="blockquote_content">
-            Выгоды географического положения города Алмалыка - пересечение сырьевых потоков и близость потребителей,
-            возможность перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места
-            для будущего предприятия по выпуску минеральных удобрений.
-          </div>
-          <div class="blockquote_title">
-            - Абу Али ибн Сина
-          </div>
-        </blockquote>
-      </article>
-      <hr />
-      <article class="my-4">
-        <blockquote class="blockquote-lg">
-          <div class="blockquote-lg_header"></div>
-          <div class="blockquote-lg_content">
-            Выгоды географического положения города Алмалыка - пересечение сырьевых потоков и близость потребителей,
-            возможность перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места
-            для будущего предприятия по выпуску минеральных удобрений.
-          </div>
-          <div class="blockquote-lg_title">
-            - Абу Али ибн Сина
-          </div>
-        </blockquote>
-      </article>
-      <hr />
-      <article class="my-4 row">
-        <div class="col-4">
-          <h5>Lists: UL</h5>
-          <ul class="list">
-            <li class="list-item">Lorem ipsum dolor sit amet</li>
-            <li class="list-item">Lorem ipsum dolor sit amet</li>
-            <li class="list-item">Lorem ipsum dolor sit amet</li>
-            <li>
-              <ul class="list-nested">
-                <li class="list-nested-item">Lorem ipsum dolor sit amet</li>
-                <li class="list-nested-item">Lorem ipsum dolor sit amet</li>
-                <li class="list-nested-item">Lorem ipsum dolor sit amet</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <h5>Lists: UL with .styled</h5>
-          <ul class="list-styled">
-            <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
-            <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
-            <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
-            <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
-            <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
-            <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <h5>
-            Lists: OL
-          </h5>
-          <ol class="list-ol">
-            <li class="list-ol_item">Lorem ipsum dolor sit amet</li>
-            <li class="list-ol_item">Lorem ipsum dolor sit amet</li>
-            <li class="list-ol_item">Lorem ipsum dolor sit amet</li>
-            <li class="list-ol_item">Lorem ipsum dolor sit amet</li>
-            <li class="list-ol_item">Lorem ipsum dolor sit amet</li>
-            <li class="list-ol_item">Lorem ipsum dolor sit amet</li>
-          </ol>
-        </div>
-      </article>
-      <hr />
-      <article class="my-4">
-        <h5>Таблица: .table</h5>
-        <table class="table">
-          <thead class="table-thead">
-            <tr class="table-thead_tr">
-              <th class="table-thead_th">Количество</th>
-              <th class="table-thead_th">Наименование</th>
-              <th class="table-thead_th">Состав</th>
-              <th class="table-thead_th">Примечание</th>
-            </tr>
-          </thead>
-          <tbody class="table-tbody">
-            <tr class="table-tbody_tr">
-              <td class="table-tbody_td">Количество</td>
-              <td class="table-tbody_td">Наименование</td>
-              <td class="table-tbody_td">Состав</td>
-              <td class="table-tbody_td">Примечание</td>
-            </tr>
-            <tr class="table-tbody_tr">
-              <td class="table-tbody_td">Количество</td>
-              <td class="table-tbody_td">Наименование</td>
-              <td class="table-tbody_td">Состав</td>
-              <td class="table-tbody_td">Примечание</td>
-            </tr>
-            <tr class="table-tbody_tr">
-              <td class="table-tbody_td">Количество</td>
-              <td class="table-tbody_td">Наименование</td>
-              <td class="table-tbody_td">Состав</td>
-              <td class="table-tbody_td">Примечание</td>
-            </tr>
-          </tbody>
-        </table>
-      </article>
-      <hr />
-      <article class="my-4">
-        <h5>Таблица: .table.table-striped</h5>
-        <table class="table table-striped">
-          <thead class="table-thead">
-            <tr class="table-thead_tr">
-              <th class="table-thead_th">Количество</th>
-              <th class="table-thead_th">Наименование</th>
-              <th class="table-thead_th">Состав</th>
-              <th class="table-thead_th">Примечание</th>
-            </tr>
-          </thead>
+                    </pre>
 
-          <tbody class="table-tbody">
-            <tr class="table-tbody_tr">
-              <td class="table-tbody_td">Количество</td>
-              <td class="table-tbody_td">Наименование</td>
-              <td class="table-tbody_td">Состав</td>
-              <td class="table-tbody_td">Примечание</td>
-            </tr>
-            <tr class="table-tbody_tr">
-              <td class="table-tbody_td">Количество</td>
-              <td class="table-tbody_td">Наименование</td>
-              <td class="table-tbody_td">Состав</td>
-              <td class="table-tbody_td">Примечание</td>
-            </tr>
-            <tr class="table-tbody_tr">
-              <td class="table-tbody_td">Количество</td>
-              <td class="table-tbody_td">Наименование</td>
-              <td class="table-tbody_td">Состав</td>
-              <td class="table-tbody_td">Примечание</td>
-            </tr>
-          </tbody>
-        </table>
-      </article>
-      <hr />
-      <article class="my-4">
-        <h5>Таблица: .table.table-bordered</h5>
-        <table class="table table-bordered">
-          <thead class="table-thead">
-            <tr class="table-thead_tr">
-              <th class="table-thead_th">Количество</th>
-              <th class="table-thead_th">Наименование</th>
-              <th class="table-thead_th">Состав</th>
-              <th class="table-thead_th">Примечание</th>
-            </tr>
-          </thead>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5>
+                       
+                    </h5>
+                    <blockquote class="blockquote">
 
-          <tbody class="table-tbody">
-            <tr class="table-tbody_tr">
-              <td class="table-tbody_td">Количество</td>
-              <td class="table-tbody_td">Наименование</td>
-              <td class="table-tbody_td">Состав</td>
-              <td class="table-tbody_td">Примечание</td>
-            </tr>
-            <tr class="table-tbody_tr">
-              <td class="table-tbody_td">Количество</td>
-              <td class="table-tbody_td">Наименование</td>
-              <td class="table-tbody_td">Состав</td>
-              <td class="table-tbody_td">Примечание</td>
-            </tr>
-            <tr class="table-tbody_tr">
-              <td class="table-tbody_td">Количество</td>
-              <td class="table-tbody_td">Наименование</td>
-              <td class="table-tbody_td">Состав</td>
-              <td class="table-tbody_td">Примечание</td>
-            </tr>
-          </tbody>
-        </table>
-      </article>
+                        <div class="blockquote_content">
+                            Выгоды географического положения города Алмалыка - пересечение сырьевых потоков и близость
+                            потребителей, возможность перевозки грузов как автомобильным, так и железнодорожным
+                            транспортом - обусловили выбор места для будущего предприятия по выпуску минеральных
+                            удобрений.
+                        </div>
+                        <div class="blockquote_title">
+                            - Абу Али ибн Сина
+                        </div>
+                    </blockquote>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <blockquote class="blockquote-lg">
+                        <div class="blockquote-lg_header"></div>
+                        <div class="blockquote-lg_content">
+                            Выгоды географического положения города Алмалыка - пересечение сырьевых потоков и близость
+                            потребителей, возможность перевозки грузов как автомобильным, так и железнодорожным
+                            транспортом - обусловили выбор места для будущего предприятия по выпуску минеральных
+                            удобрений.
+                        </div>
+                        <div class="blockquote-lg_title">
+                            - Абу Али ибн Сина
+                        </div>
+                    </blockquote>
+                </article>
+                <hr>
+                <article class="my-4 row">
 
-      <hr />
-
-      <article class="my-4">
-        <h5>tabs-lined</h5>
-        <ul class="nav nav-tabs nav-tabs-lined" id="myTab" role="tablist">
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              id="home-tab"
-              data-toggle="tab"
-              href="#home"
-              role="tab"
-              aria-controls="home"
-              aria-selected="true"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              id="profile-tab"
-              data-toggle="tab"
-              href="#profile"
-              role="tab"
-              aria-controls="profile"
-              aria-selected="false"
-              >Profile</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              id="messages-tab"
-              data-toggle="tab"
-              href="#messages"
-              role="tab"
-              aria-controls="messages"
-              aria-selected="false"
-              >Messages</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              id="settings-tab"
-              data-toggle="tab"
-              href="#settings"
-              role="tab"
-              aria-controls="settings"
-              aria-selected="false"
-              >Settings</a
-            >
-          </li>
-        </ul>
-        <div class="tab-content">
-          <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            123
-          </div>
-          <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            1234
-          </div>
-          <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-            12345
-          </div>
-          <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-            12346
-          </div>
-        </div>
-      </article>
-
-      <article class="my-5">
-        <h5>tabs</h5>
-        <ul class="nav nav-tabs" id="myTab1" role="tablist">
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              id="home-tab1"
-              data-toggle="tab"
-              href="#home1"
-              role="tab"
-              aria-controls="home"
-              aria-selected="true"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              id="profile-tab1"
-              data-toggle="tab"
-              href="#profile1"
-              role="tab"
-              aria-controls="profile"
-              aria-selected="false"
-              >Profile</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              id="messages-tab1"
-              data-toggle="tab"
-              href="#messages1"
-              role="tab"
-              aria-controls="messages"
-              aria-selected="false"
-              >Messages</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              id="settings-tab1"
-              data-toggle="tab"
-              href="#settings1"
-              role="tab"
-              aria-controls="settings"
-              aria-selected="false"
-              >Settings</a
-            >
-          </li>
-        </ul>
-        <div class="tab-content">
-          <div class="tab-pane active" id="home1" role="tabpanel" aria-labelledby="home-tab">
-            123
-          </div>
-          <div class="tab-pane" id="profile1" role="tabpanel" aria-labelledby="profile-tab">
-            1234
-          </div>
-          <div class="tab-pane" id="messages1" role="tabpanel" aria-labelledby="messages-tab">
-            12345
-          </div>
-          <div class="tab-pane" id="settings1" role="tabpanel" aria-labelledby="settings-tab">
-            12346
-          </div>
-        </div>
-      </article>
-      <hr />
-      <article class="my-5">
-        <h5>tabs-button</h5>
-        <ul class="nav nav-tabs nav-tabs-button mt-5 d-none d-lg-flex" id="myTab1" role="tablist">
-          <li class="nav-item mx-3">
-            <a
-              id="1"
-              class="nav-link "
-              data-toggle="tab"
-              href="#1"
-              role="tab"
-              aria-controls="dep-calculator"
-              aria-selected="false"
-            >
-              <svg class="tab-img">
-                <use xlink:href="./img/sprite.svg#clipboard"></use>
-              </svg>
-              <span class="h5 mb-0">Депозитный калькулятор</span>
-            </a>
-          </li>
-          <li class="nav-item mx-3">
-            <a
-              id="2"
-              class="nav-link active "
-              data-toggle="tab"
-              href="#2"
-              role="tab"
-              aria-controls="cred-calculator"
-              aria-selected="true"
-            >
-              <svg class="tab-img">
-                <use xlink:href="./img/sprite.svg#calculator"></use>
-              </svg>
-              <span class="h5 mb-0">Кредитный калькулятор</span>
-            </a>
-          </li>
-        </ul>
-        <hr />
-        <div class="tab-content">
-          <div class="tab-pane active" id="1" role="tabpanel" aria-labelledby="home-tab">
-            123
-          </div>
-          <div class="tab-pane" id="2" role="tabpanel" aria-labelledby="profile-tab">
-            1234
-          </div>
-        </div>
-      </article>
-      <hr />
-      <article class="my-4">
-        <h5>form-control:</h5>
-        <div class="row">
-          <div class="col-6">
-            <form>
-              <div class="form-group with-icon custom-search">
-                <button class="icon-search"></button>
-                <input type="text" class="form-control" placeholder="Поиск по сайту" />
-              </div>
-            </form>
-          </div>
-          <div class="col-6">
-            <div class="form-group">
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Поиск по сайту" />
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="form-group">
-              <!--                                <label for="exampleInputPassword1">Password</label>-->
-              <select class="js-example-basic-single">
-                <option value="AL">Alabama</option>
-                <option value="WY">Wyoming</option>
-                <option value="AL">Alabama</option>
-                <option value="WY">Wyoming</option>
-                <option value="AL">Alabama</option>
-                <option value="WY">Wyoming</option>
-                <option value="WY" disabled>text</option>
-              </select>
-            </div>
-          </div>
-        </div>
-      </article>
-      <hr />
-      <article class="my-4">
-        <h5>textarea: .form-control</h5>
-        <div class="form-group text-area">
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="text"></textarea>
-        </div>
-      </article>
-      <hr />
-      <article class="my-4">
-        <h5>textarea: .form-control</h5>
-
-        <div class="custom-file my-3">
-          <div class="custom-file-open">
-            Выбирите фаил
-          </div>
-          <label class="custom-file-label" for="customFile2"> </label>
-          <input type="file" class="custom-file-input" id="customFile2" />
-          <button class="reset">
-            <span class="icon-Close"></span>
-          </button>
-        </div>
-      </article>
-      <hr />
-      <article class="my-4">
-        <div class="row">
-          <div class="col-12">
-            <h5>checkbox</h5>
-          </div>
-          <div class="col-1">
-            <span>normal</span>
-            <div class="custom-checkbox">
-              <label class="custom-checkbox-container">
-                <input type="checkbox" class="custom-checkbox-input" />
-                <span class="custom-checkbox-mark"></span>
-              </label>
-            </div>
-          </div>
-          <div class="col-1">
-            <span>disable</span>
-            <div class="custom-checkbox">
-              <label class="custom-checkbox-container">
-                <input type="checkbox" class="custom-checkbox-input" disabled />
-                <span class="custom-checkbox-mark"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-      </article>
-      <hr />
-      <article class="my-4">
-        <h5>RadioButton</h5>
-        <div class="row my-3">
-          <div class="col-1">
-            <span>normal</span>
-            <div class="custom-radio">
-              <label class="custom-radio-container">
-                <input type="radio" class="custom-radio-input" />
-                <span class="custom-radio-mark"></span>
-              </label>
-            </div>
-          </div>
-          <div class="col-1">
-            <span>disable</span>
-            <div class="custom-radio">
-              <label class="custom-radio-container">
-                <input type="radio" class="custom-radio-input" disabled />
-                <span class="custom-radio-mark"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-      </article>
-      <hr />
-      <article class="my-4">
-        <h5>switcher</h5>
-        <div class="row my-3">
-          <div class="col-auto">
-            <div class="custom-switcher-container">
-              <div class="custom-switcher primary">
-                <input type="checkbox" id="id-name--1" name="set-name" class="switch-input" />
-                <label for="id-name--1" class="switch-label"></label>
-              </div>
-              <span class="custom-switcher-text">Primary</span>
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="custom-switcher-container">
-              <div class="custom-switcher secondary">
-                <input type="checkbox" id="id-name--2" name="set-name" class="switch-input" />
-                <label for="id-name--2" class="switch-label"></label>
-              </div>
-              <span class="custom-switcher-text">Secondary</span>
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="custom-switcher-container">
-              <div class="custom-switcher">
-                <input type="checkbox" id="id-name--5" name="set-name" class="switch-input" />
-                <label for="id-name--5" class="switch-label"></label>
-              </div>
-              <span class="custom-switcher-text">Uncontroled</span>
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="custom-switcher-container">
-              <div class="custom-switcher disabled">
-                <input type="checkbox" id="id-name--3" name="set-name" class="switch-input" disabled />
-                <label for="id-name--3" class="switch-label"></label>
-              </div>
-              <span class="custom-switcher-text">Disabled</span>
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="custom-switcher-container">
-              <div class="custom-switcher disabled">
-                <input type="checkbox" id="id-name--4" name="set-name" class="switch-input" disabled checked />
-                <label for="id-name--4" class="switch-label"></label>
-              </div>
-              <span class="custom-switcher-text">Disabled checked</span>
-            </div>
-          </div>
-        </div>
-      </article>
-      <hr />
-      <article class="my-4">
-        <h5>Tags</h5>
-        <div class="row my-3">
-          <div class="col-auto">
-            <div class="tags">
-              <span class="icon-eye"></span>
-              <span>473</span>
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="tags">
-              <span class="icon-thumbs-up"></span>
-              <span>473</span>
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="tags">
-              <span class="icon-thumbs-down"></span>
-              <span>473</span>
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="tags video-new">
-              Новое
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="tags video-timer">
-              30:59
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="tags post-tag">
-              <span class="icon-tag"></span>
-              <a href="" class="post-tag-link"> Деньги</a>
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="tags tag-text">
-              <span class="icon-refresh-cw mr-2"></span>
-              Последнее обновление: 14:15, 30 мая 2019 г.
-            </div>
-          </div>
-        </div>
-      </article>
-      <hr />
-
-      <article>
-        <div class="h5 pb-3">Кнопки социальных сетей</div>
-        <h6 class="">С текстом:</h6>
-        <div class=" d-flex flex-grow-1 justify-content-between">
-          <a href="#" class="social-button medium rss">
-            <span class="icon-RSS mr-2"></span>
-            Подписаться на RSS
-          </a>
-          <a href="#" class="social-button facebook">
-            <img src="./img/Facebook.svg" class="social-icon h-100 mr-0" />
-            <span> Нравиться </span>
-          </a>
-
-          <a href="#" class="social-button telegram">
-            <img src="./img/logo-telegram.svg" class="social-icon " />
-
-            <span>Telegram</span>
-          </a>
-
-          <a href="#" class="social-button odnoclassniki">
-            <img src="./img/OK.svg" class="social-icon h-100 mr-0" />
-
-            <span>Одноклассники</span>
-          </a>
-
-          <a href="#" class="social-button twitter">
-            <img src="./img/tweeter.svg" class="social-icon " />
-
-            <span>Twitter</span>
-          </a>
-
-          <a href="#" class="social-button vk">
-            <img src="./img/VK.svg" class="social-icon h-100" />
-
-            <span>Нравиться</span>
-          </a>
-        </div>
-
-        <div style="flex-grow: 1.2" class="d-none d-lg-flex jusify-content-end flex-grow-2 "></div>
-        <h6 class=" py-3">Без текста средние:</h6>
-        <div class="d-flex align-items-center flex-wrap justify-content-around  mx-auto">
-          <a href="#" class="social-button medium facebook">
-            <img src="./img/Facebook.svg" class="social-icon h-100" alt="" />
-          </a>
-
-          <a href="#" class="social-button medium telegram">
-            <img src="./img/Telegram.svg" class="social-icon h-100" alt="" />
-          </a>
-          <a href="#" class="social-button medium twitter">
-            <img src="./img/tweeter.svg" class="social-icon h-100" />
-          </a>
-          <a href="#" class="social-button medium vk">
-            <img src="./img/VK.svg" class="social-icon h-100" alt="" />
-          </a>
-          <a href="#" class="social-button medium instagram">
-            <img src="./img/Instagram.svg" class="social-icon" alt="" />
-          </a>
-          <a href="#" class="social-button medium odnoclassniki">
-            <img src="./img/OK.svg" class="social-icon " alt="" />
-          </a>
-        </div>
-        <h6 class=" py-3">Без текста маленькие:</h6>
-        <div class="d-flex align-items-center flex-wrap justify-content-around  mx-auto">
-          <a href="#" class="social-button small facebook">
-            <img src="./img/Facebook.svg" class="social-icon h-100" alt="" />
-          </a>
-
-          <a href="#" class="social-button small telegram">
-            <img src="./img/Telegram.svg" class="social-icon h-100" alt="" />
-          </a>
-          <a href="#" class="social-button small twitter">
-            <img src="./img/tweeter.svg" class="social-icon h-100" />
-          </a>
-          <a href="#" class="social-button small vk">
-            <img src="./img/VK.svg" class="social-icon h-100" alt="" />
-          </a>
-          <a href="#" class="social-button small instagram">
-            <img src="./img/Instagram.svg" class="social-icon h-100 " alt="" />
-          </a>
-
-          <a href="#" class="social-button small instagram">
-            <img src="./img/OK.svg" class="social-icon h-100" alt="" />
-          </a>
-        </div>
-      </article>
-      <hr />
-
-      <h5>Buttons: .btn.btn-primary</h5>
-      <div class="row">
-        <div class="col-auto">
-          <button class="btn btn-primary">
-            <span class="icon-send"></span>
-            <span class="btn-text"> Задать вопрос</span>
-          </button>
-        </div>
-        <div class="col-auto p-4" style="background: black">
-          <button class="btn btn-primary">
-            <span class="icon-send"></span>
-            <span class="btn-text"> Задать вопрос</span>
-          </button>
-        </div>
-      </div>
-      <hr />
-      <h5>Buttons: .btn.btn-outline-primary</h5>
-      <div class="row">
-        <div class="col-auto p-4">
-          <button class="btn btn-outline-primary">
-            <span class="icon-send"></span>
-            <span class="btn-text"> Задать вопрос</span>
-          </button>
-        </div>
-        <div class="col-auto py-4" style="background: black">
-          <button class="btn btn-outline-primary reverse">
-            <span class="icon-send"></span>
-            <span class="btn-text"> Задать вопрос</span>
-          </button>
-        </div>
-      </div>
-      <hr />
-
-      <h5>
-        Buttons: .btn.btn-secondary
-      </h5>
-
-      <div class="row">
-        <div class="col-auto">
-          <button class="btn btn-secondary">
-            <span class="icon-send"></span>
-            <span class="btn-text"> Задать вопрос</span>
-          </button>
-        </div>
-
-        <div class="col-auto py-4" style="background: black">
-          <button class="btn btn-outline-secondary reverse ">
-            <span class="icon-send"></span>
-            <span class="btn-text"> Задать вопрос</span>
-          </button>
-        </div>
-      </div>
-      <hr />
-      <div class="row">
-        <div class="col-4">
-          <h5>.btn-lg</h5>
-
-          <button class="btn btn-primary btn-lg">
-            <span class="btn-text"> Задать вопрос</span>
-          </button>
-        </div>
-        <div class="col-4">
-          <h5>.btn-md</h5>
-
-          <button href="#" class="btn btn-primary btn-md">
-            <span class="btn-text"> Задать вопрос</span>
-          </button>
-        </div>
-        <div class="col-4">
-          <h5>.btn-sm</h5>
-          <button href="#" class="btn btn-primary btn-sm">
-            <span class="btn-text"> Задать вопрос</span>
-          </button>
-        </div>
-      </div>
-      <hr />
-
-      <h5>Кнопка иконка</h5>
-
-      <div class="row justify-content-between w-50">
-        <button class="btn btn-outline-primary only-icon">
-          <span class="icon-thumbs-up"></span>
-        </button>
-        <button class="btn btn-primary only-icon">
-          <span class="icon-thumbs-down"></span>
-        </button>
-        <button class="btn btn-secondary only-icon">
-          <span class="icon-thumbs-up"></span>
-        </button>
-        <button class="btn btn-outline-secondary only-icon">
-          <span class="icon-thumbs-down"></span>
-        </button>
-      </div>
-
-      <hr />
-
-      <h5>Кнопка круглая</h5>
-      <div class="row justify-content-between w-50">
-        <button class="btn btn-outline-primary  with-icon icon-arrow-right"></button>
-        <button class="btn btn-primary  with-icon icon-arrow-right"></button>
-        <button class="btn btn-secondary  with-icon icon-arrow-right"></button>
-        <button class="btn btn-outline-secondary  with-icon icon-arrow-right"></button>
-      </div>
-
-      <hr />
-
-      <h5>Карточки (размеры зависят от сетки)</h5>
-
-      <div class="col-5">
-        <h6>Карточка меню в шапке</h6>
-
-        <div class="card-category">
-          <a href="#" class="card-body my-3">
-            <span class="h3">Депозит (вклады)</span>
-            <svg class="card-img">
-              <use xlink:href="./img/sprite.svg#clipboard"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <hr />
-      <div class="col-5">
-        <h6>Карточка картинка слева</h6>
-        <div class="card-category">
-          <a href="#" class="card-body img-left">
-            <svg class="card-img">
-              <use xlink:href="./img/sprite.svg#teamwork"></use>
-            </svg>
-            <span class="h4">Опросы</span>
-          </a>
-        </div>
-      </div>
-      <hr />
-      <div class="col-5">
-        <h6>Карточка маленькая</h6>
-        <div class="card-category">
-          <a href="#" class="card-body img-left small with-shadow my-3">
-            <svg class="card-img">
-              <use xlink:href="./img/sprite.svg#clipboard"></use>
-            </svg>
-            <span class="h6">Депозит (вклады) </span>
-            <span class="icon-chevron-right"></span>
-          </a>
-        </div>
-      </div>
-      <hr />
-      <div class="col-5">
-        <h6>Карточка поста</h6>
-        <div class="post mx-auto">
-          <div class="post-img">
-            <img
-              src="./img/depositphotos_43233203-stock-photo-hacker-stealing-credit-card-numbers.jpg"
-              alt="post-img"
-              class="img-fluid"
-            />
-            <div class="tags tag-position">
-              <span class="icon-thumbs-up"></span>
-              <span>473</span>
-            </div>
-          </div>
-
-          <div class="tags post-tag post-tag-position">
-            <span class="icon-tag"></span>
-            <a href="" class="post-tag-text"> Деньги</a>
-          </div>
-          <p class="p">
-            Как защитить деньги на карте от посягательств мошенников
-          </p>
-        </div>
-      </div>
-      <hr />
-      <div class="col-12">
-        <h6>Каточка вопроса с главной</h6>
-        <a href="#" class="card-question">
-          <svg class="card-question-img">
-            <use xlink:href="./img/sprite.svg#exchange"></use>
-          </svg>
-          <span class="card-question-title d-sm-none">
-            Докумет
-          </span>
-          <p class="p">
-            Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким родственникам
-            (родители, кровные и сводные братья и сестры, супруги, дети, дедушки, бабушки и др.)?
-          </p>
-          <div class="tags tags-position">
-            <span class="icon-eye"></span>
-            <span>473</span>
-          </div>
-        </a>
-      </div>
-      <hr />
-      <div class="col-12">
-        <h6>Каточка вопроса с выподашкой c картинкой</h6>
-        <div
-          id="accordion"
-          class="card-question with-collapse mb-4 ml-5"
-          style="visibility: visible; animation-name: fadeInUp;"
-        >
-          <div
-            class="card-body collapsed"
-            data-toggle="collapse"
-            data-target="#collapse0"
-            aria-expanded="false"
-            aria-controls="collapse0"
-          >
-            <div class="d-md-flex">
-              <div class="card-question-img">
-                <svg>
-                  <use xlink:href="./img/sprite.svg#analytics"></use>
-                </svg>
-              </div>
-              <p class="p my-auto">
-                <span class="d-md-none mr-2">1.</span>
-                Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким
-                родственникам (родители, кровные и сводные братья и сестры, супруги, дети, дедушки, бабушки и др.)
-              </p>
-              <div class="tags tags-position d-none d-md-flex">
-                <span>1</span>
-              </div>
-            </div>
-          </div>
-
-          <div id="collapse0" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
-            <div class="d-flex justify-content-between">
-              <div class="tags tag-text">
-                <span class="icon-refresh-cw mr-2"></span>
-                <span class="d-none d-sm-inline"> Последнее обновление:</span> 14:15, 30 мая 2019 г.
-              </div>
-              <div class="tags tag-text">
-                <span class="icon-eye mr-2"></span>
-                <span> 434</span>
-              </div>
-            </div>
-            <div class="collapse-text">
-              <p class="p">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </p>
-              <p class="p">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </p>
-            </div>
-
-            <hr />
-            <div class="collapse-control flex-column flex-lg-row">
-              <p class="p col-auto col-lg mr-lg-3">
-                <small> 97% считают ответ полезным</small>
-                Для Вас ответ оказался полезным?
-              </p>
-
-              <div class="d-flex jusify-content-between btn-thumbs-container">
-                <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
-                  <span class="icon-thumbs-up"></span>
-                  <span class="btn-text">Да</span>
-                </button>
-                <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
-                  <span class="icon-thumbs-down"></span>
-                  <span class="btn-text">Нет</span>
-                </button>
-              </div>
-              <hr class="d-lg-none" />
-              <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
-                <span class="icon-share-2"></span>
-                <span class="btn-text">Поделиться</span>
-              </button>
-              <button class="btn btn-outline-primary d-none  d-lg-flex">
-                <span class="icon-printer"></span>
-                <span class="btn-text">На печать</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          id="accordion1"
-          class="card-question with-collapse mb-4 ml-5"
-          style="visibility: visible; animation-name: fadeInUp;"
-        >
-          <div
-            class="card-body collapsed"
-            data-toggle="collapse"
-            data-target="#collapse1"
-            aria-expanded="false"
-            aria-controls="collapse1"
-          >
-            <div class="d-md-flex align-items-center">
-              <div class="card-question-img">
-                <svg>
-                  <use xlink:href="./img/sprite.svg#analytics"></use>
-                </svg>
-              </div>
-              <h2 class="h2">Автоброкер</h2>
-              <div class="tags tags-position d-none d-md-flex">
-                <span>1</span>
-              </div>
-            </div>
-          </div>
-
-          <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1" style="">
-            <div class="d-flex justify-content-between">
-              <div class="tags tag-text">
-                <span class="icon-refresh-cw mr-2"></span>
-                <span class="d-none d-sm-inline"> Последнее обновление:</span> 14:15, 30 мая 2019 г.
-              </div>
-              <div class="tags tag-text">
-                <span class="icon-eye mr-2"></span>
-                <span> 434</span>
-              </div>
-            </div>
-            <div class="collapse-text">
-              <p class="p">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </p>
-              <ul class="list">
-                <li class="list-item">Lorem ipsum dolor sit amet</li>
-                <li class="list-item">Lorem ipsum dolor sit amet</li>
-                <li class="list-item">Lorem ipsum dolor sit amet</li>
-              </ul>
-            </div>
-
-            <hr />
-            <div class="collapse-control flex-column flex-lg-row">
-              <p class="p col-auto col-lg mr-lg-3">
-                <small> 97% считают ответ полезным</small>
-                Для Вас ответ оказался полезным?
-              </p>
-
-              <div class="d-flex jusify-content-between btn-thumbs-container">
-                <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
-                  <span class="icon-thumbs-up"></span>
-                  <span class="btn-text">Да</span>
-                </button>
-                <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
-                  <span class="icon-thumbs-down"></span>
-                  <span class="btn-text">Нет</span>
-                </button>
-              </div>
-              <hr class="d-lg-none" />
-              <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
-                <span class="icon-share-2"></span>
-                <span class="btn-text">Поделиться</span>
-              </button>
-              <button class="btn btn-outline-primary d-none  d-lg-flex">
-                <span class="icon-printer"></span>
-                <span class="btn-text">На печать</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="col-12">
-        <h6>Каточка вопроса с выподашкой c без картинки</h6>
-        <div
-          id="accordion2"
-          class="card-question with-collapse withoute-img mb-4 wow fadeInUp"
-          style="visibility: visible; animation-name: fadeInUp;"
-        >
-          <div
-            class="card-body d-flex justify-content-between align-items-center"
-            data-toggle="collapse"
-            data-target="#collapse15"
-            aria-expanded="true"
-            aria-controls="collapse15"
-          >
-            <p class="p my-auto">
-              Планируется ли применять технологию блокчейна в банковском секторе Республики Узбекистан?
-            </p>
-          </div>
-
-          <div id="collapse15" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion2" style="">
-            <div class="d-flex justify-content-between">
-              <div class="tags tag-text">
-                <span class="icon-refresh-cw mr-2"></span>
-                <span class="d-none d-sm-inline"> Последнее обновление:</span> 14:15, 30 мая 2019 г.
-              </div>
-              <div class="tags tag-text">
-                <span class="icon-eye mr-2"></span>
-                <span> 434</span>
-              </div>
-            </div>
-            <div class="collapse-text">
-              <p class="p">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </p>
-              <p class="p">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </p>
-            </div>
-
-            <hr />
-            <div class="collapse-control flex-column flex-lg-row">
-              <p class="p col-auto col-lg mr-lg-3 pl-0 text-left">
-                <small> 97% считают ответ полезным</small>
-                Для Вас ответ оказался полезным?
-              </p>
-
-              <div class="d-flex jusify-content-between btn-thumbs-container">
-                <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
-                  <span class="icon-thumbs-up"></span>
-                  <span class="btn-text">Да</span>
-                </button>
-                <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
-                  <span class="icon-thumbs-down"></span>
-                  <span class="btn-text">Нет</span>
-                </button>
-              </div>
-              <hr class="d-lg-none" />
-              <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
-                <span class="icon-share-2"></span>
-                <span class="btn-text">Поделиться</span>
-              </button>
-              <button class="btn btn-outline-primary d-none  d-lg-flex">
-                <span class="icon-printer"></span>
-                <span class="btn-text">На печать</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="col-12">
-        <h5>Карточка в попапе</h5>
-        <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal">
-          Запустить модальное окно
-        </a>
-        <div
-          class="modal fade "
-          id="exampleModal"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-              <div id="accordion2" class="card-question with-collapse withoute-img mb-4">
-                <div
-                  class="card-body collapsed d-flex justify-content-between align-items-center p-relative"
-                  data-toggle="collapse3"
-                  data-target="#collapse3"
-                  aria-expanded="false"
-                  aria-controls="collapse3"
-                >
-                  <p class="p">
-                    Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким
-                    родственникам (родители, кровные и сводные братья и сестры, супруги, дети, дедушки, бабушки и др.)
-                  </p>
-                  <i class="icon-Close" data-dismiss="modal"></i>
-                </div>
-
-                <div id="collapse3" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion2">
-                  <div class="d-flex justify-content-between">
-                    <div class="tags tag-text">
-                      <span class="icon-refresh-cw mr-2"></span>
-                      <span class="d-none d-sm-inline"> Последнее обновление:</span> 14:15, 30 мая 2019 г.
+                    <div class="col-4">
+                        <h5> Lists: UL</h5>
+                        <ul class="list">
+                            <li class="list-item">Lorem ipsum dolor sit amet</li>
+                            <li class="list-item">Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-item">Lorem ipsum dolor sit amet
+                            </li>
+                            <li>
+                                <ul class="list-nested">
+                                    <li class="list-nested-item">Lorem ipsum dolor sit amet
+                                    </li>
+                                    <li class="list-nested-item">Lorem ipsum dolor sit amet
+                                    </li>
+                                    <li class="list-nested-item">Lorem ipsum dolor sit amet
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="tags tag-text">
-                      <span class="icon-eye mr-2"></span>
-                      <span> 434</span>
+                    <div class="col-4">
+                        <h5>Lists: UL with .styled</h5>
+                        <ul class="list-styled">
+                            <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
+                            <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
+                            <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
+                            <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
+                            <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
+                            <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
+                        </ul>
                     </div>
-                  </div>
-                  <div class="collapse-text">
-                    <p class="p">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                      wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                      eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                      assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                      nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                      farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                      labore sustainable VHS.
-                    </p>
-                    <ul class="list">
-                      <li class="list-item">Lorem ipsum dolor sit amet</li>
-                      <li class="list-item">Lorem ipsum dolor sit amet</li>
-                      <li class="list-item">Lorem ipsum dolor sit amet</li>
-                    </ul>
-                  </div>
-
-                  <hr />
-                  <div class="collapse-control flex-column flex-lg-row">
-                    <p class="p col-auto col-lg mr-lg-3 pl-0 text-left">
-                      <small> 97% считают ответ полезным</small>
-                      Для Вас ответ оказался полезным?
-                    </p>
-
-                    <div class="d-flex jusify-content-between btn-thumbs-container">
-                      <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
-                        <span class="icon-thumbs-up"></span>
-                        <span class="btn-text">Да</span>
-                      </button>
-                      <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
-                        <span class="icon-thumbs-down"></span>
-                        <span class="btn-text">Нет</span>
-                      </button>
+                    <div class="col-4">
+                        <h5>
+                            Lists: OL
+                        </h5>
+                        <ol class="list-ol">
+                            <li class="list-ol_item">Lorem ipsum dolor sit amet</li>
+                            <li class="list-ol_item">Lorem ipsum dolor sit amet</li>
+                            <li class="list-ol_item">Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-ol_item">Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-ol_item">Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="list-ol_item">Lorem ipsum dolor sit amet
+                            </li>
+                        </ol>
                     </div>
-                    <hr class="d-lg-none" />
-                    <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
-                      <span class="icon-share-2"></span>
-                      <span class="btn-text">Поделиться</span>
-                    </button>
-                    <button class="btn btn-outline-primary d-none  d-lg-flex">
-                      <span class="icon-printer"></span>
-                      <span class="btn-text">На печать</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5>Таблица: .table</h5>
+                    <table class="table">
+                        <thead class="table-thead">
+                            <tr class="table-thead_tr">
+                                <th class="table-thead_th">Количество</th>
+                                <th class="table-thead_th">Наименование</th>
+                                <th class="table-thead_th">Состав</th>
+                                <th class="table-thead_th">Примечание</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-tbody">
+                            <tr class="table-tbody_tr">
+                                <td class="table-tbody_td">Количество</td>
+                                <td class="table-tbody_td">Наименование</td>
+                                <td class="table-tbody_td">Состав</td>
+                                <td class="table-tbody_td">Примечание</td>
+                            </tr>
+                            <tr class="table-tbody_tr">
+                                <td class="table-tbody_td">Количество</td>
+                                <td class="table-tbody_td">Наименование</td>
+                                <td class="table-tbody_td">Состав</td>
+                                <td class="table-tbody_td">Примечание</td>
+                            </tr>
+                            <tr class="table-tbody_tr">
+                                <td class="table-tbody_td">Количество</td>
+                                <td class="table-tbody_td">Наименование</td>
+                                <td class="table-tbody_td">Состав</td>
+                                <td class="table-tbody_td">Примечание</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5>Таблица: .table.table-striped</h5>
+                    <table class="table table-striped">
+                        <thead class="table-thead">
+                            <tr class="table-thead_tr">
+                                <th class="table-thead_th">Количество</th>
+                                <th class="table-thead_th">Наименование</th>
+                                <th class="table-thead_th">Состав</th>
+                                <th class="table-thead_th">Примечание</th>
+                            </tr>
+                        </thead>
 
-      <hr />
-      <article class="my-4">
-        <h5>Карточка видио</h5>
-        <div class="col-3 my-3">
-          <div class="card-video small">
-            <img src="./img/video1.jpg" alt="video" class="card-video-img" />
-            <div class="tags video-timer tags-position">
-              15:30
-            </div>
-            <div class="card-video-play">
-              <span class="icon-google-play_logo"></span>
-            </div>
-            <div class="card-video-title">
-              Как работает экономика
-            </div>
-            <div class="tags video-new tags-position">
-              Новое
-            </div>
-          </div>
-        </div>
-      </article>
+                        <tbody class="table-tbody">
+                            <tr class="table-tbody_tr">
+                                <td class="table-tbody_td">Количество</td>
+                                <td class="table-tbody_td">Наименование</td>
+                                <td class="table-tbody_td">Состав</td>
+                                <td class="table-tbody_td">Примечание</td>
+                            </tr>
+                            <tr class="table-tbody_tr">
+                                <td class="table-tbody_td">Количество</td>
+                                <td class="table-tbody_td">Наименование</td>
+                                <td class="table-tbody_td">Состав</td>
+                                <td class="table-tbody_td">Примечание</td>
+                            </tr>
+                            <tr class="table-tbody_tr">
+                                <td class="table-tbody_td">Количество</td>
+                                <td class="table-tbody_td">Наименование</td>
+                                <td class="table-tbody_td">Состав</td>
+                                <td class="table-tbody_td">Примечание</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <hr>
+                <article class="my-4">
+                    <h5>Таблица: .table.table-bordered</h5>
+                    <table class="table table-bordered">
+                        <thead class="table-thead">
+                            <tr class="table-thead_tr">
+                                <th class="table-thead_th">Количество</th>
+                                <th class="table-thead_th">Наименование</th>
+                                <th class="table-thead_th">Состав</th>
+                                <th class="table-thead_th">Примечание</th>
+                            </tr>
+                        </thead>
 
-      <hr />
-      <article class="my-4">
-        <h5>book.book-post:</h5>
-        <div class="col-4">
-          <div class="book book-post">
-            <div class="book-img">
-              <img class="img-fluid" loading="lazy" src="./img/Book-Сorporate-finance.jpg" alt="book-img" />
-              <div class="tags tag-position">
-                <span class="icon-thumbs-up"></span>
-                <span>473</span>
-              </div>
-            </div>
+                        <tbody class="table-tbody">
+                            <tr class="table-tbody_tr">
+                                <td class="table-tbody_td">Количество</td>
+                                <td class="table-tbody_td">Наименование</td>
+                                <td class="table-tbody_td">Состав</td>
+                                <td class="table-tbody_td">Примечание</td>
+                            </tr>
+                            <tr class="table-tbody_tr">
+                                <td class="table-tbody_td">Количество</td>
+                                <td class="table-tbody_td">Наименование</td>
+                                <td class="table-tbody_td">Состав</td>
+                                <td class="table-tbody_td">Примечание</td>
+                            </tr>
+                            <tr class="table-tbody_tr">
+                                <td class="table-tbody_td">Количество</td>
+                                <td class="table-tbody_td">Наименование</td>
+                                <td class="table-tbody_td">Состав</td>
+                                <td class="table-tbody_td">Примечание</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
 
-            <p class="p">
-              Корпоративные финансы для чайников
-              <small>Майкл Тэйллард</small>
-            </p>
-          </div>
+                <hr>
+              
+                      
+               
+          
+                              
+                            <article class="my-4">
+                                <h5>tabs-lined</h5>
+                                <ul class="nav nav-tabs nav-tabs-lined" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+                                            role="tab" aria-controls="home" aria-selected="true">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+                                            role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages"
+                                            role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings"
+                                            role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        123</div>
+                                    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        1234</div>
+                                    <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                                        12345</div>
+                                    <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                                        12346</div>
+                                </div>
+
+                            </article>
+
+                            <article class="my-5">
+                                <h5>tabs</h5>
+                                <ul class="nav nav-tabs" id="myTab1" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab1" data-toggle="tab" href="#home1"
+                                            role="tab" aria-controls="home" aria-selected="true">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab1" data-toggle="tab" href="#profile1"
+                                            role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="messages-tab1" data-toggle="tab" href="#messages1"
+                                            role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="settings-tab1" data-toggle="tab" href="#settings1"
+                                            role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="home1" role="tabpanel" aria-labelledby="home-tab">
+                                        123</div>
+                                    <div class="tab-pane" id="profile1" role="tabpanel" aria-labelledby="profile-tab">
+                                        1234</div>
+                                    <div class="tab-pane" id="messages1" role="tabpanel" aria-labelledby="messages-tab">
+                                        12345</div>
+                                    <div class="tab-pane" id="settings1" role="tabpanel" aria-labelledby="settings-tab">
+                                        12346</div>
+                                </div>
+                            </article>
+                            <hr>
+                            <article class="my-5">
+                                <h5>tabs-button</h5>
+                                <ul class="nav nav-tabs nav-tabs-button mt-5 d-none d-lg-flex" id="myTab1" role="tablist">
+                                    <li class="nav-item mx-3">
+                                      <a id="1" class="nav-link " data-toggle="tab" href="#1" role="tab" aria-controls="dep-calculator" aria-selected="false">
+                                      <svg class="tab-img">
+                                        <use xlink:href="./img/sprite.svg#clipboard"></use>
+                                      </svg>
+                                        <span class="h5 mb-0">Депозитный калькулятор</span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item mx-3">
+                                      <a id="2" class="nav-link active " data-toggle="tab" href="#2" role="tab" aria-controls="cred-calculator" aria-selected="true">
+                                      <svg class="tab-img">
+                                        <use xlink:href="./img/sprite.svg#calculator"></use>
+                                      </svg>
+                                        <span class="h5 mb-0">Кредитный калькулятор</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                  <hr>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="1" role="tabpanel" aria-labelledby="home-tab">
+                                        123</div>
+                                    <div class="tab-pane" id="2" role="tabpanel" aria-labelledby="profile-tab">
+                                        1234</div>
+                                </div>
+                            </article>
+                            <hr>
+                            <article class="my-4">
+                                <h5>form-control:</h5>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <form>
+                                            <div class="form-group with-icon custom-search">
+                                                <button class="icon-search"></button>
+                                                <input type="text" class="form-control" 
+                                                    placeholder="Поиск по сайту">
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="Поиск по сайту">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <!--                                <label for="exampleInputPassword1">Password</label>-->
+                                            <select class="js-example-basic-single">
+                                                <option value="AL">Alabama</option>
+                                                <option value="WY">Wyoming</option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="WY">Wyoming</option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="WY">Wyoming</option>
+                                                <option value="WY" disabled>text</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <hr>
+                            <article class="my-4">
+                                <h5>textarea: .form-control</h5>
+                                <div class="form-group text-area">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                        placeholder="text"></textarea>
+                                </div>
+                            </article>
+                            <hr>
+                            <article class="my-4">
+                                <h5>textarea: .form-control</h5>
+
+                                <div class="custom-file my-3">
+                                    <div class="custom-file-open">
+                                        Выбирите фаил
+                                    </div>
+                                    <label class="custom-file-label" for="customFile2"> </label>
+                                    <input type="file" class="custom-file-input" id="customFile2">
+                                    <button class="reset">
+                                        <span class="icon-Close"></span>
+                                    </button>
+                                </div>
+                            </article>
+                            <hr>
+                            <article class="my-4">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5>checkbox</h5>
+                                    </div>
+                                    <div class="col-1">
+                                        <span>normal</span>
+                                        <div class="custom-checkbox">
+
+                                            <label class="custom-checkbox-container">
+                                                <input type="checkbox" class="custom-checkbox-input">
+                                                <span class="custom-checkbox-mark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span>disable</span>
+                                        <div class="custom-checkbox">
+
+                                            <label class="custom-checkbox-container">
+                                                <input type="checkbox" class="custom-checkbox-input" disabled>
+                                                <span class="custom-checkbox-mark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <hr>
+                            <article class="my-4">
+                                <h5>RadioButton</h5>
+                                <div class="row my-3">
+                                    <div class="col-1">
+                                        <span>normal</span>
+                                        <div class="custom-radio">
+
+                                            <label class="custom-radio-container">
+                                                <input type="radio" class="custom-radio-input">
+                                                <span class="custom-radio-mark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <span>disable</span>
+                                        <div class="custom-radio">
+                                            <label class="custom-radio-container">
+                                                <input type="radio" class="custom-radio-input" disabled>
+                                                <span class="custom-radio-mark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <hr>
+                            <article class="my-4">
+                                <h5>switcher</h5>
+                                <div class="row my-3">
+                                    <div class="col-auto">
+    
+                                        <div class="custom-switcher-container">
+                                        <div class="custom-switcher primary">
+                                            <input type="checkbox" id="id-name--1" name="set-name" class="switch-input">
+                                            <label for="id-name--1" class="switch-label"></label>
+                                        </div>
+                                        <span class="custom-switcher-text">Primary</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        
+                                        <div class="custom-switcher-container">
+                                        <div class="custom-switcher secondary">
+                                            <input type="checkbox" id="id-name--2" name="set-name" class="switch-input">
+                                            <label for="id-name--2" class="switch-label"></label>
+                                        </div>
+                                        <span class="custom-switcher-text">Secondary</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                           <div class="custom-switcher-container">
+                                            <div class="custom-switcher">
+                                                <input type="checkbox" id="id-name--5" name="set-name" class="switch-input">
+                                                <label for="id-name--5" class="switch-label"></label>
+                                                
+                                            </div>
+                                            <span class="custom-switcher-text">Uncontroled</span>
+                                        </div>
+                                        </div>
+                                    <div class="col-auto">
+                                        
+                                        <div class="custom-switcher-container">
+                                        <div class="custom-switcher disabled">
+                                            <input type="checkbox" id="id-name--3" name="set-name" class="switch-input"
+                                                disabled>
+                                            <label for="id-name--3" class="switch-label"></label>
+                                        </div>
+                                        <span class="custom-switcher-text">Disabled</span>
+                                    </div>
+
+                                    </div>
+                                    <div class="col-auto">
+                                   
+                                        <div class="custom-switcher-container">
+                                        <div class="custom-switcher disabled">
+                                            <input type="checkbox" id="id-name--4" name="set-name" class="switch-input"
+                                                disabled checked>
+                                            <label for="id-name--4" class="switch-label"></label>
+                                        </div>
+                                        <span class="custom-switcher-text">Disabled checked</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <hr>
+                            <article class="my-4">
+                                <h5>Tags</h5>
+                                <div class="row my-3">
+                                    <div class="col-auto">
+                                        <div class="tags">
+                                            <span class="icon-eye"></span>
+                                            <span>473</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="tags">
+                                            <span class="icon-thumbs-up"></span>
+                                            <span>473</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="tags">
+                                            <span class="icon-thumbs-down"></span>
+                                            <span>473</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="tags video-new">
+                                            Новое
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="tags video-timer">
+                                            30:59
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="tags post-tag">
+                                            <span class="icon-tag"></span>
+                                            <a href="" class="post-tag-link"> Деньги</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="tags tag-text">
+                                            <span class="icon-refresh-cw mr-2"></span>
+                                            Последнее обновление: 14:15, 30 мая 2019 г.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </article>
+                            <hr>
+                            
+                            <article>
+                                    
+                                        <div class="h5 pb-3"> Кнопки социальных сетей </div>
+                                            <h6 class="">С текстом:</h6>
+                                            <div class=" d-flex flex-grow-1 justify-content-between">
+                                                    <a href="#" class="social-button medium rss">
+                                                            <span class="icon-RSS mr-2"></span>
+                                                            Подписаться на RSS
+                                                          </a>
+                                              <a href="#" class="social-button facebook">
+                                                    <img src="./img/Facebook.svg" class="social-icon h-100 mr-0">
+                                                <span> Нравиться </span>
+                                              </a>
+                                          
+                                              <a href="#" class="social-button telegram">
+                                                    <img src="./img/logo-telegram.svg" class="social-icon ">
+                                              
+                                                <span>Telegram</span>
+                                              </a>
+                                          
+                                              <a href="#" class="social-button odnoclassniki">
+                                                    <img src="./img/OK.svg" class="social-icon h-100 mr-0">
+                                                       
+                                            
+                                                <span>Одноклассники</span>
+                                              </a>
+                                          
+                                              <a href="#" class="social-button twitter">
+                                                   
+                                                    <img src="./img/tweeter.svg" class="social-icon ">
+                                                       
+                                                
+                                                <span>Twitter</span>
+                                              </a>
+                                          
+                                              <a href="#" class="social-button vk">
+                                                    <img src="./img/VK.svg" class="social-icon h-100">
+                                                       
+                                                
+                                            
+                                                <span>Нравиться</span>
+                                              </a>
+                                            </div>
+                                          
+                                            <div
+                                              style="flex-grow: 1.2"
+                                              class="d-none d-lg-flex jusify-content-end flex-grow-2 "
+                                            >
+                                              
+                                            </div>
+                                            <h6 class=" py-3">Без текста средние:</h6>
+                                            <div class="d-flex align-items-center flex-wrap justify-content-around  mx-auto">
+                                                   
+                                                    <a href="#" class="social-button medium facebook">
+                                                            <img src="./img/Facebook.svg" class="social-icon h-100" alt="">
+                                                    </a>
+                                  
+                                                    <a href="#" class="social-button medium telegram">
+                                                            <img src="./img/Telegram.svg" class="social-icon h-100" alt="">
+                                                    </a>
+                                                    <a href="#" class="social-button medium twitter">
+                                                            <img src="./img/tweeter.svg" class="social-icon h-100">
+                                                       
+                                                     
+                                                   
+                                                    </a>
+                                                    <a href="#" class="social-button medium vk">
+                                                            <img src="./img/VK.svg" class="social-icon h-100" alt="">
+                                                    </a>
+                                                    <a href="#" class="social-button medium instagram" >
+                                                            <img src="./img/Instagram.svg" class="social-icon" alt="">
+                                                    </a>
+                                                    <a href="#" class="social-button medium odnoclassniki" >
+                                                            <img src="./img/OK.svg" class="social-icon " alt="">
+                                                    </a>
+                                                   
+                                                  </div>
+                                                  <h6 class=" py-3">Без текста маленькие:</h6>
+                                            <div class="d-flex align-items-center flex-wrap justify-content-around  mx-auto">
+                                                   
+                                                    <a href="#" class="social-button small facebook">
+                                                            <img src="./img/Facebook.svg" class="social-icon h-100" alt="">
+                                                    </a>
+                                  
+                                                    <a href="#" class="social-button small telegram">
+                                                            <img src="./img/Telegram.svg" class="social-icon h-100" alt="">
+                                                    </a>
+                                                    <a href="#" class="social-button small twitter">
+                                                      <img src="./img/tweeter.svg" class="social-icon h-100">
+                                                       
+                                                      
+                                                    </a>
+                                                    <a href="#" class="social-button small vk">
+                                                            <img src="./img/VK.svg" class="social-icon h-100" alt="">
+                                                    </a>
+                                                    <a href="#" class="social-button small instagram" >
+                                                            <img src="./img/Instagram.svg" class="social-icon h-100 " alt="">
+                                                    </a>
+                                                 
+                                                    <a href="#" class="social-button small instagram" >
+                                                            <img src="./img/OK.svg" class="social-icon h-100" alt="">
+                                                    </a>
+                                                    
+                                                </div>
+                                         
+                                          
+                            </article>
+                            <hr>
+                          
+                                    <h5>Buttons: .btn.btn-primary</h5>
+                                    <div class="row">
+                                        <div class="col-auto">
+                                               
+                                      <button class="btn btn-primary">
+    
+                                            <span class="icon-send"></span>
+                                        <span class="btn-text"> Задать вопрос</span>
+                                     
+                                    </button>
+                                    </div>
+                                    <div class="col-auto p-4" style="background: black">
+                                        
+                                            <button class="btn btn-primary">
+          
+                                                  <span class="icon-send"></span>
+                                              <span class="btn-text"> Задать вопрос</span>
+                                           
+                                          </button>
+                                          </div>
+                                    </div>
+                                    <hr />
+                                    <h5>Buttons: .btn.btn-outline-primary</h5>
+                                    <div class="row">
+                                            <div class="col-auto p-4" >
+                                    <button class="btn btn-outline-primary">
+    
+                                            <span class="icon-send"></span>
+                                        <span class="btn-text"> Задать вопрос</span>
+                                     
+                                    </button>
+                                </div>
+                                <div class="col-auto py-4" style="background: black">
+                                        <button class="btn btn-outline-primary reverse" >
+        
+                                                <span class="icon-send"></span>
+                                            <span class="btn-text"> Задать вопрос</span>
+                                         
+                                        </button>
+                                    </div>
+                                   </div>
+                                    <hr />
+                                    
+                                    <h5>
+                                      Buttons: .btn.btn-secondary
+                                    </h5>
+                                    
+                                    <div class="row">
+                                        <div class="col-auto">
+                                        <button class="btn btn-secondary">
+                                            <span class="icon-send"></span>
+                                            <span class="btn-text"> Задать вопрос</span>
+                                        </button>
+                                    </div>
+                                        
+                                    <div class="col-auto py-4" style="background: black">
+                                
+                                    <button class="btn btn-outline-secondary reverse ">
+                                      
+                                            <span class="icon-send"></span>
+                                        <span class="btn-text"> Задать вопрос</span>
+                                      
+                                    </button>
+                                </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                      <div class="col-4">
+                                        <h5>.btn-lg</h5>
+                                      
+                                    
+                                            <button class="btn btn-primary btn-lg">
+                                              <span class="btn-text"> Задать вопрос</span>
+                                            </button>
+                                     
+                                     
+                                      </div>
+                                      <div class="col-4">
+                                        <h5>.btn-md</h5>
+                                        
+                                            <button href="#"  class="btn btn-primary btn-md">
+                                              <span class="btn-text"> Задать вопрос</span>
+                                            </button>
+                                          
+                                      </div>
+                                      <div class="col-4">
+                                        <h5>.btn-sm</h5>
+                                        <button href="#"  class="btn btn-primary btn-sm">
+                                                <span class="btn-text"> Задать вопрос</span>
+                                              </button>
+                                      </div>
+                                    </div>
+                                    <hr>
+                                   
+                                    <h5>Кнопка иконка</h5>
+                                    
+                                    <div class="row justify-content-between w-50">
+                                            <button class="btn btn-outline-primary only-icon">
+                                                    <span class="icon-thumbs-up"></span>
+                                            </button>
+                                            <button class="btn btn-primary only-icon">
+                                                    <span class="icon-thumbs-down"></span>
+                                            </button>
+                                            <button class="btn btn-secondary only-icon">
+                                                    <span class="icon-thumbs-up"></span>
+                                            </button>
+                                            <button class="btn btn-outline-secondary only-icon">
+                                                    <span class="icon-thumbs-down"></span>
+                                            </button>
+                                    </div>
+                                    
+                                    <hr>
+
+                                    <h5>Кнопка круглая</h5>
+                                    <div class="row justify-content-between w-50">
+                                            <button class="btn btn-outline-primary  with-icon icon-arrow-right">
+                                                   
+                                            </button>
+                                            <button class="btn btn-primary  with-icon icon-arrow-right">
+                                                    
+                                            </button>
+                                            <button class="btn btn-secondary  with-icon icon-arrow-right">
+                                                   
+                                            </button>
+                                            <button class="btn btn-outline-secondary  with-icon icon-arrow-right">
+                                                    
+                                            </button>
+                                    </div>
+                                    
+                                    <hr>
+
+                                    <h5>Карточки (размеры зависят от сетки)</h5>
+                                    
+                                    <div class="col-5">
+                                        <h6>Карточка меню в шапке</h6>
+
+                                        <div class="card-category">
+                                            <a href="#" class="card-body my-3">
+                                                <span class="h3">Депозит (вклады)</span>
+                                                <svg class="card-img">
+                                                <use xlink:href="./img/sprite.svg#clipboard"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="col-5">
+                                            <h6>Карточка картинка слева</h6>
+                                        <div class="card-category">
+                                            <a href="#" class="card-body img-left">
+                                                    <svg class="card-img">
+                                                      <use xlink:href="./img/sprite.svg#teamwork"></use>
+                                                    </svg>
+                                                    <span class="h4">Опросы</span>
+                                                  </a>     
+                                                </div>
+                                    </div>
+                                    <hr>
+                                    <div class="col-5">
+                                        <h6>Карточка маленькая</h6>
+                                        <div class="card-category">
+                                                <a href="#" class="card-body img-left small with-shadow my-3">
+                                                        <svg class="card-img">
+                                                          <use xlink:href="./img/sprite.svg#clipboard"></use>
+                                                        </svg>
+                                                        <span class="h6">Депозит (вклады) </span>
+                                                        <span class="icon-chevron-right"></span>
+                                                      </a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="col-5">
+                                        <h6>Карточка поста</h6>
+                                    <div class="post mx-auto">
+                                            <div class="post-img">
+                                              <img src="./img/depositphotos_43233203-stock-photo-hacker-stealing-credit-card-numbers.jpg" alt="post-img" class="img-fluid">
+                                              <div class="tags tag-position">
+                                                <span class="icon-thumbs-up"></span>
+                                                <span>473</span>
+                                              </div>
+                                            </div>
+                                
+                                            <div class="tags post-tag post-tag-position">
+                                              <span class="icon-tag"></span>
+                                              <a href="" class="post-tag-text"> Деньги</a>
+                                            </div>
+                                            <p class="p">
+                                              Как защитить деньги на карте от посягательств мошенников
+                                            </p>
+                                    </div>
+                                 </div>
+                                 <hr>
+                                 <div class="col-12">
+                                     <h6>Каточка вопроса с главной</h6>
+                                     <a href="#" class="card-question">
+                                            <svg class="card-question-img">
+                                              <use xlink:href="./img/sprite.svg#exchange"></use>
+                                            </svg>
+                                            <span class="card-question-title d-sm-none">
+                                              Докумет
+                                            </span>
+                                            <p class="p">
+                                              Как предоставляются сведения о вкладах и о денежных переводах
+                                              в коммерческих банках близким родственникам (родители, кровные
+                                              и сводные братья и сестры, супруги, дети, дедушки, бабушки и
+                                              др.)?
+                                            </p>
+                                            <div class="tags tags-position">
+                                              <span class="icon-eye"></span>
+                                              <span>473</span>
+                                            </div>
+                                        </a>
+                                 </div>
+                                    <hr>
+                                 <div class="col-12">
+                                        <h6>Каточка вопроса с выподашкой c картинкой</h6>
+                                        <div id="accordion" class="card-question with-collapse mb-4 ml-5" style="visibility: visible; animation-name: fadeInUp;">
+                                                <div class="card-body collapsed" data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                                                  <div class="d-md-flex">
+                                                    <div class="card-question-img">
+                                                      <svg>
+                                                        <use xlink:href="./img/sprite.svg#analytics"></use>
+                                                      </svg>
+                                                    </div>
+                                                    <p class="p my-auto">
+                                                      <span class="d-md-none mr-2">1.</span>
+                                                      Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким родственникам (родители, кровные и сводные братья и сестры, супруги, дети, дедушки, бабушки и др.)
+                                              
+                                                    </p>
+                                                    <div class="tags tags-position d-none d-md-flex">
+                                                      <span>1</span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              
+                                                <div id="collapse0" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                                                  <div class="d-flex justify-content-between">
+                                                    <div class="tags tag-text">
+                                                      <span class="icon-refresh-cw mr-2"></span>
+                                                      <span class="d-none d-sm-inline"> Последнее обновление:</span> 14:15, 30 мая 2019 г.
+                                                    </div>
+                                                    <div class="tags tag-text">
+                                                      <span class="icon-eye mr-2"></span>
+                                                      <span> 434</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="collapse-text">
+                                                    <p class="p">
+                                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                      terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                      skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                      Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                      single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                                      helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                                      proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                                      beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                      haven't heard of them accusamus labore sustainable VHS.
+                                                    </p>
+                                                    <p class="p">
+                                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                      terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                      skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                      Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                      single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                                      helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                                      proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                                      beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                      haven't heard of them accusamus labore sustainable VHS.
+                                                    </p>
+                                                  </div>
+                                              
+                                                  <hr>
+                                                  <div class="collapse-control flex-column flex-lg-row">
+                                                    <p class="p col-auto col-lg mr-lg-3">
+                                                      <small> 97% считают ответ полезным</small>
+                                                      Для Вас ответ оказался полезным?
+                                                    </p>
+                                              
+                                                    <div class="d-flex jusify-content-between btn-thumbs-container">
+                                                      <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
+                                                        <span class="icon-thumbs-up"></span>
+                                                        <span class="btn-text">Да</span>
+                                                      </button>
+                                                      <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
+                                                        <span class="icon-thumbs-down"></span>
+                                                        <span class="btn-text">Нет</span>
+                                                      </button>
+                                                    </div>
+                                                    <hr class="d-lg-none">
+                                                    <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
+                                                      <span class="icon-share-2"></span>
+                                                      <span class="btn-text">Поделиться</span>
+                                                    </button>
+                                                    <button class="btn btn-outline-primary d-none  d-lg-flex">
+                                                      <span class="icon-printer"></span>
+                                                      <span class="btn-text">На печать</span>
+                                                    </button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div id="accordion1" class="card-question with-collapse mb-4 ml-5" style="visibility: visible; animation-name: fadeInUp;">
+                                                    <div class="card-body collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                                      <div class="d-md-flex align-items-center">
+                                                        <div class="card-question-img">
+                                                          <svg>
+                                                            <use xlink:href="./img/sprite.svg#analytics"></use>
+                                                          </svg>
+                                                        </div>
+                                                        <h2 class="h2">Автоброкер</h2>
+                                                        <div class="tags tags-position d-none d-md-flex">
+                                                          <span>1</span>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  
+                                                    <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1" style="">
+                                                      <div class="d-flex justify-content-between">
+                                                        <div class="tags tag-text">
+                                                          <span class="icon-refresh-cw mr-2"></span>
+                                                          <span class="d-none d-sm-inline"> Последнее обновление:</span> 14:15, 30 мая 2019 г.
+                                                        </div>
+                                                        <div class="tags tag-text">
+                                                          <span class="icon-eye mr-2"></span>
+                                                          <span> 434</span>
+                                                        </div>
+                                                      </div>
+                                                      <div class="collapse-text">
+                                                        <p class="p">
+                                                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                          terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                          skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                          Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                                          helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                                          proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                                          beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                          haven't heard of them accusamus labore sustainable VHS.
+                                                        </p>
+                                                        <ul class="list">
+                                                                <li class="list-item">Lorem ipsum dolor sit amet</li>
+                                                                <li class="list-item">Lorem ipsum dolor sit amet
+                                                                </li>
+                                                                <li class="list-item">Lorem ipsum dolor sit amet
+                                                                </li>
+                                
+                                                            </ul>
+                                                      </div>
+                                                  
+                                                      <hr>
+                                                      <div class="collapse-control flex-column flex-lg-row">
+                                                        <p class="p col-auto col-lg mr-lg-3">
+                                                          <small> 97% считают ответ полезным</small>
+                                                          Для Вас ответ оказался полезным?
+                                                        </p>
+                                                  
+                                                        <div class="d-flex jusify-content-between btn-thumbs-container">
+                                                          <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
+                                                            <span class="icon-thumbs-up"></span>
+                                                            <span class="btn-text">Да</span>
+                                                          </button>
+                                                          <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
+                                                            <span class="icon-thumbs-down"></span>
+                                                            <span class="btn-text">Нет</span>
+                                                          </button>
+                                                        </div>
+                                                        <hr class="d-lg-none">
+                                                        <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
+                                                          <span class="icon-share-2"></span>
+                                                          <span class="btn-text">Поделиться</span>
+                                                        </button>
+                                                        <button class="btn btn-outline-primary d-none  d-lg-flex">
+                                                          <span class="icon-printer"></span>
+                                                          <span class="btn-text">На печать</span>
+                                                        </button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                    </div>
+                                    <hr>
+                                    <div class="col-12">
+                                            <h6>Каточка вопроса с выподашкой c без картинки</h6>
+                                            <div id="accordion2" class="card-question with-collapse withoute-img mb-4 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                                    <div class="card-body d-flex justify-content-between align-items-center" data-toggle="collapse" data-target="#collapse15" aria-expanded="true" aria-controls="collapse15">
+                                                      <p class="p my-auto">
+                                                        Планируется ли применять технологию блокчейна в банковском секторе Республики Узбекистан?
+                                                      </p>
+                                                    </div>
+                                                  
+                                                    <div id="collapse15" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion2" style="">
+                                                      <div class="d-flex justify-content-between">
+                                                        <div class="tags tag-text">
+                                                          <span class="icon-refresh-cw mr-2"></span>
+                                                          <span class="d-none d-sm-inline"> Последнее обновление:</span> 14:15, 30 мая 2019 г.
+                                                        </div>
+                                                        <div class="tags tag-text">
+                                                          <span class="icon-eye mr-2"></span>
+                                                          <span> 434</span>
+                                                        </div>
+                                                      </div>
+                                                      <div class="collapse-text">
+                                                        <p class="p">
+                                                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                          terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                          skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                          Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                                          helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                                          proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                                          beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                          haven't heard of them accusamus labore sustainable VHS.
+                                                        </p>
+                                                        <p class="p">
+                                                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                          terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                          skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                          Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                                          helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                                          proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                                          beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                          haven't heard of them accusamus labore sustainable VHS.
+                                                        </p>
+                                                      </div>
+                                                  
+                                                      <hr>
+                                                      <div class="collapse-control flex-column flex-lg-row">
+                                                        <p class="p col-auto col-lg mr-lg-3 pl-0 text-left">
+                                                          <small> 97% считают ответ полезным</small>
+                                                          Для Вас ответ оказался полезным?
+                                                        </p>
+                                                  
+                                                        <div class="d-flex jusify-content-between btn-thumbs-container">
+                                                          <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
+                                                            <span class="icon-thumbs-up"></span>
+                                                            <span class="btn-text">Да</span>
+                                                          </button>
+                                                          <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
+                                                            <span class="icon-thumbs-down"></span>
+                                                            <span class="btn-text">Нет</span>
+                                                          </button>
+                                                        </div>
+                                                        <hr class="d-lg-none">
+                                                        <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
+                                                          <span class="icon-share-2"></span>
+                                                          <span class="btn-text">Поделиться</span>
+                                                        </button>
+                                                        <button class="btn btn-outline-primary d-none  d-lg-flex">
+                                                          <span class="icon-printer"></span>
+                                                          <span class="btn-text">На печать</span>
+                                                        </button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                        </div>
+                                    <hr>
+                                    <div class="col-12">
+                                        <h5>Карточка в попапе</h5>
+                                            <a href="javascript:void(0)"  data-toggle="modal" data-target="#exampleModal">
+                                                    Запустить модальное окно
+                                                  </a>
+                                                  <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-xl" role="document">
+
+                                                                <div class="modal-content">
+                                                                       
+                                                                        <div id="accordion2" class="card-question with-collapse withoute-img mb-4">
+                                                                                <div class="card-body collapsed d-flex justify-content-between align-items-center p-relative" data-toggle="collapse3" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                                                                 <p class="p">Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким родственникам (родители, кровные и сводные братья и сестры, супруги, дети, дедушки, бабушки и др.)</p>
+                                                                                 <i class="icon-Close" data-dismiss="modal"></i>
+                                                                                </div>
+                                                                              
+                                                                                <div id="collapse3" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion2">
+                                                                                  <div class="d-flex justify-content-between">
+                                                                                    <div class="tags tag-text">
+                                                                                      <span class="icon-refresh-cw mr-2"></span>
+                                                                                      <span class="d-none d-sm-inline"> Последнее обновление:</span> 14:15, 30 мая 2019 г.
+                                                                                    </div>
+                                                                                    <div class="tags tag-text">
+                                                                                      <span class="icon-eye mr-2"></span>
+                                                                                      <span> 434</span>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                  <div class="collapse-text">
+                                                                                    <p class="p">
+                                                                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                                                      terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                                                      skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                                                      Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                                                      single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                                                                      helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                                                                      proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                                                                      beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                                                      haven't heard of them accusamus labore sustainable VHS.
+                                                                                    </p>
+                                                                                    <ul class="list">
+                                                                                            <li class="list-item">Lorem ipsum dolor sit amet</li>
+                                                                                            <li class="list-item">Lorem ipsum dolor sit amet
+                                                                                            </li>
+                                                                                            <li class="list-item">Lorem ipsum dolor sit amet
+                                                                                            </li>
+                                                            
+                                                                                        </ul>
+                                                                                  </div>
+                                                                              
+                                                                                  <hr>
+                                                                                  <div class="collapse-control flex-column flex-lg-row">
+                                                                                    <p class="p col-auto col-lg mr-lg-3 pl-0 text-left">
+                                                                                      <small> 97% считают ответ полезным</small>
+                                                                                      Для Вас ответ оказался полезным?
+                                                                                    </p>
+                                                                              
+                                                                                    <div class="d-flex jusify-content-between btn-thumbs-container">
+                                                                                      <button class="btn btn-outline-primary mx-4 mx-lg-0 mt-3 mt-lg-0">
+                                                                                        <span class="icon-thumbs-up"></span>
+                                                                                        <span class="btn-text">Да</span>
+                                                                                      </button>
+                                                                                      <button class="btn btn-outline-primary mx-4 mr-lg-0 ml-lg-2 mt-3 mt-lg-0">
+                                                                                        <span class="icon-thumbs-down"></span>
+                                                                                        <span class="btn-text">Нет</span>
+                                                                                      </button>
+                                                                                    </div>
+                                                                                    <hr class="d-lg-none">
+                                                                                    <button class="btn btn-outline-primary  mx-auto mx-lg-2 mb-3 mb-lg-0">
+                                                                                      <span class="icon-share-2"></span>
+                                                                                      <span class="btn-text">Поделиться</span>
+                                                                                    </button>
+                                                                                    <button class="btn btn-outline-primary d-none  d-lg-flex">
+                                                                                      <span class="icon-printer"></span>
+                                                                                      <span class="btn-text">На печать</span>
+                                                                                    </button>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                    </div>
+                                                                      </div>
+                                                          
+                                                        </div>
+                                        </div>  
+                                   
+
+
+                         
+                                    <hr>
+                                  <article class="my-4">
+                                    <h5>Карточка видио</h5>
+                                  <div class="col-3 my-3">
+                                    <div class="card-video small">
+                                      <img src="./img/video1.jpg" alt="video" class="card-video-img" />
+                                      <div class="tags video-timer tags-position">
+                                        15:30
+                                      </div>
+                                      <div class="card-video-play">
+                                        <span class="icon-google-play_logo"></span>
+                                      </div>
+                                      <div class="card-video-title">
+                                        Как работает экономика
+                                      </div>
+                                      <div class="tags video-new tags-position">
+                                        Новое
+                                      </div>
+                                    </div>
+                                </div>
+                                </article>
+                                  
+                                    <hr>
+                                  <article class="my-4">
+                                    <h5>book.book-post:</h5>
+                                    <div class="col-4">
+                                    <div class="book book-post">
+                                        <div class="book-img">
+                                          <img class="img-fluid" loading="lazy" src="./img/Book-Сorporate-finance.jpg" alt="book-img">
+                                          <div class="tags tag-position">
+                                            <span class="icon-thumbs-up"></span>
+                                            <span>473</span>
+                                          </div>
+                                        </div>
+                        
+                                        <p class="p">
+                                          Корпоративные финансы для чайников
+                                          <small>Майкл Тэйллард</small>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </article>
+                                  </section>
+                          
         </div>
-      </article>
-    </section>
-  </div>
+       
+  
+
+                     
+                    
 </main>
+
+
 
 <footer class="footer container-fluid px-0 pt-5">
   <section class="company">
@@ -1670,7 +1629,11 @@
         </div>
         <div class="col col-lg-auto">
           <a href="" class="link-market">
-            <img loading="lazy" src="./img/apple-market.svg" alt="applemarket" />
+            <img
+              loading="lazy"
+              src="./img/apple-market.svg"
+              alt="applemarket"
+            />
           </a>
         </div>
         <div class="col col-lg-auto">
@@ -1691,7 +1654,13 @@
       </div>
     </div>
     <div class="col mx-auto d-lg-none text-center">
-      <svg width="300" height="47" viewBox="0 0 345 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        width="300"
+        height="47"
+        viewBox="0 0 345 47"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
@@ -1719,9 +1688,13 @@
   </section>
   <section class="itcompany">
     <div class="container">
-      <div class="row align-items-sm-center justify-content-between flex-column flex-lg-row">
+      <div
+        class="row align-items-sm-center justify-content-between flex-column flex-lg-row"
+      >
         <div class="col-12 col-lg-4">
-          <div class="d-flex d-lg-block flex-column  py-3 text-center text-lg-left">
+          <div
+            class="d-flex d-lg-block flex-column  py-3 text-center text-lg-left"
+          >
             <div class="aboute-site-company">
               © 2019 Образовательный веб-сайт по финансовой грамотности.
             </div>
@@ -1734,12 +1707,19 @@
         <div class="col-12 col-lg-4 tech-info">
           <div class="d-flex justify-content-center">
             <img loading="lazy" src="./img/footer1.png" alt="footer" />
-            <img loading="lazy" src="./img/footer2.png" alt="footer" class="mx-3" />
+            <img
+              loading="lazy"
+              src="./img/footer2.png"
+              alt="footer"
+              class="mx-3"
+            />
             <img loading="lazy" src="./img/footer3.png" alt="footer" />
           </div>
         </div>
         <div class="col-12 col-lg-4">
-          <div class="d-flex flex-column align-items-center flex-lg-row py-3 justify-content-lg-end">
+          <div
+            class="d-flex flex-column align-items-center flex-lg-row py-3 justify-content-lg-end"
+          >
             <div class="mr-lg-2">
               <a href="#" class="aboute-site-company text-center text-lg-right d-block">
                 Дизайн и разработка сайта Pixelcraft®
@@ -1749,13 +1729,21 @@
               </a>
             </div>
             <a href="#">
-              <img loading="lazy" src="./img/logo-studio.svg" alt="Pixelcraft®" class="logo-razrab my-2" />
-            </a>
+            <img
+              loading="lazy"
+              src="./img/logo-studio.svg"
+              alt="Pixelcraft®"
+              class="logo-razrab my-2"
+            />
+          </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 </footer>
+
+
+
 
 <script type="text/javascript" src="./js/bundle.js" async></script>
