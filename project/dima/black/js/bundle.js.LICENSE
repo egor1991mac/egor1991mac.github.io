@@ -23,6 +23,14 @@
  * Date: 2019-04-08
  */
 
+/**
+  stickybits - Stickybits is a lightweight alternative to `position: sticky` polyfills
+  @version v3.7.0
+  @link https://github.com/dollarshaveclub/stickybits#readme
+  @author Jeff Wainwright <yowainwright@gmail.com> (https://jeffry.in)
+  @license MIT
+**/
+
 /**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.
  * @version 1.16.0
@@ -54,9 +62,11 @@
  * Licensed under MIT (https://github.com/Johann-S/bs-custom-file-input/blob/master/LICENSE)
  */
 
-/*! WOW wow.js - v1.2.1 - 2016-09-05
-* https://wowjs.uk
-* Copyright (c) 2016 Thomas Grainger; Licensed MIT */
+/*
+ * Loading attribute polyfill - https://github.com/mfranzke/loading-attribute-polyfill
+ * @license Copyright(c) 2019 by Maximilian Franzke
+ * Credits for the initial kickstarter / script to @Sora2455, and supported by @cbirdsong, @eklingen, @DaPo, @nextgenthemes, @diogoterremoto, @dracos and @Flimm - many thanks for that !
+ */
 
 /*!
   * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -160,10 +170,4 @@
  * @license   Licensed under MIT license
  *            See https://github.com/Keyamoon/svgxuse
  * @version   1.2.6
- */
-
-/*
- * Loading attribute polyfill - https://github.com/mfranzke/loading-attribute-polyfill
- * @license Copyright(c) 2019 by Maximilian Franzke
- * Credits for the initial kickstarter / script to @Sora2455, and supported by @cbirdsong, @eklingen, @DaPo, @nextgenthemes, @diogoterremoto, @dracos and @Flimm - many thanks for that !
  */

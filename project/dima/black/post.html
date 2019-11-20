@@ -3,16 +3,89 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="./assets/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/bootstrap.min.css"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet';"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/animate.min.css"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet';"
+    />
+
+    <noscript>
+      <link rel="stylesheet" href="./assets/bootstrap.min.css" />
+      <link rel="stylesheet" href="./assets/animate.min.css" />
+    </noscript>
     <title>Заголовок | Проект</title>
-    <link href="./css/style.bundle.css" rel="stylesheet" />
+    <script type="text/javascript" async>
+      !(function(t) {
+        "use strict";
+        t.loadCSS || (t.loadCSS = function() {});
+        var e = (loadCSS.relpreload = {});
+        if (
+          ((e.support = (function() {
+            var e;
+            try {
+              e = t.document.createElement("link").relList.supports("preload");
+            } catch (t) {
+              e = !1;
+            }
+            return function() {
+              return e;
+            };
+          })()),
+          (e.bindMediaToggle = function(t) {
+            function e() {
+              t.media = a;
+            }
+            var a = t.media || "all";
+            t.addEventListener ? t.addEventListener("load", e) : t.attachEvent && t.attachEvent("onload", e),
+              setTimeout(function() {
+                (t.rel = "stylesheet"), (t.media = "only x");
+              }),
+              setTimeout(e, 3e3);
+          }),
+          (e.poly = function() {
+            if (!e.support())
+              for (var a = t.document.getElementsByTagName("link"), n = 0; n < a.length; n++) {
+                var o = a[n];
+                "preload" !== o.rel ||
+                  "style" !== o.getAttribute("as") ||
+                  o.getAttribute("data-loadcss") ||
+                  (o.setAttribute("data-loadcss", !0), e.bindMediaToggle(o));
+              }
+          }),
+          !e.support())
+        ) {
+          e.poly();
+          var a = t.setInterval(e.poly, 500);
+          t.addEventListener
+            ? t.addEventListener("load", function() {
+                e.poly(), t.clearInterval(a);
+              })
+            : t.attachEvent &&
+              t.attachEvent("onload", function() {
+                e.poly(), t.clearInterval(a);
+              });
+        }
+        "undefined" != typeof exports ? (exports.loadCSS = loadCSS) : (t.loadCSS = loadCSS);
+      })("undefined" != typeof global ? global : this);
+    </script>
+    <link href="./css/style.bundle.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';" />
+    <noscript><link href="./css/style.bundle.css" rel="stylesheet"/></noscript>
   </head>
 
   <body>
     <header class="header">
-      <div class="container py-4" id="bad-see" style="border-bottom: 2px solid black">
+      <div class="container py-4" id="bad-see" style="border-bottom: 2px solid black; display: none;">
         <div class="row justify-content-center">
           <div class="col-auto d-flex flex-wrap align-items-center  ">
             <h5 class="h5 mr-1">Размер шрифта</h5>
@@ -20,29 +93,17 @@
               A
             </button>
           </div>
-         <a="#" class="col-auto d-flex flex-wrap align-items-center ">
+          <div class="col-auto d-flex flex-wrap align-items-center ">
             <h5 class="h5 mr-1">Фон</h5>
-            <a
-              href="https://egor1991mac.github.io/project/dima/white/index.html"
-              class="btn btn-primary mr-1"
-              id="color-white-site"
-            >
+            <a href="https://egor1991mac.github.io/project/dima/white/index.html" class="btn btn-primary mr-1">
               Белый
             </a>
-            <a
-              href="https://egor1991mac.github.io/project/dima/black/index.html"
-              class="btn btn-primary"
-              id="color-black-site"
-            >
+            <a href="https://egor1991mac.github.io/project/dima/black/index.html" class="btn btn-primary">
               Черный
             </a>
           </div>
           <div class="col-auto d-flex flex-wrap align-items-center ">
-            <a
-              href="https://egor1991mac.github.io/project/dima/index.html"
-              class="btn btn-primary"
-              id="color-black-site"
-            >
+            <a href="https://egor1991mac.github.io/project/dima/index.html" class="btn btn-primary">
               Полная версия сайта
             </a>
           </div>
@@ -122,7 +183,7 @@
               <div class="col-12 col-sm-7 col-md mt-3 mt-sm-0">
                 <div class="search-and-nav">
                   <div class="form-group h-54 with-icon with-border ">
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Поиск по сайту" />
+                    <input type="text" class="form-control" id="search-form-1" placeholder="Поиск по сайту" />
 
                     <span class="icon-search"></span>
                   </div>
@@ -148,8 +209,8 @@
             <div class="col-auto  order-0 order-sm-1">
               <form class="search-and-nav">
                 <div class="form-group with-icon custom-search with-border">
-                  <button class="icon-search"  onclick="event.preventDefault()"></button>
-                  <input type="text" class="form-control"  placeholder="Поиск по сайту" />
+                  <button class="icon-search" onclick="event.preventDefault()"></button>
+                  <input type="text" class="form-control" placeholder="Поиск по сайту" />
                 </div>
               </form>
             </div>
@@ -176,8 +237,8 @@
             <div class="col-auto  order-0 order-sm-1">
               <form class="search-and-nav">
                 <div class="form-group with-icon custom-search">
-                  <button class="icon-search" ></button>
-                  <input type="text" class="form-control"  placeholder="Поиск по сайту" />
+                  <button class="icon-search"></button>
+                  <input type="text" class="form-control" placeholder="Поиск по сайту" />
                 </div>
               </form>
             </div>
@@ -212,7 +273,7 @@
           </div>
           <div class="row mt-4 pt-2">
             <div class="col-12 d-none d-md-flex col-lg-9 order-2 order-lg-1">
-              <div class="row card-category align-self-baseline">
+              <div class="row card-category align-self-baseline w-100">
                 <div class="col-12">
                   <span class="h3">
                     Статьи
@@ -507,8 +568,8 @@
             </a>
           </div>
         </div>
-        <div class="side-bar-left col-lg-4 col-xl-3 d-none d-lg-block">
-          <div class="left-nav">
+        <div id="some-stickybit-parent" class="side-bar-left col-lg-4 col-xl-3 d-none d-lg-block">
+          <div id="some-stickybit-nav" class="left-nav sticky-top">
             <ul class="card-category d-none d-lg-block">
               <li>
                 <a href="#" class="card-body img-left small without-shadow active">
@@ -1140,6 +1201,6 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="./js/bundle.js"></script>
+    <script type="text/javascript" src="./js/bundle.js" async></script>
   </body>
 </html>
