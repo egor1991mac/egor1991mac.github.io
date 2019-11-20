@@ -11,9 +11,8 @@
       body {
         margin: 0;
         padding: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-          "Helvetical Neue", sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+          "Fira Sans", "Droid Sans", "Helvetical Neue", sans-serif;
         font-size: 1.125rem;
         text-align: center;
       }
@@ -30,37 +29,76 @@
         margin: 0.5em;
       }
     </style>
-  <script type="text/javascript" async>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){function e(){t.media=a}var a=t.media||"all";t.addEventListener?t.addEventListener("load",e):t.attachEvent&&t.attachEvent("onload",e),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(e,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script><link href="./css/style.bundle.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';"><noscript><link href="./css/style.bundle.css" rel="stylesheet"></noscript></head>
+    <script type="text/javascript" async>
+      !(function(t) {
+        "use strict";
+        t.loadCSS || (t.loadCSS = function() {});
+        var e = (loadCSS.relpreload = {});
+        if (
+          ((e.support = (function() {
+            var e;
+            try {
+              e = t.document.createElement("link").relList.supports("preload");
+            } catch (t) {
+              e = !1;
+            }
+            return function() {
+              return e;
+            };
+          })()),
+          (e.bindMediaToggle = function(t) {
+            function e() {
+              t.media = a;
+            }
+            var a = t.media || "all";
+            t.addEventListener ? t.addEventListener("load", e) : t.attachEvent && t.attachEvent("onload", e),
+              setTimeout(function() {
+                (t.rel = "stylesheet"), (t.media = "only x");
+              }),
+              setTimeout(e, 3e3);
+          }),
+          (e.poly = function() {
+            if (!e.support())
+              for (var a = t.document.getElementsByTagName("link"), n = 0; n < a.length; n++) {
+                var o = a[n];
+                "preload" !== o.rel ||
+                  "style" !== o.getAttribute("as") ||
+                  o.getAttribute("data-loadcss") ||
+                  (o.setAttribute("data-loadcss", !0), e.bindMediaToggle(o));
+              }
+          }),
+          !e.support())
+        ) {
+          e.poly();
+          var a = t.setInterval(e.poly, 500);
+          t.addEventListener
+            ? t.addEventListener("load", function() {
+                e.poly(), t.clearInterval(a);
+              })
+            : t.attachEvent &&
+              t.attachEvent("onload", function() {
+                e.poly(), t.clearInterval(a);
+              });
+        }
+        "undefined" != typeof exports ? (exports.loadCSS = loadCSS) : (t.loadCSS = loadCSS);
+      })("undefined" != typeof global ? global : this);
+    </script>
+    <link href="./css/style.bundle.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';" />
+    <noscript><link href="./css/style.bundle.css" rel="stylesheet"/></noscript>
+  </head>
 
   <body>
     <!-- SVG Sprite -->
     <svg width="0" height="0" class="hidden">
-      <symbol
-        viewBox="0 0 50 50"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        id="Facebook"
-      >
+      <symbol viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" id="Facebook">
         <circle cx="25" cy="25" r="25" fill="#436EAB"></circle>
         <path
           d="M27.45 43.055v-16.47h5.526l.83-6.421H27.45v-4.099c0-1.858.514-3.125 3.182-3.125l3.397-.001V7.196c-.587-.077-2.604-.252-4.951-.252-4.901 0-8.257 2.992-8.257 8.485v4.735h-5.543v6.42h5.543v16.471h6.63z"
           fill="#fff"
         ></path>
       </symbol>
-      <symbol
-        viewBox="0 0 50 50"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        id="Instagram"
-      >
-        <mask
-          id="a"
-          maskUnits="userSpaceOnUse"
-          x="0"
-          y="0"
-          width="50"
-          height="50"
-        >
+      <symbol viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" id="Instagram">
+        <mask id="a" maskUnits="userSpaceOnUse" x="0" y="0" width="50" height="50">
           <circle cx="25" cy="25" r="25" fill="#436EAB"></circle>
         </mask>
         <g mask="url(#a)">
@@ -105,23 +143,13 @@
           </radialGradient>
         </defs>
       </symbol>
-      <symbol
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        id="logo-facebook"
-      >
+      <symbol viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo-facebook">
         <path
           d="M13.875 8.563v-2.75c0-.76.616-1.375 1.375-1.375h1.375V1h-2.75A4.125 4.125 0 0 0 9.75 5.125v3.438H7V12h2.75v11h4.125V12h2.75L18 8.562h-4.125z"
           fill="#fff"
         ></path>
       </symbol>
-      <symbol
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        id="logo-odnoklassniki"
-      >
+      <symbol viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo-odnoklassniki">
         <path
           d="M12.376 12.905a5.953 5.953 0 1 0-5.953-5.952 5.96 5.96 0 0 0 5.953 5.952zm0-9.158a3.205 3.205 0 1 1 0 6.411 3.205 3.205 0 0 1 0-6.41z"
           fill="#fff"
@@ -131,12 +159,7 @@
           fill="#fff"
         ></path>
       </symbol>
-      <symbol
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        id="logo-telegram"
-      >
+      <symbol viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo-telegram">
         <path
           d="M6.838 13.213l-5.404-2.365c-.609-.266-.568-1.144.064-1.351l20.55-6.775a.725.725 0 0 1 .932.854l-4.107 17.46a.724.724 0 0 1-1.164.395l-4.825-3.948-6.046-4.27z"
           fill="#EBF0FA"
@@ -150,34 +173,19 @@
           fill="#AFB4C8"
         ></path>
       </symbol>
-      <symbol
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        id="logo-twitter"
-      >
+      <symbol viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo-twitter">
         <path
           d="M22.65 5.147a8.71 8.71 0 0 1-1.517.511 4.73 4.73 0 0 0 1.249-1.988.248.248 0 0 0-.363-.289 8.753 8.753 0 0 1-2.32.959.614.614 0 0 1-.55-.137 4.743 4.743 0 0 0-3.138-1.185c-.501 0-1.007.078-1.503.232a4.595 4.595 0 0 0-3.097 3.31 5.06 5.06 0 0 0-.112 1.747.176.176 0 0 1-.19.192A12.437 12.437 0 0 1 2.56 3.932a.248.248 0 0 0-.406.032 4.74 4.74 0 0 0-.642 2.384c0 1.286.516 2.498 1.413 3.381a4.25 4.25 0 0 1-1.081-.419.248.248 0 0 0-.369.214 4.749 4.749 0 0 0 2.77 4.375l-.1.002c-.266 0-.535-.026-.8-.077a.248.248 0 0 0-.283.32 4.754 4.754 0 0 0 3.755 3.233 8.753 8.753 0 0 1-4.902 1.489h-.548a.363.363 0 0 0-.355.273.376.376 0 0 0 .18.415 13.018 13.018 0 0 0 6.54 1.764c2.011 0 3.892-.399 5.59-1.186a12.345 12.345 0 0 0 4.091-3.065 13.437 13.437 0 0 0 2.505-4.194c.556-1.488.85-3.076.85-4.591V8.21c0-.244.11-.473.303-.629a9.374 9.374 0 0 0 1.886-2.07c.138-.206-.08-.465-.307-.364z"
           fill="#fff"
         ></path>
       </symbol>
-      <symbol
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        id="logo-vk"
-      >
+      <symbol viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo-vk">
         <path
           d="M19.934 14.125c.73.713 1.5 1.383 2.155 2.167.289.349.563.709.772 1.113.297.575.028 1.208-.488 1.242l-3.205-.001c-.826.068-1.486-.264-2.04-.83-.444-.452-.855-.933-1.282-1.4a3.04 3.04 0 0 0-.576-.513c-.438-.284-.818-.197-1.068.26-.254.464-.312.978-.337 1.495-.034.755-.263.953-1.02.988-1.62.076-3.158-.169-4.587-.986-1.26-.72-2.236-1.738-3.086-2.89-1.655-2.242-2.922-4.706-4.06-7.239-.257-.57-.07-.877.56-.887a86.99 86.99 0 0 1 3.138-.002c.425.006.706.25.87.652.566 1.39 1.258 2.714 2.127 3.94.231.327.467.654.803.883.372.255.655.17.83-.244.11-.262.16-.545.184-.826.083-.967.094-1.933-.051-2.897-.09-.602-.429-.991-1.029-1.105-.306-.058-.26-.172-.112-.347.257-.301.5-.489.983-.489h3.622c.57.113.697.369.775.942l.003 4.024c-.006.222.11.881.51 1.028.321.105.532-.151.724-.354.868-.92 1.486-2.009 2.04-3.135.245-.495.456-1.01.66-1.524.152-.38.39-.569.82-.56l3.485.003c.104 0 .208.001.308.019.588.1.749.352.567.926-.285.9-.842 1.65-1.386 2.403-.58.805-1.203 1.582-1.78 2.39-.529.74-.487 1.112.171 1.754z"
           fill="#fff"
         ></path>
       </symbol>
-      <symbol
-        viewBox="0 0 36 36"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        id="OK"
-      >
+      <symbol viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" id="OK">
         <circle cx="18" cy="18" r="18" fill="#FF9800"></circle>
         <path
           d="M17.376 18.905a5.953 5.953 0 1 0-5.953-5.952 5.96 5.96 0 0 0 5.953 5.953zm0-9.158a3.205 3.205 0 1 1 0 6.411 3.205 3.205 0 0 1 0-6.41z"
@@ -188,21 +196,10 @@
           fill="#fff"
         ></path>
       </symbol>
-      <symbol
-        viewBox="0 0 50 50"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        id="Telegram"
-      >
+      <symbol viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" id="Telegram">
         <circle cx="25" cy="25" r="25" fill="url(#paint0_linear)"></circle>
-        <path
-          d="M20.416 36.458c-.81 0-.672-.306-.951-1.077l-2.382-7.838 18.333-10.877"
-          fill="#C8DAEA"
-        ></path>
-        <path
-          d="M20.417 36.459c.625 0 .901-.286 1.25-.626L25 32.593l-4.158-2.508"
-          fill="#A9C9DD"
-        ></path>
+        <path d="M20.416 36.458c-.81 0-.672-.306-.951-1.077l-2.382-7.838 18.333-10.877" fill="#C8DAEA"></path>
+        <path d="M20.417 36.459c.625 0 .901-.286 1.25-.626L25 32.593l-4.158-2.508" fill="#A9C9DD"></path>
         <path
           d="M20.842 30.085l10.075 7.444c1.15.634 1.98.306 2.265-1.067l4.101-19.326c.42-1.683-.641-2.447-1.741-1.948l-24.081 9.286c-1.644.66-1.634 1.576-.3 1.985l6.18 1.929 14.307-9.026c.675-.41 1.295-.19.786.262"
           fill="url(#paint1_linear)"
@@ -219,25 +216,13 @@
             <stop stop-color="#37AEE2"></stop>
             <stop offset="1" stop-color="#1E96C8"></stop>
           </linearGradient>
-          <linearGradient
-            id="paint1_linear"
-            x1="28.126"
-            y1="25"
-            x2="32.038"
-            y2="33.903"
-            gradientUnits="userSpaceOnUse"
-          >
+          <linearGradient id="paint1_linear" x1="28.126" y1="25" x2="32.038" y2="33.903" gradientUnits="userSpaceOnUse">
             <stop stop-color="#EFF7FC"></stop>
             <stop offset="1" stop-color="#fff"></stop>
           </linearGradient>
         </defs>
       </symbol>
-      <symbol
-        viewBox="0 0 50 50"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        id="VK"
-      >
+      <symbol viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" id="VK">
         <circle cx="25" cy="25" r="25" fill="#436EAB"></circle>
         <path
           d="M37.022 28.66c1.105 1.08 2.272 2.096 3.264 3.285.438.528.853 1.072 1.17 1.685.45.872.042 1.83-.739 1.882l-4.856-.002c-1.252.104-2.252-.4-3.092-1.256-.672-.685-1.295-1.414-1.941-2.122-.265-.29-.543-.562-.874-.777-.663-.43-1.238-.299-1.617.393-.386.703-.473 1.482-.511 2.265-.052 1.144-.398 1.445-1.547 1.497-2.454.116-4.784-.256-6.948-1.494-1.908-1.092-3.388-2.633-4.676-4.377-2.507-3.398-4.427-7.131-6.153-10.969-.389-.864-.105-1.329.85-1.345 1.584-.03 3.168-.029 4.754-.002.644.01 1.07.378 1.319.987.857 2.107 1.905 4.112 3.222 5.97.35.496.708.99 1.217 1.339.563.385.992.258 1.257-.37.168-.398.241-.826.28-1.252.125-1.466.141-2.929-.079-4.39-.135-.911-.648-1.501-1.558-1.674-.464-.087-.395-.26-.17-.525.39-.457.757-.742 1.489-.742h5.488c.864.171 1.056.56 1.174 1.428l.005 6.097c-.01.336.168 1.335.774 1.558.485.158.805-.23 1.096-.537 1.314-1.395 2.252-3.043 3.09-4.75.372-.75.691-1.53 1.001-2.308.23-.578.59-.863 1.241-.85l5.282.005c.157 0 .315.002.467.028.89.152 1.134.535.859 1.404-.433 1.363-1.276 2.5-2.1 3.641-.881 1.22-1.823 2.396-2.697 3.622-.802 1.12-.738 1.684.259 2.657z"
@@ -248,9 +233,7 @@
     <h1>
       SVG Sprite Demo
       <br />
-      <small>
-        created with <a href="https://svgsprit.es/">svgsprit.es</a>
-      </small>
+      <small> created with <a href="https://svgsprit.es/">svgsprit.es</a> </small>
     </h1>
     <svg class="icon">
       <use xlink:href="#Facebook"></use>
@@ -282,5 +265,6 @@
     <svg class="icon">
       <use xlink:href="#VK"></use>
     </svg>
-  <script type="text/javascript" src="./js/bundle.js" async></script></body>
+    <script type="text/javascript" src="./js/bundle.js" async></script>
+  </body>
 </html>
