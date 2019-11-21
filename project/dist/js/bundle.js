@@ -18995,16 +18995,14 @@ $(function () {
         //bsCustomFileInput.init();
         $(this).parent().find(".reset").addClass("active");
         $(this).parent().addClass("active");
-
-        var _this = $(this);
-
+        var $this = $(this);
         $(this).parent().find(".reset").click(function (e) {
-          e.target.closest('.custom-file').querySelector('.reset').classList.remove('active'); //$(this).removeClass("active");
+          console.log($this, _this, e); //('.custom-file').querySelector('.reset').classList.remove('active');
+          //$(this).removeClass("active");
 
           $(this).parent().removeClass("active");
           $(this).parent().find("input").val("");
-
-          _this.text("");
+          $this.text("");
         });
       });
     })();
