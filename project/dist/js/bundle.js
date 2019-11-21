@@ -18999,7 +18999,7 @@ $(function () {
         var _this = $(this);
 
         $(this).parent().find(".reset").click(function (e) {
-          e.closest('.custom-file').querySelector('.reset').classList.remove('active');
+          e.target.closest('.custom-file').querySelector('.reset').classList.remove('active');
           $(this).removeClass("active");
           $(this).parent().removeClass("active");
           $(this).parent().find("input").val("");
