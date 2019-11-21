@@ -18998,10 +18998,10 @@ $(function () {
         $(this).parent().addClass("active");
         var $this = $(this);
         $(this).parent().find(".reset").click(function (e) {
-          console.log($this, _this, e.currentTarget);
-          console.log(e.currentTarget.closest('.custom-file')); //('.custom-file').querySelector('.reset').classList.remove('active');
+          //console.log($this,_this,e.currentTarget);
+          // console.log(e.currentTarget.closest('.custom-file'))
+          //('.custom-file').querySelector('.reset').classList.remove('active');
           //$(this).removeClass("active");
-
           $(this).parent().removeClass("active");
           $(this).parent().find("input").val("");
           $this.text("");
