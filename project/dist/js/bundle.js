@@ -18999,8 +18999,8 @@ $(function () {
         var _this = $(this);
 
         $(this).parent().find(".reset").click(function (e) {
-          e.target.closest('.custom-file').querySelector('.reset').classList.remove('active');
-          $(this).removeClass("active");
+          e.target.closest('.custom-file').querySelector('.reset').classList.remove('active'); //$(this).removeClass("active");
+
           $(this).parent().removeClass("active");
           $(this).parent().find("input").val("");
 
