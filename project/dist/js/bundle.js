@@ -18989,20 +18989,30 @@ $(function () {
       document.addEventListener('click', function (e) {
         if ($(e.target).hasClass('custom-file-input')) {
           bs_custom_file_input__WEBPACK_IMPORTED_MODULE_3___default.a.init();
-          console.log($(e.target).parent('.custom-file'));
-          $(e.target).parent('.custom-file').find('.reset').toggleClass('active');
-        }
+        } // if($(e.target).hasClass('icon-Close')){
+        //   console.log($(e.target).closest('.custom-file'),'tut');
+        //   $(e.target).parent('.reset').removeClass('active');
+        //   $(e.target).closest('.custom-file').toggleClass('active');
+        //   $(e.target).closest('.custom-file').find('input').val("");
+        //   $(e.target).closest('.custom-file').find('label').text("");
+        // }
+
       });
       $("body").on("DOMSubtreeModified", ".custom-file-label", function (_this) {
         //bsCustomFileInput.init();
-        $(this).parent().find(".reset").addClass("active");
-        $(this).parent().addClass("active");
+        console.log($(this).text().length);
+
+        if ($(this).text().length > 3) {
+          $(this).parent().find(".reset").addClass("active");
+          $(this).parent().addClass("active");
+        }
+
         var $this = $(this);
         $(this).parent().find(".reset").click(function (e) {
           //console.log($this,_this,e.currentTarget);
           // console.log(e.currentTarget.closest('.custom-file'))
           //('.custom-file').querySelector('.reset').classList.remove('active');
-          //$(this).removeClass("active");
+          $(this).removeClass("active");
           $(this).parent().removeClass("active");
           $(this).parent().find("input").val("");
           $this.text("");
