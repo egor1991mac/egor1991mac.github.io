@@ -18989,7 +18989,7 @@ $(function () {
       document.addEventListener('click', function (e) {
         if ($(e.target).hasClass('custom-file-input')) {
           bs_custom_file_input__WEBPACK_IMPORTED_MODULE_3___default.a.init();
-          $(e.target).parent().find('.reset').toggleClass('active');
+          $(e.target).parent('.custom-file').find('.reset').toggleClass('active');
         }
       });
       $("body").on("DOMSubtreeModified", ".custom-file-label", function (_this) {
