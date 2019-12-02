@@ -1,0 +1,16 @@
+<nav aria-label="breadcrumb" class="d-none d-lg-block">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="#"><span class="icon-home"></span></a>
+    </li>
+    <% Pages.forEach(function(item,index) { if(Pages.length != index+1){%>
+    <li class="breadcrumb-item">
+      <a href="#"> <%= item %> </a>
+    </li>
+    <% } else { %>
+    <li class="breadcrumb-item active" aria-current="page">
+      <a href="javascript:void(0)"><%= item %></a>
+    </li>
+    <% }}); %>
+  </ol>
+</nav>

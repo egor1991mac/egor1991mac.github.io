@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+  _.template(require('./../includes/header.html').default)(data) %>
+  <body>
+    <header class="header with-background">
+        <%= _.template(require('./../includes/badsee.html').default)(data) %>
+      <div class="d-none d-lg-block">
+          <%= _.template(require('./../includes/header_bar.html').default)(data)
+          %>
+        </div>
+        <%=
+        _.template(require('./../includes/header_bar_scroll.html').default)({scroll:"true"})
+        %> <%=
+      _.template(require('./../includes/top-nav-collapse.html').default)(data)
+      %>
+      <div class="mt-5 pb-4 container d-none d-lg-block">
+          <%= _.template(require('./../includes/breadcrumb.html').default)
+          ({Pages:["Интерактивные услуги","Депозитный и кредитный калькулятор"]}) %>
+        <h1 class="h1 my-2 mb-3">
+          Что такое инфляция и как она влияет на нашу жизнь?
+        </h1>
+    </div>
+        <ul
+          class="nav nav-tabs nav-tabs-button mt-5 d-none d-lg-flex"
+          id="myTab1"
+          role="tablist"
+        >
+          <li class="nav-item mx-3">
+            <a
+            id="dep-calculator-tab"
+              class="nav-link "
+              data-toggle="tab"
+              href="#dep-calculator"
+              role="tab"
+              aria-controls="dep-calculator"
+              aria-selected="false"
+            >
+            <svg class="tab-img">
+              <use xlink:href="./img/sprite.svg#clipboard"></use>
+            </svg>
+              <span class="h5 mb-0">Депозитный калькулятор</span>
+            </a>
+          </li>
+          <li class="nav-item mx-3">
+            <a
+              id="cred-calculator-tab"
+              class="nav-link active "
+              data-toggle="tab"
+              href="#cred-calculator"
+              role="tab"
+              aria-controls="cred-calculator"
+              aria-selected="true"
+            >
+            <svg class="tab-img">
+              <use xlink:href="./img/sprite.svg#calculator"></use>
+            </svg>
+              <span class="h5 mb-0">Кредитный калькулятор</span>
+            </a>
+          </li>
+        </ul>
+      
+    </header>
+
+
+
+
+
+      <main> 
+        <div class="container mt-5 d-block d-lg-none">
+          <div class="row">
+              <div class="col-12 d-lg-none px-0">
+                  <h2 class="h3 mt-5 mb-3 text-center w-100 font-weight-normal">
+                    Интерактивные услуги
+                  </h2>
+        
+                  <div class="card-category owl-nav owl-carousel">
+                      <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+                          <svg class="card-img">
+                              <use xlink:href="./img/sprite.svg#calculator-1"></use>
+                            </svg>
+                            <span class="h6">Депозитный и кредитный калькулятор </span>
+                          <span class="icon-chevron-right"></span>
+                        </a>
+                        
+                        <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+                          <svg class="card-img">
+                            <use xlink:href="./img/sprite.svg#book"></use>
+                          </svg>
+                          <span class="h6">  Единая сравнительная таблица всех банковских услуг</span>
+                          <span class="icon-chevron-right"></span>
+                        </a>
+                        
+                        
+                        <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+                          <svg class="card-img">
+                            <use xlink:href="./img/sprite.svg#clipboard"></use>
+                          </svg>
+                          <span class="h6">Часто задаваемые вопросы</span>
+                          <span class="icon-chevron-right"></span>
+                        </a>
+                        
+                        <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+                          <svg class="card-img">
+                            <use xlink:href="./img/sprite.svg#Logo-MB-Circle"></use>
+                          </svg>
+                          <span class="h6">Анкетирование</span>
+                          <span class="icon-chevron-right"></span>
+                        </a>
+                        
+                        <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+                          <svg class="card-img">
+                            <use xlink:href="./img/sprite.svg#exchange"></use>
+                          </svg>
+                          <span class="h6">Опросы</span>
+                          <span class="icon-chevron-right"></span>
+                        </a>
+                  </div>
+                </div>
+            <div class="col-12 col-sm-6 bg-white bg-white mt-3 mx-auto select2-tabs-container">
+                <select name="" id="select2-tabs"  class="" >
+                  <option value="cred-calculator">
+                      Кредитный калькулятор
+                  </option>
+                  <option value="dep-calculator">
+
+                      Депозитный калькулятор
+                  </option>
+                </select>
+            </div>
+          </div>
+          </div>
+          <div class="tab-content wow fadeInUp">  
+          <div class="container pb-5 tab-pane" id="dep-calculator" role="tabpanel" aria-labelledby="dep-calculator">
+            
+            
+          <form class="box-shadow" >
+            <div class="box-container form-group" >
+                    <div class="box-item">
+                        <label class="label" for="sum-vklad">Сумма вклада 
+                            <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
+                            <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Some tooltip text!
+                                    </div>
+                                  </div>
+                        </label>
+                        <input type="text"  class="form-control" data-type="number"   placeholder="Сумма вклада">
+                        
+                      </div>
+                    <div class="box-item--small">
+                            <select name="" id="" class="select2-hook w-100" >
+                                    <option value="1">Сум</option>
+                                    <option value="2">$</option>
+                                    <option value="3">€</option>
+                                   
+                                </select>
+                    </div>
+                    <div class="box-item">
+                            <label class="label" for="">Возможность капитализации
+                                    <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
+                                    <div class="tooltip bs-tooltip-top" role="tooltip">
+                                            <div class="arrow"></div>
+                                            <div class="tooltip-inner">
+                                              Some tooltip text!
+                                            </div>
+                                          </div>
+                            </label >
+                              <select name="" id="" class="select2-hook w-100" >
+                                    <option value="1">Нету</option>
+                                    <option value="2">Ежемесячно</option>
+                                    <option value="3">Ежеквартально</option>
+                                    <option value="4">Ежегодно</option>
+                                </select>
+                    </div>
+                    <div class="box-item--small d-none d-md-block"></div>
+                    
+            </div>
+            <div class="box-container form-group" >
+                    <div class="box-item">
+                        <label class="label" for="" >Процентная ставка 
+                                <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
+                                <div class="tooltip bs-tooltip-top" role="tooltip">
+                                        <div class="arrow"></div>
+                                        <div class="tooltip-inner">
+                                          Some tooltip text!
+                                        </div>
+                                      </div>
+                        </label>
+                            <input type="text"  class="form-control" data-type="percent"  placeholder="Процентная ставка">
+                        </div>
+                        <div class="box-item--small">
+                                <select name="" id="" class="select2-hook w-100" >
+                                        <option value="1">Годовых</option>
+                                        <option value="2">Месячных</option>
+                                    </select>
+                        </div>
+                        <div class="box-item">
+                                <label class="label" for="">Срок размещения вклада
+                                        <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
+                                        <div class="tooltip bs-tooltip-top" role="tooltip">
+                                                <div class="arrow"></div>
+                                                <div class="tooltip-inner">
+                                                  Some tooltip text!
+                                                </div>
+                                              </div>
+                                </label>  
+                                <input type="text"  class="form-control" data-type="number"  placeholder="Срок размещения вклада">
+                        </div>
+                        <div class="box-item--small">
+                            <select name="" id="" class="select2-hook w-100" >
+                                <option value="1">День</option>
+                                <option value="2">Месяц</option>
+                                <option value="3">Год</option>
+                            </select>
+                        </div>
+            </div>
+            <div class="row"> 
+                <button class="btn btn-primary mx-auto btn-lg">
+                РАСЧИТАТЬ
+            </button>
+        </div>
+        </form>
+    
+
+        
+        <div class="row">
+            <div class="col-12 ">
+                <div class="pre mv-pre">
+                        <p>  С помощью депозитного калькулятора вы сможете рассчитать ваш доход от размещения в банке вклада (депозита) на различные сроки и условия выплаты процентов. Рекомендуем задавать в калькуляторе условия, приближенные к рыночным на текущий момент.
+                            </p>
+                            <p>    
+                        Обращаясь в банк, проверьте, есть ли у него лицензия Центрального банка РУз, позволяющая привлекать вклады физических лиц, а также входит ли он в систему страхования вкладов. Помните, что застрахованная государством сумма вклада (а точнее – всех вкладов и счетов в одном банке) с учетом начисленных процентов не превышает 100 млн сум.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="container pb-5 tab-pane active" id="cred-calculator" role="tabpanel" aria-labelledby="cred-calculator">
+                  
+                    <form class="box-shadow">
+                        <div class="box-container form-group">
+                        <div class="box-item">
+                                <label class="label" for="sum-vklad">Сумма кредита
+                                        <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
+                                        <div class="tooltip bs-tooltip-top" role="tooltip">
+                                                <div class="arrow"></div>
+                                                <div class="tooltip-inner">
+                                                  Some tooltip text!
+                                                </div>
+                                              </div>
+                                </label>
+                                    <input type="text" pattern="\d*" class="form-control" data-type="number" id="sum-vklad"  placeholder="Сумма кредита">
+                        </div>
+                        <div class="box-item--small">
+                            <select name="" id="" class="select2-hook w-100" >
+                                <option value="1">Сум</option>
+                                <option value="2">$</option>
+                                <option value="3">€</option>
+                               
+                            </select>
+                        </div>
+                        <div class="box-item">
+                                <label class="label" for="sum-vklad">Первоначальный взнос
+                                        <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
+                                        <div class="tooltip bs-tooltip-top" role="tooltip">
+                                                <div class="arrow"></div>
+                                                <div class="tooltip-inner">
+                                                  Some tooltip text!
+                                                </div>
+                                              </div>
+                                </label >
+                                <input type="text" pattern="\d*" class="form-control" data-type="percent" id="sum-vklad"  placeholder="Первоначальный взнос">
+                        </div>
+                        <div class="box-item--small px-0">
+                                <div class="form-control without-border d-flex align-items-center" style="white-space: nowrap">
+                                        = 7 200 000
+                                        <span class="ml-1 small">
+                                            сум
+                                        </span>
+                                </div>
+                        
+                        </div>
+                    </div>
+                    <div class="box-container form-group">
+                        <div class="box-item">
+                                <label class="label" for="sum-vklad">Процентная ставка
+                                        <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
+                                        <div class="tooltip bs-tooltip-top" role="tooltip">
+                                                <div class="arrow"></div>
+                                                <div class="tooltip-inner">
+                                                  Some tooltip text!
+                                                </div>
+                                              </div>
+                                </label>
+                                    <input type="text" pattern="\d*" class="form-control" data-type="percent" id="sum-vklad"  placeholder="Процентная ставка">
+                        </div>
+                        <div class="box-item--small">
+                            <select name="" id="" class="select2-hook w-100" >
+                                <option value="1">Годовых</option>
+                                <option value="2">Месячных</option>
+                            </select>
+                        </div>
+                        <div class="box-item">
+                                <label class="label" for="sum-vklad">Порядок погашения
+                                        <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
+                                        <div class="tooltip bs-tooltip-top" role="tooltip">
+                                                <div class="arrow"></div>
+                                                <div class="tooltip-inner">
+                                                  Some tooltip text!
+                                                </div>
+                                              </div>
+                                            </label>
+                                    <select name="" id="" class="select2-hook w-100" >
+                                            <option value="1">Аннуитетный</option>
+                                            <option value="2">value1</option>
+                                            <option value="3">value2</option>
+                                            <option value="4">value3</option>
+                                        </select>
+                        </div>
+                        <div class="box-item--small"></div>
+                    </div>
+                    <div class="box-container form-group">
+                            <div class="box-item">
+                                    <label class="label " for="sum-vklad">Период кредитования
+                                            <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
+                                            <div class="tooltip bs-tooltip-top" role="tooltip">
+                                                    <div class="arrow"></div>
+                                                    <div class="tooltip-inner">
+                                                      Some tooltip text!
+                                                    </div>
+                                                  </div>
+                                    </label>
+                                        <input type="text" pattern="\d*" class="form-control" data-type="number" id="sum-vklad"  placeholder="Сумма вклада">
+                            </div>
+                            <div class="box-item--small">
+                                <select name="" id="" class="select2-hook w-100" >
+                                    <option value="1">День</option>
+                                    <option value="2">Месяц</option>
+                                    <option value="3">Год</option>
+                                </select>
+                            </div>
+                            <div class="box-item">
+                                    <label class="label white-space-normal" for="sum-vklad">Периодичность погашения
+                                            <sup class="icon-info" data-toggle="tooltip" title="Some tooltip text!"></sup>
+                                            <div class="tooltip bs-tooltip-top" role="tooltip">
+                                                    <div class="arrow"></div>
+                                                    <div class="tooltip-inner">
+                                                      Some tooltip text!
+                                                    </div>
+                                                  </div>
+                                    </label>
+                                    <select name="" id="" class="select2-hook w-100" >
+                                        <option value="1">Нету</option>
+                                        <option value="2">Ежемесячно</option>
+                                        <option value="3">Ежеквартально</option>
+                                        <option value="4">Ежегодно</option>
+                                    </select>
+                            </div>
+                            <div class="box-item--small"></div>
+                        </div>
+                        <div class="w-100 d-flex">
+                                <button class="btn btn-primary mx-auto btn-lg">
+                                        РАСЧИТАТЬ
+                                    </button>
+                                  </div>
+                    </form>
+                <div class="row">
+                    <div class="col-12 ">
+                        <div class="pre mv-pre">
+                            <p>
+                                Кредитный калькулятор позволяет легко и быстро рассчитать график платежей по планируемому кредиту или займу, чтобы оценить свои возможности выполнить обязательства и погасить долг. Зная несколько параметров кредита/займа, вы можете подобрать удобные для вас условия и сравнить их с предложениями кредиторов (банков, микрофинансовых организаций, потребительских кооперативов, ломбардов).
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        <hr>
+        <div class="container">
+                <%=
+                _.template(require('./../includes/social-block.html').default)(data)
+                %>
+        </div>
+        <hr>
+      </main>
+
+
+    <%= _.template(require('./../includes/footer.html').default)(data) %>
+    <%=
+    _.template(require('./../includes/navigation_page.html').default)(data) %>
+  </body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ru">
+  
+  <% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+  _.template(require('./../includes/header.html').default)(data) %>
+  <body>
+    <header class="header with-background">
+        <%= _.template(require('./../includes/badsee.html').default)(data) %>
+      <div class="d-none d-lg-block">
+        <%= _.template(require('./../includes/header_bar.html').default)(data)
+        %>
+      </div>
+      <%=
+      _.template(require('./../includes/header_bar_scroll.html').default)({scroll:"true"})
+      %> <%=
+      _.template(require('./../includes/top-nav-collapse.html').default)(data)
+      %>
+      <div class="container mt-5 pb-4 d-none d-lg-block">
+        <%= _.template(require('./../includes/breadcrumb.html').default)
+        ({Pages:["Учебные материалы","Книги"]}) %>
+        <h1 class="h1 my-2 mb-3">
+          Что такое инфляция и как она влияет на нашу жизнь?
+        </h1>
+      </div>
+    </header>
+    <main class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12 d-lg-none px-0">
+            <h2 class="h3 mt-5  text-center w-100 font-weight-normal">
+                Учебные материалы
+              </h2>
+              <div class="card-category owl-nav owl-carousel" data-startposition='1'>
+              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+                  <svg class="card-img">
+                      <use xlink:href="./img/sprite.svg#book"></use>
+                    </svg>
+                    <span class="h6">Глоссарий</span>
+                  <span class="icon-chevron-right"></span>
+                </a>
+                
+                <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+                  <svg class="card-img">
+                    <use xlink:href="./img/sprite.svg#exchange"></use>
+                  </svg>
+                  <span class="h6">Книги</span>
+                  <span class="icon-chevron-right"></span>
+                </a>
+                
+                
+                <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+                  <svg class="card-img">
+                    <use xlink:href="./img/sprite.svg#clipboard"></use>
+                  </svg>
+                  <span class="h6">Часто задаваемые вопросы</span>
+                  <span class="icon-chevron-right"></span>
+                </a>
+                
+                <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+                  <svg class="card-img">
+                    <use xlink:href="./img/sprite.svg#Logo-MB-Circle"></use>
+                  </svg>
+                  <span class="h6">Анкетирование</span>
+                  <span class="icon-chevron-right"></span>
+                </a>
+                
+                <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+                  <svg class="card-img">
+                    <use xlink:href="./img/sprite.svg#exchange"></use>
+                  </svg>
+                  <span class="h6">Опросы</span>
+                  <span class="icon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+        <div class="col-12">
+          <div class="row  mx-auto"  style="max-width: 65rem">
+        
+              <div class="book book-post wow fadeInUp">
+                <div class="book-img">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    src="./img/Book-Capital.jpg"
+                    alt="book-img"
+                  />
+                  <div class="tags tag-position">
+                    <span class="icon-thumbs-up"></span>
+                    <span>473</span>
+                  </div>
+                </div>
+
+                <p class="p">
+                  Капитал. Полная <br />
+                  квинтэссенция 3-х томов
+                  <small>Карл Маркс</small>
+                </p>
+              </div>
+          
+              <div class="book book-post wow fadeInUp">
+                <div class="book-img">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    src="./img/Book-Сorporate-finance.jpg"
+                    alt="book-img"
+                  />
+                  <div class="tags tag-position">
+                    <span class="icon-thumbs-up"></span>
+                    <span>473</span>
+                  </div>
+                </div>
+
+                <p class="p">
+                  Корпоративные финансы для чайников
+                  <small>Майкл Тэйллард</small>
+                </p>
+              </div>
+           
+              <div class="book book-post wow fadeInUp">
+                <div class="book-img">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    src="./img/Book-Finance-for-financiers.jpg"
+                    alt="book-img"
+                  />
+                  <div class="tags tag-position">
+                    <span class="icon-thumbs-up"></span>
+                    <span>473</span>
+                  </div>
+                </div>
+
+                <p class="p">
+                  Капитал. Полная <br />
+                  квинтэссенция 3-х томов
+                  <small>Карл Маркс</small>
+                </p>
+              </div>
+              <div class="book book-post wow fadeInUp">
+                  <div class="book-img">
+                    <img
+                      class="img-fluid"
+                      loading="lazy"
+                      src="./img/Book-Capital.jpg"
+                      alt="book-img"
+                    />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+  
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+           
+              <div class="book book-post wow fadeInUp">
+                <div class="book-img">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    src="./img/Book-Magic-ATM.jpg"
+                    alt="book-img"
+                  />
+                  <div class="tags tag-position">
+                    <span class="icon-thumbs-up"></span>
+                    <span>473</span>
+                  </div>
+                </div>
+
+                <p class="p">
+                  Капитал. Полная <br />
+                  квинтэссенция 3-х томов
+                  <small>Карл Маркс</small>
+                </p>
+              </div>
+          
+          
+              <div class="book book-post wow fadeInUp">
+                <div class="book-img">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    src="./img/Book-Personal finance.jpg"
+                    alt="book-img"
+                  />
+                  <div class="tags tag-position">
+                    <span class="icon-thumbs-up"></span>
+                    <span>473</span>
+                  </div>
+                </div>
+
+                <p class="p">
+                  Твои финансы. Планируй, копи и трать с умом
+                  <small>Елена Тимохина</small>
+                </p>
+              </div>
+           
+              <div class="book book-post wow fadeInUp">
+                <div class="book-img">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    src="./img/Book-Your-finances.jpg"
+                    alt="book-img"
+                  />
+                  <div class="tags tag-position">
+                    <span class="icon-thumbs-up"></span>
+                    <span>473</span>
+                  </div>
+                </div>
+
+                <p class="p">
+                  Твои финансы. Планируй, копи и трать с умом
+                  <small>Елена Тимохина</small>
+                </p>
+              </div>
+           
+              <div class="book book-post wow fadeInUp">
+                <div class="book-img">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    src="./img/Book-Capital.jpg"
+                    alt="book-img"
+                  />
+                  <div class="tags tag-position">
+                    <span class="icon-thumbs-up"></span>
+                    <span>473</span>
+                  </div>
+                </div>
+
+                <p class="p">
+                  Капитал. Полная <br />
+                  квинтэссенция 3-х томов
+                  <small>Карл Маркс</small>
+                </p>
+              </div>
+           
+              <div class="book book-post wow fadeInUp">
+                <div class="book-img">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    src="./img/Book-Capital.jpg"
+                    alt="book-img"
+                  />
+                  <div class="tags tag-position">
+                    <span class="icon-thumbs-up"></span>
+                    <span>473</span>
+                  </div>
+                </div>
+
+                <p class="p">
+                  Капитал. Полная <br />
+                  квинтэссенция 3-х томов
+                  <small>Карл Маркс</small>
+                </p>
+              
+            </div>
+          </div>
+       
+
+      <div
+        class="row justify-content-center collapse multi-collapse mx-auto "
+        id="best-post-collapse" style="max-width: 65rem"
+      >
+       
+              <div class="book book-post wow fadeInUp">
+                  <div class="book-img">
+                    <img
+                      class="img-fluid"
+                      loading="lazy"
+                      src="./img/Book-Capital.jpg"
+                      alt="book-img"
+                    />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+  
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+            
+                <div class="book book-post wow fadeInUp">
+                  <div class="book-img">
+                    <img
+                      class="img-fluid"
+                      loading="lazy"
+                      src="./img/Book-Сorporate-finance.jpg"
+                      alt="book-img"
+                    />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+  
+                  <p class="p">
+                    Корпоративные финансы для чайников
+                    <small>Майкл Тэйллард</small>
+                  </p>
+                </div>
+             
+                <div class="book book-post wow fadeInUp">
+                  <div class="book-img">
+                    <img
+                      class="img-fluid"
+                      loading="lazy"
+                      src="./img/Book-Finance-for-financiers.jpg"
+                      alt="book-img"
+                    />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+  
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+             
+                <div class="book book-post wow fadeInUp">
+                  <div class="book-img">
+                    <img
+                      class="img-fluid"
+                      loading="lazy"
+                      src="./img/Book-Magic-ATM.jpg"
+                      alt="book-img"
+                    />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+  
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+            
+            
+                <div class="book book-post wow fadeInUp">
+                  <div class="book-img">
+                    <img
+                      class="img-fluid"
+                      loading="lazy"
+                      src="./img/Book-Personal finance.jpg"
+                      alt="book-img"
+                    />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+  
+                  <p class="p">
+                    Твои финансы. Планируй, копи и трать с умом
+                    <small>Елена Тимохина</small>
+                  </p>
+                </div>
+             
+                <div class="book book-post wow fadeInUp">
+                  <div class="book-img">
+                    <img
+                      class="img-fluid"
+                      loading="lazy"
+                      src="./img/Book-Your-finances.jpg"
+                      alt="book-img"
+                    />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+  
+                  <p class="p">
+                    Твои финансы. Планируй, копи и трать с умом
+                    <small>Елена Тимохина</small>
+                  </p>
+                </div>
+             
+                <div class="book book-post wow fadeInUp">
+                  <div class="book-img">
+                    <img
+                      class="img-fluid"
+                      loading="lazy"
+                      src="./img/Book-Capital.jpg"
+                      alt="book-img"
+                    />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+  
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                </div>
+             
+                <div class="book book-post wow fadeInUp">
+                  <div class="book-img">
+                    <img
+                      class="img-fluid"
+                      loading="lazy"
+                      src="./img/Book-Capital.jpg"
+                      alt="book-img"
+                    />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+  
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                
+              </div>
+              <div class="book book-post wow fadeInUp">
+                  <div class="book-img">
+                    <img
+                      class="img-fluid"
+                      loading="lazy"
+                      src="./img/Book-Capital.jpg"
+                      alt="book-img"
+                    />
+                    <div class="tags tag-position">
+                      <span class="icon-thumbs-up"></span>
+                      <span>473</span>
+                    </div>
+                  </div>
+  
+                  <p class="p">
+                    Капитал. Полная <br />
+                    квинтэссенция 3-х томов
+                    <small>Карл Маркс</small>
+                  </p>
+                
+              </div>
+       
+      </div>
+      </div>
+      
+      <div class="footer-section text-center wow fadeInUp">
+        <button
+          class="btn btn-outline-primary mx-auto"
+          data-toggle="collapse"
+          href="#best-post-collapse"
+          role="button"
+          aria-expanded="false"
+          aria-controls="best-post-collapse"
+        >
+          <span class="icon-refresh-cw"></span>
+          <span class="btn-text">Показать еще</span>
+        </button>
+      </div>
+      </div>
+    </main>
+
+    <%= _.template(require('./../includes/footer.html').default)(data) %> <%=
+    _.template(require('./../includes/navigation_page.html').default)(data) %>
+  </body>
+</html>

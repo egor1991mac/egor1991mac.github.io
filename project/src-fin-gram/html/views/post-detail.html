@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+  _.template(require('./../includes/header.html').default)(data) %>
+  <body>
+    <header class="header">
+        <%= _.template(require('./../includes/badsee.html').default)(data) %>
+      <div class="d-none d-lg-block">
+        <%= _.template(require('./../includes/header_bar.html').default)(data)
+        %>
+      </div>
+      <%=
+      _.template(require('./../includes/header_bar_scroll.html').default)({scroll:"true"})
+      %> <%=
+      _.template(require('./../includes/top-nav-collapse.html').default)(data)
+      %>
+    </header>
+
+    <main id="post-detail" class="container mt-5">
+      <div class="row">
+        <div class="col-12 d-lg-none px-0">
+            <h2 class="h3 mt-5  text-center w-100 font-weight-normal">
+                Статьи
+              </h2>
+
+          <div class="card-category owl-nav owl-carousel" data-startPosition="5">
+            <%=
+            _.template(require('./../includes/owl-left-nav.html').default)()
+            %>
+          </div>
+        </div>
+
+        <div id="some-stickybit-parent" class="side-bar-left  col-3 d-lg-block d-none">
+          <div id="some-stickybit-nav" class="card-category sticky-top top-90 m-width--320">
+            <div class="card-body vertical with-control">
+              <div class="control">
+                <span class="icon-circle-arrow-left"></span>
+                <span class="flex-grow-1">Назад к списку</span>
+              </div>
+              <svg class="card-img">
+                <use xlink:href="./img/sprite.svg#movie"></use>
+              </svg>
+              <span class="h6 px-4"
+                >Денежно-кредитная политика и ее элементы</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9 col-12">
+          <div class="row">
+            <div class="content col-12 col-lg">
+              <%= _.template(require('./../includes/breadcrumb.html').default)
+              ({Pages:["Статьи","Денежно-кредитная политика и ее элементы"]}) %>
+              <h1 class="h1 my-2 mb-3">
+                Что такое инфляция и как она влияет на нашу жизнь?
+              </h1>
+              <div class="row justify-content-between align-items-center mb-4">
+                <div class="col">
+                  <div class="tags tag-text px-0 justify-content-start">
+                    <span class="icon-refresh-cw mr-2"></span>
+                    <span class="d-none d-md-inline">
+                      Последнее обновление:</span
+                    >
+                    14:15, 30 мая 2019 г.
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="tags without-container ">
+                    <span class="icon-eye"></span>
+                    <span>473</span>
+                  </div>
+                </div>
+              </div>
+              <div class="header-img mb-4">
+                <img
+                  loading="lazy"
+                  src="./img/depositphotos_8607757-stock-photo-debt-problems.jpg"
+                  alt="post-img"
+                />
+                <div class="tags tag-position">
+                  <span class="icon-thumbs-up"></span>
+                  <span>473</span>
+                </div>
+              </div>
+              <blockquote class="blockquote mb-4">
+                <div class="blockquote_content">
+                  Инфляция - это процесс, когда растут цены на товары и услуги в
+                  стране за определённое время. Так как, доходы населения не
+                  всегда увеличиваются одновременно с ценами, высокая инфляция
+                  плохо влияет на покупательскую способность людей
+                </div>
+                <div class="blockquote_title">
+                  - WIKIPEDIA
+                </div>
+              </blockquote>
+              <p class="p t-indent text-justify">
+                В основном цены на товары и услуги зависят от спроса и
+                предложения на рынке, а некоторые цены регулируются
+                государством. Например, если у фермеров хороший урожай овощей,
+                цены на помидоры и картошку будут падать или если в то же время
+                государство повысило акцизы на алкоголь, цены на спиртное резко
+                возрастут. При этом, общий уровень цен может вырасти на
+                незначительный уровень.
+              </p>
+              <h3 class="pt-4">
+                Как измеряется инфляция?
+              </h3>
+              <div class="header-img mb-4">
+                <img
+                  loading="lazy"
+                  src="./img/Rectangle 2.2.png"
+                  alt="post-img"
+                />
+              </div>
+              <div class="d-block">
+                <div class="float-md-right ml-md-3 mb-1">
+                  <h6 class="h6 pl-3">Материалы по теме:</h6>
+                  <div class="post">
+                    <div class="post-img">
+                      <img
+                        loading="lazy"
+                        src="./img/depositphotos_48531229-stock-photo-time-is-money.jpg"
+                        alt="post-img"
+                      />
+                      <div class="tags tag-position">
+                        <span class="icon-thumbs-up"></span>
+                        <span>473</span>
+                      </div>
+                    </div>
+
+                    <div class="tags post-tag post-tag-position">
+                      <span class="icon-tag"></span>
+                      <a href="" class="post-tag-text"
+                        >Денежно-кредитная политика и ее элементы</a
+                      >
+                    </div>
+                    <p class="p">
+                      Что такое инфляционное таргетирование?
+                    </p>
+                  </div>
+                </div>
+                <p class="t-indent text-justify">
+                  В большинстве стран мира инфляция измеряется на основе
+                  потребительской корзины, которая представляет собой - набор
+                  продуктов, товаров и услуг, которые регулярно приобретает
+                  среднестатистический человек или семья. В нее обычно включены
+                  около 500 товаров и услуг - например, продукты питания,
+                  одежда, коммунальные услуги и т.д.
+                </p>
+                <p class="t-indent text-justify">
+                  Стоимость потребительской корзины меняется от месяца к месяцу.
+                  Это изменение и есть инфляция. Некоторые товары вовсе и не
+                  включаются при расчёте инфляции, потому что цены на них быстро
+                  и легко меняются и могут привести к ошибочным расчётам. Чтобы
+                  избежать таких явлений, существует понятие «базовая инфляция».
+                </p>
+                <h3>
+                  Что такое «базовая инфляция»?
+                </h3>
+                <p class="t-indent text-justify">
+                  Базовая инфляция - это изменение стоимости товаров и услуг, не
+                  включающая в себя товары, относящиеся к продовольственному и
+                  энергетическому секторам. Эта мера инфляции исключает эти
+                  статьи, потому что их цены гораздо более волатильны
+                  (изменчивы). Чаще всего он рассчитывается индексом
+                  потребительских цен (ИПЦ).
+                </p>
+              </div>
+              <div class="side-bar-right d-lg-none">
+                <hr />
+                <div
+                  class="position-sticky top-90 d-flex align-items-lg-center flex-column"
+                >
+                  <div
+                    class="d-flex flex-xl-column align-items-center mb-3 mb-lg-0"
+                  >
+                    <button class="btn btn-outline-primary only-icon">
+                      <span class="icon-thumbs-up"></span>
+                    </button>
+                    <small
+                      class="text-small text-left text-lg-center m-2 mx-lg-0"
+                      >86% посетителей считают эту статью полезной</small
+                    >
+                  </div>
+                  <div class="d-flex">
+                    <button
+                      class="btn btn-outline-primary only-icon"
+                      data-toggle="collapse"
+                      data-target="#collapseShare"
+                      aria-expanded="false"
+                      aria-controls="collapseShare"
+                    >
+                      <span class="icon-share-2"></span>
+                    </button>
+                    <div id="collapseShare" class="collapse show">
+                      <div
+                        class="d-flex justify-content-center flex-wrap align-items-center h-100  ml-2 ml-lg-0"
+                      >
+                        <%=
+                        _.template(require('./../includes/social-small.html').default)(data)
+                        %>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <ul class="mb-0 without-all">
+                <li class="pb-2">
+                  <strong>O'zbekcha: </strong> <a href="#" class="li-link">Inflyatsiya nima va bu bizning
+                  hayotimizga qanday ta'sir qiladi?</a>
+                </li>
+                <li>
+                  <strong>In english:</strong> <a href="#" class="li-link">What is inflation and how does it
+                  affect our lives?</a>
+                </li>
+              </ul>
+              <hr />
+              <%=
+              _.template(require('./../includes/social-block.html').default)(data)
+              %>
+              <hr />
+            </div>
+             <div id="some-stickybit-parent" class="side-bar-right col d-none d-xl-block">
+                <div id="some-stickybit-nav"
+                  class=""
+                >
+                  <div class="m-width--100">
+                    <button class="btn btn-outline-primary only-icon">
+                      <span class="icon-thumbs-up"></span>
+                    </button>
+                    <div class="text-center py-2">
+                    <small class="text-small "
+                      >86% посетителей считают эту статью полезной</small
+                    >
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      class="btn btn-outline-primary only-icon"
+                      data-toggle="collapse"
+                      data-target="#collapseShare"
+                      aria-expanded="false"
+                      aria-controls="collapseShare"
+                    >
+                      <span class="icon-share-2"></span>
+                    </button>
+                    <div id="collapseShare" class="collapse">
+                      <div
+                        class="d-flex justify-content-center flex-wrap align-items-center h-100  ml-2 ml-lg-0"
+                      >
+                        <%=
+                        _.template(require('./../includes/social-small.html').default)(data)
+                        %>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col-12">
+              <h3>Вам также может быть интересно:</h3>
+              <div class="row">
+                <div class="col-sm-6 col-md-4  px-0  mb-3 wow fadeInUp d-flex">
+                  <div class="post mx-auto">
+                    <div class="post-img">
+                      <img
+                      loading="lazy"
+                        src="./img/depositphotos_43233203-stock-photo-hacker-stealing-credit-card-numbers.jpg"
+                        alt="post-img"
+                        class="img-fluid"
+                      />
+                      <div class="tags tag-position">
+                        <span class="icon-thumbs-up"></span>
+                        <span>473</span>
+                      </div>
+                    </div>
+
+                    <div class="tags post-tag post-tag-position">
+                      <span class="icon-tag"></span>
+                      <a href="" class="post-tag-text"> Деньги</a>
+                    </div>
+                    <p class="p">
+                      Как защитить деньги на карте от посягательств мошенников
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4  px-0  mb-3 wow fadeInUp d-flex">
+                  <div class="post mx-auto">
+                    <div class="post-img">
+                      <img
+                        loading="lazy"
+                        src="./img/depositphotos_8607757-stock-photo-debt-problems.jpg"
+                        alt="post-img"
+                      />
+                      <div class="tags tag-position">
+                        <span class="icon-thumbs-up"></span>
+                        <span>473</span>
+                      </div>
+                    </div>
+
+                    <div class="tags post-tag post-tag-position">
+                      <span class="icon-tag"></span>
+                      <a href="" class="post-tag-text"
+                        >Денежно-кредитная политика и ее элементы</a
+                      >
+                    </div>
+                    <p class="p">
+                      Что такое инфляция и как она влияет на нашу жизнь?
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4  px-0  mb-3 wow fadeInUp d-flex">
+                  <div class="post mx-auto">
+                    <div class="post-img">
+                      <img
+                      loading="lazy"
+                        src="./img/depositphotos_195589974-stock-photo-woman-visiting-jeweler-for-jewelery.jpg"
+                        alt="post-img"
+                      />
+                      <div class="tags tag-position">
+                        <span class="icon-thumbs-up"></span>
+                        <span>473</span>
+                      </div>
+                    </div>
+
+                    <div class="tags post-tag post-tag-position">
+                      <span class="icon-tag"></span>
+                      <a href="" class="post-tag-text">
+                        Участники финансовой системы Узбекистана</a
+                      >
+                    </div>
+                    <p class="p">
+                      Ломбард – что это такое и в каких случаях удобно обратится
+                      в ломбард?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%= _.template(require('./../includes/footer.html').default)(data) %> <%=
+    _.template(require('./../includes/navigation_page.html').default)(data) %>
+  </body>
+</html>

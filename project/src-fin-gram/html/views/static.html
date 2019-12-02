@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+  _.template(require('./../includes/header.html').default)(data) %>
+  <body>
+    <header class="header">
+            <%= _.template(require('./../includes/badsee.html').default)(data) %>
+      <div class="d-none d-lg-block">
+        <%= _.template(require('./../includes/header_bar.html').default)(data)
+        %>
+      </div>
+      <%=
+      _.template(require('./../includes/header_bar_scroll.html').default)({scroll:"true"})
+      %> <%=
+      _.template(require('./../includes/top-nav-collapse.html').default)(data)
+      %>
+    </header>
+
+    <main class="container mt-5" id="static">
+      <div class="row">
+        <div class="col-12 d-lg-none px-0">
+          <h2 class="h2 mt-5 mb-3 text-center w-100">
+            Заголовок
+          </h2>
+
+          <div class="card-category owl-nav owl-carousel">
+            <%=
+            _.template(require('./../includes/owl-left-nav.html').default)(data)
+            %>
+          </div>
+        </div>
+        <div class="side-bar-left col-lg-4 col-xl-3 d-none d-lg-block ">
+          <div class="left-nav" id="some-stickybit-nav2">
+            <ul class="card-category d-none d-lg-block">
+                <li>
+                    <a href="#" class="card-body img-left small without-shadow ">
+                      
+                    
+                      <span class="h6">О проекте</span>
+                      <span class="icon-chevron-right"></span>
+                    </a></li>
+                    <li>
+                    <a href="#" class="card-body img-left small without-shadow ">
+                      
+                      
+                    
+                      <span class="h6">Контакты</span>
+                      <span class="icon-chevron-right"></span>
+                    </a></li>
+                    <li>
+                    <a href="#" class="card-body img-left small without-shadow ">
+                      
+                     
+                      <span class="h6">Поиск по сайту</span>
+                      <span class="icon-chevron-right"></span>
+                    </a>
+                    </li>
+            </ul>
+
+            <div class="baner mt-4">
+              <div class="logo-body flex-nowrap">
+                <div class="logo mx-0"></div>
+                <div class="logo-text mx-0">
+                  <span class="small">
+                    Портал
+                  </span>
+                  <span class="h5">
+                    Финансовая грамотность
+                  </span>
+                </div>
+              </div>
+              <ul class="baner-list">
+                <li class="baner-list-item">Откуда появились деньги?</li>
+                <li class="baner-list-item">Что такое депозит и вклад?</li>
+                <li class="baner-list-item">Как составить семейный бюджет?</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="content col-12 col-lg">
+          <% const crumb = {Pages:['О проекте']} %> <%=
+          _.template(require('./../includes/breadcrumb.html').default)(crumb) %>
+
+          <section class="headers mt-3">
+            <h1> H1 Заголовок</h1>
+            <p>
+                Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и
+                близость
+                потребителей, возможность
+                перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                будущего
+                предприятия по выпуску минеральных удобрений.
+            </p>
+            <h2> H2 Заголовок</h2>
+            <p >
+                Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и
+                близость
+                потребителей, возможность
+                перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                будущего
+                предприятия по выпуску минеральных удобрений.
+            </p>
+            <h3> H3 заголовок</h3>
+            <p>
+                Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и
+                близость
+                потребителей, возможность
+                перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                будущего
+                предприятия по выпуску минеральных удобрений.
+            </p>
+            <h4> H4 Закголовок</h4>
+            <p>
+                Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и
+                близость
+                потребителей, возможность
+                перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                будущего
+                предприятия по выпуску минеральных удобрений.
+            </p>
+            <h5> H5 Заголовок</h5>
+            <p>
+                Выгоды географического положения города <a href="#">Алмалык</a> - пересечение сырьевых потоков и
+                близость
+                потребителей, возможность
+                перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                будущего
+                предприятия по выпуску минеральных удобрений.
+            </p>
+            <h6> H6 Заголовок</h6>
+            <p>
+                Выгоды географического положения города Алмалык - пересечение сырьевых потоков и близость
+                потребителей,
+                возможность
+                перевозки грузов как автомобильным, так и железнодорожным транспортом - обусловили выбор места для
+                будущего
+                предприятия по выпуску минеральных удобрений.
+            </p>
+            <hr>
+           
+                <h5> Code: &lt;pre&gt;
+                </h5>
+                <pre>if ( typeof module === "object" &amp;&amp; typeof module.exports === "object" ) {
+factory( global );
+}</pre>
+
+          <hr>
+          <h5> Code: &lt;blockquote&gt;</h5>
+          <blockquote class="blockquote">
+                <div class="blockquote_content">
+                    Выгоды географического положения города Алмалыка - пересечение сырьевых потоков и близость
+                    потребителей, возможность перевозки грузов как автомобильным, так и железнодорожным
+                    транспортом - обусловили выбор места для будущего предприятия по выпуску минеральных
+                    удобрений.
+                </div>
+                <div class="blockquote_title">
+                    - Абу Али ибн Сина
+                </div>
+            </blockquote>
+            <hr>
+            <h5> Code: &lt;blockquote&gt; with .blockquote-lg</h5>
+            <blockquote class="blockquote-lg">
+                    <div class="blockquote-lg_header"></div>
+                    <div class="blockquote-lg_content">
+                        Выгоды географического положения города Алмалыка - пересечение сырьевых потоков и близость
+                        потребителей, возможность перевозки грузов как автомобильным, так и железнодорожным
+                        транспортом - обусловили выбор места для будущего предприятия по выпуску минеральных
+                        удобрений.
+                    </div>
+                    <div class="blockquote-lg_title">
+                        - Абу Али ибн Сина
+                    </div>
+                </blockquote>
+                <hr>
+                <article class="my-4 row">
+
+                        <div class="col-12 col-md-4">
+                            <h5> Lists: UL</h5>
+                            <ul class="list">
+                                <li class="list-item">Lorem ipsum dolor sit amet</li>
+                                <li class="list-item">Lorem ipsum dolor sit amet
+                                </li>
+                                <li class="list-item">Lorem ipsum dolor sit amet
+                                </li>
+                                <li>
+                                    <ul class="list-nested">
+                                        <li class="list-nested-item">Lorem ipsum dolor sit amet
+                                        </li>
+                                        <li class="list-nested-item">Lorem ipsum dolor sit amet
+                                        </li>
+                                        <li class="list-nested-item">Lorem ipsum dolor sit amet
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <h5>Lists: UL with .styled</h5>
+                            <ul class="list-styled">
+                                <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
+                                <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
+                                <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
+                                <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
+                                <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
+                                <li class="list-styled-item">Lorem ipsum dolor sit amet</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <h5>
+                                Lists: OL
+                            </h5>
+                            <ol class="list-ol">
+                                <li class="list-ol_item">Lorem ipsum dolor sit amet</li>
+                                <li class="list-ol_item">Lorem ipsum dolor sit amet</li>
+                                <li class="list-ol_item">Lorem ipsum dolor sit amet
+                                </li>
+                                <li class="list-ol_item">Lorem ipsum dolor sit amet
+                                </li>
+                                <li class="list-ol_item">Lorem ipsum dolor sit amet
+                                </li>
+                                <li class="list-ol_item">Lorem ipsum dolor sit amet
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+                    <hr>
+                    <article style="overflow: auto">
+                            <h5>Таблица: .table</h5>
+                            <table class="table">
+                                <thead class="table-thead">
+                                    <tr class="table-thead_tr">
+                                        <th class="table-thead_th">Количество</th>
+                                        <th class="table-thead_th">Наименование</th>
+                                        <th class="table-thead_th">Состав</th>
+                                        <th class="table-thead_th">Примечание</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-tbody">
+                                    <tr class="table-tbody_tr">
+                                        <td class="table-tbody_td">Количество</td>
+                                        <td class="table-tbody_td">Наименование</td>
+                                        <td class="table-tbody_td">Состав</td>
+                                        <td class="table-tbody_td">Примечание</td>
+                                    </tr>
+                                    <tr class="table-tbody_tr">
+                                        <td class="table-tbody_td">Количество</td>
+                                        <td class="table-tbody_td">Наименование</td>
+                                        <td class="table-tbody_td">Состав</td>
+                                        <td class="table-tbody_td">Примечание</td>
+                                    </tr>
+                                    <tr class="table-tbody_tr">
+                                        <td class="table-tbody_td">Количество</td>
+                                        <td class="table-tbody_td">Наименование</td>
+                                        <td class="table-tbody_td">Состав</td>
+                                        <td class="table-tbody_td">Примечание</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                        <hr>
+                        <article style="overflow: auto">
+                                <h5>Таблица: .table.table-striped</h5>
+                                <table class="table table-striped">
+                                    <thead class="table-thead">
+                                        <tr class="table-thead_tr">
+                                            <th class="table-thead_th">Количество</th>
+                                            <th class="table-thead_th">Наименование</th>
+                                            <th class="table-thead_th">Состав</th>
+                                            <th class="table-thead_th">Примечание</th>
+                                        </tr>
+                                    </thead>
+            
+                                    <tbody class="table-tbody">
+                                        <tr class="table-tbody_tr">
+                                            <td class="table-tbody_td">Количество</td>
+                                            <td class="table-tbody_td">Наименование</td>
+                                            <td class="table-tbody_td">Состав</td>
+                                            <td class="table-tbody_td">Примечание</td>
+                                        </tr>
+                                        <tr class="table-tbody_tr">
+                                            <td class="table-tbody_td">Количество</td>
+                                            <td class="table-tbody_td">Наименование</td>
+                                            <td class="table-tbody_td">Состав</td>
+                                            <td class="table-tbody_td">Примечание</td>
+                                        </tr>
+                                        <tr class="table-tbody_tr">
+                                            <td class="table-tbody_td">Количество</td>
+                                            <td class="table-tbody_td">Наименование</td>
+                                            <td class="table-tbody_td">Состав</td>
+                                            <td class="table-tbody_td">Примечание</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </article>
+                            <hr>
+                            <article style="overflow: auto">
+                                    <h5>Таблица: .table.table-bordered</h5>
+                                    <table class="table table-bordered">
+                                        <thead class="table-thead">
+                                            <tr class="table-thead_tr">
+                                                <th class="table-thead_th">Количество</th>
+                                                <th class="table-thead_th">Наименование</th>
+                                                <th class="table-thead_th">Состав</th>
+                                                <th class="table-thead_th">Примечание</th>
+                                            </tr>
+                                        </thead>
+                
+                                        <tbody class="table-tbody">
+                                            <tr class="table-tbody_tr">
+                                                <td class="table-tbody_td">Количество</td>
+                                                <td class="table-tbody_td">Наименование</td>
+                                                <td class="table-tbody_td">Состав</td>
+                                                <td class="table-tbody_td">Примечание</td>
+                                            </tr>
+                                            <tr class="table-tbody_tr">
+                                                <td class="table-tbody_td">Количество</td>
+                                                <td class="table-tbody_td">Наименование</td>
+                                                <td class="table-tbody_td">Состав</td>
+                                                <td class="table-tbody_td">Примечание</td>
+                                            </tr>
+                                            <tr class="table-tbody_tr">
+                                                <td class="table-tbody_td">Количество</td>
+                                                <td class="table-tbody_td">Наименование</td>
+                                                <td class="table-tbody_td">Состав</td>
+                                                <td class="table-tbody_td">Примечание</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </article>
+                                <hr>
+                                <article class="row">
+                                   
+                                        <div class="col-12 col-md-6 ">
+                                                <h5>Buttons: .btn.btn-primary</h5>
+                                                <button class="btn btn-primary">
+    
+                                                        <span class="icon-send"></span>
+                                                    <span class="btn-text"> Задать вопрос</span>
+                                                 
+                                                </button>
+                                                <h5 class="mt-5">Buttons: .btn.btn-outline-primary</h5>
+                                                <button class="btn btn-outline-primary">
+    
+                                                        <span class="icon-send"></span>
+                                                    <span class="btn-text"> Задать вопрос</span>
+                                                 
+                                                </button>
+                                                <h5 class="mt-5">Buttons: .btn.btn-secondary</h5>
+                                                <button class="btn btn-secondary">
+                                                        <span class="icon-send"></span>
+                                                        <span class="btn-text"> Задать вопрос</span>
+                                                </button>
+                                                <h5 class="mt-5">Buttons: .btn.btn-outlinne-secondary</h5>
+                                                <button class="btn btn-outline-secondary">
+                                                        <span class="icon-send"></span>
+                                                        <span class="btn-text"> Задать вопрос</span>
+                                                </button>
+                                        </div>
+                                        <div class="col-12 col-md-6  py-3" style="background: black">
+                                                <h5 class="text-white">Buttons: .btn.btn-primary</h5>
+                                                <button class="btn btn-primary reverse">
+    
+                                                        <span class="icon-send"></span>
+                                                    <span class="btn-text"> Задать вопрос</span>
+                                                 
+                                                </button>
+                                                <h5 class="mt-5 text-white">Buttons: .btn.btn-outline-primary</h5>
+                                                <button class="btn btn-outline-primary reverse">
+    
+                                                        <span class="icon-send"></span>
+                                                    <span class="btn-text"> Задать вопрос</span>
+                                                 
+                                                </button>
+                                                <h5 class="mt-5 text-white">Buttons: .btn.btn-secondary</h5>
+                                                <button class="btn btn-secondary reverse">
+                                                        <span class="icon-send"></span>
+                                                        <span class="btn-text"> Задать вопрос</span>
+                                                </button>
+                                                <h5 class="mt-5 text-white">Buttons: .btn.btn-outlinne-secondary</h5>
+                                                <button class="btn btn-outline-secondary reverse">
+                                                        <span class="icon-send"></span>
+                                                        <span class="btn-text"> Задать вопрос</span>
+                                                </button>
+                                        </div>
+                                </article>
+                                <hr>
+                                <div class="row">
+                                        <div class="col-12 col-md-4">
+                                          <h5>.btn-lg</h5>
+                                        
+                                      
+                                              <button class="btn btn-primary btn-lg">
+                                                <span class="btn-text"> Задать вопрос</span>
+                                              </button>
+                                       
+                                       
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                          <h5>.btn-md</h5>
+                                          
+                                              <button href="#" class="btn btn-primary btn-md">
+                                                <span class="btn-text"> Задать вопрос</span>
+                                              </button>
+                                            
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                          <h5>.btn-sm</h5>
+                                          <button href="#" class="btn btn-primary btn-sm">
+                                                  <span class="btn-text"> Задать вопрос</span>
+                                                </button>
+                                        </div>
+                                      </div>
+                                      <hr>
+                                      <article class="my-4">
+                                            <h5>Tabs: .tabs-lined</h5>
+                                            <ul class="nav nav-tabs nav-tabs-lined" id="myTab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Все </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Новости</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Объявления и тендеры</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Нормативные акты</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content mt-4">
+                                                    <div class="tab-pane active" id="home1" role="tabpanel" aria-labelledby="home-tab">
+                                                            контент1</div>
+                                                        <div class="tab-pane" id="profile1" role="tabpanel" aria-labelledby="profile-tab">
+                                                                контент2</div>
+                                                        <div class="tab-pane" id="messages1" role="tabpanel" aria-labelledby="messages-tab">
+                                                                контент3</div>
+                                                        <div class="tab-pane" id="settings1" role="tabpanel" aria-labelledby="settings-tab">
+                                                                контент4</div>
+                                            </div>
+            
+                                        </article>
+                                        <hr>
+                                        <article class="my-5">
+                                                <h5>Tabs: .tabs</h5>
+                                                <ul class="nav nav-tabs" id="myTab1" role="tablist">
+                                                        <li class="nav-item">
+                                                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Все </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Новости</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Объявления и тендеры</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Нормативные акты</a>
+                                                            </li>
+                                                </ul>
+                                                <div class="tab-content mt-4">
+                                                    <div class="tab-pane active" id="home1" role="tabpanel" aria-labelledby="home-tab">
+                                                        контент1</div>
+                                                    <div class="tab-pane" id="profile1" role="tabpanel" aria-labelledby="profile-tab">
+                                                            контент2</div>
+                                                    <div class="tab-pane" id="messages1" role="tabpanel" aria-labelledby="messages-tab">
+                                                            контент3</div>
+                                                    <div class="tab-pane" id="settings1" role="tabpanel" aria-labelledby="settings-tab">
+                                                            контент4</div>
+                                                </div>
+                                            </article>
+                                            <hr>
+                                            <article class="row">
+                                                <div class="col-12 col-md-6 ">
+                                                    <h5>input: .form-control</h5>
+                                                        <div class="form-group">
+                                                                <input type="text" class="form-control" id="search-form-1" placeholder="Поиск по сайту">
+                                                        </div>
+                                                </div>
+                                                
+                                                <div class="col-12 col-md-6 ">
+                                                        <h5>select: select2</h5>
+                                                    <div class="form-group">
+                                                        <select class="js-example-basic-single">
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="WY">Wyoming</option>
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="WY">Wyoming</option>
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="WY">Wyoming</option>
+                                                                <option value="WY" disabled>text</option>
+                                                            </select>
+                                                        </div>
+                                                        
+                                                        </div>
+                                                            <div class="col-12  mt-4">
+                                                                <div class="w-50">
+                                                                <h5>textarea: .form-control</h5>
+                                                                <div class="form-group text-area">
+                                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="text"></textarea>
+                                                            </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                    <h5>File</h5>
+                                                                    <div class="form-group">
+                                                                    
+                                                                     </div>
+                                                                    <div class="custom-file my-3">
+                                                                            <div class="custom-file-open">
+                                                                                Выбирите фаил
+                                                                            </div>
+                                                                            <label class="custom-file-label" for="customFile2"> </label>
+                                                                            <input type="file" class="custom-file-input" id="customFile2">
+                                                                            <button class="reset">
+                                                                                <span class="icon-Close"></span>
+                                                                            </button>
+                                                                        </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6  mt-4">
+                                                                <div class="d-flex flex-wrap">
+                                                                        <h5 class="w-100">checkbox</h5>
+                                                                        <div class="w-25">
+                                                                                <span class="text-black">normal</span>
+                                                                                <div class="custom-checkbox">
+                                        
+                                                                                    <label class="custom-checkbox-container">
+                                                                                        <input type="checkbox" class="custom-checkbox-input">
+                                                                                        <span class="custom-checkbox-mark"></span>
+                                                                                    </label>
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="w-25">
+                                                                                <span class="text-black">disabled</span>
+                                                                                <div class="custom-checkbox">
+
+                                                                                        <label class="custom-checkbox-container">
+                                                                                            <input type="checkbox" class="custom-checkbox-input" disabled="">
+                                                                                            <span class="custom-checkbox-mark"></span>
+                                                                                        </label>
+                                                                                    </div>
+                                                                        </div>
+                                                                               
+                                                                               
+                                                                    </div>
+                                                                    <div class="d-flex flex-wrap mt-4">
+                                                                            <h5 class="w-100">Radio</h5>
+                                                                            <div class="w-25">
+                                                                                    <span class="text-black">normal</span>
+                                                                                    <div class="custom-radio">
+                                            
+                                                                                        <label class="custom-radio-container">
+                                                                                            <input type="radio" class="custom-radio-input">
+                                                                                            <span class="custom-radio-mark"></span>
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            <div class="w-25">
+                                                                                    <span class="text-black">disabled</span>
+                                                                                    <div class="custom-radio">
+                                            
+                                                                                            <label class="custom-radio-container">
+                                                                                                <input type="radio" class="custom-radio-input" disabled>
+                                                                                                <span class="custom-radio-mark"></span>
+                                                                                            </label>
+                                                                                        </div>
+                                                                            </div>
+                                                                                   
+                                                                                   
+                                                                        </div>
+                                                                </div>
+                                                                
+                                                    
+                                            </article>
+                                            <hr>
+                                            <article class="my-4">
+                                                    <h5>switcher</h5>
+                                                    <div class="row my-3">
+                                                        <div class="col-auto">
+                        
+                                                            <div class="custom-switcher-container">
+                                                            <div class="custom-switcher primary">
+                                                                <input type="checkbox" id="id-name--1" name="set-name" class="switch-input">
+                                                                <label for="id-name--1" class="switch-label"></label>
+                                                            </div>
+                                                            <span class="custom-switcher-text">Primary</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            
+                                                            <div class="custom-switcher-container">
+                                                            <div class="custom-switcher secondary">
+                                                                <input type="checkbox" id="id-name--2" name="set-name" class="switch-input">
+                                                                <label for="id-name--2" class="switch-label"></label>
+                                                            </div>
+                                                            <span class="custom-switcher-text">Secondary</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                               <div class="custom-switcher-container">
+                                                                <div class="custom-switcher">
+                                                                    <input type="checkbox" id="id-name--5" name="set-name" class="switch-input">
+                                                                    <label for="id-name--5" class="switch-label"></label>
+                                                                    
+                                                                </div>
+                                                                <span class="custom-switcher-text">Uncontroled</span>
+                                                            </div>
+                                                            </div>
+                                                        <div class="col-auto">
+                                                            
+                                                            <div class="custom-switcher-container">
+                                                            <div class="custom-switcher disabled">
+                                                                <input type="checkbox" id="id-name--3" name="set-name" class="switch-input" disabled="">
+                                                                <label for="id-name--3" class="switch-label"></label>
+                                                            </div>
+                                                            <span class="custom-switcher-text">Disabled</span>
+                                                        </div>
+                    
+                                                        </div>
+                                                        <div class="col-auto">
+                                                       
+                                                            <div class="custom-switcher-container">
+                                                            <div class="custom-switcher disabled">
+                                                                <input type="checkbox" id="id-name--4" name="set-name" class="switch-input" disabled="" checked="">
+                                                                <label for="id-name--4" class="switch-label"></label>
+                                                            </div>
+                                                            <span class="custom-switcher-text">Disabled checked</span>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+        </section>
+        <hr>
+        <%=
+        _.template(require('./../includes/social-block.html').default)(data)
+        %>
+        <hr>
+        </div>
+        <div id="some-stickybit-parent" class="side-bar-right col d-none d-xl-block ">
+                <div id="some-stickybit-nav"
+                  class="m-width--100"
+                >
+                  <div>
+                    <button class="btn btn-outline-primary only-icon">
+                      <span class="icon-thumbs-up"></span>
+                    </button>
+                    <div class="text-center py-2">
+                    <small class="text-small text-center"
+                      >86% посетителей считают эту статью полезной</small
+                    >
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      class="btn btn-outline-primary only-icon"
+                      data-toggle="collapse"
+                      data-target="#collapseShare"
+                      aria-expanded="false"
+                      aria-controls="collapseShare"
+                    >
+                      <span class="icon-share-2"></span>
+                    </button>
+                    <div id="collapseShare" class="collapse">
+                      <div
+                        class="d-flex justify-content-center flex-wrap align-items-center h-100  ml-2 ml-lg-0"
+                      >
+                        <%=
+                        _.template(require('./../includes/social-small.html').default)(data)
+                        %>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+        </div>
+    </main>
+
+    <%= _.template(require('./../includes/footer.html').default)(data) %> <%=
+    _.template(require('./../includes/navigation_page.html').default)(data) %>
+  </body>
+</html>

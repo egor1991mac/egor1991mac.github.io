@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+  _.template(require('./../includes/header.html').default)(data) %>
+
+<body>
+  <header class="header">
+      <%= _.template(require('./../includes/badsee.html').default)(data) %>
+    <div class="d-none d-lg-block">
+      <%= _.template(require('./../includes/header_bar.html').default)(data)
+        %>
+    </div>
+    <%=
+      _.template(require('./../includes/header_bar_scroll.html').default)({scroll:"true"})
+      %> <%=
+      _.template(require('./../includes/top-nav-collapse.html').default)(data)
+      %>
+  </header>
+
+  <main class="container mt-5">
+    <div class="row">
+      <div class="col-12 d-lg-none px-0">
+        <h2 class="h3 mt-5  text-center w-100 font-weight-normal">
+          Часто задаваемые вопросы
+        </h2>
+
+        <div class="card-category owl-nav owl-carousel" data-startposition="1">
+            <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+                <svg class="card-img">
+                    <use xlink:href="./img/sprite.svg#test"></use>
+                  </svg>
+                  <span class="h6">ТОП 10 вопросов </span>
+                <span class="icon-chevron-right"></span>
+              </a>
+              
+              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+                <svg class="card-img">
+                  <use xlink:href="./img/sprite.svg#calculator"></use>
+                </svg>
+                <span class="h6">Кредиты</span>
+                <span class="icon-chevron-right"></span>
+              </a>
+              
+              
+              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+                <svg class="card-img">
+                  <use xlink:href="./img/sprite.svg#clipboard"></use>
+                </svg>
+                <span class="h6">Депозиты</span>
+                <span class="icon-chevron-right"></span>
+              </a>
+              
+              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+                <svg class="card-img">
+                  <use xlink:href="./img/sprite.svg#Logo-MB-Circle"></use>
+                </svg>
+                <span class="h6"> Лицензирование</span>
+                <span class="icon-chevron-right"></span>
+              </a>
+              
+              <a href="#" class="card-body img-left small with-shadow my-3 ml-3">
+                <svg class="card-img">
+                  <use xlink:href="./img/sprite.svg#exchange"></use>
+                </svg>
+                <span class="h6">Другие вопросы</span>
+                <span class="icon-chevron-right"></span>
+              </a>
+        </div>
+      </div>
+      <div id="some-stickybit-parent" class="side-bar-left col-3 d-none d-lg-block ">
+        <div id="some-stickybit-nav" class="card-category position-sticky top-90 m-width--320">
+          <div class="card-body vertical with-control">
+            <div class="control">
+              <span class="icon-circle-arrow-left"></span>
+              <span> Назад к списку</span>
+            </div>
+            <svg class="card-img">
+              <use xlink:href="./img/sprite.svg#movie"></use>
+            </svg>
+
+            <span class="h6 px-3">Участники финансовой системы Узбекистана </span>
+          </div>
+        </div>
+      </div>
+      <div class="content col-12 col-lg-9">
+        <%= _.template(require('./../includes/breadcrumb.html').default)
+          ({Pages:[ "Интерактивные услуги", "Часто задаваемые вопросы", "ТОП 10"
+          ]}) %>
+        <h1 class="d-none d-lg-block">Топ 10 вопросов</h1>
+        <% var data ={Items:
+            [
+            { text:"Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким родственникам (родители, кровные и сводные братья и сестры, супруги, дети, дедушки, бабушки и др.)",
+            img:"#analytics",
+          },
+    
+          {
+            text:"Можно ли получить наличные деньги с пластиковых карт? Если можно то установлен ли лимит на снятия наличных денег?",
+            img:"#bank",
+          },
+          {
+            text:"Обязаны ли перечислять доходы граждан на пластиковые карты? Сколько процентов от заработной платы и социальных платежей нужно перечислять на пластиковые карты?",
+            img:"#book",
+          },
+          {
+            text:"Что надо делать в случаях выявления ветхих банкнот и недостач в наличных денежных средствах, полученных из кассы банков?",
+            img:"#calculator-1",
+          },
+          {
+            text:"Что из себя будут представлять автоматизи- рованные пункты обмена валюты? Появится ли у граждан возможность покупать наличную инвалюту?",
+            img:"#calculator"
+          },
+          {
+            text:"Планируется ли применять технологию блокчейна в банковском секторе Республики Узбекистан?",
+            img:"#abacus",
+          },
+          {
+            text:"Что из себя будут представлять автоматизи- рованные пункты обмена валюты? Появится ли у граждан возможность покупать наличную инвалюту?",
+            img:"#analytics",
+          },
+          {
+            text:"Планируется ли применять технологию блокчейна в банковском секторе Республики Узбекистан?",
+            img:"#bank",
+          },
+          { text:"Как предоставляются сведения о вкладах и о денежных переводах в коммерческих банках близким родственникам (родители, кровные и сводные братья и сестры, супруги, дети, дедушки, бабушки и др.)",
+          img:"#analytics",
+        },
+    
+        {
+          text:"Можно ли получить наличные деньги с пластиковых карт? Если можно то установлен ли лимит на снятия наличных денег?",
+          img:"#bank",
+        },
+        {
+          text:"Обязаны ли перечислять доходы граждан на пластиковые карты? Сколько процентов от заработной платы и социальных платежей нужно перечислять на пластиковые карты?",
+          img:"#book",
+        },
+        {
+          text:"Что надо делать в случаях выявления ветхих банкнот и недостач в наличных денежных средствах, полученных из кассы банков?",
+          img:"#calculator-1",
+        },
+        {
+          text:"Что из себя будут представлять автоматизи- рованные пункты обмена валюты? Появится ли у граждан возможность покупать наличную инвалюту?",
+          img:"#calculator"
+        },
+        {
+          text:"Планируется ли применять технологию блокчейна в банковском секторе Республики Узбекистан?",
+          img:"#abacus",
+        },
+        {
+          text:"Что из себя будут представлять автоматизи- рованные пункты обмена валюты? Появится ли у граждан возможность покупать наличную инвалюту?",
+          img:"#analytics",
+        },
+        {
+          text:"Планируется ли применять технологию блокчейна в банковском секторе Республики Узбекистан?",
+          img:"#bank",
+        },
+            ]
+          }
+        %>
+        <%=
+          _.template(require('./../includes/collapse-item-without.html').default)(data)
+          %>
+
+        <hr />
+
+        <%=
+          _.template(require('./../includes/social-block.html').default)(data)
+          %>
+
+        <hr />
+      </div>
+    </div>
+  </main>
+
+  <%= _.template(require('./../includes/footer.html').default)(data) %> <%=
+    _.template(require('./../includes/navigation_page.html').default)(data) %>
+</body>
+
+</html>

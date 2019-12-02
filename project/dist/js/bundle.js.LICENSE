@@ -23,14 +23,6 @@
  * Date: 2019-04-08
  */
 
-/**
-  stickybits - Stickybits is a lightweight alternative to `position: sticky` polyfills
-  @version v3.7.0
-  @link https://github.com/dollarshaveclub/stickybits#readme
-  @author Jeff Wainwright <yowainwright@gmail.com> (https://jeffry.in)
-  @license MIT
-**/
-
 /**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.
  * @version 1.16.0
@@ -56,16 +48,6 @@
  * SOFTWARE.
  */
 
-/*!
- * bsCustomFileInput v1.3.2 (https://github.com/Johann-S/bs-custom-file-input)
- * Copyright 2018 - 2019 Johann-S <johann.servoire@gmail.com>
- * Licensed under MIT (https://github.com/Johann-S/bs-custom-file-input/blob/master/LICENSE)
- */
-
-/*! WOW wow.js - v1.2.1 - 2016-09-05
-* https://wowjs.uk
-* Copyright (c) 2016 Thomas Grainger; Licensed MIT */
-
 /*
  * Loading attribute polyfill - https://github.com/mfranzke/loading-attribute-polyfill
  * @license Copyright(c) 2019 by Maximilian Franzke
@@ -77,8 +59,6 @@
   * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
-
-/*! Select2 4.0.12 | https://github.com/select2/select2/blob/master/LICENSE.md */
 
 /**
  * Owl carousel
@@ -167,11 +147,4 @@
  * @author Artus Kolanowski
  * @author David Deutsch
  * @license The MIT License (MIT)
- */
-
-/*!
- * @copyright Copyright (c) 2017 IcoMoon.io
- * @license   Licensed under MIT license
- *            See https://github.com/Keyamoon/svgxuse
- * @version   1.2.6
  */

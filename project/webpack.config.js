@@ -10,6 +10,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 var OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 var ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const AsyncStylesheetWebpackPlugin = require('async-stylesheet-webpack-plugin');
+var LiveReloadPlugin = require('webpack-livereload-plugin');
 
 const PATHS = {
   src: path.join(__dirname, "src")
@@ -25,10 +26,10 @@ function generateHtmlPlugins(templateDir) {
       filename: `${name}.html`,
       template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
     }));
-    arrPlugin.push( new AsyncStylesheetWebpackPlugin({preloadPolyfill: true})),
-    arrPlugin.push(new ScriptExtHtmlWebpackPlugin({
-      defaultAttribute: 'async'
-    }));   
+    //arrPlugin.push( new AsyncStylesheetWebpackPlugin({preloadPolyfill: true})),
+    // arrPlugin.push(new ScriptExtHtmlWebpackPlugin({
+    //   defaultAttribute: 'async'
+    // }));   
   });
   return arrPlugin;
 }
@@ -45,7 +46,7 @@ const config = {
     chunkFilename: '[name].bundle.js',
   },
   devtool: "source-map",
-  mode: "production",
+  mode: "dev",
   module: {
     rules: [
       {
@@ -125,9 +126,9 @@ const config = {
       },
       {
         test: /\.html$/,
-        include: path.resolve(__dirname, "src/html/includes"),
+        include: [path.resolve(__dirname, "src/html/includes")],
         use: ["raw-loader"]
-      }
+      },
     ]
   },
   optimization: {
@@ -143,18 +144,20 @@ const config = {
 
   },
   plugins: [
+    new LiveReloadPlugin({}),
+
     new MiniCssExtractPlugin({
       filename: "./css/style.bundle.css"
     }),
     
-    new OptimizeCssAssetsPlugin({
-      assetNameRegExp: /\.optimize\.css$/,
-      cssProcessor: require("cssnano"),
-      cssProcessorPluginOptions: {
-        preset: ["default", { discardComments: { removeAll: true } }]
-      },
-      canPrint: true
-    }),
+    // new OptimizeCssAssetsPlugin({
+    //   assetNameRegExp: /\.optimize\.css$/,
+    //   cssProcessor: require("cssnano"),
+    //   cssProcessorPluginOptions: {
+    //     preset: ["default", { discardComments: { removeAll: true } }]
+    //   },
+    //   canPrint: true
+    // }),
    
     
     new webpack.ProvidePlugin({
