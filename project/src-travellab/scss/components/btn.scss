@@ -1,0 +1,39 @@
+.btn{
+    height: cr(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .2s;
+    border-radius: cr(25px);
+    padding-right: cr(25px);
+    padding-left: cr(25px);  
+    align-self: baseline;
+    &.btn-rounded{
+        border-radius: 50%;
+        width: cr(50px);
+        padding: 0 !important;
+    }    
+    &:active{
+        transform: scale(.95);
+        transition: transform .2s;
+    }
+}
+.btn-primary{
+    &.active,&:hover,&:focus,&:active{
+        color: $white !important;
+    }
+   
+}
+.btn-outline-primary{
+    &.active,&:hover,&:focus,&:active{
+        color: $white !important;
+        background: $primary;
+        //transition: background .2s;
+    }
+}
+.btn-secondary{
+    
+}
+.btn-outline-secondary{
+ 
+}

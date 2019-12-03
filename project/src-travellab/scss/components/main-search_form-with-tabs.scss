@@ -1,0 +1,48 @@
+#main-search_form{
+    margin: cr(-128px) auto cr(64px); 
+    z-index: 1;
+    position: relative;
+    .card{
+        padding: cr(40px) 15px;
+        background: #fff;
+        border-radius: 3px;
+        
+        &.hor{
+            flex-direction: row;
+        }
+        .form-group{
+            padding: 0 .5rem;
+        }
+    }
+    .nav{
+        &-link{
+            border-color: transparent;
+            color: $main-color-text;
+            padding: 0 2rem 1rem;
+            font-size: cr(24px);
+            &.active{
+                border-bottom: 2px solid $secondary;
+            }
+        }
+        &-tabs{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .tab{
+        &-content{
+            padding-top: 2rem; 
+            p{
+                text-align: center;
+               
+                width: 80%;
+                margin: 0 auto 2rem;
+                color: $secondary-color-text;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md){
+        margin: 0 auto ;
+    }
+}

@@ -1,0 +1,21 @@
+#subscribe{
+    background: url('/img/subcribe.jpg'); 
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    .container{
+        position: relative;
+        z-index: 1;
+    }
+    &:after{
+        content: '';
+        background: black;
+        z-index: 0;
+        opacity: .5;
+        position:absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+}

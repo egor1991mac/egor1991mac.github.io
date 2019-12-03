@@ -1,0 +1,22 @@
+
+    .form-contact--container{
+        padding: 2rem 1.5rem;
+        box-shadow: $shadow;
+        
+    }
+
+
+.form-control{
+    border: 1px solid #ddd;
+    border-radius: cr(3px);
+    width: 100%;
+    padding: cr(10px) cr(20px);
+    height: cr(50px);
+    border-radius: cr(25px);
+}
+
+label{
+    color: $secondary-color-text;
+    font-size: 90%;
+    margin-bottom: .25rem;
+}
