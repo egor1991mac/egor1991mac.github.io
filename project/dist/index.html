@@ -28,7 +28,7 @@
   </head>
 
   <body>
-    <header>
+    <header style="position: relative; overflow: hidden;">
       <div class="container-fluid fixed-top navbar--container">
         <div class="row">
           <div class="container">
@@ -64,12 +64,27 @@
                 >
                   <span class="icon icon-close-button"></span>
                 </button>
-                <ul class="navbar-nav">
+                <ul class="contact--list navbar-destcop" style="font-size: 13px">
+                  <li class="contact--list-item">
+                    <span class="icon icon-place-localizer "></span>г. Минск, ул. Веры Хоружей,<br />
+                    д. 1А ТЦ Силуэт, 2ой этаж, балконы, офис А7
+                  </li>
+                  <li class="contact--list-item"><span class="icon icon-clock "></span> Пн - Сб: 10:00 - 19:00</li>
+
+                  <li class="contact--list-item">
+                    <span class="icon icon-phone"></span>
+                    <span>
+                      +375 (29) 369-45-89
+                      <br />+375 (29) 777-97-23
+                    </span>
+                  </li>
+                </ul>
+                <ul class="navbar-nav d-lg-none">
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Туры <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Календарь</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a
@@ -88,7 +103,7 @@
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Агенствам</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a
@@ -101,19 +116,32 @@
                       >Dropdown</a
                     >
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#one">one</a>
+                      <a class="dropdown-item" href="#one"></a>
                       <a class="dropdown-item" href="#two">two</a>
                       <div role="separator" class="dropdown-divider"></div>
                       <a class="dropdown-item" href="#three">three</a>
                     </div>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Корпоративным клиентам</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Блог</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Контакты</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Отзывы</a>
+                  </li>
                 </ul>
 
-                <form class="form-inline custom-search ml-md-auto">
+                <form class="form-inline custom-search ml-md-auto d-lg-none">
                   <input class="form-control" placeholder="Search" aria-label="Search" />
                   <button class="btn btn-outline-success icon icon-magnifying-glass btn-rounded" type="submit"></button>
                 </form>
-                <div class="dropdown d-none d-md-block">
+
+                <div class="dropdown d-none d-md-block d-lg-none">
                   <a
                     class="nav-link"
                     data-toggle="dropdown"
@@ -128,6 +156,85 @@
                     <a class="dropdown-item" href="#two">Регистрация</a>
                     <a class="dropdown-item" href="#two">Востановление пароля</a>
                   </div>
+                </div>
+              </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-desctop js-collapse_scroll">
+              <ul class="navbar-nav d-none d-lg-flex ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Туры <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Календарь</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Dropdown</a
+                  >
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#one">one</a>
+                    <a class="dropdown-item" href="#two">two</a>
+                    <a class="dropdown-item" href="#three">three</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Агенствам</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Dropdown</a
+                  >
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#one"></a>
+                    <a class="dropdown-item" href="#two">two</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#three">three</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Корпоративным клиентам</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Блог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Контакты</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Отзывы</a>
+                </li>
+              </ul>
+              <form class="form-inline custom-search ml-md-auto d-none d-lg-flex">
+                <input class="form-control" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success icon icon-magnifying-glass btn-rounded" type="submit"></button>
+              </form>
+
+              <div class="dropdown d-none d-lg-block">
+                <a
+                  class="nav-link"
+                  data-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Войти</a
+                >
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#one">Авторизация</a>
+                  <a class="dropdown-item" href="#two">Регистрация</a>
+                  <a class="dropdown-item" href="#two">Востановление пароля</a>
                 </div>
               </div>
             </nav>
@@ -187,35 +294,37 @@
       </div>
 
       <div class="container" id="main-search_form">
-        <div class="col-5">
-          <div class="card card-shadow">
-            <div class="card-header">
-              <div class="h4"><span>Поиск туров</span></div>
-            </div>
-            <div class="card-body">
-              <form action="" class="d-flex flex-wrap">
-                <div class="form-group">
-                  <label for="">Направление</label>
-                  <input type="text" class="form-control" placeholder="leroaum text giv" />
-                </div>
-                <div class="form-group">
-                  <label for="">Тур</label>
-                  <input type="text" class="form-control" placeholder="leroaum text giv" />
-                </div>
-                <div class="form-group">
-                  <label for="">Когда</label>
-                  <input type="text" class="form-control" placeholder="leroaum text giv" />
-                </div>
-                <div class="form-group">
-                  <label for="">Пассажиров</label>
-                  <input type="text" class="form-control" placeholder="leroaum text giv" />
-                </div>
+        <div class="row h-100 align-items-center justify-content-end">
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="card card-shadow card-border">
+              <div class="card-header">
+                <div class="h4"><span>Поиск туров</span></div>
+              </div>
+              <div class="card-body">
+                <form action="" class="d-flex flex-wrap">
+                  <div class="form-group">
+                    <label for="">Направление</label>
+                    <input type="text" class="form-control" placeholder="leroaum text giv" />
+                  </div>
+                  <div class="form-group">
+                    <label for="">Тур</label>
+                    <input type="text" class="form-control" placeholder="leroaum text giv" />
+                  </div>
+                  <div class="form-group">
+                    <label for="">Когда</label>
+                    <input type="text" class="form-control" placeholder="leroaum text giv" />
+                  </div>
+                  <div class="form-group">
+                    <label for="">Пассажиров</label>
+                    <input type="text" class="form-control" placeholder="leroaum text giv" />
+                  </div>
 
-                <button class="btn btn-secondary flex-grow-1 mx-auto mt-2" style="max-width: 50%">
-                  <span class="icon icon-magnifying-glass mr-2"></span>
-                  Найти
-                </button>
-              </form>
+                  <button class="btn btn-secondary flex-grow-1 mx-auto mt-2" style="max-width: 50%">
+                    <span class="icon icon-magnifying-glass mr-2"></span>
+                    Найти
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -504,7 +613,7 @@
         </div>
       </section>
 
-      <section class="section-background-secondary section-py-20" id="rewies">
+      <section class="section-background-gray section-py-20" id="rewies">
         <h2 class="pb-5 text-center">Отзывы</h2>
         <div class="main_rewies--container px-4 container">
           <div class="owl-carousel owl-theme js-rewies_slider">
@@ -766,8 +875,8 @@
         <h2 class="pb-5 text-center">Интересное за неделю</h2>
         <div class="container">
           <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="card card-hor card-border mb-4">
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+              <div class="card card-hor card-border ">
                 <div class="card-header">
                   <picture class="card-img">
                     <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg" />
@@ -778,8 +887,8 @@
                 <div class="card-body ">
                   <h5 class="card-title">Название карточки</h5>
                   <div class="d-flex justify-content-between pb-2">
-                    <span class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</span>
-                    <span class="card-see"><span class="icon icon-eye pr-1"></span>343</span>
+                    <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
+                    <div class="card-see"><span class="icon icon-eye pr-1"></span>343</div>
                   </div>
                   <div class="hr"></div>
                   <p class="card-text pt-2">
@@ -790,8 +899,8 @@
               </div>
             </div>
 
-            <div class="col-12 col-md-6">
-              <div class="card card-hor card-border mb-4">
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+              <div class="card card-hor card-border ">
                 <div class="card-header">
                   <picture class="card-img">
                     <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
@@ -802,8 +911,8 @@
                 <div class="card-body ">
                   <h5 class="card-title">Название карточки</h5>
                   <div class="d-flex justify-content-between pb-2">
-                    <span class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</span>
-                    <span class="card-see"><span class="icon icon-eye pr-1"></span>343</span>
+                    <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
+                    <div class="card-see"><span class="icon icon-eye pr-1"></span>343</div>
                   </div>
                   <div class="hr"></div>
                   <p class="card-text pt-2">
@@ -817,7 +926,7 @@
         </div>
       </section>
       <section class="section-mt-20">
-        <div class="container-fluid">
+        <div class="container-fluid main-contact">
           <div class="row">
             <div class="map-frame">
               <iframe
@@ -829,64 +938,72 @@
               ></iframe>
             </div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-4">
-                <div class="main-contact--container">
-                  <h3>Контакты</h3>
-                  <div class="hr"></div>
-                  <ul class="contact--list">
-                    <li class="contact--list-item">
-                      <span class="icon icon-place-localizer "></span>г. Минск, ул. Веры Хоружей, д. 1А ТЦ Силуэт, 2ой
-                      этаж, балконы, офис А7
-                    </li>
-                    <li class="contact--list-item"><span class="icon icon-clock "></span> Пн - Сб: 10:00 - 19:00</li>
-                    <li class="contact--list-item"><span class="icon icon-mail2"></span> travellabminsk@gmail.com</li>
-                    <li class="contact--list-item">
-                      <span class="icon icon-phone"></span>
-                      <span>
-                        +375 (29) 369-45-89
-                        <br />+375 (29) 777-97-23
-                      </span>
-                    </li>
-                  </ul>
-                  <button
-                    type="button"
-                    class="btn btn-secondary mx-auto"
-                    data-toggle="modal"
-                    data-target="#exampleModal"
-                  >
-                    Перезвонить мне
-                  </button>
 
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          ...
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="row h-100 align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card card-border">
+                    <div class="card-body">
+                      <h3>Контакты</h3>
+                      <div class="hr"></div>
+                      <ul class="contact--list">
+                        <li class="contact--list-item">
+                          <span class="icon icon-place-localizer "></span>г. Минск, ул. Веры Хоружей, д. 1А ТЦ Силуэт,
+                          2ой этаж, балконы, офис А7
+                        </li>
+                        <li class="contact--list-item">
+                          <span class="icon icon-clock "></span> Пн - Сб: 10:00 - 19:00
+                        </li>
+                        <li class="contact--list-item">
+                          <span class="icon icon-mail2"></span> travellabminsk@gmail.com
+                        </li>
+                        <li class="contact--list-item">
+                          <span class="icon icon-phone"></span>
+                          <span>
+                            +375 (29) 369-45-89
+                            <br />+375 (29) 777-97-23
+                          </span>
+                        </li>
+                      </ul>
+                      <button
+                        type="button"
+                        class="btn btn-secondary mx-auto"
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                      >
+                        <span class="icon icon-phone mr-2"></span>
+                        Перезвонить мне
+                      </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <!-- <form action="" class="form-contact--container">
+                      <!-- <form action="" class="form-contact--container">
                                 <div class="form-group">
                                         <label for="">Телефона *</label>
                                         <input type="text" name="phone" class="form-control" placeholder="+375(xx) xxx-xx-xx">
@@ -908,18 +1025,33 @@
                                         </button>
                                 </div>
                                 </form> -->
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section class="section-background-secondary section-py-10" id="subscribe">
+        <div class="container">
+          <form class="col-12">
+            <div class="d-flex flex-column flex-md-row align-items-center">
+              <h3 class="text-white">Подписаться на рассылку</h3>
+              <input type="text" class="form-control mx-3 my-3" placeholder="info@mail.ru" />
+              <button class="btn btn-secondary my-auto mx-auto">
+                <span class="icon icon-mail2 mr-2"></span>Подписаться
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
 
-    <footer class="section-background-secondary py-5">
+    <footer class="section-background-gray py-5">
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <picture>
               <img class="pb-3" src="./img/logo/logo-header.png" alt="travellab" />
             </picture>
@@ -928,7 +1060,7 @@
               consequatur repudiandae libero illum.
             </p>
           </div>
-          <div class="col-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <h4>
               Ссылки 1
             </h4>
@@ -947,7 +1079,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <h4>
               Ссылки 2
             </h4>
@@ -966,7 +1098,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <h4>
               Контакты
             </h4>
@@ -989,17 +1121,28 @@
         </div>
         <hr />
         <div class="row mx-0">
-          <picture>
-            <img class="" src="./img/logo/logo-header.png" alt="travellab" />
-          </picture>
-          <picture>
-            <img class="px-3" src="./img/logo/logo-header.png" alt="travellab" />
-          </picture>
-          <picture>
-            <img class="" src="./img/logo/logo-header.png" alt="travellab" />
-          </picture>
+          <div class="footer-payment">
+            <picture>
+              <img class="" src="./img/pay/1.png" alt="travellab" />
+            </picture>
+            <picture>
+              <img class="px-3" src="./img/pay/2.png" alt="travellab" />
+            </picture>
+            <picture>
+              <img class="" src="./img/pay/3.png" alt="travellab" />
+            </picture>
+            <picture>
+              <img class="" src="./img/pay/4.png" alt="travellab" />
+            </picture>
+            <picture>
+              <img class="" src="./img/pay/5.png" alt="travellab" />
+            </picture>
+            <picture>
+              <img class="" src="./img/pay/6.png" alt="travellab" />
+            </picture>
+          </div>
           <div class="travelsoft-logo ml-auto">
-            <img src="" alt="travelsoft" />
+            <img src="./img/logo/logo_travelsoft.jpg" alt="travelsoft" />
           </div>
         </div>
       </div>
