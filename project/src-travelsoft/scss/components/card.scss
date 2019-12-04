@@ -4,6 +4,47 @@
     .hr{
         background: #e1e1e154;
     }
+    &-hover{
+        overflow: hidden;
+        .card-img{
+            overflow: hidden;
+            .img-fluid{
+                max-width: initial;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .card-body{
+            height: 0;
+            max-height: 0;
+            padding: 0;
+            flex-basis: 0;
+            transition: max-height 1s;
+            
+        }
+        &:hover{
+            .card-body{
+                display: flex;
+                align-items: center;
+                color: $white;
+                justify-content: center;
+                
+                position: absolute;
+                background: $card-hover-background;
+                max-height: 500px;
+                height: 100%;
+                width: 100%;
+                transition: max-height 1s;
+                .hr{
+                    max-width: 50%;
+                }
+                p{
+                    max-width: 60%;
+                    text-align: center;
+                }
+            }
+        }
+    }
     &-date,&-see{
         font-size: 13px;
         display: flex;

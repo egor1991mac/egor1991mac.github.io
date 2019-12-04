@@ -26,12 +26,14 @@ $shadow-hover: 0 0px 15px #77767647;
 //бордер 
 $border-card: 1px solid #e1e1e154 !important;
 
+//карточки
+$card-hover-background:#fa6819cc;
 
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1260px
+  xl: 1320px
 );
 body{
   min-height: 2600px;

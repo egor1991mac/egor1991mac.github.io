@@ -1,7 +1,7 @@
 #main-search_form{
     height: 100vh;
     position: relative;
-    
+    padding-top: 100px;
     // z-index: 1;
     // position: absolute;
     // /* height: 100%; */
@@ -95,9 +95,11 @@
 
     @include media-breakpoint-down(md){
         margin: cr(64px) auto 0;
+        padding-top: 0; 
     }
     @include media-breakpoint-down(sm){
         height: auto;
+        
         
     }
     @include media-breakpoint-down(xs){

@@ -3,7 +3,6 @@
   <% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
   _.template(require('./../includes/layout/header.html').default)(data) %>
   <body>
-    
     <header style="position: relative; overflow: hidden;">
       
       <%= _.template(require('./../includes/components/navbar.html').default)() %> 
@@ -21,15 +20,20 @@
           },
         ]
       }) %> 
-      
       <%= _.template(require('./../includes/components/main-search_form.html').default)() %>
-     
     </header>
     <main>
     
-
+        <section class="section-background-gray section-py-20">
+            <%= _.template(require('./../includes/components/main_about_product.html').default)({}) %>
+    
+          </section>
       <section class="container section-my-20" id="best-price">
-        <h2 class="pb-5 text-center">Популярные предложения</h2>
+        <div class="section-tittle pb-5">
+        <h2 class=" text-center">Популярные предложения</h2>
+        <div class="hr my-3"></div>
+        <p class="text-center mx-auto p-0">Consectetur voluptate anim officia sit aute dolore veniam officia magna elit.</p>
+       </div>
         <%= _.template(require('./../includes/components/main-card-tour.html').default)({
           Items:[
             {
@@ -66,9 +70,12 @@
           ]
         }) %> 
       </section>
-       
         <section class="section-background-gray section-py-20" id="rewies">
-            <h2 class="pb-5 text-center">Отзывы</h2>
+            <div class="section-tittle pb-5 container">
+                <h2 class=" text-center">Отзывы</h2>
+                <div class="hr my-3"></div>
+                <p class="text-center mx-auto p-0">Consectetur voluptate anim officia sit aute dolore veniam officia magna elit.</p>
+               </div>
             <%= _.template(require('./../includes/components/main-rewies.html').default)({
               Items:[
                 {
@@ -136,7 +143,11 @@
             }) %> 
         </section>
         <section class="section-my-20" id="post">
-            <h2 class="pb-5 text-center">Интересное за неделю</h2>
+            <div class="section-tittle pb-5 container">
+                <h2 class=" text-center">Новости</h2>
+                <div class="hr my-3"></div>
+                <p class="text-center mx-auto p-0">Consectetur voluptate anim officia sit aute dolore veniam officia magna elit.</p>
+               </div>
             <%= _.template(require('./../includes/components/main-post.html').default)({
               Items:[
                 {
