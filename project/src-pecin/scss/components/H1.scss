@@ -1,0 +1,24 @@
+h1,h2,h3,h4,h5,h6{
+    background: transparent;
+    &.with-hr{
+        position: relative;
+        display: inline-block;
+        &:before,&:after{
+            content:'';
+            width: $header-hr-width;
+            height: $header-hr-height;
+            background: $header-hr-color;
+            position: absolute;
+            top: 50%;
+            left: -1rem;
+            transform: rotate(180deg);
+            transform-origin: left;
+        };
+        &:after{
+            left: unset;
+            right: -1rem;
+            transform: rotate(180deg);
+            transform-origin: right;
+        }
+    }
+}

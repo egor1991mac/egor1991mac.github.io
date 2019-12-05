@@ -1,0 +1,22 @@
+$max-indents: 100px;
+
+@for $i from 1 through 100 {
+    .section-my-#{$i}{
+        margin-top: ind($i);
+        margin-bottom: ind($i);
+    }
+    .section-py-#{$i}{
+        padding-top: ind($i);
+        padding-bottom: ind($i);
+    }
+    @include media-breakpoint-down(sm){
+        .section-my-#{$i}{
+            margin-top: calc(#{ind($i)} / 2);
+            margin-bottom: calc(#{ind($i)} / 2);
+        }
+        .section-py-#{$i}{
+            padding-top: calc(#{ind($i)} / 2);
+            padding-bottom: calc(#{ind($i)} / 2);
+        }
+    }
+}

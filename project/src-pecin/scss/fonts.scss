@@ -1,0 +1,251 @@
+@font-face {
+    font-family: "Merriweather";
+    src: url("../fonts/Merriweather-BoldItalic.eot");
+    src: local("Merriweather Bold Italic"), local("Merriweather-BoldItalic"),
+      url("../fonts/Merriweather-BoldItalic.eot?#iefix")
+        format("embedded-opentype"),
+      url("../fonts/Merriweather-BoldItalic.woff") format("woff"),
+      url("../fonts/Merriweather-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+    font-display:swap;
+  }
+  
+  // @font-face {
+  //   font-family: "Merriweather";
+  //   src: url("../fonts/Merriweather-Italic.eot");
+  //   src: local("Merriweather Italic"), local("Merriweather-Italic"),
+  //     url("../fonts/Merriweather-Italic.eot?#iefix") format("embedded-opentype"),
+  //     url("../fonts/Merriweather-Italic.woff") format("woff"),
+  //     url("../fonts/Merriweather-Italic.ttf") format("truetype");
+  //   font-weight: normal;
+  //   font-style: italic;
+  //   font-display:swap;
+  // }
+  
+  @font-face {
+    font-family: "Merriweather";
+    src: url("../fonts/Merriweather-Regular.eot");
+    src: local("Merriweather Regular"), local("Merriweather-Regular"),
+      url("../fonts/Merriweather-Regular.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Merriweather-Regular.woff") format("woff"),
+      url("../fonts/Merriweather-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display:swap;
+  }
+  
+  // @font-face {
+  //   font-family: "Merriweather";
+  //   src: url("../fonts/Merriweather-BlackItalic.eot");
+  //   src: local("Merriweather Black Italic"), local("Merriweather-BlackItalic"),
+  //     url("../fonts/Merriweather-BlackItalic.eot?#iefix")
+  //       format("embedded-opentype"),
+  //     url("../fonts/Merriweather-BlackItalic.woff") format("woff"),
+  //     url("../fonts/Merriweather-BlackItalic.ttf") format("truetype");
+  //   font-weight: 900;
+  //   font-style: italic;
+  //   font-display:swap;
+  // }
+  
+  @font-face {
+    font-family: "Merriweather";
+    src: url("../fonts/Merriweather-Bold.eot");
+    src: local("Merriweather Bold"), local("Merriweather-Bold"),
+      url("../fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Merriweather-Bold.woff") format("woff"),
+      url("../fonts/Merriweather-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display:swap;
+  }
+  
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.eot");
+    src: local("../fonts/Roboto Bold"), local("Roboto-Bold"),
+      url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Roboto-Bold.woff") format("woff"),
+      url("../fonts/Roboto-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display:swap;
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.eot");
+    src: local("Roboto"), local("Roboto-Regular"),
+      url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Roboto-Regular.woff") format("woff"),
+      url("../fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display:swap;
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Medium.eot");
+    src: local("../fonts/Roboto Medium"), local("Roboto-Medium"),
+      url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Roboto-Medium.woff") format("woff"),
+      url("../fonts/Roboto-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display:swap;
+  }
+ @font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?oooqk2');
+    src:  url('../fonts/icomoon.eot?oooqk2#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?oooqk2') format('truetype'),
+      url('../fonts/icomoon.woff?oooqk2') format('woff'),
+      url('../fonts/icomoon.svg?oooqk2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-close-button:before {
+    content: "\e900";
+  }
+  .icon-creativity:before {
+    content: "\e901";
+  }
+  .icon-magnifying-glass:before {
+    content: "\e902";
+  }
+  .icon-menu-button:before {
+    content: "\e903";
+  }
+  .icon-new-label:before {
+    content: "\e904";
+  }
+  .icon-place-localizer:before {
+    content: "\e905";
+  }
+  .icon-home:before {
+    content: "\e906";
+  }
+  .icon-profile:before {
+    content: "\e923";
+  }
+  .icon-credit-card:before {
+    content: "\e93f";
+  }
+  .icon-phone:before {
+    content: "\e942";
+  }
+  .icon-map2:before {
+    content: "\e94c";
+  }
+  .icon-clock:before {
+    content: "\e94e";
+  }
+  .icon-calendar:before {
+    content: "\e953";
+  }
+  .icon-floppy-disk:before {
+    content: "\e962";
+  }
+  .icon-bubbles4:before {
+    content: "\e970";
+  }
+  .icon-user:before {
+    content: "\e971";
+  }
+  .icon-user-plus:before {
+    content: "\e973";
+  }
+  .icon-user-minus:before {
+    content: "\e974";
+  }
+  .icon-user-check:before {
+    content: "\e975";
+  }
+  .icon-zoom-in:before {
+    content: "\e987";
+  }
+  .icon-equalizer:before {
+    content: "\e992";
+  }
+  .icon-rocket:before {
+    content: "\e9a5";
+  }
+  .icon-fire:before {
+    content: "\e9a9";
+  }
+  .icon-eye:before {
+    content: "\e9ce";
+  }
+  .icon-star-empty:before {
+    content: "\e9d7";
+  }
+  .icon-star-half:before {
+    content: "\e9d8";
+  }
+  .icon-star-full:before {
+    content: "\e9d9";
+  }
+  .icon-arrow-right2:before {
+    content: "\ea3c";
+  }
+  .icon-arrow-left2:before {
+    content: "\ea40";
+  }
+  .icon-mail2:before {
+    content: "\ea84";
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-whatsapp:before {
+    content: "\ea93";
+  }
+  .icon-telegram:before {
+    content: "\ea95";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-vk:before {
+    content: "\ea98";
+  }
+  .icon-tumblr:before {
+    content: "\eab9";
+  }
+  

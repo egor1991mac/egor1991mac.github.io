@@ -41,7 +41,7 @@
                 </picture>
               </a>
               <button
-                class="navbar-toggler"
+                class="navbar-toggler px-0"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarTogglerDemo01"
@@ -64,9 +64,10 @@
                 >
                   <span class="icon icon-close-button"></span>
                 </button>
-                <ul class="contact--list navbar-destcop" style="font-size: 13px">
+
+                <ul class="contact--list navbar-destcop d-none d-lg-flex ml-auto mr-4">
                   <li class="contact--list-item">
-                    <span class="icon icon-place-localizer "></span>г. Минск, ул. Веры Хоружей,<br />
+                    <span class="icon icon-place-localizer "></span> г. Минск, ул. Веры Хоружей,<br />
                     д. 1А ТЦ Силуэт, 2ой этаж, балконы, офис А7
                   </li>
                   <li class="contact--list-item"><span class="icon icon-clock "></span> Пн - Сб: 10:00 - 19:00</li>
@@ -74,11 +75,25 @@
                   <li class="contact--list-item">
                     <span class="icon icon-phone"></span>
                     <span>
-                      +375 (29) 369-45-89
-                      <br />+375 (29) 777-97-23
+                      +375 (29) 369-45-89 <br />
+                      +375 (29) 777-97-23
                     </span>
                   </li>
                 </ul>
+                <button
+                  type="button"
+                  class="btn btn-secondary my-auto mx-3 d-none d-lg-block"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  <span class="icon icon-phone mr-2"></span>
+                  Перезвонить мне
+                </button>
+                <!-- <select name="lang" id="#" class="d-none d-lg-block">
+                          <option>Русский</options>
+                          <option>Английский</option>
+                          <option>Китайский</option>
+                        </select> -->
                 <ul class="navbar-nav d-lg-none">
                   <li class="nav-item active">
                     <a class="nav-link" href="#">Туры <span class="sr-only">(current)</span></a>
@@ -135,28 +150,12 @@
                     <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Отзывы</a>
                   </li>
                 </ul>
-
                 <form class="form-inline custom-search ml-md-auto d-lg-none">
-                  <input class="form-control" placeholder="Search" aria-label="Search" />
-                  <button class="btn btn-outline-success icon icon-magnifying-glass btn-rounded" type="submit"></button>
+                  <input class="form-control" placeholder="Поиск по сайту" aria-label="Search" />
+                  <button class="btn btn-outline-success" type="submit">
+                    <span class="icon icon-magnifying-glass"></span>
+                  </button>
                 </form>
-
-                <div class="dropdown d-none d-md-block d-lg-none">
-                  <a
-                    class="nav-link"
-                    data-toggle="dropdown"
-                    href="#"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Войти</a
-                  >
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#one">Авторизация</a>
-                    <a class="dropdown-item" href="#two">Регистрация</a>
-                    <a class="dropdown-item" href="#two">Востановление пароля</a>
-                  </div>
-                </div>
               </div>
             </nav>
             <nav class="navbar navbar-expand-lg navbar-desctop js-collapse_scroll">
@@ -217,20 +216,23 @@
                 </li>
               </ul>
               <form class="form-inline custom-search ml-md-auto d-none d-lg-flex">
-                <input class="form-control" placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-success icon icon-magnifying-glass btn-rounded" type="submit"></button>
+                <input class="form-control" placeholder="Поиск по сайту" aria-label="Search" />
+                <button class="btn btn-outline-secondary p-0" type="submit">
+                  <span class="icon icon-magnifying-glass"></span>
+                </button>
               </form>
 
               <div class="dropdown d-none d-lg-block">
-                <a
-                  class="nav-link"
+                <button
+                  class="btn btn-outline-secondary ml-3"
                   data-toggle="dropdown"
                   href="#"
                   role="button"
                   aria-haspopup="true"
                   aria-expanded="false"
-                  >Войти</a
                 >
+                  Войти
+                </button>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="#one">Авторизация</a>
                   <a class="dropdown-item" href="#two">Регистрация</a>
@@ -241,10 +243,10 @@
           </div>
         </div>
       </div>
-      <div class="main_slider--container">
+      <div class="main_slider-v2--container">
         <div class="owl-carousel owl-theme js-main_slider">
-          <div class="main_slider--item">
-            <div class="main_slider--item-img">
+          <div class="main_slider-v2--item">
+            <div class="main_slider-v2--item-img">
               <picture>
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-101.jpg" />
@@ -252,7 +254,7 @@
               </picture>
             </div>
             <div class="container">
-              <div class="main_slider--item-text">
+              <div class="main_slider-v2--item-text">
                 <span class="h3">
                   Рождество в Санкт-Петербурге!
                 </span>
@@ -267,8 +269,8 @@
             </div>
           </div>
 
-          <div class="main_slider--item">
-            <div class="main_slider--item-img">
+          <div class="main_slider-v2--item">
+            <div class="main_slider-v2--item-img">
               <picture>
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
@@ -276,7 +278,7 @@
               </picture>
             </div>
             <div class="container">
-              <div class="main_slider--item-text">
+              <div class="main_slider-v2--item-text">
                 <span class="h3">
                   Рождество в Санкт-Петербурге!
                 </span>
@@ -293,37 +295,76 @@
         </div>
       </div>
 
-      <div class="container" id="main-search_form">
-        <div class="row h-100 align-items-center justify-content-end">
-          <div class="col-12 col-md-6 col-lg-5">
-            <div class="card card-shadow card-border">
-              <div class="card-header">
-                <div class="h4"><span>Поиск туров</span></div>
-              </div>
-              <div class="card-body">
-                <form action="" class="d-flex flex-wrap">
-                  <div class="form-group">
-                    <label for="">Направление</label>
-                    <input type="text" class="form-control" placeholder="leroaum text giv" />
-                  </div>
-                  <div class="form-group">
-                    <label for="">Тур</label>
-                    <input type="text" class="form-control" placeholder="leroaum text giv" />
-                  </div>
-                  <div class="form-group">
-                    <label for="">Когда</label>
-                    <input type="text" class="form-control" placeholder="leroaum text giv" />
-                  </div>
-                  <div class="form-group">
-                    <label for="">Пассажиров</label>
-                    <input type="text" class="form-control" placeholder="leroaum text giv" />
-                  </div>
+      <div id="main-search_form-with-tabs">
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="pills-home-tab"
+              data-toggle="pill"
+              href="#pills-home"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+              >Автобусные туры</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="pills-profile-tab"
+              data-toggle="pill"
+              href="#pills-profile"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+              >Авиа туры</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="pills-contact-tab"
+              data-toggle="pill"
+              href="#pills-contact"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+              >Проживание</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="row h-100 align-items-end pb-5">
+              <div class="col-12 ">
+                <div class="card">
+                  <div class="card-body">
+                    <form action="" class="d-flex flex-wrap container">
+                      <div class="form-group">
+                        <label for="">Направление</label>
+                        <input type="text" class="form-control" placeholder="leroaum text giv" />
+                      </div>
+                      <div class="form-group">
+                        <label for="">Тур</label>
+                        <input type="text" class="form-control" placeholder="leroaum text giv" />
+                      </div>
+                      <div class="form-group">
+                        <label for="">Когда</label>
+                        <input type="text" class="form-control" placeholder="leroaum text giv" />
+                      </div>
+                      <div class="form-group">
+                        <label for="">Пассажиров</label>
+                        <input type="text" class="form-control" placeholder="leroaum text giv" />
+                      </div>
 
-                  <button class="btn btn-secondary flex-grow-1 mx-auto mt-2" style="max-width: 50%">
-                    <span class="icon icon-magnifying-glass mr-2"></span>
-                    Найти
-                  </button>
-                </form>
+                      <button class="btn btn-secondary flex-grow-1 mx-auto form-group" style="max-width: 50%">
+                        <span class="icon icon-magnifying-glass mr-2"></span>
+                        Найти
+                      </button>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -331,12 +372,373 @@
       </div>
     </header>
     <main>
+      <section class=" section-py-20">
+        <div class="section-tittle pb-5 container">
+          <div class="d-flex justify-content-center align-items-center flex-column">
+            <h2 class="text-center with-hr">Путиводитель</h2>
+            <p class="text-center mx-auto p-0">
+              Consectetur voluptate anim officia sit aute dolore veniam officia magna elit.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-8 mb-4">
+              <div class="card card-hover ">
+                <picture class="card-img">
+                  <img class="img-fluid" src="./img/putivoditel/countries.png" alt="" />
+                </picture>
+                <div class="card-body">
+                  <h3>Страны</h3>
+                  <div class="hr"></div>
+                  <p>Adipisicing labore laborum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card card-hover">
+                <picture class="card-img">
+                  <img class="img-fluid" src="./img/putivoditel/city.jpg" alt="city" />
+                </picture>
+                <div class="card-body">
+                  <h3>Города</h3>
+                  <div class="hr"></div>
+                  <p>Adipisicing laboreasfas aksdasdkas .</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card card-hover">
+                <picture class="card-img">
+                  <img class="img-fluid" src="./img/putivoditel/tours.jpg" alt="" />
+                </picture>
+                <div class="card-body">
+                  <h3>Туры</h3>
+                  <div class="hr"></div>
+                  <p>Adipisicing labore laborum commodo.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-8 mb-4">
+              <div class="card card-hover">
+                <picture class="card-img">
+                  <img class="img-fluid" src="./img/putivoditel/hotels.jpg" alt="" />
+                </picture>
+                <div class="card-body">
+                  <h3>Отели</h3>
+                  <div class="hr"></div>
+                  <p>
+                    Adipisicing labore laborum commodo consectetur qui minim ut pariatur et aliquip ipsum ullamco
+                    tempor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-py-20 section-background-gray" id="best-price">
+        <div class="section-tittle pb-5">
+          <div class="d-flex justify-content-center align-items-center flex-column">
+            <h2 class="text-center with-hr">Популярные авиа туры</h2>
+            <p class="text-center mx-auto p-0">
+              Consectetur voluptate anim officia sit aute dolore veniam officia magna elit.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card card-border h-100">
+                <picture class="card-img-top">
+                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg" />
+                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-101.jpg" />
+                  <img class="" src="./img/home_slider/slider-101.jpg" alt="slide1" />
+                </picture>
+                <ul class="card-options">
+                  <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
+                  <li class="card-options--item new"><span class="icon icon-new-label"></span> текст</li>
+                  <li class="card-options--item doc"><span class="icon icon-profile"></span> текст</li>
+                  <li class="card-options--item custom-tour"><span class="icon icon-creativity"></span>екст</li>
+                </ul>
+
+                <div class="card-body">
+                  <h5 class="card-title">Краков* - Вена - Венский лес* (Хайлигенкройц, Баден, замок Лихтенштейн)</h5>
+                  <div class="d-flex justify-content-between">
+                    <ul class="card-rating">
+                      <li><span class="icon icon-star-full"></span></li>
+                      <li><span class="icon icon-star-half"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                    </ul>
+                    <strong class="card-rewies">Отзывов: 4</strong>
+                  </div>
+
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <div class="hr mt-auto"></div>
+                  <div class="d-flex align-items-center justify-content-between pt-3">
+                    <a href="#" class="btn btn-secondary">
+                      Подробнее
+                    </a>
+                    <div class="card-price">
+                      200 EUR
+                      <br />
+                      <small>400 BYN</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card card-border h-100">
+                <picture class="card-img-top">
+                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                </picture>
+                <ul class="card-options">
+                  <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
+                  <li class="card-options--item new"><span class="icon icon-new-label"></span> текст</li>
+                  <li class="card-options--item doc"><span class="icon icon-profile"></span> текст</li>
+                  <li class="card-options--item custom-tour"><span class="icon icon-creativity"></span>екст</li>
+                </ul>
+
+                <div class="card-body">
+                  <h5 class="card-title">Краков* - Вена - Венский лес* (Хайлигенкройц, Баден, замок Лихтенштейн)</h5>
+                  <div class="d-flex justify-content-between">
+                    <ul class="card-rating">
+                      <li><span class="icon icon-star-full"></span></li>
+                      <li><span class="icon icon-star-half"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                    </ul>
+                    <strong class="card-rewies">Отзывов: 4</strong>
+                  </div>
+
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <div class="hr mt-auto"></div>
+                  <div class="d-flex align-items-center justify-content-between pt-3">
+                    <a href="#" class="btn btn-secondary">
+                      Подробнее
+                    </a>
+                    <div class="card-price">
+                      200 EUR
+                      <br />
+                      <small>400 BYN</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card card-border h-100">
+                <picture class="card-img-top">
+                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                </picture>
+                <ul class="card-options">
+                  <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
+                  <li class="card-options--item new"><span class="icon icon-new-label"></span> текст</li>
+                  <li class="card-options--item doc"><span class="icon icon-profile"></span> текст</li>
+                  <li class="card-options--item custom-tour"><span class="icon icon-creativity"></span>екст</li>
+                </ul>
+
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Регенсбург - Лихтенштейн - Цюрих - Люцерн - Женева - Швейцарская Ривьера* - Берн - Бернские альпы* -
+                    Нюрнберг
+                  </h5>
+                  <div class="d-flex justify-content-between">
+                    <ul class="card-rating">
+                      <li><span class="icon icon-star-full"></span></li>
+                      <li><span class="icon icon-star-half"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                    </ul>
+                    <strong class="card-rewies">Отзывов: 4</strong>
+                  </div>
+
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <div class="hr mt-auto"></div>
+                  <div class="d-flex align-items-center justify-content-between pt-3">
+                    <a href="#" class="btn btn-secondary">
+                      Подробнее
+                    </a>
+                    <div class="card-price">
+                      200 EUR
+                      <br />
+                      <small>400 BYN</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card card-border h-100">
+                <picture class="card-img-top">
+                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                </picture>
+                <ul class="card-options">
+                  <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
+                  <li class="card-options--item new"><span class="icon icon-new-label"></span> текст</li>
+                  <li class="card-options--item doc"><span class="icon icon-profile"></span> текст</li>
+                  <li class="card-options--item custom-tour"><span class="icon icon-creativity"></span>екст</li>
+                </ul>
+
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Регенсбург - Лихтенштейн - Цюрих - Люцерн - Женева - Швейцарская Ривьера* - Берн - Бернские альпы* -
+                    Нюрнберг
+                  </h5>
+                  <div class="d-flex justify-content-between">
+                    <ul class="card-rating">
+                      <li><span class="icon icon-star-full"></span></li>
+                      <li><span class="icon icon-star-half"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                    </ul>
+                    <strong class="card-rewies">Отзывов: 4</strong>
+                  </div>
+
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <div class="hr mt-auto"></div>
+                  <div class="d-flex align-items-center justify-content-between pt-3">
+                    <a href="#" class="btn btn-secondary">
+                      Подробнее
+                    </a>
+                    <div class="card-price">
+                      200 EUR
+                      <br />
+                      <small>400 BYN</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card card-border h-100">
+                <picture class="card-img-top">
+                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                </picture>
+                <ul class="card-options">
+                  <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
+                  <li class="card-options--item new"><span class="icon icon-new-label"></span> текст</li>
+                  <li class="card-options--item doc"><span class="icon icon-profile"></span> текст</li>
+                  <li class="card-options--item custom-tour"><span class="icon icon-creativity"></span>екст</li>
+                </ul>
+
+                <div class="card-body">
+                  <h5 class="card-title">hello world</h5>
+                  <div class="d-flex justify-content-between">
+                    <ul class="card-rating">
+                      <li><span class="icon icon-star-full"></span></li>
+                      <li><span class="icon icon-star-half"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                    </ul>
+                    <strong class="card-rewies">Отзывов: 4</strong>
+                  </div>
+
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <div class="hr mt-auto"></div>
+                  <div class="d-flex align-items-center justify-content-between pt-3">
+                    <a href="#" class="btn btn-secondary">
+                      Подробнее
+                    </a>
+                    <div class="card-price">
+                      200 EUR
+                      <br />
+                      <small>400 BYN</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card card-border h-100">
+                <picture class="card-img-top">
+                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                </picture>
+                <ul class="card-options">
+                  <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
+                  <li class="card-options--item new"><span class="icon icon-new-label"></span> текст</li>
+                  <li class="card-options--item doc"><span class="icon icon-profile"></span> текст</li>
+                  <li class="card-options--item custom-tour"><span class="icon icon-creativity"></span>екст</li>
+                </ul>
+
+                <div class="card-body">
+                  <h5 class="card-title">hello world</h5>
+                  <div class="d-flex justify-content-between">
+                    <ul class="card-rating">
+                      <li><span class="icon icon-star-full"></span></li>
+                      <li><span class="icon icon-star-half"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                      <li><span class="icon icon-star-empty"></span></li>
+                    </ul>
+                    <strong class="card-rewies">Отзывов: 4</strong>
+                  </div>
+
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <div class="hr mt-auto"></div>
+                  <div class="d-flex align-items-center justify-content-between pt-3">
+                    <a href="#" class="btn btn-secondary">
+                      Подробнее
+                    </a>
+                    <div class="card-price">
+                      200 EUR
+                      <br />
+                      <small>400 BYN</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="container section-my-20" id="best-price">
-        <h2 class="pb-5 text-center">Популярные предложения</h2>
+        <div class="section-tittle pb-5">
+          <div class="d-flex justify-content-center align-items-center flex-column">
+            <h2 class="text-center with-hr">Популярные автобусные туры</h2>
+            <p class="text-center mx-auto p-0">
+              Consectetur voluptate anim officia sit aute dolore veniam officia magna elit.
+            </p>
+          </div>
+        </div>
 
         <div class="row">
-          <div class="col-12 col-md-4 mb-4">
-            <div class="card card-border">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card card-border h-100">
               <picture class="card-img-top">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-101.jpg" />
@@ -380,8 +782,8 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-4 mb-4">
-            <div class="card card-border">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card card-border h-100">
               <picture class="card-img-top">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
@@ -425,8 +827,8 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-4 mb-4">
-            <div class="card card-border">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card card-border h-100">
               <picture class="card-img-top">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
@@ -473,8 +875,8 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-4 mb-4">
-            <div class="card card-border">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card card-border h-100">
               <picture class="card-img-top">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
@@ -521,8 +923,8 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-4 mb-4">
-            <div class="card card-border">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card card-border h-100">
               <picture class="card-img-top">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
@@ -566,8 +968,8 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-4 mb-4">
-            <div class="card card-border">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card card-border h-100">
               <picture class="card-img-top">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
@@ -612,10 +1014,16 @@
           </div>
         </div>
       </section>
-
       <section class="section-background-gray section-py-20" id="rewies">
-        <h2 class="pb-5 text-center">Отзывы</h2>
-        <div class="main_rewies--container px-4 container">
+        <div class="section-tittle pb-5 container">
+          <div class="d-flex justify-content-center align-items-center flex-column">
+            <h2 class="text-center with-hr">Отзывы</h2>
+            <p class="text-center mx-auto p-0">
+              Consectetur voluptate anim officia sit aute dolore veniam officia magna elit.
+            </p>
+          </div>
+        </div>
+        <div class="main_rewies--container  container">
           <div class="owl-carousel owl-theme js-rewies_slider">
             <div class="card rewies mb-4">
               <picture class="card-img ">
@@ -871,55 +1279,128 @@
           </div>
         </div>
       </section>
-      <section class="section-my-20" id="post">
-        <h2 class="pb-5 text-center">Интересное за неделю</h2>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 mb-4 mb-md-0">
-              <div class="card card-hor card-border ">
-                <div class="card-header">
-                  <picture class="card-img">
-                    <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg" />
-                    <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-101.jpg" />
-                    <img src="./img/home_slider/slider-101.jpg" alt="slide1" />
-                  </picture>
+      <section class="section-my-20 container" id="post">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+              <h2 class="text-center with-hr">Новости</h2>
+              <p class="text-center mx-auto p-0"></p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 order-1 order-lg-0 mt-5 mt-lg-0">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+              <h2 class="text-center with-hr">O Компании</h2>
+              <p class="text-center mx-auto p-0"></p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="card card-hor card-border mb-4">
+              <div class="card-header">
+                <picture class="card-img">
+                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg" />
+                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-101.jpg" />
+                  <img src="./img/home_slider/slider-101.jpg" alt="slide1" />
+                </picture>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <div class="d-flex justify-content-between pb-2">
+                  <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
+                  <div class="card-see"><span class="icon icon-eye pr-1"></span>343</div>
                 </div>
-                <div class="card-body ">
-                  <h5 class="card-title">Название карточки</h5>
-                  <div class="d-flex justify-content-between pb-2">
-                    <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
-                    <div class="card-see"><span class="icon icon-eye pr-1"></span>343</div>
-                  </div>
-                  <div class="hr"></div>
-                  <p class="card-text pt-2">
-                    Some quick example text to build on the card title and make up the bulk of the card's content.
-                  </p>
-                  <a href="#" class="btn btn-secondary ml-auto">Подробнее</a>
-                </div>
+                <div class="hr"></div>
+                <p class="card-text pt-2">
+                  Commodo mollit esse ad irure ipsum ipsum nisi eiusmod aliquip exercitation enim laborum deserunt aute.
+                </p>
+                <a href="#" class="btn btn-secondary ml-auto">Подробнее</a>
               </div>
             </div>
 
-            <div class="col-12 col-md-6 mb-4 mb-md-0">
-              <div class="card card-hor card-border ">
-                <div class="card-header">
-                  <picture class="card-img">
-                    <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
-                    <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
-                    <img src="./img/home_slider/slider-103.jpg" alt="slide1" />
-                  </picture>
+            <div class="card card-hor card-border mb-4">
+              <div class="card-header">
+                <picture class="card-img">
+                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <img src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                </picture>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <div class="d-flex justify-content-between pb-2">
+                  <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
+                  <div class="card-see"><span class="icon icon-eye pr-1"></span>343</div>
                 </div>
-                <div class="card-body ">
-                  <h5 class="card-title">Название карточки</h5>
-                  <div class="d-flex justify-content-between pb-2">
-                    <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
-                    <div class="card-see"><span class="icon icon-eye pr-1"></span>343</div>
+                <div class="hr"></div>
+                <p class="card-text pt-2">
+                  Commodo mollit esse ad irure ipsum ipsum nisi eiusmod aliquip exercitation enim laborum deserunt aute.
+                </p>
+                <a href="#" class="btn btn-secondary ml-auto">Подробнее</a>
+              </div>
+            </div>
+
+            <div class="card card-hor card-border">
+              <div class="card-header">
+                <picture class="card-img">
+                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <img src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                </picture>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <div class="d-flex justify-content-between pb-2">
+                  <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
+                  <div class="card-see"><span class="icon icon-eye pr-1"></span>343</div>
+                </div>
+                <div class="hr"></div>
+                <p class="card-text pt-2">
+                  Ad est do proident velit enim adipisicing aliquip aute mollit in et consequat nisi aliqua,Ad est do
+                  proident velit enim adipisicing aliquip aute mollit in et consequat nisi aliqua.
+                </p>
+                <a href="#" class="btn btn-secondary ml-auto">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-2 order-lg-0">
+            <div class="card h-100 card-border">
+              <div class="owl-carousel owl-theme js-main_slider">
+                <div class="slider--item">
+                  <div class="slider--item-img">
+                    <picture>
+                      <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg" />
+                      <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-101.jpg" />
+                      <img style="min-height: 350px" src="./img/home_slider/slider-101.jpg" alt="slide1" />
+                    </picture>
                   </div>
-                  <div class="hr"></div>
-                  <p class="card-text pt-2">
-                    Some quick example text to build on the card title and make up the bulk of the card's content.
-                  </p>
-                  <a href="#" class="btn btn-secondary ml-auto">Подробнее</a>
                 </div>
+
+                <div class="slider--item">
+                  <div class="slider--item-img">
+                    <picture>
+                      <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+                      <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+                      <img style="min-height: 350px" src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  1. Мы специализируемся на автобусных турах и являемся туроператором номер 1 по СНГ. Более 20000
+                  довольных туристов съездили с нами и возвращаются снова и снова. Наш автопарк является самым молодым,
+                  а это значит максимально комфортные и проверенные автобусы.
+                </p>
+                <p>
+                  2. Только лучшие отели и базы отдыха! Со всеми нашими отелями у нас есть эксклюзивный договор, а это
+                  значит, вы получаете отличный вариант проживания по супер-цене напрямую. Именно поэтому у наших туров
+                  такие прекрасные и доступные цены.
+                </p>
+                <p>
+                  3. Наш коллектив имеет огромный опыт в поездках и организации туров, а это значит, что ваш отдых
+                  пройдёт гладко и весело!
+                </p>
+
+                <a href="#" class="btn btn-primary ml-auto">Подробнее</a>
               </div>
             </div>
           </div>
@@ -1048,7 +1529,7 @@
       </section>
     </main>
 
-    <footer class="section-background-gray py-5">
+    <footer class="section-background-gray py-5 footer">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3">

@@ -1,0 +1,35 @@
+.btn{
+    height: $btn-height;
+    min-width: $btn-width;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .2s;
+    border-radius: $btn-radius;
+    padding-right: $btn-padding;
+    padding-left: $btn-padding;
+    align-self: baseline;
+    
+    &.btn-rounded{
+        border-radius: 50%;
+        width: $btn-width;
+        padding: 0 !important;
+    }    
+    &:active{
+        transform: scale(.95);
+        transition: transform .2s;
+    }
+}
+.btn-primary{
+    &.active,&:hover,&:focus,&:active{
+        color: $white !important;
+    }
+   
+}
+.btn-outline-primary{
+    &.active,&:hover,&:focus,&:active{
+        color: $white !important;
+        background: $primary;
+        //transition: background .2s;
+    }
+}

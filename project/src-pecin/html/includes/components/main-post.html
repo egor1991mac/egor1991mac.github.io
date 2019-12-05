@@ -1,0 +1,30 @@
+<div class="container">
+        <div class="row">
+            <% Items.forEach(function(item,index){ 
+                        %>
+                <div class="col-12 mb-4">
+                    <div class="card card-hor card-border ">
+                        <div class="card-header">
+                            <picture class="card-img">
+                                    <source class="owl-lazy" media="(min-width: 650px)" srcset="<%= item.picture %>">
+                                    <source class="owl-lazy" media="(min-width: 350px)" srcset="<%= item.picture %>">
+                                    <img src="<%= item.picture %>" alt="slide1">
+                            </picture>
+                            
+                        </div>
+                        <div class="card-body ">
+                                <h5 class="card-title">Название карточки</h5>
+                                <div class="d-flex justify-content-between pb-2">
+                                <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
+                                <div class="card-see"><span class="icon icon-eye pr-1"></span>343</div>
+                                </div>
+                                <div class="hr"></div>
+                                <p class="card-text pt-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-secondary ml-auto">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+                
+        </div>
+</div>     

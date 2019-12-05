@@ -1,0 +1,34 @@
+<div class="main_slider--container">
+<div class="owl-carousel owl-theme js-main_slider">
+                <% Items.forEach(function(item,index){ 
+                        %>
+              
+                        <div class="main_slider--item">
+                                <div class="main_slider--item-img">
+                                <picture>
+                                        <source class="owl-lazy" media="(min-width: 650px)" srcset="<%= item.picture %>">
+                                        <source class="owl-lazy" media="(min-width: 350px)" srcset="<%= item.picture %>">
+                                        <img class="card-img-top" src="<%= item.picture %>" alt="slide1">
+                                </picture>
+                                </div>
+                                <div class="container">
+                                <div class="main_slider--item-text">
+                                        <span class="h3">
+                                                Рождество в Санкт-Петербурге!
+                                        </span>
+                                        <p>
+                                                        Канун Рождества – это долгожданное и необыкновенное время в Северной столице. Именно поэтому стоит купить тур в Санкт-Петербург и насладиться множеством праздничных событий.
+                                        </p>
+                                        <a href="#" class="btn btn-secondary">
+                                                Подробнее
+                                        </a>
+                                </div>
+                                </div>
+                        </div>
+               
+                <% }) %>
+
+</div>
+
+
+</div>
