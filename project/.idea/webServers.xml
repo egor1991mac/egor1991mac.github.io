@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e21b1e67-0273-4bb2-977e-1582cb48c64e" name="demo.travelsoft.by" url="http://demo.travelsoft.by/">
+        <fileTransfer host="demo.travelsoft.by" port="22" rootFolder="/home/bitrix/ext_www/demo.travelsoft.by" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

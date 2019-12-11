@@ -24,12 +24,12 @@
       <link rel="stylesheet" href="./assets/owl.theme.default.css" />
     </noscript>
     <title>Заголовок | Проект</title>
-    <link href="./css/style.bundle.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
   </head>
 
   <body>
-    <header>
-      <div class="container-fluid fixed-top navbar--container">
+    <header class="sticky-top">
+      <div class="container-fluid  navbar--container">
         <div class="row">
           <div class="container">
             <nav class="navbar navbar-expand-lg d-flex">
@@ -282,142 +282,142 @@
           </div>
         </div>
       </div>
-      <div class="main_slider-v2--container">
-        <div class="owl-carousel owl-theme js-main_slider">
-          <div class="main_slider-v2--item">
-            <div class="main_slider-v2--item-img">
-              <picture>
-                <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg" />
-                <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-101.jpg" />
-                <img class="card-img-top" src="./img/home_slider/slider-101.jpg" alt="slide1" />
-              </picture>
-            </div>
-            <div class="container">
-              <div class="main_slider-v2--item-text">
-                <span class="h3">
-                  Рождество в Санкт-Петербурге!
-                </span>
-                <p>
-                  Канун Рождества – это долгожданное и необыкновенное время в Северной столице. Именно поэтому стоит
-                  купить тур в Санкт-Петербург и насладиться множеством праздничных событий.
-                </p>
-                <a href="#" class="btn btn-secondary">
-                  <span class="icon icon-book mr-2" style="font-weight: bolder"></span>
-                  Подробнее
-                </a>
-              </div>
+    </header>
+    <div class="main_slider-v2--container">
+      <div class="owl-carousel owl-theme js-main_slider">
+        <div class="main_slider-v2--item">
+          <div class="main_slider-v2--item-img">
+            <picture>
+              <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg" />
+              <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-101.jpg" />
+              <img class="card-img-top" src="./img/home_slider/slider-101.jpg" alt="slide1" />
+            </picture>
+          </div>
+          <div class="container">
+            <div class="main_slider-v2--item-text">
+              <span class="h3">
+                Рождество в Санкт-Петербурге!
+              </span>
+              <p>
+                Канун Рождества – это долгожданное и необыкновенное время в Северной столице. Именно поэтому стоит
+                купить тур в Санкт-Петербург и насладиться множеством праздничных событий.
+              </p>
+              <a href="#" class="btn btn-secondary">
+                <span class="icon icon-book mr-2" style="font-weight: bolder"></span>
+                Подробнее
+              </a>
             </div>
           </div>
+        </div>
 
-          <div class="main_slider-v2--item">
-            <div class="main_slider-v2--item-img">
-              <picture>
-                <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
-                <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
-                <img class="card-img-top" src="./img/home_slider/slider-103.jpg" alt="slide1" />
-              </picture>
-            </div>
-            <div class="container">
-              <div class="main_slider-v2--item-text">
-                <span class="h3">
-                  Рождество в Санкт-Петербурге!
-                </span>
-                <p>
-                  Канун Рождества – это долгожданное и необыкновенное время в Северной столице. Именно поэтому стоит
-                  купить тур в Санкт-Петербург и насладиться множеством праздничных событий.
-                </p>
-                <a href="#" class="btn btn-secondary">
-                  <span class="icon icon-book mr-2" style="font-weight: bolder"></span>
-                  Подробнее
-                </a>
-              </div>
+        <div class="main_slider-v2--item">
+          <div class="main_slider-v2--item-img">
+            <picture>
+              <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+              <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+              <img class="card-img-top" src="./img/home_slider/slider-103.jpg" alt="slide1" />
+            </picture>
+          </div>
+          <div class="container">
+            <div class="main_slider-v2--item-text">
+              <span class="h3">
+                Рождество в Санкт-Петербурге!
+              </span>
+              <p>
+                Канун Рождества – это долгожданное и необыкновенное время в Северной столице. Именно поэтому стоит
+                купить тур в Санкт-Петербург и насладиться множеством праздничных событий.
+              </p>
+              <a href="#" class="btn btn-secondary">
+                <span class="icon icon-book mr-2" style="font-weight: bolder"></span>
+                Подробнее
+              </a>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div id="main-search_form-with-tabs">
-        <div class="hor-scrolling">
-          <ul class="nav nav-pills" id="pills-tab" role="tablist">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                id="pills-home-tab"
-                data-toggle="pill"
-                href="#pills-home"
-                role="tab"
-                aria-controls="pills-home"
-                aria-selected="true"
-              >
-                <span class="icon icon-front-bus mr-1"></span> Автобусные туры</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                id="pills-profile-tab"
-                data-toggle="pill"
-                href="#pills-profile"
-                role="tab"
-                aria-controls="pills-profile"
-                aria-selected="false"
-                ><span class="icon icon-airplane mr-1"></span> Авиа туры</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                id="pills-contact-tab"
-                data-toggle="pill"
-                href="#pills-contact"
-                role="tab"
-                aria-controls="pills-contact"
-                aria-selected="false"
-                ><span class="icon icon-cruise mr-1" style="font-weight: bolder"></span>Круизы</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-            <div class="row h-100 align-items-end pb-5 mx-0">
-              <div class="col-12 px-0">
-                <div class="card">
-                  <div class="card-body">
-                    <form action="" class="d-flex flex-wrap container">
-                      <div class="form-group">
-                        <label for=""
-                          ><span class="icon icon-place-localizer mr-1" style="font-weight: bolder"></span>
-                          Направление</label
-                        >
-                        <input type="text" class="form-control" placeholder="leroaum text giv" />
-                      </div>
-                      <div class="form-group">
-                        <label for=""><span class="icon icon-map2 mr-1" style="font-weight: bolder"></span> Тур</label>
-                        <input type="text" class="form-control" placeholder="leroaum text giv" />
-                      </div>
-                      <div class="form-group">
-                        <label for=""><span class="icon icon-calendar mr-1"></span>Когда</label>
-                        <input type="text" class="form-control" placeholder="leroaum text giv" />
-                      </div>
-                      <div class="form-group">
-                        <label for=""><span class="icon icon-user mr-1"></span>Пассажиров</label>
-                        <input type="text" class="form-control" placeholder="leroaum text giv" />
-                      </div>
+    <div id="main-search_form-with-tabs">
+      <div class="hor-scrolling">
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="pills-home-tab"
+              data-toggle="pill"
+              href="#pills-home"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              <span class="icon icon-front-bus mr-1"></span> Автобусные туры</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="pills-profile-tab"
+              data-toggle="pill"
+              href="#pills-profile"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+              ><span class="icon icon-airplane mr-1"></span> Авиа туры</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="pills-contact-tab"
+              data-toggle="pill"
+              href="#pills-contact"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+              ><span class="icon icon-cruise mr-1" style="font-weight: bolder"></span>Круизы</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="row h-100 align-items-end pb-5 mx-0">
+            <div class="col-12 px-0">
+              <div class="card">
+                <div class="card-body">
+                  <form action="" class="d-flex flex-wrap container">
+                    <div class="form-group">
+                      <label for=""
+                        ><span class="icon icon-place-localizer mr-1" style="font-weight: bolder"></span>
+                        Направление</label
+                      >
+                      <input type="text" class="form-control" placeholder="leroaum text giv" />
+                    </div>
+                    <div class="form-group">
+                      <label for=""><span class="icon icon-map2 mr-1" style="font-weight: bolder"></span> Тур</label>
+                      <input type="text" class="form-control" placeholder="leroaum text giv" />
+                    </div>
+                    <div class="form-group">
+                      <label for=""><span class="icon icon-calendar mr-1"></span>Когда</label>
+                      <input type="text" class="form-control" placeholder="leroaum text giv" />
+                    </div>
+                    <div class="form-group">
+                      <label for=""><span class="icon icon-user mr-1"></span>Пассажиров</label>
+                      <input type="text" class="form-control" placeholder="leroaum text giv" />
+                    </div>
 
-                      <button class="btn btn-secondary flex-grow-1 mx-auto form-group" style="max-width: 50%">
-                        <span class="icon icon-magnifying-glass mr-2"></span>
-                        Найти
-                      </button>
-                    </form>
-                  </div>
+                    <button class="btn btn-secondary flex-grow-1 mx-auto form-group" style="max-width: 50%">
+                      <span class="icon icon-magnifying-glass mr-2"></span>
+                      Найти
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
     <main>
       <!--        <section class=" section-py-20">-->
 
@@ -1732,6 +1732,6 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="./js/bundle.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
