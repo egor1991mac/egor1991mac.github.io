@@ -201,7 +201,7 @@ const configProd = {
         new LiveReloadPlugin({}),
 
         new MiniCssExtractPlugin({
-            filename: '[name].css',
+            filename: 'css/[name].css',
         }),
 
         // new OptimizeCssAssetsPlugin({
