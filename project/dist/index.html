@@ -24,7 +24,7 @@
       <link rel="stylesheet" href="./assets/owl.theme.default.css" />
     </noscript>
     <title>Заголовок | Проект</title>
-    <link href="./css/index.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -80,7 +80,7 @@
                   </div>
                 </div>
               </div>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <div class="collapse navbar-collapse drawer" id="navbarTogglerDemo01">
                 <button
                   class="navbar-toggler"
                   type="button"
@@ -122,68 +122,72 @@
                           <option>Английский</option>
                           <option>Китайский</option>
                         </select> -->
-                <ul class="navbar-nav d-lg-none">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Туры <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Календарь</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      data-toggle="dropdown"
-                      href="#"
-                      role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      >Dropdown</a
-                    >
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#one">one</a>
-                      <a class="dropdown-item" href="#two">two</a>
-                      <a class="dropdown-item" href="#three">three</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Агенствам</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      data-toggle="dropdown"
-                      href="#"
-                      role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      >Dropdown</a
-                    >
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#one"></a>
-                      <a class="dropdown-item" href="#two">two</a>
-                      <div role="separator" class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#three">three</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Корпоративным клиентам</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Блог</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Контакты</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Отзывы</a>
-                  </li>
-                </ul>
-                <form class="form-inline custom-search ml-md-auto d-lg-none">
-                  <input class="form-control" placeholder="Поиск по сайту" aria-label="Search" />
-                  <button class="btn btn-outline-success" type="submit">
-                    <span class="icon icon-magnifying-glass"></span>
-                  </button>
-                </form>
+                <div class="card w-100 d-lg-none">
+                  <div class="card-body">
+                    <ul class="navbar-nav ">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Туры <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Календарь</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          data-toggle="dropdown"
+                          href="#"
+                          role="button"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          >Dropdown</a
+                        >
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#one">one</a>
+                          <a class="dropdown-item" href="#two">two</a>
+                          <a class="dropdown-item" href="#three">three</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Агенствам</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          data-toggle="dropdown"
+                          href="#"
+                          role="button"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          >Dropdown</a
+                        >
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#one"></a>
+                          <a class="dropdown-item" href="#two">two</a>
+                          <div role="separator" class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#three">three</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Корпоративным клиентам</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Блог</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Контакты</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Отзывы</a>
+                      </li>
+                    </ul>
+                    <form class="form-inline custom-search ml-md-auto d-lg-none">
+                      <input class="form-control" placeholder="Поиск по сайту" aria-label="Search" />
+                      <button class="btn btn-outline-primary p-0" type="submit">
+                        <span class="icon icon-magnifying-glass"></span>
+                      </button>
+                    </form>
+                  </div>
+                </div>
               </div>
             </nav>
             <nav class="navbar navbar-expand-lg navbar-desctop js-collapse_scroll">
@@ -245,7 +249,7 @@
               </ul>
               <form class="form-inline custom-search ml-md-auto d-none d-lg-flex">
                 <input class="form-control" placeholder="Поиск по сайту" aria-label="Search" />
-                <button class="btn btn-outline-secondary p-0" type="submit">
+                <button class="btn btn-outline-primary p-0" type="submit">
                   <span class="icon icon-magnifying-glass"></span>
                 </button>
               </form>
@@ -290,7 +294,7 @@
             <picture>
               <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg" />
               <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-101.jpg" />
-              <img class="card-img-top" src="./img/home_slider/slider-101.jpg" alt="slide1" />
+              <img src="./img/home_slider/slider-101.jpg" alt="slide1" />
             </picture>
           </div>
           <div class="container">
@@ -315,7 +319,7 @@
             <picture>
               <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
               <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
-              <img class="card-img-top" src="./img/home_slider/slider-103.jpg" alt="slide1" />
+              <img src="./img/home_slider/slider-103.jpg" alt="slide1" />
             </picture>
           </div>
           <div class="container">
@@ -419,74 +423,6 @@
       </div>
     </div>
     <main>
-      <!--        <section class=" section-py-20">-->
-
-      <!--            <div class="section-tittle pb-5 container">-->
-      <!--                <div class="d-flex justify-content-center align-items-center flex-column">
-    <h2 class="text-center with-hr">Путиводитель</h2>
-    <p class="text-center mx-auto p-0">Consectetur voluptate anim officia sit aute dolore veniam officia magna elit.</p>
-</div>
--->
-      <!--               </div>-->
-      <!--            <div class="container">
-    <div class="row">
-        <div class="col-12 col-lg-8 mb-4">
-            <div class="card card-hover ">
-
-                    <picture class="card-img">
-                        <img class="img-fluid" src="./img/putivoditel/countries.png" alt="">
-                    </picture>
-                <div class="card-body">
-                        <h3>Страны</h3>
-                        <div class="hr"></div>
-                        <p>Adipisicing labore laborum.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card card-hover">
-
-                        <picture class="card-img">
-                            <img class="img-fluid" src="./img/putivoditel/city.jpg" alt="city">
-                        </picture>
-                    <div class="card-body">
-                            <h3>Города</h3>
-                            <div class="hr"></div>
-                            <p>Adipisicing laboreasfas aksdasdkas .</p>
-                    </div>
-                </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card card-hover">
-
-                        <picture class="card-img">
-                            <img class="img-fluid" src="./img/putivoditel/tours.jpg" alt="">
-                        </picture>
-                    <div class="card-body">
-                        <h3>Туры</h3>
-                        <div class="hr"></div>
-                        <p>Adipisicing labore laborum commodo.</p>
-                    </div>
-                </div>
-        </div>
-        <div class="col-12 col-lg-8 mb-4">
-                <div class="card card-hover">
-
-                        <picture class="card-img">
-                            <img class="img-fluid"  src="./img/putivoditel/hotels.jpg" alt="">
-                        </picture>
-                    <div class="card-body">
-                            <h3>Отели</h3>
-                            <div class="hr"></div>
-                            <p>Adipisicing labore laborum commodo consectetur qui minim ut pariatur et aliquip ipsum ullamco tempor.</p>
-                    </div>
-                </div>
-        </div>
-        
-        
-    </div>
-</div>-->
-      <!--        </section>-->
       <section class="section-pt-10 section-mb-20  " id="best-price-avia">
         <div class="container">
           <div class="section-tittle pb-5">
@@ -1078,14 +1014,14 @@
         </div>
         <div class="main_rewies--container  container">
           <div class="owl-carousel owl-theme js-rewies_slider">
-            <div class="card rewies mb-4">
+            <div class="card  rewies mb-4">
               <picture class="card-img ">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-101.jpg" />
                 <img class="" src="./img/home_slider/slider-101.jpg" alt="slide1" />
               </picture>
 
-              <div class="card-body card-shadow">
+              <div class="card-body card-border card-shadow">
                 <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
                 <h5 class="card-title">Иван Иванов</h5>
                 <p class="card-text">
@@ -1102,14 +1038,14 @@
               </div>
             </div>
 
-            <div class="card rewies mb-4">
+            <div class="card  rewies mb-4">
               <picture class="card-img ">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
                 <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
               </picture>
 
-              <div class="card-body card-shadow">
+              <div class="card-body card-border card-shadow">
                 <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
                 <h5 class="card-title">Иван Иванов</h5>
                 <p class="card-text">
@@ -1126,14 +1062,14 @@
               </div>
             </div>
 
-            <div class="card rewies mb-4">
+            <div class="card  rewies mb-4">
               <picture class="card-img ">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
                 <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
               </picture>
 
-              <div class="card-body card-shadow">
+              <div class="card-body card-border card-shadow">
                 <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
                 <h5 class="card-title">Иван Иванов</h5>
                 <p class="card-text">
@@ -1150,14 +1086,14 @@
               </div>
             </div>
 
-            <div class="card rewies mb-4">
+            <div class="card  rewies mb-4">
               <picture class="card-img ">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
                 <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
               </picture>
 
-              <div class="card-body card-shadow">
+              <div class="card-body card-border card-shadow">
                 <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
                 <h5 class="card-title">Иван Иванов</h5>
                 <p class="card-text">
@@ -1174,14 +1110,14 @@
               </div>
             </div>
 
-            <div class="card rewies mb-4">
+            <div class="card  rewies mb-4">
               <picture class="card-img ">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
                 <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
               </picture>
 
-              <div class="card-body card-shadow">
+              <div class="card-body card-border card-shadow">
                 <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
                 <h5 class="card-title">Иван Иванов</h5>
                 <p class="card-text">
@@ -1198,14 +1134,14 @@
               </div>
             </div>
 
-            <div class="card rewies mb-4">
+            <div class="card  rewies mb-4">
               <picture class="card-img ">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
                 <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
               </picture>
 
-              <div class="card-body card-shadow">
+              <div class="card-body card-border card-shadow">
                 <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
                 <h5 class="card-title">Иван Иванов</h5>
                 <p class="card-text">
@@ -1222,14 +1158,14 @@
               </div>
             </div>
 
-            <div class="card rewies mb-4">
+            <div class="card  rewies mb-4">
               <picture class="card-img ">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
                 <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
               </picture>
 
-              <div class="card-body card-shadow">
+              <div class="card-body card-border card-shadow">
                 <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
                 <h5 class="card-title">Иван Иванов</h5>
                 <p class="card-text">
@@ -1246,14 +1182,14 @@
               </div>
             </div>
 
-            <div class="card rewies mb-4">
+            <div class="card  rewies mb-4">
               <picture class="card-img ">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
                 <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
               </picture>
 
-              <div class="card-body card-shadow">
+              <div class="card-body card-border card-shadow">
                 <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
                 <h5 class="card-title">Иван Иванов</h5>
                 <p class="card-text">
@@ -1270,14 +1206,14 @@
               </div>
             </div>
 
-            <div class="card rewies mb-4">
+            <div class="card  rewies mb-4">
               <picture class="card-img ">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
                 <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
               </picture>
 
-              <div class="card-body card-shadow">
+              <div class="card-body card-border card-shadow">
                 <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
                 <h5 class="card-title">Иван Иванов</h5>
                 <p class="card-text">
@@ -1294,14 +1230,14 @@
               </div>
             </div>
 
-            <div class="card rewies mb-4">
+            <div class="card  rewies mb-4">
               <picture class="card-img ">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
                 <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
               </picture>
 
-              <div class="card-body card-shadow">
+              <div class="card-body card-border card-shadow">
                 <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
                 <h5 class="card-title">Иван Иванов</h5>
                 <p class="card-text">
@@ -1318,14 +1254,14 @@
               </div>
             </div>
 
-            <div class="card rewies mb-4">
+            <div class="card  rewies mb-4">
               <picture class="card-img ">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
                 <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
               </picture>
 
-              <div class="card-body card-shadow">
+              <div class="card-body card-border card-shadow">
                 <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
                 <h5 class="card-title">Иван Иванов</h5>
                 <p class="card-text">
@@ -1342,14 +1278,14 @@
               </div>
             </div>
 
-            <div class="card rewies mb-4">
+            <div class="card  rewies mb-4">
               <picture class="card-img ">
                 <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
                 <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
                 <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
               </picture>
 
-              <div class="card-body card-shadow">
+              <div class="card-body card-border card-shadow">
                 <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
                 <h5 class="card-title">Иван Иванов</h5>
                 <p class="card-text">
@@ -1501,7 +1437,7 @@
                     пройдёт гладко и весело!
                   </p>
 
-                  <a href="#" class="btn btn-primary ml-auto">
+                  <a href="#" class="btn btn-secondary ml-auto">
                     <span class="icon icon-book mr-2" style="font-weight: bolder"></span>
                     Подробнее</a
                   >
