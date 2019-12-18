@@ -294,7 +294,7 @@
           <img src="./img/home_slider/slider-101.jpg" class="background-img-fixed" style="z-index: -1;" alt="" />
         </picture>
         <div class="container">
-          <div class="row h-80vh align-items-end pb-5">
+          <div class="row h-80vh align-items-center align-items-lg-end pb-5">
             <div class="col-12 col-md-8">
               <ul class="card-options card-options-hor-static">
                 <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
@@ -317,21 +317,21 @@
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-8">
-                <div class="card card-border mb-3">
+                <div class="card card-border mb-3 sticky-top card-mobile-nav-detail">
                   <div class="card-body p-3">
-                    <nav class="nav bg-white nav-decoration">
+                    <nav class="nav bg-white nav-decoration nav-hor-scroll">
                       <a class="nav-link active " href="#overview">О туре</a>
                       <a class="nav-link " href="#gallery">Галлерея</a>
-                      <a class="nav-link " href="#program">Программа тура по дням</a>
+                      <a class="nav-link " href="#program">Программа</a>
                       <a class="nav-link  " href="#cost">Стоимость</a>
-                      <a class="nav-link  " href="#price">Цены на тур</a>
+                      <a class="nav-link  " href="#price">Цены</a>
                       <a class="nav-link  " href="#review">Отзывы</a>
                     </nav>
                   </div>
                 </div>
 
                 <section id="overview" class="py-4">
-                  <h2 class="h2">О туре</h2>
+                  <h2 class="h2 text-center text-md-left">О туре</h2>
                   <div class="card card-border">
                     <div class="card-body">
                       <p>
@@ -368,53 +368,52 @@
                 </section>
 
                 <section id="gallery" class=" py-4">
-                  <h2 class="h2">Галлерея</h2>
+                  <h2 class="h2 text-center text-md-left">Галлерея</h2>
                   <div class="card card-border">
                     <div class="card-body p-0">
-                      <div class="main_slider-v3--container">
-                        <div class="owl-carousel owl-theme js-main_slider h-100">
-                          <div class="main_slider-v3--item">
-                            <div class="main_slider-v3--item-img">
-                              <picture>
-                                <source
-                                  class="owl-lazy"
-                                  media="(min-width: 650px)"
-                                  srcset="./img/home_slider/slider-101.jpg"
-                                />
-                                <source
-                                  class="owl-lazy"
-                                  media="(min-width: 350px)"
-                                  srcset="./img/home_slider/slider-101.jpg"
-                                />
-                                <img src="./img/home_slider/slider-101.jpg" alt="slide1" />
-                              </picture>
-                            </div>
-                          </div>
+                      <div class="card-body">
+                        <div id="sync1" class="owl-carousel owl-theme js-slider_detail">
+                          <picture>
+                            <img src="./img/home_slider/slider-101.jpg" alt="0" />
+                          </picture>
 
-                          <div class="main_slider-v3--item">
-                            <div class="main_slider-v3--item-img">
-                              <picture>
-                                <source
-                                  class="owl-lazy"
-                                  media="(min-width: 650px)"
-                                  srcset="./img/home_slider/slider-103.jpg"
-                                />
-                                <source
-                                  class="owl-lazy"
-                                  media="(min-width: 350px)"
-                                  srcset="./img/home_slider/slider-103.jpg"
-                                />
-                                <img src="./img/home_slider/slider-103.jpg" alt="slide1" />
-                              </picture>
-                            </div>
-                          </div>
+                          <picture>
+                            <img src="./img/home_slider/slider-101.jpg" alt="1" />
+                          </picture>
+
+                          <picture>
+                            <img src="./img/home_slider/slider-103.jpg" alt="2" />
+                          </picture>
+
+                          <picture>
+                            <img src="./img/home_slider/slider-104.jpg" alt="3" />
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="card-footer">
+                        <div id="sync2" class="owl-carousel owl-theme js-slider_detail-thumbs">
+                          <picture>
+                            <img class="img-thumbnail" src="./img/home_slider/slider-101.jpg" alt="0" />
+                          </picture>
+
+                          <picture>
+                            <img class="img-thumbnail" src="./img/home_slider/slider-101.jpg" alt="1" />
+                          </picture>
+
+                          <picture>
+                            <img class="img-thumbnail" src="./img/home_slider/slider-103.jpg" alt="2" />
+                          </picture>
+
+                          <picture>
+                            <img class="img-thumbnail" src="./img/home_slider/slider-104.jpg" alt="3" />
+                          </picture>
                         </div>
                       </div>
                     </div>
                   </div>
                 </section>
                 <section id="program" class=" py-4">
-                  <h2 class="h2">Программа тура по дням</h2>
+                  <h2 class="h2 text-center text-md-left">Программа тура по дням</h2>
                   <!--<div class="card card-border card-collapse" id="accordionExample">-->
 
                   <!--        <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">-->
@@ -479,14 +478,14 @@
                         aria-labelledby="headingOne"
                         data-parent="#accordionExample"
                       >
-                        <div class="card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                          haven't heard of them accusamus labore sustainable VHS.
+                        <div class="card-body  ">
+                          <img src="./img/home_slider/slider-101.jpg" class="img-fluid mb-4" alt="" />
+
+                          <p class="">
+                            18:00 Выезд из Минска на комфортабельном автобусе. Вы становитесь частью команды #Travellab
+                            и едете в хорошей компании, смотрите отличные фильмы, настраиваясь на незабываемое
+                            путешествие..
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -510,21 +509,65 @@
                         aria-labelledby="headingTwo"
                         data-parent="#accordionExample"
                       >
-                        <div class="card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                          haven't heard of them accusamus labore sustainable VHS.
+                        <div class="card-body ">
+                          <img src="./img/home_slider/slider-101.jpg" class="img-fluid mb-4" alt="" />
+                          <p>
+                            08:00 Прибытие в самый европейский из всех украинских городов - Львов.<br />
+                            <br />
+                            08:00 - 09:00 Свободное время для завтрака.<br />
+                            <br />
+                            09:00 Пешеходно-автобусная экскурсия по историческому центру Львова с местным гидом.<br />
+                            Площадь Рынок с посещением Итальянского дворика, часовня Боимов, Пороховая башня,
+                            Доминиканский костел, Еврейский квартал, Армянский квартал, Оперный театр, пр-т Свободы.
+                            Замковая гора, с которой открывается уникальная панорама города, где вы сможете сделать
+                            множество красивых фото; Собор Святого Юра - шедевр архитектуры барокко. И другие значимые
+                            места средневекового Львова. <br />
+                            <br />
+                            14:00 Заселение в отель.<br />
+                            <br />
+                            16:00 Гастрономическая экскурсия по самым интересным и знаменитым заведениям Львова, которая
+                            включает в себя дегустации.<br />
+                            Начинаем нашу экскурсию с чешской пивоварни. Пивовар откроет Вам все секреты пивоварения, мы
+                            посетим производство, и попробуем только живой пенный напиток: Лагер, Десятка, Пшеничное и
+                            Черное.<br />
+                            <br />
+                            Следующий пункт - это встреча с паном Малодобрым, именном тем, кто осуществлял все наказания
+                            в Средневековом городе! Тут будем пытать свой желудок запахами из лучшего мясного ресторана
+                            Украины и байками в исполнении самого Палача. Если он заметит среди Вас должника - клетка с
+                            пытками Вам обеспечена!<br />
+                            <br />
+                            Есть места для туристов, а есть для местных. Местные во Львове пьют настойки - их 65 видов,
+                            и мы начнем с 3-х лучших видов! Если думаете, что на этом наши встречи-приключения окончены,
+                            то нет! Мы отойдем на "5 Деко" с главным часовщиком и трубачом, попробуем пользоваться 3-х
+                            метровым гуцульским телефоном и услышим невероятные звуки в исполнении местных музыкантов.
+                            Дальше мы попадаем в еврейский квартал: в ресторанах надо торговаться, трубочист не чистит
+                            трубы, а только наливает, дракон дышит огнем, за поворотом стоит Мазох, и экскурсовод уже
+                            рассказывает про невероятного вкуса шоколад - одно мгновение, и Вы в сердце Львова на
+                            Площади Рынок!<br />
+                            <br />
+                            Вы готовы к приключениям, а у гида остались рекомендации для Вашего вечера - хотите в
+                            тюрьму, вкусно кушать, танцевать и медовуху - Вам в Крыивку, душа желает изысканности и шика
+                            - да Вы – масонское ложе! А как туда попасть и какие пароли надо знать - эта информация
+                            только для наших туристов, гиды с удовольствием поделятся с Вами!<br />
+                            <br />
+                            Внимание! Это не алко-тур, это лучшая экскурсия, которую проводят во Львове! Задача местных
+                            гидов - создать настроение на вечер, показать разнообразие вечерней львовской жизни,
+                            рассказать только самое интересное, что можно узнать о Львове! И помните, кто не попробовал
+                            Львов на вкус, тот там не был! (Длительность 3 часа. Доплата. В стоимость входит: местное
+                            крафтовое пиво, настойки и закуски).<br />
+                            <br />
+                            Свободное время. Можете посетить знаменитые бары и кафе Львова.
+                            <a href="../12-zavedenij-lvova?utm_source=tour-vo-lvov" target="_blank"
+                              >Путеводитель по кафе Львова.</a
+                            >
+                          </p>
                         </div>
                       </div>
                     </div>
                     <div class="card card-border card-collapse">
                       <div class="card-header" id="heading3">
                         <h5 class="mb-0">
-                          День 2
+                          День 3
                         </h5>
                         <button
                           class="btn btn-link collapsed dropdown-toggle"
@@ -536,109 +579,250 @@
                         ></button>
                       </div>
                       <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
-                        <div class="card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-                          labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                          Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                          haven't heard of them accusamus labore sustainable VHS.
+                        <div class="card-body  ">
+                          <div>
+                            <img src="./img/home_slider/slider-101.jpg" class="img-fluid mb-4" alt="" />
+                            <p>
+                              08:00 Прибытие в самый европейский из всех украинских городов - Львов.<br />
+                              <br />
+                              08:00 - 09:00 Свободное время для завтрака.<br />
+                              <br />
+                              09:00 Пешеходно-автобусная экскурсия по историческому центру Львова с местным гидом.<br />
+                              Площадь Рынок с посещением Итальянского дворика, часовня Боимов, Пороховая башня,
+                              Доминиканский костел, Еврейский квартал, Армянский квартал, Оперный театр, пр-т Свободы.
+                              Замковая гора, с которой открывается уникальная панорама города, где вы сможете сделать
+                              множество красивых фото; Собор Святого Юра - шедевр архитектуры барокко. И другие значимые
+                              места средневекового Львова. <br />
+                              <br />
+                              14:00 Заселение в отель.<br />
+                              <br />
+                              16:00 Гастрономическая экскурсия по самым интересным и знаменитым заведениям Львова,
+                              которая включает в себя дегустации.<br />
+                              Начинаем нашу экскурсию с чешской пивоварни. Пивовар откроет Вам все секреты пивоварения,
+                              мы посетим производство, и попробуем только живой пенный напиток: Лагер, Десятка,
+                              Пшеничное и Черное.<br />
+                              <br />
+                              Следующий пункт - это встреча с паном Малодобрым, именном тем, кто осуществлял все
+                              наказания в Средневековом городе! Тут будем пытать свой желудок запахами из лучшего
+                              мясного ресторана Украины и байками в исполнении самого Палача. Если он заметит среди Вас
+                              должника - клетка с пытками Вам обеспечена!<br />
+                              <br />
+                              Есть места для туристов, а есть для местных. Местные во Львове пьют настойки - их 65
+                              видов, и мы начнем с 3-х лучших видов! Если думаете, что на этом наши встречи-приключения
+                              окончены, то нет! Мы отойдем на "5 Деко" с главным часовщиком и трубачом, попробуем
+                              пользоваться 3-х метровым гуцульским телефоном и услышим невероятные звуки в исполнении
+                              местных музыкантов. Дальше мы попадаем в еврейский квартал: в ресторанах надо торговаться,
+                              трубочист не чистит трубы, а только наливает, дракон дышит огнем, за поворотом стоит
+                              Мазох, и экскурсовод уже рассказывает про невероятного вкуса шоколад - одно мгновение, и
+                              Вы в сердце Львова на Площади Рынок!<br />
+                              <br />
+                              Вы готовы к приключениям, а у гида остались рекомендации для Вашего вечера - хотите в
+                              тюрьму, вкусно кушать, танцевать и медовуху - Вам в Крыивку, душа желает изысканности и
+                              шика - да Вы – масонское ложе! А как туда попасть и какие пароли надо знать - эта
+                              информация только для наших туристов, гиды с удовольствием поделятся с Вами!<br />
+                              <br />
+                              Внимание! Это не алко-тур, это лучшая экскурсия, которую проводят во Львове! Задача
+                              местных гидов - создать настроение на вечер, показать разнообразие вечерней львовской
+                              жизни, рассказать только самое интересное, что можно узнать о Львове! И помните, кто не
+                              попробовал Львов на вкус, тот там не был! (Длительность 3 часа. Доплата. В стоимость
+                              входит: местное крафтовое пиво, настойки и закуски).<br />
+                              <br />
+                              Свободное время. Можете посетить знаменитые бары и кафе Львова.
+                              <a href="../12-zavedenij-lvova?utm_source=tour-vo-lvov" target="_blank"
+                                >Путеводитель по кафе Львова.</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card card-border card-collapse">
+                      <div class="card-header" id="heading4">
+                        <h5 class="mb-0">
+                          День 4
+                        </h5>
+                        <button
+                          class="btn btn-link collapsed dropdown-toggle"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapse4"
+                          aria-expanded="false"
+                          aria-controls="collapse4"
+                        ></button>
+                      </div>
+                      <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                        <div class="card-body ">
+                          <div>
+                            <img src="./img/home_slider/slider-101.jpg" class="img-fluid mb-4" alt="" />
+                            <p>
+                              08:00 Прибытие в самый европейский из всех украинских городов - Львов.<br />
+                              <br />
+                              08:00 - 09:00 Свободное время для завтрака.<br />
+                              <br />
+                              09:00 Пешеходно-автобусная экскурсия по историческому центру Львова с местным гидом.<br />
+                              Площадь Рынок с посещением Итальянского дворика, часовня Боимов, Пороховая башня,
+                              Доминиканский костел, Еврейский квартал, Армянский квартал, Оперный театр, пр-т Свободы.
+                              Замковая гора, с которой открывается уникальная панорама города, где вы сможете сделать
+                              множество красивых фото; Собор Святого Юра - шедевр архитектуры барокко. И другие значимые
+                              места средневекового Львова. <br />
+                              <br />
+                              14:00 Заселение в отель.<br />
+                              <br />
+                              16:00 Гастрономическая экскурсия по самым интересным и знаменитым заведениям Львова,
+                              которая включает в себя дегустации.<br />
+                              Начинаем нашу экскурсию с чешской пивоварни. Пивовар откроет Вам все секреты пивоварения,
+                              мы посетим производство, и попробуем только живой пенный напиток: Лагер, Десятка,
+                              Пшеничное и Черное.<br />
+                              <br />
+                              Следующий пункт - это встреча с паном Малодобрым, именном тем, кто осуществлял все
+                              наказания в Средневековом городе! Тут будем пытать свой желудок запахами из лучшего
+                              мясного ресторана Украины и байками в исполнении самого Палача. Если он заметит среди Вас
+                              должника - клетка с пытками Вам обеспечена!<br />
+                              <br />
+                              Есть места для туристов, а есть для местных. Местные во Львове пьют настойки - их 65
+                              видов, и мы начнем с 3-х лучших видов! Если думаете, что на этом наши встречи-приключения
+                              окончены, то нет! Мы отойдем на "5 Деко" с главным часовщиком и трубачом, попробуем
+                              пользоваться 3-х метровым гуцульским телефоном и услышим невероятные звуки в исполнении
+                              местных музыкантов. Дальше мы попадаем в еврейский квартал: в ресторанах надо торговаться,
+                              трубочист не чистит трубы, а только наливает, дракон дышит огнем, за поворотом стоит
+                              Мазох, и экскурсовод уже рассказывает про невероятного вкуса шоколад - одно мгновение, и
+                              Вы в сердце Львова на Площади Рынок!<br />
+                              <br />
+                              Вы готовы к приключениям, а у гида остались рекомендации для Вашего вечера - хотите в
+                              тюрьму, вкусно кушать, танцевать и медовуху - Вам в Крыивку, душа желает изысканности и
+                              шика - да Вы – масонское ложе! А как туда попасть и какие пароли надо знать - эта
+                              информация только для наших туристов, гиды с удовольствием поделятся с Вами!<br />
+                              <br />
+                              Внимание! Это не алко-тур, это лучшая экскурсия, которую проводят во Львове! Задача
+                              местных гидов - создать настроение на вечер, показать разнообразие вечерней львовской
+                              жизни, рассказать только самое интересное, что можно узнать о Львове! И помните, кто не
+                              попробовал Львов на вкус, тот там не был! (Длительность 3 часа. Доплата. В стоимость
+                              входит: местное крафтовое пиво, настойки и закуски).<br />
+                              <br />
+                              Свободное время. Можете посетить знаменитые бары и кафе Львова.
+                              <a href="../12-zavedenij-lvova?utm_source=tour-vo-lvov" target="_blank"
+                                >Путеводитель по кафе Львова.</a
+                              >
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </section>
                 <section id="cost" class=" py-4">
-                  <h2 class="h2">Стоимость</h2>
+                  <h2 class="h2 text-center text-md-left">Стоимость</h2>
+
                   <div class="card card-border mb-3">
-                    <div class="card-header">
-                      <h4 class="my-2 text-success">В стоймость входит</h4>
+                    <div class="card-header d-flex justify-content-between border-0 ">
+                      <h4 class="my-2 text-success">В стоимость входит</h4>
+                      <button
+                        class="btn btn-link dropdown-toggle collapsed p-0"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#include_true"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      ></button>
                     </div>
-                    <div class="card-body">
-                      <ul class="list list-icon include">
-                        <li class="list-item">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
-                          voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
-                          expedita. Dolor aliquid rerum recusandae excepturi.
-                        </li>
-                        <li class="list-item">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
-                          voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
-                          expedita. Dolor aliquid rerum recusandae excepturi.
-                        </li>
-                        <li class="list-item">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
-                          voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
-                          expedita. Dolor aliquid rerum recusandae excepturi.
-                        </li>
-                        <li class="list-item">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
-                          voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
-                          expedita. Dolor aliquid rerum recusandae excepturi.
-                        </li>
-                        <li class="list-item">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
-                          voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
-                          expedita. Dolor aliquid rerum recusandae excepturi.
-                        </li>
-                      </ul>
+                    <div class="collapse" id="include_true">
+                      <div class="card-body ">
+                        <ul class="list list-icon include">
+                          <li class="list-item">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
+                            voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
+                            expedita. Dolor aliquid rerum recusandae excepturi.
+                          </li>
+
+                          <li class="list-item">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
+                            voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
+                            expedita. Dolor aliquid rerum recusandae excepturi.
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
+
                   <div class="card card-border mb-3">
-                    <div class="card-header">
-                      <h4 class="my-2 text-danger">В стоймость не входит</h4>
+                    <div class="card-header d-flex justify-content-between border-0 ">
+                      <h4 class="my-2 text-danger">В стоимость не входит</h4>
+                      <button
+                        class="btn btn-link dropdown-toggle collapsed p-0"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#include_false"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      ></button>
                     </div>
-                    <div class="card-body">
-                      <ul class="list list-icon not-include">
-                        <li class="list-item">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
-                          voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
-                          expedita. Dolor aliquid rerum recusandae excepturi.
-                        </li>
-                        <li class="list-item">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
-                          voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
-                          expedita. Dolor aliquid rerum recusandae excepturi.
-                        </li>
-                        <li class="list-item">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
-                          voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
-                          expedita. Dolor aliquid rerum recusandae excepturi.
-                        </li>
-                        <li class="list-item">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
-                          voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
-                          expedita. Dolor aliquid rerum recusandae excepturi.
-                        </li>
-                        <li class="list-item">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
-                          voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
-                          expedita. Dolor aliquid rerum recusandae excepturi.
-                        </li>
-                      </ul>
+                    <div class="collapse" id="include_false">
+                      <div class="card-body ">
+                        <ul class="list list-icon not-include">
+                          <li class="list-item">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
+                            voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
+                            expedita. Dolor aliquid rerum recusandae excepturi.
+                          </li>
+
+                          <li class="list-item">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
+                            voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
+                            expedita. Dolor aliquid rerum recusandae excepturi.
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </section>
                 <section id="price" class="py-4">
-                  <h2 class="h2">Цены</h2>
+                  <h2 class="h2 text-center text-md-left">Цены</h2>
+
+                  <div class="sort-filter mb-3">
+                    <div class="form-group d-flex align-items-center mr-3 ml-lg-auto mb-0">
+                      <label for="">по цене:</label>
+                      <button class="btn btn-sm outline-gray p-0 ml-1">
+                        <span class="icon-sort-amount-asc"></span>
+                      </button>
+                    </div>
+                    <div class="form-group d-flex align-items-center mb-0">
+                      <label for="">по дате:</label>
+                      <button class="btn btn-sm outline-gray p-0 ml-1">
+                        <span class="icon-sort-amount-asc"></span>
+                      </button>
+                    </div>
+
+                    <button
+                      class=" btn outline-gray navbar-toggler p-0 ml-auto mx-0 d-lg-none"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarTogglerDemo02"
+                      aria-controls="navbarTogglerDemo02"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="icon  icon-equalizer"></span>
+                    </button>
+                  </div>
 
                   <div class="card card-border mb-4">
                     <div class="card-body ">
                       <div class="card-row">
                         <div class="card-col">
                           понедельник <br />
-                          <b class="h4 mb-0">21.02.2019</b>
+                          <b class="h5 mb-0">21.02.2019</b>
                         </div>
-                        <div class="btn outline-gray card-border p-0 rounded-circle my-auto" style="line-height: 1 ">
-                          <span class="icon-arrow-right2"></span>
+                        <div class="card-col">
+                          <div class="btn outline-gray card-border p-0 rounded-circle my-auto " style="line-height: 1 ">
+                            <span class="icon-arrow-right2"></span>
+                          </div>
                         </div>
                         <div class="card-col">
                           вторник <br />
-                          <b class="h4 mb-0">29.02.2019</b>
+                          <b class="h5 mb-0">29.02.2019</b>
                         </div>
                         <div class="card-col">
-                          <div class="h4 mb-0 d-flex align-items-center">
+                          <div class="h5 mb-0 d-flex align-items-center">
                             <span class="mr-1">+</span>
                             <span class="text-center d-flex flex-column justify-content-center"
                               ><b class="text-secondary" style="line-height: 1">190 usd</b>
@@ -653,16 +837,14 @@
                           </span>
                         </div>
                         <div class="card-col">
-                          <button class="btn btn-secondary">
-                            <span class="icon-checkmark mr-2"></span> Бронировать
-                          </button>
+                          <button class="btn btn-secondary"><span class="icon-cart mr-2"></span>Бронировать</button>
                         </div>
                       </div>
                     </div>
 
                     <div class="card-footer">
-                      <div class="card-row justify-content-start">
-                        <div class="card-col mr-5">
+                      <div class="card-row  justify-content-sm-start">
+                        <div class="card-col mr-3 ml-0">
                           <div><span class="icon icon-user mr-2"></span>5 человек</div>
                         </div>
                         <div class="card-col">
@@ -671,22 +853,25 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="card card-border mb-4">
                     <div class="card-body ">
                       <div class="card-row">
                         <div class="card-col">
                           понедельник <br />
-                          <b class="h4 mb-0">21.02.2019</b>
+                          <b class="h5 mb-0">21.02.2019</b>
                         </div>
-                        <div class="btn outline-gray card-border p-0 rounded-circle my-auto" style="line-height: 1 ">
-                          <span class="icon-arrow-right2"></span>
+                        <div class="card-col">
+                          <div class="btn outline-gray card-border p-0 rounded-circle my-auto " style="line-height: 1 ">
+                            <span class="icon-arrow-right2"></span>
+                          </div>
                         </div>
                         <div class="card-col">
                           вторник <br />
-                          <b class="h4 mb-0">29.02.2019</b>
+                          <b class="h5 mb-0">29.02.2019</b>
                         </div>
                         <div class="card-col">
-                          <div class="h4 mb-0 d-flex align-items-center">
+                          <div class="h5 mb-0 d-flex align-items-center">
                             <span class="mr-1">+</span>
                             <span class="text-center d-flex flex-column justify-content-center"
                               ><b class="text-secondary" style="line-height: 1">190 usd</b>
@@ -701,16 +886,14 @@
                           </span>
                         </div>
                         <div class="card-col">
-                          <button class="btn btn-secondary">
-                            <span class="icon-checkmark mr-2"></span>Бронировать
-                          </button>
+                          <button class="btn btn-secondary"><span class="icon-cart mr-2"></span>Бронировать</button>
                         </div>
                       </div>
                     </div>
 
                     <div class="card-footer">
-                      <div class="card-row justify-content-start">
-                        <div class="card-col mr-5">
+                      <div class="card-row  justify-content-sm-start">
+                        <div class="card-col mr-3 ml-0">
                           <div><span class="icon icon-user mr-2"></span>5 человек</div>
                         </div>
                         <div class="card-col">
@@ -719,22 +902,25 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="card card-border mb-4">
                     <div class="card-body ">
                       <div class="card-row">
                         <div class="card-col">
                           понедельник <br />
-                          <b class="h4 mb-0">21.02.2019</b>
+                          <b class="h5 mb-0">21.02.2019</b>
                         </div>
-                        <div class="btn outline-gray card-border p-0 rounded-circle my-auto" style="line-height: 1 ">
-                          <span class="icon-arrow-right2"></span>
+                        <div class="card-col">
+                          <div class="btn outline-gray card-border p-0 rounded-circle my-auto " style="line-height: 1 ">
+                            <span class="icon-arrow-right2"></span>
+                          </div>
                         </div>
                         <div class="card-col">
                           вторник <br />
-                          <b class="h4 mb-0">29.02.2019</b>
+                          <b class="h5 mb-0">29.02.2019</b>
                         </div>
                         <div class="card-col">
-                          <div class="h4 mb-0 d-flex align-items-center">
+                          <div class="h5 mb-0 d-flex align-items-center">
                             <span class="mr-1">+</span>
                             <span class="text-center d-flex flex-column justify-content-center"
                               ><b class="text-secondary" style="line-height: 1">190 usd</b>
@@ -749,16 +935,112 @@
                           </span>
                         </div>
                         <div class="card-col">
-                          <button class="btn btn-secondary">
-                            <span class="icon-checkmark mr-2"></span>Бронировать
-                          </button>
+                          <button class="btn btn-secondary"><span class="icon-cart mr-2"></span>Бронировать</button>
                         </div>
                       </div>
                     </div>
 
                     <div class="card-footer">
-                      <div class="card-row justify-content-start">
-                        <div class="card-col mr-5">
+                      <div class="card-row  justify-content-sm-start">
+                        <div class="card-col mr-3 ml-0">
+                          <div><span class="icon icon-user mr-2"></span>5 человек</div>
+                        </div>
+                        <div class="card-col">
+                          <div><span class="icon-clock mr-2"></span>7 дней</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card card-border mb-4">
+                    <div class="card-body ">
+                      <div class="card-row">
+                        <div class="card-col">
+                          понедельник <br />
+                          <b class="h5 mb-0">21.02.2019</b>
+                        </div>
+                        <div class="card-col">
+                          <div class="btn outline-gray card-border p-0 rounded-circle my-auto " style="line-height: 1 ">
+                            <span class="icon-arrow-right2"></span>
+                          </div>
+                        </div>
+                        <div class="card-col">
+                          вторник <br />
+                          <b class="h5 mb-0">29.02.2019</b>
+                        </div>
+                        <div class="card-col">
+                          <div class="h5 mb-0 d-flex align-items-center">
+                            <span class="mr-1">+</span>
+                            <span class="text-center d-flex flex-column justify-content-center"
+                              ><b class="text-secondary" style="line-height: 1">190 usd</b>
+                              <small style="line-height: 1">120 byn</small></span
+                            >
+                          </div>
+                        </div>
+                        <div class="card-col text-danger" style="line-height: 1">
+                          <small>скидка</small>
+                          <span>
+                            10 usd
+                          </span>
+                        </div>
+                        <div class="card-col">
+                          <button class="btn btn-secondary"><span class="icon-cart mr-2"></span>Бронировать</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-footer">
+                      <div class="card-row  justify-content-sm-start">
+                        <div class="card-col mr-3 ml-0">
+                          <div><span class="icon icon-user mr-2"></span>5 человек</div>
+                        </div>
+                        <div class="card-col">
+                          <div><span class="icon-clock mr-2"></span>7 дней</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card card-border mb-4">
+                    <div class="card-body ">
+                      <div class="card-row">
+                        <div class="card-col">
+                          понедельник <br />
+                          <b class="h5 mb-0">21.02.2019</b>
+                        </div>
+                        <div class="card-col">
+                          <div class="btn outline-gray card-border p-0 rounded-circle my-auto " style="line-height: 1 ">
+                            <span class="icon-arrow-right2"></span>
+                          </div>
+                        </div>
+                        <div class="card-col">
+                          вторник <br />
+                          <b class="h5 mb-0">29.02.2019</b>
+                        </div>
+                        <div class="card-col">
+                          <div class="h5 mb-0 d-flex align-items-center">
+                            <span class="mr-1">+</span>
+                            <span class="text-center d-flex flex-column justify-content-center"
+                              ><b class="text-secondary" style="line-height: 1">190 usd</b>
+                              <small style="line-height: 1">120 byn</small></span
+                            >
+                          </div>
+                        </div>
+                        <div class="card-col text-danger" style="line-height: 1">
+                          <small>скидка</small>
+                          <span>
+                            10 usd
+                          </span>
+                        </div>
+                        <div class="card-col">
+                          <button class="btn btn-secondary"><span class="icon-cart mr-2"></span>Бронировать</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-footer">
+                      <div class="card-row  justify-content-sm-start">
+                        <div class="card-col mr-3 ml-0">
                           <div><span class="icon icon-user mr-2"></span>5 человек</div>
                         </div>
                         <div class="card-col">
@@ -769,15 +1051,99 @@
                   </div>
                 </section>
                 <section id="review" class="py-4">
-                  <h2 class="h2">Отзывы</h2>
-                  <div class="card card-border">
+                  <h2 class="h2 text-center text-md-left">Отзывы</h2>
+                  <button class="btn btn-secondary mx-auto ml-md-auto mb-4">
+                    <span class="icon-bubbles4 mr-2"></span>Добавить отзыв
+                  </button>
+
+                  <div class="card card-border mb-4">
                     <div class="card-body">
-                      <div class="d-flex">
-                        <div class="w-50 d-flex align-items-center justify-content-center flex-column">
+                      <div class="d-flex flex-wrap">
+                        <div class="d-flex align-items-center justify-content-center flex-column fb-20 ">
                           <img src="./img/reviewer-4.png" alt="" width="75px" height="75px" class="rounded-circle" />
                           <div class="mt-2">Иванов Иван</div>
                         </div>
-                        <div>
+                        <div class="fb-80 p-3 mt-3 mt-md-0 bg-light rounded">
+                          <p><span class="icon icon-calendar mr-1"></span>21.02.2344</p>
+                          <hr />
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
+                            voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
+                            expedita. Dolor aliquid rerum recusandae excepturi.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card card-border mb-4">
+                    <div class="card-body">
+                      <div class="d-flex flex-wrap">
+                        <div class="d-flex align-items-center justify-content-center flex-column fb-20 ">
+                          <img src="./img/reviewer-4.png" alt="" width="75px" height="75px" class="rounded-circle" />
+                          <div class="mt-2">Иванов Иван</div>
+                        </div>
+                        <div class="fb-80 p-3 mt-3 mt-md-0 bg-light rounded">
+                          <p><span class="icon icon-calendar mr-1"></span>21.02.2344</p>
+                          <hr />
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
+                            voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
+                            expedita. Dolor aliquid rerum recusandae excepturi.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card card-border mb-4">
+                    <div class="card-body">
+                      <div class="d-flex flex-wrap">
+                        <div class="d-flex align-items-center justify-content-center flex-column fb-20 ">
+                          <img src="./img/reviewer-4.png" alt="" width="75px" height="75px" class="rounded-circle" />
+                          <div class="mt-2">Иванов Иван</div>
+                        </div>
+                        <div class="fb-80 p-3 mt-3 mt-md-0 bg-light rounded">
+                          <p><span class="icon icon-calendar mr-1"></span>21.02.2344</p>
+                          <hr />
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
+                            voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
+                            expedita. Dolor aliquid rerum recusandae excepturi.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card card-border mb-4">
+                    <div class="card-body">
+                      <div class="d-flex flex-wrap">
+                        <div class="d-flex align-items-center justify-content-center flex-column fb-20 ">
+                          <img src="./img/reviewer-4.png" alt="" width="75px" height="75px" class="rounded-circle" />
+                          <div class="mt-2">Иванов Иван</div>
+                        </div>
+                        <div class="fb-80 p-3 mt-3 mt-md-0 bg-light rounded">
+                          <p><span class="icon icon-calendar mr-1"></span>21.02.2344</p>
+                          <hr />
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro
+                            voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo
+                            expedita. Dolor aliquid rerum recusandae excepturi.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card card-border mb-4">
+                    <div class="card-body">
+                      <div class="d-flex flex-wrap">
+                        <div class="d-flex align-items-center justify-content-center flex-column fb-20 ">
+                          <img src="./img/reviewer-4.png" alt="" width="75px" height="75px" class="rounded-circle" />
+                          <div class="mt-2">Иванов Иван</div>
+                        </div>
+                        <div class="fb-80 p-3 mt-3 mt-md-0 bg-light rounded">
                           <p><span class="icon icon-calendar mr-1"></span>21.02.2344</p>
                           <hr />
                           <p>
@@ -791,7 +1157,7 @@
                   </div>
                 </section>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-12 d-none d-md-block">
                 <div class="sticky-top" style="top:80px">
                   <div class="card card-border mb-4">
                     <div class="card-header">
@@ -807,8 +1173,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card card-border ">
-                    <div class="card-header">
+                  <div class="card card-border w-100">
+                    <div class="card-header d-none d-lg-block">
                       <h5 class="mb-0">Параметры поиска</h5>
                     </div>
                     <div class="card-body">
@@ -820,7 +1186,7 @@
                         <label for=""><span class="icon icon-user mr-1"></span>Пассажиров</label>
                         <input type="text" class="form-control" placeholder="leroaum text giv" />
                       </div>
-                      <div class="btn btn-secondary mx-auto">
+                      <div class="btn btn-secondary mx-auto mt-3">
                         <span class="icon-magnifying-glass mr-2"></span> Искать
                       </div>
                     </div>
@@ -934,6 +1300,16 @@
         </div>
       </div>
     </footer>
+    <ul class="bg-secondary mb-0">
+      <li><a href="/index.html">index</a></li>
+      <li><a href="/tours.html">tours</a></li>
+      <li><a href="/tours-detail.html">tours-detail</a></li>
+      <li><a href="/auth.html">auth</a></li>
+      <li><a href="/voucher.html">voucher</a></li>
+      <li><a href="/voucher-booking-list.html">voucher-list</a></li>
+      <li><a href="/voucher-booking-favorites.html">voucher-favorites</a></li>
+      <li><a href="/news.html"></a>news</li>
+    </ul>
     <div
       class="modal fade"
       id="exampleModal"
@@ -974,6 +1350,37 @@
               </div>
             </form>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="collapse navbar-collapse drawer" id="navbarTogglerDemo02">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="icon icon-close-button"></span>
+      </button>
+
+      <div class="card card-border w-100">
+        <div class="card-header d-none d-lg-block">
+          <h5 class="mb-0">Параметры поиска</h5>
+        </div>
+        <div class="card-body">
+          <div class="form-group mr-2">
+            <label for=""><span class="icon icon-calendar mr-1"></span>Когда</label>
+            <input type="text" class="form-control" placeholder="leroaum text giv" />
+          </div>
+          <div class="form-group">
+            <label for=""><span class="icon icon-user mr-1"></span>Пассажиров</label>
+            <input type="text" class="form-control" placeholder="leroaum text giv" />
+          </div>
+          <div class="btn btn-secondary mx-auto mt-3"><span class="icon-magnifying-glass mr-2"></span> Искать</div>
         </div>
       </div>
     </div>
