@@ -288,127 +288,198 @@
       </div>
     </header>
 
-    <main
-      class="section-py-10 h-50vh"
-      style="background: url(./img/home_slider/slider-104.jpg); background-size: cover "
-    >
+    <main class="section-py-10">
       <div class="container">
-        <div class="row align-items-center flex-column ">
-          <div class="col-12 col-sm-6 col-md-5">
-            <!--                <h1 class="h1 text-center mb-4">-->
-            <!--                    Регистрация-->
-            <!--                </h1>-->
-
-            <div class="card card-shadow card-border " id="auth-tabs">
-              <div class="card-body p-md-5">
-                <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link active h4"
-                      id="pills-home-tab"
-                      data-toggle="pill"
-                      href="#pills-home"
-                      role="tab"
-                      aria-controls="pills-home"
-                      aria-selected="true"
-                      >Регистрация</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link h4"
-                      id="pills-profile-tab"
-                      data-toggle="pill"
-                      href="#pills-profile"
-                      role="tab"
-                      aria-controls="pills-profile"
-                      aria-selected="false"
-                      >Авторизация</a
-                    >
-                  </li>
-                </ul>
-                <div class="hr"></div>
-                <div class="tab-content mt-4 " id="pills-tabContent">
-                  <div
-                    class="tab-pane fade show active"
-                    id="pills-home"
-                    role="tabpanel"
-                    aria-labelledby="pills-home-tab"
-                  >
-                    <form action="">
-                      <div class="form-group">
-                        <label for="">Email <sup class="text-danger">*</sup></label
-                        ><input type="email" class="form-control" placeholder="email@mail.com" />
-                      </div>
-                      <div class="form-group">
-                        <label for="">Телефон <sup class="text-danger">*</sup></label
-                        ><input type="tel" class="form-control" placeholder="+375(44) xxx-xx-xx" />
-                      </div>
-                      <div class="form-group">
-                        <label for="">Пароль <sup class="text-danger">*</sup></label
-                        ><input type="password" class="form-control" placeholder="xxx xxx xx" />
-                      </div>
-                      <div class="form-group">
-                        <label for="">Подтверждение пароля <sup class="text-danger">*</sup></label
-                        ><input type="text" class="form-control" />
-                      </div>
-                      <div class="custom-control custom-switch d-flex justify-content-center align-items-center">
-                        <input type="checkbox" class="custom-control-input" id="customSwitch1" />
-                        <label class="custom-control-label pt-1" for="customSwitch1"> Я агент</label>
-                      </div>
-
-                      <div class="form-group">
-                        <label for="">УНП<sup class="text-danger"> *</sup></label
-                        ><input type="text" class="form-control" />
-                      </div>
-                      <button class="btn btn-secondary mx-auto mt-4">
-                        <span class="icon-user-check mr-2"></span>Регистрация
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="d-flex justify-content-between">
+              <h3 class="h3">Заказ №123</h3>
+              <div class="d-flex align-items-center">
+                <button
+                  type="button"
+                  class="btn bg-danger p-0 text-white"
+                  data-toggle="modal"
+                  data-target="#deleteOffer"
+                >
+                  <span class="icon-bin"></span>
+                </button>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="deleteOffer"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog " role="document">
+                  <div class="modal-content">
+                    <div class="modal-header border-0 pb-0">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                       </button>
-                      <hr />
-                      <h6 class="text-center mb-3">Через соцальные сети</h6>
-                      <div class="d-flex justify-content-center  mx-auto flex-wrap w-75">
-                        <button class="btn btn-social p-0 vk "><span class="icon-vk"></span></button>
-                        <!--    <button class="btn btn-social p-0 tel "><span class="icon-telegram"></span></button>-->
-                        <button class="btn btn-social p-0 fb "><span class="icon-facebook"></span></button>
-                        <!--    <button class="btn btn-social p-0 inst "><span class="icon-instagram"></span></button>-->
-                        <!--    <button class="btn btn-social p-0 vb "><span class="icon-whatsapp"></span></button>-->
-                        <button class="btn btn-social p-0 tw "><span class="icon-twitter"></span></button>
-                        <button class="btn btn-social p-0 goggle "><span class="icon-google"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <h4 class="text-center h4">Вы уверены что хотите отменить бронирование?</h4>
+                      <div class="bg-light p-3">
+                        <h5>Правила отмены:</h5>
+                        <ul>
+                          <li>lorem Ipsum is simply dummy text of the printing and typesetting industry. Lore</li>
+                          <li>English. Many desktop publishing packages and web page editors</li>
+                          <li>There are many variations of passages of Lorem Ipsum available, bu</li>
+                          <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots</li>
+                        </ul>
                       </div>
-                    </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Да</button>
+                      <button type="button" class="btn btn-primary">нет</button>
+                    </div>
                   </div>
-                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <form action="">
-                      <div class="form-group">
-                        <label for="">Логин или email <sup class="text-danger">*</sup></label
-                        ><input type="email" class="form-control" placeholder="email@mail.com" />
-                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm col-md-6">
+            <div class="card card-border">
+              <div class="card-header bg-light">
+                <h5 class="mb-0">Краков* - Вена - Венский лес* (Хайлигенкройц, Баден, замок Лихтенштейн)</h5>
+              </div>
+              <div class="card-body ">
+                <div class="card-row">
+                  <div class="card-col">
+                    понедельник <br />
+                    <b class="h5 mb-0">21.02.2019</b>
+                  </div>
+                  <div class="card-col">
+                    <div
+                      class="btn outline-gray card-border p-0 rounded-circle my-auto flex-column"
+                      style="line-height: 1; "
+                    >
+                      <span>7</span>
+                      <small>дней</small>
+                    </div>
+                  </div>
+                  <div class="card-col">
+                    вторник <br />
+                    <b class="h5 mb-0">29.02.2019</b>
+                  </div>
+                  <div class="card-col">
+                    <div class="h5 mb-0 d-flex align-items-center">
+                      <span class="mr-1">+</span>
+                      <span class="text-center d-flex flex-column justify-content-center"
+                        ><b class="text-secondary" style="line-height: 1">190 usd</b>
+                        <small style="line-height: 1">120 byn</small></span
+                      >
+                    </div>
+                  </div>
+                  <div class="card-col text-danger" style="line-height: 1">
+                    <small>скидка</small>
+                    <span>
+                      10 usd
+                    </span>
+                  </div>
+                </div>
+              </div>
 
-                      <div class="form-group">
-                        <label for="">Пароль <sup class="text-danger">*</sup></label
-                        ><input type="password" class="form-control" placeholder="xxx xxx xx" />
-                      </div>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="form-group d-flex align-items-center justify-content-center mb-0">
-                          <input type="checkbox" class=" mr-2" /><label for="" class="m-0"> Запомнить меня </label>
-                        </div>
-                        <a href="#">Забыли пароль?</a>
-                      </div>
-                      <button class="btn btn-secondary mx-auto mt-3">
-                        <span class="icon-user-check mr-2"></span> Авторизация
-                      </button>
-                      <hr />
-                      <h6 class="text-center mb-3">Через соцальные сети</h6>
-                      <div class="d-flex justify-content-center  mx-auto flex-wrap w-75">
-                        <button class="btn btn-social p-0 vk "><span class="icon-vk"></span></button>
-                        <!--    <button class="btn btn-social p-0 tel "><span class="icon-telegram"></span></button>-->
-                        <button class="btn btn-social p-0 fb "><span class="icon-facebook"></span></button>
-                        <!--    <button class="btn btn-social p-0 inst "><span class="icon-instagram"></span></button>-->
-                        <!--    <button class="btn btn-social p-0 vb "><span class="icon-whatsapp"></span></button>-->
-                        <button class="btn btn-social p-0 tw "><span class="icon-twitter"></span></button>
-                        <button class="btn btn-social p-0 goggle "><span class="icon-google"></span></button>
-                      </div>
-                    </form>
+              <div class="card-footer">
+                <div class="card-row  justify-content-sm-start">
+                  <div class="card-col mr-4 d-flex  flex-column flex-md-row">
+                    <div class="d-flex align-items-center my-2 my-md-0 mr-4">
+                      <span class="icon icon-couple mr-1"></span>
+                      <span class="mr-1">Взрослых:</span> 1
+                    </div>
+                    <div class="d-flex align-items-center my-2 my-md-0">
+                      <span class="icon icon-sister-and-brother mr-1"></span>
+                      <span class="mr-1">детей:</span> 1
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <section class="py-5">
+              <h4 class="h4">Паспортные данные туристов</h4>
+
+              <div class="card card-border mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <h5 class="mb-0">Турист: №1</h5>
+                  <button class="btn btn-outline-primary">
+                    Выбрать туриста из уже существующих <span class="icon-user-plus ml-2"></span>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <form action="" class="d-flex justify-content-between">
+                    <div class="form-group fb-48">
+                      <label for="">Имя</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="form-group fb-48">
+                      <label for="">Фамилия</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <button class="btn btn-secondary float-right">
+                <span class="icon-floppy-disk mr-2"></span>Сохранить туристов
+              </button>
+            </section>
+            <section class="pt-5">
+              <h4 class="h4">Сообщения по путевке</h4>
+              <textarea name="" id="" cols="10" rows="5" class="form-control mb-4"></textarea>
+              <button class="btn btn-secondary float-right"><span class="icon icon-send mr-2 "></span>Отправить</button>
+            </section>
+          </div>
+          <div class="col-sm-4 mt-4 mt-sm-0">
+            <div class="sticky-top" style="top: 90px">
+              <div class="card mb-4">
+                <div class="card-footer bg-success">
+                  <h4 class="mb-0 text-white text-center">Подтвержден <span class="ml-2 icon-checkmark"></span></h4>
+                </div>
+              </div>
+
+              <div class="card card-border mb-4">
+                <div class="card-footer border-0 ">
+                  <div class="to-pay-container">
+                    <div class="h5 mb-0">
+                      <p class="h6 mb-0"><small> Цена с учетом скидки</small></p>
+                      <span class="text-left"
+                        ><b class="text-secondary" style="line-height: 1">190 usd</b> + 120 byn</span
+                      >
+                    </div>
+
+                    <button class="btn btn-secondary my-auto">
+                      <span class="icon-credit-card mr-2"></span>Оплатить
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-border">
+                <div class="card-body">
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div class="d-flex flex-column">
+                      Путевка:
+                      <small class="text-muted">
+                        Нажмите скачать для получения путевки
+                      </small>
+                    </div>
+                    <button class="btn btn-secondary btn-min-width my-auto">
+                      <span class="icon-floppy-disk mr-2"></span> Скачать
+                    </button>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span class="d-flex flex-column"
+                      >Путеводитель:
+                      <small class="text-muted">
+                        Описание тура
+                      </small>
+                    </span>
+                    <button class="btn btn-secondary btn-min-width my-auto">
+                      <span class="icon-floppy-disk mr-2"></span>Скачать
+                    </button>
                   </div>
                 </div>
               </div>
@@ -575,6 +646,34 @@
       </div>
     </div>
 
+    <!-- Modal -->
+    <div
+      class="modal fade  js-thankyou_page"
+      id="deleteOffer"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog " role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0 pb-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h2 class="text-center h2">Спасибо за бронирование</h2>
+            <p class="text-center">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries,
+            </p>
+          </div>
+          <div class="modal-footer border-0"></div>
+        </div>
+      </div>
+    </div>
     <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
