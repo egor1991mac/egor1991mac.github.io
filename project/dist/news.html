@@ -107,17 +107,33 @@
                 <span class="icon icon-menu-button"></span>
               </button>
               <div class="d-lg-none">
-                <button
-                  class="  navbar-toggler  ml-auto mx-0 d-lg-none"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarTogglerDemo02"
-                  aria-controls="navbarTogglerDemo02"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="icon icon-user"></span>
-                </button>
+                <div class="dropdown">
+                  <button
+                    class="navbar-toggler ml-3 d-block d-lg-none px-0"
+                    data-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="icon icon-user"></span>
+                  </button>
+                  <button
+                    class="btn btn-outline-secondary ml-3 d-none d-lg-block"
+                    data-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Войти
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right pl-0">
+                    <a class="dropdown-item mx-0" href="#one">Авторизация</a>
+                    <a class="dropdown-item mx-0" href="#two">Регистрация</a>
+                    <a class="dropdown-item mx-0" href="#two">Востановление пароля</a>
+                  </div>
+                </div>
               </div>
               <div class="collapse navbar-collapse drawer" id="navbarTogglerDemo01">
                 <button
@@ -293,17 +309,33 @@
                 </button>
               </form>
               <div class="d-none d-lg-block">
-                <button
-                  class="  navbar-toggler  ml-auto mx-0 d-lg-none"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarTogglerDemo02"
-                  aria-controls="navbarTogglerDemo02"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="icon icon-user"></span>
-                </button>
+                <div class="dropdown">
+                  <button
+                    class="navbar-toggler ml-3 d-block d-lg-none px-0"
+                    data-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="icon icon-user"></span>
+                  </button>
+                  <button
+                    class="btn btn-outline-secondary ml-3 d-none d-lg-block"
+                    data-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Войти
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right pl-0">
+                    <a class="dropdown-item mx-0" href="#one">Авторизация</a>
+                    <a class="dropdown-item mx-0" href="#two">Регистрация</a>
+                    <a class="dropdown-item mx-0" href="#two">Востановление пароля</a>
+                  </div>
+                </div>
               </div>
             </nav>
           </div>
@@ -314,129 +346,184 @@
     <main class="section-py-10">
       <div class="container">
         <div class="row">
-          <div class="d-none d-lg-block col-lg-3">
-            <div class="card card-border w-100 sticky-top" style="top: 90px">
-              <div class="card-header d-flex justify-content-center pt-3 flex-column align-items-center">
-                <img src="./img/reviewer-4.png" alt="" width="100px" height="100px" class="rounded-circle" />
-                <h5 class="card-title mt-3">Иван Иванов</h5>
+          <div class="col-12 mb-4 d-flex justify-content-center flex-column align-items-center">
+            <h1 class=" mb-0 text-center with-hr">
+              Новости
+            </h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#"><span class="icon-home3 mr-2"></span>Home</a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </nav>
+          </div>
+
+          <div class="col-12 col-md-6 mb-4">
+            <div class="card card-hor card-border h-100">
+              <div class="card-header">
+                <picture class="card-img">
+                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg" />
+                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-101.jpg" />
+                  <img src="./img/home_slider/slider-101.jpg" alt="slide1" />
+                </picture>
               </div>
-              <div class="card-body p-0">
-                <ul class="nav nav-left ">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">
-                      <span class="icon icon-profile mr-3"></span>
-                      Профиль пользователя
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link " href="#">
-                      <span class="icon icon-credit-card mr-3"></span>
-                      Список заказов
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link " href="#">
-                      <span class="icon icon-star-empty mr-3"></span>
-                      Избранное
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link " href="#">
-                      <span class="icon icon-bubbles4 mr-3"></span>
-                      Сообщения
-                    </a>
-                  </li>
-                </ul>
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <div class="d-flex justify-content-between pb-2">
+                  <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
+                  <div class="card-see"><span class="icon icon-eye pr-1"></span>343</div>
+                </div>
+                <div class="hr"></div>
+                <p class="card-text pt-2">
+                  Commodo mollit esse ad irure ipsum ipsum nisi eiusmod aliquip exercitation enim laborum deserunt aute.
+                </p>
+                <a href="#" class="btn btn-secondary ml-auto">Подробнее</a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-9">
-            <h1 class="h3 text-center text-lg-left">
-              Профиль пользователя
-            </h1>
-            <div class="d-flex justify-content-between align-items-center mb-2 flex-column flex-lg-row">
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item">
-                    <a href="#"><span class="icon-home3 mr-2"></span>Home</a>
-                  </li>
-                  <li class="breadcrumb-item"><a href="#">Library</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Data</li>
-                </ol>
-              </nav>
 
-              <button
-                class=" btn outline-gray navbar-toggler p-0 ml-auto mx-0 d-lg-none"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="icon  icon-equalizer"></span>
-              </button>
-            </div>
-
-            <div class="card card-border">
+          <div class="col-12 col-md-6 mb-4">
+            <div class="card card-hor card-border h-100">
+              <div class="card-header">
+                <picture class="card-img">
+                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <img src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                </picture>
+              </div>
               <div class="card-body">
-                <form action="" class="d-flex flex-wrap">
-                  <div class="col mt-md-3">
-                    <h4>Регистрационная информация</h4>
-                    <div class="hr mb-3"></div>
+                <h5 class="card-title">Название карточки</h5>
+                <div class="d-flex justify-content-between pb-2">
+                  <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
+                  <div class="card-see"><span class="icon icon-eye pr-1"></span>343</div>
+                </div>
+                <div class="hr"></div>
+                <p class="card-text pt-2">
+                  Commodo mollit esse ad irure ipsum ipsum nisi eiusmod aliquip exercitation enim laborum deserunt aute.
+                </p>
+                <a href="#" class="btn btn-secondary ml-auto">Подробнее</a>
+              </div>
+            </div>
+          </div>
 
-                    <div class="form-group ">
-                      <label for="">Email<sup class="text-danger"> *</sup></label>
-                      <input type="email" class="form-control" placeholder="email@mail.com" />
-                    </div>
-                    <div class="form-group ">
-                      <label for="">Телефон</label>
-                      <input type="tel" class="form-control" placeholder="+375(44) xxx-xx-xx" />
-                    </div>
+          <div class="col-12 col-md-6 mb-4">
+            <div class="card card-hor card-border h-100">
+              <div class="card-header">
+                <picture class="card-img">
+                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <img src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                </picture>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <div class="d-flex justify-content-between pb-2">
+                  <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
+                  <div class="card-see"><span class="icon icon-eye pr-1"></span>343</div>
+                </div>
+                <div class="hr"></div>
+                <p class="card-text pt-2">
+                  Ad est do proident velit enim adipisicing aliquip aute mollit in et consequat nisi aliqua,Ad est do
+                  proident velit enim adipisicing aliquip aute mollit in et consequat nisi aliqua.
+                </p>
+                <a href="#" class="btn btn-secondary ml-auto">Подробнее</a>
+              </div>
+            </div>
+          </div>
 
-                    <div class="form-group">
-                      <label for="">Старый пароль<sup class="text-danger"> *</sup></label>
-                      <input type="password" class="form-control" placeholder="+375(44) xxx-xx-xx" />
-                    </div>
+          <div class="col-12 col-md-6 mb-4">
+            <div class="card card-hor card-border h-100">
+              <div class="card-header">
+                <picture class="card-img">
+                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg" />
+                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-101.jpg" />
+                  <img src="./img/home_slider/slider-101.jpg" alt="slide1" />
+                </picture>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <div class="d-flex justify-content-between pb-2">
+                  <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
+                  <div class="card-see"><span class="icon icon-eye pr-1"></span>343</div>
+                </div>
+                <div class="hr"></div>
+                <p class="card-text pt-2">
+                  Ad est do proident velit enim adipisicing aliquip aute mollit in et consequat nisi aliqua,Ad est do
+                  proident velit enim adipisicing aliquip aute mollit in et consequat nisi aliqua.
+                </p>
+                <a href="#" class="btn btn-secondary ml-auto">Подробнее</a>
+              </div>
+            </div>
+          </div>
 
-                    <div class="form-group ">
-                      <label for="">Новый пароль</label>
-                      <input type="password" class="form-control" placeholder="+375(44) xxx-xx-xx" />
-                    </div>
-                  </div>
-                  <div class="col mt-4 mt-md-3">
-                    <h4>Личная информация</h4>
-                    <div class="hr mb-3"></div>
-                    <div class="w-100">
-                      <div class="form-group ">
-                        <label for="">Имя</label>
-                        <input type="email" class="form-control" placeholder="Иван" />
-                      </div>
-                      <div class="form-group ">
-                        <label for="">Фамилия</label>
-                        <input type="tel" class="form-control" placeholder="Иванов" />
-                      </div>
+          <div class="col-12 col-md-6 mb-4">
+            <div class="card card-hor card-border h-100">
+              <div class="card-header">
+                <picture class="card-img">
+                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <img src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                </picture>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <div class="d-flex justify-content-between pb-2">
+                  <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
+                  <div class="card-see"><span class="icon icon-eye pr-1"></span>343</div>
+                </div>
+                <div class="hr"></div>
+                <p class="card-text pt-2">
+                  Ad est do proident velit enim adipisicing aliquip aute mollit in et consequat nisi aliqua,Ad est do
+                  proident velit enim adipisicing aliquip aute mollit in et consequat nisi aliqua.
+                </p>
+                <a href="#" class="btn btn-secondary ml-auto">Подробнее</a>
+              </div>
+            </div>
+          </div>
 
-                      <div class="form-group">
-                        <label for="">Отчество</label>
-                        <input type="password" class="form-control" placeholder="Ивавнович" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w-100 col-auto mt-3">
-                    <div class="hr"></div>
-                    <button class="mx-auto  btn btn-secondary  mt-4">
-                      <span class="icon icon-floppy-disk mr-2"></span>Сохранить изменения
-                    </button>
-                  </div>
-                </form>
+          <div class="col-12 col-md-6 mb-4">
+            <div class="card card-hor card-border h-100">
+              <div class="card-header">
+                <picture class="card-img">
+                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <img src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                </picture>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <div class="d-flex justify-content-between pb-2">
+                  <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
+                  <div class="card-see"><span class="icon icon-eye pr-1"></span>343</div>
+                </div>
+                <div class="hr"></div>
+                <p class="card-text pt-2">
+                  Ad est do proident velit enim adipisicing aliquip aute mollit in et consequat nisi aliqua,Ad est do
+                  proident velit enim adipisicing aliquip aute mollit in et consequat nisi aliqua.
+                </p>
+                <a href="#" class="btn btn-secondary ml-auto">Подробнее</a>
               </div>
             </div>
           </div>
         </div>
+        <nav aria-label="..." class="d-flex">
+          <ul class="pagination ml-auto">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+              <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </main>
     <footer class="section-background-gray py-5 footer">
@@ -596,57 +683,7 @@
         </div>
       </div>
     </div>
-    <div class="collapse navbar-collapse drawer" id="navbarTogglerDemo02">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="icon icon-close-button"></span>
-      </button>
 
-      <div class="card card-border w-100 sticky-top" style="top: 90px">
-        <div class="card-header d-flex justify-content-center pt-3 flex-column align-items-center">
-          <img src="./img/reviewer-4.png" alt="" width="100px" height="100px" class="rounded-circle" />
-          <h5 class="card-title mt-3">Иван Иванов</h5>
-        </div>
-        <div class="card-body p-0">
-          <ul class="nav nav-left ">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">
-                <span class="icon icon-profile mr-3"></span>
-                Профиль пользователя
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link " href="#">
-                <span class="icon icon-credit-card mr-3"></span>
-                Список заказов
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link " href="#">
-                <span class="icon icon-star-empty mr-3"></span>
-                Избранное
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link " href="#">
-                <span class="icon icon-bubbles4 mr-3"></span>
-                Сообщения
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
     <script type="text/javascript" src="js/index.js" async></script>
   </body>
 </html>

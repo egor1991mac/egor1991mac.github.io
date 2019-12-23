@@ -60,6 +60,10 @@
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 
+/*! Magnific Popup - v1.1.0 - 2016-02-20
+* http://dimsemenov.com/plugins/magnific-popup/
+* Copyright (c) 2016 Dmitry Semenov; */
+
 /**
  * Owl carousel
  * @version 2.3.4
@@ -148,3 +152,5 @@
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
+
+/*! Select2 4.0.12 | https://github.com/select2/select2/blob/master/LICENSE.md */
