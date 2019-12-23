@@ -2,7 +2,7 @@
 	"name": "static-site-webpack-habr",
 	"version": "2.0.0",
 	"description": "HTML template",
-	"main": "src-demo/index.js",
+	"main": "src/index.js",
 	"scripts": {
 		"dev": "webpack --mode development",
 		"watch": "webpack --mode development --watch",

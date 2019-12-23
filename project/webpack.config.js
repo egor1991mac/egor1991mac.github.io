@@ -96,7 +96,7 @@ const configProd = {
 
     },
     output: {
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, './demo'),
         filename: 'js/[name].js',
     },
     devtool: "source-map",
