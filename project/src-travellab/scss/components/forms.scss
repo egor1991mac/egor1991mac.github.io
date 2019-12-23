@@ -1,0 +1,70 @@
+@import "../utils/var.scss";
+@import "../bscss/_mixins.scss";
+    .form-contact--container{
+        padding: 2rem 1.5rem;
+
+
+    }
+
+
+.form-control{
+    border: 1px solid #ddd;
+    border-radius: cr(3px);
+    width: 100%;
+    padding: cr(10px) cr(20px);
+    height: $input-height;
+    border-radius: $input-radius;
+    &-sm{
+        height: calc(#{$input-height} - 10px);
+    }
+}
+.form-button--container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    @include media-breakpoint-down('md'){
+        position: sticky;
+        padding: 1rem;
+        border-top: 1px solid #e1e1e1;
+        border-bottom: 1px solid #e1e1e1;
+        bottom: 0;
+        left: 0;
+        background: white;
+    }
+}
+
+
+label{
+    color: $secondary-color-text;
+    font-size: 85%;
+    line-height: 1;
+    margin-bottom: .5rem;
+}
+.form-check{
+    margin-bottom: .5rem;
+    &-input{
+        margin-top: -1px;
+    }
+}
+.form-group{
+    &-sm{
+        .form-control{
+            height: calc(#{$input-height} - 10px);
+        }
+
+        select.custom-select {
+
+            border-radius: $input-radius;
+
+            overflow:hidden;
+            white-space:nowrap;
+            text-overflow:ellipsis;
+            height: calc(#{$input-height} - 10px);
+            position: relative;
+            padding-top:0 ;
+            padding-bottom: 0;
+
+        }
+    }
+}
+

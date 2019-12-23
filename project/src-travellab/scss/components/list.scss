@@ -1,0 +1,55 @@
+.list{
+  list-style: none;
+  padding-left: 0;
+  &-item{
+    margin-bottom: .25rem;
+  }
+  &-hor{
+    display: flex;
+    flex-wrap: wrap;
+
+    .list-item{
+      flex-basis: 50%;
+      max-width: 100%;
+      @include media-breakpoint-down(sm){
+      flex-basis: 100%;
+      }
+    }
+
+  }
+  &-icon{
+    padding-left: 0;
+    list-style:none;
+    .list-item{
+      margin-bottom: .5rem;
+    }
+
+    &.not-include{
+      .list-item{
+
+        &:before{
+
+          font-size: cr(13px);
+          margin-right: .5rem ;
+          content:'\ea0b';
+          font-family: var(--font-icon);
+          color: var(--danger);
+
+        }
+      }
+    }
+    &.include{
+      .list-item{
+        &:before{
+          font-size: cr(13px);
+          color: var(--success);
+          margin-right: .5rem ;
+          content: "\ea0a";
+          font-family: var(--font-icon);
+        }
+      }
+    }
+
+
+  }
+}

@@ -24,7 +24,62 @@
       <link rel="stylesheet" href="./assets/owl.theme.default.css" />
     </noscript>
     <title>Заголовок | Проект</title>
-    <link href="css/index.css" rel="stylesheet" />
+    <script type="text/javascript" async>
+      !(function(t) {
+        "use strict";
+        t.loadCSS || (t.loadCSS = function() {});
+        var e = (loadCSS.relpreload = {});
+        if (
+          ((e.support = (function() {
+            var e;
+            try {
+              e = t.document.createElement("link").relList.supports("preload");
+            } catch (t) {
+              e = !1;
+            }
+            return function() {
+              return e;
+            };
+          })()),
+          (e.bindMediaToggle = function(t) {
+            function e() {
+              t.media = a;
+            }
+            var a = t.media || "all";
+            t.addEventListener ? t.addEventListener("load", e) : t.attachEvent && t.attachEvent("onload", e),
+              setTimeout(function() {
+                (t.rel = "stylesheet"), (t.media = "only x");
+              }),
+              setTimeout(e, 3e3);
+          }),
+          (e.poly = function() {
+            if (!e.support())
+              for (var a = t.document.getElementsByTagName("link"), n = 0; n < a.length; n++) {
+                var o = a[n];
+                "preload" !== o.rel ||
+                  "style" !== o.getAttribute("as") ||
+                  o.getAttribute("data-loadcss") ||
+                  (o.setAttribute("data-loadcss", !0), e.bindMediaToggle(o));
+              }
+          }),
+          !e.support())
+        ) {
+          e.poly();
+          var a = t.setInterval(e.poly, 500);
+          t.addEventListener
+            ? t.addEventListener("load", function() {
+                e.poly(), t.clearInterval(a);
+              })
+            : t.attachEvent &&
+              t.attachEvent("onload", function() {
+                e.poly(), t.clearInterval(a);
+              });
+        }
+        "undefined" != typeof exports ? (exports.loadCSS = loadCSS) : (t.loadCSS = loadCSS);
+      })("undefined" != typeof global ? global : this);
+    </script>
+    <link href="css/index.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';" />
+    <noscript><link href="css/index.css" rel="stylesheet"/></noscript>
   </head>
 
   <body>
@@ -35,9 +90,9 @@
             <nav class="navbar navbar-expand-lg d-flex">
               <a class="navbar-brand" href="#">
                 <picture>
-                  <source media="(min-width: 650px)" src="./img/logo/logo-header.png" />
-                  <source media="(min-width: 350px)" src="./img/logo/logo-header.png" />
-                  <img src="./img/logo/logo-header.png" alt="logo-header" />
+                  <source loading="lazy" media="(min-width: 650px)" src="./img/logo/logo-header.png" />
+                  <source loading="lazy" media="(min-width: 350px)" src="./img/logo/logo-header.png" />
+                  <img loading="lazy" src="./img/logo/logo-header.png" alt="logo-header" />
                 </picture>
               </a>
               <button
@@ -292,6 +347,8 @@
       <div class="container">
         <div class="row">
           <div class="d-none d-lg-block col-lg-3">
+            <!--                -->
+
             <div class="card card-border sticky-top" style="top: 90px">
               <div class="card-body">
                 <form action="">
@@ -450,12 +507,12 @@
 
             <!--                </div>-->
 
-            <div class="card card-hor card-border mb-4">
+            <div class="card card-border card-hor mb-4 with-animation">
               <div class="card-header">
                 <picture class="card-img">
-                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg" />
-                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-101.jpg" />
-                  <img class="" src="./img/home_slider/slider-101.jpg" alt="slide1" />
+                  <source loading="lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg" />
+                  <source loading="lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-101.jpg" />
+                  <img loading="lazy" class="" src="./img/home_slider/slider-101.jpg" alt="slide1" />
                 </picture>
                 <ul class="card-options">
                   <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
@@ -465,7 +522,7 @@
                 </ul>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Краков* - Вена - Венский лес* (Хайлигенкройц, Баден, замок Лихтенштейн)</h5>
+                <h5 class="card-title">Тур в Грецию</h5>
                 <div class="d-flex justify-content-between">
                   <ul class="card-rating">
                     <li><span class="icon icon-star-full"></span></li>
@@ -477,9 +534,16 @@
                   <strong class="card-rewies">Отзывов: 4</strong>
                 </div>
 
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                </p>
+                <ul class="list-tour-options">
+                  <li class="list-tour-options-item">
+                    <span class="icon-place-localizer mr-2"></span> Минск-Барселона-Минск
+                  </li>
+
+                  <li class="list-tour-options-item"><span class="icon-clock mr-2"></span> 15 дней</li>
+
+                  <li class="list-tour-options-item"><span class="icon-calendar mr-2"></span> 10.06.2020</li>
+                </ul>
+
                 <div class="hr mt-auto"></div>
                 <div class="d-flex align-items-center justify-content-between pt-3">
                   <a href="#" class="btn btn-secondary">
@@ -494,12 +558,12 @@
               </div>
             </div>
 
-            <div class="card card-hor card-border mb-4">
+            <div class="card card-border card-hor mb-4 with-animation">
               <div class="card-header">
                 <picture class="card-img">
-                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
-                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
-                  <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                  <source loading="lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <source loading="lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <img loading="lazy" class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
                 </picture>
                 <ul class="card-options">
                   <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
@@ -509,7 +573,7 @@
                 </ul>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Краков* - Вена - Венский лес* (Хайлигенкройц, Баден, замок Лихтенштейн)</h5>
+                <h5 class="card-title">Тур в Польшу</h5>
                 <div class="d-flex justify-content-between">
                   <ul class="card-rating">
                     <li><span class="icon icon-star-full"></span></li>
@@ -521,9 +585,16 @@
                   <strong class="card-rewies">Отзывов: 4</strong>
                 </div>
 
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                </p>
+                <ul class="list-tour-options">
+                  <li class="list-tour-options-item">
+                    <span class="icon-place-localizer mr-2"></span> Минск-Барселона-Минск
+                  </li>
+
+                  <li class="list-tour-options-item"><span class="icon-clock mr-2"></span> 15 дней</li>
+
+                  <li class="list-tour-options-item"><span class="icon-calendar mr-2"></span> 10.06.2020</li>
+                </ul>
+
                 <div class="hr mt-auto"></div>
                 <div class="d-flex align-items-center justify-content-between pt-3">
                   <a href="#" class="btn btn-secondary">
@@ -538,12 +609,12 @@
               </div>
             </div>
 
-            <div class="card card-hor card-border mb-4">
+            <div class="card card-border card-hor mb-4 with-animation">
               <div class="card-header">
                 <picture class="card-img">
-                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
-                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
-                  <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                  <source loading="lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <source loading="lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <img loading="lazy" class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
                 </picture>
                 <ul class="card-options">
                   <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
@@ -553,10 +624,7 @@
                 </ul>
               </div>
               <div class="card-body">
-                <h5 class="card-title">
-                  Регенсбург - Лихтенштейн - Цюрих - Люцерн - Женева - Швейцарская Ривьера* - Берн - Бернские альпы* -
-                  Нюрнберг
-                </h5>
+                <h5 class="card-title">Тур в Египет</h5>
                 <div class="d-flex justify-content-between">
                   <ul class="card-rating">
                     <li><span class="icon icon-star-full"></span></li>
@@ -568,9 +636,16 @@
                   <strong class="card-rewies">Отзывов: 4</strong>
                 </div>
 
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                </p>
+                <ul class="list-tour-options">
+                  <li class="list-tour-options-item">
+                    <span class="icon-place-localizer mr-2"></span> Минск-Барселона-Минск
+                  </li>
+
+                  <li class="list-tour-options-item"><span class="icon-clock mr-2"></span> 15 дней</li>
+
+                  <li class="list-tour-options-item"><span class="icon-calendar mr-2"></span> 10.06.2020</li>
+                </ul>
+
                 <div class="hr mt-auto"></div>
                 <div class="d-flex align-items-center justify-content-between pt-3">
                   <a href="#" class="btn btn-secondary">
@@ -585,12 +660,12 @@
               </div>
             </div>
 
-            <div class="card card-hor card-border mb-4">
+            <div class="card card-border card-hor mb-4 with-animation">
               <div class="card-header">
                 <picture class="card-img">
-                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
-                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
-                  <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                  <source loading="lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <source loading="lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <img loading="lazy" class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
                 </picture>
                 <ul class="card-options">
                   <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
@@ -600,10 +675,7 @@
                 </ul>
               </div>
               <div class="card-body">
-                <h5 class="card-title">
-                  Регенсбург - Лихтенштейн - Цюрих - Люцерн - Женева - Швейцарская Ривьера* - Берн - Бернские альпы* -
-                  Нюрнберг
-                </h5>
+                <h5 class="card-title">Тур в Москву</h5>
                 <div class="d-flex justify-content-between">
                   <ul class="card-rating">
                     <li><span class="icon icon-star-full"></span></li>
@@ -615,9 +687,16 @@
                   <strong class="card-rewies">Отзывов: 4</strong>
                 </div>
 
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                </p>
+                <ul class="list-tour-options">
+                  <li class="list-tour-options-item">
+                    <span class="icon-place-localizer mr-2"></span> Минск-Барселона-Минск
+                  </li>
+
+                  <li class="list-tour-options-item"><span class="icon-clock mr-2"></span> 15 дней</li>
+
+                  <li class="list-tour-options-item"><span class="icon-calendar mr-2"></span> 10.06.2020</li>
+                </ul>
+
                 <div class="hr mt-auto"></div>
                 <div class="d-flex align-items-center justify-content-between pt-3">
                   <a href="#" class="btn btn-secondary">
@@ -632,12 +711,12 @@
               </div>
             </div>
 
-            <div class="card card-hor card-border mb-4">
+            <div class="card card-border card-hor mb-4 with-animation">
               <div class="card-header">
                 <picture class="card-img">
-                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
-                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
-                  <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                  <source loading="lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg" />
+                  <source loading="lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-101.jpg" />
+                  <img loading="lazy" class="" src="./img/home_slider/slider-101.jpg" alt="slide1" />
                 </picture>
                 <ul class="card-options">
                   <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
@@ -647,7 +726,7 @@
                 </ul>
               </div>
               <div class="card-body">
-                <h5 class="card-title">hello world</h5>
+                <h5 class="card-title">Тур в Грецию</h5>
                 <div class="d-flex justify-content-between">
                   <ul class="card-rating">
                     <li><span class="icon icon-star-full"></span></li>
@@ -659,9 +738,16 @@
                   <strong class="card-rewies">Отзывов: 4</strong>
                 </div>
 
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                </p>
+                <ul class="list-tour-options">
+                  <li class="list-tour-options-item">
+                    <span class="icon-place-localizer mr-2"></span> Минск-Барселона-Минск
+                  </li>
+
+                  <li class="list-tour-options-item"><span class="icon-clock mr-2"></span> 15 дней</li>
+
+                  <li class="list-tour-options-item"><span class="icon-calendar mr-2"></span> 10.06.2020</li>
+                </ul>
+
                 <div class="hr mt-auto"></div>
                 <div class="d-flex align-items-center justify-content-between pt-3">
                   <a href="#" class="btn btn-secondary">
@@ -676,12 +762,12 @@
               </div>
             </div>
 
-            <div class="card card-hor card-border mb-4">
+            <div class="card card-border card-hor mb-4 with-animation">
               <div class="card-header">
                 <picture class="card-img">
-                  <source class="owl-lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
-                  <source class="owl-lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
-                  <img class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
+                  <source loading="lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <source loading="lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-103.jpg" />
+                  <img loading="lazy" class="" src="./img/home_slider/slider-103.jpg" alt="slide1" />
                 </picture>
                 <ul class="card-options">
                   <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
@@ -691,7 +777,7 @@
                 </ul>
               </div>
               <div class="card-body">
-                <h5 class="card-title">hello world</h5>
+                <h5 class="card-title">Тур в Польшу</h5>
                 <div class="d-flex justify-content-between">
                   <ul class="card-rating">
                     <li><span class="icon icon-star-full"></span></li>
@@ -703,9 +789,16 @@
                   <strong class="card-rewies">Отзывов: 4</strong>
                 </div>
 
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                </p>
+                <ul class="list-tour-options">
+                  <li class="list-tour-options-item">
+                    <span class="icon-place-localizer mr-2"></span> Минск-Барселона-Минск
+                  </li>
+
+                  <li class="list-tour-options-item"><span class="icon-clock mr-2"></span> 15 дней</li>
+
+                  <li class="list-tour-options-item"><span class="icon-calendar mr-2"></span> 10.06.2020</li>
+                </ul>
+
                 <div class="hr mt-auto"></div>
                 <div class="d-flex align-items-center justify-content-between pt-3">
                   <a href="#" class="btn btn-secondary">
@@ -739,7 +832,7 @@
         </div>
       </div>
     </main>
-    <footer class="section-background-gray py-5 footer">
+    <footer class="bg-light py-5 footer">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3 mt-4">
@@ -1001,6 +1094,6 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/index.js" async></script>
   </body>
 </html>

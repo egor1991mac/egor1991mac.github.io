@@ -1,0 +1,17 @@
+.breadcrumb{
+  background-color: transparent !important;
+  padding-left: .25rem !important;
+  margin-bottom: 0;
+  &-item{
+
+    a{
+      color: $main-color-text;
+      position: relative;
+
+    }
+
+  }
+  @include media-breakpoint-down('md'){
+   justify-content: center;
+  }
+}

@@ -1,0 +1,32 @@
+<div class="card h-100 card-border">
+<div class="owl-carousel owl-theme js-main_slider">
+        <% Items.forEach(function(item,index){
+                %>
+
+                <div class="slider--item">
+                        <div class="slider--item-img">
+                        <picture>
+                                <source class="owl-lazy" media="(min-width: 650px)" srcset="<%= item.picture %>">
+                                <source class="owl-lazy" media="(min-width: 350px)" srcset="<%= item.picture %>">
+                                <img style="min-height: 350px" src="<%= item.picture %>" alt="slide1">
+                        </picture>
+                        </div>
+                </div>
+
+        <% }) %>
+
+</div>
+<div class="card-body">
+
+        <p>1. Мы специализируемся на автобусных турах и являемся туроператором номер 1 по СНГ. Более 20000 довольных туристов съездили с нами и возвращаются снова и снова. Наш автопарк является самым молодым, а это значит максимально комфортные и проверенные автобусы.</p>
+        <p>2. Только лучшие отели и базы отдыха! Со всеми нашими отелями у нас есть эксклюзивный договор, а это значит, вы получаете отличный вариант проживания по супер-цене напрямую. Именно поэтому у наших туров такие прекрасные и доступные цены.</p>
+        <p>3. Наш коллектив имеет огромный опыт в поездках и организации туров, а это значит, что ваш отдых пройдёт гладко и весело!</p>
+
+
+            <a href="#" class="btn btn-secondary ml-auto">
+                    <span class="icon icon-book mr-2" style="font-weight: bolder"></span>
+                    Подробнее</a>
+
+      </div>
+
+</div>

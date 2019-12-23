@@ -1,0 +1,29 @@
+<div class="main_rewies--container  container">
+        <div class="owl-carousel owl-theme js-rewies_slider">
+                <% Items.forEach(function(item,index){
+                    %>
+
+                                <div class="card  rewies mb-4">
+
+                                                <picture class="card-img ">
+                                                                <source class="owl-lazy" media="(min-width: 650px)" srcset="<%= item.picture %>">
+                                                                <source class="owl-lazy" media="(min-width: 350px)" srcset="<%= item.picture %>">
+                                                                <img class="" src="<%= item.picture %>" alt="slide1">
+                                                </picture>
+
+                                        <div class="card-body card-border card-shadow">
+
+                                                <div class="card-date"><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
+                                                <h5 class="card-title">Иван Иванов</h5>
+                                                <p class="card-text">Ездили во Львов, я была с дочерью 8ми лет, переживала как все пройдет, но реально отдыхом довольны, где была дегустация вина, для детей были детские блюда), гостиницы в которых останавливались были довольно хорошими, наш Гид Филипп был всегда доброжелательным и вежливым, за что ему огромное спасибо!!!</p>
+                                                <div class="hr mb-3"></div>
+                                                <a href="#" class="btn btn-secondary align-self-baseline mx-auto">
+                                                    <span class="icon icon-book mr-2" style="font-weight: bolder"></span>
+                                                    Подробнее</a>
+                                        </div>
+                                </div>
+
+              <% }) %>
+
+        </div>
+</div>

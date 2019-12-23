@@ -1,0 +1,35 @@
+@import "../utils/var.scss";
+@import "../bscss/_mixins.scss";
+.custom-search{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    .form-control{
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-top:0;
+
+    }
+    .btn{
+        position: absolute;
+        right: 0;
+        border-color:  #ddd !important;
+        color: $main-color-text;
+        height: $btn-height;
+        margin: 0 !important;
+
+    }
+    @include media-breakpoint-down(md){
+        width: 100%;
+        padding: 1rem;
+        .btn{
+            right: 1rem;
+            top: 1rem;
+
+        }
+
+    }
+
+}
+

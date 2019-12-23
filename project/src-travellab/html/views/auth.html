@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+_.template(require('./../includes/layout/header.html').default)(data) %>
+
+<body>
+<header class="sticky-top">
+    <% var back_call_button = _.template(require('./../includes/components/back-call-button.html').default)()
+    var social_button = _.template(require('./../includes/components/social-button.html').default)()
+    user_dropdown_button = _.template(require('./../includes/components/user-dropdown.html').default)()
+    select_lang = _.template(require('./../includes/components/select_lang.html').default)()
+    ; %>
+
+    <%= _.template(require('./../includes/components/navbar.html').default)({button:back_call_button,
+    user_dropdown_button:user_dropdown_button}) %>
+
+
+</header>
+
+<main class="section-py-10 h-50vh" style="background: url(./img/home_slider/slider-104.jpg); background-size: cover ">
+    <div class="container">
+        <div class="row align-items-center flex-column ">
+            <div class="col-12 col-sm-6 col-md-5">
+<!--                <h1 class="h1 text-center mb-4">-->
+<!--                    Регистрация-->
+<!--                </h1>-->
+
+                <div class="card card-shadow card-border " id="auth-tabs">
+                    <div class="card-body p-md-5">
+            <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active h4" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Регистрация</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Авторизация</a>
+                </li>
+
+            </ul>
+              <div class="hr"></div>
+            <div class="tab-content mt-4 " id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                            <%= _.template(require('./../includes/components/form-reg.html').default)({social_button:social_button}) %>
+
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                            <%= _.template(require('./../includes/components/form-auth.html').default)({social_button:social_button}) %>
+
+                </div>
+
+            </div>
+                    </div>
+                </div>
+
+
+        </div>
+    </div>
+    </div>
+
+</main>
+<%= _.template(require('./../includes/layout/footer.html').default)(data) %>
+<%= _.template(require('./../includes/components/back-call-form.html').default)({}) %>
+
+</body>
+</html>

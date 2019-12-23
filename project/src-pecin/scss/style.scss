@@ -4,7 +4,7 @@
 }
 @function ind($i){
   $size: 1px / 3px * $i;
-  @return #{$size}rem; 
+  @return #{$size}rem;
 }
 
 
@@ -19,7 +19,7 @@ $nav-color-link-mobile:#25292c;
 
 
 $main-color-text: #25292c;
-$secondary-color-text: #3d4347;
+$secondary-color-text: #6b757c;
 $section-background-2:#f5f0e7ab;
 
 //цвета опции тура
@@ -29,10 +29,10 @@ $color-doc: $primary;
 $color-custom-tour:green;
 
 //тени
-$shadow:0 0px 15px #d8d8d847; 
-$shadow-hover: 0 0px 15px #77767647; 
+$shadow:0 0px 15px #d8d8d847;
+$shadow-hover: 0 0px 15px #77767647;
 
-//бордер 
+//бордер
 $border-card: 1px solid #99594c !important;
 
 //карточки

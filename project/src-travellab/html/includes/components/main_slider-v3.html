@@ -1,0 +1,20 @@
+<div class="main_slider-v3--container">
+<div class="owl-carousel owl-theme js-main_slider h-100">
+                <% Items.forEach(function(item,index){ %>
+
+                        <div class="main_slider-v3--item">
+                                <div class="main_slider-v3--item-img">
+                                <picture>
+                                        <source class="owl-lazy" media="(min-width: 650px)" srcset="<%= item.picture %>">
+                                        <source class="owl-lazy" media="(min-width: 350px)" srcset="<%= item.picture %>">
+                                        <img  src="<%= item.picture %>" alt="slide1">
+                                </picture>
+                                </div>
+
+                        </div>
+                <% }) %>
+
+</div>
+
+
+</div>

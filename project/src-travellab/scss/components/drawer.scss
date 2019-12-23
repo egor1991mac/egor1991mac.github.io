@@ -1,0 +1,22 @@
+@include media-breakpoint-down('md'){
+  .drawer{
+    z-index: 99999999999;
+    background: $primary;
+
+    .card{
+      box-shadow: none !important;
+      overflow: auto;
+      padding: 0;
+      border-radius: $card-border-radius $card-border-radius 0 0;
+      height: 100%;
+      &-body{
+        padding: cr(25px) 0 0;
+        height: 100%;
+
+      }
+      .form-group,.form-group--container{
+        padding: 0 1rem;
+      }
+    }
+  }
+}

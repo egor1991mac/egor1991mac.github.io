@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+_.template(require('./../includes/layout/header.html').default)(data) %>
+
+<body>
+<header class="sticky-top">
+    <% var back_call_button = _.template(require('./../includes/components/back-call-button.html').default)()
+    var social_button = _.template(require('./../includes/components/social-button.html').default)()
+    user_dropdown_button = _.template(require('./../includes/components/user-dropdown.html').default)()
+    select_lang = _.template(require('./../includes/components/select_lang.html').default)()
+    ; %>
+
+    <%= _.template(require('./../includes/components/navbar.html').default)({button:back_call_button,
+    user_dropdown_button:user_dropdown_button}) %>
+
+
+</header>
+
+<main class="section-py-10">
+    <div class="container">
+        <div class="row">
+
+                <div class="col-12 mb-4 d-flex justify-content-center flex-column align-items-center">
+                    <h1 class=" mb-0 text-center with-hr">
+                        Новости
+                    </h1>
+                    <%= _.template(require('./../includes/components/bread-crumb.html').default)({}) %>
+                </div>
+
+
+                    <%= _.template(require('./../includes/components/main-post.html').default)({
+                    Items:[
+                    {
+                    picture:'./img/home_slider/slider-101.jpg',
+                    text:'hello world',
+                    p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+                    },
+                    {
+                    picture:'./img/home_slider/slider-103.jpg',
+                    text:'hello world',
+                    p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+                    },
+                    {
+                    picture:'./img/home_slider/slider-103.jpg',
+                    text:'hello world',
+                    p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+                    },{
+                    picture:'./img/home_slider/slider-101.jpg',
+                    text:'hello world',
+                    p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+                    },
+                    {
+                    picture:'./img/home_slider/slider-103.jpg',
+                    text:'hello world',
+                    p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+                    },
+                    {
+                    picture:'./img/home_slider/slider-103.jpg',
+                    text:'hello world',
+                    p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+                    },
+                    ]
+                    }) %>
+
+                </div>
+        <%= _.template(require('./../includes/components/pagination.html').default)({}) %>
+
+    </div>
+
+
+</main>
+<%= _.template(require('./../includes/layout/footer.html').default)(data) %>
+<%= _.template(require('./../includes/components/back-call-form.html').default)({}) %>
+
+</body>
+</html>

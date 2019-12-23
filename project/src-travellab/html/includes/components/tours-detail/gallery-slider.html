@@ -1,0 +1,18 @@
+<div class="card-body">
+<div id="sync1" class="owl-carousel owl-theme js-slider_detail">
+    <% img.forEach(function(item,index){ %>
+    <picture>
+        <img src="<%= item %>" alt="<%= index %>"/>
+    </picture>
+    <%})%>
+</div>
+</div>
+<div class="card-footer">
+<div id="sync2" class="owl-carousel owl-theme js-slider_detail-thumbs">
+    <% img.forEach(function(item,index){ %>
+    <picture>
+        <img class="img-thumbnail" src="<%= item %>" alt="<%= index %>"/>
+    </picture>
+    <%})%>
+</div>
+</div>

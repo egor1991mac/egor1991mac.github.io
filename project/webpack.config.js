@@ -58,10 +58,10 @@ function generateHtmlPlugins(templateDir) {
             filename: `${name}.html`,
             template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
         }));
-        //arrPlugin.push( new AsyncStylesheetWebpackPlugin({preloadPolyfill: true})),
-        // arrPlugin.push(new ScriptExtHtmlWebpackPlugin({
-        //   defaultAttribute: 'async'
-        // }));
+        arrPlugin.push( new AsyncStylesheetWebpackPlugin({preloadPolyfill: true})),
+        arrPlugin.push(new ScriptExtHtmlWebpackPlugin({
+          defaultAttribute: 'async'
+        }));
     });
     return arrPlugin;
 }

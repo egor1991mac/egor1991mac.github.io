@@ -1,0 +1,145 @@
+
+<div class="container-fluid sticky-top navbar--container">
+    <div class="row">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg d-flex">
+                <a class="navbar-brand" href="#">
+                    <picture>
+                        <source  media="(min-width: 650px)" src="./img/logo/logo-header.png">
+                        <source  media="(min-width: 350px)" src="./img/logo/logo-header.png">
+                        <img  src="./img/logo/logo-header.png" alt="logo-header">
+                    </picture>
+                </a>
+                <button class="navbar-toggler px-0 ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon icon-menu-button"></span>
+                </button>
+                <div class="d-lg-none">
+                    <%= user_dropdown_button %>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon icon-close-button"></span>
+                    </button>
+
+                    <ul class="contact--list navbar-destcop d-none d-lg-flex ml-auto mr-4" >
+                        <li class="contact--list-item"> <span class="icon icon-place-localizer "></span> г. Минск, ул. Веры Хоружей,<br> д. 1А ТЦ Силуэт, 2ой этаж, балконы, офис А7</li>
+                        <li class="contact--list-item"><span class="icon icon-clock "></span> Пн - Сб: 10:00 - 19:00</li>
+
+                        <li class="contact--list-item">
+                            <span class="icon icon-phone"></span>
+                            <span>
+                                        +375 (29) 369-45-89 <br>
+                                        +375 (29) 777-97-23
+                                    </span>
+                        </li>
+                    </ul>
+                    <%= button %>
+                   <div class="ml-3">
+                       <%= select_lang %>
+                   </div>
+                    <ul class="navbar-nav d-lg-none">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Туры <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Календарь</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#one">one</a>
+                                <a class="dropdown-item" href="#two">two</a>
+                                <a class="dropdown-item" href="#three">three</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Агенствам</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#one"></a>
+                                <a class="dropdown-item" href="#two">two</a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#three">three</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Корпоративным клиентам</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Блог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Отзывы</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline custom-search ml-md-auto d-lg-none">
+                        <input class="form-control"  placeholder="Поиск по сайту" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">
+                            <span class="icon icon-magnifying-glass"></span>
+                        </button>
+                    </form>
+
+                </div>
+
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-desctop js-collapse_scroll">
+                <ul class="navbar-nav d-none d-lg-flex ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Туры <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Календарь</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#one">one</a>
+                            <a class="dropdown-item" href="#two">two</a>
+                            <a class="dropdown-item" href="#three">three</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Агенствам</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu pl-1">
+                            <a class="dropdown-item" href="#one"></a>
+                            <a class="dropdown-item" href="#two">two</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#three">three</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Корпоративным клиентам</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Блог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Отзывы</a>
+                    </li>
+                </ul>
+                <form class="form-inline custom-search ml-md-auto d-none d-lg-flex">
+                    <input class="form-control"  placeholder="Поиск по сайту" aria-label="Search">
+                    <button class="btn btn-outline-secondary p-0" type="submit">
+                        <span class="icon icon-magnifying-glass"></span>
+                    </button>
+                </form>
+                <div class="d-none d-lg-block">
+                    <%= user_dropdown_button %>
+                </div>
+            </nav>
+
+
+        </div>
+    </div>
+</div>

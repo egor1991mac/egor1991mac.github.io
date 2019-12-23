@@ -1,0 +1,51 @@
+
+
+    <% Items.forEach(function(item,index){
+    %>
+
+        <div class="card card-hor card-border mb-4">
+            <div class="card-header">
+            <picture class="card-img">
+                <source class="owl-lazy" media="(min-width: 650px)" srcset="<%= item.picture %>">
+                <source class="owl-lazy" media="(min-width: 350px)" srcset="<%= item.picture %>">
+                <img class="" src="<%= item.picture %>" alt="slide1">
+            </picture>
+            <ul class="card-options">
+                <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
+                <li class="card-options--item new"><span class="icon icon-new-label"></span> текст</li>
+                <li class="card-options--item doc"><span class="icon icon-profile"></span> текст</li>
+                <li class="card-options--item custom-tour"><span class="icon icon-creativity"></span>екст</li>
+            </ul>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><%= item.h %></h5>
+                <div class="d-flex justify-content-between">
+                    <ul class="card-rating">
+                        <li><span class="icon icon-star-full"></span></li>
+                        <li><span class="icon icon-star-half"></span></li>
+                        <li><span class="icon icon-star-empty"></span></li>
+                        <li><span class="icon icon-star-empty"></span></li>
+                        <li><span class="icon icon-star-empty"></span></li>
+                    </ul>
+                    <strong class="card-rewies">Отзывов: 4</strong>
+                </div>
+
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="hr mt-auto"></div>
+                <div class="d-flex align-items-center justify-content-between pt-3">
+                    <a href="#" class="btn btn-secondary">
+                        <span class="icon icon-book mr-2" style="font-weight: bolder"></span>  Подробнее
+                    </a>
+                    <div class="card-price">
+                        200 EUR
+                        <br>
+                        <small>400 BYN</small>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    <% }) %>
+

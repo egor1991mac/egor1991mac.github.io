@@ -1,0 +1,1 @@
+.background-img-container{position:relative}.background-img-absolute,.background-img-fixed{position:absolute;top:0;left:0;width:100%;height:100%}.background-img-absolute::after,.background-img-fixed::after{content:'';background-color:#000;position:absolute;top:0;left:0;bottom:0;height:100%;width:100%;opacity:.6;z-index:0}.background-img-fixed{position:fixed}

@@ -1,0 +1,36 @@
+@import "../utils/var.scss";
+@import "../bscss/_mixins.scss";
+.main_rewies{
+
+    &--container{
+
+
+        .owl{
+            &-nav{
+                max-width: 1560px;
+                position: absolute;
+                top: calc(50% - 2.625rem);
+                left: 50%;
+                bottom: 50%;
+                width: 110%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                margin: 0;
+                margin-right: -50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+            &-prev, &-next{
+
+                background: transparent !important;
+            }
+
+
+        }
+    }
+
+}
