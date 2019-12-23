@@ -48,3 +48,26 @@
       border-radius: 30px; }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #869791; }
+
+.owl-nav {
+  max-width: 1650px;
+  position: absolute;
+  top: calc(50% - 2.625rem / 2);
+  left: 50%;
+  bottom: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 0 1rem;
+}
+.owl-next, .owl-prev {
+  height: 2.625rem;
+  background: transparent !important;
+}
+.owl-next .btn-outline-secondary, .owl-prev .btn-outline-secondary {
+  border-color: white;
+  color: white;
+}
