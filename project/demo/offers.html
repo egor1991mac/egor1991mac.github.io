@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';" />
+    <link rel="stylesheet" href="./assets/fonts.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';" />
+<link rel="stylesheet" href="./assets/owl.carousel.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';" />
+<link rel="stylesheet" href="./assets/owl.theme.default.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';"/>
+<noscript>
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/fonts.min.css" />
+ <link rel="stylesheet" href="./assets/owl.carousel.css" />
+ <link rel="stylesheet" href="./assets/owl.theme.default.css" />
+</noscript>
+  <title>Заголовок | Проект</title>
+<script type="text/javascript" async>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){function e(){t.media=a}var a=t.media||"all";t.addEventListener?t.addEventListener("load",e):t.attachEvent&&t.attachEvent("onload",e),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(e,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script><link href="css/index.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';"><noscript><link href="css/index.css" rel="stylesheet"></noscript></head>
+
+
+
+<body>
+<header class="sticky-top">
+    
+
+    
+<div class="container-fluid  navbar--container">
+    <div class="row">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg d-flex">
+                    <a class="navbar-brand" href="#">
+                            <picture>
+                                    <source loading="lazy" media="(min-width: 650px)" src="./img/logo/logo-header.png">
+                                    <source  loading="lazy" media="(min-width: 350px)" src="./img/logo/logo-header.png">
+                                        <img loading="lazy"  src="./img/logo/logo-header.png" alt="logo-header">
+                                </picture>
+                    </a>
+                <button class="navbar-toggler px-0 ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon icon-menu-button"></span>
+                </button>
+                <div class="d-lg-none">
+                <div class="dropdown">
+    <button class="navbar-toggler ml-3 d-block d-lg-none px-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <span class="icon icon-user"></span></button>
+    <button class="btn btn-outline-secondary ml-3 d-none d-lg-block" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Войти</button>
+    <div class="dropdown-menu dropdown-menu-right pl-0">
+        <a class="dropdown-item mx-0" href="#one">Авторизация</a>
+        <a class="dropdown-item mx-0" href="#two">Регистрация</a>
+        <a class="dropdown-item mx-0" href="#two">Востановление пароля</a>
+    </div>
+</div>
+
+                </div>
+                <div class="collapse navbar-collapse drawer" id="navbarTogglerDemo01">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="icon icon-close-button"></span>
+                        </button>
+
+                        <ul class="contact--list navbar-destcop d-none d-lg-flex ml-auto mr-4" >
+                            <li class="contact--list-item"> <span class="icon icon-place-localizer "></span> г. Минск, ул. Веры Хоружей,<br> д. 1А ТЦ Силуэт, 2ой этаж, балконы, офис А7</li>
+                            <li class="contact--list-item"><span class="icon icon-clock "></span> Пн - Сб: 10:00 - 19:00</li>
+
+                            <li class="contact--list-item">
+                                    <span class="icon icon-phone"></span>
+                                    <span>
+                                        +375 (29) 369-45-89 <br>
+                                        +375 (29) 777-97-23
+                                    </span>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-secondary my-auto ml-3 d-none d-lg-block" data-toggle="modal" data-target="#exampleModal">
+    <span class="icon icon-phone mr-2"></span>
+    Перезвонить мне
+</button>
+                        <!-- <select name="lang" id="#" class="d-none d-lg-block">
+                          <option>Русский</options>
+                          <option>Английский</option>
+                          <option>Китайский</option>
+                        </select> -->
+                    <div class="card w-100 d-lg-none">
+                        <div class="card-body">
+                <ul class="navbar-nav ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Туры <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Календарь</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#one">one</a>
+                              <a class="dropdown-item" href="#two">two</a>
+                              <a class="dropdown-item" href="#three">three</a>
+                            </div>
+                          </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Агенствам</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#one"></a>
+                              <a class="dropdown-item" href="#two">two</a>
+                              <div role="separator" class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#three">three</a>
+                            </div>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Корпоративным клиентам</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Блог</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Контакты</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Отзывы</a>
+                          </li>
+                </ul>
+                <form class="form-inline custom-search ml-md-auto d-lg-none">
+                    <input class="form-control"  placeholder="Поиск по сайту" aria-label="Search">
+                    <button class="btn btn-outline-primary p-0" type="submit">
+                      <span class="icon icon-magnifying-glass"></span>
+                    </button>
+                </form>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-desctop js-collapse_scroll">
+                <ul class="navbar-nav d-none d-lg-flex ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Туры <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Календарь</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#one">one</a>
+                              <a class="dropdown-item" href="#two">two</a>
+                              <a class="dropdown-item" href="#three">three</a>
+                            </div>
+                          </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Агенствам</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu pl-1">
+                              <a class="dropdown-item" href="#one"></a>
+                              <a class="dropdown-item" href="#two">two</a>
+                              <div role="separator" class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#three">three</a>
+                            </div>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Корпоративным клиентам</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Блог</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Контакты</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Отзывы</a>
+                          </li>
+                </ul>
+                <form class="form-inline custom-search ml-md-auto d-none d-lg-flex">
+                    <input class="form-control"  placeholder="Поиск по сайту" aria-label="Search">
+                    <button class="btn btn-outline-primary p-0" type="submit">
+                        <span class="icon icon-magnifying-glass"></span>
+                    </button>
+                </form>
+                <div class="d-none d-lg-block">
+                <div class="dropdown">
+    <button class="navbar-toggler ml-3 d-block d-lg-none px-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <span class="icon icon-user"></span></button>
+    <button class="btn btn-outline-secondary ml-3 d-none d-lg-block" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Войти</button>
+    <div class="dropdown-menu dropdown-menu-right pl-0">
+        <a class="dropdown-item mx-0" href="#one">Авторизация</a>
+        <a class="dropdown-item mx-0" href="#two">Регистрация</a>
+        <a class="dropdown-item mx-0" href="#two">Востановление пароля</a>
+    </div>
+</div>
+
+                </div>
+            </nav>
+
+
+        </div>
+</div>
+</div>
+
+
+</header>
+
+<main class="section-py-10">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="d-flex justify-content-between">
+                <h3 class="h3">Заказ №123</h3>
+                    <div class="d-flex align-items-center">
+
+<button type="button" class="btn bg-danger p-0 text-white" data-toggle="modal" data-target="#deleteOffer">
+    <span class="icon-bin"></span>
+</button>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="deleteOffer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               <h4 class="text-center h4">Вы уверены что хотите отменить бронирование?</h4>
+                <div class="bg-light p-3">
+                <h5>Правила отмены:</h5>
+                    <ul>
+                        <li>lorem Ipsum is simply dummy text of the printing and typesetting industry. Lore</li>
+                        <li>English. Many desktop publishing packages and web page editors</li>
+                        <li>There are many variations of passages of Lorem Ipsum available, bu</li>
+                        <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Да</button>
+                <button type="button" class="btn btn-primary">нет</button>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="col-sm col-md-6">
+
+                
+<div class="card card-border">
+    <div class="card-header bg-light">
+        <h5 class="mb-0">Краков* - Вена - Венский лес* (Хайлигенкройц, Баден, замок Лихтенштейн)</h5>
+
+    </div>
+    <div class="card-body ">
+        <div class="card-row">
+            <div class="card-col">
+                понедельник <br>
+                <b class="h5 mb-0">21.02.2019</b>
+            </div>
+            <div class="card-col">
+                <div class="btn outline-gray card-border p-0 rounded-circle my-auto flex-column"
+                     style="line-height: 1; ">
+                    <span>7</span>
+                    <small>дней</small>
+                </div>
+            </div>
+            <div class="card-col">
+                вторник <br>
+                <b class="h5 mb-0">29.02.2019</b>
+            </div>
+            <div class="card-col">
+                <div class="h5 mb-0 d-flex align-items-center"><span class="mr-1">+</span>
+                    <span class="text-center d-flex flex-column justify-content-center"><b
+                            class="text-secondary"
+                            style="line-height: 1">190 usd</b>  <small
+                            style="line-height: 1">120 byn</small></span></div>
+            </div>
+            <div class="card-col text-danger" style="line-height: 1">
+                <small>скидка</small>
+                <span>
+                                            10 usd
+                                            </span>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="card-footer">
+        <div class="card-row  justify-content-sm-start">
+            <div class="card-col mr-4 d-flex  flex-column flex-md-row">
+                <div class="d-flex align-items-center my-2 my-md-0 mr-4">
+                    <span class="icon icon-couple mr-1"></span>
+                    <span class="mr-1">Взрослых:</span> 1
+
+
+                </div>
+                <div class="d-flex align-items-center my-2 my-md-0">
+                    <span class="icon icon-sister-and-brother mr-1"></span>
+                    <span class="mr-1">детей:</span> 1
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <section class="py-5">
+                    <h4 class="h4">Паспортные данные туристов</h4>
+                    
+<div class="card card-border mb-4">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h5 class="mb-0">Турист: №1</h5>
+        <button class="btn btn-outline-primary">
+        Выбрать туриста из уже существующих <span class="icon-user-plus ml-2"></span>
+        </button>
+
+    </div>
+    <div class="card-body">
+
+        <form action="" class="d-flex justify-content-between">
+            <div class="form-group fb-48">
+                <label for="">Имя</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group fb-48">
+                <label for="">Фамилия</label>
+                <input type="text" class="form-control">
+            </div>
+
+        </form>
+    </div>
+</div>
+
+                    <button class="btn btn-secondary float-right"><span class="icon-floppy-disk mr-2"></span>Сохранить туристов</button>
+                </section>
+                <section class="pt-5">
+                    <h4 class="h4">Сообщения по путевке</h4>
+                    <textarea name="" id="" cols="10" rows="5" class="form-control mb-4"></textarea>
+                    <button class="btn btn-secondary float-right"><span class="icon icon-send mr-2 "></span>Отправить</button>
+                </section>
+
+
+            </div>
+            <div class="col-sm-4 mt-4 mt-sm-0">
+                <div class="sticky-top" style="top: 90px">
+                <div class="card mb-4">
+                    <div class="card-footer bg-success">
+                    <h4 class="mb-0 text-white text-center">Подтвержден <span class="ml-2 icon-checkmark"></span></h4>
+                </div>
+                </div>
+
+                <div class="card card-border mb-4">
+                    <div class="card-footer border-0 ">
+                        <div class="to-pay-container">
+                        <div class="h5 mb-0">
+                            <p class="h6 mb-0"> <small> Цена с учетом скидки</small></p>
+                            <span class="text-left"><b
+                                    class="text-secondary" style="line-height: 1">190 usd</b> +
+                                    120 byn</span>
+
+                        </div>
+
+                        <button class="btn btn-secondary my-auto"><span class="icon-credit-card mr-2"></span>Оплатить
+                        </button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card card-border">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex flex-column">Путевка:
+                                <small class="text-muted">
+                                    Нажмите скачать для получения путевки
+                                </small>
+                            </div>
+                            <button class="btn btn-secondary btn-min-width my-auto"><span class="icon-floppy-disk mr-2"></span> Скачать</button>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                        <span class="d-flex flex-column">Путеводитель:
+                            <small class="text-muted">
+                                Описание тура
+                            </small>
+                        </span>
+                            <button class="btn btn-secondary btn-min-width my-auto"  ><span class="icon-floppy-disk mr-2"></span>Скачать</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</main>
+<footer class="bg-light py-5 footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mt-4">
+               <picture>
+                   <img class="pb-3" src="./img/logo/logo-header.png" alt="travellab">
+               </picture>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio excepturi nam totam sequi, ipsam consequatur repudiandae libero illum.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-4">
+                <h4>
+                    Ссылки 1
+                </h4>
+
+                <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                      </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-4">
+                         <h4>
+                            Ссылки 2
+                        </h4>
+
+                        <ul class="nav flex-column">
+                                <li class="nav-item">
+                                  <a class="nav-link active" href="#">Active</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link disabled" href="#">Disabled</a>
+                                </li>
+                              </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-4">
+                        <h4>
+                           Контакты
+                        </h4>
+
+                        <ul class="contact--list">
+                                <li class="contact--list-item"> <span class="icon icon-place-localizer "></span>г. Минск, ул. Веры Хоружей, д. 1А ТЦ Силуэт, 2ой этаж, балконы, офис А7</li>
+                                <li class="contact--list-item"><span class="icon icon-clock "></span> Пн - Сб: 10:00 - 19:00</li>
+                                <li class="contact--list-item"><span class="icon icon-mail2"></span> travellabminsk@gmail.com</li>
+                                <li class="contact--list-item">
+                                        <span class="icon icon-phone"></span>
+                                        <span>
+                                                +375 (29) 369-45-89
+                                                <br>+375 (29) 777-97-23
+                                        </span>
+                                </li>
+                        </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row mx-0">
+            <div class="footer-payment">
+                <picture>
+                    <img  loading="lazy"  class="" src="./img/pay/1.png" alt="travellab">
+                </picture>
+                <picture>
+                    <img  loading="lazy"  class="px-3" src="./img/pay/2.png" alt="travellab">
+                </picture>
+                <picture>
+                    <img  loading="lazy"  class="" src="./img/pay/3.png" alt="travellab">
+                </picture>
+                <picture>
+                        <img  loading="lazy"  class="" src="./img/pay/4.png" alt="travellab">
+                    </picture>
+                    <picture>
+                            <img  loading="lazy"  class="" src="./img/pay/5.png" alt="travellab">
+                        </picture>
+                        <picture>
+                                <img  loading="lazy"  class="" src="./img/pay/6.png" alt="travellab">
+                            </picture>
+                        </div>
+                <div class="travelsoft-logo ml-auto">
+                    <img src="./img/logo/logo_travelsoft.jpg" alt="travelsoft">
+                </div>
+        </div>
+    </div>
+</footer>
+<ul class="bg-secondary mb-0">
+    <li><a href="/index.html">index</a></li>
+    <li><a href="./tours.html">tours</a></li>
+    <li><a href="./tours-detail.html">tours-detail</a></li>
+    <li><a href="./auth.html">auth</a></li>
+    <li><a href="./voucher.html">voucher</a></li>
+    <li><a href="./voucher-booking-list.html">voucher-list</a></li>
+    <li><a href="./voucher-booking-favorites.html">voucher-favorites</a></li>
+    <li><a href="./news.html">news</a></li>
+    <li><a href="./basket.html">basket</a></li>
+    <li><a href="./offers.html">offers</a></li>
+
+</ul>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Перезвонить мне</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="form-contact--container">
+                <div class="form-group">
+                        <label for="">Телефона *</label>
+                        <input type="text" name="phone" class="form-control" placeholder="+375(xx) xxx-xx-xx">
+                </div>
+                <div class="form-group">
+                                <label for="">Имя *</label>
+                                <input type="text" name="name" class="form-control" placeholder="Иванов Иван">
+                        </div>
+                <div class="form-group">
+                                        <label for="">Я не робот *</label>
+                                        <div class="d-flex">
+                                        <img src="./img/logo-heade.png" alt="captcha" style="background: black; width:200px" class="mr-2">
+                                        <input type="text" name="name" class="form-control" placeholder="Текст с изображения">
+                                       </div>
+                </div>
+                <div class="form-group pt-3">
+                        <button class="btn btn-secondary mx-auto mt-3">
+                            <span class="icon icon-send mr-2" style="font-weight: bolder"></span> Отправить
+                        </button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade  js-thankyou_page" id="deleteOffer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h2 class="text-center h2">Спасибо за бронирование </h2>
+                 <p class="text-center"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+            </div>
+            <div class="modal-footer border-0"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/index.js" async></script></body>
+</html>
