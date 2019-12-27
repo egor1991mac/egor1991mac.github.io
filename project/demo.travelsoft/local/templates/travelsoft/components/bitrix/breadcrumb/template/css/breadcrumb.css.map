@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/scss/components/breadcrumb.scss"],"names":[],"mappings":"AAAA,YACE,uCAAwC,CACxC,8BAA+B","file":"templates/travelsoft/components/bitrix/breadcrumb/template/css/breadcrumb.css","sourcesContent":[".breadcrumb{\n  background-color: transparent !important;\n  padding-left: .25rem !important;\n}"],"sourceRoot":""}

@@ -5,7 +5,14 @@
       <paths name="demo.travelsoft.by">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$/prime.travelsoft" web="/" />
+            <mapping deploy="/" local="$PROJECT_DIR$/demo.travelsoft" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="gotrip">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$/demo.travelsoft" web="/" />
           </mappings>
         </serverdata>
       </paths>

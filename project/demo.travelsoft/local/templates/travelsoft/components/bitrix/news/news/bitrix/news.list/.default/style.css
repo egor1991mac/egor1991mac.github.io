@@ -1,0 +1,39 @@
+div.news-list
+{
+	word-wrap: break-word;
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+.score_wp i {
+	font-size: 30px;
+}
+.score_wp {
+	bottom: -45px !important;
+	padding-right: 5px !important;
+	width: 50px !important;
+}
+.show-count {
+	top: -7px;
+	position: absolute;
+}
+.short_info {
+	height: 50px !important;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	bottom: -25px !important;
+}
+.desc p {
+	margin-bottom: 8px !important;
+}
+.strip_list .desc em {
+	font-style: normal;
+	opacity: .8;
+}

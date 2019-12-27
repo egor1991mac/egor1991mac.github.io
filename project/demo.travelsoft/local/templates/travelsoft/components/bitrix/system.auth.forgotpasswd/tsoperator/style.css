@@ -1,0 +1,6 @@
+table tr {
+    margin-bottom: 8px;
+}
+form .form-group input {
+    max-width: 250px;
+}

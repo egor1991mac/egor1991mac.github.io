@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="e21b1e67-0273-4bb2-977e-1582cb48c64e" name="demo.travelsoft.by" url="http://demo.travelsoft.by/">
-        <fileTransfer host="demo.travelsoft.by" port="22" rootFolder="/home/bitrix/ext_www/prime.travelsoft.by" accessType="SFTP">
+        <fileTransfer host="demo.travelsoft.by" port="22" rootFolder="/home/bitrix/ext_www/demo.travelsoft.by" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

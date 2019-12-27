@@ -1,0 +1,30 @@
+.thumb_cart_text {width: 180px;
+    float: left;
+    line-height: 18px;
+    margin: 10px 0 10px 10px;}
+.item_cart_name {
+    font-weight: 700;
+    float: left !important;
+}
+.item_cart_office {width: 100%;}
+.item_cart_position {
+    float: left !important;
+    font-size: 0.8rem;
+    color: #7c7c7c;
+}
+.item_cart_phone {
+    font-size: 18px;
+    float: left !important;
+}
+.thumb_cart {
+    border-radius: 50%;
+    float: left;
+    height: 90px;
+    margin-right: 10px;
+    overflow: hidden;
+    width: 90px;
+}
+.thumb_cart img {
+    height: auto;
+    width: 90px;
+}
