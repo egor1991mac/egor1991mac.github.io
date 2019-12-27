@@ -1,0 +1,56 @@
+@include media-breakpoint-up('lg'){
+  .drawer{
+    position: sticky !important;
+    top: 90px;
+  }
+  .card{
+    width: 100%;
+
+  }
+}
+@include media-breakpoint-down('lg'){
+  .drawer{
+    z-index: 999;
+    background: $primary;
+    .control-bottom{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 1rem;
+      left: -1rem;
+      background: #f8f9fa;
+      border-top: 1px solid #e1e1e1;
+    }
+    .card{
+      width: 100%;
+      box-shadow: none !important;
+      overflow: auto;
+      padding: 0;
+      border-radius: $card-border-radius $card-border-radius 0 0;
+      height: 100%;
+      &-body{
+        padding: cr(25px) 0 0;
+        height: 100%;
+        .bx-filter{
+          height: 100%;
+          &-section{
+            height: 100%;
+          }
+
+        }
+        .smartfilter{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          overflow: auto;
+          padding-bottom: 90px;
+        }
+
+
+      }
+      .form-group,.form-group--container{
+        padding: 0 1rem;
+      }
+    }
+  }
+}

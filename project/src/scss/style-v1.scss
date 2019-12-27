@@ -1,0 +1,70 @@
+
+
+
+
+
+
+@import "utils/var.scss";
+@import "./bscss/bootstrap-grid.scss";
+
+
+@import "./components/btn.scss";
+
+@import "./components/header.scss";
+@import "./components/navbar.scss";
+//@import "./components/main_slider.scss";
+@import "./components/main_slider-v3.scss";
+@import "./components/forms.scss";
+@import "./components/header-search.scss";
+@import "./components/card.scss";
+//@import "./components/main-search_form.scss";
+@import "./components/main-search_form-with-tabs-v2.scss";
+@import "./utils/section-indents.scss";
+@import "./components/section-background.scss";
+@import "./components/main_rewies-slider.scss";
+@import "./components/main-best-price.scss";
+@import "./components/card-rewies-v2.scss";
+@import "./components/main_contact.scss";
+@import "./components/contact-list.scss";
+@import "components/subscribe";
+@import "./components/H1.scss";
+@import "./components/footer.scss";
+@import "./components/breadcrumb.scss";
+@import "./components/nav.scss";
+@import "./components/slider-two-point.scss";
+@import "./components/sort-fliter.scss";
+@import "./components/drawer.scss";
+@import "./components/table.scss";
+@import "./components/background-img.scss";
+@import "./components/list.scss";
+@import "./components/tours-detail-slider.scss";
+@import "./components/basket.scss";
+@import "./components/modal.scss";
+@import "./components/message.scss";
+@import "./components/select.scss";
+
+
+
+
+html{
+  font-size: 16px !important;
+  color: $main-color-text;
+  @include media-breakpoint-down(lg){
+    font-size: 14px !important;
+  }
+  @include media-breakpoint-down(md){
+    font-size: 14px !important;
+  }
+  @include media-breakpoint-down(xs){
+    font-size: 14px !important;
+    h1{
+      font-size: cr(32px);
+    }
+  }
+}
+header{
+  z-index: 10 !important;
+}
+p{
+  text-indent: 20px;
+}

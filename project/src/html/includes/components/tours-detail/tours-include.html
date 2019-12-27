@@ -1,0 +1,20 @@
+<% var color_text = include == true ? 'text-success' : 'text-danger';%>
+<div class="card card-border mb-3">
+    <div class="card-header d-flex justify-content-between border-0 ">
+        <h4 class="my-2 <%= color_text %>"><%= heading %></h4>
+        <button class="btn btn-link dropdown-toggle collapsed p-0" type="button" data-toggle="collapse" data-target="#include_<%=include%>" aria-expanded="false" aria-controls="collapseExample"></button>
+    </div>
+    <div class="collapse" id="include_<%=include%>">
+        <div class="card-body ">
+            <% if(include == true) { %>
+            <ul class="list list-icon include">
+                <%} else {%>
+                <ul class="list list-icon not-include"><% } %>
+                    <% data.forEach(function(item,index){ %>
+                    <li class="list-item"> <%= item %>
+                    </li>
+                    <% }) %>
+                </ul>
+        </div>
+    </div>
+</div>

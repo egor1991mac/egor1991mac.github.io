@@ -1,0 +1,22 @@
+
+.footer{
+    &-payment{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        img{
+            max-width: 75px;
+            max-height: 75px;
+            margin-right: 1rem;
+        }
+    }
+    @include media-breakpoint-down(md){
+        &-payment{
+            justify-content: space-around;
+        }
+        .travelsoft-logo{
+            margin: 0 auto !important;
+        }
+    }
+
+}

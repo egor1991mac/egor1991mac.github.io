@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+_.template(require('./../includes/layout/header.html').default)(data) %>
+
+<body>
+<header class="sticky-top" >
+    <% var back_call_button = _.template(require('./../includes/components/back-call-button.html').default)()
+    user_dropdown_button = _.template(require('./../includes/components/drawer-user-button.html').default)()
+    select_lang = _.template(require('./../includes/components/select_lang.html').default)()
+    ; %>
+
+    <%= _.template(require('./../includes/components/navbar.html').default)({button:back_call_button, user_dropdown_button:user_dropdown_button}) %>
+
+</header>
+
+<main class="section-py-10">
+    <div class="container">
+        <div class="row">
+            <div class="d-none d-lg-block col-lg-3">
+
+
+                <% var left_nav = _.template(require('./../includes/components/left-nav.html').default)({
+                items:[
+                {
+                icon:'icon-profile',
+                text:'О нас',
+                active:'true'
+                },
+                {
+                icon:'icon-bubbles4',
+                text:'Отзывы',
+                active:'false'
+                },
+                {
+                icon:'icon-star-empty',
+                text:'Вакансии',
+                active:'false'
+                },
+                {
+                icon:'icon-credit-card',
+                text:'Оплата',
+                active:'false'
+                }
+                ]
+                }) %>
+                <%= user_nav = _.template(require('./../includes/components/left-static-nav.html').default)({left_nav:left_nav}) %>
+
+
+            </div>
+            <div class="col-12 col-lg-9">
+                <h1 class="h3 mb-0 text-center text-lg-left">
+                    О нас
+                </h1>
+                <div class="d-flex justify-content-between align-items-center mb-2 flex-column flex-lg-row">
+                    <%= _.template(require('./../includes/components/bread-crumb.html').default)({}) %>
+                    <%= _.template(require('./../includes/components/drawer-button.html').default)({}) %>
+                </div>
+                <div class="card card-border">
+                    <div class="card-body">
+                <picture >
+                    <source loading="lazy" media="(min-width: 650px)" srcset="./img/about.jpg">
+                    <source loading="lazy" media="(min-width: 350px)" srcset="./img/about.jpg">
+                    <img loading="lazy" class="img-fluid pb-4 w-100" src="./img/about.jpg" alt="slide1">
+                </picture>
+                <p>
+                    Туристическое агентство «Свэлна» основано в 1994 году с целью предоставления туристических услуг для белорусских граждан, а так же для граждан и туристических компаний стран СНГ и зарубежья.
+                </p>
+                <p>
+                    Основные задачи нашей деятельности направлены на:
+                </p>
+                <ul>
+                    <li>
+                        - установление взаимовыгодного сотрудничества между белорусскими компаниями и компаниями из других стран, посредством налаживания контактов между ними, предоставления качественных услуг, консультаций и помощи в выборе оптимального вида отдыха; </li>
+                    <li>
+                        - предоставление широкого спектра информации об отдыхе в Беларуси, содействия и помощи при осуществлении оздоровительных туров и туристских маршрутов в нашей стране; </li>
+                    <li>
+                        - поддержание национально-культурной жизни граждан Беларуси.
+                        <p>
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    Наше агентство тесно работает с различными белорусскими и зарубежными партнерами, организациями и представителями частного бизнеса, участвует в национальных и международных туристических выставках. Коллектив «Свэлны» - это прежде всего коллектив, для которого ТУРИЗМ и ТУРИСТ обоюдно важные понятия. А работа в туристическом бизнесе - стиль жизни.
+                </p>
+                <p>
+                    За время работы компания "СВЭЛНА" успела зарекомендовать себя как многопрофильная профессиональная и абсолютно надежная компания в сфере международного туризма.
+                </p>
+                <p>
+                    У нас работает команда отличных специалистов, каждый из которых имеет специальное образование в области туризма, многолетний и разнообразный опыт работы.
+                </p>
+                <p>
+                    Постоянные участники специализированных туристических выставок, начиная с 1997 года
+                </p>
+                </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+</main>
+<%= _.template(require('./../includes/layout/footer.html').default)(data) %>
+<%= _.template(require('./../includes/components/back-call-form.html').default)({}) %>
+<%= _.template(require('./../includes/components/drawer.html').default)({filter:user_nav}) %>
+</body>
+</html>

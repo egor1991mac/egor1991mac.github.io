@@ -1,0 +1,37 @@
+
+.contact--list{
+    list-style: none;
+    padding: 1rem 0;
+    margin-block: 0;
+    &.navbar-destcop{
+        display: flex;
+        flex-direction: row;
+        flex-basis: $navbar-dectop--contact--list-flexbasis;
+
+        justify-content: space-between;
+        margin-bottom: 0;
+        .contact--list-item{
+            padding: $navbar-desctop--contact--list-item-padding 0;
+            font-size: $navbar-desctop--contact--list-font-size;
+        }
+    }
+    &-item{
+        padding: $navbar-contact--list-item-padding 0;
+        display: flex;
+        align-items: center;
+        .icon{
+            margin-right: 1rem;
+            font-size: cr(18px);
+        }
+        line-height: 1.2;
+        &:first-child{
+            padding-top: 0;
+            [class*="icon"]{
+                font-weight: bold;
+            }
+        }
+        &:last-child{
+            padding-bottom: 0;
+        }
+    }
+}

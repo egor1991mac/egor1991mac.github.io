@@ -1,0 +1,23 @@
+<form action="">
+    <div class="form-group"><label for="">Логин или email <sup class="text-danger">*</sup></label><input type="email"
+                                                                                                         class="form-control"
+                                                                                                         placeholder="email@mail.com">
+    </div>
+
+    <div class="form-group"><label for="">Пароль <sup class="text-danger">*</sup></label><input type="password"
+                                                                                                class="form-control"
+                                                                                                placeholder="xxx xxx xx">
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+    <div class="form-group d-flex align-items-center justify-content-center mb-0">
+        <input type="checkbox" class=" mr-2"><label
+            for=""
+            class="m-0"> Запомнить меня </label>
+    </div>
+        <a href="#">Забыли пароль?</a>
+    </div>
+    <button class="btn btn-secondary mx-auto mt-3"><span class="icon-user-check mr-2"></span> Авторизация</button>
+    <hr>
+    <h6 class="text-center mb-3">Через соцальные сети</h6>
+    <%= social_button %>
+</form>

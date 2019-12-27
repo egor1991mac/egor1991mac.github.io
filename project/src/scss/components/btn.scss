@@ -1,0 +1,112 @@
+
+
+
+.btn{
+    height: $btn-height;
+    min-width: $btn-width;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .2s;
+    border-radius: $btn-radius;
+    padding-right: $btn-padding;
+    padding-left: $btn-padding;
+    align-self: baseline;
+    &-danger {
+
+        background-color: #f03226;
+        border-color: #f03226;
+    }
+    &-min-width{
+        min-width: cr(160px);
+    }
+    &.dropdown-toggle.collapsed{
+        transform: rotate(0);
+    }
+    &.dropdown-toggle{
+        &:after{
+            margin: 0;
+            color: $main-color-text;
+        }
+        transform: rotate(180deg);
+    }
+    &-rounded{
+        width: $btn-width;
+    }
+    &-sm{
+        height: calc(#{$btn-height} - #{cr(15px)});
+        min-width:calc(#{$btn-width} - #{cr(15px)});
+    }
+    &-lg{
+        height: calc(#{$btn-height} + #{cr(15px)});
+        min-width:calc(#{$btn-width} + #{cr(15px)});
+        border-radius: calc(#{$btn-radius} + #{cr(5px)});
+    }
+    &.outline-gray{
+        background: transparent;
+        border-color: #e1e1e1;
+        color: $secondary-color-text;
+    }
+    &.btn-rounded{
+        border-radius: 50%;
+        width: $btn-width;
+        padding: 0 !important;
+    }
+    &:active{
+        transform: scale(.95);
+        transition: transform .2s;
+    }
+    &.btn-social{
+        margin: 0 .25rem ;
+        border: 0;
+        [class*="icon"]:before{
+            color: white;
+            font-size: 1.5rem;
+        }
+        &.btn-sm{
+            [class*="icon"]:before{
+                color: white;
+                font-size: 1rem;
+            }
+        }
+
+
+        &.vk{
+            background: #4680C2;
+
+        }
+        &.fb{
+            background: #3b5998;
+        }
+        &.inst{
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+
+        }
+        &.tel{
+            background:linear-gradient(120deg, #0088cc, #FFFFFF);
+        }
+        &.vb{
+            background: #59267c;
+        }
+        &.goggle{
+            background: #dc3545;
+        }
+        &.tw{
+
+            background: #1DA1F2;
+        }
+    }
+}
+.btn-primary{
+    &.active,&:hover,&:focus,&:active{
+        color: white !important;
+    }
+
+}
+.btn-outline-primary{
+    &.active,&:hover,&:focus,&:active{
+        color: white !important;
+        background: $primary;
+        //transition: background .2s;
+    }
+}

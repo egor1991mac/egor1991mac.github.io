@@ -1,0 +1,55 @@
+.table{
+  margin-bottom: 0;
+  tr{
+    position: relative;
+
+  }
+  th{
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+
+  }
+  td:last-child{
+
+      display: flex;
+    align-items: center;
+
+  }
+  td,th{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 90%;
+    position: relative;
+
+    a{
+
+
+
+      font-size: cr(21px);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $secondary-color-text;
+      &:hover{
+        color: $secondary;
+        text-decoration: none;
+        &:last-child{
+          color: red;
+        }
+      }
+      &:first-child{
+        margin: 2px .5rem 0;
+      }
+
+    }
+  }
+
+
+
+  &-striped{
+    td,th{
+      border: 0;
+    }
+  }
+}

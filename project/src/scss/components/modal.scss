@@ -1,0 +1,12 @@
+.modal {
+  &.show {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999999999;
+  }
+  &-content{
+    border-radius: $modal-container-radius;
+    border: 0;
+  }
+}

@@ -1,0 +1,21 @@
+
+<ul class="nav nav-left " >
+    <% items.forEach(function(item){
+        if(item.active == 'true') {
+    %>
+
+        <li class="nav-item">
+            <a class="nav-link active" href="#">
+                <span class="icon <%= item.icon %> mr-3"></span>
+                <%= item.text %>
+            </a>
+        </li>
+    <% } else { %>
+    <li class="nav-item">
+        <a class="nav-link " href="#">
+            <span class="icon <%= item.icon %> mr-3"></span>
+            <%= item.text %>
+        </a>
+    </li>
+    <% }}) %>
+</ul>

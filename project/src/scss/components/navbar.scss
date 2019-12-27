@@ -1,0 +1,173 @@
+
+
+.navbar {
+    padding: 0;
+    z-index: 999999;
+    &-desctop {
+        padding: 0;
+    }
+    &-brand{
+        img{
+            max-width: cr(150px);
+        }
+
+    }
+    &--container {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        background: $navbar-background;
+        box-shadow: $shadow;
+    }
+
+    &-collapse {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-toggler {
+        .icon {
+            color: $nav-color-link;
+            font-size: cr(24px);
+        }
+
+        transition: transform .3s;
+
+        &:active {
+            transition: transform .3s;
+            transform: scale(.95);
+        }
+    }
+
+    &-nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown-toggle::after {
+        margin-top: 3px;
+    }
+
+    .nav {
+        &-link {
+            color: $nav-color-link;
+
+            &.dropdown-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &[aria-expanded="true"] {
+                    &:after {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+    @include media-breakpoint-up(lg) {
+        .navbar-desctop {
+            padding: .5rem 0;
+            border-top: $border-card;
+
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .dropdown {
+            &-item {
+                color: $nav-color-link-mobile;
+                padding: 1rem 1rem;
+                font-size: cr(16px);
+                color: $main-color-text;
+            }
+        }
+        .navbar {
+            &-brand{
+                img{
+                    max-width: cr(140px);
+                }
+            }
+            &-collapse {
+                top: 0;
+                left: 0;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                position: fixed;
+                height: 100vh !important;
+                width: 0;
+                background: white;
+                display: -webkit-box !important;
+                display: -ms-flexbox !important;
+                display: flex !important;
+                overflow: hidden;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                transition: width .3s, box-shadow .3s;
+
+
+                .navbar-toggler {
+                    margin: .5rem .5rem;
+                    padding: .5rem .5rem;
+                    margin-left: auto;
+
+                    .icon {
+
+                        color: white;
+                    }
+
+                }
+
+                &.collapsing {
+                    width: 320px;
+                    box-shadow: 1px 1px 1px 2000px rgba(0, 0, 0, .3);
+                    transition: width .3s, box-shadow .3s;
+                }
+
+                &.show {
+                    width: 320px;
+                    box-shadow: 1px 1px 1px 2000px rgba(0, 0, 0, .3);
+                }
+            }
+
+            .dropdown-menu {
+                max-height: 0;
+                display: block;
+                overflow: hidden;
+                margin: 0;
+                transition: max-height .5s ease-out;
+                padding: 0;
+                border: 0;
+
+                &.show {
+                    transition: max-height .5s ease-out;
+                    max-height: cr(600px);
+                    overflow: auto;
+                }
+            }
+
+
+            .nav {
+                &-link {
+                    color: $nav-color-link-mobile;
+                    padding: 1rem 1rem;
+                    font-size: cr(16px);
+                    color: $main-color-text;
+                }
+            }
+
+            &-nav {
+                width: 100%;
+                order: 1;
+                overflow: auto;
+            }
+
+            [class^="form"] {
+                order: 0;
+            }
+
+        }
+    }
+

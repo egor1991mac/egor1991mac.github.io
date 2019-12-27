@@ -1,0 +1,18 @@
+.sort-filter{
+  display: flex;
+  width: 100%;
+  @include media-breakpoint-up('lg'){
+    width: auto;
+    margin-left:auto;
+  }
+  label{
+    margin: auto;
+  }
+  .btn{
+    margin: auto;
+
+
+
+
+  }
+}

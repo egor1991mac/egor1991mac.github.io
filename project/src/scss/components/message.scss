@@ -1,0 +1,35 @@
+.message {
+  &-container{
+    overflow: auto;
+    max-height: 60vh;
+  }
+  display: flex;
+  width: 75%;
+
+  img {
+    width: cr(50px);
+    height: cr(50px);
+  }
+
+  @include media-breakpoint-down('sm') {
+    width: 95%;
+  }
+
+  &-user {
+    margin-right: auto;
+
+    .card-body {
+      background: #28a7451a;
+    }
+  }
+
+  &-manager {
+    margin-left: auto;
+
+    .card-body {
+      background: #17a2b81f;
+    }
+
+
+  }
+}

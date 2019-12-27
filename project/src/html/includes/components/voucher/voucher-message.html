@@ -1,0 +1,117 @@
+<% for(var i = 1; i<5; i++) {%>
+<div class="card card-border mb-4">
+    <div class="card-header border-0">
+        <div class="d-flex justify-content-between align-items-center" data-toggle="collapse" href="#message_<%= i %>"
+             role="button" aria-expanded="false" aria-controls="collapseExample">
+            <h3 class="mb-0">Заказ № <%= i %></h3>
+            <a href="#" class="px-3 text-dark d-flex" style="font-size: 1.25rem">
+                <span class="icon icon-bubbles4"></span>
+                <small class="sup bg-danger rounded-circle text-white" style="">3</small>
+            </a>
+        </div>
+    </div>
+    <div class="collapse" id="message_<%= i %>">
+        <div class="card-body d-flex flex-column border-top message-container">
+
+            <div class="message message-user  mb-4">
+                <picture>
+                    <source srcset="./img/reviewer-4.png" media="(min-width: 768px)">
+                    <img src="" alt=""  class="rounded-circle mr-2">
+                </picture>
+                <div class="card card-border ">
+
+                    <div class="card-body py-2 ">
+                        <div class="d-flex justify-content-between"><small>Иванов Иван</small><small><span class="icon icon-calendar mr-1"></span>21.02.2019:19:59</small></div>
+                        <div class="hr my-1"></div>
+                        Карточка – это гибкий и расширяемый контейнер содержимого. Она включает опции заголовков и
+                        футеров, широкий спектр контента, контекстуальные цвета бэкграунда и
+                    </div>
+
+                </div>
+            </div>
+            <div class="message message-user mb-4">
+                <picture>
+                    <source srcset="./img/reviewer-4.png" media="(min-width: 768px)">
+                    <img src="" alt=""  class="rounded-circle mr-2">
+                </picture>
+                <div class="card card-border ">
+
+                    <div class="card-body py-2 ">
+                        <div class="d-flex justify-content-between"><small>Иванов Иван</small><small><span class="icon icon-calendar mr-1"></span>21.02.2019:19:59</small></div>
+                        <div class="hr my-1"></div>
+                        Карточка – это гибкий и расширяемый контейнер содержимого. Она включает опции заголовков и
+                        футеров, широкий спектр контента, контекстуальные цвета бэкграунда и
+                    </div>
+                </div>
+            </div>
+            <div class=" message message-manager  mb-4">
+                <picture>
+                    <source srcset="./img/reviewer-4.png" media="(min-width: 768px)">
+                    <img src="" alt=""  class="rounded-circle mr-2">
+                </picture>
+                <div class="card card-border ">
+
+                    <div class="card-body py-2 ">
+                        <div class="d-flex justify-content-between"><small>Петя Пупкин</small><small><span class="icon icon-calendar mr-1"></span>21.02.2019:19:59</small></div>
+                        <div class="hr my-1"></div>
+                        <p class="mb-0">
+                        Карточка – это гибкий и расширяемый контейнер содержимого. Она включает опции заголовков и
+                        футеров, широкий спектр контента, контекстуальные цвета бэкграунда и
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="message message-user mb-4">
+                <picture>
+                    <source srcset="./img/reviewer-4.png" media="(min-width: 768px)">
+                    <img src="" alt=""  class="rounded-circle mr-2">
+                </picture>
+                <div class="card card-border ">
+
+                    <div class="card-body py-2 ">
+                        <div class="d-flex justify-content-between"><small>Иванов Иван</small><small><span class="icon icon-calendar mr-1"></span>21.02.2019:19:59</small></div>
+                        <div class="hr my-1"></div>
+                        Карточка – это гибкий и расширяемый контейнер содержимого. Она включает опции заголовков и
+                        футеров, широкий спектр контента, контекстуальные цвета бэкграунда и
+                    </div>
+                </div>
+            </div>
+            <div class=" message message-manager  mb-4">
+                <picture>
+                    <source srcset="./img/reviewer-4.png" media="(min-width: 768px)">
+                    <img src="" alt=""  class="rounded-circle mr-2">
+                </picture>
+                <div class="card card-border ">
+
+                    <div class="card-body py-2 ">
+                        <div class="d-flex justify-content-between"><small>Петя Пупкин</small><small><span class="icon icon-calendar mr-1"></span>21.02.2019:19:59</small></div>
+                        <div class="hr my-1"></div>
+                        <p class="mb-0">
+                            Карточка – это гибкий и расширяемый контейнер содержимого. Она включает опции заголовков и
+                            футеров, широкий спектр контента, контекстуальные цвета бэкграунда и
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="card-footer d-flex">
+
+            <div class="form-group flex-grow-1 mb-0 mr-2">
+                <input type="text" class="form-control ">
+            </div>
+            <button class="btn-secondary btn"><span class="icon icon-send mr-2" style="font-weight: bolder"></span>Отправить
+            </button>
+
+        </div>
+    </div>
+
+
+</div>
+<% } %>
+
+

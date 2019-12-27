@@ -1,0 +1,90 @@
+
+#main-search_form{
+    height: 100vh;
+    position: relative;
+    padding-top: 100px;
+
+
+    .card{
+        background: #fff;
+        border-radius: 3px;
+        position: relative;
+        z-index: 10;
+        &.hor{
+            flex-direction: row;
+        }
+        .form-group{
+            padding: 0 .5rem;
+            flex-basis: 50%;
+        }
+        .btn{
+            align-self: baseline;
+        }
+        &-header{
+            background: $secondary;
+            .h6{
+                color: white;
+                z-index: 1;
+                position: relative;
+                display: inline-block;
+                margin: 0;
+                background: #e43f01;
+                border-radius: cr(25px);
+                padding: .5rem 1rem;
+                span{
+                    position: relative;
+                    z-index: 1;
+                }
+
+            }
+        }
+        &-body{
+
+        }
+    }
+
+    .nav{
+        &-link{
+            border-color: transparent;
+            color: $main-color-text;
+            padding: 0 2rem 1rem;
+            font-size: cr(24px);
+            &.active{
+                border-bottom: 2px solid $secondary;
+            }
+        }
+        &-tabs{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .tab{
+        &-content{
+            padding-top: 2rem;
+            p{
+                text-align: center;
+
+                width: 80%;
+                margin: 0 auto 2rem;
+                color: $secondary-color-text;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md){
+        margin: cr(64px) auto 0;
+        padding-top: 0;
+    }
+    @include media-breakpoint-down(sm){
+        height: auto;
+
+
+    }
+    @include media-breakpoint-down(xs){
+        .card{
+            .form-group{
+                flex-basis: 100%;
+            }
+        }
+    }
+}

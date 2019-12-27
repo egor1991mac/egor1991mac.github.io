@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+_.template(require('./../includes/layout/header.html').default)(data) %>
+
+<body>
+<header class="sticky-top">
+    <% var back_call_button = _.template(require('./../includes/components/back-call-button.html').default)()
+    user_dropdown_button = _.template(require('./../includes/components/drawer-user-button.html').default)()
+    select_lang = _.template(require('./../includes/components/select_lang.html').default)()
+    ; %>
+
+    <%= _.template(require('./../includes/components/navbar-auth.html').default)({button:back_call_button,
+    user_dropdown_button:user_dropdown_button}) %>
+
+
+</header>
+
+<main class="section-py-10">
+    <div class="container">
+        <div class="row">
+            <div class="d-none d-lg-block col-lg-3">
+
+
+                <% var left_nav = _.template(require('./../includes/components/left-nav.html').default)({
+                items:[
+                {
+                icon:'icon-profile',
+                text:'Профиль пользователя',
+                active:'false'
+                },
+                {
+                icon:'icon-credit-card',
+                text:'Список заказов',
+                active:'true'
+                },
+                {
+                icon:'icon-star-empty',
+                text:'Избранное',
+                active:'false'
+                },
+                {
+                icon:'icon-bubbles4',
+                text:'Сообщения',
+                active:'false'
+                }
+                ]
+                }) %>
+                <%= user_nav =
+                _.template(require('./../includes/components/left-user-nav.html').default)({left_nav:left_nav}) %>
+
+
+            </div>
+            <div class="col-12 col-lg-9">
+                <h1 class="h3 mb-0 text-center text-lg-left">
+                    Список заказов
+                </h1>
+                <div class="d-flex justify-content-between align-items-center mb-2 flex-column flex-lg-row">
+                    <%= _.template(require('./../includes/components/bread-crumb.html').default)({}) %>
+                    <div class="sort-filter justify-content-center">
+
+                        <div class="form-group d-flex align-items-center  ml-lg-auto mb-0">
+                            <label for="">Подтвержен:</label>
+                            <button class="btn btn-sm  p-0 ml-1 bg-success"><span
+                                    class="icon-checkmark text-white"></span></button>
+                        </div>
+                        <div class="form-group d-flex align-items-center mb-0 mx-3">
+                            <label for="">Ожидает:</label>
+                            <button class="btn btn-sm bg-warning p-0 ml-1"><span
+                                    class="icon-spinner6 text-white"></span></button>
+                        </div>
+                        <div class="form-group d-flex align-items-center mb-0">
+                            <label for="">Отменено:</label>
+                            <button class="btn btn-sm bg-danger p-0 ml-1"><span
+                                    class="icon-close-button text-white"></span></button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="card card-border overflow-auto">
+
+                    <table class=" table table-striped">
+                        <thead class="pt-3">
+                        <tr>
+                            <th>№</th>
+                            <th>Статус</th>
+                            <th>Дата</th>
+
+                            <th>Стоимость</th>
+                            <th>Скидка</th>
+                            <th>К оплате</th>
+                            <th>Оплачено</th>
+                            <th>Клиент</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <tr>
+                            <td>1</td>
+
+                            <td>
+                                <div class="form-group d-flex align-items-center justify-content-center  ml-lg-auto mb-0">
+                                    <div class="btn btn-sm  p-0 ml-1 bg-success"><span
+                                            class="icon-checkmark text-white"></span></div>
+                                </div>
+                            </td>
+                            <td>21.02.2019</td>
+                            <td>100usd</td>
+                            <td>5%</td>
+                            <td>95usd</td>
+                            <td>0</td>
+                            <td>Иванов Иван</td>
+                            <td><a href="#">
+                                <span class="icon icon-eye "></span>
+                            </a>
+                                <a href="#">
+                                    <span class="icon icon-bin"></span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <div class="form-group d-flex align-items-center justify-content-center ml-lg-auto mb-0">
+                                    <div class="btn btn-sm  p-0 ml-1 bg-success"><span
+                                            class="icon-checkmark text-white"></span></div>
+                                </div>
+                            </td>
+                            <td>21.02.2019</td>
+                            <td>100usd</td>
+                            <td>5%</td>
+                            <td>95usd</td>
+                            <td>0</td>
+                            <td>Иванов Иван</td>
+                            <td><a href="#">
+                                <span class="icon icon-eye "></span>
+                            </a>
+                                <a href="#">
+                                    <span class="icon icon-bin"></span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+
+                            <td>
+                                <div class="form-group d-flex align-items-center justify-content-center ml-lg-auto mb-0">
+                                    <div class="btn btn-sm  p-0 ml-1 bg-danger"><span
+                                            class="icon-close-button text-white"></span></div>
+                                </div>
+                            </td>
+                            <td>21.02.2019</td>
+                            <td>100usd</td>
+                            <td>5%</td>
+                            <td>95usd</td>
+                            <td>0</td>
+                            <td>Иванов Иван</td>
+                            <td><a href="#">
+                                <span class="icon icon-eye "></span>
+                            </a>
+                                <a href="#">
+                                    <span class="icon icon-bin"></span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+
+                            <td>
+                                <div class="form-group d-flex align-items-center justify-content-center ml-lg-auto mb-0">
+                                    <div class="btn btn-sm  p-0 ml-1 bg-success"><span
+                                            class="icon-checkmark text-white"></span></div>
+                                </div>
+                            </td>
+                            <td>21.02.2019</td>
+                            <td>100usd</td>
+                            <td>5%</td>
+                            <td>95usd</td>
+                            <td>0</td>
+                            <td>Иванов Иван</td>
+                            <td><a href="#">
+                                <span class="icon icon-eye "></span>
+                            </a>
+                                <a href="#">
+                                    <span class="icon icon-bin"></span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+
+                            <td>
+                                <div class="form-group d-flex align-items-center justify-content-center ml-lg-auto mb-0">
+                                    <div class="btn btn-sm  p-0 ml-1 bg-warning"><span
+                                            class="icon-spinner6 text-white"></span></div>
+                                </div>
+                            </td>
+                            <td>21.02.2019</td>
+                            <td>100usd</td>
+                            <td>5%</td>
+                            <td>95usd</td>
+                            <td>0</td>
+                            <td>Иванов Иван</td>
+                            <td><a href="#">
+                                <span class="icon icon-eye "></span>
+                            </a>
+                                <a href="#">
+                                    <span class="icon icon-bin"></span>
+                                </a>
+                            </td>
+                        </tr>
+
+                        </tbody>
+
+
+                    </table>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</main>
+<%= _.template(require('./../includes/layout/footer.html').default)(data) %>
+<%= _.template(require('./../includes/components/back-call-form.html').default)({}) %>
+<%= _.template(require('./../includes/components/drawer.html').default)({filter:user_nav}) %>
+</body>
+</html>

@@ -1,0 +1,57 @@
+
+.card{
+    background: transparent;
+
+    &.rewies{
+        h5{
+            color: white;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        opacity: .4;
+        box-shadow:  none !important;
+        .card-date{
+            margin-bottom:.5rem;
+        }
+        .card-img{
+
+            width: 100%;
+            max-width: cr(240px);
+            height: cr(230px);
+            max-height: cr(230px);
+            position: relative;
+
+
+            img{
+                width: 100%;
+                max-width: 600px;
+                height: 100%;
+            }
+        }
+        .card-body{
+            background: transparent;
+            padding-top: 65px;
+            margin-top: -50px;
+            color: white;
+            text-align: center;
+            border: 0 !important;
+            box-shadow:  none !important;
+
+        }
+
+
+    }
+}
+.center{
+    .card.rewies{
+        opacity: 1;
+        .card-body{
+            background: transparent;
+            border: 0 !important;
+
+        }
+    }
+
+}

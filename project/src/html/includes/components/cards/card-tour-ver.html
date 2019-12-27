@@ -1,0 +1,58 @@
+
+
+    <div class="card card-border h-100 with-animation">
+
+        <picture class="card-img-top">
+            <source loading="lazy" media="(min-width: 650px)" srcset="<%= item.picture %>">
+            <source loading="lazy" media="(min-width: 350px)" srcset="<%= item.picture %>">
+            <img loading="lazy" src="<%= item.picture %>" alt="slide1">
+        </picture>
+        <ul class="card-options">
+            <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
+            <li class="card-options--item new"><span class="icon icon-new-label"></span> текст</li>
+            <li class="card-options--item doc"><span class="icon icon-profile"></span> текст</li>
+            <li class="card-options--item custom-tour"><span class="icon icon-creativity"></span>екст</li>
+        </ul>
+
+        <div class="card-body">
+            <h5 class="card-title"><%= item.h %></h5>
+            <div class="d-flex justify-content-between ">
+                <ul class="card-rating mb-0">
+                    <li><span class="icon icon-star-full"></span></li>
+                    <li><span class="icon icon-star-half"></span></li>
+                    <li><span class="icon icon-star-empty"></span></li>
+                    <li><span class="icon icon-star-empty"></span></li>
+                    <li><span class="icon icon-star-empty"></span></li>
+                </ul>
+                <strong class="card-rewies">Отзывов: 4</strong>
+            </div>
+            <div class="hr my-2"></div>
+            <% if(item.p.length > 0 ) { %>
+                <p class="card-text"><%= item.p %></p>
+            <% } %>
+            <% if(item.listTourOptions.length > 0 ) { %>
+                <ul class="list-tour-options">
+                <% item.listTourOptions.forEach(function(opt) { %>
+                    <li class="list-tour-options-item">
+                        <% if(opt.icon.length > 0) {%>
+                        <span class="icon-<%= opt.icon %> mr-2"></span> <%}%><%= opt.text %></li>
+                <%})%>
+                </ul>
+            <% } %>
+            <div class="hr mt-auto"></div>
+            <div class="d-flex align-items-center justify-content-between pt-3">
+                <a href="#" class="btn btn-secondary">
+                    <span class="icon icon-book mr-2" style="font-weight: bolder"></span>  Подробнее
+                </a>
+                <div class="card-price">
+                    200 EUR
+                    <br>
+                    <small>400 BYN</small>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+

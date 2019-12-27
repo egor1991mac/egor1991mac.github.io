@@ -1,0 +1,78 @@
+.promocode-container{
+  display: flex;
+  justify-content: space-between;
+  @media  (max-width: 1190px)  {
+   flex-wrap: wrap;
+  }
+  .form-group{
+    margin-bottom: 0;
+    flex-basis: 55%;
+    max-width: 100%;
+    flex-grow: 1;
+
+    @media (min-width: 1190px) {
+      margin: 0 .5rem 0 0;
+    }
+    @media (min-width: 659px) and (max-width: 1190px)  {
+      flex-basis: 100%;
+      margin: 0 0 .5rem 0;
+    }
+     @media (max-width: 659px) {
+      margin: 0 .5rem 0 0;
+    } @media (max-width: 390px) {
+      flex-basis: 100%;
+      margin: 0 0 .5rem 0;
+    }
+
+
+
+    //@media (min-width:1140px) and (max-width: 1300px) {
+    //
+    //}
+
+
+  }
+  .btn{
+    margin-top: auto;
+    margin-left: auto;
+  }
+
+}
+.to-pay-container{
+  display: flex;
+  justify-content: space-between;
+
+  .h4{
+    flex-grow: 1;
+    margin-right: .5rem;
+  }
+  @media (max-width: 1190px) {
+    flex-wrap: wrap;
+    .h4{
+      text-align: center;
+      padding-bottom: .5rem;
+
+    }
+
+    .btn{
+      margin: 0 auto;
+    }
+
+  }
+  .btn{
+    min-width: cr(160px);
+
+  }
+  @media (max-width: 659px) {
+    .h4{
+      text-align: left;
+      padding-bottom: 0;
+    }
+  }
+  @media (max-width: 390px) {
+    .h4{
+      text-align: center;
+      padding-bottom: .5rem;
+    }
+  }
+}

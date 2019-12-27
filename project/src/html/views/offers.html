@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+_.template(require('./../includes/layout/header.html').default)(data) %>
+
+<body>
+<header class="sticky-top">
+    <% var back_call_button = _.template(require('./../includes/components/back-call-button.html').default)()
+    var social_button = _.template(require('./../includes/components/social-button.html').default)()
+    user_dropdown_button = _.template(require('./../includes/components/user-dropdown.html').default)()
+    select_lang = _.template(require('./../includes/components/select_lang.html').default)()
+    ; %>
+
+    <%= _.template(require('./../includes/components/navbar.html').default)({button:back_call_button,
+    user_dropdown_button:user_dropdown_button}) %>
+
+</header>
+
+<main class="section-py-10">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="d-flex justify-content-between">
+                <h3 class="h3">Заказ №123</h3>
+                    <%= _.template(require('./../includes/components/offers/delete-offer.html').default)({}) %>
+                </div>
+            </div>
+            <div class="col-sm col-md-6">
+
+                <%= _.template(require('./../includes/components/offers/price-item.html').default)({}) %>
+                <section class="py-5">
+                    <h4 class="h4">Паспортные данные туристов</h4>
+                    <%= _.template(require('./../includes/components/offers/tourst.html').default)({}) %>
+                    <button class="btn btn-secondary float-right"><span class="icon-floppy-disk mr-2"></span>Сохранить туристов</button>
+                </section>
+                <section class="pt-5">
+                    <h4 class="h4">Сообщения по путевке</h4>
+                    <textarea name="" id="" cols="10" rows="5" class="form-control mb-4"></textarea>
+                    <button class="btn btn-secondary float-right"><span class="icon icon-send mr-2 "></span>Отправить</button>
+                </section>
+
+
+            </div>
+            <div class="col-sm-4 mt-4 mt-sm-0">
+                <div class="sticky-top" style="top: 90px">
+                <div class="card mb-4">
+                    <div class="card-footer bg-success">
+                    <h4 class="mb-0 text-white text-center">Подтвержден <span class="ml-2 icon-checkmark"></span></h4>
+                </div>
+                </div>
+
+                <div class="card card-border mb-4">
+                    <div class="card-footer border-0 ">
+                        <div class="to-pay-container">
+                        <div class="h5 mb-0">
+                            <p class="h6 mb-0"> <small> Цена с учетом скидки</small></p>
+                            <span class="text-left"><b
+                                    class="text-secondary" style="line-height: 1">190 usd</b> +
+                                    120 byn</span>
+
+                        </div>
+
+                        <button class="btn btn-secondary my-auto"><span class="icon-credit-card mr-2"></span>Оплатить
+                        </button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card card-border">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex flex-column">Путевка:
+                                <small class="text-muted">
+                                    Нажмите скачать для получения путевки
+                                </small>
+                            </div>
+                            <button class="btn btn-secondary btn-min-width my-auto"><span class="icon-floppy-disk mr-2"></span> Скачать</button>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                        <span class="d-flex flex-column">Путеводитель:
+                            <small class="text-muted">
+                                Описание тура
+                            </small>
+                        </span>
+                            <button class="btn btn-secondary btn-min-width my-auto"  ><span class="icon-floppy-disk mr-2"></span>Скачать</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</main>
+<%= _.template(require('./../includes/layout/footer.html').default)(data) %>
+<%= _.template(require('./../includes/components/back-call-form.html').default)({}) %>
+<%= _.template(require('./../includes/components/offers/thankyou.html').default)({}) %>
+</body>
+</html>

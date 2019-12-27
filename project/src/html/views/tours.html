@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+_.template(require('./../includes/layout/header.html').default)(data) %>
+
+<body>
+<header class="sticky-top" >
+    <% var back_call_button = _.template(require('./../includes/components/back-call-button.html').default)()
+    user_dropdown_button = _.template(require('./../includes/components/user-dropdown.html').default)()
+    select_lang = _.template(require('./../includes/components/select_lang.html').default)()
+    ; %>
+
+    <%= _.template(require('./../includes/components/navbar.html').default)({button:back_call_button, user_dropdown_button:user_dropdown_button}) %>
+
+
+
+</header>
+
+<main class="section-py-10">
+    <div class="container">
+        <div class="row">
+            <div class=" col-lg-3">
+<!--                <% rangeSlider = _.template(require('./../includes/components/slide-two-point.html').default)({}) %>-->
+                <% filter = _.template(require('./../includes/components/left-filter.html').default)() %>
+                <div class="navbar-collapse drawer navbar-expand-lg" id="navbarTogglerDemo02">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon icon-close-button"></span>
+                    </button>
+                    <div class="card card-border">
+                        <div class="card-body">
+                            <%= filter %>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-9">
+                <h1 class="h3 mb-0 text-center text-lg-left">
+                   Автобусные туры
+                </h1>
+                <div class="d-flex justify-content-between align-items-center mb-2 flex-column flex-lg-row">
+                    <%= _.template(require('./../includes/components/bread-crumb.html').default)({}) %>
+
+
+                    <% draverBtn =  _.template(require('./../includes/components/drawer-button.html').default)({}) %>
+                    <%= _.template(require('./../includes/components/sort-filter.html').default)({draverBtn:draverBtn}) %>
+                </div>
+<!--                <div class="card card-hor card-border p-0 mb-4" >-->
+<!--                    <div class="card-body p-3 d-flex flex-row justify-content-end">-->
+
+<!--                </div>-->
+                <% var cardtour = _.template(require('./../includes/components/cards/card-tour-hor.html').default)%>
+                <%= _.template(require('./../includes/components/tours-page/cards-tour.html').default)({cardtour:cardtour,
+                Items:[
+                {
+                picture:'./img/home_slider/slider-101.jpg',
+                h:'Тур в Грецию',
+                p:'',
+                listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+                },
+                {
+                picture:'./img/home_slider/slider-103.jpg',
+                h:'Тур в Польшу',
+                p:'',
+                listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+                },
+                {
+                picture:'./img/home_slider/slider-103.jpg',
+                h:'Тур в Египет',
+                p:'',
+                listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+                },
+                {
+                picture:'./img/home_slider/slider-103.jpg',
+                h:'Тур в Москву',
+                p:'',
+                listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+                },
+                {
+                picture:'./img/home_slider/slider-101.jpg',
+                h:'Тур в Грецию',
+                p:'',
+                listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+                },
+                {
+                picture:'./img/home_slider/slider-103.jpg',
+                h:'Тур в Польшу',
+                p:'',
+                listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+                },
+
+                ]
+                }) %>
+                <%= _.template(require('./../includes/components/pagination.html').default)({}) %>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</main>
+<%= _.template(require('./../includes/layout/footer.html').default)(data) %>
+<%= _.template(require('./../includes/components/back-call-form.html').default)({}) %>
+<!--<% var mobileFilter = '<div class="card w-100"> <div class="card-body">'+ filter +'</div></div>' %>-->
+<!--<%= _.template(require('./../includes/components/drawer.html').default)({filter:mobileFilter}) %>-->
+</body>
+</html>

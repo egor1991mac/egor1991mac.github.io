@@ -1,0 +1,174 @@
+
+#main-search_form-with-tabs{
+    margin-top:    cr(-68px);
+    position: relative;
+    z-index: 1000;
+
+    .hor-scrolling{
+        width: 100%;
+        overflow: scroll;
+        position: relative;
+        min-height: cr(68px);
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE and Edge */
+
+
+
+
+    }
+    // z-index: 1;
+    // position: absolute;
+    // /* height: 100%; */
+    // left: 50%;
+    // /* bottom: 50%; */
+    // top: 0;
+    // width: 100%;
+    // display: -webkit-box;
+    // display: -ms-flexbox;
+    // display: flex;
+    // -webkit-box-pack: justify;
+    // -ms-flex-pack: justify;
+    // justify-content: space-between;
+    // margin: 0;
+    // margin-right: -50%;
+    // -webkit-transform: translate(-50%, -50%);
+    // transform: translate(-50%, 0);
+    // padding: 0 1rem;
+    // z-index: 100;
+    // background: transparent;
+    // height: 100%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-end;
+
+    .card{
+        border-radius: 3px;
+        position: relative;
+        z-index: 10;
+        border: 0;
+        box-shadow: none !important;
+        &.hor{
+            flex-direction: row;
+        }
+        .form-group{
+            padding: 0 .5rem;
+            flex-basis: 20%;
+            label{
+                color: $color-label-search-form;
+            }
+
+        }
+
+        .btn{
+            margin-top: auto;
+            align-self: baseline;
+        }
+        &-header{
+            background: $secondary;
+            .h6{
+                color: white;
+                z-index: 1;
+                position: relative;
+                display: inline-block;
+                margin: 0;
+                background: #e43f01;
+                border-radius: cr(25px);
+                padding: .5rem 1rem;
+                span{
+                    position: relative;
+                    z-index: 1;
+                }
+
+            }
+        }
+        &-body{
+            background: #43a0d2;
+            padding: cr(40px) 0;
+
+        }
+    }
+
+    .nav{
+        justify-content: center;
+        &-link{
+            border-color: transparent;
+            color: white;
+            padding: 1rem 2rem 1rem;
+            font-size: cr(24px);
+            border-radius: 0;
+            &.active{
+                background: #43a0d2;
+                color: white;
+                border-radius: 4px 4px 0 0;
+            }
+        }
+        &-tabs{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .tab{
+        &-content{
+            padding-top: 0;
+            margin-top: -3px;
+            p{
+                text-align: center;
+                width: 80%;
+                margin: 0 auto 2rem;
+                color: $secondary-color-text;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md){
+
+        padding-top: 0;
+        .nav{
+            &-pills{
+                position: absolute;
+                top: 0;
+                left: 0;
+                flex-wrap: nowrap;
+                overflow-x: scroll;
+                overflow-y: hidden;
+            }
+
+            &-item{
+                white-space: nowrap;
+            }
+
+        }
+        .card{
+            .form-group{
+                flex-basis: 50%;
+            }
+            .btn{
+                margin-top: cr(10px);
+
+            }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        height: auto;
+        .row{
+            margin: 0;
+        }
+
+
+    }
+    @include media-breakpoint-down(xs){
+        .card{
+            .form-group{
+                flex-basis: 100%;
+            }
+        }
+    }
+}
