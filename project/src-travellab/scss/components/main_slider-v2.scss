@@ -1,5 +1,4 @@
-@import "../utils/var.scss";
-@import "../bscss/_mixins.scss";
+
 .owl{
     &-nav{
         max-width: $max-width-container;
@@ -77,6 +76,7 @@
         .h3{
             font-size: cr(44px);
             text-align:center;
+            color: white;
         }
         p{
             text-align:center;

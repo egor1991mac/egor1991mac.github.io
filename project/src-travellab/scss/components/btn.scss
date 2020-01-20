@@ -1,6 +1,3 @@
-@import "../utils/var.scss";
-@import "../bscss/_mixins.scss";
-
 .btn{
     height: $btn-height;
     min-width: $btn-width;
@@ -12,6 +9,24 @@
     padding-right: $btn-padding;
     padding-left: $btn-padding;
     align-self: baseline;
+
+    &-primary{
+        background-color: $primary;
+        border-color: $primary;
+
+        &:hover, &:active, &:focus{
+            background-color: $primary-hover !important;
+            border-color: $primary-hover !important;
+        }
+    }
+    &-secondary{
+        background-color: $secondary;
+        border-color: $secondary;
+        &:hover, &:active, &:focus{
+            background-color: $secondary-hover !important;
+            border-color: $secondary-hover !important;
+        }
+    }
     &-danger {
 
         background-color: #f03226;

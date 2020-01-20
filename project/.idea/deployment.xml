@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="demo.travelsoft.by">
+  <component name="PublishConfigData" serverName="smoke">
     <serverData>
+      <paths name="bitrix.alatantour.by">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="bitrix.alatantour.by ">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="ct.travelsoft.by">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="demo.travelsoft.by">
         <serverdata>
           <mappings>
@@ -9,10 +33,161 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="ecotour">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="eurotrans">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="gotrip">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$/demo.travelsoft" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="http://staging.vetliva.by/">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="https://smoktravel.by/">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="kipr.travelsoft.by">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="new.tio.by">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="site.ecotour.by">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="site.ecotour.by (project level)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="smoke">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$/demo.travelclub" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="solemare_hosting">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="sunrize">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="tobelarus">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="trakt.by">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="trakt.by (1)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="travelsoft">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="tv">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="vetliva">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="vetliva (1)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="vh115.hoster.by">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
           </mappings>
         </serverdata>
       </paths>

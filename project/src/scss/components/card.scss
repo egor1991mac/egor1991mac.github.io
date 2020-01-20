@@ -5,6 +5,19 @@
 
     box-shadow: $shadow;
     transform: translateY(0);
+    &-sm{
+        .card-body{
+            padding: .5rem 1rem !important;
+
+        }
+        .card-text{
+            text-indent: 0;
+        }
+        .card-title{
+            margin-bottom: .25rem;
+        }
+    }
+
     &.with-animation{
         transition: box-shadow .3s, transform .3s;
         &:hover{
@@ -130,6 +143,7 @@
     &-text{
         margin-top: auto;
         font-size: cr(14px);
+
     }
 
 

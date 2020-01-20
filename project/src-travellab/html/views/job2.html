@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+_.template(require('./../includes/layout/header.html').default)(data) %>
+
+<body>
+<header class="sticky-top">
+    <% var back_call_button = _.template(require('./../includes/components/back-call-button.html').default)()
+    user_dropdown_button = _.template(require('./../includes/components/drawer-user-button.html').default)()
+    select_lang = _.template(require('./../includes/components/select_lang.html').default)()
+    ; %>
+
+    <%= _.template(require('./../includes/components/navbar.html').default)({button:back_call_button,
+    user_dropdown_button:user_dropdown_button}) %>
+
+</header>
+
+<main class="section-py-10">
+    <div class="container">
+        <div class="row">
+            <div class="d-none d-lg-block col-lg-3">
+
+
+                <% var left_nav = _.template(require('./../includes/components/left-nav.html').default)({
+                items:[
+                {
+                icon:'icon-profile',
+                text:'О нас',
+                active:'false'
+                },
+                {
+                icon:'icon-bubbles4',
+                text:'Отзывы',
+                active:'false'
+                },
+                {
+                icon:'icon-star-empty',
+                text:'Вакансии',
+                active:'true'
+                },
+                {
+                icon:'icon-credit-card',
+                text:'Оплата',
+                active:'false'
+                }
+                ]
+                }) %>
+                <%= user_nav =
+                _.template(require('./../includes/components/left-static-nav.html').default)({left_nav:left_nav}) %>
+
+
+            </div>
+            <div class="col-12 col-lg-9">
+                <h1 class="h2 mb-0 text-center text-lg-left">
+                    Вакансии
+                </h1>
+                <div class="d-flex justify-content-between align-items-center mb-2 flex-column flex-lg-row">
+                    <%= _.template(require('./../includes/components/bread-crumb.html').default)({}) %>
+
+                </div>
+                <div class="card card-border">
+                    <div class="card-body">
+                        <div class="content">
+
+                                <p>
+                                    Мы – крупная и быстроразвивающаяся туристическая компания, в которой собраны только лучшие профессионалы, каждый из которых – мастер своего дела. И мы всегда рады пополнить наши ряды новыми, перспективными сотрудниками, которым близок наш подход к делу.
+                                </p>
+                                <p>
+                                    На данный момент открыты следующие вакансии:
+                                </p>
+                                <h2>Менеджер по туризму</h2>
+                                <h3>Требования:</h3>
+                                <ul>
+                                    <li>Опыт продаж в туризме от 3-х лет;</li>
+                                    <li>Знание популярных направлений и основных туроператоров;</li>
+                                    <li>Умение работать с системами бронирования туроператоров;</li>
+                                    <li>Страсть к путешествиям;</li>
+                                    <li>Желание работать в молодой активной команде;</li>
+                                    <li>Опыт участия в рекламных турах‚ семинарах приветствуется;</li>
+                                    <li>Грамотная устная и письменная речь.</li>
+                                </ul>
+                                <h3>Обязанности:</h3>
+                                <ul>
+                                    <li>Консультирование клиентов‚ подбор и продажа туров;</li>
+                                    <li>Полное ведение заявки: от звонка‚ консультации до завершения тура и получения обратной связи;</li>
+                                    <li>Приём документов на визы;</li>
+                                    <li>Приём входящих телефонных звонков.</li>
+                                </ul>
+                                <p>
+                                    Высылайте Ваше резюме на почту: <a href="mailto:info@svelna.com">info@svelna.com</a> с пометкой "резюме"
+                                </p>									</div>
+
+
+                    </div>
+                </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+</main>
+<%= _.template(require('./../includes/layout/footer.html').default)(data) %>
+<%= _.template(require('./../includes/components/back-call-form.html').default)({}) %>
+<%= _.template(require('./../includes/components/drawer.html').default)({filter:user_nav}) %>
+</body>
+</html>

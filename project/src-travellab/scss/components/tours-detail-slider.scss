@@ -11,6 +11,32 @@
       width: auto;
     }
   }
+  .owl{
+    &-nav{
+      max-width: $max-width-container;
+      position: absolute;
+      top: calc(50% - #{cr(42px)});
+      left: 50%;
+      bottom: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      padding: 0 1rem;
+
+    }
+    &-next,&-prev{
+      height: cr(42px);
+      background: transparent !important;
+      .btn-outline-secondary{
+        border-color: white;
+        color: white;
+      }
+    }
+
+  }
 }
 .js-slider_detail-thumbs{
 

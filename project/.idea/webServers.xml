@@ -10,6 +10,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="57cf4331-6032-4541-bc4f-5207b7b82ae3" name="smoke" url="http://travelclub.travelsoft.by/">
+        <fileTransfer host="travelclub.travelsoft.by" port="22" rootFolder="/home/bitrix/ext_www/travelclub.travelsoft.by/local" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

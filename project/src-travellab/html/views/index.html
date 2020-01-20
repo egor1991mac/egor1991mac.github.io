@@ -12,235 +12,244 @@
       <%= _.template(require('./../includes/components/navbar.html').default)({button:back_call_button, user_dropdown_button:user_dropdown_button}) %>
 
     </header>
-    <%= _.template(require('./../includes/components/main_slider-v2.html').default)({
+    <div class=" position-relative">
+    <%= _.template(require('./../includes/components/main-page/slider/main_slider-v2.html').default)({
     Items:[
     {
     picture:'./img/home_slider/slider-101.jpg',
-    text:'hello world',
-    p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
     },
     {
     picture:'./img/home_slider/slider-103.jpg',
-    text:'hello world',
-    p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+
     },
     ]
     }) %>
+      <%= _.template(require('./../includes/components/main-page/form/main-search_form-with-tabs.html').default)() %>
+<!--    <div class="container ">-->
+<!--      <div class="row h-90vh h-100 justify-content-center align-items-center mx-0">-->
+<!--&lt;!&ndash;        <%= _.template(require('./../includes/components/main-page/slider/main_slider-text.html').default)({Items:[{},{}]}) %>&ndash;&gt;-->
+<!--       -->
+<!--      </div>-->
+<!--    </div>-->
+    </div>
 
-    <%= _.template(require('./../includes/components/main-search_form-with-tabs.html').default)() %>
-    <main>
+<!--    <main style='background: url("./img/rewies.jpg"); background-attachment: fixed; background-size: cover'>-->
 
-
-      <section class="section-pt-10 section-mb-20  " id="best-price-avia">
+<main>
+      <section class="section-py-12 bg-white" id="best-price-avia">
         <div class="container">
-        <div class="section-tittle pb-5">
-            <%= _.template(require('./../includes/components/header-section.html').default)({h:"Популярные авиа туры",p:"Consectetur voluptate anim officia sit aute dolore veniam officia magna elit."}) %>
+        <div class="section-tittle row justify-content-center">
+            <%= _.template(require('./../includes/components/main-page/tittle/section-tittle-center.html').default)({h:"Популярные авиа туры",p:'Consectetur voluptate anim officia sit aute dolore veniam officia magna elit.'}) %>
        </div>
-
-        <%= _.template(require('./../includes/components/main-card-tour.html').default)({
+      <% var cardtour = _.template(require('./../includes/components/cards/card-tour-ver.html').default)%>
+        <%= _.template(require('./../includes/components/main-page/section/main-card-tour.html').default)({cardtour:cardtour,
           Items:[
             {
               picture:'./img/home_slider/slider-101.jpg',
-              h:'Краков* - Вена - Венский лес* (Хайлигенкройц, Баден, замок Лихтенштейн)',
-              p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-            },
+              h:'Тур в Грецию',
+              p:'',
+          listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+          },
             {
               picture:'./img/home_slider/slider-103.jpg',
-              h:'Краков* - Вена - Венский лес* (Хайлигенкройц, Баден, замок Лихтенштейн)',
-              p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-            },
+              h:'Тур в Польшу',
+              p:'',
+          listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+          },
             {
               picture:'./img/home_slider/slider-103.jpg',
-              h:'Регенсбург - Лихтенштейн - Цюрих - Люцерн - Женева - Швейцарская Ривьера* - Берн - Бернские альпы* - Нюрнберг',
-              p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-            },
+              h:'Тур в Египет',
+              p:'',
+          listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+          },
             {
               picture:'./img/home_slider/slider-103.jpg',
-              h:'Регенсбург - Лихтенштейн - Цюрих - Люцерн - Женева - Швейцарская Ривьера* - Берн - Бернские альпы* - Нюрнберг',
-              p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-            },
-            {
-              picture:'./img/home_slider/slider-103.jpg',
-              h:'hello world',
-              p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-            },
-            {
-              picture:'./img/home_slider/slider-103.jpg',
-              h:'hello world',
-              p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-            },
+              h:'Тур в Москву',
+              p:'',
+          listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+          },
+          {
+          picture:'./img/home_slider/slider-101.jpg',
+          h:'Тур в Грецию',
+          p:'',
+          listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+          },
+          {
+          picture:'./img/home_slider/slider-103.jpg',
+          h:'Тур в Польшу',
+          p:'',
+            listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+          },
 
           ]
         }) %>
       </div>
       </section>
-      <section class="section-py-20 section-background-gray " id="best-price">
+     <section class="section-py-20 section-background-gray " id="best-price-bus">
+    <div class="container">
+      <div class="section-tittle row justify-content-center">
+        <%= _.template(require('./../includes/components/main-page/tittle/section-tittle-center.html').default)({h:"Популярные Автобусные туры туры",p:'Consectetur voluptate anim officia sit aute dolore veniam officia magna elit.'}) %>
+      </div>
+      <% var cardtour = _.template(require('./../includes/components/cards/card-tour-ver.html').default)%>
+      <%= _.template(require('./../includes/components/main-page/section/main-card-tour.html').default)({cardtour:cardtour,
+      Items:[
+      {
+      picture:'./img/home_slider/slider-101.jpg',
+      h:'Тур в Грецию',
+      p:'',
+      listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+      },
+      {
+      picture:'./img/home_slider/slider-103.jpg',
+      h:'Тур в Польшу',
+      p:'',
+      listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+      },
+      {
+      picture:'./img/home_slider/slider-103.jpg',
+      h:'Тур в Египет',
+      p:'',
+      listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+      },
+      {
+      picture:'./img/home_slider/slider-103.jpg',
+      h:'Тур в Москву',
+      p:'',
+      listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+      },
+      {
+      picture:'./img/home_slider/slider-101.jpg',
+      h:'Тур в Грецию',
+      p:'',
+      listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+      },
+      {
+      picture:'./img/home_slider/slider-103.jpg',
+      h:'Тур в Польшу',
+      p:'',
+      listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+      },
+
+      ]
+      }) %>
+    </div>
+  </section>
+      <section class=" section-py-20 "  id="rewies">
         <div class="container">
-        <div class="section-tittle pb-5">
-              <%= _.template(require('./../includes/components/header-section.html').default)({h:"Популярные автобусные туры",p:"Consectetur voluptate anim officia sit aute dolore veniam officia magna elit."}) %>
-         </div>
-
-          <%= _.template(require('./../includes/components/main-card-tour.html').default)({
-            Items:[
-              {
-                picture:'./img/home_slider/slider-101.jpg',
-                h:'Краков* - Вена - Венский лес* (Хайлигенкройц, Баден, замок Лихтенштейн)',
-                p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-              },
-              {
-                picture:'./img/home_slider/slider-103.jpg',
-                h:'Краков* - Вена - Венский лес* (Хайлигенкройц, Баден, замок Лихтенштейн)',
-                p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-              },
-              {
-                picture:'./img/home_slider/slider-103.jpg',
-                h:'Регенсбург - Лихтенштейн - Цюрих - Люцерн - Женева - Швейцарская Ривьера* - Берн - Бернские альпы* - Нюрнберг',
-                p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-              },
-              {
-                picture:'./img/home_slider/slider-103.jpg',
-                h:'Регенсбург - Лихтенштейн - Цюрих - Люцерн - Женева - Швейцарская Ривьера* - Берн - Бернские альпы* - Нюрнберг',
-                p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-              },
-              {
-                picture:'./img/home_slider/slider-103.jpg',
-                h:'hello world',
-                p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-              },
-              {
-                picture:'./img/home_slider/slider-103.jpg',
-                h:'hello world',
-                p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-              },
-
-            ]
-          }) %>
+        <div class="section-tittle row justify-content-center">
+          <%= _.template(require('./../includes/components/main-page/tittle/section-tittle-center.html').default)({h:"Отызывы",p:'Consectetur voluptate anim officia sit aute dolore veniam officia magna elit.'}) %>
         </div>
-        </section>
-        <section class=" section-py-20" id="rewies">
-            <div class="section-tittle pb-5 container">
-                <%= _.template(require('./../includes/components/header-section.html').default)({h:"Отзывы",p:"Consectetur voluptate anim officia sit aute dolore veniam officia magna elit."}) %>
-            </div>
-            <%= _.template(require('./../includes/components/rewies-main.html').default)({
-              Items:[
-                {
-                  picture:'./img/home_slider/slider-101.jpg',
-                  text:'hello world',
-                  p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-                },
-                {
-                  picture:'./img/home_slider/slider-103.jpg',
-                  text:'hello world',
-                  p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-                },
-                {
-                  picture:'./img/home_slider/slider-103.jpg',
-                  text:'hello world',
-                  p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-                },
-                {
-                  picture:'./img/home_slider/slider-103.jpg',
-                  text:'hello world',
-                  p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-                },
-                {
-                  picture:'./img/home_slider/slider-103.jpg',
-                  text:'hello world',
-                  p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-                },
-                {
-                  picture:'./img/home_slider/slider-103.jpg',
-                  text:'hello world',
-                  p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-                },
-                {
-                  picture:'./img/home_slider/slider-103.jpg',
-                  text:'hello world',
-                  p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-                },
-                {
-                  picture:'./img/home_slider/slider-103.jpg',
-                  text:'hello world',
-                  p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-                },
-                {
-                  picture:'./img/home_slider/slider-103.jpg',
-                  text:'hello world',
-                  p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-                },
-                {
-                  picture:'./img/home_slider/slider-103.jpg',
-                  text:'hello world',
-                  p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-                },
-                {
-                  picture:'./img/home_slider/slider-103.jpg',
-                  text:'hello world',
-                  p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-                },
-                {
-                  picture:'./img/home_slider/slider-103.jpg',
-                  text:'hello world',
-                  p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-                },
+        </div>
+        <%= _.template(require('./../includes/components/rewies-main-v2.html').default)({
+        Items:[
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/home_slider/slider-103.jpg',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/home_slider/slider-103.jpg',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/home_slider/slider-103.jpg',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
 
+        ]
+        }) %>
+      </section>
+
+      <section class="section-py-20 section-background-gray " id="post">
+        <div class="container">
+
+          <div class="section-tittle row justify-content-center">
+
+            <%= _.template(require('./../includes/components/main-page/tittle/section-tittle-center.html').default)({h:"Новости",p:'Consectetur voluptate anim officia sit aute dolore veniam officia magna elit.'}) %>
+
+          </div>
+
+            <div class="row">
+              <%= _.template(require('./../includes/components/main-page/section/main-post.html').default)({
+              Items:[
+              {
+              picture:'./img/home_slider/slider-101.jpg',
+              text:'hello world',
+              p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+              },
+              {
+              picture:'./img/home_slider/slider-103.jpg',
+              text:'hello world',
+              p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+              },
+              {
+              picture:'./img/home_slider/slider-103.jpg',
+              text:'hello world',
+              p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+              },
               ]
-            }) %>
-        </section>
-        <section class="section-py-20 section-background-gray" id="post">
-            <div class="container">
-              <div class="row justify-content-center">
-            <div class="col-12 col-lg-6">
-              <%= _.template(require('./../includes/components/header-section.html').default)({h:"Новости",p:""}) %>
-            </div>
-            <div class="col-12 col-lg-6 order-1 order-lg-0 mt-5 mt-lg-0">
-                <%= _.template(require('./../includes/components/header-section.html').default)({h:"O Компании",p:""}) %>
-              </div>
-            <div class="col-12 col-lg-6">
-              <%= _.template(require('./../includes/components/main-post-2.html').default)({
-                Items:[
-                  {
-                    picture:'./img/home_slider/slider-101.jpg',
-                    text:'hello world',
-                    p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-                  },
-                  {
-                    picture:'./img/home_slider/slider-103.jpg',
-                    text:'hello world',
-                    p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-                  },
-                  {
-                    picture:'./img/home_slider/slider-103.jpg',
-                    text:'hello world',
-                    p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-                  },
-                ]
               }) %>
             </div>
-            <div class="col-lg-6 order-2 order-lg-0">
-                    <%= _.template(require('./../includes/components/main-company-slider.html').default)({Items:[
-                      {
-                        picture:'./img/home_slider/slider-101.jpg',
 
-                      },
-                      {
-                        picture:'./img/home_slider/slider-103.jpg',
+          </div>
 
-                      },
-                    ]}) %>
-            </div>
-            </div>
-            </div>
-
-
-
-        </section>
-        <section>
-            <%= _.template(require('./../includes/components/main_contact.html').default)({button:back_call_button}) %>
-        </section>
-        <section class="section-background-secondary section-py-10" id="subscribe">
-            <%= _.template(require('./../includes/components/subscribe.html').default)({}) %>
-        </section>
+      </section>
+<!--  <section>-->
+<!--    <%= _.template(require('./../includes/components/main-page/section/main_info.html').default)() %>-->
+<!--  </section>-->
+      <section>
+        <%= _.template(require('./../includes/components/main-page/section/main_contact.html').default)({button:back_call_button}) %>
+      </section>
+      <section class="section-background-secondary section-py-10" id="subscribe">
+        <%= _.template(require('./../includes/components/subscribe.html').default)({}) %>
+      </section>
     </main>
 
     <%= _.template(require('./../includes/layout/footer.html').default)(data) %>

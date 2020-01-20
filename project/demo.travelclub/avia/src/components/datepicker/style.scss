@@ -1,0 +1,25 @@
+.search_form-clear-btn{
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  transform: scale(1);
+  transition: .3s transform;
+  cursor: pointer;
+  &:active{
+    transform: scale(.95);
+    transition: .3s transform;
+  }
+}
+.DayPicker-Day--sunday:not(.DayPicker-Day--today){
+  background: transparent;
+}
+.DayPicker-Day.DayPicker-Day--sunday.DayPicker-Day--disabled{
+  color: rgba(208, 2, 27, 0.3) !important;
+}
+.DayPicker-Day--sunday:not(.DayPicker-Day--today){
+  color: #d0021b;
+
+}
+.DayPicker-Month{
+  width: 100%;
+}

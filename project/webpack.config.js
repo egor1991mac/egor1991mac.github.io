@@ -11,7 +11,7 @@ var OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 var ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const AsyncStylesheetWebpackPlugin = require('async-stylesheet-webpack-plugin');
 var LiveReloadPlugin = require('webpack-livereload-plugin');
-
+const PurgecssPlugin = require('purgecss-webpack-plugin');
 
 const PATHS = {
     src: path.join(__dirname, "src")
@@ -24,8 +24,8 @@ const thema = 'templates/travelsoft/thema';
 const bitrixThema = 'templates/travelsoft/components/bitrix';
 const tsOperatorThema = 'components/travelsoft';
 //entry
-const components= './src/scss/components/';
-const mainStyle = './src/scss/';
+const components= './src-travellab/scss/components/';
+const mainStyle = './src-travellab/scss/';
 
 const  pathSCSS = {
     [`${thema}/style`]:`${mainStyle}style.scss`,
@@ -62,19 +62,22 @@ function generateHtmlPlugins(templateDir) {
         arrPlugin.push(new ScriptExtHtmlWebpackPlugin({
           defaultAttribute: 'async'
         }));
+        // arrPlugin.push( new PurgecssPlugin({
+        //     paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
+        // }));
     });
     return arrPlugin;
 }
 
 
-// let cssFiles = fs.readdirSync(path.resolve(__dirname,'./src/scss/components'));
+// let cssFiles = fs.readdirSync(path.resolve(__dirname,'./src-travellab/scss/components'));
 // cssFilesKey = cssFiles.map(item=>item.substr(0,item.length - 5));
 //
 // function generateInputCss (file,key){
 //     let obj = {}; g
 //     cssFiles.forEach((item,index)=>{
 //
-//         obj[`${cssFilesKey[index]}`] = `./src/scss/components/${item}`
+//         obj[`${cssFilesKey[index]}`] = `./src-travellab/scss/components/${item}`
 //
 //     })
 //     return obj;
@@ -86,17 +89,17 @@ function generateHtmlPlugins(templateDir) {
 
 
 
-let htmlPlugins = generateHtmlPlugins("./src/html/views");
+let htmlPlugins = generateHtmlPlugins("./src-travellab/html/views");
 //let css = generateInputCss();
 
 const configProd = {
     entry: {
-        "index":"./src/js/index.js",
+        "index":"./src-travellab/js/index.js",
         //...pathSCSS
 
     },
     output: {
-        path: path.resolve(__dirname, './demo'),
+        path: path.resolve(__dirname, './demo1'),
         filename: 'js/[name].js',
     },
     devtool: "source-map",
@@ -145,7 +148,7 @@ const configProd = {
             },
             {
                 test: /\.(sass|scss|css)$/,
-                include: path.resolve(__dirname, "src/scss"),
+                include: path.resolve(__dirname, "src-travellab/scss"),
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -180,7 +183,7 @@ const configProd = {
             },
             {
                 test: /\.html$/,
-                include: [path.resolve(__dirname, "src/html/includes")],
+                include: [path.resolve(__dirname, "src-travellab/html/includes")],
                 use: ["raw-loader"]
             },
         ]
@@ -223,23 +226,23 @@ const configProd = {
 
         new CopyWebpackPlugin([
             {
-                from: "./src/assets",
+                from: "./src-travellab/assets",
                 to: "./assets"
             },
             {
-                from: "./src/fonts",
+                from: "./src-travellab/fonts",
                 to: "./fonts"
             },
             {
-                from: "./src/favicon",
+                from: "./src-travellab/favicon",
                 to: "./favicon"
             },
             {
-                from: "./src/img",
+                from: "./src-travellab/img",
                 to: "./img"
             },
             {
-                from: "./src/uploads",
+                from: "./src-travellab/uploads",
                 to: "./uploads"
             }
         ]),
@@ -250,7 +253,7 @@ const configProd = {
 };
 const configDev = {
     entry: {
-        "index":"./src/js/index.js",
+        "index":"./src-travellab/js/index.js",
 
 
     },
@@ -304,7 +307,7 @@ const configDev = {
             },
             {
                 test: /\.(sass|scss|css)$/,
-                include: path.resolve(__dirname, "src/scss"),
+                include: path.resolve(__dirname, "src-travellab/scss"),
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -339,7 +342,7 @@ const configDev = {
             },
             {
                 test: /\.html$/,
-                include: [path.resolve(__dirname, "src/html/includes")],
+                include: [path.resolve(__dirname, "src-travellab/html/includes")],
                 use: ["raw-loader"]
             },
         ]
@@ -382,23 +385,23 @@ const configDev = {
 
         new CopyWebpackPlugin([
             {
-                from: "./src/assets",
+                from: "./src-travellab/assets",
                 to: "./assets"
             },
             {
-                from: "./src/fonts",
+                from: "./src-travellab/fonts",
                 to: "./fonts"
             },
             {
-                from: "./src/favicon",
+                from: "./src-travellab/favicon",
                 to: "./favicon"
             },
             {
-                from: "./src/img",
+                from: "./src-travellab/img",
                 to: "./img"
             },
             {
-                from: "./src/uploads",
+                from: "./src-travellab/uploads",
                 to: "./uploads"
             }
         ]),
@@ -410,7 +413,7 @@ const configDev = {
 
 module.exports = (env, argv) => {
     if (argv.mode === "production") {
-        configProd.plugins.push(new CleanWebpackPlugin());
+       // configProd.plugins.push(new CleanWebpackPlugin());
         return configProd;
     }
    else{

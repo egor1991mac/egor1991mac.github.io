@@ -1,17 +1,12 @@
 import popper from "popper.js";
 import loading_attribute_polyfill from 'loading-attribute-polyfill';
 import bootstrap from "bootstrap";
-import magnific from 'magnific-popup';
 import owlCarousel from "./owl.carousel.js";
-import select from "select2/dist/js/select2.full.min";
-import InitPopupGallery from "./components/popup-gallery";
-
 import MainSlider from './components/main_slider';
 import MainRewiesSlider from './components/main_rewies_slider';
-import NavTabsSlider from './components/nav-tabs_auth.js';
 import NavBarCollapse from './components/collapse-scroll';
 import DetailSlider from './components/detail-slider';
-import Select2Lang from './components/collapse-scroll';
+
 
 
 
@@ -25,9 +20,9 @@ $(document).ready(function(){
 
   MainSlider();
   MainRewiesSlider();
-  //NavTabsSlider();
+
   NavBarCollapse();
-  //InitPopupGallery();
+
 
 
 

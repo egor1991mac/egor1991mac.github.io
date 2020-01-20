@@ -1,5 +1,4 @@
-@import "../utils/var.scss";
-@import "../bscss/_mixins.scss";
+
 
 .navbar {
     padding: 0;
@@ -7,7 +6,12 @@
     &-desctop {
         padding: 0;
     }
+    &-brand{
+        img{
+            max-width: cr(150px);
+        }
 
+    }
     &--container {
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         background: $navbar-background;
@@ -79,6 +83,11 @@
             }
         }
         .navbar {
+            &-brand{
+                img{
+                    max-width: cr(140px);
+                }
+            }
             &-collapse {
                 top: 0;
                 left: 0;

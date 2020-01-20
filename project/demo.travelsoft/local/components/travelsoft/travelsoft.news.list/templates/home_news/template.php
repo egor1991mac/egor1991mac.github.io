@@ -75,7 +75,7 @@ $i = 0;
                         <? endif; ?>
 
                         <a href="<?= $arItem['DETAIL_PAGE_URL'] ?>" class="btn btn-secondary ml-auto"><span class="icon icon-book mr-2" style="font-weight: bolder"></span> Подробнее</a>
-
+                      
                     </div>
 
                 </div>

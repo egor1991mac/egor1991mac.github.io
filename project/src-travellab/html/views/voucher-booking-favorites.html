@@ -60,37 +60,44 @@ _.template(require('./../includes/layout/header.html').default)(data) %>
 
 
                 </div>
-                <%= _.template(require('./../includes/components/card-tour.html').default)({
+                <% var cardtour = _.template(require('./../includes/components/cards/card-tour-hor.html').default)%>
+                <%= _.template(require('./../includes/components/tours-page/cards-tour.html').default)({cardtour:cardtour,
                 Items:[
                 {
                 picture:'./img/home_slider/slider-101.jpg',
-                h:'Краков* - Вена - Венский лес* (Хайлигенкройц, Баден, замок Лихтенштейн)',
-                p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+                h:'Тур в Грецию',
+                p:'',
+                listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
                 },
                 {
                 picture:'./img/home_slider/slider-103.jpg',
-                h:'Краков* - Вена - Венский лес* (Хайлигенкройц, Баден, замок Лихтенштейн)',
-                p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+                h:'Тур в Польшу',
+                p:'',
+                listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
                 },
                 {
                 picture:'./img/home_slider/slider-103.jpg',
-                h:'Регенсбург - Лихтенштейн - Цюрих - Люцерн - Женева - Швейцарская Ривьера* - Берн - Бернские альпы* - Нюрнберг',
-                p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+                h:'Тур в Египет',
+                p:'',
+                listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
                 },
                 {
                 picture:'./img/home_slider/slider-103.jpg',
-                h:'Регенсбург - Лихтенштейн - Цюрих - Люцерн - Женева - Швейцарская Ривьера* - Берн - Бернские альпы* - Нюрнберг',
-                p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+                h:'Тур в Москву',
+                p:'',
+                listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+                },
+                {
+                picture:'./img/home_slider/slider-101.jpg',
+                h:'Тур в Грецию',
+                p:'',
+                listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
                 },
                 {
                 picture:'./img/home_slider/slider-103.jpg',
-                h:'hello world',
-                p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
-                },
-                {
-                picture:'./img/home_slider/slider-103.jpg',
-                h:'hello world',
-                p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+                h:'Тур в Польшу',
+                p:'',
+                listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
                 },
 
                 ]

@@ -1,0 +1,30 @@
+.quantity-selector-controls{
+  position: relative !important;
+  a{
+    cursor: pointer;
+    transition: .3s transform;
+    transform: scale(1);
+    &:active{
+      transition: .3s transform;
+      transform: scale(.9);
+    }
+  }
+}
+.quantity-selector-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.quantity-selector-box{
+  position: static !important;
+  min-width: 220px;
+}
+.quantity-selector-title{
+  display: flex;
+  flex-direction: column;
+  small{
+    line-height: 1;
+    color: #999 !important;
+  }
+}

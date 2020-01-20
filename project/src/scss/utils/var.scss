@@ -172,3 +172,8 @@ a:hover{
 [data-toggle="collapse"]{
   cursor: pointer;
 }
+.without-shadow{
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}

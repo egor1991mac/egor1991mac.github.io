@@ -1,3 +1,0 @@
-<?
-$sSectionName="d3p";
-?>

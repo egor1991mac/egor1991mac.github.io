@@ -1,0 +1,46 @@
+div.news-list
+{
+	word-wrap: break-word;
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+.price.for_list_tours {
+	font-size: 12px !important;
+	padding: 2px 5px !important;
+	line-height: 1.5;
+}
+.price {
+	text-align: right;
+}
+.price .currency {
+	color: #555 !important;
+	font-size: 14px !important;
+}
+.price small {
+	font-size: 12px;
+
+	padding-right: 3px;
+	width: 100%;
+}
+.price small span {
+	font-weight: 500 !important;
+	color: #004166;
+	font-size: 14px !important;
+}
+.price span.block {
+	padding-top: 30px;
+	text-align: left !important;
+}
+p.price {
+	margin-bottom: 15px !important;
+}
+.red {background:#d90023 !important; color:#fff !important;}
+.green {background:#32a067 !important; color:#fff !important;}
+.yellow {background:#dcb404 !important; color:#fff !important;}
+.box_list .wrapper p {margin-bottom: 5px;}

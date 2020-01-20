@@ -1,114 +1,4 @@
-//@function cr($size) {
-//  $remSize: $size / 16px;
-//  @return #{$remSize}rem;
-//}
-//@function ind($i){
-//  $size: 1px / 3px * $i;
-//  @return #{$size}rem;
-//}
-//
-//$primary: #ff6917;
-//$secondary: #ff6917;
-//$rating-star: #ffc917;
-//
-//
-////форма поиска на главной
-//$color-label-search-form: white;
-//
-////настройки текста контента
-//$font-body: Roboto;
-//$nav-color-link:#263238;
-//$nav-color-link-mobile:#263238;
-//$main-color-text: #263238;
-//$secondary-color-text: #455a64;
-//
-////цвет вторичного фона
-//$section-background-2:#f4f7f7;
-//
-////цвета опции тура
-//$color-best-price: red;
-//$color-new: #ffc917;
-//$color-doc: $primary;
-//$color-custom-tour:green;
-//
-////тени
-//$shadow:0 0px 15px #d8d8d847;
-//$shadow-hover: 0 0px 15px #77767647;
-//
-////бордер
-//$border-card: 1px solid #b3b3b3 !important;
-//
-////карточки
-//$card-hover-background:#40322d98;
-//$card-background: white;
-////navbar
-//$navbar-background: white;
-//
-////contact--list
-//$navbar-dectop--contact--list-flexbasis: 65%;
-//$navbar-contact--list-item-padding:cr(10px);
-//$navbar-desctop--contact--list-item-padding: cr(3px);
-//$navbar-desctop--contact--list-font-size: cr(13px);
-//
-////цвет линии hr
-//
-//
-//$hr-color:263238;
-//.hr{
-//  height: 1px;
-//  width: 100%;
-//  background: $hr-color;
-//}
-//
-////кнопки
-//$btn-radius:cr(25px);
-//$theme-colors: (
-//  "primary": $primary,
-//  "secondary": $secondary
-//);
-//$btn-padding: cr(15px);
-//$btn-height: cr(45px);
-//$btn-width: cr(45px);
-//
-//// форма
-//$input-radius:cr(25px);
-//$input-height: cr(45px);
-//
-//
-////Заголовки
-//$font-h: Merriweather;
-//$header-color: #263238;
-//$header-color-invers:#fffdfc;
-//$header-hr-width: cr(100px);
-//$header-hr-height: cr(2px);
-//$header-hr-color: #263238;
-//h1,h2,h3,h4,h5,h6{
-//  font-family: $font-h;
-//  color: $header-color;
-//}
-//
-////сетка
-//$max-width-container:1560px;
-//$container-max-widths: (
-//  sm: 660px,
-//  md: 840px,
-//  lg: 1080px,
-//  xl: 1320px
-//);
-//$grid-breakpoints: (
-//  xs: 0,
-//  sm: 660px,
-//  md: 840px,
-//  lg: 1080px,
-//  xl: 1320px
-//);
-//
-//
-//body{
-//  min-height: 2600px;
-//  color: $main-color-text;
-//  font-family: $font-body;
-//}
+
 
 
 
@@ -116,12 +6,10 @@
 
 @import "utils/var.scss";
 
-@import "bscss/bootstrap.scss";
-@import "../assets/mfp.popup.css";
-@import "select2.min.css";
-@import "select2-bootstrap.min.css";
+@import "./bscss/bootstrap-grid.scss";
+
 @import "./components/btn.scss";
-@import "fonts";
+
 @import "./components/header.scss";
 @import "./components/navbar.scss";
 @import "./components/main_slider.scss";
@@ -135,7 +23,7 @@
 @import "./components/section-background.scss";
 @import "./components/main_rewies-slider.scss";
 @import "./components/main-best-price.scss";
-@import "components/card-rewies.scss";
+@import "./components/card-rewies.scss";
 @import "./components/main_contact.scss";
 @import "./components/contact-list.scss";
 @import "components/subscribe";
@@ -153,11 +41,14 @@
 @import "./components/basket.scss";
 @import "./components/modal.scss";
 @import "./components/message.scss";
+@import "./components/select.scss";
+@import "./components/post.scss";
 
-@import "bootstrap-slider.min.css";
+
 
 
 html{
+
   font-size: 16px !important;
   color: $main-color-text;
   @include media-breakpoint-down(lg){
@@ -174,13 +65,8 @@ html{
   }
 }
 header{
-  z-index: 9999999 !important;
+  z-index: 10 !important;
 }
-h1,h2,h3,h4,h5,h6{
-  font-family: $font-h;
-  color: $header-color;
-
-}
-.h1,.h2,.h3,.h4,.h5,.h6{
-  margin-bottom: 1.5rem;
+p{
+  //text-indent: 20px;
 }

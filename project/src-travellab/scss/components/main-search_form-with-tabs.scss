@@ -1,5 +1,4 @@
-@import "../utils/var.scss";
-@import "../bscss/_mixins.scss";
+
 #main-search_form-with-tabs{
     margin-top:    cr(-68px);
     position: relative;
@@ -108,7 +107,7 @@
             &.active{
                 background: #43a0d2;
                 color: white;
-                border-radius: 4px 4px 0 0;
+                border-radius: $tabs-radius;
             }
         }
         &-tabs{

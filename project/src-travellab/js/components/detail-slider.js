@@ -7,13 +7,14 @@ $(document).ready(function() {
 
     sync1.owlCarousel({
         items: 1,
+        lazyLoad:true,
         slideSpeed: 2000,
         nav: true,
         autoplay: false,
         dots: false,
         loop: true,
         navElement:'div',
-        navText:["<button class='btn btn-outline-secondary btn-rounded icon icon-arrow-left2'></button>","<button class='btn btn-outline-secondary btn-rounded icon icon-arrow-right2'></button>"],
+        navText:["<button class='btn btn-outline-secondary btn-rounded'><span class='icon icon-arrow-left2'></span></button>","<button class='btn btn-outline-secondary btn-rounded'> <span class='icon icon-arrow-right2'></span></button>"],
     }).on('changed.owl.carousel', syncPosition);
 
     sync2
@@ -21,6 +22,7 @@ $(document).ready(function() {
             sync2.find(".owl-item").eq(0).addClass("current");
         })
         .owlCarousel({
+            lazyLoad:true,
             items: slidesPerPage,
             dots: false,
             nav: false,

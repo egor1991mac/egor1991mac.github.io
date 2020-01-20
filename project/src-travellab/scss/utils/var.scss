@@ -12,8 +12,8 @@
   //шрифты
   --font-icon: 'icomoon';
   // основные цвета
-  --primary-color:#f03226;
-  --secondary-color:#f03226;
+  //--primary-color:$primary;
+  //--secondary-color:#f03226;
   // основные цвета шрифтов
 
   --nav-color-link:#263238;
@@ -35,11 +35,18 @@
 
 }
 
+//$tabs
+$tabs-radius: cr(25px) cr(25px) 0 0;
 
 $primary: #449fd3;
+$primary-hover: #3c82d3;
 $secondary: #ff6917;
+$secondary-hover: #ff5508;
 $rating-star: #ffc917;
 
+
+//section-tittle
+$section-tittle-margin-bottom: 2rem;
 
 //форма поиска на главной
 $color-label-search-form: white;
@@ -50,7 +57,8 @@ $font-body: Roboto;
 $nav-color-link:#263238;
 $nav-color-link-mobile:#263238;
 $main-color-text: #263238;
-$secondary-color-text: #455a64;
+$secondary-color-text: #898989;
+$secondary-color-text-hover:#595959;
 
 // хлебные крошки
 $breadcrumb-text:#263238;
@@ -66,8 +74,9 @@ $color-doc: $primary;
 $color-custom-tour:green;
 
 //тени
-$shadow:0 0px 15px #d8d8d847;
-$shadow-hover: 0 0px 15px #77767647;
+$shadow:0 3px 15px #94939347;
+//$shadow:'';
+$shadow-hover: 0 3px 15px rgba(63, 62, 62, 0.28);
 
 //бордер
 $border-card: 1px solid rgba(227, 227, 227, 0.52) !important;
@@ -75,11 +84,12 @@ $border-card: 1px solid rgba(227, 227, 227, 0.52) !important;
 //карточки
 $card-hover-background:#40322d98;
 $card-background: white;
-$card-border-radius: cr(3px);
-
+$card-border-radius: cr(25px);
+$card-tittle-size: cr(14px);
+$card-shadow:'';
+$card-shadow-hover:0 3px 27px 13px rgba(0,0,0,0.15);
 //navbar
 $navbar-background: white;
-
 
 //contact--list
 $navbar-dectop--contact--list-flexbasis: 65%;
@@ -98,10 +108,11 @@ $hr-color:263238;
 //кнопки
 $btn-radius:cr(25px);
 $theme-colors: (
-        "primary": $primary,
+        "primary":$secondary,
         "secondary": $secondary
 );
-$btn-padding: cr(25px);
+
+$btn-padding: cr(15px);
 $btn-height: cr(45px);
 $btn-width: cr(45px);
 
@@ -112,6 +123,7 @@ $input-height: cr(45px);
 
 //Заголовки
 $font-h: Merriweather;
+$font-h: Roboto;
 $header-color: #263238;
 $header-color-invers:#fffdfc;
 $header-hr-width: cr(100px);
@@ -145,6 +157,7 @@ body{
   color: $main-color-text;
   font-family: $font-body;
 }
+
 .rotate-90{
   transform:rotate(90deg);
   &.active{
@@ -164,4 +177,9 @@ a:hover{
 }
 [data-toggle="collapse"]{
   cursor: pointer;
+}
+.without-shadow{
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }

@@ -1,0 +1,51 @@
+[
+    {
+        "id": "1",
+        "price": {
+          "amount": "300",
+          "currency": "USD"
+        },
+
+        "time": {
+          "start": "start",
+          "end": "end"
+        },
+        "date": {
+          "start": "start",
+          "end": "end"
+        },
+        "company": "Belavia",
+        "route_segment": [
+          {
+            "id": 0,
+            "segment": {
+              "start": {
+                "id": 0,
+                "airport_name": "name",
+                "airport_code": "code",
+                "city_name": "name",
+                "city_code": "code",
+                "country_name": "country_name"
+              },
+              "end": {
+                "id": 0,
+                "airport_name": "name",
+                "airport_code": "code",
+                "city_name": "name",
+                "city_code": "code",
+                "country_name": "country_name"
+              },
+              "class_air": "Эконом",
+              "time": "Время в пути",
+              "date": {
+                "start": "Дата start",
+                "end": "Дата end"
+              },
+              "company": "Belavia",
+              "info": ""
+            }
+          }
+        ]
+      }
+
+  ]

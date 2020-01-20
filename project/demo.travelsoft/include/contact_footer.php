@@ -11,15 +11,6 @@
                                         </span>
     </li>
 </ul>
-<div class="d-flex flex-wrap">
-    <a href="#" class="btn btn-social btn-sm p-0 vk mb-2 mb-sm-0 ml-0"><span class="icon-vk"></span></a>
-    <a href="#" class="btn btn-social btn-sm p-0 tel mb-2 mb-sm-0"><span class="icon-telegram"></span></a>
-    <a href="#" class="btn btn-social btn-sm p-0 fb mb-2 mb-sm-0"><span class="icon-facebook"></span></a>
-    <a href="#" class="btn btn-social btn-sm p-0 inst mb-2 mb-sm-0"><span class="icon-instagram"></span></a>
-    <a href="#" class="btn btn-social btn-sm p-0 vb mb-2 mb-sm-0"><span class="icon-whatsapp"></span></a>
-    <a href="#" class="btn btn-social btn-sm p-0 tw mb-2 mb-sm-0"><span class="icon-twitter"></span></a>
-    <a href="#" class="btn btn-social btn-sm p-0 goggle mb-2 mb-sm-0"><span class="icon-google"></span></a>
-</div>
 
 
 

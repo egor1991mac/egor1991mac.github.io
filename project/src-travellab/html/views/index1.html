@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+  _.template(require('./../includes/layout/header.html').default)(data) %>
+  <body>
+    <header class="sticky-top">
+      <% var back_call_button = _.template(require('./../includes/components/back-call-button.html').default)()
+             user_dropdown_button = _.template(require('./../includes/components/user-dropdown.html').default)()
+              select_lang = _.template(require('./../includes/components/select_lang.html').default)()
+      ; %>
+
+      <%= _.template(require('./../includes/components/navbar.html').default)({button:back_call_button, user_dropdown_button:user_dropdown_button}) %>
+
+    </header>
+    <div class=" position-relative">
+    <%= _.template(require('./../includes/components/main-page/slider/main_slider-v3.html').default)({
+    Items:[
+    {
+    picture:'./img/home_slider/slider-101.jpg',
+    },
+    {
+    picture:'./img/home_slider/slider-103.jpg',
+
+    },
+    ]
+    }) %>
+    <div class="container ">
+      <div class="row h-90vh h-100 justify-content-center align-items-center mx-0">
+        <%= _.template(require('./../includes/components/main-page/slider/main_slider-text.html').default)({Items:[{},{}]}) %>
+        <%= _.template(require('./../includes/components/main-page/form/main-search_form-with-tabs-v2.html').default)() %>
+      </div>
+    </div>
+    </div>
+
+<!--    <main style='background: url("./img/rewies.jpg"); background-attachment: fixed; background-size: cover'>-->
+
+<main>
+      <section class="section-py-12 bg-white" id="best-price-avia">
+        <div class="container">
+        <div class="section-tittle row">
+            <%= _.template(require('./../includes/components/main-page/tittle/section-tittle-left.html').default)({h:"Популярные авиа туры",link:"Все туры"}) %>
+       </div>
+      <% var cardtour = _.template(require('./../includes/components/cards/card-tour-ver.html').default)%>
+        <%= _.template(require('./../includes/components/main-page/section/main-card-tour.html').default)({cardtour:cardtour,
+          Items:[
+            {
+              picture:'./img/home_slider/slider-101.jpg',
+              h:'Тур в Грецию',
+              p:'',
+          listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+          },
+            {
+              picture:'./img/home_slider/slider-103.jpg',
+              h:'Тур в Польшу',
+              p:'',
+          listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+          },
+            {
+              picture:'./img/home_slider/slider-103.jpg',
+              h:'Тур в Египет',
+              p:'',
+          listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+          },
+            {
+              picture:'./img/home_slider/slider-103.jpg',
+              h:'Тур в Москву',
+              p:'',
+          listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+          },
+          {
+          picture:'./img/home_slider/slider-101.jpg',
+          h:'Тур в Грецию',
+          p:'',
+          listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+          },
+          {
+          picture:'./img/home_slider/slider-103.jpg',
+          h:'Тур в Польшу',
+          p:'',
+            listTourOptions:[{icon:'place-localizer',text:'Минск-Барселона-Минск'},{icon:'clock',text:'15 дней'},{icon:'calendar',text:'10.06.2020'}],
+          },
+
+          ]
+        }) %>
+      </div>
+      </section>
+      <section class=" section-py-20 section-background-gray"  id="rewies">
+        <div class="container">
+        <div class="section-tittle row">
+          <%= _.template(require('./../includes/components/main-page/tittle/section-tittle-left.html').default)({h:"Отзывы",link:"Все отзывы"}) %>
+        </div>
+        </div>
+        <%= _.template(require('./../includes/components/rewies-main-v2.html').default)({
+        Items:[
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/home_slider/slider-103.jpg',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/backham.png',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/home_slider/slider-103.jpg',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+        {
+        picture:'./img/home_slider/slider-103.jpg',
+        text:'hello world',
+        p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+        },
+
+        ]
+        }) %>
+      </section>
+      <section class="section-py-20" id="post">
+        <div class="container">
+
+          <div class="section-tittle row">
+
+            <%= _.template(require('./../includes/components/main-page/tittle/section-tittle-left.html').default)({h:"Новости",link:"Все новости"}) %>
+
+          </div>
+
+            <div class="row">
+              <%= _.template(require('./../includes/components/main-page/section/main-post.html').default)({
+              Items:[
+              {
+              picture:'./img/home_slider/slider-101.jpg',
+              text:'hello world',
+              p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+              },
+              {
+              picture:'./img/home_slider/slider-103.jpg',
+              text:'hello world',
+              p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+              },
+              {
+              picture:'./img/home_slider/slider-103.jpg',
+              text:'hello world',
+              p:'Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютно позиционированных элементов.'
+              },
+              ]
+              }) %>
+            </div>
+
+          </div>
+
+      </section>
+  <section>
+    <%= _.template(require('./../includes/components/main-page/section/main_info.html').default)() %>
+  </section>
+      <section>
+        <%= _.template(require('./../includes/components/main-page/section/main_contact.html').default)({button:back_call_button}) %>
+      </section>
+      <section class="section-background-secondary section-py-10" id="subscribe">
+        <%= _.template(require('./../includes/components/subscribe.html').default)({}) %>
+      </section>
+    </main>
+
+    <%= _.template(require('./../includes/layout/footer.html').default)(data) %>
+    <%= _.template(require('./../includes/components/back-call-form.html').default)({}) %>
+
+  </body>
+</html>

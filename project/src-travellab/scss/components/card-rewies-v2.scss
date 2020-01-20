@@ -3,6 +3,9 @@
     background: transparent;
 
     &.rewies{
+        h5{
+            color: white;
+        }
         display: flex;
         justify-content: center;
         align-items: center;
@@ -13,32 +16,31 @@
             margin-bottom:.5rem;
         }
         .card-img{
-            border-radius: 0;
-            height: cr(150px);
-            min-height: cr(150px);
-            width: 90%;
+
+            width: 100%;
+            max-width: cr(240px);
+            height: cr(230px);
+            max-height: cr(230px);
             position: relative;
 
 
             img{
                 width: 100%;
+                max-width: 600px;
                 height: 100%;
             }
         }
         .card-body{
-
+            background: transparent;
             padding-top: 65px;
             margin-top: -50px;
-            border-radius: 4px;
+            color: white;
             text-align: center;
-            border-radius: $card-border-radius;
+            border: 0 !important;
+            box-shadow:  none !important;
 
         }
-        .card-text{
 
-                padding: 0 1rem;
-
-        }
 
     }
 }
@@ -46,7 +48,8 @@
     .card.rewies{
         opacity: 1;
         .card-body{
-            background: white;
+            background: transparent;
+            border: 0 !important;
 
         }
     }

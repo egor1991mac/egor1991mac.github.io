@@ -2,6 +2,20 @@
   background-color: transparent !important;
   padding-left: .25rem !important;
   margin-bottom: 0;
+  &-white{
+    .breadcrumb-item{
+      &.active{
+        color: #adb5bd;
+
+      }
+      a{
+        color: white;
+        position: relative;
+
+      }
+
+    }
+  }
   &-item{
 
     a{

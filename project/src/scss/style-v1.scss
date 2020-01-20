@@ -42,11 +42,13 @@
 @import "./components/modal.scss";
 @import "./components/message.scss";
 @import "./components/select.scss";
+@import "./components/post.scss";
 
 
 
 
 html{
+
   font-size: 16px !important;
   color: $main-color-text;
   @include media-breakpoint-down(lg){

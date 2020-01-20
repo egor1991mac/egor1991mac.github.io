@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+_.template(require('./../includes/layout/header.html').default)(data) %>
+
+<body>
+<header class="sticky-top">
+    <% var back_call_button = _.template(require('./../includes/components/back-call-button.html').default)()
+    var social_button = _.template(require('./../includes/components/social-button.html').default)()
+    user_dropdown_button = _.template(require('./../includes/components/user-dropdown.html').default)()
+    select_lang = _.template(require('./../includes/components/select_lang.html').default)()
+    ; %>
+
+    <%= _.template(require('./../includes/components/navbar.html').default)({button:back_call_button,
+    user_dropdown_button:user_dropdown_button}) %>
+
+</header>
+<main>
+    <div class="background-img-container section-pt-10">
+        <picture>
+            <img loading="lazy" src="./img/home_slider/slider-101.jpg" class="background-img-fixed" style="z-index: -1;" alt="">
+        </picture>
+        <div class="row section-py-10">
+            <div class="container">
+                <h1 class="h1 mb-0 text-center  text-white">
+                    Название статьи
+                </h1>
+
+                <div class="mx-auto d-flex  w-50 align-items-center justify-content-center mb-2 flex-column flex-lg-row">
+                    <%= _.template(require('./../includes/components/bread-crumb2.html').default)({}) %>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row bg-white section-py-5">
+        <div class="container">
+            <div class="row ">
+
+                <div class="col-md-9  mx-auto">
+                    <div class="d-flex justify-content-end mb-3 ">
+                        <div class="card-date text-dark  mr-4" ><span class="icon icon-calendar pr-1"></span>21.02.2019</div>
+                        <div class="card-see text-dark"><span class="icon icon-eye pr-1"></span>343</div>
+                    </div>
+                    <p class="text-justify">
+                        Nullam lectus mi, pharetra at consectetur non, pretium eu lectus. In dolor odio, lobortis vel dolor vulputate, venenatis accumsan est. Duis porta, enim eget varius varius, eros magna blandit augue, ultrices viverra ipsum massa quis nibh.
+                        Ut finibus mauris ex, sit amet rutrum turpis posuere at. Integer vel purus pharetra justo vulputate aliquam ac eu libero. Aenean pulvinar dignissim purus, sed vulputate nisi mollis a. Curabitur eget aliquet neque. Sed rhoncus dolor nec purus fermentum accumsan. Cras sodales neque vitae tortor bibendum accumsan ut ac eros. Proin dictum posuere sem, non fringilla lacus condimentum non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam eu arcu at lorem tristique porta lobortis et dui. Proin varius mi quis lacus ultricies pulvinar.
+                        Donec suscipit accumsan risus. Mauris porta, dui in facilisis lacinia, ipsum sapien facilisis ipsum, eget fermentum mauris eros a tellus. Quisque vitae aliquam enim, in consequat purus. Suspendisse ut diam pretium, pharetra justo in, volutpat dolor. Duis consectetur condimentum tortor, in lacinia ipsum facilisis feugiat. Nullam mauris urna, fermentum vitae velit a, pharetra lacinia magna. Mauris malesuada libero eget lacus imperdiet faucibus. Mauris quis aliquet orci, ac mollis justo. Morbi malesuada, urna vitae scelerisque accumsan, nisi massa aliquet velit, id varius lorem lectus a arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <picture>
+                        <source loading="lazy" media="(min-width: 650px)" srcset="./img/home_slider/slider-101.jpg">
+                        <source loading="lazy" media="(min-width: 350px)" srcset="./img/home_slider/slider-101.jpg">
+                        <img loading="lazy" class="img-fluid py-4" src="./img/home_slider/slider-101.jpg" alt="slide1">
+                    </picture>
+                    <p class="text-justify">
+                    Nullam lectus mi, pharetra at consectetur non, pretium eu lectus. In dolor odio, lobortis vel dolor vulputate, venenatis accumsan est. Duis porta, enim eget varius varius, eros magna blandit augue, ultrices viverra ipsum massa quis nibh.
+                    Ut finibus mauris ex, sit amet rutrum turpis posuere at. Integer vel purus pharetra justo vulputate aliquam ac eu libero. Aenean pulvinar dignissim purus, sed vulputate nisi mollis a. Curabitur eget aliquet neque. Sed rhoncus dolor nec purus fermentum accumsan. Cras sodales neque vitae tortor bibendum accumsan ut ac eros. Proin dictum posuere sem, non fringilla lacus condimentum non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam eu arcu at lorem tristique porta lobortis et dui. Proin varius mi quis lacus ultricies pulvinar.
+                    Donec suscipit accumsan risus. Mauris porta, dui in facilisis lacinia, ipsum sapien facilisis ipsum, eget fermentum mauris eros a tellus. Quisque vitae aliquam enim, in consequat purus. Suspendisse ut diam pretium, pharetra justo in, volutpat dolor. Duis consectetur condimentum tortor, in lacinia ipsum facilisis feugiat. Nullam mauris urna, fermentum vitae velit a, pharetra lacinia magna. Mauris malesuada libero eget lacus imperdiet faucibus. Mauris quis aliquet orci, ac mollis justo. Morbi malesuada, urna vitae scelerisque accumsan, nisi massa aliquet velit, id varius lorem lectus a arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <p class="text-justify">
+                        Nullam lectus mi, pharetra at consectetur non, pretium eu lectus. In dolor odio, lobortis vel dolor vulputate, venenatis accumsan est. Duis porta, enim eget varius varius, eros magna blandit augue, ultrices viverra ipsum massa quis nibh.
+                        Ut finibus mauris ex, sit amet rutrum turpis posuere at. Integer vel purus pharetra justo vulputate aliquam ac eu libero. Aenean pulvinar dignissim purus, sed vulputate nisi mollis a. Curabitur eget aliquet neque. Sed rhoncus dolor nec purus fermentum accumsan. Cras sodales neque vitae tortor bibendum accumsan ut ac eros. Proin dictum posuere sem, non fringilla lacus condimentum non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam eu arcu at lorem tristique porta lobortis et dui. Proin varius mi quis lacus ultricies pulvinar.
+                        Donec suscipit accumsan risus. Mauris porta, dui in facilisis lacinia, ipsum sapien facilisis ipsum, eget fermentum mauris eros a tellus. Quisque vitae aliquam enim, in consequat purus. Suspendisse ut diam pretium, pharetra justo in, volutpat dolor. Duis consectetur condimentum tortor, in lacinia ipsum facilisis feugiat. Nullam mauris urna, fermentum vitae velit a, pharetra lacinia magna. Mauris malesuada libero eget lacus imperdiet faucibus. Mauris quis aliquet orci, ac mollis justo. Morbi malesuada, urna vitae scelerisque accumsan, nisi massa aliquet velit, id varius lorem lectus a arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+</main>
+<%= _.template(require('./../includes/layout/footer.html').default)(data) %>
+<%= _.template(require('./../includes/components/back-call-form.html').default)({}) %>
+
+</body>
+</html>

@@ -8,7 +8,7 @@
 
             </div>
             <div class="col-md-3 text-center">
-                <h3 class="icon-gift"></h3>
+                <h3 class="icon-star-full"></h3>
                 <h5 class="my-3">Подарки и бонусы</h5>
                 <p >Получите еще больше от нашего сервиса. Трать меньше и больше путешествуй</p>
 
