@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="smoke">
+  <component name="PublishConfigData" serverName="http://travellab.travelsoft.by/">
     <serverData>
       <paths name="bitrix.alatantour.by">
         <serverdata>
@@ -19,6 +19,14 @@
         </serverdata>
       </paths>
       <paths name="ct.travelsoft.by">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="demo.travellab">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -61,6 +69,13 @@
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
             <mapping local="$PROJECT_DIR$/demo.travelclub/avia/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="http://travellab.travelsoft.by/">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

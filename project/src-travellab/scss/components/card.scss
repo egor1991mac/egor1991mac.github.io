@@ -43,6 +43,12 @@
             .btn{
                 margin: auto;
             }
+            &:last-child{
+                @include media-breakpoint-down('xs'){
+                    flex-basis: 100%;
+                }
+            }
+
             @include media-breakpoint-down('xs'){
                 flex-basis: 40%;
                 justify-content: center;
@@ -80,6 +86,21 @@
             .btn{
                 padding: 0 ;
             }
+        .dropdown-toggle {
+            transform: rotate(180deg);
+            &:after {
+                margin: 0;
+                color: $main-color-text;
+            }
+        }
+        .collapsed{
+            .dropdown-toggle {
+
+
+
+                transform: rotate(0deg);
+            }
+        }
 
     }
     &-header{
@@ -165,6 +186,9 @@
         overflow: hidden;
         img{
             max-width: cr(432px);
+            @include media-breakpoint-down(md){
+                max-width: 100%;
+            }
            // height: 100%;
         }
     }
@@ -263,6 +287,9 @@
         margin: 0;
         list-style: none;
         padding: 0;
+        &-sm{
+            transform: scale(.7);
+        }
         &-hor-static{
             position: static;
             display: flex;

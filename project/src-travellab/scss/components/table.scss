@@ -1,5 +1,13 @@
 .table{
   margin-bottom: 0;
+  &-inner{
+    tbody {
+      tr:nth-child(odd){
+        background: transparent;
+        border-bottom: 1px solid #e1e1e1;
+      }
+    }
+  }
   tr{
     position: relative;
 
@@ -22,10 +30,9 @@
     position: relative;
 
     a{
-
-
-
-      font-size: cr(21px);
+      .icon{
+        font-size: cr(21px);
+      }
 
       display: flex;
       align-items: center;
@@ -44,7 +51,6 @@
 
     }
   }
-
 
 
   &-striped{

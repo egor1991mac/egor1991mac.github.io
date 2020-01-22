@@ -1,14 +1,23 @@
 .quantity-selector-controls{
   position: relative !important;
-  a{
-    cursor: pointer;
-    transition: .3s transform;
-    transform: scale(1);
-    &:active{
+  li{
+    height: 30px;
+    line-height: 30px;
+    margin-left: 9px;
+    a{
+      cursor: pointer;
       transition: .3s transform;
-      transform: scale(.9);
+      transform: scale(1);
+      width: 30px;
+      height: 30px;
+      line-height: 28px;
+      &:active{
+        transition: .3s transform;
+        transform: scale(.9);
+      }
     }
   }
+
 }
 .quantity-selector-inner{
   display: flex;
@@ -18,7 +27,7 @@
 }
 .quantity-selector-box{
   position: static !important;
-  min-width: 220px;
+  min-width: 250px;
 }
 .quantity-selector-title{
   display: flex;

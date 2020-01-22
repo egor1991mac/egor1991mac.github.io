@@ -46,13 +46,14 @@
 
 
 <div class="accordion" id="accordionExample">
-    <div class="card card-border card-collapse">
-        <div class="card-header" id="headingOne">
+    <div class="card card-border card-collapse"  >
+        <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"  aria-expanded="true" aria-controls="collapseOne" >
             <h5 class="mb-0">
                 День 1
 
             </h5>
-            <button class="btn btn-link dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="btn btn-link dropdown-toggle" >
+
             </button>
         </div>
 
@@ -62,15 +63,15 @@
 
                 <p class="">18:00 Выезд из Минска на комфортабельном автобусе. Вы становитесь частью команды #Travellab и едете в хорошей компании, смотрите отличные фильмы, настраиваясь на незабываемое путешествие..</p>
 
-                </div>
+            </div>
         </div>
     </div>
     <div class="card card-border card-collapse">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header collapsed" id="headingTwo"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             <h5 class="mb-0">
                 День 2
             </h5>
-            <button class="btn btn-link collapsed dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="btn btn-link collapsed dropdown-toggle" >
             </button>
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -104,11 +105,11 @@
         </div>
     </div>
     <div class="card card-border card-collapse">
-        <div class="card-header" id="heading3">
+        <div class="card-header collapsed" id="heading3" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
             <h5 class="mb-0">
                 День 3
             </h5>
-            <button class="btn btn-link collapsed dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+            <button class="btn btn-link dropdown-toggle" type="button" >
             </button>
 
         </div>
@@ -145,12 +146,12 @@
         </div>
 
     </div>
-    <div class="card card-border card-collapse">
-        <div class="card-header" id="heading4">
+    <div class="card card-border card-collapse ">
+        <div class="card-header collapsed" id="heading4" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
             <h5 class="mb-0">
                 День 4
             </h5>
-            <button class="btn btn-link collapsed dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+            <button class="btn btn-link collapsed dropdown-toggle" type="button" >
             </button>
         </div>
         <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
@@ -184,6 +185,5 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>

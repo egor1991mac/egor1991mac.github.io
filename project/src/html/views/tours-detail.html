@@ -132,7 +132,7 @@ _.template(require('./../includes/layout/header.html').default)(data) %>
                             <h2 class="h2 text-center text-md-left">Цены</h2>
                             <% draverBtn =  _.template(require('./../includes/components/drawer-button.html').default)({}) %>
                             <%= _.template(require('./../includes/components/sort-filter.html').default)({draverBtn:draverBtn}) %>
-                            <%= _.template(require('./../includes/components/tours-detail/price-item.html').default)({}) %>
+
                         </section>
                         <section id="review" class="py-4">
                             <h2 class="h2 text-center text-md-left">Отзывы</h2>
@@ -170,8 +170,8 @@ _.template(require('./../includes/layout/header.html').default)(data) %>
 </main>
 <%= _.template(require('./../includes/layout/footer.html').default)(data) %>
 <%= _.template(require('./../includes/components/back-call-form.html').default)({}) %>
-
-<%= _.template(require('./../includes/components/drawer.html').default)({filter:search_form}) %>
+<% var price_list =  _.template(require('./../includes/components/tours-detail/price-item.html').default)({}) %>
+<%= _.template(require('./../includes/components/drawer-full-height.html').default)({filter:search_form, price: price_list}) %>
 
 
 </body>

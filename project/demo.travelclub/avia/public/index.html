@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
     <meta
-      name="description"
-      content="Web site created using create-react-app"
+            name="description"
+            content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/bootstrap.css" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/style.css" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
+    <link rel="stylesheet" href="%PUBLIC_URL%/bootstrap.css"/>
+    <link rel="stylesheet" href="%PUBLIC_URL%/style.css"/>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -27,24 +27,122 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <div id="AviaAppForm"></div>
-    <div id="AviaAppFilter"></div>
-    <div id="AviaAppResult"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<div id="AviaAppForm">
+    <form>
+        <div class="row" data-gutter="none">
+            <div class="col-md-5">
+                <div class="row" data-gutter="none">
+                    <div class="col-md-6">
+                        <div class="theme-search-area-section first theme-search-area-section-fade-white theme-search-area-section-no-border theme-search-area-section-mr theme-search-area-section-sm theme-search-area-section-curved">
+                            <label for="" class="theme-search-area-section-label text-white _ml-10">Откуда</label>
+                            <div class="theme-search-area-section-inner"><i
+                                    class="theme-search-area-section-icon lin lin-location-pin"></i><input
+                                    class="theme-search-area-section-input typeahead" type="text" placeholder="Москва"
+                                    data-value="{&quot;ID&quot;:&quot;1779&quot;,&quot;UF_CODE&quot;:&quot;DME&quot;,&quot;UF_CITY_RU&quot;:&quot;Москва&quot;,&quot;UF_CITY_EN&quot;:&quot;Moscow&quot;,&quot;UF_NAME_RU&quot;:&quot;Домодедово&quot;,&quot;UF_NAME_EN&quot;:&quot;Domodedovo&quot;,&quot;UF_AREA&quot;:&quot;MOW&quot;,&quot;UF_COUNTRY&quot;:&quot;RU&quot;,&quot;UF_TIMEZONE&quot;:&quot;Europe/Moscow&quot;,&quot;UF_LAT&quot;:&quot;55.4145&quot;,&quot;UF_LNG&quot;:&quot;37.8999&quot;,&quot;INPUT_NAME&quot;:&quot;airport:1779&quot;,&quot;CITY_RU_ID&quot;:&quot;Москва~RU&quot;,&quot;CITY_INPUT_NAME_RU&quot;:&quot;city:Москва~RU&quot;,&quot;CITY_EN_ID&quot;:&quot;Moscow~RU&quot;,&quot;CITY_INPUT_NAME_EN&quot;:&quot;city:Moscow~RU&quot;,&quot;OBJECT_TYPE&quot;:&quot;city&quot;}"
+                                    autocomplete="off" value="Москва"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="theme-search-area-section first theme-search-area-section-fade-white theme-search-area-section-no-border theme-search-area-section-mr theme-search-area-section-sm theme-search-area-section-curved">
+                            <label for="" class="theme-search-area-section-label text-white _ml-10">Куда</label>
+                            <div class="theme-search-area-section-inner"><i
+                                    class="theme-search-area-section-icon lin lin-location-pin"></i><input
+                                    class="theme-search-area-section-input typeahead" type="text" placeholder="Нью-Йорк"
+                                    data-value="{&quot;ID&quot;:&quot;2159&quot;,&quot;UF_CODE&quot;:&quot;EWR&quot;,&quot;UF_CITY_RU&quot;:&quot;Нью-Йорк&quot;,&quot;UF_CITY_EN&quot;:&quot;New-York&quot;,&quot;UF_NAME_RU&quot;:&quot;Ньюарк Либерти&quot;,&quot;UF_NAME_EN&quot;:&quot;Newark Liberty&quot;,&quot;UF_AREA&quot;:&quot;NYC&quot;,&quot;UF_COUNTRY&quot;:&quot;US&quot;,&quot;UF_TIMEZONE&quot;:&quot;America/New_York&quot;,&quot;UF_LAT&quot;:&quot;40.69709&quot;,&quot;UF_LNG&quot;:&quot;-74.17557&quot;,&quot;INPUT_NAME&quot;:&quot;airport:2159&quot;,&quot;CITY_RU_ID&quot;:&quot;Нью-Йорк~US&quot;,&quot;CITY_INPUT_NAME_RU&quot;:&quot;city:Нью-Йорк~US&quot;,&quot;CITY_EN_ID&quot;:&quot;New-York~US&quot;,&quot;CITY_INPUT_NAME_EN&quot;:&quot;city:New-York~US&quot;,&quot;OBJECT_TYPE&quot;:&quot;city&quot;}"
+                                    autocomplete="off" value="Нью-Йорк"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row" data-gutter="none">
+                    <div class="col-md-4">
+                        <div class="theme-search-area-section first theme-search-area-section-fade-white theme-search-area-section-no-border theme-search-area-section-mr theme-search-area-section-sm theme-search-area-section-curved">
+                            <label for="" class="theme-search-area-section-label text-white _ml-10">Дата вылета</label>
+                            <div class="theme-search-area-section-inner"><i
+                                    class="theme-search-area-section-icon lin lin-calendar"></i><input
+                                    class="theme-search-area-section-input " type="text" placeholder="Дата вылета"
+                                    data-value="&quot;21.01.2020&quot;" autocomplete="off" value="21.01.2020"><span
+                                    class="lin lin-close search_form-clear-btn"></span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="theme-search-area-section first theme-search-area-section-fade-white theme-search-area-section-no-border theme-search-area-section-mr theme-search-area-section-sm theme-search-area-section-curved">
+                            <label for="" class="theme-search-area-section-label text-white _ml-10">Дата вылета
+                                обратно</label>
+                            <div class="theme-search-area-section-inner"><i
+                                    class="theme-search-area-section-icon lin lin-calendar"></i><input
+                                    class="theme-search-area-section-input " type="text"
+                                    placeholder="Дата вылета обратно" data-value="&quot;Invalid date&quot;"
+                                    autocomplete="off" value=""></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="theme-search-area-section first theme-search-area-section-fade-white theme-search-area-section-no-border theme-search-area-section-mr theme-search-area-section-sm theme-search-area-section-curved">
+                            <label for="" class="theme-search-area-section-label text-white _ml-10">Пассажиры и
+                                класс</label>
+                            <div class="theme-search-area-section-inner"><i
+                                    class="theme-search-area-section-icon  lin lin-people"></i><input
+                                    class="theme-search-area-section-input" type="text" placeholder="Пассажиры"
+                                    data-value="{&quot;adults&quot;:3,&quot;children&quot;:0,&quot;baby&quot;:0}"
+                                    autocomplete="off" value="3 Пассажиры"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <button class="theme-search-area-submit _mt-20 theme-search-area-submit-no-border theme-search-area-submit-white theme-search-area-submit-sm theme-search-area-submit-curved">
+                    Найти
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+<div id="AviaAppSort">
+  <div class="theme-search-results-sort _mob-h clearfix">
+    <h5 class="theme-search-results-sort-title">Сортировать:</h5>
+    <ul class="theme-search-results-sort-list">
+      <li>
+        <a href="#">Цена
+          <span>Высокая → Низкая</span>
+        </a>
+      </li>
+      <li class="active">
+        <a href="#">Продолжительность
+          <span>Долго → Коротко</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">Рекомендуемые
+          <span>Высоко → Низко</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">Название авиакомпании
+          <span>Название &nbsp; A → Я</span>
+        </a>
+      </li>
+    </ul>
+  </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+</div>
+<div id="AviaAppFilter"></div>
+<div id="AviaAppResult"></div>
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  <div id="autoCompleatePopper"></div>
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
 
-  </body>
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+<div id="autoCompleatePopper"></div>
+
+</body>
 </html>

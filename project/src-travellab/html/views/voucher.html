@@ -20,8 +20,6 @@ _.template(require('./../includes/layout/header.html').default)(data) %>
     <div class="container">
         <div class="row">
             <div class="d-none d-lg-block col-lg-3">
-
-
                     <% var left_nav = _.template(require('./../includes/components/left-nav.html').default)({
                     items:[
                     {
@@ -47,8 +45,6 @@ _.template(require('./../includes/layout/header.html').default)(data) %>
                     ]
                     }) %>
                     <%= user_nav = _.template(require('./../includes/components/left-user-nav.html').default)({left_nav:left_nav}) %>
-
-
             </div>
             <div class="col-12 col-lg-9">
                 <h1 class="h3 text-center text-lg-left">
@@ -64,9 +60,6 @@ _.template(require('./../includes/layout/header.html').default)(data) %>
                         <%= _.template(require('./../includes/components/form-user-profile.html').default)({}) %>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     </div>

@@ -15,6 +15,11 @@ export const HIDE_DATA = "HIDE_DATA";
 export const INCREMENT_DATA = "INCREMENT_DATA";
 export const DICREMENT_DATA = "DICREMENT_DATA";
 export const CHECKED_DATA = "CHECKED_DATA";
+export const PREV_DATA = "PREV_DATA";
+export const LOADING = "LOADING";
+export const PAGE = "PAGE";
+export const REQUEST_ID = "REQUEST_ID";
+
 
 
 

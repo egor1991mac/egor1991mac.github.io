@@ -18,6 +18,22 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="a0665ff3-631f-46d1-ba8b-6b386d1c7f4b" name="demo.travellab" url="http://travellab.travelsoft.by/">
+        <fileTransfer host="http://travellab.travelsoft.by" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="b93fab5b-939e-436b-b852-d61775bb0b68" name="http://travellab.travelsoft.by/" url="http://travellab.travelsoft.by/">
+        <fileTransfer host="travellab.travelsoft.by" port="22" rootFolder="/home/bitrix/ext_www/travellab.travelsoft.by/local" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

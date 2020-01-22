@@ -1,0 +1,19 @@
+.dropdown {
+  &-menu {
+
+    &.show {
+      box-shadow: 0 0 0 1px #0000001a;
+
+    }
+  }
+
+  &-item {
+    transition: background .2s;
+
+    &:hover, &:active, &:active {
+      background: $primary;
+      color: white;
+      transition: background .2s;
+    }
+  }
+}

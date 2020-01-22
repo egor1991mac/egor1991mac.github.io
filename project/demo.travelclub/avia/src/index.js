@@ -5,10 +5,12 @@ import './index.scss';
 
 import Form from './container/form';
 import Filter from './container/filter';
+import Sort from './container/sort';
 //import moment from 'moment';
 import * as serviceWorker from './serviceWorker';
 
 const Result = lazy(() => import('./container/result'));
+//const Sort = lazy(() => import('./container/sort'));
 //ReactDOM.render(<Form/>, document.getElementById('AviaAppForm'));
 
 // If you want your app to work offline and load faster, you can change
@@ -35,6 +37,7 @@ class AviaApp {
 
     set _rootElem(newValue) {
         if (newValue) {
+            console.log(newValue);
             this.rootElem = newValue;
             this.initReact();
         }
@@ -53,10 +56,17 @@ class AviaApp {
                 case 'Filter':
                     ReactDOM.hydrate(<Filter lang={this.rootElem.lang}/>, this.rootElem.elem);
                     break;
+                case 'Sort':
+
+                    ReactDOM.hydrate(
+                        <Suspense fallback={<div><Preloader/></div>}>
+                            <Sort/></Suspense>
+                        ,this.rootElem.elem)
+                    break;
                 case 'Result':
                     ReactDOM.hydrate(
                         <Suspense fallback={<div><Preloader/></div>}>
-                            <Result lang={this.rootElem.lang} query={this.rootElem.query}/>
+                            <Result lang={this.rootElem.lang} query={this.rootElem.query} lang={this.rootElem.lang}/>
                         </Suspense>
                         , this.rootElem.elem);
                     break;
@@ -64,7 +74,6 @@ class AviaApp {
                     alert('no init');
                     break;
             }
-
         }
     }
 }
@@ -74,7 +83,6 @@ class AviaApp {
 window.AviaApp = new AviaApp();
 const app = new AviaApp();
 app._rootElem = {
-
     elem: document.querySelector('#AviaAppForm'),
     type: 'Form',
     lang: {
@@ -149,8 +157,8 @@ app._rootElem = {
                     OBJECT_TYPE: "city",
                 }
             ],
-            DATE_DEPARTURE: "17.01.2020",
-            //DATE_ARRIVAL: "14.01.2020",
+            DATE_DEPARTURE: "21.01.2020",
+           // DATE_ARRIVAL: "22.01.2020",
             PESSANGER: {
                 adults: 3,
                 children: 0,
@@ -167,17 +175,47 @@ app._rootElem = {
 }
 
 
-app.initReact();
+app._rootElem = {
+    elem: document.getElementById("AviaAppSort"),
+    type: 'Sort',
+};
+
 
 app._rootElem = {
     elem: document.getElementById("AviaAppResult"),
     type: 'Result',
-    defaultData:{
-
+    lang: {
+        FROM: "Откуда",
+        TO: "Куда",
+        DATE_FROM: "Дата вылета",
+        DATE_TO: "Дата вылета обратно",
+        PESSENGERS: "Пассажиры и класс",
+        PESSENGER: "Пассажиры",
+        ADULTS: "Взрослых",
+        ADULTS_INFO: "от 14 и старше",
+        ONE_ADULT: "Взрослый",
+        CHILDREN: "Детей",
+        CHILDREN_INFO: "от 2 до 14",
+        ONE_CHILD: "Ребенок",
+        BABIES: "Младенцев",
+        BABIES_INFO: "от 2 до 14",
+        ONE_BABY: "Младенец",
+        SUBMIT: "Найти",
+        OK_BTN: "OK",
+        CLASS_BUSINESS:"Бизнес",
+        CLASS_ECONOMY:"Эконом",
+        CLASS_FIST:"Первый класс",
+        PREMIUMECONOMY:"Премиум эконом"
     },
-    query:'http://travelclub.travelsoft.by/local/components/travelsoft/nemoconnect.search.result/templates/.default/ajax.php'
+    defaultData:{
+    },
+    query:{
+        INIT_DATA:'http://travelclub.travelsoft.by/local/components/travelsoft/nemoconnect.search.result/templates/.default/ajax/search.php',
+        OPERATION_DATA:'http://travelclub.travelsoft.by/local/components/travelsoft/nemoconnect.search.result/templates/.default/ajax/operations.php'
+    }
 }
-app.initReact();
+
+
 // app.initReact();
 //filter
 //     AviaApp._rootElem ={

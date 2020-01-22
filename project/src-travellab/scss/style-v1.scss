@@ -6,12 +6,13 @@
 
 @import "utils/var.scss";
 
-@import "./bscss/bootstrap-grid.scss";
+@import "./bscss/bootstrap.scss";
 
 @import "./components/btn.scss";
 
 @import "./components/header.scss";
 @import "./components/navbar.scss";
+@import "./components/dropdown.scss";
 @import "./components/main_slider.scss";
 @import "./components/main_slider-v2.scss";
 @import "./components/forms.scss";
@@ -69,4 +70,45 @@ header{
 }
 p{
   //text-indent: 20px;
+}
+body{
+  overflow: unset !important;
+
+  color: $main-color-text;
+  font-family: $font-body;
+}
+
+.rotate-90{
+  transform:rotate(90deg);
+  &.active{
+    transform: rotate(180deg);
+  }
+}
+a:hover{
+  text-decoration: none;
+}
+.sup{
+  width: 16px;
+  height: 16px;
+  font-size: 11px;
+  text-align: center;
+  line-height: 15px;
+  transform: translateY(-10px);
+}
+[data-toggle="collapse"]{
+  cursor: pointer;
+}
+.without-shadow{
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.color-primary{
+  color: $primary;
+}
+.color-secondary{
+  color: $secondary;
+}
+[class*=display-]{
+  line-height: 1;
 }

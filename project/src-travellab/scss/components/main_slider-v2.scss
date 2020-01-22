@@ -61,7 +61,7 @@
         }
     }
     &--item-text{
-
+        min-height:525px;
         height: calc(100vh - #{cr(280px)});
         width: 100%;
         display: flex;
@@ -77,13 +77,14 @@
             font-size: cr(44px);
             text-align:center;
             color: white;
+            margin-bottom:1rem ;
         }
         p{
             text-align:center;
             color: #fff;
             font-size: cr(21px);
             font-weight: 400;
-            margin-bottom: 25px;
+            margin-bottom: cr(25px);
             line-height: 1.8;
 
         }
@@ -102,7 +103,7 @@
             top: 0;
         }
         &--item-text{
-            height: calc(90vh - #{cr(60px)});
+            height: calc(100vh - #{cr(60px)});
             max-width: 100%;
             align-items: center;
             text-align: center;

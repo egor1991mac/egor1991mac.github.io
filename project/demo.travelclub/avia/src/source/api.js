@@ -20,17 +20,13 @@ function wrapPromise(promise) {
 
     return {
         read() {
-
             if (status == 'pending') {
                 throw suspender;
             } else if (status == 'error') {
-
                 throw result;
             } else if (status == 'success') {
-
                 return result;
             }
-
         },
 
 
@@ -50,16 +46,17 @@ const fetchData = async (URL) => {
 
 const fetchDataTicketsGet = async (URL) => {
     try {
-        let data = await axios.get(URL);
-        return await data;
+        await sleep(1000);
+        let resp = await axios.get(URL);
+        return resp.data;
     } catch (e) {
         throw e;
     }
 };
 const fetchDataTicketsPost = async (URL, body) => {
     try {
-        let data = await axios.get(URL, body);
-        return await data;
+        let resp = await axios.get(URL, body);
+        return await resp.data;
     } catch (e) {
         throw e;
     }
@@ -100,7 +97,7 @@ const useFetchDataTicketsGet = (URL) => wrapPromise(fetchDataTicketsPost(URL));
 
 //const useFetchDemoData = (data) => wrapPromise(FetchAllData(data));
 
-export {useFetchDataAutoCompleate, useFetchDataTicketsPost, useFetchDataTicketsGet, getTimeFromMins};
+export {useFetchDataAutoCompleate, useFetchDataTicketsPost, useFetchDataTicketsGet, fetchDataTicketsGet,getTimeFromMins};
 
 
 

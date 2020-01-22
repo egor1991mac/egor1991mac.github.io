@@ -8,7 +8,7 @@
   />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="./assets/bootstrap.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';" />
+<!--    <link rel="stylesheet" href="./assets/bootstrap.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';" />-->
     <link rel="stylesheet" href="./assets/fonts.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';" />
 <link rel="stylesheet" href="./assets/owl.carousel.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';" />
 <link rel="stylesheet" href="./assets/owl.theme.default.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet';"/>
@@ -211,17 +211,17 @@
             <img loading="lazy" src="./img/home_slider/slider-101.jpg" class="background-img-fixed" style="z-index: -1;" alt="">
         </picture>
         <div class="container">
-            <div class="row h-80vh align-items-center align-items-lg-end pb-5">
+            <div class="row section-pt-40 pb-5">
                 <div class="col-12 col-md-8">
-                    <ul class="card-options card-options-hor-static">
+                    <ul class="card-options card-options-hor-static justify-content-center justify-content-md-start">
                         <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
                         <li class="card-options--item new"><span class="icon icon-new-label"></span> текст</li>
                         <li class="card-options--item doc"><span class="icon icon-profile"></span> текст</li>
                         <li class="card-options--item custom-tour"><span class="icon icon-creativity"></span>екст</li>
                     </ul>
-                    <h1 class="text-white py-4">Краков* - Вена - Венский лес* (Хайлигенкройц, Баден, замок
+                    <h1 class="text-white py-3 text-md-left text-center">Краков* - Вена - Венский лес* (Хайлигенкройц, Баден, замок
                         Лихтенштейн)</h1>
-                    <ul class="card-rating h3">
+                    <ul class="card-rating h3 justify-content-center justify-content-md-start">
                         <li><span class="icon icon-star-full"></span></li>
                         <li><span class="icon icon-star-half"></span></li>
                         <li><span class="icon icon-star-empty"></span></li>
@@ -229,7 +229,15 @@
                         <li><span class="icon icon-star-empty"></span></li>
                     </ul>
                 </div>
+                <div class="col-md-3 h-100 d-none d-md-flex flex-column ml-auto">
+                    <h3 class="text-white d-flex flex-column">
+                        <span>Цена от:<span class="display-5 text-white ml-2"><del>650$</del></span></span>
+                        <span class="color-secondary display-2 my-3">650$</span>
+                    </h3>
 
+                    <a href="#price" class="btn btn-primary d-inline-flex mt-auto"><span class="icon-cart mr-2"></span> Цены и наличие мест </a>
+
+                </div>
             </div>
         </div>
         <div class="row bg-white section-py-10">
@@ -238,57 +246,57 @@
                     <div class="col-12 col-md-8">
                         <div class="card card-border mb-3 sticky-top card-mobile-nav-detail">
                             <div class="card-body p-3">
-                                <nav class="nav bg-white nav-decoration nav-hor-scroll">
-                                    <a class="nav-link active " href="#overview">О туре</a>
-                                    <a class="nav-link " href="#gallery">Галлерея</a>
-                                    <a class="nav-link " href="#program">Программа</a>
-                                    <a class="nav-link  " href="#cost">Стоимость</a>
-                                    <a class="nav-link  " href="#price">Цены</a>
-                                    <a class="nav-link  " href="#review">Отзывы</a>
+
+                                <nav class="nav bg-white nav-decoration nav-hor-scroll" id="nav-tour-detail">
+                                    <a class="nav-link active" href="#overview">О туре</a>
+                                    <a class="nav-link" href="#gallery">Галлерея</a>
+                                    <a class="nav-link" href="#program">Программа</a>
+                                    <a class="nav-link" href="#cost">Стоимость</a>
+                                    <a class="nav-link" href="#price">Цены</a>
+                                    <a class="nav-link" href="#review">Отзывы</a>
                                 </nav>
                             </div>
                         </div>
 
 
-                        <section id="overview" class="py-4">
-                            <h2 class="h2 text-center text-md-left">О туре</h2>
-                            <div class="card card-border">
+                            <section data-spy="scroll" id="overview" class="py-4" >
+                                <h2 class="h2 text-center text-md-left">О туре</h2>
+                                <div class="card card-border">
 
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et
-                                        porro
-                                        voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed,
-                                        sit nemo
-                                        expedita. Dolor aliquid rerum recusandae excepturi.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, dicta, impedit.
-                                        Eveniet
-                                        incidunt provident minima totam aut facilis tenetur quam officia omnis dolorem!
-                                        Autem
-                                        iste fugit mollitia rerum quae, veritatis perferendis voluptas magni aliquam
-                                        consequuntur, minima repellendus eveniet laboriosam iure.</p>
-                                    <div class="hr mb-3"></div>
-                                    <ul class="list list-hor mb-0">
-                                        <li class="list-item"><span class="icon-place-localizer mr-2"></span>Тур в: <b
-                                                class="ml-1">Грузия</b></li>
-                                        <li class="list-item"><span class="icon-calendar mr-2"></span>Начало тура:<b
-                                                class="ml-1">21.02.2019</b></li>
-                                        <li class="list-item"><span class="icon-map2 mr-2"></span>Маршрут:<b
-                                                class="ml-1">Минск-Москва-Грузия</b></li>
-                                        <li class="list-item"><span class="icon-clock mr-2"></span>Продолжительность:<b
-                                                class="ml-1">7 дней</b></li>
-                                        <li class="list-item"><span class="icon-calendar mr-2"></span>Даты тура:<b
-                                                class="ml-1">21.0.2201</b></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section id="gallery" class=" py-4">
-                            <h2 class="h2 text-center text-md-left">Галлерея</h2>
-                            <div class="card card-border">
-
-                                <div class="card-body p-0">
                                     <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et
+                                            porro
+                                            voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed,
+                                            sit nemo
+                                            expedita. Dolor aliquid rerum recusandae excepturi.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, dicta, impedit.
+                                            Eveniet
+                                            incidunt provident minima totam aut facilis tenetur quam officia omnis dolorem!
+                                            Autem
+                                            iste fugit mollitia rerum quae, veritatis perferendis voluptas magni aliquam
+                                            consequuntur, minima repellendus eveniet laboriosam iure.</p>
+                                        <div class="hr mb-3"></div>
+                                        <ul class="list list-hor mb-0">
+                                            <li class="list-item"><span class="icon-place-localizer mr-2"></span>Тур в: <b
+                                                    class="ml-1">Грузия</b></li>
+                                            <li class="list-item"><span class="icon-calendar mr-2"></span>Начало тура:<b
+                                                    class="ml-1">21.02.2019</b></li>
+                                            <li class="list-item"><span class="icon-map2 mr-2"></span>Маршрут:<b
+                                                    class="ml-1">Минск-Москва-Грузия</b></li>
+                                            <li class="list-item"><span class="icon-clock mr-2"></span>Продолжительность:<b
+                                                    class="ml-1">7 дней</b></li>
+                                            <li class="list-item"><span class="icon-calendar mr-2"></span>Даты тура:<b
+                                                    class="ml-1">21.0.2201</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section data-spy="scroll" id="gallery" class=" py-4">
+                                <h2 class="h2 text-center text-md-left">Галлерея</h2>
+                                <div class="card card-border">
+
+                                    <div class="card-body p-0">
+                                        <div class="card-body">
 <div id="sync1" class="owl-carousel owl-theme js-slider_detail">
     
     <picture>
@@ -330,12 +338,12 @@
     
 </div>
 </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
-                        <section id="program" class=" py-4">
-                            <h2 class="h2 text-center text-md-left">Программа тура по дням</h2>
-                            <!--<div class="card card-border card-collapse" id="accordionExample">-->
+                            </section>
+                            <section data-spy="scroll" id="program" class=" py-4">
+                                <h2 class="h2 text-center text-md-left">Программа тура по дням</h2>
+                                <!--<div class="card card-border card-collapse" id="accordionExample">-->
 
 <!--        <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">-->
 <!--            <h5 class="mb-0">-->
@@ -383,13 +391,14 @@
 
 
 <div class="accordion" id="accordionExample">
-    <div class="card card-border card-collapse">
-        <div class="card-header" id="headingOne">
+    <div class="card card-border card-collapse"  >
+        <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"  aria-expanded="true" aria-controls="collapseOne" >
             <h5 class="mb-0">
                 День 1
 
             </h5>
-            <button class="btn btn-link dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="btn btn-link dropdown-toggle" >
+
             </button>
         </div>
 
@@ -399,15 +408,15 @@
 
                 <p class="">18:00 Выезд из Минска на комфортабельном автобусе. Вы становитесь частью команды #Travellab и едете в хорошей компании, смотрите отличные фильмы, настраиваясь на незабываемое путешествие..</p>
 
-                </div>
+            </div>
         </div>
     </div>
     <div class="card card-border card-collapse">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header collapsed" id="headingTwo"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             <h5 class="mb-0">
                 День 2
             </h5>
-            <button class="btn btn-link collapsed dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="btn btn-link collapsed dropdown-toggle" >
             </button>
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -441,11 +450,11 @@
         </div>
     </div>
     <div class="card card-border card-collapse">
-        <div class="card-header" id="heading3">
+        <div class="card-header collapsed" id="heading3" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
             <h5 class="mb-0">
                 День 3
             </h5>
-            <button class="btn btn-link collapsed dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+            <button class="btn btn-link dropdown-toggle" type="button" >
             </button>
 
         </div>
@@ -482,12 +491,12 @@
         </div>
 
     </div>
-    <div class="card card-border card-collapse">
-        <div class="card-header" id="heading4">
+    <div class="card card-border card-collapse ">
+        <div class="card-header collapsed" id="heading4" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
             <h5 class="mb-0">
                 День 4
             </h5>
-            <button class="btn btn-link collapsed dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+            <button class="btn btn-link collapsed dropdown-toggle" type="button" >
             </button>
         </div>
         <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
@@ -521,17 +530,16 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
-                        </section>
-                        <section id="cost" class=" py-4">
-                            <h2 class="h2 text-center text-md-left">Стоимость</h2>
-                            
-<div class="card card-border mb-3">
-    <div class="card-header d-flex justify-content-between border-0 ">
+                            </section>
+                            <section data-spy="scroll" id="cost" class=" py-4">
+                                <h2 class="h2 text-center text-md-left">Стоимость</h2>
+                                
+<div class="card card-border mb-3 card-collapse">
+    <div class="card-header d-flex justify-content-between border-0 collapsed" data-toggle="collapse" data-target="#include_true" aria-expanded="false" aria-controls="collapseExample">
         <h4 class="my-2 text-success">В стоимость входит</h4>
-        <button class="btn btn-link dropdown-toggle collapsed p-0" type="button" data-toggle="collapse" data-target="#include_true" aria-expanded="false" aria-controls="collapseExample"></button>
+        <button class="btn btn-link dropdown-toggle  p-0" type="button"></button>
     </div>
     <div class="collapse" id="include_true">
         <div class="card-body ">
@@ -550,11 +558,11 @@
     </div>
 </div>
 
-                            
-<div class="card card-border mb-3">
-    <div class="card-header d-flex justify-content-between border-0 ">
+                                
+<div class="card card-border mb-3 card-collapse">
+    <div class="card-header d-flex justify-content-between border-0 collapsed" data-toggle="collapse" data-target="#include_false" aria-expanded="false" aria-controls="collapseExample">
         <h4 class="my-2 text-danger">В стоимость не входит</h4>
-        <button class="btn btn-link dropdown-toggle collapsed p-0" type="button" data-toggle="collapse" data-target="#include_false" aria-expanded="false" aria-controls="collapseExample"></button>
+        <button class="btn btn-link dropdown-toggle  p-0" type="button"></button>
     </div>
     <div class="collapse" id="include_false">
         <div class="card-body ">
@@ -575,11 +583,11 @@
 
 
 
-                        </section>
-                        <section id="price" class="py-4">
-                            <h2 class="h2 text-center text-md-left">Цены</h2>
-                            
-                            <div class="sort-filter mb-3">
+                            </section>
+                            <section data-spy="scroll" id="price" class="py-4">
+                                <h2 class="h2 text-center text-md-left">Цены</h2>
+                                
+                                <div class="sort-filter mb-3">
 
     <div class="form-group d-flex align-items-center mr-3 ml-lg-auto mb-0">
         <label for="">по цене:</label>
@@ -597,7 +605,7 @@
     <span class="icon  icon-equalizer"></span>
 </button>
 </div>
-                            
+                                
 <div class="card card-border mb-4">
     <div class="card-body ">
         <div class="card-row">
@@ -639,7 +647,7 @@
 
     <div class="card-footer">
         <div class="card-row  justify-content-sm-start">
-            <div class="card-col mr-4 d-flex  flex-column flex-md-row">
+            <div class="card-col mr-4 d-flex flex-md-row">
                 <div class="d-flex align-items-center my-2 my-md-0 mr-4">
                     <span class="icon icon-couple mr-1"></span>
                     <span class="mr-1">Взрослых:</span> 1
@@ -698,7 +706,7 @@
 
     <div class="card-footer">
         <div class="card-row  justify-content-sm-start">
-            <div class="card-col mr-4 d-flex  flex-column flex-md-row">
+            <div class="card-col mr-4 d-flex flex-md-row">
                 <div class="d-flex align-items-center my-2 my-md-0 mr-4">
                     <span class="icon icon-couple mr-1"></span>
                     <span class="mr-1">Взрослых:</span> 1
@@ -757,7 +765,7 @@
 
     <div class="card-footer">
         <div class="card-row  justify-content-sm-start">
-            <div class="card-col mr-4 d-flex  flex-column flex-md-row">
+            <div class="card-col mr-4 d-flex flex-md-row">
                 <div class="d-flex align-items-center my-2 my-md-0 mr-4">
                     <span class="icon icon-couple mr-1"></span>
                     <span class="mr-1">Взрослых:</span> 1
@@ -816,7 +824,7 @@
 
     <div class="card-footer">
         <div class="card-row  justify-content-sm-start">
-            <div class="card-col mr-4 d-flex  flex-column flex-md-row">
+            <div class="card-col mr-4 d-flex flex-md-row">
                 <div class="d-flex align-items-center my-2 my-md-0 mr-4">
                     <span class="icon icon-couple mr-1"></span>
                     <span class="mr-1">Взрослых:</span> 1
@@ -875,7 +883,7 @@
 
     <div class="card-footer">
         <div class="card-row  justify-content-sm-start">
-            <div class="card-col mr-4 d-flex  flex-column flex-md-row">
+            <div class="card-col mr-4 d-flex flex-md-row">
                 <div class="d-flex align-items-center my-2 my-md-0 mr-4">
                     <span class="icon icon-couple mr-1"></span>
                     <span class="mr-1">Взрослых:</span> 1
@@ -893,12 +901,12 @@
     </div>
 </div>
 
-                        </section>
-                        <section id="review" class="py-4">
-                            <h2 class="h2 text-center text-md-left">Отзывы</h2>
-                            <button class="btn btn-secondary mx-auto ml-md-auto mb-4"><span class="icon-bubbles4 mr-2"></span>Добавить отзыв</button>
+                            </section>
+                            <section data-spy="scroll" id="review" class="py-4">
+                                <h2 class="h2 text-center text-md-left">Отзывы</h2>
+                                <button class="btn btn-secondary mx-auto ml-md-auto mb-4"><span class="icon-bubbles4 mr-2"></span>Добавить отзыв</button>
 
-                            
+                                
 <div class="card card-border mb-4">
     <div class="card-body">
         <div class="d-flex flex-wrap">
@@ -1004,7 +1012,8 @@
     </div>
 </div>
 
-                        </section>
+                            </section>
+
                     </div>
                     <div class="col-md-4 col-12 d-none d-md-block">
                         <div class="sticky-top" style="top:80px">
@@ -1049,7 +1058,13 @@
         </div>
     </div>
 
-
+    <div class="fixed-bottom p-2 d-flex justify-content-center d-md-none bg-white card-shadow">
+        <a href="#price" class="btn btn-primary d-inline-flex mt-auto fb-50" style="max-width: 170px"><span class="icon-cart mr-2"></span> Цены и места </a>
+        <button type="button" class="btn btn-secondary my-auto ml-3 fb-50" style="max-width: 170px" data-toggle="modal" data-target="#exampleModal">
+            <span class="icon icon-phone mr-2"></span>
+            Перезвонить мне
+        </button>
+    </div>
 </main>
 <footer class="bg-light py-5 footer">
     <div class="container">

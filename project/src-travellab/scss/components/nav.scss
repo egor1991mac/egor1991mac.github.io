@@ -4,13 +4,17 @@
     overflow-y: hidden;
     flex-wrap: nowrap;
     .nav-link{
-
       white-space: nowrap;
     }
+
   }
+
   &-link{
 
     color: $main-color-text;
+    &.active{
+      color: $primary;
+    }
   }
   &-decoration{
     .nav-link:hover{

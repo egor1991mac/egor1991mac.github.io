@@ -5,9 +5,11 @@
   }
   .card{
     width: 100%;
-
   }
+
 }
+
+
 @include media-breakpoint-down('lg'){
   .drawer{
     z-index: 999;
@@ -52,5 +54,17 @@
         padding: 0 1rem;
       }
     }
+  }
+}
+
+.drawer{
+ &.full-height{
+
+    min-height: 0;
+    position: fixed;
+   &.show{
+     width: 100vw !important;
+     min-height: 100vh;
+   }
   }
 }

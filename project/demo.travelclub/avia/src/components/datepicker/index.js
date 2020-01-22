@@ -58,7 +58,7 @@ const DatePicker = ({inputName, lang, showBtnClose=false}) => {
                                 <button onClick={(e)=>{
                                     handleHidePopup();
                                     handleClearDay();
-                                }} className={"btn btn-primary-inverse  _mr-10 _ml-10 _mt-10 mb-20"}>Обратный билет не нужен</button>
+                                }} className={"btn btn-primary-inverse  _mr-10 _ml-10 _mt-10 _mb-10"}>Обратный билет не нужен</button>
                         }
 
                     <DayPicker

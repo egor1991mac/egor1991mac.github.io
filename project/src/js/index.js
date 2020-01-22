@@ -1,5 +1,6 @@
-import popper from "popper.js";
+
 import loading_attribute_polyfill from 'loading-attribute-polyfill';
+import popper from "popper.js";
 import bootstrap from "bootstrap";
 import owlCarousel from "./owl.carousel.js";
 import MainSlider from './components/main_slider';

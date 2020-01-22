@@ -4,16 +4,22 @@ import {ResultContext} from "./context/context";
 import Tickets from '../../components/tickets';
 
 
+
 const Index = ({lang,query}) => {
     return (
-        <ResultState url={query}>
+        <ResultState url={query} lang={{
+            Business:lang.CLASS_BUSINESS,
+            Economy:lang.CLASS_ECONOMY,
+            First:lang.CLASS_FIST,
+            PremiumEconomy: lang.PREMIUMECONOMY
+        }}>
             <ResultContext.Consumer>
                 {
                     (props)=>
                         <>
-                           <Suspense fallback={<div>... Загрузка...</div>}>
-                                    <Tickets/>
-                           </Suspense>
+
+                                    <Tickets />
+
                         </>
                 }
             </ResultContext.Consumer>

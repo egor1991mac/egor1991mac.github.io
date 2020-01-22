@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+_.template(require('./../includes/layout/header.html').default)(data) %>
+
+<body>
+<header class="sticky-top">
+    <% var back_call_button = _.template(require('./../includes/components/back-call-button.html').default)()
+    var social_button = _.template(require('./../includes/components/social-button.html').default)()
+    user_dropdown_button = _.template(require('./../includes/components/user-dropdown.html').default)()
+    select_lang = _.template(require('./../includes/components/select_lang.html').default)()
+    ; %>
+
+    <%= _.template(require('./../includes/components/navbar.html').default)({button:back_call_button,
+    user_dropdown_button:user_dropdown_button}) %>
+
+
+</header>
+<main>
+    <div class="background-img-container section-pt-10">
+        <picture>
+            <img loading="lazy" src="./img/home_slider/slider-101.jpg" class="background-img-fixed" style="z-index: -1;"
+                 alt="">
+        </picture>
+        <div class="row section-py-10">
+            <div class="container">
+                <h1 class="h1 mb-0 text-center  text-white">
+                    Календарь туров
+                </h1>
+
+                <div class="mx-auto d-flex  w-50 align-items-center justify-content-center mb-2 flex-column flex-lg-row">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb breadcrumb-white">
+                            <li class="breadcrumb-item"><a href="#"><span class="icon-home3 mr-2"></span>Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Library</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                    </nav>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row bg-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 d-flex flex-wrap pb-3 justify-content-center">
+                        <button class="btn btn-outline-primary mr-3 fb-10">Январь</button>
+                        <button class="btn btn-outline-primary mr-3 fb-10">Февраль</button>
+                        <button class="btn btn-outline-primary mr-3 fb-10">Март</button>
+                        <button class="btn btn-outline-primary mr-3 fb-10">Апрель</button>
+                        <button class="btn btn-outline-primary mr-3 fb-10">Май</button>
+                        <button class="btn btn-outline-primary mr-3 fb-10">Июнь</button>
+                        <button class="btn btn-outline-primary mr-3 fb-10">Июль</button>
+                        <button class="btn btn-outline-primary mr-3 fb-10">Август</button>
+                        <button class="btn btn-outline-primary mr-3 fb-10">Сентябрь</button>
+                        <button class="btn btn-outline-primary mr-3 fb-10">Октябрь</button>
+                        <button class="btn btn-outline-primary mr-3 fb-10">Ноябрь</button>
+                        <button class="btn btn-outline-primary fb-10">Декабрь</button>
+                    </div>
+                    <div class="card card-border">
+
+                        <div class="card-body">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>
+                                        Выезд
+                                    </th>
+                                    <th>
+                                        Дни
+                                    </th>
+                                    <th>
+                                        Маршрут
+                                    </th>
+                                    <th>
+                                        Наличие мест
+                                    </th>
+                                    <th>
+                                        Стоимость
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td rowspan="3" class="bg-white">
+
+                                        <h5 class="text-white card  rounded-circle" style="
+                                        height: 100px;
+                                        width: 100px;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        line-height: 100px;
+                                        margin: 0 auto;
+                                        background: #449fd3;
+                                    ">Февраль</h5>
+                                    </td>
+                                    <td>
+                                        <strong>23.01.2020</strong>
+                                    </td>
+                                    <td>
+                                        0 дней
+                                    </td>
+                                    <td>
+                                        <a
+                                                href="/tours/tur-v-karpaty-skalistaya-krepost-tustan/">ТУР В КАРПАТЫ
+                                            «СКАЛИСТАЯ КРЕПОСТЬ ТУСТАНЬ»</a>
+                                        <ul class="card-options card-options-hor-static justify-content-center card-options-sm">
+                                            <li class="card-options--item best-price"><span
+                                                    class="icon icon-fire"></span>Горящий тур
+                                            </li>
+                                            <li class="card-options--item new"><span class="icon icon-new-label"></span>Новинка
+                                            </li>
+                                        </ul>
+
+                                    </td>
+                                    <td>
+                                        под запрос
+                                    </td>
+                                    <td>
+                                        <strong>90 USD</strong>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>23.01.2020</strong>
+                                    </td>
+                                    <td>
+                                        0 дней
+                                    </td>
+                                    <td>
+                                        <a
+                                                href="/tours/tur-v-karpaty-skalistaya-krepost-tustan/">ТУР В КАРПАТЫ
+                                            «СКАЛИСТАЯ КРЕПОСТЬ ТУСТАНЬ»</a>
+                                        <ul class="card-options card-options-hor-static justify-content-center card-options-sm">
+                                            <li class="card-options--item best-price"><span
+                                                    class="icon icon-fire"></span>Горящий тур
+                                            </li>
+                                            <li class="card-options--item new"><span class="icon icon-new-label"></span>Новинка
+                                            </li>
+                                        </ul>
+
+                                    </td>
+                                    <td>
+                                        под запрос
+                                    </td>
+                                    <td>
+                                        <strong>90 USD</strong>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>23.01.2020</strong>
+                                    </td>
+                                    <td>
+                                        0 дней
+                                    </td>
+                                    <td>
+                                        <a
+                                                href="/tours/tur-v-karpaty-skalistaya-krepost-tustan/">ТУР В КАРПАТЫ
+                                            «СКАЛИСТАЯ КРЕПОСТЬ ТУСТАНЬ»</a>
+                                        <ul class="card-options card-options-hor-static justify-content-center card-options-sm">
+                                            <li class="card-options--item best-price"><span
+                                                    class="icon icon-fire"></span>Горящий тур
+                                            </li>
+                                            <li class="card-options--item new"><span class="icon icon-new-label"></span>Новинка
+                                            </li>
+                                        </ul>
+
+                                    </td>
+                                    <td>
+                                        под запрос
+                                    </td>
+                                    <td>
+                                        <strong>90 USD</strong>
+                                    </td>
+
+                                </tr><tr>
+                                    <td rowspan="3" class="bg-white">
+
+                                        <h5 class="text-white card  rounded-circle" style="
+                                        height: 100px;
+                                        width: 100px;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        line-height: 100px;
+                                        margin: 0 auto;
+                                        background: #449fd3;
+                                    ">Март</h5>
+                                    </td>
+                                    <td>
+                                        <strong>23.01.2020</strong>
+                                    </td>
+                                    <td>
+                                        0 дней
+                                    </td>
+                                    <td>
+                                        <a
+                                                href="/tours/tur-v-karpaty-skalistaya-krepost-tustan/">ТУР В КАРПАТЫ
+                                            «СКАЛИСТАЯ КРЕПОСТЬ ТУСТАНЬ»</a>
+                                        <ul class="card-options card-options-hor-static justify-content-center card-options-sm">
+                                            <li class="card-options--item best-price"><span
+                                                    class="icon icon-fire"></span>Горящий тур
+                                            </li>
+                                            <li class="card-options--item new"><span class="icon icon-new-label"></span>Новинка
+                                            </li>
+                                        </ul>
+
+                                    </td>
+                                    <td>
+                                        под запрос
+                                    </td>
+                                    <td>
+                                        <strong>90 USD</strong>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>23.01.2020</strong>
+                                    </td>
+                                    <td>
+                                        0 дней
+                                    </td>
+                                    <td>
+                                        <a
+                                                href="/tours/tur-v-karpaty-skalistaya-krepost-tustan/">ТУР В КАРПАТЫ
+                                            «СКАЛИСТАЯ КРЕПОСТЬ ТУСТАНЬ»</a>
+                                        <ul class="card-options card-options-hor-static justify-content-center card-options-sm">
+                                            <li class="card-options--item best-price"><span
+                                                    class="icon icon-fire"></span>Горящий тур
+                                            </li>
+                                            <li class="card-options--item new"><span class="icon icon-new-label"></span>Новинка
+                                            </li>
+                                        </ul>
+
+                                    </td>
+                                    <td>
+                                        под запрос
+                                    </td>
+                                    <td>
+                                        <strong>90 USD</strong>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>23.01.2020</strong>
+                                    </td>
+                                    <td>
+                                        0 дней
+                                    </td>
+                                    <td>
+                                        <a
+                                                href="/tours/tur-v-karpaty-skalistaya-krepost-tustan/">ТУР В КАРПАТЫ
+                                            «СКАЛИСТАЯ КРЕПОСТЬ ТУСТАНЬ»</a>
+                                        <ul class="card-options card-options-hor-static justify-content-center card-options-sm">
+                                            <li class="card-options--item best-price"><span
+                                                    class="icon icon-fire"></span>Горящий тур
+                                            </li>
+                                            <li class="card-options--item new"><span class="icon icon-new-label"></span>Новинка
+                                            </li>
+                                        </ul>
+
+                                    </td>
+                                    <td>
+                                        под запрос
+                                    </td>
+                                    <td>
+                                        <strong>90 USD</strong>
+                                    </td>
+
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+<%= _.template(require('./../includes/layout/footer.html').default)(data) %>
+<%= _.template(require('./../includes/components/back-call-form.html').default)({}) %>
+
+</body>
+</html>

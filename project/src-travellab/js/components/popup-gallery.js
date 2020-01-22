@@ -1,5 +1,5 @@
 export default function(){
-    console.log($('.popup-gallery'));
+
     $('.popup-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
