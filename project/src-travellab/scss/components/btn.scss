@@ -19,6 +19,7 @@
             border-color: $primary-hover !important;
             box-shadow: 0px 0px 0px 2px $primary-hover-shadow !important;
         }
+
     }
     &-secondary{
         background-color: $secondary;
@@ -28,7 +29,10 @@
             border-color: $secondary-hover !important;
             box-shadow: 0px 0px 0px 2px $secondary-hover-shadow !important;
         }
+
     }
+
+
     &-danger {
 
         background-color: #f03226;
@@ -51,6 +55,7 @@
         min-width:calc(#{$btn-width} + #{cr(15px)});
         border-radius: calc(#{$btn-radius} + #{cr(5px)});
     }
+
     &.outline-gray{
         background: transparent;
         border-color: #e1e1e1;

@@ -229,30 +229,54 @@
 
             </div>
         </div>
-        <div class="row bg-white py-5">
+        <section class="row bg-white py-5" id="calendarbTurov">
             <div class="container">
                 <div class="row">
-                    <div class="col-8 d-flex flex-wrap pb-3 justify-content-center">
-                        <button class="btn btn-outline-primary mr-3 fb-10">Январь</button>
-                        <button class="btn btn-outline-primary mr-3 fb-10">Февраль</button>
-                        <button class="btn btn-outline-primary mr-3 fb-10">Март</button>
-                        <button class="btn btn-outline-primary mr-3 fb-10">Апрель</button>
-                        <button class="btn btn-outline-primary mr-3 fb-10">Май</button>
-                        <button class="btn btn-outline-primary mr-3 fb-10">Июнь</button>
-                        <button class="btn btn-outline-primary mr-3 fb-10">Июль</button>
-                        <button class="btn btn-outline-primary mr-3 fb-10">Август</button>
-                        <button class="btn btn-outline-primary mr-3 fb-10">Сентябрь</button>
-                        <button class="btn btn-outline-primary mr-3 fb-10">Октябрь</button>
-                        <button class="btn btn-outline-primary mr-3 fb-10">Ноябрь</button>
-                        <button class="btn btn-outline-primary fb-10">Декабрь</button>
-                    </div>
+                    <div class="col-12">
                     <div class="card card-border">
+                        <div class="card-header py-4">
+                            <div class="d-flex d-md-none w-100 justify-content-center align-items-center">
+                                <label for="" class="mb-0 mr-2"> Месяц:</label>
+                                <select name="month" id="" >
+                                    <option value="0">Все ...</option>
+                                    <option value="1">Январь</option>
+                                    <option value="2">Февраль</option>
+                                    <option value="3">Март</option>
+                                    <option value="4">Апрель</option>
+                                    <option value="5">Май</option>
+                                    <option value="6">Июнь</option>
+                                    <option value="7">Июль</option>
+                                    <option value="8">Август</option>
+                                    <option value="9">Сентябрь</option>
+                                    <option value="10">Ноябрь</option>
+                                    <option value="11">Октябрь</option>
+                                    <option value="12">Декабрь</option>
+                                </select>
+                            </div>
+                        <div class=" justify-content-center mx-auto d-none d-md-flex">
+                            <button class="btn btn-outline-secondary outline-gray mr-3 mb-3 fb-11" data-btnMonth="1">Январь</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3 mb-3 fb-11" data-btnMonth="2">Февраль</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3 mb-3 fb-11" data-btnMonth="3">Март</button>
+                            <button class="btn btn-outline-secondary outline-gray  mb-3 fb-11" data-btnMonth="4">Апрель</button>
+                        </div>
+                            <div class=" justify-content-center mx-auto d-none d-md-flex">
+                            <button class="btn btn-outline-secondary outline-gray mr-3   fb-11" data-btnMonth="5">Май</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3   fb-11" data-btnMonth="6">Июнь</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3   fb-11" data-btnMonth="7">Июль</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3   fb-11" data-btnMonth="8">Август</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3   fb-11" data-btnMonth="9">Сентябрь</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3  fb-11" data-btnMonth="10" >Октябрь</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3  fb-11" data-btnMonth="11">Ноябрь</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3  fb-11" data-btnMonth="12">Декабрь</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3 fb-11" data-btnMonth="0">Все...</button>
+                            </div>
+                        </div>
 
-                        <div class="card-body">
-                            <table class="table table-striped">
+                        <div class="card-body p-0 overflow-auto">
+                            <table class="table table-striped overflow-auto">
                                 <thead>
                                 <tr>
-                                    <th></th>
+
                                     <th>
                                         Выезд
                                     </th>
@@ -271,20 +295,8 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td rowspan="3" class="bg-white">
+                                <tr data-month="1">
 
-                                        <h5 class="text-white card  rounded-circle" style="
-                                        height: 100px;
-                                        width: 100px;
-                                        text-overflow: ellipsis;
-                                        overflow: hidden;
-                                        white-space: nowrap;
-                                        line-height: 100px;
-                                        margin: 0 auto;
-                                        background: #449fd3;
-                                    ">Февраль</h5>
-                                    </td>
                                     <td>
                                         <strong>23.01.2020</strong>
                                     </td>
@@ -312,7 +324,7 @@
                                     </td>
 
                                 </tr>
-                                <tr>
+                                <tr data-month="1">
                                     <td>
                                         <strong>23.01.2020</strong>
                                     </td>
@@ -340,47 +352,7 @@
                                     </td>
 
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <strong>23.01.2020</strong>
-                                    </td>
-                                    <td>
-                                        0 дней
-                                    </td>
-                                    <td>
-                                        <a
-                                                href="/tours/tur-v-karpaty-skalistaya-krepost-tustan/">ТУР В КАРПАТЫ
-                                            «СКАЛИСТАЯ КРЕПОСТЬ ТУСТАНЬ»</a>
-                                        <ul class="card-options card-options-hor-static justify-content-center card-options-sm">
-                                            <li class="card-options--item best-price"><span
-                                                    class="icon icon-fire"></span>Горящий тур
-                                            </li>
-                                            <li class="card-options--item new"><span class="icon icon-new-label"></span>Новинка
-                                            </li>
-                                        </ul>
-
-                                    </td>
-                                    <td>
-                                        под запрос
-                                    </td>
-                                    <td>
-                                        <strong>90 USD</strong>
-                                    </td>
-
-                                </tr><tr>
-                                    <td rowspan="3" class="bg-white">
-
-                                        <h5 class="text-white card  rounded-circle" style="
-                                        height: 100px;
-                                        width: 100px;
-                                        text-overflow: ellipsis;
-                                        overflow: hidden;
-                                        white-space: nowrap;
-                                        line-height: 100px;
-                                        margin: 0 auto;
-                                        background: #449fd3;
-                                    ">Март</h5>
-                                    </td>
+                                <tr data-month="1">
                                     <td>
                                         <strong>23.01.2020</strong>
                                     </td>
@@ -408,7 +380,8 @@
                                     </td>
 
                                 </tr>
-                                <tr>
+                                <tr data-month="1">
+
                                     <td>
                                         <strong>23.01.2020</strong>
                                     </td>
@@ -436,7 +409,35 @@
                                     </td>
 
                                 </tr>
-                                <tr>
+                                <tr data-month="2">
+                                    <td>
+                                        <strong>23.01.2020</strong>
+                                    </td>
+                                    <td>
+                                        0 дней
+                                    </td>
+                                    <td>
+                                        <a
+                                                href="/tours/tur-v-karpaty-skalistaya-krepost-tustan/">ТУР В КАРПАТЫ
+                                            «СКАЛИСТАЯ КРЕПОСТЬ ТУСТАНЬ»</a>
+                                        <ul class="card-options card-options-hor-static justify-content-center card-options-sm">
+                                            <li class="card-options--item best-price"><span
+                                                    class="icon icon-fire"></span>Горящий тур
+                                            </li>
+                                            <li class="card-options--item new"><span class="icon icon-new-label"></span>Новинка
+                                            </li>
+                                        </ul>
+
+                                    </td>
+                                    <td>
+                                        под запрос
+                                    </td>
+                                    <td>
+                                        <strong>90 USD</strong>
+                                    </td>
+
+                                </tr>
+                                <tr data-month="2">
                                     <td>
                                         <strong>23.01.2020</strong>
                                     </td>
@@ -470,10 +471,11 @@
                             </table>
                         </div>
                     </div>
+                    </div>
                 </div>
 
             </div>
-        </div>
+        </section>
     </div>
 </main>
 <footer class="bg-light py-5 footer">
