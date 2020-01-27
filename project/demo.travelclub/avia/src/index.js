@@ -4,12 +4,15 @@ import Preloader from './components/loader';
 import './index.scss';
 
 import Form from './container/form';
+
 import Filter from './container/filter';
-import Sort from './container/sort';
 //import moment from 'moment';
 import * as serviceWorker from './serviceWorker';
 
 const Result = lazy(() => import('./container/result'));
+const Sort = lazy(() => import('./container/sort'));
+//const Sort = lazy(() => import('./container/sort'));
+
 //const Sort = lazy(() => import('./container/sort'));
 //ReactDOM.render(<Form/>, document.getElementById('AviaAppForm'));
 
@@ -54,7 +57,11 @@ class AviaApp {
                                            , this.rootElem.elem);
                     break;
                 case 'Filter':
-                    ReactDOM.hydrate(<Filter lang={this.rootElem.lang}/>, this.rootElem.elem);
+                    ReactDOM.hydrate(<Filter
+                        lang={this.rootElem.lang}
+                        query={this.rootElem.query}
+                        defaultData={this.rootElem.defaultData}
+                    />, this.rootElem.elem);
                     break;
                 case 'Sort':
 
@@ -157,7 +164,7 @@ app._rootElem = {
                     OBJECT_TYPE: "city",
                 }
             ],
-            DATE_DEPARTURE: "21.01.2020",
+            DATE_DEPARTURE: "30.01.2020",
            // DATE_ARRIVAL: "22.01.2020",
             PESSANGER: {
                 adults: 3,
@@ -179,8 +186,75 @@ app._rootElem = {
     elem: document.getElementById("AviaAppSort"),
     type: 'Sort',
 };
+app._rootElem ={
+    elem: document.getElementById("AviaAppFilter"),
+    type: 'Filter',
+    lang: {
+        am:'До полудня',
+        e: 'Обеденное время',
+        m:'После полудня'
+    },
+    defaultData: {
+        CLASSES:['Economy','Business','First','PremiumEconomy'],
+        REQUEST: null,
+        IS_AJAX_MODE: window.location.href == window.location.origin ? "N" : "Y",
+        DATE_FORMAT: 'DD.MM.YYYY',
+        SEARCH_DATA: {
+            DEPARTURE: [
+                {
+                    ID: "1779",
+                    UF_CODE: "DME",
+                    UF_CITY_RU: "Москва",
+                    UF_CITY_EN: "Moscow",
+                    UF_NAME_RU: "Домодедово",
+                    UF_NAME_EN: "Domodedovo",
+                    UF_AREA: "MOW",
+                    UF_COUNTRY: "RU",
+                    UF_TIMEZONE: "Europe/Moscow",
+                    UF_LAT: "55.4145",
+                    UF_LNG: "37.8999",
+                    INPUT_NAME: "airport:1779",
+                    CITY_RU_ID: "Москва~RU",
+                    CITY_INPUT_NAME_RU: "city:Москва~RU",
+                    CITY_EN_ID: "Moscow~RU",
+                    CITY_INPUT_NAME_EN: "city:Moscow~RU",
+                    OBJECT_TYPE: "city",
+                }
+            ],
+            ARRIVAL: [
+                {
+                    ID: "2159",
+                    UF_CODE: "EWR",
+                    UF_CITY_RU: "Нью-Йорк",
+                    UF_CITY_EN: "New-York",
+                    UF_NAME_RU: "Ньюарк Либерти",
+                    UF_NAME_EN: "Newark Liberty",
+                    UF_AREA: "NYC",
+                    UF_COUNTRY: "US",
+                    UF_TIMEZONE: "America/New_York",
+                    UF_LAT: "40.69709",
+                    UF_LNG: "-74.17557",
+                    INPUT_NAME: "airport:2159",
+                    CITY_RU_ID: "Нью-Йорк~US",
+                    CITY_INPUT_NAME_RU: "city:Нью-Йорк~US",
+                    CITY_EN_ID: "New-York~US",
+                    CITY_INPUT_NAME_EN: "city:New-York~US",
+                    OBJECT_TYPE: "city",
+                }
+            ],
+            DATE_DEPARTURE: "30.01.2020",
+            // DATE_ARRIVAL: "22.01.2020",
+            PESSANGER: {
+                adults: 3,
+                children: 0,
+                baby: 0
+            },
+            CLASSES:['Economy']
+        }
 
-
+    },
+};
+console.log(app._rootElem)
 app._rootElem = {
     elem: document.getElementById("AviaAppResult"),
     type: 'Result',
@@ -216,19 +290,10 @@ app._rootElem = {
 }
 
 
+
 // app.initReact();
-//filter
-//     AviaApp._rootElem ={
-//         elem: document.querySelector('#AviaAppFilter'),
-//         type: 'Filter',
-//         lang: {
-//             FROM:{
-//                 label:"from",
-//                 placeholder: "set from",
-//                 popper:"set from",
-//                 button:"select"
-//             }
-//         }};
+
+
 //     AviaApp.initReact();
 //
 //    //result

@@ -4,8 +4,8 @@ import {FormContext} from "../container/form/context/context";
 
 //key ключ объекта state[SELECT_DATA][key];
 
-const useSetParentContext = (state, key) =>{
-    const {getData} = useContext(FormContext);
+const useSetParentContext = (state, key, parentContext) =>{
+    const {getData} = useContext(parentContext);
 
     useMemo(()=>{
         getData(state,key);

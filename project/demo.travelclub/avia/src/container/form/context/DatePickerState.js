@@ -6,7 +6,7 @@ import useSetParentContext from "../../../hooks/useSetParentContext";
 import moment from 'moment';
 
 
-export const DatePickerState = ({url,inputName,children,defaultData=''}) => {
+export const DatePickerState = ({url,inputName,children,defaultData='',parentContext}) => {
     console.log();
     const defaultState = {
         [SELECT_DATA]: defaultData ? moment(defaultData,'DD.MM.YYYY').toDate() : ''
@@ -16,7 +16,7 @@ export const DatePickerState = ({url,inputName,children,defaultData=''}) => {
     const [state, dispatch] = useReducer(DatePickerReducer, defaultState);
 
 
-    useSetParentContext(state[SELECT_DATA],inputName);
+    useSetParentContext(state[SELECT_DATA],inputName, parentContext);
 
     const handleSelectDay = (value = new Date()) =>{
         dispatch({

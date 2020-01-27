@@ -20,33 +20,7 @@ $secondary-hover: #ff5508;
 $secondary-hover-shadow: rgba(255, 85, 8, 0.56);
 $rating-star: #ffc917;
 
-:root{
 
-  //шрифты
-  --font-icon: 'icomoon';
-  // основные цвета
-  --primary-color:$primary;
-  --secondary-color:$secondary;
-  // основные цвета шрифтов
-
-  --nav-color-link:#263238;
-  --nav-color-link-mobile:#263238;
-  --main-color-text: #263238;
-  --secondary-color-text: #455a64;
-
-  //шрифты
-  --main-font:Roboto;
-  --heading-font: Merriweather;
-
-  //фон
-  --section-background-gray: #f4f7f7;
-  --section-background-white: white;
-
-
-  //хлебные крошки
-
-
-}
 //section-tittle
 $section-tittle-margin-bottom: 2rem;
 
@@ -152,4 +126,30 @@ $grid-breakpoints: (
         xl: 1320px
 );
 
+:root{
 
+  //шрифты
+  --font-icon: 'icomoon';
+  // основные цвета
+  --primary-color:$primary;
+  --secondary-color:$secondary;
+  // основные цвета шрифтов
+
+  --nav-color-link:#263238;
+  --nav-color-link-mobile:#263238;
+  --main-color-text: #263238;
+  --secondary-color-text: #455a64;
+
+  //шрифты
+  --main-font:Roboto;
+  --heading-font: Merriweather;
+
+  //фон
+  --section-background-gray: #f4f7f7;
+  --section-background-white: white;
+
+
+  //хлебные крошки
+
+
+}

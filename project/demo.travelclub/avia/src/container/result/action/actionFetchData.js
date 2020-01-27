@@ -2,7 +2,7 @@ import {FETCH_DATA, LOADING, PAGE, REQUEST_ID} from "../../../source/const";
 import {fetchDataTicketsGet} from '../../../source/api';
 import qs from 'qs';
 
-export const GetDataTickets = async (dispatch,url) =>{
+export const GetDataTickets = async (dispatch,url,callback) =>{
 
     try {
         if (window.history.state) {
@@ -37,7 +37,9 @@ export const GetDataTickets = async (dispatch,url) =>{
                 payload:{
                     [FETCH_DATA]:  response,
                     [PAGE]:1,
-                    [REQUEST_ID]: response.request_id,
+                    total_page_count:response.total_page_count,
+                    [REQUEST_ID]: response.request_id
+
                 }
             })
 
@@ -45,9 +47,7 @@ export const GetDataTickets = async (dispatch,url) =>{
                 type:[LOADING],
                 payload:false
             });
-
-
-
+            callback(response.filter_values);
 
         }
     }

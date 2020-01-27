@@ -67,33 +67,67 @@ $arMonth = [
         'G' => 'Декабря',
     ],
 ];
+$mons_n=0;
 ?>
 
 <? if (!empty($arResult["ITEMS"])): ?>
-<table class="table table-striped cart-list">
-							<thead>
-								<tr>
-									<th>
-										Выезд
-									</th>
-									<th>
-										Дни
-									</th>
-									<th>
-										Маршрут
-									</th>
-									<th>
-										Наличие мест
-									</th>
-									<th>
-										Стоимость
-									</th>
-								</tr>
-							</thead>
-							<tbody>
+                    <div class="card card-border">
+                        <div class="card-header py-4">
+                            <div class="d-flex d-md-none w-100 justify-content-center align-items-center">
+                                <label for="" class="mb-0 mr-2"> Месяц:</label>
+                                <select name="month" id="" >
+                                    <option value="0">Все ...</option>
+								<?foreach ($arResult["ITEMS"] as $month => $items):?>
+									<option value="<?$mons_n++;?>"><?= $arMonth[$month]['N'] ?></option>
+								<? endforeach; ?>
+
+                                </select>
+                            </div>
+                        <div class=" justify-content-center mx-auto d-none d-md-flex">
+                            <button class="btn btn-outline-secondary outline-gray mr-3 mb-3 fb-11" data-btnMonth="1">Январь</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3 mb-3 fb-11" data-btnMonth="2">Февраль</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3 mb-3 fb-11" data-btnMonth="3">Март</button>
+                            <button class="btn btn-outline-secondary outline-gray  mb-3 fb-11" data-btnMonth="4">Апрель</button>
+                        </div>
+                            <div class=" justify-content-center mx-auto d-none d-md-flex">
+                            <button class="btn btn-outline-secondary outline-gray mr-3   fb-11" data-btnMonth="5">Май</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3   fb-11" data-btnMonth="6">Июнь</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3   fb-11" data-btnMonth="7">Июль</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3   fb-11" data-btnMonth="8">Август</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3   fb-11" data-btnMonth="9">Сентябрь</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3  fb-11" data-btnMonth="10" >Октябрь</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3  fb-11" data-btnMonth="11">Ноябрь</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3  fb-11" data-btnMonth="12">Декабрь</button>
+                            <button class="btn btn-outline-secondary outline-gray mr-3 fb-11" data-btnMonth="0">Все...</button>
+                            </div>
+                        </div>
+<div class="card-body p-0 overflow-auto">
+                            <table class="table table-striped overflow-auto">
+                                <thead>
+                                <tr>
+
+                                    <th>
+                                        Выезд
+                                    </th>
+                                    <th>
+                                        Дни
+                                    </th>
+                                    <th>
+                                        Маршрут
+                                    </th>
+                                    <th>
+                                        Наличие мест
+                                    </th>
+                                    <th>
+                                        Стоимость
+                                    </th>
+                                </tr>
+                                </thead>
+								<tbody>
+				<?$mons_n=0;?>
             <?foreach ($arResult["ITEMS"] as $month => $items):?>
                 <?$cnt = 1;?>
-				<tr><td colspan="5"><div class="h4"><?= $arMonth[$month]['N'] ?> </div></td></tr>
+				<?$mons_n++;?>
 				<? foreach ($items as $arItem): ?>
                     <?
                     $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
@@ -135,7 +169,7 @@ $arMonth = [
 					   ?>
 					<?endif?>
 					<?$bg_i++;?>
-								<tr<?if($bg_i % 2 === 0):?> class="bg_gray"<?endif?>>
+								<tr data-month="<?=$mons_n;?>">
 									<td>
 										<strong><?=$date?></strong>
 									</td>
@@ -187,5 +221,6 @@ $arMonth = [
 			<? endforeach; ?>
 							</tbody>
 						</table>
+				</div>
 <? endif ?>
 

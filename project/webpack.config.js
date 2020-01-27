@@ -24,8 +24,8 @@ const thema = 'templates/travelsoft/thema';
 const bitrixThema = 'templates/travelsoft/components/bitrix';
 const tsOperatorThema = 'components/travelsoft';
 //entry
-const components= './src-travellab/scss/components/';
-const mainStyle = './src-travellab/scss/';
+const components= './src-pecin/scss/components/';
+const mainStyle = './src-pecin/scss/';
 
 const  pathSCSS = {
     [`${thema}/style`]:`${mainStyle}style.scss`,
@@ -70,14 +70,14 @@ function generateHtmlPlugins(templateDir) {
 }
 
 
-// let cssFiles = fs.readdirSync(path.resolve(__dirname,'./src-travellab/scss/components'));
+// let cssFiles = fs.readdirSync(path.resolve(__dirname,'./src-pecin/scss/components'));
 // cssFilesKey = cssFiles.map(item=>item.substr(0,item.length - 5));
 //
 // function generateInputCss (file,key){
 //     let obj = {}; g
 //     cssFiles.forEach((item,index)=>{
 //
-//         obj[`${cssFilesKey[index]}`] = `./src-travellab/scss/components/${item}`
+//         obj[`${cssFilesKey[index]}`] = `./src-pecin/scss/components/${item}`
 //
 //     })
 //     return obj;
@@ -89,17 +89,17 @@ function generateHtmlPlugins(templateDir) {
 
 
 
-let htmlPlugins = generateHtmlPlugins("./src-travellab/html/views");
+let htmlPlugins = generateHtmlPlugins("./src-pecin/html/views");
 //let css = generateInputCss();
 
 const configProd = {
     entry: {
-        "index":"./src-travellab/js/index.js",
+        "index":"./src-pecin/js/index.js",
         //...pathSCSS
 
     },
     output: {
-        path: path.resolve(__dirname, './demo1'),
+        path: path.resolve(__dirname, './demo2'),
         filename: 'js/[name].js',
     },
     devtool: "source-map",
@@ -148,7 +148,7 @@ const configProd = {
             },
             {
                 test: /\.(sass|scss|css)$/,
-                include: path.resolve(__dirname, "src-travellab/scss"),
+                include: path.resolve(__dirname, "src-pecin/scss"),
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -183,7 +183,7 @@ const configProd = {
             },
             {
                 test: /\.html$/,
-                include: [path.resolve(__dirname, "src-travellab/html/includes")],
+                include: [path.resolve(__dirname, "src-pecin/html/includes")],
                 use: ["raw-loader"]
             },
         ]
@@ -226,23 +226,23 @@ const configProd = {
 
         new CopyWebpackPlugin([
             {
-                from: "./src-travellab/assets",
+                from: "./src-pecin/assets",
                 to: "./assets"
             },
             {
-                from: "./src-travellab/fonts",
+                from: "./src-pecin/fonts",
                 to: "./fonts"
             },
             {
-                from: "./src-travellab/favicon",
+                from: "./src-pecin/favicon",
                 to: "./favicon"
             },
             {
-                from: "./src-travellab/img",
+                from: "./src-pecin/img",
                 to: "./img"
             },
             {
-                from: "./src-travellab/uploads",
+                from: "./src-pecin/uploads",
                 to: "./uploads"
             }
         ]),
@@ -253,7 +253,7 @@ const configProd = {
 };
 const configDev = {
     entry: {
-        "index":"./src-travellab/js/index.js",
+        "index":"./src-pecin/js/index.js",
 
 
     },
@@ -307,7 +307,7 @@ const configDev = {
             },
             {
                 test: /\.(sass|scss|css)$/,
-                include: path.resolve(__dirname, "src-travellab/scss"),
+                include: path.resolve(__dirname, "src-pecin/scss"),
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -342,7 +342,7 @@ const configDev = {
             },
             {
                 test: /\.html$/,
-                include: [path.resolve(__dirname, "src-travellab/html/includes")],
+                include: [path.resolve(__dirname, "src-pecin/html/includes")],
                 use: ["raw-loader"]
             },
         ]
@@ -385,23 +385,23 @@ const configDev = {
 
         new CopyWebpackPlugin([
             {
-                from: "./src-travellab/assets",
+                from: "./src-pecin/assets",
                 to: "./assets"
             },
             {
-                from: "./src-travellab/fonts",
+                from: "./src-pecin/fonts",
                 to: "./fonts"
             },
             {
-                from: "./src-travellab/favicon",
+                from: "./src-pecin/favicon",
                 to: "./favicon"
             },
             {
-                from: "./src-travellab/img",
+                from: "./src-pecin/img",
                 to: "./img"
             },
             {
-                from: "./src-travellab/uploads",
+                from: "./src-pecin/uploads",
                 to: "./uploads"
             }
         ]),

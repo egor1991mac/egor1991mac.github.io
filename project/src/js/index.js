@@ -16,17 +16,9 @@ import '../scss/style-v1.scss';
 
 $(document).ready(function(){
 
-
-
-
   MainSlider();
   MainRewiesSlider();
-
   NavBarCollapse();
-
-
-
-
   $('.js-thankyou_page').length>0 && $('.js-thankyou_page').modal('show');
 
 

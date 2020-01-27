@@ -1,10 +1,8 @@
 import React, {useContext} from 'react';
-import {CheckboxContext} from "../../container/form/context/context";
+import {CheckboxContext} from "./context";
+
 const CheckBox = ({lang}) => {
-
    const {state, handleChecked} = useContext(CheckboxContext);
-    console.log(state);
-
     return state ?
             <div className="theme-search-results-sidebar-section-checkbox-list">
                 {
@@ -15,7 +13,7 @@ const CheckBox = ({lang}) => {
                                     <div className={`icheck ${state[key] ? 'checked' : ''}`} style={{position: "relative"}}>
                                     </div>
                                     <span className="icheck-title">{
-                                       lang[key]
+                                       lang && lang[key]
                                     }</span>
                                 </label>
 

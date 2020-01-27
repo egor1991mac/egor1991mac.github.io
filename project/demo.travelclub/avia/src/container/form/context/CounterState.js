@@ -6,7 +6,7 @@ import useSetParentContext from "../../../hooks/useSetParentContext";
 
 
 
-export const CounterState = ({url,inputName,children, defaultData}) => {
+export const CounterState = ({url,inputName,children, defaultData, parentContext}) => {
     const defaultState = defaultData ? defaultData :{
         adults:1,
         children:0,
@@ -15,7 +15,7 @@ export const CounterState = ({url,inputName,children, defaultData}) => {
 
     const [state, dispatch] = useReducer(CounterReducer, defaultState);
 
-    useSetParentContext(state,inputName);
+    useSetParentContext(state,inputName, parentContext);
 
     const handleIncrement = (key) =>{
         dispatch({

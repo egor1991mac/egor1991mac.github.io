@@ -13,7 +13,7 @@ function sleep (time) {
 
 
 
-export const AutoCompleateState = ({url, inputName, children,defaultData}) => {
+export const AutoCompleateState = ({url, inputName, children,defaultData, parentContext}) => {
     const defaultState = {
             [FETCH_DATA]: null,
             [SELECT_DATA]: {},
@@ -34,7 +34,7 @@ export const AutoCompleateState = ({url, inputName, children,defaultData}) => {
     const [state, dispatch] = useReducer(AutoCompleateReducer, defaultState);
 
 
-    useSetParentContext(state[SELECT_DATA],inputName);
+    useSetParentContext(state[SELECT_DATA],inputName, parentContext);
 
     const handleFetchData = async (value = '') => {
         if(value.length >= 2){

@@ -75,7 +75,7 @@
       <paths name="http://travellab.travelsoft.by/">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/" local="$PROJECT_DIR$/demo.travellab" web="/" />
           </mappings>
         </serverdata>
       </paths>

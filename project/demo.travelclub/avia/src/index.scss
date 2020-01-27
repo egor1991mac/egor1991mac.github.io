@@ -237,3 +237,34 @@ input{
     background: #e30513;
   }
 }
+.input-range__track{
+  height: 5px !important;
+  &--active{
+    background: #ef3226 !important;
+  }
+}
+.input-range__slider {
+
+  background: #fff !important;
+
+  border-radius: 100%;
+  border: 1px solid #eeeeee !important;
+  height: 20px !important;
+  width: 20px !important;
+  top: calc(50% - 5px) !important;
+
+  /* width: 1rem; */
+}
+.input-range__label--value {
+  position: absolute;
+  top: -2.8rem !important;
+}
+.input-range__label{
+  font-size: 1rem !important;
+}
+.input-range__label--min, .input-range__label--max {
+  bottom: -2rem !important;
+  .input-range__label-container{
+    position: static !important;
+  }
+}

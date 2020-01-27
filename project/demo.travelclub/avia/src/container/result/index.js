@@ -17,9 +17,7 @@ const Index = ({lang,query}) => {
                 {
                     (props)=>
                         <>
-
                                     <Tickets />
-
                         </>
                 }
             </ResultContext.Consumer>

@@ -7,7 +7,7 @@ const handlers = {
     [FETCH_DATA]: (state, {payload}) => ({...state,...payload}),
     [PREV_DATA]:(state, {payload}) => ({...state,...payload}),
     [LOADING]:(state, {payload}) => ({...state,[LOADING]:payload}),
-    [PAGE]:(state,{payload}) => ({...state,...payload})
+    [PAGE]:(state,{payload}) => ({...state,[PAGE]:state[PAGE] + 1})
 
 };
 

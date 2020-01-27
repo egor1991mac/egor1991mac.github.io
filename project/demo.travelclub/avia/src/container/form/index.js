@@ -8,7 +8,7 @@ import {DatePickerState} from "./context/DatePickerState";
 import {CounterState} from "./context/CounterState";
 import Counter from '../../components/counter';
 import CheckBox from '../../components/checkbox';
-import CheckBoxState from './context/CheckBoxState';
+import CheckBoxState from '../../components/checkbox/CheckBoxState';
 import {FormState} from "./context/formState";
 import {FormContext} from "./context/context";
 import {isEmpty} from "lodash";
@@ -30,7 +30,9 @@ const Form = ({lang, defaultData, query}) => {
                                         <div className="col-md-6">
                                 <PopupState>
                                     <AutoCompleateState url={query.URL_DATA_FROM} type={'FROM'} inputName={"DEPARTURE"}
-                                                        defaultData={defaultData.SEARCH_DATA.DEPARTURE}>
+                                                        defaultData={defaultData.SEARCH_DATA.DEPARTURE}
+                                                        parentContext ={FormContext}
+                                    >
                                         <AutoCompleate
                                             lang={
                                                 {
@@ -45,7 +47,9 @@ const Form = ({lang, defaultData, query}) => {
                                         <div className="col-md-6">
                                 <PopupState>
                                     <AutoCompleateState url={query.URL_DATA_TO} type={'TO'} inputName={"ARRIVAL"}
-                                                        defaultData={defaultData.SEARCH_DATA.ARRIVAL}>
+                                                        defaultData={defaultData.SEARCH_DATA.ARRIVAL}
+                                                        parentContext ={FormContext}
+                                    >
                                         <AutoCompleate
                                             lang={
                                                 {
@@ -63,7 +67,8 @@ const Form = ({lang, defaultData, query}) => {
                                 <div className="row" data-gutter="none">
                                     <div className="col-md-4">
                                         <PopupState>
-                                            <DatePickerState inputName={"DATE_DEPARTURE"}
+                                            <DatePickerState parentContext ={FormContext}
+                                                             inputName={"DATE_DEPARTURE"}
                                                              defaultData={defaultData.SEARCH_DATA.DATE_DEPARTURE}>
                                                 <DatePicker
                                                     lang={
@@ -78,7 +83,8 @@ const Form = ({lang, defaultData, query}) => {
                                     </div>
                                     <div className="col-md-4">
                                         <PopupState>
-                                            <DatePickerState inputName={"DATE_ARRIVAL"}
+                                            <DatePickerState parentContext ={FormContext}
+                                                             inputName={"DATE_ARRIVAL"}
                                                              defaultData={defaultData.SEARCH_DATA.DATE_ARRIVAL || null}>
 
                                                 <DatePicker
@@ -95,9 +101,13 @@ const Form = ({lang, defaultData, query}) => {
                                     </div>
                                     <div className="col-md-4">
                                         <PopupState>
-                                            <CounterState inputName={"PESSANGER"}
+                                            <CounterState parentContext ={FormContext}
+                                                          inputName={"PESSANGER"}
                                                           defaultData={defaultData.SEARCH_DATA.PESSANGER}>
-                                                <CheckBoxState  inputName={"CLASS"} defaultDataItems = {defaultData.CLASSES} defaultData={defaultData.SEARCH_DATA.CLASSES} >
+                                                <CheckBoxState  parentContext ={FormContext}
+                                                                inputName={"CLASS"}
+                                                                defaultDataItems = {defaultData.CLASSES}
+                                                                defaultData={defaultData.SEARCH_DATA.CLASSES} >
                                                 <Counter
                                                     lang={{
                                                         label: [lang.PESSENGERS, lang.PESSENGER],

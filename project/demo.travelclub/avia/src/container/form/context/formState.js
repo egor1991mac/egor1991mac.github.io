@@ -25,7 +25,6 @@ export const FormState = ({children,mode}) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const action = "flights";
-
         const data= {
             SEARCH: {
                 DEPARTURE: state.DEPARTURE.OBJECT_TYPE == 'airport' ? state.DEPARTURE.INPUT_NAME : state.DEPARTURE.CITY_INPUT_NAME_RU,
@@ -33,7 +32,7 @@ export const FormState = ({children,mode}) => {
                 DATE_DEPARTURE: state.DATE_DEPARTURE ? moment(state.DATE_DEPARTURE).format('DD.MM.YYYY') : null,
                 DATE_ARRIVAL: state.DATE_ARRIVAL ? moment(state.DATE_ARRIVAL).format('DD.MM.YYYY') : null,
                 PESSANGER: state.PESSANGER,
-                CLASS: Object.keys(state.CLASS).filter(key => state.CLASS[key] == true)
+               // CLASS: Object.keys(state.CLASS).filter(key => state.CLASS[key] == true)
             }
         };
 
@@ -50,7 +49,7 @@ export const FormState = ({children,mode}) => {
         }
         else{
             window.history.pushState(data,'', url);
-            CustomEvent("dispatchForm",data);
+            CustomEvent("dispatchForm")(data);
         }
 
     };

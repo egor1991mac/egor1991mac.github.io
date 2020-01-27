@@ -123,6 +123,18 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+.icon-hotel:before {
+  content: "\e913";
+}
+.icon-bed:before {
+  content: "\e914";
+}
+.icon-food:before {
+  content: "\e915";
+}
+.icon-odnoklassniki:before {
+  content: "\e912";
+}
 .icon-couple:before {
   content: "\e910";
 }
@@ -235,6 +247,9 @@
 .icon-cog:before {
   content: "\e994";
 }
+.icon-gift:before {
+  content: "\e99f";
+}
 .icon-rocket:before {
   content: "\e9a5";
 }
@@ -297,6 +312,9 @@
 }
 .icon-twitter:before {
   content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
 }
 .icon-tumblr:before {
   content: "\eab9";

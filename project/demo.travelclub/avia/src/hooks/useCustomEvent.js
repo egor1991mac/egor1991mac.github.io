@@ -1,4 +1,4 @@
-const useCustomEvent = (nameEvent,data) =>{
+const useCustomEvent = nameEvent => data =>{
     document.dispatchEvent(new CustomEvent(nameEvent, {
         detail:{...data}
     }));
