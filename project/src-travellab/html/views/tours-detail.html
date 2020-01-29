@@ -132,22 +132,14 @@ _.template(require('./../includes/layout/header.html').default)(data) %>
                                 include:false,
                                 data:['Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo expedita. Dolor aliquid rerum recusandae excepturi.','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo expedita. Dolor aliquid rerum recusandae excepturi.'
                                 ]}) %>
-
-
-
                             </section>
-                            <section data-spy="scroll" id="price" class="py-4">
-                                <h2 class="h2 text-center text-md-left">Цены</h2>
-                                <% draverBtn =  _.template(require('./../includes/components/drawer-button.html').default)({}) %>
-                                <%= _.template(require('./../includes/components/sort-filter.html').default)({draverBtn:draverBtn}) %>
-                                <%= _.template(require('./../includes/components/tours-detail/price-item.html').default)({}) %>
-                            </section>
+
+
                             <section data-spy="scroll" id="review" class="py-4">
                                 <h2 class="h2 text-center text-md-left">Отзывы</h2>
                                 <%= _.template(require('./../includes/components/rewies-add.html').default)({}) %>
                                 <%= _.template(require('./../includes/components/tours-detail/rewies-detail.html').default)({}) %>
                             </section>
-
                     </div>
                     <div class="col-md-4 col-12 d-none d-md-block">
                         <div class="sticky-top" style="top:80px">
@@ -188,6 +180,32 @@ _.template(require('./../includes/layout/header.html').default)(data) %>
 
 <%= _.template(require('./../includes/components/drawer.html').default)({filter:search_form}) %>
 
+<section data-spy="scroll" id="price" class="drawer-fullscreen">
+            <div class="container position-relative">
+                <h2 class="h2 text-center text-md-left text-white my-3">Цены: Краков* - Вена - Венский лес... </h2>
+                <button class="btn-close">
+                    <span class="icon icon-close-button text-white top-0"></span>
+                </button>
+            </div>
+        <div class="section-background-gray py-4 py-md-5 border-radius overfow-auto">
+            <div class="container">
+                <div class="row  section-background-gray h-90vh">
+                    <div class="col-md-3 d-none d-md-block">
+                        <%= search_form %>
+                    </div>
+                    <div class="col-md-9">
+                    <% draverBtn =  _.template(require('./../includes/components/drawer-button.html').default)({}) %>
+                    <%= _.template(require('./../includes/components/sort-filter.html').default)({draverBtn:draverBtn}) %>
 
+                    <div class="scrollable">
+                        <%= _.template(require('./../includes/components/tours-detail/price-item.html').default)({}) %>
+                        <button class="btn btn-secondary mb-4 w-50 mx-auto">
+                            <span class="icon icon-reading-glasses mr-2 mt-1" style="font-size: 24px"></span>Показать еще</button>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
 </body>
 </html>

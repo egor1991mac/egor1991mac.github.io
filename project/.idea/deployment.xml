@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="http://travellab.travelsoft.by/">
+  <component name="PublishConfigData" serverName="smoke">
     <serverData>
       <paths name="bitrix.alatantour.by">
         <serverdata>

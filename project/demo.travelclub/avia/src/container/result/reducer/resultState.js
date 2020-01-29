@@ -1,4 +1,4 @@
-import React, {useReducer, useMemo, useContext, useEffect} from 'react';
+import React, {useReducer, useMemo, useContext, useEffect, useState} from 'react';
 import {GetDataTickets, GetMoreTicket} from '../action/actionFetchData';
 import {ResultContext} from "../context/context";
 import {ResultReducer} from "./resultReducer";
@@ -9,187 +9,123 @@ import useCustomEvent from '../../../hooks/useCustomEvent';
 import axios from 'axios';
 import qs from 'qs';
 import demoData from '../demo-date';
+import {isEqual} from 'lodash';
 
-
-function getSelectedFilter (filter_values){
-    if(filter_values){
+function getSelectedFilter(filter_values) {
+    if (filter_values) {
         let data = {};
-        Object.keys(filter_values).forEach(key=>{
-            let x = Object.keys(filter_values[key]).filter(item => filter_values[key][item] == true);
-            if(x.length != 0){
-                data = {...data,[key]:x}
+        Object.keys(filter_values).forEach(key => {
+            if(key != 'price'){
+                let x = Object.keys(filter_values[key]).filter(item => filter_values[key][item] == true);
+                if (x.length != 0) {
+                    data = {...data, [key]: x}
+                }
             }
-
         });
         return data;
-    }
-    else return null;
+    } else return null;
 }
 
 
 export const ResultState = ({url, inputName, children, defaultData, lang}) => {
 
-    const defaultState = {
-        [FETCH_DATA]: null,
-        [LOADING]: false,
-        [PAGE]: 1,
-        [REQUEST_ID]:null
-    };
+        const defaultState = {
+            [FETCH_DATA]: null,
+            [LOADING]: false,
+            [PAGE]: 1,
+            [REQUEST_ID]: null
+        };
 
-    const dispatchDataFilter = useCustomEvent;
-    const [state, dispatch] = useReducer(ResultReducer, defaultState);
+        const [startFilter, setStartFilter] = useState(false);
+        const [startSearch, setStartSearch] = useState(false);
 
-    useEffect(() =>{
-        GetDataTickets(dispatch, url.INIT_DATA,dispatchDataFilter("dispatchDataFilter"));
-    }, []);
+        const dispatchDataFilter = useCustomEvent;
+        const [state, dispatch] = useReducer(ResultReducer, defaultState);
 
-    useEffect(() => {
-        document.addEventListener('dispatchForm', function (e) {
-            GetDataTickets(dispatch, url.INIT_DATA,dispatchDataFilter("dispatchDataFilter"));
+        useEffect(() => {
+            GetDataTickets(dispatch, url.INIT_DATA, dispatchDataFilter("dispatchDataFilter"));
+        }, []);
+
+
+        useEffect(() => {
+            document.addEventListener('dispatchForm', function (e) {
+                setStartSearch(true);
+            });
+            return () => {
+                document.removeEventListener('dispatchForm', function (e) {})
+            }
+        },);
+        useEffect(() => {
+            if (startSearch){
+                GetDataTickets(dispatch, url.INIT_DATA, dispatchDataFilter(["dispatchDataFilter","dispatchResetSort"]));
+                setStartSearch(false);
+            }
+        }, [startSearch]);
+
+
+        let prevFilterCount = usePrevious(window.history.state ? getSelectedFilter(window.history.state.filter_values) : null);
+
+
+        useEffect(() => {
+            document.addEventListener('dispatchNewData', function (e) {
+                setStartFilter(true);
+                console.log('startFilter');
+            });
+            return () => {
+                document.removeEventListener('dispatchNewData', function (e) {
+                });
+            }
         });
-        return () => {
-            document.removeEventListener('dispatchForm', function (e) {})}
-    },[window.history.state]);
 
-
-
-    let prevFilterCount = usePrevious(window.history.state ? getSelectedFilter(window.history.state.filter_values)  : null);
-    let prevRequestId = usePrevious(state[REQUEST_ID]);
-    useEffect(()=>{
-        //console.log(state[REQUEST_ID])
-        // document.addEventListener('dispatchSortPrice', function (e) {
-        //     const {sortPrice} = e.detail;
-        //     const body = {
-        //         request_id: state[REQUEST_ID],
-        //         page: state[PAGE],
-        //         sort: {
-        //             by: "price",
-        //             order: sortPrice ? "asc" : "desc"
-        //         },
-        //     };
-        //     state[REQUEST_ID] && GetMoreTicket(dispatch, url.OPERATION_DATA, body);
-        // });
-        // document.addEventListener('dispatchSortDuration', function (e) {
-        //     const {sortDuration} = e.detail;
-        //     const body = {
-        //         request_id: state[REQUEST_ID],
-        //         page: state[PAGE],
-        //         sort: {
-        //             by: "duration",
-        //             order: sortDuration ? "asc" : "desc"
-        //         },
-        //     };
-        //     state[REQUEST_ID] && GetMoreTicket(dispatch, url.OPERATION_DATA, body);
-        // });
-        document.addEventListener('dispatchNewData',function (e) {
-            const {filter_values = null, sort = null, } = window.history.state;
-                console.log(state[PAGE]);
+        useEffect(() => {
+            if (startFilter) {
+                const {filter_values = null, sort = null, page = 1} = window.history.state;
                 const body = {
                     request_id: state[REQUEST_ID],
-                    page: state[PAGE],
+                    page: page,
+                    sort: {...sort},
+                    filter: filter_values ? {...getSelectedFilter(filter_values),price:window.history.state.filter_values.price} : {}
+                };
+                GetMoreTicket(dispatch, url.OPERATION_DATA, body);
+                setStartFilter(false);
+            }
+
+
+        }, [startFilter])
+
+
+
+
+        const handleNextPage = () => {
+            const {total_page_count} = state;
+
+            if (total_page_count >= state[PAGE]) {
+                const {filter_values = null, sort = null, page = 1} = window.history.state;
+                const body = {
+                    request_id: state[REQUEST_ID],
+                    page: page + 1,
                     sort: {...sort},
                     filter: filter_values ? getSelectedFilter(filter_values) : {}
                 };
-                if(Object.keys(body.filter).length > 0 ){
-                    if(prevRequestId != state[REQUEST_ID] && state[REQUEST_ID]){
-                        GetMoreTicket(dispatch, url.OPERATION_DATA, body);
-                    }
-                }
-                else if(Object.keys(body.filter).length == 0 && prevFilterCount ){
-                    if(prevRequestId != state[REQUEST_ID] && state[REQUEST_ID]){
-                        GetMoreTicket(dispatch, url.OPERATION_DATA, body);
-                    }
-                }
-
-        });
-        return () => {
-            document.removeEventListener('dispatchNewData', function (e) {});
-            // document.removeEventListener('dispatchSortDuration', function (e) {});
-            // document.removeEventListener('dispatchFilterEvent', function (e) {});
+                dispatch({type: [PAGE]});
+                window.history.pushState({...window.history.state, page: state[PAGE] + 1}, 'title', '')
+                GetMoreTicket(dispatch, url.OPERATION_DATA, body);
+            }
         }
-    })
-
-    const prevPage = usePrevious(state[PAGE]);
-    // useEffect(()=>{
-    //     document.addEventListener('dispatchSortPrice', function (e) {
-    //         const {sortPrice} = e.detail;
-    //         const body = {
-    //             request_id: state[REQUEST_ID],
-    //             page: state[PAGE],
-    //             sort: {
-    //                 by: "price",
-    //                 order: sortPrice ? "asc" : "desc"
-    //             },
-    //         };
-    //         (prevPage != state[PAGE] && prevPage != undefined) && GetMoreTicket(dispatch, url.OPERATION_DATA, body);
-    //     });
-    //     document.addEventListener('dispatchSortDuration', function (e) {
-    //         const {sortDuration} = e.detail;
-    //         const body = {
-    //             request_id: state[REQUEST_ID],
-    //             page: state[PAGE],
-    //             sort: {
-    //                 by: "duration",
-    //                 order: sortDuration ? "asc" : "desc"
-    //             },
-    //         };
-    //     });
-    //     document.addEventListener('dispatchFilterEvent',function (e) {
-    //         const {filter_values = null, sort = null} = window.history.state;
-    //         if(filter_values){
-    //             let data = getSelectedFilter(filter_values);
-    //             const body = {
-    //                 request_id: state[REQUEST_ID],
-    //                 page: state[PAGE],
-    //                 sort: {...sort},
-    //                 filter: {...data}
-    //             };
-    //             if(Object.keys(data).length > 0 ){
-    //
-    //                 (prevPage != state[PAGE] && prevPage != undefined) && GetMoreTicket(dispatch, url.OPERATION_DATA, body);
-    //             }
-    //             else if(Object.keys(data).length == 0 && prevFilterCount ){
-    //                 console.log(4);
-    //                 (prevPage != state[PAGE] && prevPage != undefined) && GetMoreTicket(dispatch, url.OPERATION_DATA, body);
-    //             }
-    //         }
-    //     });
-    //     return () => {
-    //         document.removeEventListener('dispatchSortPrice', function (e) {
-    //         })
-    //         document.removeEventListener('dispatchSortDuration', function (e) {});
-    //         document.removeEventListener('dispatchFilterEvent', function (e) {});
-    //     }
-    // },[state[PAGE]]);
 
 
-    const handleNextPage = () => {
-        const {total_page_count} = state;
-        if(total_page_count >= state[PAGE]){
-            const body = {
-                request_id: state[REQUEST_ID],
-                page: state[PAGE] + 1
-            };
-            dispatch({type: [PAGE]});
-            window.history.pushState({...window.history.state, page: state[PAGE] + 1},'title','')
-            GetMoreTicket(dispatch, url.OPERATION_DATA, body);
-        }
-    }
-
-
-
-
-    return (
-        <ResultContext.Provider
-            value={{
-                handleNextPage,
-                lang,
-                state,
-            }}
-        >
+        return (
+            <ResultContext.Provider
+                value={{
+                    handleNextPage,
+                    lang,
+                    state,
+                }}
+            >
                 {
                     children
                 }
-        </ResultContext.Provider>
-    )
-};
+            </ResultContext.Provider>
+        )
+    }
+;

@@ -1,8 +1,8 @@
 import React, {useReducer} from 'react';
 
 import {PopupReducer} from "./PopupReducer";
-import {SHOW_DATA, HIDE_DATA} from "../../../source/const";
-import {PopupContext, FormContext} from "./context";
+import {SHOW_DATA, HIDE_DATA} from "../../source/const";
+import {PopupContext} from "./context";
 
 
 const defaultState = {

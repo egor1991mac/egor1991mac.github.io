@@ -1,4 +1,4 @@
-import {SELECT_DATA} from '../../../source/const';
+import {SELECT_DATA} from '../../source/const';
 
 
 

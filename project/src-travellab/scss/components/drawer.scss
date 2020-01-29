@@ -54,3 +54,27 @@
     }
   }
 }
+.drawer{
+  &-fullscreen{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 999999999;
+    background: $primary;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    .scrollable{
+      overflow-y: scroll;
+      position: absolute;
+      top: 55px;
+      left: 0;
+      right: 20px;
+      bottom: 10px;
+      margin-top: -1rem;
+      padding: 1rem;
+      width: 100%;
+
+    }
+  }
+}

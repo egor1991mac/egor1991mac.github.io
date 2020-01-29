@@ -15,21 +15,18 @@ const CheckBoxState = ({children, defaultDataItems = null, inputName, defaultDat
             else{
                 defaultState[item] = false;
             }
-
         })
-
 
 
     const [state, dispatch] = useReducer(CheckBoxReducer, defaultDataItems ? defaultState : null);
     const getData =   useSetParentContext(state,inputName, parentContext);
-
     const handleChecked = (key) => {
         dispatch({
             type: CHECKED_DATA,
             payload: {
                 [key]: !state[key]
             }
-        })
+        });
         sendData && sendData();
     }
 

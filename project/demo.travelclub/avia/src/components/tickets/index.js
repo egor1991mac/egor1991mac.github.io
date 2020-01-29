@@ -1,6 +1,5 @@
-import React, {Suspense, useState, useContext, useRef, useLayoutEffect, useMemo, useEffect} from 'react';
+import React, {Suspense, useContext} from 'react';
 import {ResultContext} from "../../container/result/context/context";
-import {FETCH_DATA, LOADING} from "../../source/const";
 import Ticket from './ticket';
 import Loader from '../loader'
 
@@ -27,9 +26,7 @@ const Tickets = () => {
                 : null
         }
         {
-
             LOADING && <Loader classes={'result_preloader'}/>
-
         }
     </React.Fragment>
 

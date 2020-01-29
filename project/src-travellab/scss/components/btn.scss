@@ -9,7 +9,25 @@
     padding-right: $btn-padding;
     padding-left: $btn-padding;
     align-self: baseline;
-
+    &-close{
+        font-size: 1.25rem;
+        background: transparent !important;
+        border: 0;
+        outline: 0;
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        line-height: 24px;
+        transition: transform;
+        .icon{
+            line-height: cr(31px);
+            font-size: 24px;
+        }
+        &:active{
+            transition: transform;
+            transform: scale(0.9);
+        }
+    }
     &-primary{
         background-color: $primary;
         border-color: $primary;

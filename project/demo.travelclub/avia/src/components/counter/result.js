@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {CounterContext} from "../../container/form/context/context";
+import {CounterContext} from "./context";
 
 const Result = ({lang, children}) => {
     const {state, handleIncrement, handleDicrement} = useContext(CounterContext);

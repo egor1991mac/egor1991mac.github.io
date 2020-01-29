@@ -6,6 +6,16 @@ const Sort = () => {
     const [sortPrice, setSortPrice] = useState(false);
     const event = useCustomEvent;
 
+    useEffect(()=>{
+
+            document.addEventListener('dispatchResetSort', ()=>{
+                console.log('RESET');
+                setSortDuration(false);
+                setSortPrice(false);
+            })
+    }
+    ,)
+
 
     const handleSortDuration = (e) => {
         e.preventDefault();
@@ -13,12 +23,10 @@ const Sort = () => {
     };
     useEffect(() => {
 
-
             window.history.pushState({
                 ...window.history.state, sort: { by: "duration", order: sortDuration ? "asc" : "desc"}},'title', '')
             event('dispatchNewData')({sortDuration: sortDuration});
-        }, [sortDuration])
-
+        }, [sortDuration]);
 
 
     const handleSortPrice = (e) => {
@@ -27,7 +35,7 @@ const Sort = () => {
     };
     useEffect(() => {
         window.history.pushState({
-            ...window.history.state, sort: {by: 'price', order: sortPrice ? "ask" : "desk"}
+            ...window.history.state, sort: {by: 'price', order: sortPrice ? "asc" : "desc"}
         }, 'title', '');
         event('dispatchNewData')({sortPrice: sortPrice});
     }, [sortPrice]);

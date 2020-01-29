@@ -1,4 +1,4 @@
-import {FETCH_DATA, SELECT_DATA, FETCH_STATUS_DATA, PLACEHOLDER_DATA, INPUT_DATA} from '../../../source/const';
+import {FETCH_DATA, SELECT_DATA, FETCH_STATUS_DATA, PLACEHOLDER_DATA, INPUT_DATA} from "../../source/const"
 
 
 const handlers = {

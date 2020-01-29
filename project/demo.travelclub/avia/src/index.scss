@@ -1,44 +1,45 @@
-body{
-  background: #e30513;
-  padding: 10%;
-}
-.bg-white{
-  background: white;
-}
-.bg-red{
-  background: #e30513;
-}
-.py-5{
-  padding: 2rem;
-}
+//body{
+//  background: #e30513;
+//  padding: 10%;
+//}
+//.bg-white{
+//  background: white;
+//}
+//.bg-red{
+//  background: #e30513;
+//}
+//.py-5{
+////  padding: 2rem;
+////}
+//
+//
+//
+//@font-face {
+//  font-family: 'FontAwesome';
+//  src: url('./fonts/fontawesome-webfont.eot?v=4.7.0');
+//  src: url('./fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('./fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('./fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('./fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//@font-face {
+//  font-family: 'weathericons';
+//  src: url('./fonts/weathericons-regular-webfont.eot');
+//  src: url('./fonts/weathericons-regular-webfont.woff2') format('woff2'), url('./fonts/weathericons-regular-webfont.woff') format('woff'), url('./fonts/weathericons-regular-webfont.ttf') format('truetype'), url('./fonts/weathericons-regular-webfont.svg#weather_iconsregular') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//@font-face {
+//  font-family: 'simple-line-icons';
+//  src: url('./fonts/Simple-Line-Icons.eot?v=2.4.0');
+//  src: url('./fonts/Simple-Line-Icons.eot?v=2.4.0#iefix') format('embedded-opentype'), url('./fonts/Simple-Line-Icons.woff2?v=2.4.0') format('woff2'), url('./fonts/Simple-Line-Icons.ttf?v=2.4.0') format('truetype'), url('./fonts/Simple-Line-Icons.woff?v=2.4.0') format('woff'), url('./fonts/Simple-Line-Icons.svg?v=2.4.0#Simple-Line-Icons') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
 .cursor-pointer{
   cursor: pointer;
 }
 .ReactCollapse--collapse{
   transition: height .3s;
-}
-
-
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('./fonts/fontawesome-webfont.eot?v=4.7.0');
-  src: url('./fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('./fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('./fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('./fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'weathericons';
-  src: url('./fonts/weathericons-regular-webfont.eot');
-  src: url('./fonts/weathericons-regular-webfont.woff2') format('woff2'), url('./fonts/weathericons-regular-webfont.woff') format('woff'), url('./fonts/weathericons-regular-webfont.ttf') format('truetype'), url('./fonts/weathericons-regular-webfont.svg#weather_iconsregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'simple-line-icons';
-  src: url('./fonts/Simple-Line-Icons.eot?v=2.4.0');
-  src: url('./fonts/Simple-Line-Icons.eot?v=2.4.0#iefix') format('embedded-opentype'), url('./fonts/Simple-Line-Icons.woff2?v=2.4.0') format('woff2'), url('./fonts/Simple-Line-Icons.ttf?v=2.4.0') format('truetype'), url('./fonts/Simple-Line-Icons.woff?v=2.4.0') format('woff'), url('./fonts/Simple-Line-Icons.svg?v=2.4.0#Simple-Line-Icons') format('svg');
-  font-weight: normal;
-  font-style: normal;
 }
 input{
   color: white !important;
@@ -47,6 +48,7 @@ input{
   padding-left: 0;
   list-style: none;
   min-width: 325px;
+  margin-bottom: 0;
   &-item{
 
 
@@ -110,8 +112,17 @@ input{
 .d-flex{
   display: flex;
 }
+.flex-column{
+  flex-direction: column;
+}
+.justify-center{
+  justify-content: center;
+}
 .align-items-center{
   align-items: center;
+}
+.flex-wrap{
+  flex-wrap: wrap;
 }
 .theme-search-area-section{
   ::placeholder{

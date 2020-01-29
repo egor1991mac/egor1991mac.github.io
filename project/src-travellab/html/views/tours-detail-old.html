@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<% var data = { title: "Заголовок | Проект", author: "Harrix" }; %> <%=
+_.template(require('./../includes/layout/header.html').default)(data) %>
+
+<body>
+<header class="sticky-top">
+    <% var back_call_button = _.template(require('./../includes/components/back-call-button.html').default)()
+    user_dropdown_button = _.template(require('./../includes/components/user-dropdown.html').default)()
+    select_lang = _.template(require('./../includes/components/select_lang.html').default)()
+    ; %>
+    <%  search_form = _.template(require('./../includes/components/tours-detail/search-form-detail.html').default)({}) %>
+    <%= _.template(require('./../includes/components/navbar.html').default)({button:back_call_button,
+    user_dropdown_button:user_dropdown_button}) %>
+
+
+</header>
+
+<main>
+    <div class="background-img-container">
+        <picture>
+            <img loading="lazy" src="./img/home_slider/slider-101.jpg" class="background-img-fixed" style="z-index: -1;" alt="">
+        </picture>
+        <div class="container">
+            <div class="row section-pt-40 pb-5">
+                <div class="col-12 col-md-8">
+                    <ul class="card-options card-options-hor-static justify-content-center justify-content-md-start">
+                        <li class="card-options--item best-price"><span class="icon icon-fire"></span> текст</li>
+                        <li class="card-options--item new"><span class="icon icon-new-label"></span> текст</li>
+                        <li class="card-options--item doc"><span class="icon icon-profile"></span> текст</li>
+                        <li class="card-options--item custom-tour"><span class="icon icon-creativity"></span>екст</li>
+                    </ul>
+                    <h1 class="text-white py-3 text-md-left text-center">Краков* - Вена - Венский лес* (Хайлигенкройц, Баден, замок
+                        Лихтенштейн)</h1>
+                    <ul class="card-rating h3 justify-content-center justify-content-md-start">
+                        <li><span class="icon icon-star-full"></span></li>
+                        <li><span class="icon icon-star-half"></span></li>
+                        <li><span class="icon icon-star-empty"></span></li>
+                        <li><span class="icon icon-star-empty"></span></li>
+                        <li><span class="icon icon-star-empty"></span></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 h-100 d-none d-md-flex flex-column ml-auto">
+                    <h3 class="text-white d-flex flex-column">
+                        <span>Цена от:<span class="display-5 text-white ml-2"><del>650$</del></span></span>
+                        <span class="color-secondary display-2 my-3">650$</span>
+                    </h3>
+
+                    <a href="#price" class="btn btn-primary d-inline-flex mt-auto"><span class="icon-cart mr-2"></span> Цены и наличие мест </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="row bg-white section-py-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="card card-border mb-3 sticky-top card-mobile-nav-detail">
+                            <div class="card-body p-3">
+
+                                <nav class="nav bg-white nav-decoration nav-hor-scroll hidden-scroll-bar" id="nav-tour-detail">
+                                    <a class="nav-link active" href="#overview">О туре</a>
+                                    <a class="nav-link" href="#gallery">Галлерея</a>
+                                    <a class="nav-link" href="#program">Программа</a>
+                                    <a class="nav-link" href="#cost">Стоимость</a>
+                                    <a class="nav-link" href="#price">Цены</a>
+                                    <a class="nav-link" href="#review">Отзывы</a>
+                                </nav>
+                            </div>
+                        </div>
+
+
+                            <section data-spy="scroll" id="overview" class="py-4" >
+                                <h2 class="h2 text-center text-md-left">О туре</h2>
+                                <div class="card card-border">
+
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et
+                                            porro
+                                            voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed,
+                                            sit nemo
+                                            expedita. Dolor aliquid rerum recusandae excepturi.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, dicta, impedit.
+                                            Eveniet
+                                            incidunt provident minima totam aut facilis tenetur quam officia omnis dolorem!
+                                            Autem
+                                            iste fugit mollitia rerum quae, veritatis perferendis voluptas magni aliquam
+                                            consequuntur, minima repellendus eveniet laboriosam iure.</p>
+                                        <div class="hr mb-3"></div>
+                                        <ul class="list list-hor mb-0">
+                                            <li class="list-item"><span class="icon-place-localizer mr-2"></span>Тур в: <b
+                                                    class="ml-1">Грузия</b></li>
+                                            <li class="list-item"><span class="icon-calendar mr-2"></span>Начало тура:<b
+                                                    class="ml-1">21.02.2019</b></li>
+                                            <li class="list-item"><span class="icon-map2 mr-2"></span>Маршрут:<b
+                                                    class="ml-1">Минск-Москва-Грузия</b></li>
+                                            <li class="list-item"><span class="icon-clock mr-2"></span>Продолжительность:<b
+                                                    class="ml-1">7 дней</b></li>
+                                            <li class="list-item"><span class="icon-calendar mr-2"></span>Даты тура:<b
+                                                    class="ml-1">21.0.2201</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section data-spy="scroll" id="gallery" class=" py-4">
+                                <h2 class="h2 text-center text-md-left">Галлерея</h2>
+                                <div class="card card-border">
+
+                                    <div class="card-body p-0">
+                                        <%= _.template(require('./../includes/components/tours-detail/gallery-slider.html').default)(
+                                        {img:['./img/home_slider/slider-101.jpg','./img/home_slider/slider-101.jpg','./img/home_slider/slider-103.jpg','./img/home_slider/slider-104.jpg']
+                                        })
+                                        %>
+                                    </div>
+                                </div>
+                            </section>
+                            <section data-spy="scroll" id="program" class=" py-4">
+                                <h2 class="h2 text-center text-md-left">Программа тура по дням</h2>
+                                <%= _.template(require('./../includes/components/tours-detail/collapse-tours-detail.html').default)(data)
+                                %>
+                            </section>
+                            <section data-spy="scroll" id="cost" class=" py-4">
+                                <h2 class="h2 text-center text-md-left">Стоимость</h2>
+                                <%= _.template(require('./../includes/components/tours-detail/tours-include.html').default)
+                                ({  heading:'В стоимость входит',
+                                    include:true,
+                                    data:['Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo expedita. Dolor aliquid rerum recusandae excepturi.','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo expedita. Dolor aliquid rerum recusandae excepturi.'
+                                  ]}) %>
+                                <%= _.template(require('./../includes/components/tours-detail/tours-include.html').default)
+                                ({
+                                heading:'В стоимость не входит',
+                                include:false,
+                                data:['Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo expedita. Dolor aliquid rerum recusandae excepturi.','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur et porro voluptatem maiores quidem inventore harum explicabo deserunt fuga minima sed, sit nemo expedita. Dolor aliquid rerum recusandae excepturi.'
+                                ]}) %>
+                            </section>
+
+                            <section data-spy="scroll" id="price" class="py-4" >
+                                <h2 class="h2 text-center text-md-left">Цены</h2>
+                                <% draverBtn =  _.template(require('./../includes/components/drawer-button.html').default)({}) %>
+                                <%= _.template(require('./../includes/components/sort-filter.html').default)({draverBtn:draverBtn}) %>
+                                <%= _.template(require('./../includes/components/tours-detail/price-item.html').default)({}) %>
+                            </section>
+                            <section data-spy="scroll" id="review" class="py-4">
+                                <h2 class="h2 text-center text-md-left">Отзывы</h2>
+                                <%= _.template(require('./../includes/components/rewies-add.html').default)({}) %>
+                                <%= _.template(require('./../includes/components/tours-detail/rewies-detail.html').default)({}) %>
+                            </section>
+                    </div>
+                    <div class="col-md-4 col-12 d-none d-md-block">
+                        <div class="sticky-top" style="top:80px">
+                            <div class="card card-border mb-4">
+                                <div class="card-header">
+                                    <h5 class="mb-0 ">Менеджер тура</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./img/reviewer-4.png" alt="" width="75px" height="75px"
+                                             class="rounded-circle mr-3">
+                                        <div>
+                                            <h5>Иванов Иван <br></h5>
+                                            <a href="#" class="h5">+375(44) xxx-xx-xx</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <%= search_form %>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-bottom p-2 d-flex justify-content-center d-md-none bg-white card-shadow">
+        <a href="#price" class="btn btn-primary d-inline-flex mt-auto fb-50" style="max-width: 170px"><span class="icon-cart mr-2"></span> Цены и места </a>
+        <button type="button" class="btn btn-secondary my-auto ml-3 fb-50" style="max-width: 170px" data-toggle="modal" data-target="#exampleModal">
+            <span class="icon icon-phone mr-2"></span>
+            Перезвонить мне
+        </button>
+    </div>
+</main>
+<%= _.template(require('./../includes/layout/footer.html').default)(data) %>
+<%= _.template(require('./../includes/components/back-call-form.html').default)({}) %>
+
+<%= _.template(require('./../includes/components/drawer.html').default)({filter:search_form}) %>
+
+
+</body>
+</html>

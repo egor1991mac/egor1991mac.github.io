@@ -1,52 +1,47 @@
-import React, {useReducer} from 'react';
+import React, {useEffect, useReducer} from 'react';
 
-import {CheckBoxReducer} from "./CheckBoxReducer";
-import {CHECKED_DATA} from "../../source/const";
-import {CheckboxContext} from "./context";
+import {InputRangeReducer} from "./InputRangeReducer";
+import {SELECT_DATA} from "../../source/const";
+import {InputRangeContext} from "./context";
 import useSetParentContext from "../../hooks/useSetParentContext";
-import {CHECKED_DATA} from "../../source/const";
-
-const InputRangeState = ({children, defaultDataItems = null, inputName, defaultData, parentContext, sendData=null}) => {
-    const defaultState = {};
-
-    defaultDataItems && defaultDataItems.forEach(item=>{
-            if(item == defaultData){
-                defaultState[item] = true;
-            }
-            else{
-                defaultState[item] = false;
-            }
-    })
 
 
-
-    const [state, dispatch] = useReducer(CheckBoxReducer, defaultDataItems ? defaultState : null);
-    const getData =   useSetParentContext(state,inputName, parentContext);
-
-    const handleSelectedData = (key) => {
+const InputRangeState = ({children, defaultDataItems = null, inputName, defaultData=null, parentContext, sendData=null}) => {
+    const defaultState = {
+        [SELECT_DATA]: {min:parseInt(Object.values(defaultData)[0].min), max:parseInt(Object.values(defaultData)[0].max)},
+    }
+    const [state, dispatch] = useReducer(InputRangeReducer, defaultState);
+    const getData = useSetParentContext(
+        {[Object.keys(defaultData)]:state[SELECT_DATA]},inputName, parentContext);
+    const handleChangeData = (data) => {
         dispatch({
             type: [SELECT_DATA],
-            payload: {
-                [key]: !state[key]
-            }
-        })
-        sendData && sendData();
+            payload: {[SELECT_DATA]:data}
+        });
+        //sendData && sendData();
     }
+    useEffect(()=>{
+        sendData && sendData();
+    },[state[SELECT_DATA]])
+
 
 
     return (
-        <CheckboxContext.Provider
+        <InputRangeContext.Provider
             value={{
-                state,
-                handleSelectedData
+                min:parseInt(Object.values(defaultData)[0].min),
+                max:parseInt(Object.values(defaultData)[0].max),
+                value: state[SELECT_DATA],
+                handleChangeData,
+                sendData
             }}
         >
             {
                 children
             }
-        </CheckboxContext.Provider>
+        </InputRangeContext.Provider>
 
     )
 };
 
-export default CheckBoxState;
+export default InputRangeState;

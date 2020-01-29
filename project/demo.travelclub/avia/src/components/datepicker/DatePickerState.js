@@ -1,8 +1,8 @@
 import React, {useReducer} from 'react';
 import {DatePickerContext} from './context.js';
 import {DatePickerReducer} from "./DatePickerStateReducer";
-import {SELECT_DATA, } from "../../../source/const";
-import useSetParentContext from "../../../hooks/useSetParentContext";
+import {SELECT_DATA} from "../../source/const";
+import useSetParentContext from "../../hooks/useSetParentContext";
 import moment from 'moment';
 
 

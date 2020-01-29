@@ -88,7 +88,7 @@ const FlightSection = ({company=null, route_segment = null, air_class=null}) => 
                                                     <div
                                                         className="theme-search-results-item-flight-section-path-line-title">
                                                         {
-                                                            item.segment.end.airport_code
+                                                            item.segment.start.airport_code
                                                         }
                                                     </div>
                                                 </div>

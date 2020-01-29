@@ -19,6 +19,7 @@ export const PREV_DATA = "PREV_DATA";
 export const LOADING = "LOADING";
 export const PAGE = "PAGE";
 export const REQUEST_ID = "REQUEST_ID";
+export const RESET = "RESET";
 
 
 

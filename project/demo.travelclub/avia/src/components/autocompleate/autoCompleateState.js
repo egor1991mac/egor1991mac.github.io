@@ -1,14 +1,10 @@
 import React, {useReducer, useMemo, useContext} from 'react';
 import {AutoCompleateContext} from './context.js';
 import {AutoCompleateReducer} from "./autoCompleateReducer";
-import {FormContext} from "./context";
-import {FETCH_DATA, SELECT_DATA, FETCH_STATUS_DATA, INPUT_DATA, PLACEHOLDER_DATA} from "../../../source/const";
-import {useFetchDataAutoCompleate} from "../../../source/api";
-import useSetParentContext from "../../../hooks/useSetParentContext";
+import {FETCH_DATA, SELECT_DATA, FETCH_STATUS_DATA, INPUT_DATA, PLACEHOLDER_DATA} from "../../source/const";
+import {useFetchDataAutoCompleate} from "../../source/api";
+import useSetParentContext from "../../hooks/useSetParentContext";
 
-function sleep (time) {
-    return new Promise((resolve) => setTimeout(resolve, time));
-}
 
 
 
@@ -21,6 +17,7 @@ export const AutoCompleateState = ({url, inputName, children,defaultData, parent
             [FETCH_STATUS_DATA]:1,
             [PLACEHOLDER_DATA]:''
     };
+
     if(defaultData.length > 0){
         defaultState[SELECT_DATA] = defaultData[0];
         defaultState[INPUT_DATA] = defaultData[0].OBJECT_TYPE == 'city' ? defaultData[0].UF_CITY_RU
@@ -37,6 +34,7 @@ export const AutoCompleateState = ({url, inputName, children,defaultData, parent
     useSetParentContext(state[SELECT_DATA],inputName, parentContext);
 
     const handleFetchData = async (value = '') => {
+        console.log(value);
         if(value.length >= 2){
             dispatch({
                 type: FETCH_DATA,

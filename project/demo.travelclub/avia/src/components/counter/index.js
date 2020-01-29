@@ -1,7 +1,8 @@
 import React, {useContext} from 'react';
 import {SELECT_DATA} from "../../source/const";
 import Popup from "../popper";
-import {CounterContext, PopupContext} from "../../container/form/context/context";
+import {PopupContext} from "../popper/context";
+import {CounterContext} from './context';
 import './style.scss';
 import Result   from './result'
 

@@ -1,4 +1,4 @@
-import {SHOW_DATA, HIDE_DATA} from '../../../source/const';
+import {SHOW_DATA, HIDE_DATA} from '../../source/const';
 
 
 

@@ -8,6 +8,7 @@ const useSetParentContext = (state, key, parentContext) =>{
     const {getData} = useContext(parentContext);
 
     useMemo(()=>{
+        //console.log(state);
         getData(state,key);
     },[state]);
 }

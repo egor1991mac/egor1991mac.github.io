@@ -1,8 +1,8 @@
 import React, {useReducer} from 'react';
 import {CounterContext} from './context.js';
 import {CounterReducer} from "./CounterReducer";
-import { INCREMENT_DATA, DICREMENT_DATA } from "../../../source/const";
-import useSetParentContext from "../../../hooks/useSetParentContext";
+import { INCREMENT_DATA, DICREMENT_DATA } from "../../source/const";
+import useSetParentContext from "../../hooks/useSetParentContext";
 
 
 

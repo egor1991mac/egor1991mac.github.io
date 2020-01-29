@@ -6,10 +6,9 @@ import MomentLocaleUtils, {
     formatDate,
     parseDate,
 } from 'react-day-picker/moment';
-
 import './style.scss';
-
-import {DatePickerContext, PopupContext} from "../../container/form/context/context";
+import {PopupContext} from "../popper/context";
+import {DatePickerContext} from './context';
 import {SELECT_DATA} from "../../source/const";
 import Popup from "../popper";
 

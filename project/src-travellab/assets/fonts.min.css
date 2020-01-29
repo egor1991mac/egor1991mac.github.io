@@ -45,6 +45,9 @@
     -moz-osx-font-smoothing: grayscale
 }
 
+.icon-reading-glasses:before {
+    content: "\e916";
+}
 .icon-hotel:before {
     content: "\e913";
 }

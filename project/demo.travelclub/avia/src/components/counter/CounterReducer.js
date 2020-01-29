@@ -1,4 +1,4 @@
-import {INCREMENT_DATA, DICREMENT_DATA} from '../../../source/const';
+import {INCREMENT_DATA, DICREMENT_DATA} from '../../source/const';
 
 
 

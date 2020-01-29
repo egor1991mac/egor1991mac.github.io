@@ -1,16 +1,11 @@
 import React, {useContext, useEffect,useState, useRef} from "react";
 import ReactDOM, {createPortal} from 'react-dom';
 import {Manager, Reference, Popper} from 'react-popper';
-import {PopupContext} from "../../container/form/context/context";
-import {PopupState} from "../../container/form/context/PopupState";
+import {PopupContext} from "./context";
+import {PopupState} from "./PopupState";
 import useOutsideClick  from '../../hooks/clickOutside';
 const Popup = ({innerRef,children}) =>{
-
-
-
     const {state:{VISIBLE},handleHidePopup} = useContext(PopupContext);
-
-
     const [node,setNode] = useState(innerRef.current);
     useEffect(()=>{
         if(innerRef){
