@@ -30,7 +30,7 @@
 		"global": "^4.4.0",
 		"image-webpack-loader": "^6.0.0",
 		"imagemin-webpack-plugin": "^2.4.2",
-		"jquery": "^3.4.1",
+		"jquery": "^3.5.0",
 		"jquery-mask-plugin": "^1.14.16",
 		"magnific-popup": "^1.1.0",
 		"optimize-css-assets-webpack-plugin": "^5.0.3",
