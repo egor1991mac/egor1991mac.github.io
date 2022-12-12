@@ -12,7 +12,7 @@
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "node-sass": "^4.13.0",
-    "qs": "^6.9.1",
+    "qs": "^6.9.7",
     "rc-collapse": "^1.11.8",
     "react": "^16.12.0",
     "react-animations": "^1.0.0",
